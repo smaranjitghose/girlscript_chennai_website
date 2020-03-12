@@ -4,7 +4,9 @@
 
 This is a website to compliment the app built using Flutter for different GirlScript Chapters that is to be used by the community associated with it and to later serve as a template for other tech communities as well. From having the option to portray the members' achievements to announcements regarding various local opportunities, we want it to be knit into a single platform. Programming enthusiasts and even exerienced developers would be able to seek the information they require to be an active part of our community. Since the website is made by the community for the community, it is something that shall add on to its elegance being an open source project. It is also a good opportunity for beginners to learn and contribute adding a cherry on the cake.
 
-For demo of the current version: smaranjitghose.github.io/girlscript_chennai_website
+For demo of the current version: 
+
+smaranjitghose.github.io/girlscript_chennai_website
 
 
 # Sections of the website:
