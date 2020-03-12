@@ -10,6 +10,9 @@ This is the website meant to serve the Chennai chapter of GirlScript Chennai.
 
 Being an open source project under GirlScript Summer of Code'2020, this website is not only built for the community but also by the community as well. This is a good starting point for anyone new to web development to work on an actual use case
 
+Also for participants looking to contribute beyond just the website...we shall have a separate projects folder..for making certain small scripts to assist the admins of the website..Once approved here and verified..you can directly contribute the same to 
+https://github.com/girlscriptchennai
+
 ### Checkout the current version: 
 
 [GirlScript Chennai Website ](https://smaranjitghose.github.io/girlscript_chennai_website/)
