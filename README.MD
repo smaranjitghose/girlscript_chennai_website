@@ -10,7 +10,7 @@ This is the website meant to serve the Chennai chapter of GirlScript Chennai.
 
 Being an open source project under GirlScript Summer of Code'2020, this website is not only built for the community but also by the community as well. This is a good starting point for anyone new to web development to work on an actual use case
 
-## Checkout the current version: 
+### Checkout the current version: 
 
 [GirlScript Chennai Website ](https://smaranjitghose.github.io/girlscript_chennai_website/)
 
@@ -23,7 +23,7 @@ Being an open source project under GirlScript Summer of Code'2020, this website 
 - Team 
 - Contact Us
 
-## How to contribute
+### How to contribute
 
 ![GSSOC'20](https://img.shields.io/badge/GSSOC-20-orange?style=for-the-badge)
 
@@ -72,7 +72,7 @@ git push -u origin <your_branch_name>
 - Some idea about Firebase or willingness to learn it.
 
 
-# Resources to get started with:
+### Resources to get started with:
 
 - [freecodecamp Curriculum + Blogs](https://www.freecodecamp.org/)
 - [w3Schools](https://www.w3schools.com/)
@@ -81,7 +81,7 @@ git push -u origin <your_branch_name>
 
 - [Smaranjit Ghose](https://github.com/smaranjitghose)
 
-# Mentors
+### Mentors
 
 - [Sukkrit Sharma](https://github.com/sukkritsharmaofficial)
 - [Saswat Nayak](https://github.com/swat1998)
