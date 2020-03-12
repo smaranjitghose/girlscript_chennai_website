@@ -15,7 +15,7 @@ https://github.com/girlscriptchennai
 
 ### Checkout the current version: 
 
-[GirlScript Chennai Website ](https://smaranjitghose.github.io/girlscript_chennai_website/)
+[GirlScript Chennai Website ](https://girlscriptchennai.netlify.com/)
 
 
 ### Sections of the website:
