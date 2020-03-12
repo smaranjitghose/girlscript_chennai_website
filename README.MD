@@ -6,6 +6,15 @@ This is a website to compliment the app built using Flutter for different GirlSc
 
 For demo of the current version: smaranjitghose.github.io/girlscript_chennai_website
 
+
+# Sections of the website:
+
+- Home 
+- Annoucements 
+- Achievements 
+- Team 
+- Contact Us
+
 ## Resources to get started with
 
 ### Features
