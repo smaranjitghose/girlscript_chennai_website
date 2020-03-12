@@ -6,6 +6,8 @@
 ![Stars](	https://img.shields.io/github/stars/smaranjitghose/girlscript_chennai_website)
 ![License](https://img.shields.io/github/license/smaranjitghose/girlscript_chennai_website)
 
+[![Gitter](https://badges.gitter.im/girlscript_chennai_website/community.svg)](https://gitter.im/girlscript_chennai_website/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
 This is the website meant to serve the Chennai chapter of GirlScript Chennai. 
 
 Being an open source project under GirlScript Summer of Code'2020, this website is not only built for the community but also by the community as well. This is a good starting point for anyone new to web development to work on an actual use case
