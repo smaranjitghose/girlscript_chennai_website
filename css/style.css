@@ -74,6 +74,11 @@ ol {
   padding: 0;
   margin: 0;
 }
+#typeit{
+  font-size: 100px;
+  font-weight: bold;
+  color: rgb(247, 95, 39);
+}
 /*-----------
 Nav bar
 ---------------------*/
@@ -610,7 +615,8 @@ Parallax section
   color: white;
   text-align: center;
   position: relative;
-  background-image: url("https://images.unsplash.com/photo-1502957291543-d85480254bf8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80");
+  /*background-image: url("https://images.unsplash.com/photo-1502957291543-d85480254bf8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80");*/
+  background-color: white;
 }
 
 .center-div {

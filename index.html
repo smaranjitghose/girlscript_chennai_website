@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-<body>
+<body onLoad="typeWriter()">
     
     <nav class="navbar fixed-top navbar-expand-lg">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,20 +46,26 @@
           </ul>
         </div>
       </nav>
-      <section class="header-section">
+    <section class="header-section">
         <div class="center-div">
-            <img src="https://www.gssoc.tech/images/type-logo.png" alt="" height="250em">
-            <h1 class="font-weight-bold text-white"> Chennai</h1>
-            <p></p>
-            <div class="header-buttons">
-                <a href="#"><i class="fa fa-github fa-2x mt-5 " style="color:#fff"></i></a>
-                <a href="#"><i class="fa fa-linkedin fa-2x mt-5 mx-3" style="color: #fff"></i></a>
-                <a href="#"><i class="fa fa-instagram fa-2x mt-5 mx-3" style="color: #fff;"></i></a>
-                <a href="#"><i class="fa fa-facebook fa-2x mt-5 mx-3" style="color: #fff;"></i></a></a> 
-                
-            </div>
+          <h1>WELCOME TO</h1>
+          <br>
+            <p id="typeit"></p>
         </div>
     </section>
+    <script>
+      var i = 0;
+      var txt = 'GIRLSCRIPT CHENNAI';
+      var speed = 40;
+      
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("typeit").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+      </script>
      
    
       <section class="about">
