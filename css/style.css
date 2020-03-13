@@ -637,8 +637,8 @@ Parallax section
 
 
 footer{
-  background: #EFE2BA;
-  padding: 90px 0;
+  background: #232323;
+  padding: 70px 0;
 }
 
 .footer-container{
@@ -658,15 +658,24 @@ footer{
 
 
 .social-media{
-  margin: 20px 0;
+margin-top: 5%;;
+
+}
+.footer-h2{
+  margin-top: 2%;
+ color: #c4c4c4;
+}
+.footer-h3{
+  margin-top: 2%;
+  color: #c4c4c4;
 }
 
 .social-media a{
-  color: #001a21;
+  color:white;
   margin-right: 25px;
   font-size: 22px;
   text-decoration: none;
-  transition: .3s linear;
+  
 }
 
 .social-media a:hover{
@@ -674,15 +683,38 @@ footer{
   font-size: 26px;
 
 }
+.fa-twitter a:hover{
+  color: #fc5c65;
+  font-size: 26px;
+
+}
+
+.btn-spl {
+  border-radius: 10em;
+  color: white;
+  border-color: #fc5c65;
+  margin: 1rem;width: 150px;
+  height: 40px;
+
+ }
 
 .right-col h1{
   font-size: 26px;
 }
 
+
 .border{
-  width: 100px;
-  height: 4px;
+  width: 200px;
+  height: 5px;
   background: #fc5c65;
+  color: #fc5c65;
+ border-style: none !important;
+}
+.footer-p{
+  margin-top: 1%;
+}
+.footer-h{
+  color: #c4c4c4;
 }
 
 .newsletter-form{
@@ -690,6 +722,7 @@ footer{
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 2%;
 }
 
 .txtb{
@@ -906,7 +939,5 @@ li.tns-item{
   display: block;
 }
 
-.col-lg-6 img{
-  background-color: #e32879;
-}
+
 
