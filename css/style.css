@@ -74,7 +74,39 @@ ol {
   padding: 0;
   margin: 0;
 }
+#typeit{
+  font-size: 100px;
+  font-weight: bold;
+  color: rgb(247, 95, 39);
+}
+/*-----------
+Nav bar
+---------------------*/
+.navbar {
+  background-color: #f47621 !important;
+  color: #fff !important;
+}
+.navbar a{
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+}
 
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem 1rem;
+}
 /*---------------------
   Header
 -----------------------*/
@@ -545,9 +577,6 @@ Parallax section
   padding: 10px;
 }
 
-.nav-link {
-  color: #fff;
-}
 .header {
   width: 100%;
   height: 100vh;
@@ -575,17 +604,6 @@ Parallax section
   background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
 }
 
-.navbar::before {
-  content: "";
-  position: absolute;
-  top: 0%;
-  bottom: 0%;
-  left: 0;
-  right: 0;
-  opacity: 0.3;
-  z-index: -1;
-  background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
-}
 
 .header-section {
   width: 100%;
@@ -593,7 +611,8 @@ Parallax section
   color: white;
   text-align: center;
   position: relative;
-  background-image: url("https://images.unsplash.com/photo-1502957291543-d85480254bf8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80");
+  /*background-image: url("https://images.unsplash.com/photo-1502957291543-d85480254bf8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80");*/
+  background-color: white;
 }
 
 .center-div {
@@ -742,9 +761,6 @@ margin-top: 5%;;
   background-color: orangered;
 }*/
 
-.fixed-top {
-  position: fixed !important;
-}
 
 .loc {
   background-image: url("https://toppng.com/uploads/preview/textured-backgrounds-for-websites-1155398483840bc0kagkc.jpg") !important;
@@ -775,6 +791,7 @@ margin-top: 5%;;
 .btn-3:hover {
   border: 4px solid transparent;
 }
+
 
 .card:hover {
   -webkit-box-shadow: -1px 9px 40px -12px rgba(65, 232, 234, 0.75);

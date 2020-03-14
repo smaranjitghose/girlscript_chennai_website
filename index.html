@@ -16,54 +16,57 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-<body>
+<body onLoad="typeWriter()">
     
-    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: darkblue">
-        <a class="navbar-brand" href="#"><a href="#">
-            <img src="assets/Images/gslogo.png" alt="" width="100px" height="100px">
-        </a></a>
+    <nav class="navbar fixed-top navbar-expand-lg">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-5">
             <li class="nav-item active">
-              <a class="nav-link item" href="#">Home</a>
+              <a class="nav-link item pr-4" href="#">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Announcements</a>
+              <a class="nav-link pr-4" href="#">ANNOUNCEMENTS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Team</a>
+              <a class="nav-link pr-4" href="#">OUR TEAM</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="achievements.html">Achievements</a>
+                <a class="nav-link pr-4" href="achievements.html">OUR ACHIEVEMENTS</a>
             </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Blogs</a>
+                <a class="nav-link pr-4" href="#">BLOGS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
+                <a class="nav-link pr-4" href="contact.html">CONTACT US</a>
             </li>
            
           </ul>
         </div>
       </nav>
-      <section class="header-section">
+    <section class="header-section">
         <div class="center-div">
-            <img src="https://www.gssoc.tech/images/type-logo.png" alt="" height="250em">
-            <h1 class="font-weight-bold text-white"> Chennai</h1>
-            <p></p>
-            <div class="header-buttons">
-                <a href="#"><i class="fa fa-github fa-2x mt-5 " style="color:#fff"></i></a>
-                <a href="#"><i class="fa fa-linkedin fa-2x mt-5 mx-3" style="color: #fff"></i></a>
-                <a href="#"><i class="fa fa-instagram fa-2x mt-5 mx-3" style="color: #fff;"></i></a>
-                <a href="#"><i class="fa fa-facebook fa-2x mt-5 mx-3" style="color: #fff;"></i></a></a> 
-                
-            </div>
+          <h1>WELCOME TO</h1>
+          <br>
+            <p id="typeit"></p>
         </div>
     </section>
-      </nav>
+    <script>
+      var i = 0;
+      var txt = 'GIRLSCRIPT CHENNAI';
+      var speed = 40;
+      
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("typeit").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+      </script>
+     
    
       <section class="about">
           <div class="container">
@@ -187,7 +190,7 @@
             </div>
         </div>
     </section>
-
+<!--
 <section class="team-section pt-5">
   <div class="container">
       <div class="row">
@@ -312,7 +315,7 @@
     </div>
     </div>          
 </section>
-
+-->
 
    <section class="map mt-5 loc">
         <h2 class="text-center font-weight-bold text-white mt-5">
