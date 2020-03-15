@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GirlScript | Chennai</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/Images/gs.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/themify-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/announcements.css" type="text/css">
+
+</head>
+<body onLoad="typeWriter()">
+
+    <nav class="navbar fixed-top navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-5">
+            <li class="nav-item active">
+              <a class="nav-link item pr-4" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pr-4" href="#">ANNOUNCEMENTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pr-4" href="#">OUR TEAM</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link pr-4" href="achievements.html">OUR ACHIEVEMENTS</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link pr-4" href="#">BLOGS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link pr-4" href="contact.html">CONTACT US</a>
+            </li>
+           
+          </ul>
+        </div>
+    </nav>
+      
+    <div id="head">
+        <h1 id="heading"></h1>
+    </div>
+    <script>
+        var i = 0;
+        var txt = 'ANNOUNCEMENTS';
+        var speed = 80;
+      
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("heading").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+    </script>
+
+    <marquee behavior="scroll" direction="left" id="scroll1">
+        Here is some scrolling text... right to left!
+    </marquee>
+
+    <br><br><br>
+    <h2 class="events">Upcoming Events</h2>
+    <br>
+    <div class="flexcontainer" id="box">
+        <div class="columns"><img src="assets/Images/event1.png" alt="" ></div>
+        <div class="columns" id="sbox">
+            <div class="d-flex flex-column">
+                <div class="p-2"><a href="event1.html" id="event1">Event 1 Organised By Community</a></div>
+
+
+                <div class="p-2">
+                    <div class="d-flex flex-row">
+                        <div class="p-2" id="in1"><img src="assets/Images/calendar.png" id="img1">Mar 15,2020</div>
+                        <div class="p-2" id="in1"><img src="assets/Images/location.png" id="img2">Dwarka,Delhi</div>
+                    </div>
+                </div>
+
+
+                <div class="p-2" id="in2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,nown printer.
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+
+    <div class="flexcontainer" id="box">
+        <div class="columns"><img src="assets/Images/event3.jpg" alt="" class="wdn-stretch rounded-corners"height="100%"></div>
+        <div class="columns" id="sbox">
+            <div class="d-flex flex-column">
+                <div class="p-2"><a href="event1.html" id="event1">Event 1 Organised By Community</a></div>
+
+
+                <div class="p-2">
+                    <div class="d-flex flex-row">
+                        <div class="p-2" id="in1"><img src="assets/Images/calendar.png" id="img1">Mar 15,2020</div>
+                        <div class="p-2" id="in1"><img src="assets/Images/location.png" id="img2">Dwarka,Delhi</div>
+                    </div>
+                </div>
+
+
+                <div class="p-2" id="in2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,nown printer.
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+   
+    <h2 class="events">Recent Events </h2>
+    <br>
+
+    <div class="flexcontainer" id="box">
+        <div class="columns"><img src="assets/Images/event4.jpg" alt="" class="wdn-stretch rounded-corners"height="100%"></div>
+        <div class="columns" id="sbox">
+            <div class="d-flex flex-column">
+                <div class="p-2"><a href="event1.html" id="event1">Event 1 Organised By Community</a></div>
+
+
+                <div class="p-2">
+                    <div class="d-flex flex-row">
+                        <div class="p-2" id="in1"><img src="assets/Images/calendar.png" id="img1">Mar 15,2020</div>
+                        <div class="p-2" id="in1"><img src="assets/Images/location.png" id="img2">Dwarka,Delhi</div>
+                    </div>
+                </div>
+
+
+                <div class="p-2" id="in2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,nown printer.
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+ 
+
+    <div class="flexcontainer" id="box">
+        <div class="columns"><img src="assets/Images/event2.jpg" alt="" class="wdn-stretch rounded-corners"height="100%"></div>
+        <div class="columns" id="sbox">
+            <div class="d-flex flex-column">
+                <div class="p-2"><a href="event1.html" id="event1">Event 1 Organised By Community</a></div>
+
+
+                <div class="p-2">
+                    <div class="d-flex flex-row">
+                        <div class="p-2" id="in1"><img src="assets/Images/calendar.png" id="img1">Mar 15,2020</div>
+                        <div class="p-2" id="in1"><img src="assets/Images/location.png" id="img2">Dwarka,Delhi</div>
+                    </div>
+                </div>
+
+
+                <div class="p-2" id="in2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,nown printer.
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    </body>
+</html>
