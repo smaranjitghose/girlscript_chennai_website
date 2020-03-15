@@ -79,6 +79,13 @@ ol {
   font-weight: bold;
   color: rgb(247, 95, 39);
 }
+
+About 
+--------------------*/
+.about{
+  background-color: #fffbfb;
+}
+
 /*-----------
 Nav bar
 ---------------------*/
@@ -627,7 +634,7 @@ Parallax section
   -webkit-transform: translate(-50%, -50%);
 }
 .img-logo {
-  height: 30rem;
+  height: 10rem;
 }
 .spread {
   background: linear-gradient(
@@ -992,7 +999,7 @@ li.tns-item{
 }
 
 section.module.parallax-spl {
-  height: 700px;
+  height: 760px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -1013,3 +1020,4 @@ section.module.parallax-spl {
 #contact-info img{
   padding: 30px;
 }
+
