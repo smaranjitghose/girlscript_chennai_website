@@ -1066,4 +1066,34 @@ section.module.parallax-spl {
     background-color: white;
     border: 2px solid #f47621;
   }
+section-head h1:before {
+            content: "";
+            width: 1px;
+            height: 35px;
+            background: #f24259;
+            position: absolute;
+            left: -1px;
+            bottom: 0;
+            box-sizing: border-box;
+          }
 
+          .form {
+            border: 1px solid orangered;
+            color: #fff;
+            padding: 10px 30px;
+            margin-top: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            position: relative;
+            background: linear-gradient(to right, white 50%,orangered 50%);
+            background-size: 200% 100%;
+            background-position: right bottom;
+            transition: all 0.2s ease-in;
+            
+          }
+
+          .form:hover {
+            background-color: orangered;
+            color: orangered;
+            background-position: left bottom;
+          }
