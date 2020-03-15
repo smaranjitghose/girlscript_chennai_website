@@ -16,103 +16,151 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-<body>
+<body onLoad="typeWriter()">
     
-    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: darkblue">
-        <a class="navbar-brand" href="#"><a href="#">
-            <img src="assets/Images/gslogo.png" alt="" width="100px" height="100px">
-        </a></a>
+    <nav class="navbar fixed-top navbar-expand-lg">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-5">
             <li class="nav-item active">
-              <a class="nav-link item" href="#">Home</a>
+              <a class="nav-link item pr-4" href="#">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Announcements</a>
+              <a class="nav-link pr-4" href="#">ANNOUNCEMENTS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Team</a>
+              <a class="nav-link pr-4" href="#">OUR TEAM</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="achievements.html">Achievements</a>
+                <a class="nav-link pr-4" href="achievements.html">OUR ACHIEVEMENTS</a>
             </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Blogs</a>
+                <a class="nav-link pr-4" href="#">BLOGS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
+                <a class="nav-link pr-4" href="contact.html">CONTACT US</a>
             </li>
            
           </ul>
         </div>
       </nav>
-      <section class="header-section">
-        <div class="center-div">
-            <img src="https://www.gssoc.tech/images/type-logo.png" alt="" height="250em">
-            <h1 class="font-weight-bold text-white"> Chennai</h1>
-            <p></p>
-            <div class="header-buttons">
-                <a href="#"><i class="fa fa-github fa-2x mt-5 " style="color:#fff"></i></a>
-                <a href="#"><i class="fa fa-linkedin fa-2x mt-5 mx-3" style="color: #fff"></i></a>
-                <a href="#"><i class="fa fa-instagram fa-2x mt-5 mx-3" style="color: #fff;"></i></a>
-                <a href="#"><i class="fa fa-facebook fa-2x mt-5 mx-3" style="color: #fff;"></i></a></a> 
-                
-            </div>
-        </div>
-    </section>
-      </nav>
+      <section class="module parallax-spl">
+  		<div class="container">
+
+    		<section class="header-section">
+       		 <div class="center-div">
+         	 <h1 style="color: white">WELCOME TO</h1>
+          	 <br>
+            <p id="typeit"></p>
+        	</div>
+    		</section>
+		</div>
+	  </section>
+    <script>
+      var i = 0;
+      var txt = 'GIRLSCRIPT CHENNAI';
+      var speed = 70;
+      
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("typeit").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+      </script>
+     
    
-      <section class="about p-5" style="border-left: 12px solid #f47621;border-right: 12px solid #f47621;">
-          <div class="container p-5">
-            <h2 class="pt-4 text-center" style="color: black;font-weight: bold;">ABOUT <font color="#ff9933" style="font-weight: 400;">GIRLSCRIPT</font></h2>
-              <div class="row">
-                  <div class="col-lg-10 col-md-6 col-sm-12 mt-5">
-                    
-                      <p class="mt-2 mb-3" style="font-size: 17px;text-align: justify;color: black;">GirlScript Foundation, a non-profit registered by Government of India, has come up with a unique and India's first women oriented technical festival.
-                      <br><br>GirlScript started as a project has been selected by Mozilla under Open Leadership program out of 51 open-source projects worldwide. The main motto of GirlScript is not only to encourage gender equality in technical sector but also to help all the beginner in technology who are clueless at the starting phase of their education.</p>
-                  </div>
-                  <div class="col-lg-2" style="text-align: center;">
-                    <img src="assets/Images/gs_chennai_logo2.png" class="mt-5 ml-2 img-logo" alt="">
-                  </div>
+     <section class="about p-5" style="border-left: 12px solid #f47621;border-right: 12px solid #f47621;">
+      <div class="container p-5">
+        <h2 class="pt-4 text-center" style="color: black;font-weight: bold;">ABOUT <font color="#ff9933" style="font-weight: 400;">GIRLSCRIPT</font></h2>
+          <div class="row">
+              <div class="col-lg-10 col-md-6 col-sm-12 mt-5">
+                
+                  <p class="mt-2 mb-3" style="font-size: 17px;text-align: justify;color: black;">GirlScript Foundation, a non-profit registered by Government of India, has come up with a unique and India's first women oriented technical festival.
+                  <br><br>GirlScript started as a project has been selected by Mozilla under Open Leadership program out of 51 open-source projects worldwide. The main motto of GirlScript is not only to encourage gender equality in technical sector but also to help all the beginner in technology who are clueless at the starting phase of their education.</p>
               </div>
-              
+              <div class="col-lg-2" style="text-align: center;">
+                <img src="assets/Images/gs_chennai_logo2.png" class="mt-5 ml-2 img-logo" alt="">
+              </div>
           </div>
-      </section>
+          
+      </div>
+  </section>
 <!--
-      <section class="about-gssoc" style="background-color: orangered;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <img src="assets/Images/gslogo.png" class="mt-1 img-logo" alt="">
-                  </div>
+  <section class="about-gssoc" style="background-color: orangered;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="assets/Images/gslogo.png" class="mt-1 img-logo" alt="">
+              </div>
 
-                  <div class="col-lg-6">
-                    <h2 class="font-weight-bold text-uppercase mt-5">About Gssoc</h2>
-                    <p class="mt-5 text-white">GirlScript Summer of Code is the 3 month long Open Source program during summers conducted by GirlScript Foundation, started in 2018, with an aim to help beginners get started with Open Source Development while encouraging diversity. Throughout the program, participants contribute to different projects under guidance of experienced mentors. Top participants get exciting goodies and opportunities.</p>
-                    <p class="text-white">GirlScript Summer of Code 2019 witnessed overwhelming participation and 2020 edition will carry the legacy forward while promising to be even more impactful and grand.</p>
-                    <button class="btn btn-info btn-lg spread"><a href="https://drive.google.com/file/d/1ceKeoNc4w8Hp6zt3Q0r6oON0WEZRn3cW/view" class="text-white">  Spread The Word</a> </button>
-                  </div>
-            </div>
+              <div class="col-lg-6">
+                <h2 class="font-weight-bold text-uppercase mt-5">About Gssoc</h2>
+                <p class="mt-5 text-white">GirlScript Summer of Code is the 3 month long Open Source program during summers conducted by GirlScript Foundation, started in 2018, with an aim to help beginners get started with Open Source Development while encouraging diversity. Throughout the program, participants contribute to different projects under guidance of experienced mentors. Top participants get exciting goodies and opportunities.</p>
+                <p class="text-white">GirlScript Summer of Code 2019 witnessed overwhelming participation and 2020 edition will carry the legacy forward while promising to be even more impactful and grand.</p>
+                <button class="btn btn-info btn-lg spread"><a href="https://drive.google.com/file/d/1ceKeoNc4w8Hp6zt3Q0r6oON0WEZRn3cW/view" class="text-white">  Spread The Word</a> </button>
+              </div>
         </div>
-        <br>
-      </section>
-      <br>
-    -->
+    </div>
+    <br>
+  </section>
+  <br>
+-->
 
-      <section class="initiative" style="border-left: 12px solid #f47621;border-right: 12px solid #f47621;">
-          <div class="container p-3">
-            <h2 class="pt-4 text-center" style="color: black;font-weight: bold;">OUR <font color="#ff9933" style="font-weight: 100;">INITIATIVES</font></h2>
-            <div class="container p-5">
-          <div class="row pl-3 pb-5 pt-4">
-          <div class="col-lg-4 col-md-6">
+  <section class="initiative" style="border-left: 12px solid #f47621;border-right: 12px solid #f47621;">
+      <div class="container p-3">
+        <h2 class="pt-4 text-center" style="color: black;font-weight: bold;">OUR <font color="#ff9933" style="font-weight: 100;">INITIATIVES</font></h2>
+        <div class="container p-5">
+      <div class="row pl-3 pb-5 pt-4">
+      <div class="col-lg-4 col-md-6">
+      <div class="program-card">
+          <div class="program-card-inner">
+            <div class="program-card-front">
+              <img src="assets/Images/gslogo.png" alt="Image" style="width:250px;height:250px;">
+              <h4 class="font-weight-bold mt-1 mb-3" style="color:#ff9933;">Workshop 1</h4>
+             
+            </div>
+            <div class="program-card-back">
+              <h4 class="font-weight-bold mt-3 p-2">
+                  <strong style="color:#ff9933;">About</strong>
+                </h4>
+                <p class="p-3" style="text-align:justify;color: black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae, dolores dicta.
+                  Blanditiis rem amet repellat, dolores nihil quae in mollitia asperiores ut rerum repellendus,
+                  voluptatum eum, officia laudantium quaerat?
+                </p>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
           <div class="program-card">
               <div class="program-card-inner">
                 <div class="program-card-front">
                   <img src="assets/Images/gslogo.png" alt="Image" style="width:250px;height:250px;">
-                  <h4 class="font-weight-bold mt-1 mb-3" style="color:#ff9933;">Workshop 1</h4>
+                  <h4 class="font-weight-bold mt-1 mb-3" style="color:#ff9933;">Workshop 2</h4>
+                  
+                </div>
+                <div class="program-card-back">
+                  <h4 class="font-weight-bold mt-3 p-2">
+                      <strong style="color:#ff9933;">About</strong>
+                    </h4>
+                    <p class="p-3" style="text-align:justify;color: black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae, dolores dicta.
+                      Blanditiis rem amet repellat, dolores nihil quae in mollitia asperiores ut rerum repellendus,
+                      voluptatum eum, officia laudantium quaerat?
+                    </p>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="program-card">
+              <div class="program-card-inner">
+                <div class="program-card-front">
+                  <img src="assets/Images/gslogo.png" alt="Image" style="width:250px;height:250px;">
+                  <h4 class="font-weight-bold mt-1 mb-3" style="color:#ff9933;">Workshop 3</h4>
                  
                 </div>
                 <div class="program-card-back">
@@ -127,84 +175,44 @@
               </div>
             </div>
             </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="program-card">
-                  <div class="program-card-inner">
-                    <div class="program-card-front">
-                      <img src="assets/Images/gslogo.png" alt="Image" style="width:250px;height:250px;">
-                      <h4 class="font-weight-bold mt-1 mb-3" style="color:#ff9933;">Workshop 2</h4>
-                      
-                    </div>
-                    <div class="program-card-back">
-                      <h4 class="font-weight-bold mt-3 p-2">
-                          <strong style="color:#ff9933;">About</strong>
-                        </h4>
-                        <p class="p-3" style="text-align:justify;color: black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae, dolores dicta.
-                          Blanditiis rem amet repellat, dolores nihil quae in mollitia asperiores ut rerum repellendus,
-                          voluptatum eum, officia laudantium quaerat?
-                        </p>
-                    </div>
-                  </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="program-card">
-                  <div class="program-card-inner">
-                    <div class="program-card-front">
-                      <img src="assets/Images/gslogo.png" alt="Image" style="width:250px;height:250px;">
-                      <h4 class="font-weight-bold mt-1 mb-3" style="color:#ff9933;">Workshop 3</h4>
-                     
-                    </div>
-                    <div class="program-card-back">
-                      <h4 class="font-weight-bold mt-3 p-2">
-                          <strong style="color:#ff9933;">About</strong>
-                        </h4>
-                        <p class="p-3" style="text-align:justify;color: black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae, dolores dicta.
-                          Blanditiis rem amet repellat, dolores nihil quae in mollitia asperiores ut rerum repellendus,
-                          voluptatum eum, officia laudantium quaerat?
-                        </p>
-                    </div>
-                  </div>
-                </div>
-                </div>
-            </div>
+        </div>
+        
+        </div>   
+        <p class="text-center pb-5"><a href="#" class="inibtn">KNOW MORE</a></p> 
+      </div>
+    </section>
             
-            </div>   
-            <p class="text-center pb-5"><a href="#" class="inibtn">KNOW MORE</a></p> 
+      <!--    <div class="row">
+              <div class="col-md-6 col-sm-12 mt-5">
+                  <h2 class="font-weight-bold" style="color: palevioletred;">CodePreneur Week</h2>
+                  <p class="mt-4">
+                    One week fully funded residential learning and interacting program for students across India. For every track, 25 students will be selected (on the basis of a rigorous selection process) for which GirlScript foundation will pay for their travel, accomodation, food, certificate, swags and learning materials. Tracks for Codepreneur Week 2019 are -</p>
+                    <ul>
+                        <li>Game Development</li>
+                        <li>Cloud Computing</li>
+                        <li>Cyber Security</li>
+                        <li>Design for Future</li>
+                        <li>BlockChain</li>
+                    </ul>
+                    <button class="btn btn-lg btn-info mt-4 code"><a href="http://codepreneur.girlscript.tech/" height="400px" class="text-white">Read More</a></button>
+                </div>
+                <div class="col-md-6 col-sm-12 mt-5">
+                    <img src="http://codepreneur.girlscript.tech/images/cp-logo-black.png" alt="" height="455px">
+                </div>
           </div>
-        </section>
-                
-          <!--    <div class="row">
-                  <div class="col-md-6 col-sm-12 mt-5">
-                      <h2 class="font-weight-bold" style="color: palevioletred;">CodePreneur Week</h2>
-                      <p class="mt-4">
-                        One week fully funded residential learning and interacting program for students across India. For every track, 25 students will be selected (on the basis of a rigorous selection process) for which GirlScript foundation will pay for their travel, accomodation, food, certificate, swags and learning materials. Tracks for Codepreneur Week 2019 are -</p>
-                        <ul>
-                            <li>Game Development</li>
-                            <li>Cloud Computing</li>
-                            <li>Cyber Security</li>
-                            <li>Design for Future</li>
-                            <li>BlockChain</li>
-                        </ul>
-                        <button class="btn btn-lg btn-info mt-4 code"><a href="http://codepreneur.girlscript.tech/" height="400px" class="text-white">Read More</a></button>
-                    </div>
-                    <div class="col-md-6 col-sm-12 mt-5">
-                        <img src="http://codepreneur.girlscript.tech/images/cp-logo-black.png" alt="" height="455px">
-                    </div>
-              </div>
-          </div>-->
-    
+      </div>-->
 
-    
 
-      <section class="mb-5">
-        <div class="parallax1"></div>
-      </section>
 
-      
-    <section class="counter-section spad">
-      <h2 class="pt-2 pb-5 text-center" style="color: black;font-weight: bold;">OUR <font color="#ff9933" style="font-weight: 100;">ACHIEVEMENTS</font></h2>
-        <div class="container">
+
+  <section class="mb-5">
+    <div class="parallax1"></div>
+  </section>
+
+  
+<section class="counter-section spad">
+  <h2 class="pt-2 pb-5 text-center" style="color: black;font-weight: bold;">OUR <font color="#ff9933" style="font-weight: 100;">ACHIEVEMENTS</font></h2>
+          <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="counter-text">
@@ -257,7 +265,7 @@
             </div>
         </div>
     </section>
-
+<!--
 <section class="team-section pt-5">
   <div class="container">
       <div class="row">
@@ -382,7 +390,7 @@
     </div>
     </div>          
 </section>
-
+-->
 
    <section class="map mt-5 loc">
         <h2 class="text-center font-weight-bold text-white mt-5">
