@@ -79,12 +79,13 @@ ol {
   font-weight: bold;
   color: rgb(247, 95, 39);
 }
-/*------------------
+
 About 
 --------------------*/
 .about{
   background-color: #fffbfb;
 }
+
 /*-----------
 Nav bar
 ---------------------*/
@@ -1065,3 +1066,4 @@ section.module.parallax-spl {
     background-color: white;
     border: 2px solid #f47621;
   }
+
