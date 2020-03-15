@@ -7,6 +7,10 @@
     <link rel="icon" href="assets/Images/gs.png" type="image/png" sizes="16x16">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
@@ -48,38 +52,83 @@
           </ul>
         </div>
     </nav>
+    <div class="container" id="container">
+        <div class="row">
+            <div class="col" >
+                <img src="assets/Images/GirlScriptChennaiLogo.png" height="100%" width="150%">
+            </div>  
+            <div id="head" class="col-10">
+                <h1 id="heading"></h1>
+            </div>
+            <script>
+                var i = 0;
+                var txt = 'ANNOUNCEMENTS';
+                var speed = 80;
       
-    <div id="head">
-        <h1 id="heading"></h1>
+                function typeWriter() {
+                    if (i < txt.length) {
+                        document.getElementById("heading").innerHTML += txt.charAt(i);
+                        i++;
+                        setTimeout(typeWriter, speed);
+                    }
+                }
+            </script>
+        </div>
     </div>
-    <script>
-        var i = 0;
-        var txt = 'ANNOUNCEMENTS';
-        var speed = 80;
-      
-        function typeWriter() {
-            if (i < txt.length) {
-                document.getElementById("heading").innerHTML += txt.charAt(i);
-                i++;
-                setTimeout(typeWriter, speed);
-            }
-        }
-    </script>
-
     <marquee behavior="scroll" direction="left" id="scroll1">
         Here is some scrolling text... right to left! Here is some scrolling text... right to left! Here is some scrolling text... right to left!
     </marquee>
 
     <br><br><br>
+
+    <!--Carosel slideshow-->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="assets/Images/event3.jpg" alt="Los Angeles" width="100%">
+            </div>
+
+            <div class="item">
+                <img src="assets/Images/event3.jpg" alt="Chicago" width="100%">
+            </div>
+
+            <div class="item">
+                <img src="assets/Images/event3.jpg" alt="New York" width="100%">
+            </div>
+        </div>
+
+         <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div> 
+    <br><br><br><br><br><br><br><br>
+
+
+    <!--ends-->
+    
     <h2 class="events">Upcoming Events</h2>
-    <br>
+    <br><br><br>
     <div class="flexcontainer" id="box">
-        <div class="columns"><img src="assets/Images/event1.png" alt="" ></div>
+        <div class="columns"><img src="assets/Images/event1.png" alt="" height="100%" ></div>
         <div class="columns" id="sbox">
             <div class="d-flex flex-column">
-                <div class="p-2"><a href="event1.html" id="event1">Event 1 Organised By Community</a></div>
+                <div class="p-2"><a href="event1.html" id="event1">Hackathon Hack 2.0 </a></div>
 
-
+                <hr>
                 <div class="p-2">
                     <div class="d-flex flex-row">
                         <div class="p-2" id="in1"><img src="assets/Images/calendar.png" id="img1">Mar 15,2020</div>
@@ -94,7 +143,7 @@
             </div>
         </div>
     </div>
-    <br><br><br>
+    <br><br><br><br>
 
     <div class="flexcontainer" id="box">
         <div class="columns"><img src="assets/Images/event3.jpg" alt="" class="wdn-stretch rounded-corners"height="100%"></div>
@@ -117,40 +166,40 @@
             </div>
         </div>
     </div>
-    <br><br><br>
+    <br><br><br><br><br><br><br>
    
     <h2 class="events">Recent Events </h2>
     <br>
 
     <div class="card-group">
-        <div class="card">
+        <div class="card" >
             <img class="card-img-top" src="assets/Images/event4.jpg" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Card 1</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
             <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text1">Learn More</small>
             </div>
         </div>
-        <div class="card">
+        <div class="card" >
             <img class="card-img-top" src="assets/Images/event3.jpg" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Card 2</h5>
                 <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
             </div>
             <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text1">Learn More</small>
             </div>
         </div>
-        <div class="card">
+        <div class="card" >
             <img class="card-img-top" src="assets/Images/event1.png" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Card 3</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
             </div>
             <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text1">Learn More</small>
             </div>
         </div>
     </div>
@@ -158,36 +207,83 @@
     <br><br><br>
 <!-- Second Cards -->
     <div class="card-group">
-        <div class="card">
+        <div class="card" >
             <img class="card-img-top" src="assets/Images/event2.jpg" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Card 1</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
             <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text1">Learn More</small>
             </div>
         </div>
-        <div class="card">
+        <div class="card" >
             <img class="card-img-top" src="assets/Images/event4.jpg" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Card 2</h5>
                 <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
             </div>
             <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text1">Learn More</small>
             </div>
         </div>
-        <div class="card">
+        <div class="card" >
             <img class="card-img-top" src="assets/Images/event3.jpg" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Card 3</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
             </div>
             <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text1">Learn More</small>
             </div>
         </div>
     </div>
+
+    <br><br><br>
+
+    
+
+    <footer>
+        <div class=container>
+            <div class="row">
+                <div class="col-lg-6"><center>
+                    <img src="assets/Images/transparent_logo.png" alt="" class="logo">
+                </center>
+                </div>
+                <div class="col-lg-6">
+                    <br>
+                        
+                    <h3 class="footer-h">Join Our Newsletter</h3>
+                    <div class="border"></div>
+                    <p class="footer-p">Enter Your Email to get our news and updates.</p>
+                    <form action="" class="newsletter-form" >
+                    <input type="text" class="txtb" placeholder="Enter Your Email">
+                    <button class="btn btn-spl">Send</button>
+                    </form>
+
+                </div>
+            </div>
+           <center> 
+                    
+                    <div class="social-media">
+                    <a class="fa fa-twitter"  href="https://twitter.com/girlscriptch"></a>
+                    <a class="fa fa-instagram" href="https://www.instagram.com/girlscriptchennai/"></a>
+                    <a class="fa fa-github" href="https://github.com/girlscriptchennai"></a>
+                    <a class="fa fa-linkedin" href="https://www.linkedin.com/company/girlscript-chennai/"></a>
+                    </div>
+                    <h6 class="footer-h3">© 2020 GirlScript Chennai All Rights Reserved.</h6>
+      </center>
+        </div>
+   
+
+    </footer>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</html>
+
+
 </body>
 </html>

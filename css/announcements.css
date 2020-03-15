@@ -3,13 +3,21 @@ div.flexcontainer{
 	min-height: 30vh;
 
 }
+#container{
+	margin-top: 3%;
+	width:400%;
+}
+.row{
+	width:139%;
+	margin-left:-20%;
+}
 #event1:hover{
 	color: #C46100;
+	font-size:45px; 
 }
 
 div.columns{
     flex: 1;
- 
 }
  
 div.columns:nth-of-type(2){
@@ -34,7 +42,7 @@ img.rounded-corners{
 }
 
 #heading{
-	font-size: 350%; 
+	font-size: 700%; 
 	text-align: center;
 	  font-family: "Libre Franklin", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -42,15 +50,16 @@ img.rounded-corners{
 }
 
 #head{
-	margin-top: 4%;
+	
 	padding: 70px;
 	 margin: auto;
 	height:25%;
-	width:100%;	
+	width:120%;	
 	background-color: grey;
 }
 #scroll1{
 	color:#ff8c00;
+	font-size:180%;
 }
 h2{
 	margin-left: 10%;
@@ -60,7 +69,7 @@ h2{
 }
 #event1{
 	color: black;
-	font-size: 30px;
+	font-size: 35px;
 	
 }
 
@@ -71,11 +80,15 @@ h2{
 #in1{
 	width:50%;
 	color:	#FF7F50;
+	font-size:15px;
 }
 
+#in2{
+	font-size:25px;
+}
 #img1{
-	height:30px;
-	width:30px;
+	height:50px;
+	width:50px;
 }
 .card-group{
 	margin-left: 10%;
@@ -86,12 +99,21 @@ h2{
 	width:30px;
 }
 .card{
-	padding: 20px;
-}
+	padding: 10px;
+	border: 12px black;
 
-.card-body{
-	height:40%;
 }
 .card-img-top{
-	height:30%;
+	height:50%;
+}
+
+.card-title:hover{
+	color: grey;
+}
+.text1{
+	font-size:15px;
+}
+.text1:hover{
+	color:orange;
+	font-size: 25px;
 }
