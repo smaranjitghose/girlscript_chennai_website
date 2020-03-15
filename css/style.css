@@ -74,8 +74,6 @@ ol {
   padding: 0;
   margin: 0;
 }
-<<<<<<< Updated upstream
-=======
 #typeit{
   font-size: 100px;
   font-weight: bold;
@@ -100,7 +98,6 @@ Nav bar
   font-weight: bold;
   font-size: 12px;
 }
->>>>>>> Stashed changes
 
 /*---------------------
   Header
@@ -967,9 +964,6 @@ li.tns-item{
   display: block;
 }
 
-<<<<<<< Updated upstream
-
-=======
 section.module.parallax-spl {
   height: 760px;
   background-position: 50% 50%;
@@ -1039,5 +1033,4 @@ section.module.parallax-spl {
     background-color: white;
     border: 2px solid #f47621;
   }
->>>>>>> Stashed changes
 
