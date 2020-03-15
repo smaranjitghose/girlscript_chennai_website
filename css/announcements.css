@@ -29,7 +29,8 @@ img.rounded-corners{
 }
 
 .events{
-	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-family: "Libre Franklin", sans-serif;
+  -webkit-font-smoothing: antialiased;
 	font-size:40px;
 	border-radius: 25px;
 	padding: 10px;
@@ -43,8 +44,7 @@ img.rounded-corners{
 #heading{
 	font-size: 700%; 
 	text-align: center;
-	  font-family: "Libre Franklin", sans-serif;
-  -webkit-font-smoothing: antialiased;
+	  font-family: "Comic Sans MS", cursive, sans-serif;
 	color: white;                                   
 }
 
