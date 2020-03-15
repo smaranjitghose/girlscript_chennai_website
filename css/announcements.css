@@ -3,6 +3,10 @@ div.flexcontainer{
 	min-height: 30vh;
 
 }
+#event1:hover{
+	color: #C46100;
+}
+
 div.columns{
     flex: 1;
  
@@ -17,7 +21,9 @@ img.rounded-corners{
 }
 
 .events{
-	
+	font-family: "Libre Franklin", sans-serif;
+  -webkit-font-smoothing: antialiased;
+	font-size:40px;
 	border-radius: 25px;
 	padding: 10px;
 }
@@ -55,6 +61,7 @@ h2{
 #event1{
 	color: black;
 	font-size: 30px;
+	
 }
 
 #box {
@@ -70,8 +77,21 @@ h2{
 	height:30px;
 	width:30px;
 }
+.card-group{
+	margin-left: 10%;
 
+}
 #img2{
 	height:30px;
 	width:30px;
+}
+.card{
+	padding: 20px;
+}
+
+.card-body{
+	height:40%;
+}
+.card-img-top{
+	height:30%;
 }
