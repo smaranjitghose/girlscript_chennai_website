@@ -257,7 +257,6 @@ Nav bar
 
 .about-us-section {
   background-color: orangered;
-  background-image: linear-gradient(to bottom left, #ffcc66,#ff4000);
 }
 
 .section-title h2 {
@@ -1006,18 +1005,65 @@ section.module.parallax-spl {
   background-size: cover;
   background-image: url("https://images.unsplash.com/photo-1502957291543-d85480254bf8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80");;
 }
-/*---------------------
-  Contact Us
------------------------*/
-/*---------------------
-  Contact Info
------------------------*/
 
-#contact-info{
-  background-color: brown;
-  background-image: linear-gradient(to bottom right, #ff4000, #ffcc66);
-}
-#contact-info img{
-  padding: 30px;
-}
+
+/*---------------------
+ Initiatives Section
+ ----------------------*/
+ .program-section {
+	background:white;
+	padding:40px;
+}	
+
+ .program-card {
+	background-color: transparent;
+	width: 300px;
+	height: 300px;
+	perspective: 1000px;
+  }
+
+  .program-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+
+  .program-card:hover .program-card-inner {
+	transform: rotateY(180deg);
+  }
+
+  .program-card-front, .program-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+  }
+
+  .program-card-back {
+	transform: rotateY(180deg);
+  }
+
+  .inibtn{
+    padding: 18px 40px;
+    font-size: 16px;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    background-color: #f47621;
+    color: white;
+  }
+  
+  .inibtn:hover{
+    color: #f47621;
+    background-color: white;
+    border: 2px solid #f47621;
+  }
 
