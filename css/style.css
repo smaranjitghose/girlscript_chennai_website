@@ -80,6 +80,7 @@ ol {
   color: rgb(247, 95, 39);
 }
 
+/*-------------------
 About 
 --------------------*/
 .about{
@@ -633,7 +634,7 @@ Parallax section
   -webkit-transform: translate(-50%, -50%);
 }
 .img-logo {
-  height: 10rem;
+  height: 16rem;
 }
 .spread {
   background: linear-gradient(
@@ -1012,13 +1013,13 @@ section.module.parallax-spl {
  ----------------------*/
  .program-section {
 	background:white;
-	padding:40px;
+	padding:30px;
 }	
 
  .program-card {
 	background-color: transparent;
-	width: 300px;
-	height: 300px;
+	width: 200px;
+	height: 200px;
 	perspective: 1000px;
   }
 
@@ -1030,6 +1031,11 @@ section.module.parallax-spl {
 	transition: transform 0.6s;
 	transform-style: preserve-3d;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+
+  .program-card img{
+    height: 100px;
+    width: 100px;
   }
 
   .program-card:hover .program-card-inner {
@@ -1045,7 +1051,7 @@ section.module.parallax-spl {
   }
 
   .program-card-back {
-	transform: rotateY(180deg);
+  transform: rotateY(180deg);
   }
 
   .inibtn{
