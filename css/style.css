@@ -84,7 +84,7 @@ ol {
 About 
 --------------------*/
 .about{
-  background-color: #fffbfb;
+  background-color: #F5F5F5;
 }
 
 /*-----------
@@ -400,12 +400,22 @@ Parallax section
   background-size: cover;
 } 
 
+.parashadow{
+  background: white;
+  position: relative;
+ -webkit-filter: grayscale(100%);
+ filter: grayscale(100%);
+ opacity: 0.4;
+ height: 400px;
+ width: 100%;
+}
+
 /*------------------
   Join Us Section
 -------------------- */
 
 .newsection{
-  background-color: #F5F5F5;
+  background-color: white;
 }
 
 .joinus-text {
@@ -643,12 +653,6 @@ Parallax section
     rgba(14, 50, 224, 1) 92%
   );
   box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
-}
-.vertical {
-  border-left: 6px solid orangered;
-  height: 200px;
-  position: absolute;
-  left: 45%;
 }
 
 .code:hover {
@@ -1072,4 +1076,62 @@ section.module.parallax-spl {
     background-color: white;
     border: 2px solid #f47621;
   }
+
+  /*-----------------
+  Achievements 
+  -------------------*/
+  .achieve{
+    background-color: #F5F5F5;
+  }
+
+  .atitle h2 {
+    font-size: 40px;
+    color: black;
+  }
+
+  .vertical {
+    border-left: 6px solid #f47621;
+    height: 280px;
+    position: absolute;
+    left: 45%;
+  }
+  
+  .counter-item .ci-number {
+    font-size: 48px;
+    color: black;
+    font-weight: 700;
+    line-height: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .counter-item .ci-text h4 {
+    font-size: 22px;
+    color: black;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  .anibtn{
+    padding: 16px 30px;
+    font-size: 16px;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    background-color: #f47621;
+    color: white;
+  }
+  
+  .anibtn:hover{
+    color: #f47621;
+    background-color: white;
+    border: 2px solid #f47621;
+  }
+  
+  
+  
 
