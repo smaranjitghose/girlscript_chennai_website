@@ -1,23 +1,192 @@
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+#head1{
+    text-align: center;
+    margin-top: 4%;
+    animation-name: example2;
+    animation-duration: 4s;
+    font-size: 80px;
+    font-style: "Algerian";
+    color:grey;
+    text-shadow: 3px 3px black;
+
+}    
+#head2{
+    text-align: center;
+    font-size: 150px;
+    font-family:"trajan-color";
+    color:white;
+    text-shadow: 8px 8px black;
+     animation-name: example2;
+    animation-duration: 4s;
+} 
+
+.row{
+    margin:20px;
+    padding: 20px;
+
 }
 
-/* Add some content at the bottom of the video/page */
-.content {
-  position: fixed;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
+#logo1{
+    font-size:20px;
+    font-style: "Algerian";
+    color:grey;
+    text-shadow: 1px 1px black;
+    
+    margin-left: 37%;
+    animation-name: example3;
+    animation-duration: 4s;
+
+}
+#logo2{
+    font-size:20px;
+    margin-left: 39%;
+    font-style: "Algerian";
+    color:grey;
+    text-shadow: 1px 1px black;
+    animation-name: example4;
+    animation-duration: 4s;
+
+}
+
+button{
+    margin-left:45%;
+    font-size: 35px;
+    font-family: "Italics";
+    color:grey;
+    text-shadow: 1px 1px black;
+    background-color:black;
+    border-radius: 12px;
+    animation-name: example5;
+    animation-duration: 4s;
+}
+
+button:hover{
+    color:green;
+}
+
+#about{
+    font-size: 70px;
+    color:; 
+    font-family:var(--font-family-1);
+    color:orange;
+    text-shadow:1px 1px black;
+   text-align:center;
+   border-bottom: 3px solid black;
+}
+#para{
+    font-size:30px;
+    text-align:center;
+    background-color: lightgrey;
+    color:;
+    font-style: italic;
+}
+.second{
+    animation-name: example;
+    animation-duration: 4s; 
+    border-bottom-color: 2px solid black;
+}
+.third{
+    animation-name: example;
+    animation-duration: 4s; 
+    border-bottom-color: 2px solid black;
+    font-size: 70px;
+    
+    font-family:var(--font-family-1);
+    color:orange;
+    text-shadow:1px 1px black;
+   text-align:center;
+   border-bottom: 3px solid black;
+
+}
+.fourth{
+    animation-name: example;
+    animation-duration: 4s; 
+    border-bottom-color: 2px solid black;
+    font-size: 70px;
+    
+    font-family:var(--font-family-1);
+    color:orange;
+    text-shadow:1px 1px black;
+   text-align:center;
+   border-bottom: 3px solid black;
+
+}
+.schedule{
+    background-color: black;
+  border-radius:70px;
+  
   padding: 20px;
+  margin: 30px;
 }
+.schedule:hover{
+    border:5px solid orange;
+}
+#register{
+    font-size: 50px;
+    margin-top: 30px;
+    color:white;
+}
+#time{
+    margin-top:40px;
+    color:white; 
+}
+#desc{
+    margin-top:30px;
+    color:white;
+    font-style: italic;
 
-#hack20{
-  margin-left:60%;
-  color:white;
-  font-style: italic;
+}
+#ques{
+    margin-top: 50px;
+    font-size:30px;
+    margin-left: 20px;
+    text-align: center;
+}
+#ans{
+    text-align: center;
+    margin-left: 20px;
+    font-size:20px;
+}
+@keyframes example{
+    0% {
+        margin-left: 300px;
+    }
+    100%{
+        margin-left:20px;
+    }
+}
+@keyframes example2{
+    0%{
+        margin-left: 300px;
+    }
+    100%{
+        margin-left: 0px;
+        
+    }
+}
+@keyframes example3{
+    0%{
+        margin-left: 300px;
+    }
+    100%{
+        margin-left: 37%;
+        
+    }
+}
+@keyframes example4{
+    0%{
+        margin-left: 300px;
+    }
+    100%{
+        margin-left: 39%;
+        
+    }
+}
+@keyframes example5{
+    0%{
+        margin-left: 300px;
+    }
+    100%{
+        margin-left: 45%;
+        
+    }
 }
