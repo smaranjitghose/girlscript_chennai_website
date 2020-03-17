@@ -1077,61 +1077,34 @@ section.module.parallax-spl {
     border: 2px solid #f47621;
   }
 
-  /*-----------------
-  Achievements 
-  -------------------*/
-  .achieve{
-    background-color: #F5F5F5;
-  }
+section-head h1:before {
+            content: "";
+            width: 1px;
+            height: 35px;
+            background: #f24259;
+            position: absolute;
+            left: -1px;
+            bottom: 0;
+            box-sizing: border-box;
+          }
 
-  .atitle h2 {
-    font-size: 40px;
-    color: black;
-  }
+          .form {
+            border: 1px solid orangered;
+            color: #fff;
+            padding: 10px 30px;
+            margin-top: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            position: relative;
+            background: linear-gradient(to right, white 50%,orangered 50%);
+            background-size: 200% 100%;
+            background-position: right bottom;
+            transition: all 0.2s ease-in;
+            
+          }
 
-  .vertical {
-    border-left: 6px solid #f47621;
-    height: 280px;
-    position: absolute;
-    left: 45%;
-  }
-  
-  .counter-item .ci-number {
-    font-size: 48px;
-    color: black;
-    font-weight: 700;
-    line-height: 50px;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-  
-  .counter-item .ci-text h4 {
-    font-size: 22px;
-    color: black;
-    font-weight: 700;
-    margin-bottom: 12px;
-  }
-
-  .anibtn{
-    padding: 16px 30px;
-    font-size: 16px;
-    border: none;
-    font-weight: 700;
-    outline: none;
-    border-radius: 30px;
-    margin-left: 20px;
-    cursor: pointer;
-    background-color: #f47621;
-    color: white;
-  }
-  
-  .anibtn:hover{
-    color: #f47621;
-    background-color: white;
-    border: 2px solid #f47621;
-  }
-  
-  
-  
-
+          .form:hover {
+            background-color: orangered;
+            color: orangered;
+            background-position: left bottom;
+          }
