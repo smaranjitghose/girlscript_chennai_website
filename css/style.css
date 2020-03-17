@@ -84,7 +84,7 @@ ol {
 About 
 --------------------*/
 .about{
-  background-color: #fffbfb;
+  background-color: #F5F5F5;
 }
 
 /*-----------
@@ -400,12 +400,22 @@ Parallax section
   background-size: cover;
 } 
 
+.parashadow{
+  background: white;
+  position: relative;
+ -webkit-filter: grayscale(100%);
+ filter: grayscale(100%);
+ opacity: 0.4;
+ height: 400px;
+ width: 100%;
+}
+
 /*------------------
   Join Us Section
 -------------------- */
 
 .newsection{
-  background-color: #F5F5F5;
+  background-color: white;
 }
 
 .joinus-text {
@@ -643,12 +653,6 @@ Parallax section
     rgba(14, 50, 224, 1) 92%
   );
   box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
-}
-.vertical {
-  border-left: 6px solid orangered;
-  height: 200px;
-  position: absolute;
-  left: 45%;
 }
 
 .code:hover {
@@ -1143,3 +1147,4 @@ section.module.parallax-spl {
         font-size: 50px;
     }
 }
+
