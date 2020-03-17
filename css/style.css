@@ -1077,34 +1077,74 @@ section.module.parallax-spl {
     border: 2px solid #f47621;
   }
 
-section-head h1:before {
-            content: "";
-            width: 1px;
-            height: 35px;
-            background: #f24259;
-            position: absolute;
-            left: -1px;
-            bottom: 0;
-            box-sizing: border-box;
-          }
+@media screen and (max-width: 1024px) {
+    #typeit{
+        font-size: 80px;
+    }
+    .center-div{
+        top:30%;
+    }
+    section.module.parallax-spl{
+        height:55vh;
+    }
+}
+@media screen and (max-width: 770px) {
+    #typeit{
+        font-size: 60px;
+    }
+    .center-div h1{
+        font-size: 40px;
+    }
+    .section-title h2{
+  font-size: 30px;
+    }
+    .vertical {
+  left: 30%;
+    }
+    .counter-item .ci-number {
+  font-size: 38px;
+  left: 10%;
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    section.module.parallax-spl{
+        height:70vh;
+    }
+    .center-div{
+        top:40%;
+    }
+    #typeit{
+        line-height: 50px;
+    }
+    .section-title h2{
+     line-height: 1.5em;
+     text-align: center;
+    }
+    .counter-text .btn{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .counter-text .section-title{
+        margin-bottom: 10px;
+    }
+    .vertical{
+        left:8%;
+        margin-top: 45%;
+        height:352px;
+    }
+    #footer-c{
+        text-align: center;
+    }
+    .border{
+        margin-left: 19%;
+    }
+}
+@media screen and (max-width:370px)
+{
+    #typeit{
+        font-size: 50px;
+    }
+}
 
-          .form {
-            border: 1px solid orangered;
-            color: #fff;
-            padding: 10px 30px;
-            margin-top: 15px;
-            font-weight: 600;
-            cursor: pointer;
-            position: relative;
-            background: linear-gradient(to right, white 50%,orangered 50%);
-            background-size: 200% 100%;
-            background-position: right bottom;
-            transition: all 0.2s ease-in;
-            
-          }
-
-          .form:hover {
-            background-color: orangered;
-            color: orangered;
-            background-position: left bottom;
-          }
