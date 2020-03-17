@@ -79,6 +79,14 @@ ol {
   font-weight: bold;
   color: rgb(247, 95, 39);
 }
+
+/*-------------------
+About 
+--------------------*/
+.about{
+  background-color: #fffbfb;
+}
+
 /*-----------
 Nav bar
 ---------------------*/
@@ -464,41 +472,41 @@ Parallax section
  Team Section
  ----------------------*/
  .team-section {
-	background:white;
-	padding: 50px;
-}	
+  background:white;
+  padding: 50px;
+} 
 
  .team-card {
-	background-color: transparent;
-	width: 300px;
-	height: 400px;
-	perspective: 1000px;
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
   }
 
   .team-card-inner {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	transition: transform 0.6s;
-	transform-style: preserve-3d;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
 
   .team-card:hover .team-card-inner {
-	transform: rotateY(180deg);
+  transform: rotateY(180deg);
   }
 
   .team-card-front, .team-card-back {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   }
 
   .team-card-back {
-	transform: rotateY(180deg);
+  transform: rotateY(180deg);
   }
 
 /*---------------------
@@ -588,7 +596,7 @@ Parallax section
 
 }
 .d a:hover{
-	background-color:#0e76a8 ;
+  background-color:#0e76a8 ;
 
 }
 
@@ -607,10 +615,10 @@ Parallax section
 
 .header-section {
   width: 100%;
-  height: inherit;
+
   color: white;
   text-align: center;
-  position: relative;
+ 
   /*background-image: url("https://images.unsplash.com/photo-1502957291543-d85480254bf8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80");*/
   background-color: white;
 }
@@ -626,7 +634,7 @@ Parallax section
   -webkit-transform: translate(-50%, -50%);
 }
 .img-logo {
-  height: 30rem;
+  height: 16rem;
 }
 .spread {
   background: linear-gradient(
@@ -691,7 +699,7 @@ margin-top: 5%;;
 }
 
 .social-media a:hover{
-  color: #fc5c65;
+  color: orangered;
   font-size: 26px;
 
 }
@@ -704,7 +712,7 @@ margin-top: 5%;;
 .btn-spl {
   border-radius: 10em;
   color: white;
-  border-color: #fc5c65;
+  border-color: orangered;
   margin: 1rem;width: 150px;
   height: 40px;
 
@@ -718,8 +726,8 @@ margin-top: 5%;;
 .border{
   width: 200px;
   height: 5px;
-  background: #fc5c65;
-  color: #fc5c65;
+  background: orangered;
+  color: orangered;
  border-style: none !important;
 }
 .footer-p{
@@ -990,3 +998,77 @@ li.tns-item{
   display: block;
 }
 
+section.module.parallax-spl {
+  height: 760px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1502957291543-d85480254bf8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80");;
+}
+
+
+/*---------------------
+ Initiatives Section
+ ----------------------*/
+ .program-section {
+  background:white;
+  padding:30px;
+} 
+
+ .program-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+  }
+
+  .program-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+
+  .program-card img{
+    height: 100px;
+    width: 100px;
+  }
+
+  .program-card:hover .program-card-inner {
+  transform: rotateY(180deg);
+  }
+
+  .program-card-front, .program-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  }
+
+  .program-card-back {
+  transform: rotateY(180deg);
+  }
+
+  .inibtn{
+    padding: 18px 40px;
+    font-size: 16px;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    background-color: #f47621;
+    color: white;
+  }
+  
+  .inibtn:hover{
+    color: #f47621;
+    background-color: white;
+    border: 2px solid #f47621;
+  }
