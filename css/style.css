@@ -1073,3 +1073,73 @@ section.module.parallax-spl {
     border: 2px solid #f47621;
   }
 
+@media screen and (max-width: 1024px) {
+    #typeit{
+        font-size: 80px;
+    }
+    .center-div{
+        top:30%;
+    }
+    section.module.parallax-spl{
+        height:55vh;
+    }
+}
+@media screen and (max-width: 770px) {
+    #typeit{
+        font-size: 60px;
+    }
+    .center-div h1{
+        font-size: 40px;
+    }
+    .section-title h2{
+  font-size: 30px;
+    }
+    .vertical {
+  left: 30%;
+    }
+    .counter-item .ci-number {
+  font-size: 38px;
+  left: 10%;
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    section.module.parallax-spl{
+        height:70vh;
+    }
+    .center-div{
+        top:40%;
+    }
+    #typeit{
+        line-height: 50px;
+    }
+    .section-title h2{
+     line-height: 1.5em;
+     text-align: center;
+    }
+    .counter-text .btn{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .counter-text .section-title{
+        margin-bottom: 10px;
+    }
+    .vertical{
+        left:8%;
+        margin-top: 45%;
+        height:352px;
+    }
+    #footer-c{
+        text-align: center;
+    }
+    .border{
+        margin-left: 19%;
+    }
+}
+@media screen and (max-width:370px)
+{
+    #typeit{
+        font-size: 50px;
+    }
+}
