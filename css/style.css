@@ -1148,3 +1148,60 @@ section.module.parallax-spl {
     }
 }
 
+
+  /*-----------------
+  Achievements 
+  -------------------*/
+  .achieve{
+    background-color: #F5F5F5;
+  }
+
+  .atitle h2 {
+    font-size: 40px;
+    color: black;
+  }
+
+  .vertical {
+    border-left: 6px solid #f47621;
+    height: 280px;
+    position: absolute;
+    left: 45%;
+  }
+  
+  .counter-item .ci-number {
+    font-size: 48px;
+    color: black;
+    font-weight: 700;
+    line-height: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .counter-item .ci-text h4 {
+    font-size: 22px;
+    color: black;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  .anibtn{
+    padding: 16px 30px;
+    font-size: 16px;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    background-color: #f47621;
+    color: white;
+  }
+  
+  .anibtn:hover{
+    color: #f47621;
+    background-color: white;
+    border: 2px solid #f47621;
+  }
+  
+  
