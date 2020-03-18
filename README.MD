@@ -1,4 +1,4 @@
-# GirlScript Chennai Website 
+# Community Website Boilerplate
 
 ![Issues](https://img.shields.io/github/issues/smaranjitghose/girlscript_chennai_website)
 ![Pull Requests](https://img.shields.io/github/issues-pr/smaranjitghose/girlscript_chennai_website?)
@@ -17,7 +17,7 @@ https://github.com/girlscriptchennai
 
 ### Checkout the current version: 
 
-[GirlScript Chennai Website ](https://girlscriptchennai.netlify.com/)
+[Community Website Boilerplate](https://girlscriptchennai.netlify.com/)
 
 
 ### Sections of the website:
