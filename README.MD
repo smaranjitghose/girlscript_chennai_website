@@ -17,7 +17,7 @@ https://github.com/girlscriptchennai
 
 ### Checkout the current version: 
 
-[GirlScript Chennai Website ](https://girlscriptchennai.netlify.com/)
+[Community Website Boilerplate](https://girlscriptchennai.netlify.com/)
 
 
 ### Sections of the website:
