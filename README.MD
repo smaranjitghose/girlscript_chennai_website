@@ -1,4 +1,4 @@
-# GirlScript Chennai Website 
+# Community Website Boilerplate
 
 ![Issues](https://img.shields.io/github/issues/smaranjitghose/girlscript_chennai_website)
 ![Pull Requests](https://img.shields.io/github/issues-pr/smaranjitghose/girlscript_chennai_website?)
