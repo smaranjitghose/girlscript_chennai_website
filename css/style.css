@@ -46,7 +46,6 @@ h6 {
 p {
   font-size: 16px;
   font-family: "Libre Franklin", sans-serif;
-  color: #b3b3b3;
   font-weight: 400;
   line-height: 26px;
   margin: 0 0 15px 0;
@@ -418,21 +417,6 @@ Parallax section
   background-color: white;
 }
 
-.joinus-text {
-  text-align: center;
-}
-
-.joinus-text h2 {
-  font-size: 45px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  color: #191919;
-}
-
-.joinus-text p {
-  margin-bottom: 45px;
-}
-
 .joinbtn{
   padding: 18px 40px;
   font-size: 16px;
@@ -451,6 +435,64 @@ Parallax section
   background-color: white;
   border: 2px solid black;
 }
+
+.joinbox {
+  position: relative;
+
+}
+
+.joinimage {
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: 8px 8px 8px grey;
+}
+
+.joinoverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f47621;
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  border-radius: 50%;
+}
+
+.joinbox:hover .joinoverlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.jointext {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.jointext a{
+  color:white;
+  text-decoration: none;
+}
+
+.jointext a:hover{
+  opacity: 0.7;
+}
+
 /*----------------------*/
 
 /*---------------------
