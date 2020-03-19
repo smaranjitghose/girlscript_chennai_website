@@ -90,16 +90,16 @@ About
 Nav bar
 ---------------------*/
 .navbar {
-  background-color: #f47621 !important;
+  background: linear-gradient(to right, #F09819, #FF512F);
   color: #fff !important;
 
 }
 .navbar a{
   color: white;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 120%;
   font-family: 'Raleway', sans-serif;
-  text-shadow: 0 0 5px white;
+  
 
 }
 
