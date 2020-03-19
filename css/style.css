@@ -1245,5 +1245,22 @@ section.module.parallax-spl {
     background-color: white;
     border: 2px solid #f47621;
   }
-  
+  .darkmode--activated img {
+    mix-blend-mode: difference;
+}
+.darkmode--activated footer {
+    mix-blend-mode: difference;
+}
+.darkmode--activated .nochange {
+    mix-blend-mode: difference;
+}
+.darkmode-layer, .darkmode-toggle {
+    z-index: 500;
+}
+.darkmode--activated .myslider {
+    mix-blend-mode: difference;
+}
+.darkmode--activated .myslider {
+    mix-blend-mode: difference;
+}
   
