@@ -1230,4 +1230,25 @@ section.module.parallax-spl {
     border: 2px solid #f47621;
   }
   
-  
+
+html{
+  scroll-behavior: smooth;
+}
+
+.gotopbtn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background:#f47621;
+  bottom: 40px;
+  right: 50px;
+
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
+}
+
+
+
