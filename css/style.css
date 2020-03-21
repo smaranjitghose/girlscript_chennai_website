@@ -81,7 +81,7 @@ ol {
 }
 
 /*-------------------
-About 
+About
 --------------------*/
 .about{
   background-color: #F5F5F5;
@@ -393,12 +393,12 @@ Parallax section
 .parallax1 {
   background-image: url("https://www.gssoc.tech/images/0.jpg");
   width: 100%;
-  height: 400px; 
+  height: 400px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-} 
+}
 
 .parashadow{
   background: white;
@@ -527,7 +527,7 @@ Parallax section
  .team-section {
 	background:white;
 	padding: 50px;
-}	
+}
 
  .team-card {
 	background-color: transparent;
@@ -671,7 +671,7 @@ Parallax section
 
   color: white;
   text-align: center;
- 
+
   /*background-image: url("https://images.unsplash.com/photo-1502957291543-d85480254bf8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80");*/
   background-color: white;
 }
@@ -742,7 +742,7 @@ margin-top: 5%;;
   margin-right: 25px;
   font-size: 22px;
   text-decoration: none;
-  
+
 }
 
 .social-media a:hover{
@@ -1061,7 +1061,7 @@ section.module.parallax-spl {
  .program-section {
 	background:white;
 	padding:30px;
-}	
+}
 
  .program-card {
 	background-color: transparent;
@@ -1113,7 +1113,7 @@ section.module.parallax-spl {
     background-color: #f47621;
     color: white;
   }
-  
+
   .inibtn:hover{
     color: #f47621;
     background-color: white;
@@ -1121,7 +1121,7 @@ section.module.parallax-spl {
   }
 
 @media screen and (max-width: 1024px) {
- 
+
     .center-div{
         top:30%;
     }
@@ -1140,7 +1140,7 @@ section.module.parallax-spl {
     .vertical {
       display:hidden;
     }
- 
+
 }
 @media screen and (max-width: 600px) {
     section.module.parallax-spl{
@@ -1159,7 +1159,7 @@ section.module.parallax-spl {
         left: 50%;
         transform: translateX(-50%);
     }
- 
+
     .vertical{
         left:8%;
         margin-top: 45%;
@@ -1176,7 +1176,7 @@ section.module.parallax-spl {
 
 
   /*-----------------
-  Achievements 
+  Achievements
   -------------------*/
   .achieve{
     background-color: #F5F5F5;
@@ -1193,7 +1193,7 @@ section.module.parallax-spl {
     position: absolute;
     left: 45%;
   }
-  
+
   .counter-item .ci-number {
     font-size: 46px;
     color: black;
@@ -1203,7 +1203,7 @@ section.module.parallax-spl {
     left: 0;
     top: 0;
   }
-  
+
   .counter-item .ci-text h4 {
     font-size: 22px;
     color: black;
@@ -1223,11 +1223,9 @@ section.module.parallax-spl {
     background-color: #f47621;
     color: white;
   }
-  
+
   .anibtn:hover{
     color: #f47621;
     background-color: white;
     border: 2px solid #f47621;
   }
-  
-  
