@@ -1254,5 +1254,10 @@ section.module.parallax-spl {
   }
   ul.navbar-nav a:hover{
     color:black;
-  }
+     
+   }
+   .active span{
+    color: black;
+    font-weight: 800;
+   }
   

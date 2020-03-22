@@ -115,62 +115,35 @@
   </head>
 
   <body>
-    <header>
-      <header
-        class="header-section set-bg"
-        data-setbg="assets/Images/GSsoc Type Logo Black.png"
-      >
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-md-2">
-              <div class="logo">
-                <a href="#">
-                  <img
-                    src="assets/Images/gslogo.png"
-                    alt=""
-                    width="100px"
-                    height="100px"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-9 col-md-10">
-              <div class="main-menu mobile-menu">
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Program</a></li>
-                  <li>
-                    <a href="#">Gallery</a>
-                    <ul class="dropdown">
-                      <li><a href="#">Naoh</a></li>
-                      <li><a href="#">Padis</a></li>
-                      <li><a href="#">Jacob</a></li>
-                      <li><a href="#">Gomez</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="contactUs.html">Contact Us</a></li>
-                  <li class="active"><a href="">Achievements</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div id="mobile-menu-wrap"></div>
+    <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
+      <a class="navbar-brand" href="index.html"><img src="assets/Images/transparent_logo.png" width="64px" id="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav ml-5">
+            <li class="nav-item ">
+              <a class="nav-link pr-4"  href="index.html"><span>HOME</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pr-4" href="announcements.html">ANNOUNCEMENTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pr-4" href="#">OUR TEAM</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link pr-4 active" href="achievements.html"><span>OUR ACHIEVEMENTS</span></a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link pr-4" href="#">BLOGS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link pr-4 " href="contactUs.html"><span>CONTACT US</span></a>
+            </li>
+           
+          </ul>
         </div>
-        <section class="hero-section set-bg">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg">
-                <div class="hs-text">
-                  <h2>Girlscript Chennai</h2>
-                  <p class="mt-4">Achievements</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </header>
-
+      </nav>
       <section class="wrap about--part1">
         <div class="wrapper">
           <button class="btn btn-lg btn-info button2 btn-3 mt-5">
@@ -405,6 +378,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik=" crossorigin="anonymous"></script>
     <script data-cfasync="false" type="text/javascript" src="./scripts/google-script-just-email.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.5.2/min/tiny-slider.js'></script>
+    <script type="text/javascript">
+      window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("navbar").style.padding = "1px 16px";
+            document.getElementById("logo").width = "45px";
+          } else {
+            document.getElementById("navbar").style.padding = "8px 16px";
+            document.getElementById("logo").style.width = "60px";
+          }
+        }
+    </script>
 
     <script>
       const slider = tns({
