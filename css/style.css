@@ -765,6 +765,11 @@ margin-top: 5%;;
 
  }
 
+ .btn-spl:hover{
+   background-color: orangered;
+   color:white;
+ }
+
 .right-col h1{
   font-size: 26px;
 }
@@ -803,7 +808,16 @@ margin-top: 5%;;
   outline: none;
   border-radius: 30px;
   min-width: 260px;
+
 }
+
+.txtb:focus.txtb:invalid{
+  border:3px solid orangered;
+}
+.txtb:valid{
+  border:3px solid green;
+}
+
 
 .page-content{
   min-height: 100vh;
