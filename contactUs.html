@@ -2,6 +2,38 @@
 <html>
 <head>
     <title>GirlScript | Chennai</title>
+    <style>
+    
+
+
+        .form-group {
+          position: relative;
+          margin-bottom: 2.5rem;
+        }
+
+        .form-control-placeholder {
+          position: absolute;
+          top: 0;
+          padding: 7px 0 0 13px;
+          transition: all 200ms;
+          opacity: 0.5;
+        }
+
+        
+        .form-control:focus + .form-control-placeholder,
+        .form-control:valid + .form-control-placeholder{
+          font-size: 75%;
+          transform: translate3d(0, -100%, 0);
+          opacity: 1;
+        }
+
+        input[type='text']{
+          margin-bottom: 25px;
+        }
+
+
+      
+    </style>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/Images/gs.png" type="image/png" sizes="16x16">
@@ -67,23 +99,28 @@
                         </div>
 
                         <form class="form-horizontal " action="https://formspree.io/xyz@gmail.com" method="post"
-                          style="margin-left: 2.5%;margin-right: 2.5%">
-                          <div class="form-group">
+                          style="margin-left: 2.5%;margin-right: 2.5%;margin-top: 2.5%;margin-bottom: 2.5%">
+                          
                             <div class="col-sm-12" style="margin-bottom: 2%">
-                              <input type="text" id="name" name="name" class="form-control" placeholder="Name" required />
+                              <input type="text" id="name" name="name" class="form-control"  required /> 
+                              <label class="form-control-placeholder" for ='name'> Name</label>
                             </div>
+                          <div class="form-group">
                             <div class="col-sm-12">
-                              <input type="email" id="email" name="_replyto" class="form-control" placeholder="Email" required />
+                              <input type="email" id="email" name="_replyto" class="form-control" required />
+                              <label class="form-control-placeholder" for ='email'> E-mail</label>
                             </div>
                           </div>
                           <div class="form-group">
                             <div class="col-sm-12">
-                              <input type="text" id="subject" name="_subject" class="form-control" placeholder="Subject" required />
+                              <input type="text" id="subject" name="_subject" class="form-control"  required />
+                              <label class="form-control-placeholder" for ='subject'> Subject</label>
                             </div>
                           </div>
                           <div class="form-group">
                             <div class="col-sm-12">
-                              <textarea placeholder="Message" name="message" rows="4" class="form-control" required></textarea>
+                              <textarea name="message" rows="4" class="form-control" required ></textarea>
+                              <label  class="form-control-placeholder" for ='message'> Message</label>
                             </div>
                           </div>
                           <div class="form-group">
