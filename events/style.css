@@ -139,7 +139,7 @@ ul{
     background-color: rgba(235, 241, 241, 0.849);
     width:max-content;
     margin:2rem auto;
-    padding:2rem;
+    padding:3rem;
     box-shadow: 0.3rem 0.1rem 0.7rem rgb(78, 78, 78);
     align-items: center;
     border-radius:1rem;
@@ -147,7 +147,7 @@ ul{
 }
 
 .event__card-text{
-    padding:1rem;
+    padding:2rem;
     margin-left:1rem;
     display:flex;
     flex-direction: column;
@@ -156,7 +156,7 @@ ul{
 }
 
 .event__card-head{
-    font-size:2rem;
+    font-size:2.2rem;
     text-align:center;
     margin-bottom:1rem;
 }
@@ -168,11 +168,13 @@ ul{
 }
 
 .btn-card:link,.btn-card:visited{
-    border:1px solid #F09819;
+    border:1px solid #FF512F;
     padding:0.4rem 1rem;
     margin-right:0.9rem;
     color:white;
-    background:#F09819;
+    background:#FF512F;
+    z-index:4;
+     background: linear-gradient(to right, rgb(245, 92, 61), rgba(243, 59, 23, 0.897));
 }
 
 .btn-card:hover,.btn-card:active{
@@ -275,11 +277,15 @@ ul{
 
     .event__card{
         width:max-content;
-        padding:0.4rem 1rem;
+        padding:0.3rem 0.8rem;
     }
 
     .event__card-head{
         font-size:1.2rem;
+    }
+
+    .event__card-text{
+        padding:1rem;
     }
 
     .event-img{
