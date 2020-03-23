@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="tech events, coding competition, introduction to coding, computer coding for beginners, girls who code program, coding contest, coding competition, girls can code, introduction to programming, learn computer programming">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="assets/Images/gs.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="./style.css">
+    <title>GirlScript | Chennai</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../assets/Images/gslogo1.png" alt="GirlScript Logo">
+            </div>
+            <ul class="navlinks">
+                <li class="navlinks-item">
+                    <a class="navlink" href="../index.html">Home</a>
+                </li>
+                <li class="navlinks-item active-tab">
+                    <a class="navlink " href="#!">Events</a>
+                </li>
+                <li class="navlinks-item">
+                    <a class="navlink" href="#!">Team</a>
+                </li>
+                <li class="navlinks-item">
+                    <a class="navlink" href="#!">About Us</a>
+                </li>
+                <li class="navlinks-item">
+                    <a class="navlink" href="../contactUs.html">Contact Us</a>
+                </li>
+            </ul>
+            <div id="burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </nav>
+    </header>
+
+
+    <h2 class="secondary-heading">EVENTS</h2>
+
+
+    <div class="event__card">
+        <div class="event__card-img">
+            <img class="event-img" src="../assets/Images/gs_chennai_logo2.png" alt="Event Card Logo">
+        </div>
+        <div class="event__card-text">
+            <h3 class="event__card-head">Code Crusade</h3>
+            <div class="event__card-buttons">
+                <a href="#!" class="btn-card">Certificate</a>
+                <a href="#!" class="btn-card">Material</a>
+
+            </div>
+        </div>
+    </div>
+    <div class="event__card">
+        <div class="event__card-img">
+            <img class="event-img" src="../assets/Images/gs_chennai_logo2.png" alt="Event Card Logo">
+        </div>
+        <div class="event__card-text">
+            <h3 class="event__card-head">Code Crusade</h3>
+            <div class="event__card-buttons">
+                <a href="#!" class="btn-card">Certificate</a>
+                <a href="#!" class="btn-card">Material</a>
+
+            </div>
+        </div>
+    </div>
+    <div class="event__card">
+        <div class="event__card-img">
+            <img class="event-img" src="../assets/Images/gs_chennai_logo2.png" alt="Event Card Logo">
+        </div>
+        <div class="event__card-text">
+            <h3 class="event__card-head">Code Crusade</h3>
+            <div class="event__card-buttons">
+                <a href="#!" class="btn-card">Certificate</a>
+                <a href="#!" class="btn-card">Material</a>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+<script>
+    const burger = document.getElementById("burger");
+    const navlinks = document.querySelector(".navlinks");
+    burger.addEventListener('click', () => {
+        navlinks.classList.toggle('active');
+    });
+</script>
+
+</html>

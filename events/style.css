@@ -1,0 +1,297 @@
+*,*::after,*::before{
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+
+}
+
+html{
+    font-family:62.5%;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    color:#333;
+}
+
+
+/*
+------------------------
+    Global Styling
+------------------------
+*/
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+/*
+------------------------
+    Typography Styles
+------------------------
+*/
+
+.secondary-heading{
+    margin:2rem;
+    text-align:center;
+    font-size:3rem;
+    letter-spacing:2px;
+    font-weight:400;
+}
+.secondary-heading::after{
+    content:" ";
+    display:block;
+    width:20%;
+    margin:0 auto;
+    height:5px;
+    background:#F09819;
+}
+
+/*
+------------------------
+    Navigation Styling
+------------------------
+*/
+.navbar{
+    background: linear-gradient(to right, #F09819, #FF512F);
+    min-height:10vh;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:10;
+    position:relative;
+}
+
+.logo{
+    width:15rem;
+    margin-left:2rem;
+}
+.logo img{
+    width:100%;;
+}
+
+.navlinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:1rem;
+   
+}
+.navlinks-item{
+    padding:0rem 0.8rem;
+    align-self: stretch;
+}
+
+.navlink:link,.navlink:visited{
+    text-transform:uppercase;
+    color:white;
+    letter-spacing: 2px;
+   
+}
+
+.navlink:active,.navlink:hover{
+    color:white;
+}
+
+.active-tab{
+    background-color:#F09819;
+    align-self: stretch;
+    height:100%;
+    border:1px solid #F09819;
+    border-radius:3rem;
+}
+
+#burger{
+    width:1.5rem;
+    height:1.5rem;
+    position: absolute;
+    top:1.2rem;
+    right:2rem;
+    display:none;
+    
+}
+
+.line{
+    display:block;
+    background-color:white;
+    padding:0.1rem 0.8rem;
+    width:0.1rem;
+    margin:0.3rem;
+    border-radius:1rem;
+    
+}
+
+/*
+------------------------
+    Event Card Styling
+------------------------
+*/
+
+.event__card{
+    display:flex;
+    background-color: rgba(235, 241, 241, 0.849);
+    width:max-content;
+    margin:2rem auto;
+    padding:2rem;
+    box-shadow: 0.3rem 0.1rem 0.7rem rgb(78, 78, 78);
+    align-items: center;
+    border-radius:1rem;
+   
+}
+
+.event__card-text{
+    padding:1rem;
+    margin-left:1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.event__card-head{
+    font-size:2rem;
+    text-align:center;
+    margin-bottom:1rem;
+}
+
+.event-img{
+    width:10rem;
+    height:10rem;
+    border-radius: 3rem;
+}
+
+.btn-card:link,.btn-card:visited{
+    border:1px solid #F09819;
+    padding:0.4rem 1rem;
+    margin-right:0.9rem;
+    color:white;
+    background:#F09819;
+}
+
+.btn-card:hover,.btn-card:active{
+    box-shadow: 0rem 0.1rem 0.2rem black;
+}
+
+
+/*
+------------------------
+    Media Queries
+------------------------
+*/
+
+@media only screen and (max-width:900px){
+
+    #burger{
+        display:block;
+        top:1.5rem;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+
+    .navlinks.active{
+        display:none;
+    }
+
+    .navlinks{
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        width:100%;
+        
+    }
+   
+    .navlinks-item{
+        margin-left:2rem;
+        margin-bottom:1rem;
+    }
+
+    .logo{
+        padding:1rem;
+    }
+    
+    
+}
+
+@media only screen and (max-width:700px){
+    .secondary-heading{
+        font-size:2.2rem;
+    }
+    .secondary-heading::after{
+        width:40%;
+    }
+
+    .event__card{
+        width:max-content;
+        padding:1rem;
+    }
+
+    .event__card-head{
+        font-size:1.1rem;
+    }
+
+    .event-img{
+        width:6rem;
+        height:6rem;
+        border-radius:2rem;
+    }
+
+    .btn-card:link,.btn-card:visited{
+        padding:0.1rem 0.2rem;
+        margin-right:0.5rem;
+        font-size:0.9rem;
+    }
+
+}
+
+
+@media only screen and (max-width:400px){
+    #burger{
+        top:1.2rem;
+        width:1.4rem;
+        height:1.4rem;
+    }
+
+    .logo{
+        width:12rem;
+        margin-left:0;
+        padding:1rem 1rem;
+    }   
+
+    .secondary-heading{
+        font-size:2rem;
+    }
+
+    .secondary-heading::after{
+    width:35%;
+    }
+
+    .event__card{
+        width:max-content;
+        padding:0.4rem 1rem;
+    }
+
+    .event__card-head{
+        font-size:1.2rem;
+    }
+
+    .event-img{
+        width:4rem;
+        height:4rem;
+        border-radius:1rem;
+    }
+
+    .btn-card:link,.btn-card:visited{
+        padding:0.2rem 0.3rem;
+        margin-right:0.5rem;
+        font-size:0.7rem;
+    }
+
+}
