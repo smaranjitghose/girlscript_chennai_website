@@ -3,6 +3,7 @@ body {
   height: 100%;
   font-family: "Libre Franklin", sans-serif;
   -webkit-font-smoothing: antialiased;
+  width: 100%;
 
   background-color: white;
 }
@@ -74,7 +75,7 @@ ol {
   margin: 0;
 }
 #typeit{
-  font-size: 100px;
+  font-size: 8vw;
   font-weight: bold;
   color: rgb(247, 95, 39);
 }
@@ -92,7 +93,6 @@ Nav bar
 .navbar {
   background: linear-gradient(to right, #F09819, #FF512F);
   color: #fff !important;
-
 }
 .navbar a{
   color: white;
@@ -100,7 +100,6 @@ Nav bar
   font-size: 120%;
   font-family: 'Raleway', sans-serif;
   
-
 }
 
 .fixed-top {
@@ -528,41 +527,41 @@ Parallax section
  Team Section
  ----------------------*/
  .team-section {
-	background:white;
-	padding: 50px;
-}	
+  background:white;
+  padding: 50px;
+} 
 
  .team-card {
-	background-color: transparent;
-	width: 300px;
-	height: 400px;
-	perspective: 1000px;
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
   }
 
   .team-card-inner {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	transition: transform 0.6s;
-	transform-style: preserve-3d;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
 
   .team-card:hover .team-card-inner {
-	transform: rotateY(180deg);
+  transform: rotateY(180deg);
   }
 
   .team-card-front, .team-card-back {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   }
 
   .team-card-back {
-	transform: rotateY(180deg);
+  transform: rotateY(180deg);
   }
 
 /*---------------------
@@ -652,7 +651,7 @@ Parallax section
 
 }
 .d a:hover{
-	background-color:#0e76a8 ;
+  background-color:#0e76a8 ;
 
 }
 
@@ -768,6 +767,11 @@ margin-top: 5%;;
 
  }
 
+ .btn-spl:hover{
+   background-color: orangered;
+   color:white;
+ }
+
 .right-col h1{
   font-size: 26px;
 }
@@ -806,7 +810,16 @@ margin-top: 5%;;
   outline: none;
   border-radius: 30px;
   min-width: 260px;
+
 }
+
+.txtb:focus.txtb:invalid{
+  border:3px solid orangered;
+}
+.txtb:valid{
+  border:3px solid green;
+}
+
 
 .page-content{
   min-height: 100vh;
@@ -1062,25 +1075,25 @@ section.module.parallax-spl {
  Initiatives Section
  ----------------------*/
  .program-section {
-	background:white;
-	padding:30px;
-}	
+  background:white;
+  padding:30px;
+} 
 
  .program-card {
-	background-color: transparent;
-	width: 200px;
-	height: 200px;
-	perspective: 1000px;
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
   }
 
   .program-card-inner {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	transition: transform 0.6s;
-	transform-style: preserve-3d;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
 
   .program-card img{
@@ -1089,15 +1102,15 @@ section.module.parallax-spl {
   }
 
   .program-card:hover .program-card-inner {
-	transform: rotateY(180deg);
+  transform: rotateY(180deg);
   }
 
   .program-card-front, .program-card-back {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   }
 
   .program-card-back {
@@ -1124,9 +1137,7 @@ section.module.parallax-spl {
   }
 
 @media screen and (max-width: 1024px) {
-    #typeit{
-        font-size: 80px;
-    }
+ 
     .center-div{
         top:30%;
     }
@@ -1135,9 +1146,7 @@ section.module.parallax-spl {
     }
 }
 @media screen and (max-width: 770px) {
-    #typeit{
-        font-size: 60px;
-    }
+
     .center-div h1{
         font-size: 40px;
     }
@@ -1145,13 +1154,9 @@ section.module.parallax-spl {
   font-size: 30px;
     }
     .vertical {
-  left: 30%;
+      display:hidden;
     }
-    .counter-item .ci-number {
-  font-size: 38px;
-  left: 10%;
-    }
-    
+ 
 }
 @media screen and (max-width: 600px) {
     section.module.parallax-spl{
@@ -1160,9 +1165,7 @@ section.module.parallax-spl {
     .center-div{
         top:40%;
     }
-    #typeit{
-        line-height: 50px;
-    }
+
     .section-title h2{
      line-height: 1.5em;
      text-align: center;
@@ -1172,9 +1175,7 @@ section.module.parallax-spl {
         left: 50%;
         transform: translateX(-50%);
     }
-    .counter-text .section-title{
-        margin-bottom: 10px;
-    }
+ 
     .vertical{
         left:8%;
         margin-top: 45%;
@@ -1187,12 +1188,7 @@ section.module.parallax-spl {
         margin-left: 19%;
     }
 }
-@media screen and (max-width:370px)
-{
-    #typeit{
-        font-size: 50px;
-    }
-}
+
 
 
   /*-----------------
@@ -1203,7 +1199,7 @@ section.module.parallax-spl {
   }
 
   .atitle h2 {
-    font-size: 40px;
+    font-size: 4vw;
     color: black;
   }
 
@@ -1215,7 +1211,7 @@ section.module.parallax-spl {
   }
   
   .counter-item .ci-number {
-    font-size: 48px;
+    font-size: 46px;
     color: black;
     font-weight: 700;
     line-height: 50px;
@@ -1287,3 +1283,15 @@ html{
 
 
 
+
+  .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  ul.navbar-nav a:hover{
+    color:black;
+     
+   }
+   .active span{
+    color: black;
+    font-weight: 800;
+   }
