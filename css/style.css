@@ -1244,11 +1244,13 @@ section.module.parallax-spl {
     background-color: white;
     border: 2px solid #f47621;
   }
-  
 
 html{
   scroll-behavior: smooth;
 }
+  
+
+
 
 /*.gotopbtn{
   position: fixed;
@@ -1265,11 +1267,17 @@ html{
   font-size: 22px;
 }
 */
+
+
+html{
+  scroll-behavior: smooth;
+}
+
 .gotopbtn{
   position: fixed;
   width: 50px;
   height: 50px;
-  background: #e74c3c;
+  background: #f9690e;
   bottom: 40px;
   right: 50px;
   border-radius: 34px;
@@ -1278,7 +1286,11 @@ html{
   line-height: 50px;
   color: white;
   font-size: 22px;
-}
+  }
+
+
+
+
 
 
 
@@ -1293,4 +1305,5 @@ html{
     color: black;
     font-weight: 800;
    }
+
 
