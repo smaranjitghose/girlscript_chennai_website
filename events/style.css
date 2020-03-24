@@ -39,7 +39,8 @@ ul{
 */
 
 .secondary-heading{
-    margin:2rem;
+    margin-top:10rem;
+    margin-bottom:3rem;
     text-align:center;
     font-size:3rem;
     letter-spacing:2px;
@@ -59,73 +60,46 @@ ul{
     Navigation Styling
 ------------------------
 */
-.navbar{
-    background: linear-gradient(to right, #F09819, #FF512F);
-    min-height:10vh;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index:10;
-    position:relative;
+.navbar {
+  background: linear-gradient(to right, #F09819, #FF512F);
+  color: #fff !important;
 }
 
-.logo{
-    width:15rem;
-    margin-left:2rem;
-}
-.logo img{
-    width:100%;;
-}
-
-.navlinks{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right:1rem;
-   
-}
-.navlinks-item{
-    padding:0rem 0.8rem;
-    align-self: stretch;
+.navbar a{
+  color: white;
+  font-weight: normal;
+  font-size: 120%;
+  font-family: 'Raleway', sans-serif;
+  
 }
 
-.navlink:link,.navlink:visited{
-    text-transform:uppercase;
-    color:white;
-    letter-spacing: 2px;
-   
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 
-.navlink:active,.navlink:hover{
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+ul.navbar-nav a:hover{
     color:black;
 }
 
-.active-tab{
-    background-color:#F09819;
-    align-self: stretch;
-    height:100%;
-    border:1px solid #F09819;
-    border-radius:3rem;
-}
 
-#burger{
-    width:1.5rem;
-    height:1.5rem;
-    position: absolute;
-    top:1.2rem;
-    right:2rem;
-    display:none;
-    
-}
-
-.line{
-    display:block;
-    background-color:white;
-    padding:0.1rem 0.8rem;
-    width:0.1rem;
-    margin:0.3rem;
-    border-radius:1rem;
-    
+.active span{
+    color: black;
+    font-weight: 400;
 }
 
 /*
@@ -190,35 +164,7 @@ ul{
 
 @media only screen and (max-width:900px){
 
-    #burger{
-        display:block;
-        top:1.5rem;
-    }
-    .navbar{
-        flex-direction: column;
-    }
-
-    .navlinks.active{
-        display:none;
-    }
-
-    .navlinks{
-        flex-direction: column;
-        align-items:center;
-        justify-content: center;
-        width:100%;
-        
-    }
    
-    .navlinks-item{
-        margin-left:2rem;
-        margin-bottom:1rem;
-    }
-
-    .logo{
-        padding:1rem;
-    }
-    
     
 }
 
