@@ -1076,6 +1076,7 @@ section.module.parallax-spl {
  .program-section {
   background:white;
   padding:30px;
+  perspective: 700px;
 } 
 
  .program-card {
@@ -1307,3 +1308,389 @@ html{
    }
 
 
+  
+  .program-card-back p{ 
+            font-size: 15px;  
+          } 
+  @media only screen and (max-width: 992px) { 
+        .program-card-front h5{ 
+          font-size: 12px;  
+          text-align: center; 
+          padding-left: 15px;   
+        } 
+          .program-section {  
+          background:white; 
+          padding:20px; 
+          perspective: 700px; 
+        }   
+         .program-card {  
+          background-color: transparent;  
+          width: 180px; 
+          height: 200px;  
+          perspective: 1000px;  
+          } 
+          .program-card-inner { 
+          position: relative; 
+          width: 80%; 
+          height: 80%;  
+          text-align: center; 
+          transition: transform 0.6s; 
+          transform-style: preserve-3d; 
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);  
+          } 
+          .program-card img{  
+            height: 50px; 
+            width: 50px;  
+          } 
+          .program-card-back p{ 
+            font-size: 8px; 
+            line-height: 1.2rem;  
+          } 
+          .program-card:hover .program-card-inner { 
+          transform: rotateY(180deg); 
+          } 
+          .program-card-front, .program-card-back { 
+          position: absolute; 
+          width: 80%; 
+          height: 80%;  
+          -webkit-backface-visibility: hidden;  
+          backface-visibility: hidden;  
+          } 
+          .program-card-back {  
+          transform: rotateY(180deg); 
+          } 
+} 
+@media only screen and (max-width: 767px) { 
+        .program-section {  
+  background:white; 
+  padding:30px; 
+  perspective: 700px; 
+}   
+ .program-card {  
+  background-color: transparent;  
+  width: 200px; 
+  height: 200px;  
+  perspective: 1000px;  
+  } 
+  .program-card-inner { 
+  position: relative; 
+  width: 100%;  
+  height: 100%; 
+  text-align: center; 
+  transition: transform 0.6s; 
+  transform-style: preserve-3d; 
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);  
+  } 
+  .program-card img{  
+    height: 100px;  
+    width: 100px; 
+  } 
+  .program-card:hover .program-card-inner { 
+  transform: rotateY(180deg); 
+  } 
+  .program-card-front, .program-card-back { 
+  position: absolute; 
+  width: 100%;  
+  height: 100%; 
+  -webkit-backface-visibility: hidden;  
+  backface-visibility: hidden;  
+  } 
+  .program-card-back {  
+  transform: rotateY(180deg); 
+  } 
+}
+ @media only screen and (min-width: 993px) {  
+        .newsection{  
+  background-color: white;  
+} 
+.joinbtn{ 
+  padding: 18px 40px; 
+  font-size: 16px;  
+  border: none; 
+  font-weight: 700; 
+  outline: none;  
+  border-radius: 30px;  
+  margin-left: 20px;  
+  cursor: pointer;  
+  background-color: rgb(37, 37, 37);  
+  color: white; 
+} 
+.joinbtn:hover{ 
+  color: #111111; 
+  background-color: white;  
+  border: 2px solid black;  
+} 
+.joinbox {  
+  position: relative; 
+} 
+.joinimage {  
+  display: block; 
+  width: 250px; 
+  height: 250px;  
+  border-radius: 50%; 
+  box-shadow: 8px 8px 8px grey; 
+  margin: 40px; 
+} 
+.joinoverlay {  
+  position: absolute; 
+  bottom: 0;  
+  left: 0;  
+  right: 0; 
+  background-color: #f47621;  
+  overflow: hidden; 
+  width: 250px; 
+  height: 250px;  
+  -webkit-transform: scale(0);  
+  -ms-transform: scale(0);  
+  transform: scale(0);  
+  -webkit-transition: .3s ease; 
+  transition: .3s ease; 
+  border-radius: 50%; 
+  margin-left: 40px;  
+} 
+.joinbox:hover .joinoverlay { 
+  -webkit-transform: scale(1);  
+  -ms-transform: scale(1);  
+  transform: scale(1);  
+} 
+.jointext { 
+  color: white; 
+  font-size: 18px;  
+  position: absolute; 
+  top: 50%; 
+  left: 50%;  
+  -webkit-transform: translate(-50%, -50%); 
+  -ms-transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%); 
+  text-align: center; 
+} 
+.jointext a{  
+  color:white;  
+  text-decoration: none;  
+} 
+.jointext a:hover{  
+  opacity: 0.7; 
+} 
+} 
+ @media only screen and (max-width: 576px) {  
+        .newsection{  
+  background-color: white;  
+} 
+.joinbtn{ 
+  padding: 18px 40px; 
+  font-size: 16px;  
+  border: none; 
+  font-weight: 700; 
+  outline: none;  
+  border-radius: 30px;  
+  margin-left: 20px;  
+  cursor: pointer;  
+  background-color: rgb(37, 37, 37);  
+  color: white; 
+} 
+.joinbtn:hover{ 
+  color: #111111; 
+  background-color: white;  
+  border: 2px solid black;  
+} 
+.joinbox {  
+  position: relative; 
+} 
+.mycon{ 
+  padding-right:20px; 
+  padding-left: 0px;  
+} 
+.joinimage {  
+  display: block; 
+  width: 200px; 
+  height: 200px;  
+  border-radius: 50%; 
+  box-shadow: 8px 8px 8px grey; 
+  margin-right: 400px;  
+} 
+.joinoverlay {  
+  position: absolute; 
+  bottom: 0;  
+  left: 0;  
+  right: 0; 
+  background-color: #f47621;  
+  overflow: hidden; 
+  width: 200px; 
+  height: 200px;  
+  -webkit-transform: scale(0);  
+  -ms-transform: scale(0);  
+  transform: scale(0);  
+  -webkit-transition: .3s ease; 
+  transition: .3s ease; 
+  border-radius: 50%; 
+} 
+.joinbox:hover .joinoverlay { 
+  -webkit-transform: scale(1);  
+  -ms-transform: scale(1);  
+  transform: scale(1);  
+} 
+.jointext { 
+  color: white; 
+  font-size: 10px;  
+  position: absolute; 
+  top: 50%; 
+  left: 50%;  
+  -webkit-transform: translate(-50%, -50%); 
+  -ms-transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%); 
+  text-align: center; 
+} 
+.jointext a{  
+  color:white;  
+  text-decoration: none;  
+} 
+.jointext a:hover{  
+  opacity: 0.7; 
+} 
+} 
+ @media only screen and (max-width: 767px) and (min-width: 576px) { 
+        .newsection{  
+  background-color: white;  
+} 
+.joinbtn{ 
+  padding: 18px 40px; 
+  font-size: 16px;  
+  border: none; 
+  font-weight: 700; 
+  outline: none;  
+  border-radius: 30px;  
+  margin-left: 20px;  
+  cursor: pointer;  
+  background-color: rgb(37, 37, 37);  
+  color: white; 
+} 
+.joinbtn:hover{ 
+  color: #111111; 
+  background-color: white;  
+  border: 2px solid black;  
+} 
+.joinbox {  
+  position: relative; 
+} 
+.joinimage {  
+  display: block; 
+  width: 120px; 
+  height: 120px;  
+  border-radius: 50%; 
+  box-shadow: 8px 8px 8px grey; 
+  margin-left: 20px;  
+} 
+.joinoverlay {  
+  position: absolute; 
+  bottom: 0;  
+  left: 0;  
+  right: 0; 
+  background-color: #f47621;  
+  overflow: hidden; 
+  width: 120px; 
+  height: 120px;  
+  -webkit-transform: scale(0);  
+  -ms-transform: scale(0);  
+  transform: scale(0);  
+  -webkit-transition: .3s ease; 
+  transition: .3s ease; 
+  border-radius: 50%; 
+  margin-left: 20px;  
+} 
+.joinbox:hover .joinoverlay { 
+  -webkit-transform: scale(1);  
+  -ms-transform: scale(1);  
+  transform: scale(1);  
+} 
+.jointext { 
+  color: white; 
+  font-size: 10px;  
+  position: absolute; 
+  top: 50%; 
+  left: 50%;  
+  -webkit-transform: translate(-50%, -50%); 
+  -ms-transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%); 
+  text-align: center; 
+} 
+.jointext a{  
+  color:white;  
+  text-decoration: none;  
+} 
+.jointext a:hover{  
+  opacity: 0.7; 
+} 
+} 
+@media only screen and (min-width: 768px) and (max-width: 992px ) { 
+        .newsection{  
+  background-color: white;  
+} 
+.joinbtn{ 
+  padding: 18px 40px; 
+  font-size: 16px;  
+  border: none; 
+  font-weight: 700; 
+  outline: none;  
+  border-radius: 30px;  
+  margin-left: 20px;  
+  cursor: pointer;  
+  background-color: rgb(37, 37, 37);  
+  color: white; 
+} 
+.joinbtn:hover{ 
+  color: #111111; 
+  background-color: white;  
+  border: 2px solid black;  
+} 
+.joinbox {  
+  position: relative; 
+} 
+.joinimage {  
+  display: block; 
+  width: 180px; 
+  height: 180px;  
+  border-radius: 50%; 
+  box-shadow: 8px 8px 8px grey; 
+  margin-left:20px; 
+} 
+.joinoverlay {  
+  position: absolute; 
+  bottom: 0;  
+  left: 0;  
+  right: 0; 
+  background-color: #f47621;  
+  overflow: hidden; 
+  width: 180px; 
+  height: 180px;  
+  -webkit-transform: scale(0);  
+  -ms-transform: scale(0);  
+  transform: scale(0);  
+  -webkit-transition: .3s ease; 
+  transition: .3s ease; 
+  border-radius: 50%; 
+  margin-left:20px  
+} 
+.joinbox:hover .joinoverlay { 
+  -webkit-transform: scale(1);  
+  -ms-transform: scale(1);  
+  transform: scale(1);  
+} 
+.jointext { 
+  color: white; 
+  font-size: 20px;  
+  position: absolute; 
+  top: 50%; 
+  left: 50%;  
+  -webkit-transform: translate(-50%, -50%); 
+  -ms-transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%); 
+  text-align: center; 
+} 
+.jointext a{  
+  color:white;  
+  text-decoration: none;  
+} 
+.jointext a:hover{  
+  opacity: 0.7; 
+} 
+}
