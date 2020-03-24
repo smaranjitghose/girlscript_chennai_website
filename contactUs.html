@@ -46,18 +46,20 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    
     <link rel="stylesheet" href="css/style.css" type="text/css">
-</head>
+  </head>
 <body >
     
-    <nav class="navbar fixed-top navbar-expand-lg">
+    <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
+    	<a class="navbar-brand" href="index.html"><img src="assets/Images/transparent_logo.png" width="64px" id="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse " id="navbarNav">
           <ul class="navbar-nav ml-5">
-            <li class="nav-item active">
-              <a class="nav-link item pr-4" href="index.html">HOME</a>
+          	<li class="nav-item ">
+              <a class="nav-link pr-4"  href="index.html"><span>HOME</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link pr-4" href="announcements.html">ANNOUNCEMENTS</a>
@@ -72,7 +74,7 @@
                 <a class="nav-link pr-4" href="#">BLOGS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link pr-4" href="#">CONTACT US</a>
+                <a class="nav-link pr-4 active" href="contactUs.html"><span>CONTACT US</span></a>
             </li>
            
           </ul>
@@ -188,6 +190,10 @@
                     <h6 class="footer-h3">© 2020 GirlScript Chennai All Rights Reserved.</h6>
       </center>
         </div>
+
+
+       <a class="gotopbtn" href="#"> <i class="fa fa-arrow-up" style="color:white"></i> </a>
+
    
 
     </footer>
@@ -196,6 +202,20 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    	window.onscroll = function() {scrollFunction()};
+
+				function scrollFunction() {
+				  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+				    document.getElementById("navbar").style.padding = "1px 16px";
+				    document.getElementById("logo").width = "45px";
+				  } else {
+				    document.getElementById("navbar").style.padding = "8px 16px";
+				    document.getElementById("logo").style.width = "60px";
+				  }
+				}
+    </script>
+
 </html>
 
 
