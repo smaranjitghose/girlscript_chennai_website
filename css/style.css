@@ -811,8 +811,8 @@ a.fa-linkedin{
   height: 3px;
   background: orangered;
   color: orangered;
- border-style: none !important;
- margin: 0 auto;
+  border-style: none !important;
+  margin: 0 auto;
 }
 .footer-p{
   margin-top: 1%;
@@ -822,6 +822,7 @@ a.fa-linkedin{
   color: #c4c4c4;
   /* border-bottom: 2px solid orangered; */
 }
+
 
 /* .newsletter-form{
   display: flex;
