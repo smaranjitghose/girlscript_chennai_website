@@ -101,6 +101,8 @@ ul.navbar-nav a:hover{
 .active span{
     color: black;
     font-weight: 400;
+    font-weight:bold;
+  
 }
 
 /*
