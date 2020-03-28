@@ -92,6 +92,12 @@ Nav bar
 .navbar {
   background: linear-gradient(to right, #F09819, #FF512F);
   color: #fff !important;
+  overflow: hidden;
+  transition: 0.4s; 
+  position: fixed; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index: 99;
 }
 .navbar a{
   color: white;
@@ -100,7 +106,10 @@ Nav bar
   font-family: 'Raleway', sans-serif;
   
 }
-
+#logo{
+  width: 80px;
+  transition: 0.4s;
+}
 .fixed-top {
   position: fixed;
   top: 0;
