@@ -1,9 +1,36 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: "Libre Franklin", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.navbar{
+    background: linear-gradient(to right, #F09819, #FF512F);
+}
+
+.nav-link{
+    color: #fff!important;
+    font-weight: 540;
+    font-size: 140%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar-toggler{
+    color: #fff!important;
+    border:none!important;
+}
+
+.activeLink{
+    color: #000!important;
+}
+
+.nav-link:hover {
+    color: #000!important;
 }
 
 .section1{
+    margin-top: 100px;
     height: 640px;
     width: 100%;
 }
