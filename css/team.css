@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Libre Franklin", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.navbar{
+    background: linear-gradient(to right, #F09819, #FF512F);
+}
+
+.nav-link{
+    color: #fff!important;
+    font-weight: 540;
+    font-size: 140%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar-toggler{
+    color: #fff!important;
+    border:none!important;
+}
+
+.activeLink{
+    color: #000!important;
+}
+
+.nav-link:hover {
+    color: #000!important;
+}
+
+.section1{
+    margin-top: 100px;
+    height: 640px;
+    width: 100%;
+}
+
+#teamHeading{
+    font-size: 60px;
+}
+
+#teamPara{
+    font-size: 20px;
+}
+
+#theBoard{
+    font-size: 50px;
+}
+
+#circularDiv{
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 1px rgba(31, 29, 29, 0.555);
+}
+
+h2{
+    text-align: center;
+}
+
+.boardRowHide, .techRowHide, .manageRowHide{
+    margin-top: 20px;
+    display: none;
+}
+
+.boardRowShow, .techRowShow, .manageRowShow{
+    margin-top: 20px;
+    display: flex;
+}
+
+.boardBtn, .techBtn, .manageBtn{
+    margin: 20px;
+}
+
+@media only screen and (max-width: 440px){
+    #teamImg{
+        height: 250px;
+        width: 250px;
+        padding-left: 15px;
+    }
+    #teamHeading, #theBoard{
+        padding-left: 10%;
+    }
+    #teamPara{
+        padding-left: 10%;
+    }
+}
+
+@media only screen and (max-width:768px){
+    #teamHeading{
+        padding-left: 15%;
+    }
+    #theBoard{
+        padding-left: 12%;
+    }
+    #teamPara{
+        padding-left: 15%;
+    }
+}
