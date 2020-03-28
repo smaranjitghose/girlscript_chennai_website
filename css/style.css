@@ -267,7 +267,7 @@ Nav bar
 -----------------------*/
 
 .about-us-section {
-  background-color: orangered;
+  background-color: orangeOrange;
 }
 
 .section-title h2 {
@@ -794,7 +794,7 @@ a.fa-linkedin{
 .btn-spl {
   border-radius: 10em;
   color: white;
-  border-color: orangered;
+  border-color: orangeOrange;
   margin: 1rem;
   width: 100px;
   height: 40px;
@@ -802,7 +802,7 @@ a.fa-linkedin{
  }
 
  .btn-spl:hover{
-   background-color: orangered;
+   background-color: orangeOrange;
    color:white;
  }
 
@@ -811,15 +811,15 @@ a.fa-linkedin{
 }
 
 #footer-c{
-	/* background-color: red; */
+	/* background-color: Orange; */
 	text-align: center;
 }
 
 .border{
   width: 280px;
   height: 3px;
-  background: orangered;
-  color: orangered;
+  background: orangeOrange;
+  color: orangeOrange;
   border-style: none !important;
   margin: 0 auto;
 }
@@ -829,7 +829,7 @@ a.fa-linkedin{
 }
 .footer-h{
   color: #c4c4c4;
-  /* border-bottom: 2px solid orangered; */
+  /* border-bottom: 2px solid orangeOrange; */
 }
 
 
@@ -856,7 +856,7 @@ a.fa-linkedin{
 }
 
 .txtb:focus.txtb:invalid{
-  border:3px solid orangered;
+  border:3px solid orangeOrange;
 }
 .txtb:valid{
   border:3px solid #f47621;
@@ -871,12 +871,12 @@ a.fa-linkedin{
   justify-content: center;
 }
 /*footer {
-  background-color: orangered;
+  background-color: orangeOrange;
 }*/
 
 
 .loc {
-  background-image: url("https://toppng.com/uploads/preview/textured-backgrounds-for-websites-1155398483840bc0kagkc.jpg") !important;
+  background-image: url("https://toppng.com/uploads/preview/textuOrange-backgrounds-for-websites-1155398483840bc0kagkc.jpg") !important;
 }
 
 /*---------------------
@@ -1737,3 +1737,298 @@ html{
   opacity: 0.7; 
 } 
 }
+
+
+/*-------------*/
+.material-card {
+  position: relative;
+  height: 0;
+  padding-bottom: calc(100% - 16px);
+  margin-bottom: 6.6em;
+}
+
+.material-card h2 {
+  position: absolute;
+  top: calc(100% - 16px);
+  left: 0;
+  width: 100%;
+  padding: 10px 16px;
+  color: #fff;
+  font-size: 1.4em;
+  line-height: 1.6em;
+  margin: 0;
+  z-index: 10;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.material-card h2 span {
+  display: block;
+}
+.material-card h2 strong {
+  font-weight: 400;
+  display: block;
+  font-size: 0.8em;
+}
+.material-card h2:before,
+.material-card h2:after {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  top: -16px;
+  width: 0;
+  border: 8px solid;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.material-card h2:after {
+  top: auto;
+  bottom: 0;
+}
+@media screen and (max-width: 767px) {
+  .material-card.mc-active {
+    padding-bottom: 0;
+    height: auto;
+  }
+}
+.material-card.mc-active h2 {
+  top: 0;
+  padding: 10px 16px 10px 90px;
+}
+.material-card.mc-active h2:before {
+  top: 0;
+}
+.material-card.mc-active h2:after {
+  bottom: -16px;
+}
+.material-card .mc-content {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 16px;
+  left: 16px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.material-card .mc-btn-action {
+  position: absolute;
+  right: 16px;
+  top: 15px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 5px solid;
+  width: 54px;
+  height: 54px;
+  line-height: 44px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  z-index: 20;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.material-card.mc-active .mc-btn-action {
+  top: 62px;
+}
+.material-card .mc-description {
+  position: absolute;
+  top: 100%;
+  right: 30px;
+  left: 30px;
+  bottom: 54px;
+  overflow: hidden;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 1.2s;
+  -moz-transition: all 1.2s;
+  -ms-transition: all 1.2s;
+  -o-transition: all 1.2s;
+  transition: all 1.2s;
+}
+.material-card .mc-footer {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.material-card .mc-footer a:nth-child(1) {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.material-card .img-container {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.material-card.mc-active .img-container {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  left: 0;
+  top: 12px;
+  width: 60px;
+  height: 60px;
+  z-index: 20;
+}
+.material-card.mc-active .mc-content {
+  padding-top: 5.6em;
+}
+@media screen and (max-width: 767px) {
+  .material-card.mc-active .mc-content {
+    position: relative;
+    margin-right: 16px;
+  }
+}
+.material-card.mc-active .mc-description {
+  top: 50px;
+  padding-top: 5.6em;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+@media screen and (max-width: 767px) {
+  .material-card.mc-active .mc-description {
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    padding: 50px 30px 70px 30px;
+    bottom: 0;
+  }
+}
+.material-card.mc-active .mc-footer {
+  overflow: visible;
+  position: absolute;
+  top: calc(100% - 16px);
+  left: 16px;
+  right: 0;
+  height: 82px;
+  padding-top: 15px;
+  padding-left: 25px;
+}
+.material-card.mc-active .mc-footer a {
+  top: 0;
+}
+.material-card.mc-active .mc-footer h4 {
+  top: -32px;
+}
+
+.material-card.Orange h2:after {
+  border-top-color: #f47621;
+  border-right-color: #f47621;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+.material-card.Orange h2:before {
+  border-top-color: transparent;
+  border-right-color: #f47621;
+  border-bottom-color: #f47621;
+  border-left-color: transparent;
+}
+.material-card.Orange.mc-active h2:before {
+  border-top-color: transparent;
+  border-right-color: #f47621;
+  border-bottom-color: #f47621;
+  border-left-color: transparent;
+}
+.material-card.Orange.mc-active h2:after {
+  border-top-color: #f47621;
+  border-right-color: #f47621;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+.material-card.Orange .mc-btn-action {
+  background-color: #f47621;
+}
+.material-card.Orange .mc-btn-action:hover {
+  background-color: #f47621;
+}
+.material-card.Orange .mc-footer h4 {
+  color: #f47621;
+}
+
+.material-card.Orange.mc-active .mc-content {
+  background-color: #FFEBEE;
+}
+.material-card.Orange.mc-active .mc-footer {
+  background-color: #FFCDD2;
+}
+.material-card.Orange.mc-active .mc-btn-action {
+  border-color: #FFEBEE;
+}
+
+.material-card.Orange h2 {
+  background-color: #f47621;
+}
+.material-card.Orange h2:after {
+  border-top-color: #f47621;
+  border-right-color: #f47621;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+.material-card.Orange h2:before {
+  border-top-color: transparent;
+  border-right-color: #f47621;
+  border-bottom-color: #f47621;
+  border-left-color: transparent;
+}
+.material-card.Orange.mc-active h2:before {
+  border-top-color: transparent;
+  border-right-color: #f47621;
+  border-bottom-color: #f47621;
+  border-left-color: transparent;
+}
+.material-card.Orange.mc-active h2:after {
+  border-top-color: #f47621;
+  border-right-color: #f47621;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+.material-card.Orange .mc-btn-action {
+  background-color: #f47621;
+}
+.material-card.Orange .mc-btn-action:hover {
+  background-color: #f47621;
+}
+.material-card.Orange .mc-footer h4 {
+  color: #f47621;
+}
+.material-card.Orange.mc-active .mc-content {
+  background-color: #FFF3E0;
+}
+.material-card.Orange.mc-active .mc-footer {
+  background-color: #FFE0B2;
+}
+.material-card.Orange.mc-active .mc-btn-action {
+  border-color: #FFF3E0;
+}
+
+
