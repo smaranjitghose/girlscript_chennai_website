@@ -8,10 +8,12 @@
     <link rel="icon" href="assets/Images/gs.png" type="image/png" sizes="16x16">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/announcements.css" type="text/css">
+
 </head>
 <body >
 
@@ -48,49 +50,49 @@
 
       <section class="newsection p-5" style="border-left: 12px solid #f47621;border-right: 12px solid #f47621;">
         <br /><br />
-        <h2 class="pt-5 pb-2 text-center" style="color: black;font-weight: bold;">NEVER MISS AN <font color="#EF6F00" style="font-weight: 100;">UPDATE </font></h2>
+        <h2 class="pt-5 pb-2 text-center" style="color: black;font-weight: bold;" >NEVER MISS AN <font color="#EF6F00" style="font-weight: 100;">UPDATE </font></h2>
         <div class="container p-5">
           <div class="row">
             <div class="col-lg-2"></div>
               <div class="col-lg-8 ">
                 <div class="row">
                   <ul class="ul-announcement">
-                    <li class="li-announcement hvr-float">
+                    <li class="li-announcement hvr-float" data-aos="slide-left" data-aos-duration="1500">
                       <h4 class="h4-announcement">Announcement 1</h4>
                       <p class="p-announcement">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                       <small><em> Date:<i>23.03.2020</i></em></small>
                       <button type="button" class="btn btn-sm btn-announcement">See more</button>
                     </li>
 
-                    <li class="li-announcement hvr-float">
+                    <li class="li-announcement hvr-float" data-aos="slide-right" data-aos-duration="1500"> 
                       <h4 class="h4-announcement">Announcement 2</h4>
                       <p class="p-announcement">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                       <small><em> Date:<i>22.03.2020</i></em></small>
                       <button type="button" class="btn btn-sm btn-announcement">See more</button>
                     </li>
 
-                    <li class="li-announcement hvr-float">
+                    <li class="li-announcement hvr-float" data-aos="slide-left" data-aos-duration="1500">
                       <h4 class="h4-announcement">Announcement 3</h4>
                       <p class="p-announcement">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                       <small><em> Date:<i>21.03.2020</i></em></small>
                       <button type="button" class="btn btn-sm btn-announcement">See more</button>
                     </li>
 
-                    <li class="li-announcement hvr-float">
+                    <li class="li-announcement hvr-float" data-aos="slide-right" data-aos-duration="1500">
                       <h4 class="h4-announcement">Announcement 4</h4>
                       <p class="p-announcement">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                       <small><em> Date:<i>20.03.2020</i></em></small>
                       <button type="button" class="btn btn-sm btn-announcement">See more</button>
                     </li>
 
-                    <li class="li-announcement hvr-float">
+                    <li class="li-announcement hvr-float" data-aos="slide-left" data-aos-duration="1500">
                       <h4 class="h4-announcement">Announcement 5</h4>
                       <p class="p-announcement">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                       <small><em> Date:<i>19.03.2020</i></em></small>
                       <button type="button" class="btn btn-sm btn-announcement">See more</button>
                     </li>
 
-                    <li class="li-announcement hvr-float">
+                    <li class="li-announcement hvr-float" data-aos="slide-right" data-aos-duration="1500">
                       <h4 class="h4-announcement">Announcement 6</h4>
                       <p class="p-announcement">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                       <small><em> Date:<i>18.03.2020</i></em></small>
@@ -145,7 +147,11 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+<!--AOS LIBRARY-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 <script type="text/javascript">
       window.onscroll = function() {scrollFunction()};
 
