@@ -798,12 +798,16 @@ a.fa-linkedin{
   margin: 1rem;
   width: 100px;
   height: 40px;
+  border:1px solid #f47621;
+  transition: all 300ms ease-in;
 
  }
 
  .btn-spl:hover{
    background-color: orangeOrange;
    color:white;
+   background:#f47621;
+   
  }
 
 .right-col h1{
