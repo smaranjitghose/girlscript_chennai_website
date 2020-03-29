@@ -447,64 +447,9 @@ Parallax section
   border: 2px solid black;
 }
 
-.joinbox {
-  position: relative;
 
-}
 
-.joinimage {
-  display: block;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  box-shadow: 8px 8px 8px grey;
-}
 
-.joinoverlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #f47621;
-  overflow: hidden;
-  width: 250px;
-  height: 250px;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
-  border-radius: 50%;
-}
-
-.joinbox:hover .joinoverlay {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.jointext {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.jointext a{
-  color:white;
-  text-decoration: none;
-}
-
-.jointext a:hover{
-  opacity: 0.7;
-}
-
-/*----------------------*/
 
 /*---------------------
   Call To Section
@@ -2036,3 +1981,123 @@ html{
 }
 
 
+/*----Feature Cards Section -------*/
+.feature-cards{
+  max-width:1140px;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom:4rem;
+
+  
+}
+
+.feature-card{
+  width:16rem;
+  height:16rem;
+  border-radius:50%;
+  position: relative;
+  
+}
+.feature-card-img{
+  width:16rem;
+  height:16rem;
+  border-radius:50%;
+}
+
+.overlay{
+  width:16rem;
+  height:16rem;
+  background:#f47621;
+  border-radius:50%;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index:999;
+  transform:scale(0);
+  transition:.3s ease;
+}
+
+.overlay-anchor:link,.overlay:visited{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition:300ms ease-in-out;
+}
+.overlay-anchor:hover,.overlay-active{
+  color:rgb(202, 196, 196);
+}
+
+.feature-card:hover .overlay{
+  transform: scale(1);
+}
+
+@media only screen and (max-width:976px){
+  .feature-card{
+  width:14rem;
+  height:14rem;
+}
+
+.feature-card-img{
+  width:14rem;
+  height:14rem;
+}
+
+.overlay{
+  width:14rem;
+  height:14rem;
+}
+
+}
+
+@media only screen and (max-width:872px){
+  
+  .feature-cards{
+    flex-direction: column;
+  }
+  
+  .feature-card{
+    width:16rem;
+    height:16rem;
+    margin:1rem;
+  }
+
+  .feature-card-img{
+    width:16rem;
+    height:16rem;
+  }
+
+.overlay{
+  width:16rem;
+  height:16rem;
+}
+
+}
+
+@media only screen and (max-width:480px){
+  
+  .feature-card{
+    width:12rem;
+    height:12rem;
+  }
+
+  .feature-card-img{
+    width:12rem;
+    height:12rem;
+  }
+
+  .overlay{
+    width:12rem;
+    height:12rem;
+  }
+
+  .overlay-anchor:link,.overlay:visited{
+    font-size: 15px;
+  }
+ 
+}
