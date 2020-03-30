@@ -5,3 +5,7 @@
 node_modules/   
 logs
 *.log
+
+# for mac systems
+.DS_Store
+.DS_store
