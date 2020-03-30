@@ -1,0 +1,7 @@
+#for vscode personal customisation
+.vscode
+
+#for working with NodeJS
+node_modules/   
+logs
+*.log
