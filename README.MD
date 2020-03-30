@@ -112,7 +112,8 @@ Authorities have the duty and responsibility to delete, modify, or reject commen
 ## 👬  Mentors
   Mentors | Point of Contact
   ------------ | -------------
-  Sukkrit Sharma | [https://github.com/sukkritsharmaofficial](https://github.com/sukkritsharmaofficial)
+  Sukkrit Sharma | [<img align="left" width="16" height="16" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQkpI85pIqNyKPUorE0C7RBLZMIiLIDdLzS5W9xY9vl_V8DWdow&usqp=CAU">
+](https://github.com/sukkritsharmaofficial)
   Saswat Nayak | [https://github.com/swat1998](https://github.com/swat1998)
   Ousnik Polley | [https://github.com/ousnik](https://github.com/ousnik)
   Anush Bhatia | [https://github.com/anushbhatia](https://github.com/anushbhatia)
