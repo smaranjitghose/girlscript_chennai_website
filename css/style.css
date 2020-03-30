@@ -1071,44 +1071,6 @@ section.module.parallax-spl {
   perspective: 700px;
 } 
 
- .program-card {
-  background-color: transparent;
-  width: 200px;
-  height: 200px;
-  perspective: 1000px;
-  }
-
-  .program-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-
-  .program-card img{
-    height: 100px;
-    width: 100px;
-  }
-
-  .program-card:hover .program-card-inner {
-  transform: rotateY(180deg);
-  }
-
-  .program-card-front, .program-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  }
-
-  .program-card-back {
-  transform: rotateY(180deg);
-  }
-
   .inibtn{
     padding: 18px 40px;
     font-size: 16px;
@@ -1301,100 +1263,32 @@ html{
 
 
   
-  .program-card-back p{ 
-            font-size: 15px;  
-          } 
-  @media only screen and (max-width: 992px) { 
-        .program-card-front h5{ 
-          font-size: 12px;  
-          text-align: center; 
-          padding-left: 15px;   
-        } 
-          .program-section {  
-          background:white; 
-          padding:20px; 
-          perspective: 700px; 
-        }   
-         .program-card {  
-          background-color: transparent;  
-          width: 180px; 
-          height: 200px;  
-          perspective: 1000px;  
-          } 
-          .program-card-inner { 
-          position: relative; 
-          width: 80%; 
-          height: 80%;  
-          text-align: center; 
-          transition: transform 0.6s; 
-          transform-style: preserve-3d; 
-          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);  
-          } 
-          .program-card img{  
-            height: 50px; 
-            width: 50px;  
-          } 
-          .program-card-back p{ 
-            font-size: 8px; 
-            line-height: 1.2rem;  
-          } 
-          .program-card:hover .program-card-inner { 
-          transform: rotateY(180deg); 
-          } 
-          .program-card-front, .program-card-back { 
-          position: absolute; 
-          width: 80%; 
-          height: 80%;  
-          -webkit-backface-visibility: hidden;  
-          backface-visibility: hidden;  
-          } 
-          .program-card-back {  
-          transform: rotateY(180deg); 
-          } 
+  
+@media only screen and (max-width: 992px) { 
+      
+  .program-section {  
+      background:white; 
+      padding:20px; 
+      perspective: 700px; 
+  }   
+        
 } 
+
+
 @media only screen and (max-width: 767px) { 
-        .program-section {  
-  background:white; 
-  padding:30px; 
-  perspective: 700px; 
-}   
- .program-card {  
-  background-color: transparent;  
-  width: 200px; 
-  height: 200px;  
-  perspective: 1000px;  
-  } 
-  .program-card-inner { 
-  position: relative; 
-  width: 100%;  
-  height: 100%; 
-  text-align: center; 
-  transition: transform 0.6s; 
-  transform-style: preserve-3d; 
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);  
-  } 
-  .program-card img{  
-    height: 100px;  
-    width: 100px; 
-  } 
-  .program-card:hover .program-card-inner { 
-  transform: rotateY(180deg); 
-  } 
-  .program-card-front, .program-card-back { 
-  position: absolute; 
-  width: 100%;  
-  height: 100%; 
-  -webkit-backface-visibility: hidden;  
-  backface-visibility: hidden;  
-  } 
-  .program-card-back {  
-  transform: rotateY(180deg); 
-  } 
+  .program-section {  
+    background:white; 
+    padding:30px; 
+    perspective: 700px; 
+  }   
+ 
 }
  @media only screen and (min-width: 993px) {  
-        .newsection{  
+  .newsection{  
   background-color: white;  
 } 
+
+
 .joinbtn{ 
   padding: 18px 40px; 
   font-size: 16px;  
@@ -2100,4 +1994,118 @@ html{
     font-size: 15px;
   }
  
+}
+
+/*------Initiatives Section--------*/
+
+.initiatives-cards{
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin:1rem auto;
+  max-width:1140px;
+  
+}
+
+.upper, .lower{
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 0 0 50%;
+}
+.flip-card{
+  width:13rem;
+  height:13rem;
+  perspective: 62.5rem;
+  
+}
+
+.flip-card-content{
+  transition: transform 0.6s ease-in-out;
+  transform-style: preserve-3d;
+  position:relative;
+}
+
+.flip-card-front{
+  width:13rem;
+  height:13rem;
+  padding:0.5rem;
+  position: absolute;
+  top:0;
+  left:0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  
+}
+
+.flip-card-head{
+  color:#f47621;
+  text-transform: uppercase;
+  text-align:center;
+  letter-spacing:2px;
+  margin:1rem;
+  
+}
+
+.flip-card-head span{
+  display:block;
+}
+
+.flip-card-img{
+  width:5rem;
+  height:5rem;
+  margin:0 auto;
+}
+
+.flip-img{
+  width:100%;
+  height:100%;
+  text-align:center;
+}
+
+.flip-card-back{
+  width:13rem;
+  height:13rem;
+  padding:0.5rem 1rem;
+  text-align: justify;
+  position: absolute;
+  top:0;
+  left:0;
+  transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+
+.flip-card-detail{
+  font-size:0.9rem;
+}
+
+.flip-card:hover .flip-card-content{
+  transform:rotateY(180deg);
+  
+}
+
+@media only screen and (max-width:1014px){
+  .initiatives-cards{
+    max-width:90%;
+    margin: 0 auto;
+    
+  }
+
+  .upper,.lower{
+    flex-direction: column;
+  }
+  .flip-card{
+    margin:1rem 0rem;
+  }
+
+}
+
+@media only screen and (max-width:632px){
+  .initiatives-cards{
+      flex-direction: column;
+  }
 }
