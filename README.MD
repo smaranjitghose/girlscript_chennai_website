@@ -21,7 +21,7 @@ Being an open source project under GirlScript Summer of Code'2020, this website 
 - Contact Us
 
 Also for participants looking to contribute beyond just the website...we shall have a separate projects folder..for making certain small scripts to assist the admins of the website..Once approved here and verified..you can directly contribute the same.
-https://github.com/girlscriptchennai
+
 
 ### 👇 Checkout the current version: 
 
@@ -110,11 +110,12 @@ Authorities have the duty and responsibility to delete, modify, or reject commen
 - [Smaranjit Ghose](https://github.com/smaranjitghose)
 
 ## 👬  Mentors
-
-- [Sukkrit Sharma](https://github.com/sukkritsharmaofficial)
-- [Saswat Nayak](https://github.com/swat1998)
-- [Ousnik Polley](https://github.com/ousnik)
-- [Anush Bhatia](https://github.com/anushbhatia)
+  Mentors | Point of Contact
+  ------------ | -------------
+  Sukkrit Sharma | [https://github.com/sukkritsharmaofficial](https://github.com/sukkritsharmaofficial)
+  Saswat Nayak | [https://github.com/swat1998](https://github.com/swat1998)
+  Ousnik Polley | [https://github.com/ousnik](https://github.com/ousnik)
+  Anush Bhatia | [https://github.com/anushbhatia](https://github.com/anushbhatia)
 
 Feel free to ask your queries!! 🙌
 
@@ -122,4 +123,3 @@ Feel free to ask your queries!! 🙌
 Refer to [LICENSE](./LICENSE).
 
 Happy Coding!! 💜💜
-
