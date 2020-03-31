@@ -1875,6 +1875,34 @@ html{
 }
 
 
+.probtn{ 
+  padding: 14px 30px; 
+  font-size: 16px;  
+  border: none; 
+  font-weight: 700; 
+  outline: none;  
+  border-radius: 30px;  
+  margin-left: 20px;  
+  cursor: pointer;  
+  background-color: rgb(37, 37, 37);  
+  color: white; 
+  border: 2px solid rgb(37, 37, 37);  
+} 
+.probtn:hover{ 
+  color: #111111; 
+  background-color: white;  
+  border: 2px solid black;  
+} 
+
+.prodisplay{
+  display: none;
+}
+
+.afab {
+  font-size: 6em;
+  color: #f47621;
+}
+
 /*----Feature Cards Section -------*/
 .feature-cards{
   max-width:1140px;
@@ -2109,3 +2137,4 @@ html{
       flex-direction: column;
   }
 }
+
