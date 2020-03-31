@@ -447,9 +447,64 @@ Parallax section
   border: 2px solid black;
 }
 
+.joinbox {
+  position: relative;
 
+}
 
+.joinimage {
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: 8px 8px 8px grey;
+}
 
+.joinoverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f47621;
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  border-radius: 50%;
+}
+
+.joinbox:hover .joinoverlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.jointext {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.jointext a{
+  color:white;
+  text-decoration: none;
+}
+
+.jointext a:hover{
+  opacity: 0.7;
+}
+
+/*----------------------*/
 
 /*---------------------
   Call To Section
@@ -743,16 +798,12 @@ a.fa-linkedin{
   margin: 1rem;
   width: 100px;
   height: 40px;
-  border:1px solid #f47621;
-  transition: all 300ms ease-in;
 
  }
 
  .btn-spl:hover{
    background-color: orangeOrange;
    color:white;
-   background:#f47621;
-   
  }
 
 .right-col h1{
@@ -1071,6 +1122,44 @@ section.module.parallax-spl {
   perspective: 700px;
 } 
 
+ .program-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+  }
+
+  .program-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+
+  .program-card img{
+    height: 100px;
+    width: 100px;
+  }
+
+  .program-card:hover .program-card-inner {
+  transform: rotateY(180deg);
+  }
+
+  .program-card-front, .program-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  }
+
+  .program-card-back {
+  transform: rotateY(180deg);
+  }
+
   .inibtn{
     padding: 18px 40px;
     font-size: 16px;
@@ -1263,32 +1352,100 @@ html{
 
 
   
-  
-@media only screen and (max-width: 992px) { 
-      
-  .program-section {  
-      background:white; 
-      padding:20px; 
-      perspective: 700px; 
-  }   
-        
+  .program-card-back p{ 
+            font-size: 15px;  
+          } 
+  @media only screen and (max-width: 992px) { 
+        .program-card-front h5{ 
+          font-size: 12px;  
+          text-align: center; 
+          padding-left: 15px;   
+        } 
+          .program-section {  
+          background:white; 
+          padding:20px; 
+          perspective: 700px; 
+        }   
+         .program-card {  
+          background-color: transparent;  
+          width: 180px; 
+          height: 200px;  
+          perspective: 1000px;  
+          } 
+          .program-card-inner { 
+          position: relative; 
+          width: 80%; 
+          height: 80%;  
+          text-align: center; 
+          transition: transform 0.6s; 
+          transform-style: preserve-3d; 
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);  
+          } 
+          .program-card img{  
+            height: 50px; 
+            width: 50px;  
+          } 
+          .program-card-back p{ 
+            font-size: 8px; 
+            line-height: 1.2rem;  
+          } 
+          .program-card:hover .program-card-inner { 
+          transform: rotateY(180deg); 
+          } 
+          .program-card-front, .program-card-back { 
+          position: absolute; 
+          width: 80%; 
+          height: 80%;  
+          -webkit-backface-visibility: hidden;  
+          backface-visibility: hidden;  
+          } 
+          .program-card-back {  
+          transform: rotateY(180deg); 
+          } 
 } 
-
-
 @media only screen and (max-width: 767px) { 
-  .program-section {  
-    background:white; 
-    padding:30px; 
-    perspective: 700px; 
-  }   
- 
+        .program-section {  
+  background:white; 
+  padding:30px; 
+  perspective: 700px; 
+}   
+ .program-card {  
+  background-color: transparent;  
+  width: 200px; 
+  height: 200px;  
+  perspective: 1000px;  
+  } 
+  .program-card-inner { 
+  position: relative; 
+  width: 100%;  
+  height: 100%; 
+  text-align: center; 
+  transition: transform 0.6s; 
+  transform-style: preserve-3d; 
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);  
+  } 
+  .program-card img{  
+    height: 100px;  
+    width: 100px; 
+  } 
+  .program-card:hover .program-card-inner { 
+  transform: rotateY(180deg); 
+  } 
+  .program-card-front, .program-card-back { 
+  position: absolute; 
+  width: 100%;  
+  height: 100%; 
+  -webkit-backface-visibility: hidden;  
+  backface-visibility: hidden;  
+  } 
+  .program-card-back {  
+  transform: rotateY(180deg); 
+  } 
 }
  @media only screen and (min-width: 993px) {  
-  .newsection{  
+        .newsection{  
   background-color: white;  
 } 
-
-
 .joinbtn{ 
   padding: 18px 40px; 
   font-size: 16px;  
@@ -1874,238 +2031,30 @@ html{
   border-color: #FFF3E0;
 }
 
+.probtn{ 
+  padding: 14px 30px; 
+  font-size: 16px;  
+  border: none; 
+  font-weight: 700; 
+  outline: none;  
+  border-radius: 30px;  
+  margin-left: 20px;  
+  cursor: pointer;  
+  background-color: rgb(37, 37, 37);  
+  color: white; 
+  border: 2px solid rgb(37, 37, 37);  
+} 
+.probtn:hover{ 
+  color: #111111; 
+  background-color: white;  
+  border: 2px solid black;  
+} 
 
-/*----Feature Cards Section -------*/
-.feature-cards{
-  max-width:1140px;
-  margin:0 auto;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-bottom:4rem;
-
-  
+.prodisplay{
+  display: none;
 }
 
-.feature-card{
-  width:16rem;
-  height:16rem;
-  border-radius:50%;
-  position: relative;
-  
-}
-.feature-card-img{
-  width:16rem;
-  height:16rem;
-  border-radius:50%;
-}
-
-.overlay{
-  width:16rem;
-  height:16rem;
-  background:#f47621;
-  border-radius:50%;
-  position: absolute;
-  top:0;
-  left:0;
-  z-index:999;
-  transform:scale(0);
-  transition:.3s ease;
-}
-
-.overlay-anchor:link,.overlay:visited{
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  transition:300ms ease-in-out;
-}
-.overlay-anchor:hover,.overlay-active{
-  color:rgb(202, 196, 196);
-}
-
-.feature-card:hover .overlay{
-  transform: scale(1);
-}
-
-@media only screen and (max-width:976px){
-  .feature-card{
-  width:14rem;
-  height:14rem;
-}
-
-.feature-card-img{
-  width:14rem;
-  height:14rem;
-}
-
-.overlay{
-  width:14rem;
-  height:14rem;
-}
-
-}
-
-@media only screen and (max-width:872px){
-  
-  .feature-cards{
-    flex-direction: column;
-  }
-  
-  .feature-card{
-    width:16rem;
-    height:16rem;
-    margin:1rem;
-  }
-
-  .feature-card-img{
-    width:16rem;
-    height:16rem;
-  }
-
-.overlay{
-  width:16rem;
-  height:16rem;
-}
-
-}
-
-@media only screen and (max-width:480px){
-  
-  .feature-card{
-    width:12rem;
-    height:12rem;
-  }
-
-  .feature-card-img{
-    width:12rem;
-    height:12rem;
-  }
-
-  .overlay{
-    width:12rem;
-    height:12rem;
-  }
-
-  .overlay-anchor:link,.overlay:visited{
-    font-size: 15px;
-  }
- 
-}
-
-/*------Initiatives Section--------*/
-
-.initiatives-cards{
-  display:flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin:1rem auto;
-  max-width:1140px;
-  
-}
-
-.upper, .lower{
-  display:flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex: 0 0 50%;
-}
-.flip-card{
-  width:13rem;
-  height:13rem;
-  perspective: 62.5rem;
-  
-}
-
-.flip-card-content{
-  transition: transform 0.6s ease-in-out;
-  transform-style: preserve-3d;
-  position:relative;
-}
-
-.flip-card-front{
-  width:13rem;
-  height:13rem;
-  padding:0.5rem;
-  position: absolute;
-  top:0;
-  left:0;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  
-}
-
-.flip-card-head{
-  color:#f47621;
-  text-transform: uppercase;
-  text-align:center;
-  letter-spacing:2px;
-  margin:1rem;
-  
-}
-
-.flip-card-head span{
-  display:block;
-}
-
-.flip-card-img{
-  width:5rem;
-  height:5rem;
-  margin:0 auto;
-}
-
-.flip-img{
-  width:100%;
-  height:100%;
-  text-align:center;
-}
-
-.flip-card-back{
-  width:13rem;
-  height:13rem;
-  padding:0.5rem 1rem;
-  text-align: justify;
-  position: absolute;
-  top:0;
-  left:0;
-  transform: rotateY(180deg);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-
-}
-
-.flip-card-detail{
-  font-size:0.9rem;
-}
-
-.flip-card:hover .flip-card-content{
-  transform:rotateY(180deg);
-  
-}
-
-@media only screen and (max-width:1014px){
-  .initiatives-cards{
-    max-width:90%;
-    margin: 0 auto;
-    
-  }
-
-  .upper,.lower{
-    flex-direction: column;
-  }
-  .flip-card{
-    margin:1rem 0rem;
-  }
-
-}
-
-@media only screen and (max-width:632px){
-  .initiatives-cards{
-      flex-direction: column;
-  }
+.afab {
+  font-size: 6em;
+  color: #f47621;
 }
