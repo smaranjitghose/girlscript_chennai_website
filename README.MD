@@ -112,11 +112,10 @@ Authorities have the duty and responsibility to delete, modify, or reject commen
 ## 👬  Mentors
   Mentors | Point of Contact
   ------------ | -------------
-  Sukkrit Sharma | <img align="left" width="20" height="20" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQkpI85pIqNyKPUorE0C7RBLZMIiLIDdLzS5W9xY9vl_V8DWdow&usqp=CAU"
-](https://github.com/sukkritsharmaofficial)
-  Saswat Nayak | [https://github.com/swat1998](https://github.com/swat1998)
-  Ousnik Polley | [https://github.com/ousnik](https://github.com/ousnik)
-  Anush Bhatia | [https://github.com/anushbhatia](https://github.com/anushbhatia)
+  Sukkrit Sharma |<p float ="left"> [<img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSaEdebRNjd_9zthPdhSQ7Kr5SxRGbyOMFBjH475s7EJ3805D8e&usqp=CAU" height = "50" width = "50" padding = "10" display = "inline-block">](https://github.com/sukkritsharmaofficial) [<img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRNQlzcehWx19baBjYh-ZmY9Ap33HFnikpmTFj0D-41_tRryIg9&usqp=CAU" height = "50" width = "50" padding = "10" display = "inline-block">](http://sukkritsharma.codes)</p>
+  Saswat Nayak |<p float ="left"> [<img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSaEdebRNjd_9zthPdhSQ7Kr5SxRGbyOMFBjH475s7EJ3805D8e&usqp=CAU" height = "50" width = "50" padding = "10" display = "inline-block">](https://github.com/swat1998) [<img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRNQlzcehWx19baBjYh-ZmY9Ap33HFnikpmTFj0D-41_tRryIg9&usqp=CAU" height = "50" width = "50" padding = "10" display = "inline-block">](swat1998.github.io)</p>
+  Ousnik Polley |<p float ="left"> [<img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSaEdebRNjd_9zthPdhSQ7Kr5SxRGbyOMFBjH475s7EJ3805D8e&usqp=CAU" height = "50" width = "50" padding = "10" display = "inline-block">](https://github.com/ousnik)</p> 
+  Anush Bhatia |<p float ="left"> [<img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSaEdebRNjd_9zthPdhSQ7Kr5SxRGbyOMFBjH475s7EJ3805D8e&usqp=CAU" height = "50" width = "50" padding = "10" display = "inline-block">](https://github.com/anushbhatia)</p> 
 
 Feel free to ask your queries!! 🙌
 
