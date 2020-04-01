@@ -318,7 +318,7 @@
     </footer>
 
      
-         <a class="gotopbtn" href="#"> <i class="fa fa-arrow-up" style="color:white"></i> </a>
+         <a class="gotopbtn" id="scroll-top" href="#"> <i class="fa fa-arrow-up" style="color:white"></i> </a>
     
 
 
@@ -338,9 +338,11 @@
 				  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
 				    document.getElementById("navbar").style.padding = "1px 16px";
 				    document.getElementById("logo").width = "45px";
+				    document.getElementById("scroll-top").style.display ="block";
 				  } else {
 				    document.getElementById("navbar").style.padding = "8px 16px";
 				    document.getElementById("logo").style.width = "80px";
+				    document.getElementById("scroll-top").style.display ="none";
 				  }
 				}
     </script>
