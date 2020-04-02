@@ -107,14 +107,14 @@ Authorities have the duty and responsibility to delete, modify, or reject commen
 
 ## 👨 Project Admin
 
-- [Smaranjit Ghose](https://github.com/smaranjitghose)
+- Smaranjit Ghose <p>[<img src="https://img.icons8.com/windows/32/000000/github-2.png" display = "inline-block">](https://github.com/smaranjitghose) [<img src="https://img.icons8.com/color/48/000000/linkedin-2.png" display = "inline-block">](https://linkedin.com/in/smaranjitghose)</p>
 
 ## 👬  Mentors
 
-- Sukkrit Sharma  <p>[<img src="https://img.icons8.com/windows/32/000000/github-2.png"/>](https://github.com/sukkritsharmaofficial) [<img src="https://img.icons8.com/color/48/000000/linkedin-2.png" display = "inline-block"/>](https://linkedin.com/in/sukkritsharma)</p>
-- Saswat Nayak    <p>[<img src="https://img.icons8.com/windows/32/000000/github-2.png"/>](https://github.com/swat1998) [<img src="https://img.icons8.com/color/48/000000/linkedin-2.png" display = "inline-block"/>](linkedin.com/in/saswat-nayak-a41212166)</p> 
-- Ousnik Polley   <p>[<img src="https://img.icons8.com/windows/32/000000/github-2.png"/>](https://github.com/ousnik) [<img src="https://img.icons8.com/color/48/000000/linkedin-2.png" display = "inline-block"/>](https://linkedin.com/in/ousnikpolley)</p>
-- Anush Bhatia    <p>[<img src="https://img.icons8.com/windows/32/000000/github-2.png"/>](https://github.com/anushbhatia) [<img src="https://img.icons8.com/color/48/000000/linkedin-2.png" display = "inline-block"/>](https://linkedin.com/in/anush-bhatia-aa500a158)</p>
+- Sukkrit Sharma  <p>[<img src="https://img.icons8.com/windows/32/000000/github-2.png" display = "inline-block">](https://github.com/sukkritsharmaofficial) [<img src="https://img.icons8.com/color/48/000000/linkedin-2.png" display = "inline-block">](https://linkedin.com/in/sukkritsharma)</p>
+- Saswat Nayak    <p>[<img src="https://img.icons8.com/windows/32/000000/github-2.png" display = "inline-block">](https://github.com/swat1998) [<img src="https://img.icons8.com/color/48/000000/linkedin-2.png" display = "inline-block">](linkedin.com/in/saswat-nayak-a41212166)</p> 
+- Ousnik Polley   <p>[<img src="https://img.icons8.com/windows/32/000000/github-2.png" display = "inline-block">](https://github.com/ousnik) [<img src="https://img.icons8.com/color/48/000000/linkedin-2.png" display = "inline-block">](https://linkedin.com/in/ousnikpolley)</p>
+- Anush Bhatia    <p>[<img src="https://img.icons8.com/windows/32/000000/github-2.png" display = "inline-block">](https://github.com/anushbhatia) [<img src="https://img.icons8.com/color/48/000000/linkedin-2.png" display = "inline-block">](https://linkedin.com/in/anush-bhatia-aa500a158)</p>
 
 Feel free to ask your queries!! 🙌
 
