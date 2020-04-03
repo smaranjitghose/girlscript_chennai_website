@@ -1,6 +1,6 @@
-# Contributing Guidelines for Girlscript chennai website.  🚀
+# Contributing Guidelines for Girlscript Chennai website.  🚀
 
-We value all the people who are interested in contributing to Girlscript chennai website. This is required to create a unified development environment.
+We value all the people who are interested in contributing to Girlscript Chennai website. This is required to create a unified development environment.
 
 We want to make contributing to this project as easy and transparent as possible, whether it's:
 * Reporting a bug
@@ -17,7 +17,7 @@ We want to make contributing to this project as easy and transparent as possible
     ```
     cd girlscript_chennai_website
     ```
-* Add reference to original repository
+* Add a reference to the original repository.
     ```
     git remote add upstream https://github.com/smaranjitghose/girlscript_chennai_website.git
     ```
@@ -29,11 +29,11 @@ We want to make contributing to this project as easy and transparent as possible
     ```
     git checkout -b <your_branch_name>
     ```
-* Always take pull from the upstream repo to your      master branch in order to keep it at par with the main project. 
+* Always take a pull from the upstream repository to your master branch to keep it at par with the main project.
     ```
     git pull upstream master
     ```
-*  Before creating an issue, discuss it withe project mentors in the [Slack Channel](https://gssoc20.slack.com)
+*  ## Before creating an issue, discuss it with the project mentors in the [Slack Channel](https://gssoc20.slack.com)
 * Make changes in the source code after getting yourself assigned by the mentors.
 * Commit your changes.
     ```
@@ -45,10 +45,11 @@ We want to make contributing to this project as easy and transparent as possible
     git push -u origin <your_branch_name>
     ```
 * Create a Pull Request!
-
-Mentors will review your PR and merge if there are no conflicts found!
-
 ***
+###  PR takes the max of 12 hrs to review. Mentors will review your PR and merge if there are no conflicts found!
+
+### Incase you face any problems feel free to ask it on [Slack Channel](https://gssoc20.slack.com)
+
 You will get the following points on the basis of difficulty of the project. 
 | Type        | Points          
 | ----------- |:------:
