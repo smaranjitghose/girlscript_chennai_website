@@ -79,13 +79,12 @@ window.onscroll = function() {scrollFunction()};
 
 function activeTab(){
 	let navBar = $('#navbarNav')
-	console.log(navBar[0].children[0].children);
 	let navItems = navBar[0].children[0].children;
-	let pageName = window.location.pathname;
+	let pageName = window.location.pathname.toLowerCase();
 	for(let i=0 ; i< navItems.length ; i++ )
 	{
 		if(navItems[i].children[0].pathname !== pageName)
-		{console.log('hello');navItems[i].children[0].classList.remove("active")}
+		navItems[i].children[0].classList.remove("active")
 		else navItems[i].children[0].classList.add("active")
 	}
 }
