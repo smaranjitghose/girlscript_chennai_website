@@ -1256,9 +1256,9 @@ html{
     color:black;
      
    }
-   .active span{
-    color: black;
-    font-weight: 800;
+   a.active{
+    color: black !important;
+    font-weight: 800 !important;
    }
 
 
