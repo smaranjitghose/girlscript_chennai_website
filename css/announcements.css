@@ -64,6 +64,7 @@
 	padding: 8px;
 }
 
+
 #button1:hover{
 	color: black;
 	background-color: white;
@@ -135,6 +136,12 @@
 	padding: 20px;
 	margin-left: 650px;
 }
+
+@media only screen and (max-width: 841px) {
+	#button3{
+		margin-left: 10px;
+	}
+  }
 
 #button3:hover{
 	color: black;
