@@ -83,9 +83,9 @@ function activeTab(){
 	let pageName = window.location.pathname.toLowerCase();
 	for(let i=0 ; i< navItems.length ; i++ )
 	{	let childHref = navItems[i].children[0].pathname.toLowerCase();
-		if( childHref !== pageName || !(childHref.includes(pageName)))
-		navItems[i].children[0].classList.remove("active")
-		else navItems[i].children[0].classList.add("active")
+		if( childHref === pageName || childHref.includes(pageName))
+		navItems[i].children[0].classList.add("active")
+		else navItems[i].children[0].classList.remove("active")
 	}
 }
 
