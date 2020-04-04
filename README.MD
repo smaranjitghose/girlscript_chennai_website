@@ -21,7 +21,7 @@ Being an open source project under GirlScript Summer of Code'2020, this website 
 - Contact Us
 
 Also for participants looking to contribute beyond just the website...we shall have a separate projects folder..for making certain small scripts to assist the admins of the website..Once approved here and verified..you can directly contribute the same.
-https://github.com/girlscriptchennai
+https://github.com/smaranjitghose/girlscript_chennai_website
 
 ### 👇 Checkout the current version: 
 
