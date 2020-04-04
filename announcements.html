@@ -13,97 +13,337 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/announcements.css" type="text/css">
 </head>
-<body >
-
-  <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
-    <a class="navbar-brand" href="index.html"><img src="assets/Images/transparent_logo.png" width="64px" id="logo"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse " id="navbarNav">
-        <ul class="navbar-nav ml-5">
-          <li class="nav-item ">
-            <a class="nav-link pr-4"  href="index.html">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link pr-4 active" href="announcements.html"><span>ANNOUNCEMENTS</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link pr-4" href="team.html">OUR TEAM</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link pr-4" href="achievements.html">OUR ACHIEVEMENTS</a>
-          </li>
+<body onLoad="typeWriter()">
+<nav class="navbar fixed-top navbar-expand-lg" id="navbar">
+        <a class="navbar-brand" href="index.html"><img src="assets/Images/transparent_logo.png" id="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav ml-5">
+            <li class="nav-item ">
+              <a class="nav-link pr-4 active"  href="index.html"><span>HOME</span></a>
+            </li>
             <li class="nav-item">
-              <a class="nav-link pr-4" href="blogs.html">BLOGS</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link pr-4" href="contactUs.html">CONTACT US</a>
-          </li>
 
-        </ul>
-      </div>
-    </nav>
-
-
-      <section class="newsection p-5" style="border-left: 12px solid #f47621;border-right: 12px solid #f47621;">
-        <br /><br />
-        <h2 class="pt-5 pb-2 text-center" style="color: black;font-weight: bold;">NEVER MISS AN <font color="#EF6F00" style="font-weight: 100;">UPDATE </font></h2>
-        <div class="container p-5">
-          <div class="row">
-            <div class="col-lg-2"></div>
-              <div class="col-lg-8 ">
-                <div class="row">
-                  <ul class="ul-announcement">
-                    <li class="li-announcement hvr-float">
-                      <h4 class="h4-announcement">Announcement 1</h4>
-                      <p class="p-announcement">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      <small><em> Date:<i>23.03.2020</i></em></small>
-                      <button type="button" class="btn btn-sm btn-announcement">See more</button>
-                    </li>
-
-                    <li class="li-announcement hvr-float">
-                      <h4 class="h4-announcement">Announcement 2</h4>
-                      <p class="p-announcement">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      <small><em> Date:<i>22.03.2020</i></em></small>
-                      <button type="button" class="btn btn-sm btn-announcement">See more</button>
-                    </li>
-
-                    <li class="li-announcement hvr-float">
-                      <h4 class="h4-announcement">Announcement 3</h4>
-                      <p class="p-announcement">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      <small><em> Date:<i>21.03.2020</i></em></small>
-                      <button type="button" class="btn btn-sm btn-announcement">See more</button>
-                    </li>
-
-                    <li class="li-announcement hvr-float">
-                      <h4 class="h4-announcement">Announcement 4</h4>
-                      <p class="p-announcement">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      <small><em> Date:<i>20.03.2020</i></em></small>
-                      <button type="button" class="btn btn-sm btn-announcement">See more</button>
-                    </li>
-
-                    <li class="li-announcement hvr-float">
-                      <h4 class="h4-announcement">Announcement 5</h4>
-                      <p class="p-announcement">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      <small><em> Date:<i>19.03.2020</i></em></small>
-                      <button type="button" class="btn btn-sm btn-announcement">See more</button>
-                    </li>
-
-                    <li class="li-announcement hvr-float">
-                      <h4 class="h4-announcement">Announcement 6</h4>
-                      <p class="p-announcement">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      <small><em> Date:<i>18.03.2020</i></em></small>
-                      <button type="button" class="btn btn-sm btn-announcement">See more</button>
-                    </li>
-                  </ul>
-
-
-              </div>
-          </div>
+              <a class="nav-link pr-4" href="announcements.html">ANNOUNCEMENTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pr-4" href="team.html">OUR TEAM</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link pr-4" href="achievements.html">OUR ACHIEVEMENTS</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link pr-4" href="#">BLOGS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link pr-4" href="contactUs.html">CONTACT US</a>
+            </li>
+           
+          </ul>
         </div>
-      </section>
+      </nav>
 
+
+      <!-- ANNOUNCEMENTS -->
+    <header>    
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">   
+                <div class="carousel-item active" style="background-image: url('assets/Images/event6.jpg')">
+                    <div class="carousel-caption d-none d-md-block" >
+                        <h1 class="display-4" id="heading"></h1>
+                    </div>
+                    <script>
+                        var i = 0;
+                        var txt = 'ANNOUNCEMENTS';
+                        var speed = 80;
+      
+                        function typeWriter() {
+                            if (i < txt.length) {
+                                document.getElementById("heading").innerHTML += txt.charAt(i);
+                                i++;
+                                setTimeout(typeWriter, speed);
+                            }
+                        }
+                    </script>
+                </div>
+
+                <div class="carousel-item" style="background-image: url('assets/Images/event6.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-4" id="heading">ANNOUNCEMENTS</h1>  
+                   </div>   
+                </div>
+      
+                <div class="carousel-item" style="background-image: url('assets/Images/event6.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-4" id="heading">ANNOUNCEMENTS</h1>  
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+
+
+
+    <!--Events Section -->
+
+    <section style="border-left: 12px solid #f47621;border-right: 12px solid #f47621;">
+        <br><br><br><br><br><br><br><br>    
+        <h2 class="events" style="color:black ;font-weight:bold;">UPCOMING<font color="#f47621" style="font-weight: 100;"> EVENTS</font></h2>
+        <br><br><br>
+        <!-- News jumbotron -->
+
+        <!-- EVENT 1 -->
+        <div class="jumbotron text-center hoverable p-4" >
+            <div class="row">
+                <div class="col-md-4 offset-md-1 mx-3 my-3">
+                    <div class="view overlay">
+                        <img src="assets/Images/event2.jpeg">
+
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                </div>
+  
+                <div class="col-md-7 text-md-left ml-3 mt-3">
+                    <div class="p-2">
+                        <a href="event1.html" id="event1">CODECHAMP</a>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4">
+                                <a href="#!" class="green-text">
+                                    <h6 class="h6 pb-1 text"><i class="fa fa-location-arrow" style="color:black"></i>  Anna Nagar,Chennai</h6>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#!" class="green-text">
+                                    <h6 class="h6 pb-1 text"><i class="fa fa-calendar" style="color:black"></i>  May 20, 2020</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <br>
+                    <p class="font-weight-normal" id="in2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque, totam
+                    rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae....</p>
+                    <br>
+                    <a id="button1" href="event1.html" >Read more</a>
+                </div>
+            </div>
+        </div>
+    <br><br><br><br>
+
+    <div class="jumbotron text-center hoverable p-4" >
+            <div class="row">
+                <div class="col-md-4 offset-md-1 mx-3 my-3">
+                    <div class="view overlay">
+                        <img src="assets/Images/event3.jpeg" class="img-fluid">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                </div>
+  
+                <div class="col-md-7 text-md-left ml-3 mt-3">
+                    <div class="p-2">
+                        <a href="event1.html" id="event1">GIRLSCRIPT CONTRIBUTORS WEEK</a>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4">
+                                <a href="#!" class="green-text">
+                                    <h6 class="h6 pb-1 text"><i class="fa fa-location-arrow" style="color:black"></i> Dwarka, Delhi</h6>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#!" class="green-text">
+                                    <h6 class="h6 pb-1 text"><i class="fa fa-calendar" style="color:black"></i>  June 20, 2020</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <br>
+                    <p class="font-weight-normal" id="in2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque, totam
+                    rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae....</p>
+                    <br>
+                    <a id="button1" href="event1.html" >Read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+
+    
+    <!-- RECENT EVENTS-->
+    <section style="border-left: 12px solid #f47621;border-right: 12px solid #f47621;">
+
+    <br><br><br><br><br><br><br>
+    <h2 class="events" style="color:black ;font-weight:bold;">RECENT<font  color="#f47621" style="font-weight: 100;"> EVENTS </font> </h2>
+    <br>
+    <br><br><br>
+        <div class="container" style="padding: 10px; width:100%">
+            <div class="row text-center" style="display:flex; flex-wrap:wrap;">
+                <div class="col-sm-4 py-2" >
+                    <div id="card" class="card card-body h-100">
+                        <img id="image" src="assets/Images/event1.jpeg">
+                        <div class="caption">
+                            <h4 id="header">Card 1</h4>
+                        </div>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p><a id="button2" href="event1.html" >More Info</a></p>
+                    </div>
+                </div> 
+
+                <div class="col-sm-4 py-2" >
+                    <div id="card" class="card card-body h-100">
+                        <img id="image" src="assets/Images/event2.jpeg">
+                        <div class="caption">
+                            <h4 id="header">Card 2</h4>
+                        </div>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p><a id="button2" href="event1.html" >More Info</a></p>
+                    </div>
+                </div>    
+
+                <div class="col-sm-4 py-2" >
+                    <div id="card" class="card card-body h-100">
+                        <img id="image" src="assets/Images/event3.jpeg">
+                        <div class="caption">
+                            <h4 id="header">Card 3</h4>
+                        </div>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p><a id="button2" href="event1.html" >More Info</a></p>
+                    </div>
+                </div>                        
+            </div>
+        </div>  
+
+
+
+        <div class="container" style="padding: 10px; width:100%">
+            <div class="row text-center" style="display:flex; flex-wrap:wrap;">
+                <div class="col-sm-4 py-2" >
+                    <div id="card" class="card card-body h-100">
+                        <img id="image" src="assets/Images/event2.jpeg">
+                        <div class="caption">
+                            <h4 id="header">Card 1</h4>
+                        </div>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p><a id="button2" href="event1.html" >More Info</a></p>
+                    </div>
+                </div> 
+
+                <div class="col-sm-4 py-2" >
+                    <div id="card" class="card card-body h-100">
+                        <img id="image" src="assets/Images/event3.jpeg">
+                        <div class="caption">
+                            <h4 id="header">Card 2</h4>
+                        </div>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p><a id="button2" href="event1.html" >More Info</a></p>
+                    </div>
+                </div>    
+
+                <div class="col-sm-4 py-2" >
+                    <div id="card" class="card card-body h-100">
+                        <img id="image" src="assets/Images/event1.jpeg">
+                        <div class="caption">
+                            <h4 id="header">Card 3</h4>
+                        </div>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p><a id="button2" href="event1.html" >More Info</a></p>
+                    </div>
+                </div>                        
+            </div>
+        </div>    
+            
+    </section>
+
+
+    <section style="border-left: 12px solid #f47621;border-right: 12px solid #f47621;">
+    <br><br><br><br><br><br><br><br>
+    <div class="auto-container" style="background-color:#D3D3D3">
+        <br><br><br>
+        <div class="row">
+            <div class="col">
+                <h1 id="title1">Want to organize an event?</h1>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="row">
+            <div class="col">
+                <h1 id="title2">FILL THE WORKSHOP ORGANIZING FORM FROM BELOW BUTTON</h1>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="row">
+            <div class="col">
+                <h1 id="title3">If you want to Organize an Event at your College/City on behalf on GirlScript, then please fill the form</h1>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="row">
+            <div class="col">
+                <a id="button3" href="event1.html">CONTACT US</a>
+            </div>
+        </div>
+        <br><br><br><br>
+
+    </div>
+
+    </section>
+
+    <!-- This is the footer part -->
+    <footer>
+        <div class=container>
+            <div class="row">
+                <div class="col-lg-6"><center>
+                    <img src="assets/Images/transparent_logo.png" alt="" class="logo">
+                </center>
+                </div>
+                <div class="col-lg-6">
+                    <br>
+                        
+                    <h3 class="footer-h">Join Our Newsletter</h3>
+                    <div class="border"></div>
+                    <p class="footer-p">Enter Your Email to get our news and updates.</p>
+                    <form action="" class="newsletter-form" >
+                    <input type="text" class="txtb" placeholder="Enter Your Email">
+                    <button class="btn btn-spl">Send</button>
+                    </form>
+
+                </div>
+            </div>
+           <center> 
+                    
+                    <div class="social-media">
+                    <a class="fa fa-twitter"  href="https://twitter.com/girlscriptch"></a>
+                    <a class="fa fa-instagram" href="https://www.instagram.com/girlscriptchennai/"></a>
+                    <a class="fa fa-github" href="https://github.com/girlscriptchennai"></a>
+                    <a class="fa fa-linkedin" href="https://www.linkedin.com/company/girlscript-chennai/"></a>
+                    </div>
+                    <h6 class="footer-h3">© 2020 GirlScript Chennai All Rights Reserved.</h6>
+      </center>
+        </div>
+   
 
       <footer>
       	<div class=container>
