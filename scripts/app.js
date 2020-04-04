@@ -83,7 +83,7 @@ function activeTab(){
 	let pageName = window.location.pathname.toLowerCase();
 	for(let i=0 ; i< navItems.length ; i++ )
 	{
-		if(navItems[i].children[0].pathname !== pageName)
+		if((navItems[i].children[0].pathname).toLowerCase() !== pageName)
 		navItems[i].children[0].classList.remove("active")
 		else navItems[i].children[0].classList.add("active")
 	}
