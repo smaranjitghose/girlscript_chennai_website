@@ -80,7 +80,7 @@ window.onscroll = function() {scrollFunction()};
 function activeTab(){
 	let navBar = $('#navbarNav')
 	let navItems = navBar[0].children[0].children;
-	let pageName = window.location.pathname.toLowerCase();
+	let pageName = window.location.pathname.substring(1).toLowerCase();
 	for(let i=0 ; i< navItems.length ; i++ )
 	{
 		if((navItems[i].children[0].pathname).toLowerCase() !== pageName)
