@@ -120,6 +120,14 @@
 	font-size:50px;
 
 }
+
+@media only screen and (max-width: 350px) {
+	#title2{ 
+		font-size : 43px;
+	}
+  }
+
+
 #title3{
 	color:grey;
 	text-align:center;
