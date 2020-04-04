@@ -387,7 +387,7 @@ Nav bar
 }
 
 .counter-item .ci-text {
-  padding-left: 170px;
+  padding-left: 150px;
 }
 
 .counter-item .ci-text h4 {
@@ -792,7 +792,7 @@ a.fa-linkedin{
 
 .txtb{
   flex: 1;
-  padding: 10px 40px;
+  padding: 10px 32px;
   font-size: 16px;
   color: #293043;
   background: #ddd;
@@ -1072,7 +1072,7 @@ section.module.parallax-spl {
 } 
 
   .inibtn{
-    padding: 18px 40px;
+    padding: 18px 37px;
     font-size: 16px;
     border: none;
     font-weight: 700;
@@ -1242,12 +1242,12 @@ html{
   color: white;
   font-size: 22px;
   }
-
-
-
-
-
-
+  @media only screen and (max-width: 464px) {
+    .gotopbtn {
+      bottom: 20px;
+      right: 15px;
+    }
+  }
 
 .navbar-toggler-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");

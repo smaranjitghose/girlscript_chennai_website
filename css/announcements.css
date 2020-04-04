@@ -64,6 +64,7 @@
 	padding: 8px;
 }
 
+
 #button1:hover{
 	color: black;
 	background-color: white;
@@ -120,6 +121,14 @@
 	font-size:50px;
 
 }
+
+@media only screen and (max-width: 350px) {
+	#title2{ 
+		font-size : 43px;
+	}
+  }
+
+
 #title3{
 	color:grey;
 	text-align:center;
@@ -135,6 +144,12 @@
 	padding: 20px;
 	margin-left: 650px;
 }
+
+@media only screen and (max-width: 841px) {
+	#button3{
+		margin-left: 10px;
+	}
+  }
 
 #button3:hover{
 	color: black;
