@@ -1,0 +1,14 @@
+[
+    {
+        "resourceSizes": [
+            {
+                "resourceType": "script",
+                "budget": 125
+            },
+            {
+                "resourceType": "total",
+                "budget": 300
+            }
+        ]
+    }
+]
