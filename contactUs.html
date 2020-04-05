@@ -27,10 +27,25 @@
           opacity: 1;
         }
 
+        input[type="text"], input[type="email"], textarea {
+        outline: none;
+        box-shadow:none !important;
+        border:1px solid #ccc !important;
+        }
+
         input[type='text']{
           margin-bottom: 25px;
         }
 
+        #submit-button{
+          background-color: orangered;
+          width: 200px;
+          height: 50px;
+        }
+
+        #submit-button:hover{
+          background-color: #ff9933;
+        }
 
 
     </style>
@@ -97,7 +112,7 @@
                           </div>
                           <div class="form-group">
                             <div class="col-md-12 text-center">
-                              <button type="submit" class="form" value="Send">
+                              <button type="submit" class="form" id="submit-button" value="Send">
                                 Send Message
                               </button>
                             </div>
@@ -118,7 +133,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 ">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248755.78021764747!2d80.06892704592316!3d13.047822267109765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1583519223699!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;margin-bottom: 20px" allowfullscreen=""></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248755.78021764747!2d80.06892704592316!3d13.047822267109765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1583519223699!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:1px solid black;margin-bottom: 20px" allowfullscreen=""></iframe>
                 </div>
             </div>
         </div>
