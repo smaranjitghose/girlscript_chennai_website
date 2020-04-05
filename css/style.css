@@ -1684,6 +1684,17 @@ html{
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
+
+@media only screen and (max-width: 540px) {
+  .material-card .mc-btn-action {
+    right: 0px;
+    top: 29px;
+    width: 45px;
+    height: 47px;
+    line-height: 40px;
+  }
+}
+
 .material-card.mc-active .mc-btn-action {
   top: 62px;
 }
