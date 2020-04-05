@@ -1,0 +1,13 @@
+name: gitCret
+on: [pull_request, push]
+jobs:
+  gitcret:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: gitCret
+      uses: CySeq/gitcret@v2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+- Your code will be automatically audited for sensitive credentials on each PR and Commit.
