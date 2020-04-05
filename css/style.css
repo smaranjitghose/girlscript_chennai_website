@@ -435,7 +435,6 @@ Parallax section
   font-weight: 700;
   outline: none;
   border-radius: 30px;
-  margin-left: 20px;
   cursor: pointer;
   background-color: rgb(37, 37, 37);
   color: white;
@@ -1298,7 +1297,6 @@ html{
   font-weight: 700; 
   outline: none;  
   border-radius: 30px;  
-  margin-left: 20px;  
   cursor: pointer;  
   background-color: rgb(37, 37, 37);  
   color: white; 
