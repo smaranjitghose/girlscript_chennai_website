@@ -2062,6 +2062,36 @@ a.active {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+
+@media only screen and (hover: none) and (pointer: coarse) {
+
+  .initiatives-cards{
+    margin-bottom:18rem;
+  }
+  
+  .flip-card{
+    perspective: 0;
+  }
+  .flip-card-content{
+    position:static;
+  } 
+  
+  .flip-card-front{
+    position:static;
+  }
+
+  .flip-card-back{
+    position:static;
+    transform: rotateY(0deg);
+  }
+  
+  .flip-card:hover .flip-card-content {
+      display:block;
+  }
+
+}
+
+
 .flip-card-detail {
   font-size: 0.9rem;
 }
@@ -2069,6 +2099,14 @@ a.active {
 .flip-card:hover .flip-card-content {
   transform: rotateY(180deg);
 }
+
+
+@media only screen and (hover: none) and (pointer: coarse) {
+  .flip-card:hover .flip-card-content {
+    transform: rotateY(0deg);
+  }
+}
+
 
 @media only screen and (max-width: 1014px) {
   .initiatives-cards {
@@ -2080,15 +2118,38 @@ a.active {
   .lower {
     flex-direction: column;
   }
+
   .flip-card {
     margin: 1rem 0rem;
   }
 }
 
+
+
+
 @media only screen and (max-width: 632px) {
   .initiatives-cards {
     flex-direction: column;
   }
+}
+
+@media only screen and (max-width:1017px) and (hover:none) and (pointer:coarse){
+  
+ .upper{
+   align-content: flex-start;
+ }
+  .lower{
+    margin-bottom:2rem;
+    align-content: flex-start;
+  }
+
+  
+
+  .flip-card {
+    margin-bottom:16rem;
+  }
+  
+ 
 }
 
 /* Carousel Styling */
