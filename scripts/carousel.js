@@ -1,3 +1,16 @@
+//TypeWriter Effect
+
+let i = 0;
+const txt = 'GIRLSCRIPT CHENNAI';
+const speed = 80;
+
+const typeWriter = () => {
+  if (i < txt.length) {
+    document.getElementById("typer").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
 
 // Code for carousel/slider : Manual
 
