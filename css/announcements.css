@@ -20,8 +20,13 @@
 
 /* CSS FOR UPCOMING EVENTS SECTION */
 .jumbotron{
-	margin-left: 150px;
+	margin-left: 30px;
 	margin-right: 30px;
+}
+@media screen and (min-width: 768px) {
+	.jumbotron{
+		margin-left: 150px;
+	}
 }
 
 .button{
