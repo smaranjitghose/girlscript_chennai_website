@@ -48,4 +48,18 @@ arrowRight.addEventListener("click", () => {
   slideRight();
 });
 
+//Code for Caurosel/Slider :Automatic
 
+document.addEventListener("DOMContentLoaded", () => {
+
+  if (current === sliderImages.length - 1) {
+    current = -1;
+  }
+
+  setInterval(() => {
+    if (current === sliderImages.length - 1) {
+      current = -1;
+    }
+    slideRight();
+  }, 4000);
+})
