@@ -4,25 +4,25 @@ let header = $(`
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	  <span class="navbar-toggler-icon"></span>
 	</button>
-	<div class="collapse navbar-collapse " id="navbarNav">
+	<div class="collapse navbar-collapse" id="navbarNav">
 	  <ul class="navbar-nav ml-5">
-		<li class="nav-item ">
-		  <a class="nav-link pr-4"  href="index.html">HOME</a>
+		<li class="nav-item">
+		  <a class="nav-link pr-4"  href="index.html"><span>HOME</span></a>
 		</li>
 		<li class="nav-item">
-		  <a class="nav-link pr-4" href="announcements.html">ANNOUNCEMENTS</a>
+		  <a class="nav-link pr-4" href="announcements.html"><span>ANNOUNCEMENTS</span></a>
 		</li>
 		<li class="nav-item">
-		  <a class="nav-link pr-4" href="team.html">OUR TEAM</a>
+		  <a class="nav-link pr-4" href="team.html"><span>OUR TEAM</span></a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link pr-4" href="achievements.html">OUR ACHIEVEMENTS</a>
+			<a class="nav-link pr-4" href="achievements.html"><span>OUR ACHIEVEMENTS</span></a>
 		</li>
 		  <li class="nav-item">
 			<a class="nav-link pr-4" href="blogs.html"><span>BLOGS</span></a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link pr-4" href="contactUs.html">CONTACT US</a>
+			<a class="nav-link pr-4" href="contactUs.html"><span>CONTACT US</span></a>
 		</li>
 
 	  </ul>
