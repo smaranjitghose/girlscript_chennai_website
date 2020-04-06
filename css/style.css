@@ -437,7 +437,7 @@ Parallax section
   border-radius: 30px;
   margin-left: 20px;
   cursor: pointer;
-  background-color: rgb(37, 37, 37);
+  background-color: #f47621;
   color: white;
 }
 
@@ -1300,7 +1300,7 @@ html{
   border-radius: 30px;  
   margin-left: 20px;  
   cursor: pointer;  
-  background-color: rgb(37, 37, 37);  
+  background-color: #f47621;  
   color: white; 
 } 
 .joinbtn:hover{ 
@@ -1373,7 +1373,7 @@ html{
   border-radius: 30px;  
   margin-left: 20px;  
   cursor: pointer;  
-  background-color: rgb(37, 37, 37);  
+  background-color: #f47621; 
   color: white; 
 } 
 .joinbtn:hover{ 
@@ -1449,7 +1449,7 @@ html{
   border-radius: 30px;  
   margin-left: 20px;  
   cursor: pointer;  
-  background-color: rgb(37, 37, 37);  
+  background-color: #f47621; 
   color: white; 
 } 
 .joinbtn:hover{ 
@@ -1522,7 +1522,7 @@ html{
   border-radius: 30px;  
   margin-left: 20px;  
   cursor: pointer;  
-  background-color: rgb(37, 37, 37);  
+  background-color: #f47621;  
   color: white; 
 } 
 .joinbtn:hover{ 
