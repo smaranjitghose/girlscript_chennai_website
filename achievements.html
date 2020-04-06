@@ -102,13 +102,35 @@
       .container .card .face.face2 .content a:hover{
           background: #333;
           color: #fff;
-      }
+	  }
+	  
+	  .achievementCard .card-link {
+		display: block;
+		text-align: right;
+		opacity: 0.6;
+		color: gray;
+		transition: all 0.3s ease;
+	  }
+
+	  .achievementCard .card-link > i {
+		  font-size: 14px;
+		  margin-left: 3px;
+		  color: gray;
+	  }
+	  .achievementCard .card-link:hover{
+		  color: black;
+		  opacity: 1;
+	  }
+	  .achievementCard .card-link:hover i {
+		color: black;
+		opacity: 1;
+	  }
     </style>
   </head>
   <body>
 	  <!-- Header -->
 
-       <section class="newsection p-5" style="border-left: 12px solid #f47621;border-right: 12px solid #f47621;">
+       <section class="newsection p-5">
         <br /><br />
 
 
@@ -154,7 +176,7 @@
           </div>
         </section>
 
-        <h2 class="text-center pt-5 mt-5" style="font-weight: bold;">Projects under <font color="#f47621" >GirlScript Chennai</font></h2>
+        <h2 class="text-center pt-5 mt-5 fw-bold">Projects under <span class="clr-theme">GirlScript Chennai </span></h2>
         <!--
         <div class="container col" style="justify-content: center;position: relative;display: flex;padding: 30px;">
           <div class="container row" style="justify-content: space-evenly;">
@@ -209,7 +231,7 @@
             <div class="col-md-4 col-sm-12 col-xs-12">
                 <article class="material-card Orange">
                     <h2>
-                        <span style="font-weight: bold;">Project Name</span>
+                        <span class="fw-bold">Project Name</span>
                         <strong>
                           Made by -
                         </strong>
@@ -223,8 +245,8 @@
 
                         </div>
                     </div>
-                    <a class="mc-btn-action" style="color: white;">
-                      <i class="fa fa-bars" style="color: white;"></i>
+                    <a class="mc-btn-action clr-wt">
+                      <i class="fa fa-bars clr-wt"></i>
                   </a>
                     <div class="mc-footer">
                         <a href="">Link to GitHub Repository</a>
@@ -234,7 +256,7 @@
             <div class="col-md-4 col-sm-12 col-xs-12">
                 <article class="material-card Orange">
                   <h2>
-                    <span style="font-weight: bold;">Project Name</span>
+                    <span class="fw-bold">Project Name</span>
                     <strong>
                       Made by -
                     </strong>
@@ -248,8 +270,8 @@
 
                         </div>
                     </div>
-                    <a class="mc-btn-action" style="color: white;">
-                      <i class="fa fa-bars" style="color: white;"></i>
+                    <a class="mc-btn-action clr-wt">
+                      <i class="fa fa-bars clr-wt"></i>
                   </a>
                     <div class="mc-footer">
                         <a href="">Link to GitHub Repository</a>
@@ -259,7 +281,7 @@
             <div class="col-md-4 col-sm-12 col-xs-12">
                 <article class="material-card Orange">
                   <h2>
-                    <span style="font-weight: bold;">Project Name</span>
+                    <span class="fw-bold">Project Name</span>
                     <strong>
                       Made by -
                     </strong>
@@ -273,8 +295,8 @@
 
                         </div>
                     </div>
-                    <a class="mc-btn-action" style="color: white;">
-                      <i class="fa fa-bars" style="color: white;"></i>
+                    <a class="mc-btn-action clr-wt">
+                      <i class="fa fa-bars clr-wt"></i>
                   </a>
                     <div class="mc-footer">
                         <a href="">Link to GitHub Repository</a>
@@ -282,17 +304,15 @@
             </div>
 
         </div>
-        <center>
         <input type="button" id="proshow" class="probtn btn btn-lg mt-4" value="Show More">
-        </center>
     </section>
 
-    <section id="prohide" class="container prodisplay" style="margin-top: 5em;">
+    <section id="prohide" class="container prodisplay">
       <div class="row active-with-click">
           <div class="col-md-4 col-sm-12 col-xs-12">
               <article class="material-card Orange">
                   <h2>
-                      <span style="font-weight: bold;">Project Name</span>
+                      <span class="fw-bold">Project Name</span>
                       <strong>
                         Made by -
                       </strong>
@@ -306,8 +326,8 @@
 
                       </div>
                   </div>
-                  <a class="mc-btn-action" style="color: white;">
-                    <i class="fa fa-bars" style="color: white;"></i>
+                  <a class="mc-btn-action clr-wt">
+                    <i class="fa fa-bars clr-wt"></i>
                 </a>
                   <div class="mc-footer">
                       <a href="">Link to GitHub Repository</a>
@@ -317,7 +337,7 @@
           <div class="col-md-4 col-sm-12 col-xs-12">
               <article class="material-card Orange">
                 <h2>
-                  <span style="font-weight: bold;">Project Name</span>
+                  <span class="fw-bold">Project Name</span>
                   <strong>
                     Made by -
                   </strong>
@@ -331,8 +351,8 @@
 
                       </div>
                   </div>
-                  <a class="mc-btn-action" style="color: white;">
-                    <i class="fa fa-bars" style="color: white;"></i>
+                  <a class="mc-btn-action clr-wt">
+                    <i class="fa fa-bars clr-wt"></i>
                 </a>
                   <div class="mc-footer">
                       <a href="">Link to GitHub Repository</a>
@@ -342,7 +362,7 @@
           <div class="col-md-4 col-sm-12 col-xs-12">
               <article class="material-card Orange">
                 <h2>
-                  <span style="font-weight: bold;">Project Name</span>
+                  <span class="fw-bold">Project Name</span>
                   <strong>
                     Made by -
                   </strong>
@@ -356,8 +376,8 @@
 
                       </div>
                   </div>
-                  <a class="mc-btn-action" style="color: white;">
-                    <i class="fa fa-bars" style="color: white;"></i>
+                  <a class="mc-btn-action clr-wt">
+                    <i class="fa fa-bars clr-wt"></i>
                 </a>
                   <div class="mc-footer">
                       <a href="">Link to GitHub Repository</a>
@@ -365,9 +385,8 @@
           </div>
 
       </div>
-      <center>
+
       <input type="button" id="probtn2" class="probtn btn btn-lg mt-4" value="Show Less">
-      </center>
     </section>
     <script src="scripts/projects.js"></script>
     <script>
@@ -384,9 +403,9 @@
     </script>
 
 
-    <div class="container card1 mt-5 p-5">
-      <h2> <font color="black">SEE WHAT OUR OTHER </font> MEMBERS ARE UPTO</h2>
-      <div class="container row" style="margin: auto;">
+    <div class="container card1 mt-5 p-5 achievementCard">
+      <h2> SEE WHAT OUR OTHER <span class="clr-theme">MEMBERS ARE UPTO</span></h2>
+      <div class="container row m-auto">
         <div class="col-lg-4 card--1">
           <div class="card shadow p-3 mb-5 bg-white rounded" >
             <img
@@ -395,13 +414,16 @@
               class="card-img-top"
             />
             <div class="card-body">
-              <a href="achievementData1.html" style="text-decoration: none; text-align: center;"><h5 class="card-title">Achievement 1</h5></a>
+              <h5 class="card-title">Achievement 1</h5>
               <p class="card-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
                 dicta, sunt in incidunt quas inventore commodi quisquam nihil!
                 Cupiditate assumenda ad cumque est facilis maiores voluptate
                 obcaecati inventore qui optio?
-              </p>
+			  </p>
+			  <a href="#" class="card-link">Read full story 
+				  <i class="fa fa-arrow-right"></i>
+			  </a>
             </div>
           </div>
         </div>
@@ -413,13 +435,16 @@
               class="card-img-top"
             />
             <div class="card-body">
-              <a href="achievementData1.html" style="text-decoration: none; text-align: center;"><h5 class="card-title">Achievement 1</h5></a>
+              <h5 class="card-title">Achievement 2</h5>
               <p class="card-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
                 dicta, sunt in incidunt quas inventore commodi quisquam nihil!
                 Cupiditate assumenda ad cumque est facilis maiores voluptate
                 obcaecati inventore qui optio?
-              </p>
+			  </p>
+			  <a href="#" class="card-link">Read full story 
+				<i class="fa fa-arrow-right"></i>
+			</a>
             </div>
           </div>
         </div>
@@ -431,13 +456,16 @@
               class="card-img-top"
             />
             <div class="card-body">
-              <a href="achievementData1.html" style="text-decoration: none; text-align: center;"><h5 class="card-title">Achievement 1</h5></a>
+              <h5 class="card-title">Achievement 3</h5>
               <p class="card-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
                 dicta, sunt in incidunt quas inventore commodi quisquam nihil!
                 Cupiditate assumenda ad cumque est facilis maiores voluptate
                 obcaecati inventore qui optio?
-              </p>
+			  </p>
+			  <a href="#" class="card-link">Read full story 
+				<i class="fa fa-arrow-right"></i>
+			</a>
             </div>
           </div>
         </div>
@@ -447,7 +475,7 @@
 </section>
 	<!-- Footer -->
 	
-    <a class="gotopbtn" href="#"> <i class="fa fa-arrow-up" style="color:white"></i> </a>
+    <a class="gotopbtn" href="#"> <i class="fa fa-arrow-up clr-wt"></i> </a>
 
 <script src="./scripts/app.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
