@@ -89,6 +89,7 @@ About
 /*-----------
 Nav bar
 ---------------------*/
+
 .navbar {
   background: linear-gradient(to right, #f09819, #ff512f);
   color: #fff !important;
@@ -123,6 +124,36 @@ Nav bar
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+}
+
+@media only screen and (max-width: 1173px) {
+  .nav-item{
+    font-size:.944rem;
+  }
+}
+
+@media only screen and (max-width: 1141px) {
+  .nav-item{
+    font-size:.887rem;
+  }
+}
+
+@media only screen and (max-width: 1094px) {
+  .nav-item{
+    font-size:.838rem;
+  }
+}
+
+@media only screen and (max-width: 1054px) {
+  .nav-item{
+    font-size:.768rem;
+  }
+}
+
+@media only screen and (max-width: 998px) {
+  .nav-item{
+    font-size:.759rem;
+  }
 }
 /*---------------------
   Header
