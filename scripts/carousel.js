@@ -1,7 +1,7 @@
 //TypeWriter Effect
 
 let i = 0;
-const txt = 'GIRLSCRIPT CHENNAI';
+const txt = "GIRLSCRIPT CHENNAI";
 const speed = 80;
 
 const typeWriter = () => {
@@ -10,7 +10,7 @@ const typeWriter = () => {
     i++;
     setTimeout(typeWriter, speed);
   }
-}
+};
 
 // Code for carousel/slider : Manual
 
@@ -19,42 +19,37 @@ let sliderImages = document.querySelectorAll(".slide"),
   arrowRight = document.querySelector("#arrow-right"),
   current = 0;
 
-
-const  reset=()=> {
+const reset = () => {
   for (let i = 0; i < sliderImages.length; i++) {
     sliderImages[i].style.display = "none";
   }
-}
+};
 
-
-const  startSlide = () => {
+const startSlide = () => {
   reset();
   sliderImages[0].style.display = "block";
-}
+};
 
-
-const  slideLeft = () =>{
+const slideLeft = () => {
   reset();
   sliderImages[current - 1].style.display = "block";
   current--;
-}
+};
 
-const slideRight = () =>{
+const slideRight = () => {
   reset();
   sliderImages[current + 1].style.display = "block";
   current++;
-}
+};
 
-arrowLeft.addEventListener("click", ()=>{
+arrowLeft.addEventListener("click", () => {
   if (current === 0) {
     current = sliderImages.length;
   }
   slideLeft();
 });
 
-
 arrowRight.addEventListener("click", () => {
-  
   if (current === sliderImages.length - 1) {
     current = -1;
   }
@@ -64,7 +59,6 @@ arrowRight.addEventListener("click", () => {
 //Code for Caurosel/Slider :Automatic
 
 document.addEventListener("DOMContentLoaded", () => {
-
   if (current === sliderImages.length - 1) {
     current = -1;
   }
@@ -75,4 +69,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     slideRight();
   }, 4000);
-})
+});
