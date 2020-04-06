@@ -27,7 +27,7 @@ let header = $(`
 
 	  </ul>
 	</div>
-  </nav>`)
+  </nav>`);
 let footer = $(`
 <footer>
 <div class=container>
@@ -61,36 +61,41 @@ let footer = $(`
 </center>
 </div>
 
-</footer>`);  
+</footer>`);
 let bodyElement = $(`body`);
 bodyElement.prepend(header);
 bodyElement.append(footer);
 mybutton = document.getElementById("toTop");
 function scrollFunction() {
-	if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-	  document.getElementById("navbar").style.padding = "1px 16px";
-	  document.getElementById("logo").width = "45px";
-	} else {
-	  document.getElementById("navbar").style.padding = "8px 16px";
-	  document.getElementById("logo").style.width = "60px";
-	}
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "1px 16px";
+    document.getElementById("logo").width = "45px";
+  } else {
+    document.getElementById("navbar").style.padding = "8px 16px";
+    document.getElementById("logo").style.width = "60px";
   }
-window.onscroll = function() {scrollFunction()};
+}
+window.onscroll = function() {
+  scrollFunction();
+};
 
-function activeTab(){
-	let navBar = $('#navbarNav')
-	let navItems = navBar[0].children[0].children;
-	let pageName = window.location.pathname.toLowerCase();
-	for(let i=0 ; i< navItems.length ; i++ )
-	{	let childHref = navItems[i].children[0].pathname.toLowerCase();
-		if((childHref === pageName || childHref.includes(pageName)) && window.location.pathname !== '/')
-		navItems[i].children[0].classList.add("active")
-		else navItems[i].children[0].classList.remove("active")
-	}
+function activeTab() {
+  let navBar = $("#navbarNav");
+  let navItems = navBar[0].children[0].children;
+  let pageName = window.location.pathname.toLowerCase();
+  for (let i = 0; i < navItems.length; i++) {
+    let childHref = navItems[i].children[0].pathname.toLowerCase();
+    if (
+      (childHref === pageName || childHref.includes(pageName)) &&
+      window.location.pathname !== "/"
+    )
+      navItems[i].children[0].classList.add("active");
+    else navItems[i].children[0].classList.remove("active");
+  }
 }
 
 function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 activeTab();
