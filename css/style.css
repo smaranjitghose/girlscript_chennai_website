@@ -5,6 +5,12 @@ body {
   -webkit-font-smoothing: antialiased;
   padding-top: 50px;
   background-color: white;
+  margin: 0;
+  padding: 0;
+}
+:root {
+	--theme-color: #f47621;
+	--white-color: #fff;
 }
 
 h1,
@@ -62,6 +68,7 @@ textarea:focus {
   outline: none;
 }
 
+a,
 a:hover,
 a:focus {
   text-decoration: none;
@@ -77,6 +84,16 @@ ol {
   font-size: 8vw;
   font-weight: bold;
   color: rgb(247, 95, 39);
+}
+
+.clr-wt {
+	color: var(--white-color) !important;
+}
+.clr-theme {
+	color: var(--theme-color) !important;
+}
+.fw-bold {
+	font-weight: bold;
 }
 
 /*-------------------
@@ -456,6 +473,8 @@ Parallax section
 
 .newsection {
   background-color: white;
+  border-left: 12px solid var(--theme-color);
+  border-right: 12px solid var(--theme-color);
 }
 
 .joinbtn {
@@ -873,7 +892,6 @@ a.fa-linkedin {
 
 .mt-5 h2 {
   text-align: center;
-  color: #ff9933;
   padding-bottom: 20px;
   font-weight: bold;
   letter-spacing: normal;
@@ -907,7 +925,6 @@ a.fa-linkedin {
 }
 
 .stat {
-  padding-top: 50px;
   padding-bottom: 30px;
 }
 
@@ -1237,6 +1254,7 @@ html {
   text-align: center;
   line-height: 50px;
   color: white;
+  z-index: 999;
   font-size: 22px;
 }
 @media only screen and (max-width: 464px) {
@@ -1669,6 +1687,13 @@ a.active {
   transition: all 0.3s;
 }
 
+.material-card .mc-btn-action > i {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
 @media only screen and (max-width: 540px) {
   .material-card .mc-btn-action {
     right: 0px;
@@ -1879,9 +1904,11 @@ a.active {
   outline: none;
   border-radius: 30px;
   cursor: pointer;
-  background-color: rgb(37, 37, 37);
+  background-color: #ff9933;
   color: white;
-  border: 2px solid rgb(37, 37, 37);
+  border: 2px solid #ff9933;
+  margin: 0 auto;
+  display: block;
 }
 .probtn:hover {
   color: #111111;
@@ -1891,6 +1918,7 @@ a.active {
 
 .prodisplay {
   display: none;
+  margin-top: 5em;
 }
 
 .afab {

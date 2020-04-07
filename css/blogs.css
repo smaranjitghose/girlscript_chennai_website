@@ -1,95 +1,115 @@
-body{
-  font-family: 'Raleway', sans-serif;
+html, body {
+    font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 
-#rtb{
-  position: flex;
-  margin: 0 50px;
+/*-----------------
+Parallax section
+-------------------*/
+.blogparallax {
+    background-image: url("https://www.gssoc.tech/images/0.jpg");
+    width: 100%;
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+.blogshadow {
+    background: rgb(0, 0, 0);
+    position: relative;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.7;
+    height: 300px;
+    width: 100%;
 }
 
-.blog-container{
-  padding: 60px 10px;
+/*----------------
+Blog Cards
+-----------------*/
+.blog-item a {
+    border: 1px solid rgb(230, 230, 230);
+
+}
+.blog-item img {
+  display: block;
+  width: 100%;
 }
 
-h2.pt-4{
-  position: relative;
-  margin-top: 50px;
+.blog-item a {
+    display: flex;
+    padding: 50px;
+    overflow: hidden;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
 }
 
-.blog-heading{
-  padding: 0 !important;
+.blog-item a:hover {
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
 }
 
-.blog-container{
-  padding-top: 30px;
+.blog-item .blog-icon {
+    width: 35%;
+    margin-right: 50px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 15px 26px rgba(0, 0, 0, 0.4);
 }
 
-h5{
-  text-align: center;
-  font-style: italic;
-  color: grey;
+.blog-item .blog-content {
+    width: 65%;
 }
 
-.rtb-col  h2{
-  font-family: 'Raleway', sans-serif;
-  color:  #FF512F;
-  text-transform: uppercase;
-  font-weight: 600;
-  padding-top: 30px;
+.blog-item .blog-content .blog-title {
+    font-size: 21px;
+    text-transform: capitalize;
+    color: #f47621;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
 }
 
-.rtb-col h3{
-  color: #f47621;
-  padding-top: 30px;
+.blog-item .blog-content .blog-rounded {
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.blog-item .blog-arrow {
+    position: relative;
+    text-align: center;
+    left: 0;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.blog-item a:hover > .blog-arrow {
+    left: 30px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.blog-rounded {
+    width: 70px;
+    height: 5px;
+    border-radius: 6px;
+    background-image: linear-gradient(to right, #f47621, #07070779);
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
-.rtb-col {
-  position: relative;
-  padding: 30px 50px 10px !important;
-  /*margin: 0 3px !important;*/
-  z-index: 1;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.rtb-col:hover, .rtb-col:focus, .rtb-col:active {
-  position: relative;
-  padding: 30px 50px 10px !important;
-  /*margin: 0 3px !important;*/
-  z-index: 1;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  -webkit-transform: translateY(-8px);
-  transform: translateY(-8px);
-}
 
-.blog-btn{
-  padding: 16px 30px;
-  font-size: 16px;
-  border: none;
-  font-weight: 700;
-  outline: none;
-  border-radius: 30px;
-  cursor: pointer;
-  background-color: #f47621;
-  color: white;
-  display: table;
-  /*margin: 25px auto 0 auto;*/
-}
-
-.read-more{
-  padding-top: 25px;
-  display: flex;
-  grid-template-columns: auto auto auto auto;
-  align-items: center !important;
-  justify-content: center !important;
-}
