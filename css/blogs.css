@@ -6,6 +6,10 @@ html, body {
 /*-----------------
 Parallax section
 -------------------*/
+.heading{
+    font-size:60px;
+}
+
 .blogparallax {
     background-image: url("https://www.gssoc.tech/images/0.jpg");
     width: 100%;
@@ -64,10 +68,6 @@ Blog Cards
     border-radius: 6px;
     overflow: hidden;
     box-shadow: 0 15px 26px rgba(0, 0, 0, 0.4);
-}
-
-.blog-item .blog-content {
-    width: 65%;
 }
 
 .blog-item .blog-content .blog-title {
