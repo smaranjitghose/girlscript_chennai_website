@@ -5,6 +5,8 @@ body {
   -webkit-font-smoothing: antialiased;
   padding-top: 50px;
   background-color: white;
+  margin: 0;
+  padding: 0;
 }
 :root {
 	--theme-color: #f47621;
