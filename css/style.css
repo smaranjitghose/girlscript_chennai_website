@@ -93,12 +93,18 @@ ol {
 .fw-bold {
 	font-weight: bold;
 }
+.fw-100 {
+	font-weight: 100;
+}
+.fw-400 {
+	font-weight: 400;
+}
+.bg-lgt-grey {
+	background-color: #f5f5f5 !important;
+}
 
-/*-------------------
-About 
---------------------*/
-.about {
-  background-color: #f5f5f5;
+.fs-17px {
+	font-size: 17px;
 }
 
 /*-----------
@@ -475,23 +481,8 @@ Parallax section
   border-right: 12px solid var(--theme-color);
 }
 
-.joinbtn {
-  padding: 18px 40px;
-  font-size: 16px;
-  border: none;
-  font-weight: 700;
-  outline: none;
-  border-radius: 30px;
-  cursor: pointer;
-  background-color: rgb(37, 37, 37);
-  color: white;
-}
 
-.joinbtn:hover {
-  color: #111111;
-  background-color: white;
-  border: 2px solid black;
-}
+
 
 /*---------------------
   Call To Section
@@ -1092,25 +1083,6 @@ section.module.parallax-spl {
   perspective: 700px;
 }
 
-.inibtn {
-  padding: 18px 37px;
-  font-size: 16px;
-  border: none;
-  font-weight: 700;
-  outline: none;
-  border-radius: 30px;
-  margin-left: 20px;
-  cursor: pointer;
-  background-color: #f47621;
-  color: white;
-}
-
-.inibtn:hover {
-  color: #f47621;
-  background-color: white;
-  border: 2px solid #f47621;
-}
-
 @media screen and (max-width: 1024px) {
   .center-div {
     top: 30%;
@@ -1164,9 +1136,6 @@ section.module.parallax-spl {
 /*-----------------
   Achievements 
   -------------------*/
-.achieve {
-  background-color: #f5f5f5;
-}
 
 .atitle h2 {
   font-size: 4vw;
@@ -1195,25 +1164,6 @@ section.module.parallax-spl {
   color: black;
   font-weight: 700;
   margin-bottom: 12px;
-}
-
-.anibtn {
-  padding: 16px 30px;
-  font-size: 16px;
-  border: none;
-  font-weight: 700;
-  outline: none;
-  border-radius: 30px;
-  margin-left: 20px;
-  cursor: pointer;
-  background-color: #f47621;
-  color: white;
-}
-
-.anibtn:hover {
-  color: #f47621;
-  background-color: white;
-  border: 2px solid #f47621;
 }
 
 html {
@@ -1290,25 +1240,8 @@ a.active {
 }
 @media only screen and (min-width: 993px) {
   .newsection {
-    background-color: white;
   }
 
-  .joinbtn {
-    padding: 18px 40px;
-    font-size: 16px;
-    border: none;
-    font-weight: 700;
-    outline: none;
-    border-radius: 30px;
-    cursor: pointer;
-    background-color: rgb(37, 37, 37);
-    color: white;
-  }
-  .joinbtn:hover {
-    color: #111111;
-    background-color: white;
-    border: 2px solid black;
-  }
   .joinbox {
     position: relative;
   }
@@ -1362,26 +1295,6 @@ a.active {
   }
 }
 @media only screen and (max-width: 576px) {
-  .newsection {
-    background-color: white;
-  }
-  .joinbtn {
-    padding: 18px 40px;
-    font-size: 16px;
-    border: none;
-    font-weight: 700;
-    outline: none;
-    border-radius: 30px;
-    margin-left: 20px;
-    cursor: pointer;
-    background-color: rgb(37, 37, 37);
-    color: white;
-  }
-  .joinbtn:hover {
-    color: #111111;
-    background-color: white;
-    border: 2px solid black;
-  }
   .joinbox {
     position: relative;
   }
@@ -1438,26 +1351,6 @@ a.active {
   }
 }
 @media only screen and (max-width: 767px) and (min-width: 576px) {
-  .newsection {
-    background-color: white;
-  }
-  .joinbtn {
-    padding: 18px 40px;
-    font-size: 16px;
-    border: none;
-    font-weight: 700;
-    outline: none;
-    border-radius: 30px;
-    margin-left: 20px;
-    cursor: pointer;
-    background-color: rgb(37, 37, 37);
-    color: white;
-  }
-  .joinbtn:hover {
-    color: #111111;
-    background-color: white;
-    border: 2px solid black;
-  }
   .joinbox {
     position: relative;
   }
@@ -1511,26 +1404,6 @@ a.active {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  .newsection {
-    background-color: white;
-  }
-  .joinbtn {
-    padding: 18px 40px;
-    font-size: 16px;
-    border: none;
-    font-weight: 700;
-    outline: none;
-    border-radius: 30px;
-    margin-left: 20px;
-    cursor: pointer;
-    background-color: rgb(37, 37, 37);
-    color: white;
-  }
-  .joinbtn:hover {
-    color: #111111;
-    background-color: white;
-    border: 2px solid black;
-  }
   .joinbox {
     position: relative;
   }
@@ -1894,10 +1767,9 @@ a.active {
   border-color: #fff3e0;
 }
 
-.probtn {
-  padding: 14px 30px;
+.center-btn-settings {
+  padding: 16px 40px;
   font-size: 16px;
-  border: none;
   font-weight: 700;
   outline: none;
   border-radius: 30px;
@@ -1908,11 +1780,22 @@ a.active {
   margin: 0 auto;
   display: block;
 }
-.probtn:hover {
+.center-btn-settings:hover {
   color: #111111;
   background-color: white;
   border: 2px solid black;
 }
+.center-btn-settings2 {
+  background-color: #f47621 !important;
+  color: white !important;
+}
+  
+.center-btn-settings2:hover {
+  color: #f47621 !important;
+  background-color: white !important;
+  border: 2px solid #f47621 !important;
+}
+
 
 .prodisplay {
   display: none;
@@ -2061,6 +1944,7 @@ a.active {
   width: 13rem;
   height: 13rem;
   perspective: 62.5rem;
+  cursor: pointer;
 }
 
 .flip-card-content {
