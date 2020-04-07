@@ -5,6 +5,10 @@ body{
     -webkit-font-smoothing: antialiased;
 }
 
+h3{
+    text-align: center;
+}
+
 .navbar{
     background: linear-gradient(to right, #F09819, #FF512F);
 }
@@ -30,13 +34,13 @@ body{
 }
 
 .section1{
-    margin-top: 100px;
-    height: 640px;
+    height: 600px;
     width: 100%;
 }
 
 #teamHeading{
     font-size: 60px;
+    font-weight: bold;
 }
 
 #teamPara{
@@ -45,6 +49,7 @@ body{
 
 #theBoard{
     font-size: 50px;
+    font-weight: bold;
 }
 
 #circularDiv{
@@ -68,8 +73,13 @@ h2{
     display: flex;
 }
 
-.boardBtn, .techBtn, .manageBtn{
+.boardBtn, .techBtn{
     margin: 20px;
+}
+
+.manageBtn{
+    margin-top: 20px;
+    margin-bottom: 70px;
 }
 
 @media only screen and (max-width: 440px){
@@ -95,5 +105,8 @@ h2{
     }
     #teamPara{
         padding-left: 15%;
+    }
+    .section1{
+        margin-top: 100px;
     }
 }
