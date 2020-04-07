@@ -125,6 +125,31 @@
 		color: black;
 		opacity: 1;
 	  }
+
+
+        @media only screen and (max-width: 575px) {
+            .card-content {
+                padding-left:25px;
+                padding-right:25px;
+         }     
+        }
+
+        @media only screen and (max-width: 515px) {
+  
+            .card--1 {
+                padding-left:0px;
+                padding-right:0px;
+            } 
+            .card--2 {
+                padding-left:0px;
+                padding-right:0px;    
+            }
+            .card--3 {
+                padding-left:0px;
+                padding-right:0px;
+            }
+            
+          }      
     </style>
   </head>
   <body>
@@ -134,12 +159,12 @@
         <br /><br />
 
 
-        <section class="stat mt-5" id="stats">
+        <section class="stat" id="stats">
           <div class="content-box">
             <br><br>
             <div class="container">
               <div class="row text-center">
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-6">
                   <div class="stat-items">
                     <i class="afab fa fa-laptop fa-3x"></i>
                     <h2><span class="counter text-center">2000</span></h2>
@@ -147,7 +172,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-6">
                   <div class="stat-items">
                     <i class="afab fa fa-trophy fa-3x"></i>
                     <h2><span class="counter text-center">500</span></h2>
@@ -155,7 +180,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-6">
                   <div class="stat-items">
                     <i class="afab fa fa-laptop fa-3x"></i>
                     <h2><span class="counter text-center">300</span></h2>
@@ -163,7 +188,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-6">
                   <div class="stat-items">
                     <i class="afab fa fa-trophy fa-3x"></i>
                     <h2><span class="counter text-center">2000</span></h2>
@@ -226,9 +251,9 @@
         </div>
       -->
 
-      <section class="container" style="margin-top: 5em">
-        <div class="row active-with-click">
-            <div class="col-md-4 col-sm-12 col-xs-12">
+      <section class="container" style="margin-top: 3em">
+        <div class="row active-with-click card-content">
+            <div class="col-md-4 col-sm-6 col-xs-12">
                 <article class="material-card Orange">
                     <h2>
                         <span class="fw-bold">Project Name</span>
@@ -253,7 +278,7 @@
                     </div>
                 </article>
             </div>
-            <div class="col-md-4 col-sm-12 col-xs-12">
+            <div class="col-md-4 col-sm-6 col-xs-12">
                 <article class="material-card Orange">
                   <h2>
                     <span class="fw-bold">Project Name</span>
@@ -278,7 +303,7 @@
                     </div>
                 </article>
             </div>
-            <div class="col-md-4 col-sm-12 col-xs-12">
+            <div class="col-md-4 col-sm-6 col-xs-12">
                 <article class="material-card Orange">
                   <h2>
                     <span class="fw-bold">Project Name</span>
@@ -403,10 +428,10 @@
     </script>
 
 
-    <div class="container card1 mt-5 p-5 achievementCard">
+    <div class="container card1 mt-5 achievementCard">
       <h2> SEE WHAT OUR OTHER <span class="clr-theme">MEMBERS ARE UPTO</span></h2>
       <div class="container row m-auto">
-        <div class="col-lg-4 card--1">
+        <div class="col-xl-4 col-lg-6 col-md-6 card--1">
           <div class="card shadow p-3 mb-5 bg-white rounded" >
             <img
               src="https://images.unsplash.com/photo-1580894908361-967195033215?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
@@ -427,7 +452,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 card--2">
+        <div class="col-xl-4 col-lg-6 col-md-6 card--2">
           <div class="card shadow p-3 mb-5 bg-white rounded" >
             <img
               src="https://images.unsplash.com/photo-1580894908361-967195033215?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
@@ -448,7 +473,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 card--3">
+        <div class="col-xl-4 col-lg-6 col-md-6 card--3">
           <div class="card shadow p-3 mb-5 bg-white rounded" >
             <img
               src="https://images.unsplash.com/photo-1580894908361-967195033215?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
@@ -470,7 +495,7 @@
           </div>
         </div>
       </div>
-      <button class="joinbtn" href="#">See More</button>
+      <input type="button" class="probtn btn btn-lg mt-1" value="See More">
     </div>
 </section>
 	<!-- Footer -->

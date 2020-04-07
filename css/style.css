@@ -923,7 +923,6 @@ a.fa-linkedin {
 }
 
 .stat {
-  padding-top: 50px;
   padding-bottom: 30px;
 }
 
@@ -1253,6 +1252,7 @@ html {
   text-align: center;
   line-height: 50px;
   color: white;
+  z-index: 999;
   font-size: 22px;
 }
 @media only screen and (max-width: 464px) {
@@ -1902,9 +1902,9 @@ a.active {
   outline: none;
   border-radius: 30px;
   cursor: pointer;
-  background-color: rgb(37, 37, 37);
+  background-color: #ff9933;
   color: white;
-  border: 2px solid rgb(37, 37, 37);
+  border: 2px solid #ff9933;
   margin: 0 auto;
   display: block;
 }
