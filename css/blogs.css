@@ -29,7 +29,10 @@ Parallax section
 /*----------------
 Blog Cards
 -----------------*/
+.blog-item a {
+    border: 1px solid rgb(230, 230, 230);
 
+}
 .blog-item img {
   display: block;
   width: 100%;
