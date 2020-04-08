@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Announcements</title>
+    <meta charset="utf-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="assets/Images/gs.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/announcements1.css" type="text/css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body onLoad="typeWriter()">
+    <!-- Header  -->
+
+    <!-- ANNOUNCEMENTS -->
+    <header>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div
+            class="carousel-item active"
+            style="background-image: url('assets/Images/event6.jpg')"
+          >
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="display-4" id="heading"></h1>
+            </div>
+            <script>
+              var i = 0;
+              var txt = "ANNOUNCEMENTS";
+              var speed = 80;
+
+              function typeWriter() {
+                if (i < txt.length) {
+                  document.getElementById("heading").innerHTML += txt.charAt(i);
+                  i++;
+                  setTimeout(typeWriter, speed);
+                }
+              }
+            </script>
+          </div>
+
+          <div
+            class="carousel-item"
+            style="background-image: url('assets/Images/event6.jpg')"
+          >
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="display-4" id="heading">ANNOUNCEMENTS</h1>
+            </div>
+          </div>
+
+          <div
+            class="carousel-item"
+            style="background-image: url('assets/Images/event6.jpg')"
+          >
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="display-4" id="heading">ANNOUNCEMENTS</h1>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </header>
+
+    <!--Events Section -->
+
+    <section
+      style="border-left: 12px solid #f47621;border-right: 12px solid #f47621;"
+    >
+      <br /><br /><br /><br /><br /><br /><br /><br />
+      <h2 class="events" style="color:black ;font-weight:bold;">
+        UPCOMING<font color="#f47621" style="font-weight: 100;"> EVENTS</font>
+      </h2>
+      <br /><br /><br />
+      <!-- News jumbotron -->
+
+      <!-- EVENT 1 -->
+      <div class="jumbotron text-center hoverable p-4">
+        <div class="row">
+          <div class="col-md-4 offset-md-1 mx-3 my-3">
+            <div class="view overlay">
+              <img src="assets/Images/event2.jpeg" />
+
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-7 text-md-left ml-md-3 mt-md-3">
+            <div class="p-2">
+              <a href="event1.html" id="event1">CODECHAMP</a>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                  <a href="#!" class="green-text">
+                    <h6 class="h6 pb-1 text">
+                      <i class="fa fa-location-arrow" style="color:black"></i>
+                      Anna Nagar,Chennai
+                    </h6>
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="#!" class="green-text">
+                    <h6 class="h6 pb-1 text">
+                      <i class="fa fa-calendar" style="color:black"></i> May 20,
+                      2020
+                    </h6>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <br />
+            <p class="font-weight-normal" id="in2">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque, totam rem aperiam, eaque ipsa quae ab illo
+              inventore veritatis et quasi architecto beatae vitae....
+            </p>
+            <br />
+            <a id="button1" href="event1.html">Read more</a>
+          </div>
+        </div>
+      </div>
+      <br /><br /><br /><br />
+
+      <div class="jumbotron text-center hoverable p-4">
+        <div class="row">
+          <div class="col-md-4 offset-md-1 mx-3 my-3">
+            <div class="view overlay">
+              <img src="assets/Images/event3.jpeg" class="img-fluid" />
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-7 text-md-left ml-md-3 mt-md-3">
+            <div class="p-2">
+              <a href="event1.html" id="event1">GIRLSCRIPT CONTRIBUTORS WEEK</a>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                  <a href="#!" class="green-text">
+                    <h6 class="h6 pb-1 text">
+                      <i class="fa fa-location-arrow" style="color:black"></i>
+                      Dwarka, Delhi
+                    </h6>
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="#!" class="green-text">
+                    <h6 class="h6 pb-1 text">
+                      <i class="fa fa-calendar" style="color:black"></i> June
+                      20, 2020
+                    </h6>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <br />
+            <p class="font-weight-normal" id="in2">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque, totam rem aperiam, eaque ipsa quae ab illo
+              inventore veritatis et quasi architecto beatae vitae....
+            </p>
+            <br />
+            <a id="button1" href="event1.html">Read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECENT EVENTS-->
+    <section
+      style="border-left: 12px solid #f47621;border-right: 12px solid #f47621;"
+    >
+      <br /><br /><br /><br /><br /><br /><br />
+      <h2 class="events" style="color:black ;font-weight:bold;">
+        RECENT<font color="#f47621" style="font-weight: 100;"> EVENTS </font>
+      </h2>
+      <br />
+      <br /><br /><br />
+      <div class="container" style="padding: 10px; width:100%">
+        <div class="row text-center" style="display:flex; flex-wrap:wrap;">
+          <div class="col-sm-4 py-2">
+            <div id="card" class="card card-body h-100">
+              <img id="image" src="assets/Images/event1.jpeg" />
+              <div class="caption">
+                <a href="recentEvent1.html" style="text-decoration: none;"
+                  ><h4 id="header">Card 1</h4></a
+                >
+              </div>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.Some quick example text to build
+                on the card title and make up the bulk of the card's content.
+              </p>
+              <p><a id="button2" href="recentEvent1.html">More Info</a></p>
+            </div>
+          </div>
+
+          <div class="col-sm-4 py-2">
+            <div id="card" class="card card-body h-100">
+              <img id="image" src="assets/Images/event2.jpeg" />
+              <div class="caption">
+                <a href="recentEvent1.html" style="text-decoration: none;"
+                  ><h4 id="header">Card 1</h4></a
+                >
+              </div>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.Some quick example text to build
+                on the card title and make up the bulk of the card's content.
+              </p>
+              <p><a id="button2" href="recentEvent1.html">More Info</a></p>
+            </div>
+          </div>
+
+          <div class="col-sm-4 py-2">
+            <div id="card" class="card card-body h-100">
+              <img id="image" src="assets/Images/event3.jpeg" />
+              <div class="caption">
+                <a href="recentEvent1.html" style="text-decoration: none;"
+                  ><h4 id="header">Card 1</h4></a
+                >
+              </div>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.Some quick example text to build
+                on the card title and make up the bulk of the card's content.
+              </p>
+              <p><a id="button2" href="recentEvent1.html">More Info</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" style="padding: 10px; width:100%">
+        <div class="row text-center" style="display:flex; flex-wrap:wrap;">
+          <div class="col-sm-4 py-2">
+            <div id="card" class="card card-body h-100">
+              <img id="image" src="assets/Images/event2.jpeg" />
+              <div class="caption">
+                <a href="recentEvent1.html" style="text-decoration: none;"
+                  ><h4 id="header">Card 1</h4></a
+                >
+              </div>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.Some quick example text to build
+                on the card title and make up the bulk of the card's content.
+              </p>
+              <p><a id="button2" href="recentEvent1.html">More Info</a></p>
+            </div>
+          </div>
+
+          <div class="col-sm-4 py-2">
+            <div id="card" class="card card-body h-100">
+              <img id="image" src="assets/Images/event3.jpeg" />
+              <div class="caption">
+                <a href="recentEvent1.html" style="text-decoration: none;"
+                  ><h4 id="header">Card 1</h4></a
+                >
+              </div>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.Some quick example text to build
+                on the card title and make up the bulk of the card's content.
+              </p>
+              <p><a id="button2" href="recentEvent1.html">More Info</a></p>
+            </div>
+          </div>
+
+          <div class="col-sm-4 py-2">
+            <div id="card" class="card card-body h-100">
+              <img id="image" src="assets/Images/event1.jpeg" />
+              <div class="caption">
+                <a href="recentEvent1.html" style="text-decoration: none;"
+                  ><h4 id="header">Card 1</h4></a
+                >
+              </div>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.Some quick example text to build
+                on the card title and make up the bulk of the card's content.
+              </p>
+              <p><a id="button2" href="recentEvent1.html">More Info</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      style="border-left: 12px solid #f47621;border-right: 12px solid #f47621;"
+    >
+      <br /><br /><br /><br /><br /><br /><br /><br />
+      <div class="auto-container" style="background-color:#D3D3D3">
+        <br /><br /><br />
+        <div class="row">
+          <div class="col">
+            <h1 id="title1">Want to organize an event?</h1>
+          </div>
+        </div>
+        <br /><br /><br />
+        <div class="row">
+          <div class="col">
+            <h1 id="title2">
+              FILL THE WORKSHOP ORGANIZING FORM FROM BELOW BUTTON
+            </h1>
+          </div>
+        </div>
+        <br /><br /><br />
+        <div class="row">
+          <div class="col">
+            <h1 id="title3">
+              If you want to Organize an Event at your College/City on behalf on
+              GirlScript, then please fill the form
+            </h1>
+          </div>
+        </div>
+        <br /><br /><br />
+        <div class="row">
+          <div class="col">
+            <a id="button3" href="event1.html">CONTACT US</a>
+          </div>
+        </div>
+        <br /><br /><br /><br />
+      </div>
+    </section>
+    <a class="gotopbtn" id="scroll-top" href="#">
+      <i class="fa fa-arrow-up" style="color:white"></i>
+    </a>
+  </body>
+  <script src="./scripts/app.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"
+  ></script>
+</html>
