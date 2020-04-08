@@ -81,3 +81,50 @@ html, body {
     transition: 0.6s;
     font-weight: bold;
    }
+
+
+/* CSS for card group */
+
+#recent-image {
+  height: 100%;
+  width: 100%;
+}
+
+#recent-button2 {
+  background-color: #f47621;
+  border: 2px solid #f47621;
+  color: white;
+  font-weight: bold;
+  transition: 0.6s;
+  border-radius: 10em;
+  padding: 8px;
+}
+
+#recent-button2:hover {
+    background-color: #ffffff;
+    color: #f47621;
+    border: 2px solid #f47621;
+    transition: 0.6s;
+    font-weight: bold;
+}
+
+#recent-header{
+    font-weight: bold;
+    color: #f47621;
+}
+
+#card {
+    padding: 20px;
+}
+
+#card:hover {
+  border: 2px solid #f47621;
+  padding: 18px;
+}
+
+#card p{
+    color: rgba(0, 0, 0, 0.76);
+}
+
+
+
