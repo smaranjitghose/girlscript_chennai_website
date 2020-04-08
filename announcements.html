@@ -10,12 +10,77 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <!-- Css Styles -->
+<<<<<<< HEAD
     <link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="css/announcements.css" type="text/css">
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     </head>
     <body>
         <section class="upcoming-events">
+=======
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/announcements.css" type="text/css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body onLoad="typeWriter()" >
+    <!-- Header  -->
+
+    <!-- ANNOUNCEMENTS -->
+    <div style="height: 85px;"></div>>
+    <section>
+      <div style="background-image: url('assets/Images/event6.jpg')">
+        <div>  
+          <h4 style="padding: 50px;text-align: center;" id="heading"></h4>
+        </div>
+        <script>
+          var i = 0;
+          var txt = "ANNOUNCEMENTS";
+          var speed = 80;
+  
+          function typeWriter() {
+            if (i < txt.length) {
+              document.getElementById("heading").innerHTML += txt.charAt(i);
+              i++;
+              setTimeout(typeWriter, speed);
+            }
+          }
+        </script>
+      </div>
+    </section>
+    
+    <!--Events Section -->
+
+    <section style="border-left: 12px solid #f47621;border-right: 12px solid #f47621;">
+      <div style="height:50px"></div>
+      <h2 class="events" style="color:black ;font-weight:bold;">
+        UPCOMING<font color="#f47621" style="font-weight: 100;"> EVENTS</font>
+      </h2>
+      <br /><br />
+      <!-- News jumbotron -->
+
+      <!-- EVENT 1 -->
+      <div class="jumbotron text-center hoverable p-4">
+        <div class="row">
+          <div class="col-md-4 offset-md-1 mx-3 my-3">
+            <div class="view overlay">
+              <img src="assets/Images/event2.jpeg" />
+
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-7 text-md-left ml-md-3 mt-md-3">
+            <div class="p-2">
+              <a href="event1.html" id="event1">CODECHAMP</a>
+            </div>
+>>>>>>> improved announcements page
             <div class="container">
                 <h2> UPCOMING<font color="#f47621" style="font-weight: 100;"> EVENTS</font></h2>
                 <hr style="width: 100%;">

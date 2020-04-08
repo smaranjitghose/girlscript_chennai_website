@@ -1,6 +1,29 @@
+<<<<<<< HEAD
 html, body {
   font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
+=======
+/* CSS FOR HEADING */
+
+/* .carousel-item {
+  height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} */
+body{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#heading {
+  color: #f47621;
+  font-size: 110px;
+  font-weight: bold;
+  text-shadow: 9px 9px black;
+>>>>>>> improved announcements page
 }
 
 .upcoming-events {
@@ -8,6 +31,7 @@ html, body {
 }
 
 
+<<<<<<< HEAD
 .announcement-item img {
   display: block;
   width: 100%;
@@ -57,6 +81,22 @@ html, body {
   right: 70px;
   background-color: #f47621;
   border-radius: 0 4px 0 32px;
+=======
+.events {
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  font-weight: bolder;
+  -webkit-font-smoothing: antialiased;
+  font-size: 40px;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+#event1 {
+  color: black;
+  font-size: 30px;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  font-weight: bolder;
+>>>>>>> improved announcements page
 }
 
 .go-arrow {
@@ -78,12 +118,22 @@ html, body {
     width: 65%;
 }
 
+<<<<<<< HEAD
 .announcement-item .announcement-content .announcement-title {
     font-size: 21px;
     text-transform: capitalize;
     color: #f47621;
     font-weight: 600;
     font-family: 'Lato', sans-serif;
+=======
+#button1 {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  font-weight: bolder;
+  padding: 8px;
+>>>>>>> improved announcements page
 }
 
 .announcement-item .fa-map-marker {
@@ -99,6 +149,7 @@ html, body {
     font-weight: 400;    
 }
 
+<<<<<<< HEAD
 .announcement-btn {
     border: 2px solid #f47621;
     background-color: #f47521d3;
@@ -106,6 +157,15 @@ html, body {
     font-weight: bold;
     transition: 0.6s;
     border-radius: 10em;
+=======
+#button2 {
+  background-color: #f47621;
+  color: white;
+  font-size: 15px;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  font-weight: bolder;
+  padding: 8px;
+>>>>>>> improved announcements page
 }
 
 .announcement-btn:hover {
@@ -116,6 +176,13 @@ html, body {
   font-weight: bold;
  }
 
+<<<<<<< HEAD
+=======
+#header {
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  padding: 10px;
+}
+>>>>>>> improved announcements page
 
 /* CSS for card group */
 
@@ -137,9 +204,20 @@ padding: 8px;
 #recent-button2:hover {
   background-color: #ffffff;
   color: #f47621;
+<<<<<<< HEAD
   border: 2px solid #f47621;
   transition: 0.6s;
   font-weight: bold;
+=======
+  text-align: center;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  font-size: 38px;
+}
+#title2 {
+  text-align: center;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  font-size: 38px;
+>>>>>>> improved announcements page
 }
 
 #recent-header{
@@ -147,6 +225,7 @@ padding: 8px;
   color: #f47621;
 }
 
+<<<<<<< HEAD
 #card {
 /* display: block; */
 /* position: relative; */
@@ -173,6 +252,22 @@ border-radius: 28px;
 transform: scale(1);
 transform-origin: 50% 50%;
 transition: transform 0.25s ease-out;
+=======
+#title3 {
+  color: grey;
+  text-align: center;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  font-size: 30px;
+}
+
+#button3 {
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  padding: 15px;
+  margin-left: 650px;
+>>>>>>> improved announcements page
 }
 
 #card:hover:before {
