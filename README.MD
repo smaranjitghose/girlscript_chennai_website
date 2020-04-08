@@ -25,7 +25,6 @@ This project is also meant to be a starting for all techies interested to get th
 [Link to the corresponding app template](https://github.com/smaranjitghose/girlscript_app)
 
 ## Contribution Guidelines
-## Contribution Guidelines
 
 #### 👇 Prerequisites:
 
@@ -116,9 +115,9 @@ git push -u origin <your_branch_name>
 
 ![Sneak](https://media.giphy.com/media/ZXBzAsNNHNuOJCY9Gq/giphy.gif)
 
-![image 1](snapshots/Capture1.JPG)
-
-![image 2](snapshots/Capture.JPG)
+|  |  |
+|--------|----------|
+|![image 1](snapshots/Capture1.JPG)|![image 2](snapshots/Capture.JPG)|
 
 
 ## 👨 Project Admin
