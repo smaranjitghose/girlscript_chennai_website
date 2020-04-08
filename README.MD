@@ -24,6 +24,13 @@ This project is also meant to be a starting for all techies interested to get th
 
 [Link to the corresponding app template](https://github.com/smaranjitghose/girlscript_app)
 
+## Tech Stack Used:
+**1.**  HTML <br>
+**2.**  CSS  <br>
+**4.**  JAVASCRIPT <br>
+
+ ![Html](https://media.giphy.com/media/fuJPZBIIqzbt1kAYVc/giphy.gif)
+
 ## Contribution Guidelines
 
 #### 👇 Prerequisites:
@@ -53,13 +60,19 @@ This project is also meant to be a starting for all techies interested to get th
 #### Steps:
 ![Steps](https://media.giphy.com/media/o5BzNDDFQnepi/giphy.gif)
 
-**1.** Fork [this](https://github.com/smaranjitghose/girlscript_chennai_website) repository.
+**1.** Fork [this](https://github.com/smaranjitghose/girlscript_chennai_website) repository :fork_and_knife:
 
-**2.** Clone your forked repository to your local system.
+
+<img src="https://user-images.githubusercontent.com/41269164/70219309-9a3eca80-176a-11ea-8a4d-1bd701d07314.png" width=300>
+
+
+**2.** Clone your forked repository to your local system :busts_in_silhouette:
 
 ```terminal
 git clone https://github.com/<your-github-username>/girlscript_chennai_website
 ```
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT5N0HJ9db7jSvcL4dsDscZQBzqQqqKVs0BnO1OVz26glLWKJRY&usqp=CAU" width="300">
 
 **3.** Navigate to the project directory.
 
@@ -75,11 +88,17 @@ git checkout -b <your_branch_name>
 
 **5.** Make changes in source code.
 
-**6.** Commit your changes.
+![changes](https://media.giphy.com/media/QNFhOolVeCzPQ2Mx85/200w_d.gif)
 
-```terminal
-  git add .
-  git commit -m "<your_commit_message>"
+
+**6.** Commit your changes.
+```
+Type in a message relevant for the code reveiwer using
+
+       ```sh
+       # This message get associated with all files you have changed
+       $ git commit -m "description about changes"
+        ```
 ```
 
 **7.** Push your local branch to the remote repository.
@@ -89,6 +108,16 @@ git push -u origin <your_branch_name>
 ```
 
 **8.** Create a Pull Request!
+
+
+Finally, go to your repository in browser and click on `compare and pull requests`.
+Then add a title and description to your pull request that explains your precious effort.
+
+<img src="https://user-images.githubusercontent.com/41269164/70219707-47194780-176b-11ea-96c2-d0c401ddb1e0.png" width=600>
+		
+click on `Compare and Pull Request`
+		
+<img src="https://user-images.githubusercontent.com/41269164/70219836-8d6ea680-176b-11ea-81d5-549093bf0954.png" width=600>
 
 
 **Congratulations!** Sit and relax, you've made your contribution to [GirlScript App Boilerplate](https://github.com/smaranjitghose/girlscript_chennai_website) project.
@@ -107,6 +136,8 @@ git push -u origin <your_branch_name>
 - Work on additional projects for the community like mass mailer,certgen,etc
 
 #### Code of Conduct:
+
+![code_of_conduct](https://media.giphy.com/media/qHRwTyhWIj4UU/200w_d.gif)
 
 [Make sure you don't violate this](https://github.com/smaranjitghose/girscript_chennai_app/blob/master/CODE_OF_CONDUCT.md)
 
