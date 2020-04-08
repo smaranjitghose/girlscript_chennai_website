@@ -34,6 +34,12 @@ h3{
 #teamHeading{
     font-size: 60px;
     font-weight: bold;
+    color:#000;
+}
+
+#teamHeading span{
+    color:orangered;
+    font-weight:normal;
 }
 
 #teamPara{
@@ -43,6 +49,13 @@ h3{
 .team-center-heading{
     font-size: 50px;
     font-weight: bold;
+    color:#000;
+
+}
+
+.team-center-heading span{
+    font-weight:normal;
+    color:orangered;
 }
 
 .circularDiv{
@@ -74,11 +87,40 @@ h2{
 
 .boardBtn, .techBtn{
     margin: 20px;
+    background:orangered;
+    color:white;
+    border:1px solid orangered;
+    border-radius:2rem;
+    padding:0.5rem 1.2rem;padding:0.5rem 1.2rem;
+
+}
+
+.boardBtn{
+  
+    background:orangered;
+    color:white;
+    border:1px solid orangered;
+    border-radius:2rem;
+    padding:0.5rem 1.2rem;
+}
+
+.boardBtn:hover{
+    background:white;
+    color:orangered;
+    border:1px solid orangered;
 }
 
 .manageBtn{
-    margin-top: 20px;
-    margin-bottom: 70px;
+    background:orangered;
+    color:white;
+    border:1px solid orangered;
+    border-radius:2rem;
+    padding:0.5rem 1.2rem;
+}
+.manageBtn:hover{
+    background:white;
+    color:orangered;
+    border:1px solid orangered;
 }
 
 @media only screen and (max-width: 440px){
@@ -96,4 +138,19 @@ h2{
     .section1{
         margin-top: 100px;
     }
+}
+
+.techBtn{
+  
+    background:orangered;
+    color:white;
+    border:1px solid orangered;
+    border-radius:2rem;
+    padding:0.5rem 1.2rem;
+}
+
+.techBtn:hover{
+    background:white;
+    color:orangered;
+    border:1px solid orangered;
 }
