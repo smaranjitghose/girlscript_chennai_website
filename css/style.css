@@ -695,6 +695,11 @@ Parallax section
 footer {
   background: #232323;
   padding: 20px 0;
+  overflow-x: hidden;
+}
+
+.footer-logo {
+  align-items: center;
 }
 
 .footer-container {
@@ -713,6 +718,7 @@ footer {
 
 .social-media {
   margin-top: 3%;
+  align-items: center;
 }
 .footer-h2 {
   margin-top: 2%;
@@ -733,28 +739,24 @@ footer {
 .social-media a:hover {
   transition: 0.5s;
 }
-a.fa-twitter {
-  color: #2bf4ff;
-}
-a.fa-instagram {
-  color: #f58529;
-}
-a.fa-github {
-  color: #ad5c51;
-}
+
+a.fa-instagram,
+a.fa-twitter,
+a.fa-github,
 a.fa-linkedin {
-  color: #1293d2;
+  color: #f47521a6;
 }
+
 .fa-twitter:hover {
   color: #00acee;
 }
 
 .fa-instagram:hover {
-  color: #fb3958;
+  color: #fb39a4;
 }
 
 .fa-github:hover {
-  color: #6e5494;
+  color: #4c3372;
 }
 
 .fa-linkedin:hover {
@@ -765,10 +767,9 @@ a.fa-linkedin {
   border-radius: 10em;
   color: white;
   border-color: orangeOrange;
-  margin: 1rem;
   width: 100px;
-  height: 40px;
-  border: 1px solid #f47621;
+  height: 42px;
+  border: 1.5px solid #f47621;
   transition: all 300ms ease-in;
 }
 
@@ -780,11 +781,6 @@ a.fa-linkedin {
 
 .right-col h1 {
   font-size: 26px;
-}
-
-#footer-c {
-  /* background-color: Orange; */
-  text-align: center;
 }
 
 .border {
@@ -1127,9 +1123,7 @@ section.module.parallax-spl {
     margin-top: 45%;
     height: 352px;
   }
-  #footer-c {
-    text-align: center;
-  }
+
   .border {
     margin-left: 19%;
   }
@@ -2249,5 +2243,12 @@ a.active {
 
   .main-head {
     font-size: 2.3rem;
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  #footer-c {
+    align-items: center;
+    text-align: center;
   }
 }
