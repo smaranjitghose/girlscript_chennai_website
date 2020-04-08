@@ -9,8 +9,8 @@ body {
   padding: 0;
 }
 :root {
-	--theme-color: #f47621;
-	--white-color: #fff;
+  --theme-color: #f47621;
+  --white-color: #fff;
 }
 
 h1,
@@ -87,26 +87,26 @@ ol {
 }
 
 .clr-wt {
-	color: var(--white-color) !important;
+  color: var(--white-color) !important;
 }
 .clr-theme {
-	color: var(--theme-color) !important;
+  color: var(--theme-color) !important;
 }
 .fw-bold {
-	font-weight: bold;
+  font-weight: bold;
 }
 .fw-100 {
-	font-weight: 100;
+  font-weight: 100;
 }
 .fw-400 {
-	font-weight: 400;
+  font-weight: 400;
 }
 .bg-lgt-grey {
-	background-color: #f5f5f5 !important;
+  background-color: #f5f5f5 !important;
 }
 
 .fs-17px {
-	font-size: 17px;
+  font-size: 17px;
 }
 
 /*-----------
@@ -150,32 +150,32 @@ Nav bar
 }
 
 @media only screen and (max-width: 1173px) {
-  .nav-item{
-    font-size:.944rem;
+  .nav-item {
+    font-size: 0.944rem;
   }
 }
 
 @media only screen and (max-width: 1141px) {
-  .nav-item{
-    font-size:.887rem;
+  .nav-item {
+    font-size: 0.887rem;
   }
 }
 
 @media only screen and (max-width: 1094px) {
-  .nav-item{
-    font-size:.838rem;
+  .nav-item {
+    font-size: 0.838rem;
   }
 }
 
 @media only screen and (max-width: 1054px) {
-  .nav-item{
-    font-size:.768rem;
+  .nav-item {
+    font-size: 0.768rem;
   }
 }
 
 @media only screen and (max-width: 998px) {
-  .nav-item{
-    font-size:.759rem;
+  .nav-item {
+    font-size: 0.759rem;
   }
 }
 /*---------------------
@@ -482,9 +482,6 @@ Parallax section
   border-left: 12px solid var(--theme-color);
   border-right: 12px solid var(--theme-color);
 }
-
-
-
 
 /*---------------------
   Call To Section
@@ -1561,10 +1558,10 @@ a.active {
 }
 
 .material-card .mc-btn-action > i {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media only screen and (max-width: 540px) {
@@ -1791,13 +1788,12 @@ a.active {
   background-color: #f47621 !important;
   color: white !important;
 }
-  
+
 .center-btn-settings2:hover {
   color: #f47621 !important;
   background-color: white !important;
   border: 2px solid #f47621 !important;
 }
-
 
 .prodisplay {
   display: none;
@@ -2005,35 +2001,31 @@ a.active {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-
 @media only screen and (hover: none) and (pointer: coarse) {
-
-  .initiatives-cards{
-    margin-bottom:18rem;
+  .initiatives-cards {
+    margin-bottom: 18rem;
   }
-  
-  .flip-card{
+
+  .flip-card {
     perspective: 0;
   }
-  .flip-card-content{
-    position:static;
-  } 
-  
-  .flip-card-front{
-    position:static;
+  .flip-card-content {
+    position: static;
   }
 
-  .flip-card-back{
-    position:static;
+  .flip-card-front {
+    position: static;
+  }
+
+  .flip-card-back {
+    position: static;
     transform: rotateY(0deg);
   }
-  
+
   .flip-card:hover .flip-card-content {
-      display:block;
+    display: block;
   }
-
 }
-
 
 .flip-card-detail {
   font-size: 0.9rem;
@@ -2043,13 +2035,11 @@ a.active {
   transform: rotateY(180deg);
 }
 
-
 @media only screen and (hover: none) and (pointer: coarse) {
   .flip-card:hover .flip-card-content {
     transform: rotateY(0deg);
   }
 }
-
 
 @media only screen and (max-width: 1014px) {
   .initiatives-cards {
@@ -2067,32 +2057,24 @@ a.active {
   }
 }
 
-
-
-
 @media only screen and (max-width: 632px) {
   .initiatives-cards {
     flex-direction: column;
   }
 }
 
-@media only screen and (max-width:1017px) and (hover:none) and (pointer:coarse){
-  
- .upper{
-   align-content: flex-start;
- }
-  .lower{
-    margin-bottom:2rem;
+@media only screen and (max-width: 1017px) and (hover: none) and (pointer: coarse) {
+  .upper {
+    align-content: flex-start;
+  }
+  .lower {
+    margin-bottom: 2rem;
     align-content: flex-start;
   }
 
-  
-
   .flip-card {
-    margin-bottom:16rem;
+    margin-bottom: 16rem;
   }
-  
- 
 }
 
 /* Carousel Styling */
@@ -2168,14 +2150,13 @@ a.active {
 }
 
 .carousel-content {
-  background: black;
+  background-color: rgba(0, 0, 0, 0.4);
   color: white;
   padding: 4rem;
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -40%);
-  opacity: 0.7;
   width: 70%;
 }
 
