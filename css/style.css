@@ -1830,7 +1830,7 @@ a.active {
 .overlay {
   width: 16rem;
   height: 16rem;
-  background: #f47621;
+  background: rgba(237, 130, 30, 0.8);
   border-radius: 50%;
   position: absolute;
   top: 0;
@@ -1842,7 +1842,9 @@ a.active {
 
 .overlay-anchor:link,
 .overlay:visited {
-  color: white;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+  font-style: italic;
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -1853,11 +1855,12 @@ a.active {
 }
 .overlay-anchor:hover,
 .overlay-active {
-  color: rgb(202, 196, 196);
+  text-decoration: underline;
+  color: black;
 }
 
 .feature-card:hover .overlay {
-  transform: scale(1);
+  transform: scale(0.95);
 }
 
 @media only screen and (max-width: 976px) {
@@ -2077,7 +2080,7 @@ a.active {
   }
 }
 
-/* Carousel Styling */
+/*  Styling */
 
 #slider,
 .wrap {
