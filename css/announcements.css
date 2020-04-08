@@ -115,11 +115,14 @@ html, body {
 
 #card {
     box-shadow: 0 15px 26px rgba(0, 0, 0, 0.4);
-    padding: 4px;
+    padding: 5px;
+    transition: 0.3s;
 }
 
 #card:hover {
   border: 2px solid #f47621;
+  padding: 0px;
+  transition: 0.3s;
 }
 
 #card p{
