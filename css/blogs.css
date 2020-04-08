@@ -9,7 +9,7 @@ Parallax section
 .blogparallax {
     background-image: url("https://www.gssoc.tech/images/0.jpg");
     width: 100%;
-    height: 300px;
+    height: 400px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,14 +17,28 @@ Parallax section
 }
   
 .blogshadow {
-    background: rgb(0, 0, 0);
+    background: rgb(0, 0, 0,0.8);
     position: relative;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    opacity: 0.7;
-    height: 300px;
+    height: 400px;
     width: 100%;
+    color: white;
+    display: inline-block;
 }
+
+.blog-para {
+    font-size: 3em;
+    line-height: normal;
+    margin-top: 200px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 468px) {
+    .blog-para{
+      font-size:2em;
+    }
+  }
 
 /*----------------
 Blog Cards
@@ -80,6 +94,28 @@ Blog Cards
     transform: translateY(-8px);
 }
 
+.rtb-inline h1{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f47621;
+}
+
+.rtb-inline h3{
+    font-size: 1em;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.rtb-inline p{
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.63);
+}
+
+.rtb-inline .container {
+    border: 1px solid rgb(230, 230, 230);
+    padding: 30px 0px;
+}
+
 .btn-read{
     margin-top: 30px;
     background-color: #f47621;
@@ -96,5 +132,49 @@ Blog Cards
     border: 2px solid #f47621;
     transition: 0.6s;
     font-weight: bold;
+}
+
+.blogs-social .fa-twitter{
+    color: #f47621;
+    opacity: 0.5;
+    transition: 0.4s;
+}
+
+.blogs-social .fa-facebook{
+    color: #f47621;
+    opacity: 0.5;
+    transition: 0.4s;
+}
+
+.blogs-social .fa-instagram{
+    color: #f47621;
+    opacity: 0.5;
+    transition: 0.4s;
+}
+
+.blogs-social .fa-envelope{
+    color: #f47621;
+    opacity: 0.5;
+    transition: 0.4s;
+}
+
+.blogs-social .fa-twitter:hover{
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.blogs-social .fa-facebook:hover{
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.blogs-social .fa-instagram:hover{
+    opacity: 1;
+    transition: 0.4s;
+} 
+
+.blogs-social .fa-envelope:hover{
+    opacity: 1;
+    transition: 0.4s;
 }
 
