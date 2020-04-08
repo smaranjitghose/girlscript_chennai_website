@@ -29,87 +29,72 @@ Parallax section
 /*----------------
 Blog Cards
 -----------------*/
-.blog-item a {
-    border: 1px solid rgb(230, 230, 230);
 
-}
-.blog-item img {
-  display: block;
-  width: 100%;
-}
-
-.blog-item a {
-    display: flex;
-    padding: 50px;
-    overflow: hidden;
-    align-items: center;
-    max-width: 1000px;
-    margin: auto;
-    color: #333;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    border-radius: 6px;
-    margin-bottom: 50px;
-    text-decoration: none;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
-}
-
-.blog-item a:hover {
-    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2);
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
-}
-
-.blog-item .blog-icon {
-    width: 35%;
-    margin-right: 50px;
-    border-radius: 6px;
-    overflow: hidden;
-    box-shadow: 0 15px 26px rgba(0, 0, 0, 0.4);
-}
-
-.blog-item .blog-content {
-    width: 65%;
-}
-
-.blog-item .blog-content .blog-title {
-    font-size: 21px;
-    text-transform: capitalize;
-    color: #f47621;
+.rtb-col h2{
+    font-family: 'Raleway', sans-serif;
+    color:  #f47621;
+    text-transform: uppercase;
     font-weight: 600;
-    font-family: 'Lato', sans-serif;
+    padding-top: 30px;
+    font-size: 1.5em;
+}
+  
+.rtb-col h3{
+    color: #f47621;
+    padding-top: 30px;
+    font-size: 1em;
+}
+ 
+.rtb-col p{
+    color: black;
+    font-size: 1em;
 }
 
-.blog-item .blog-content .blog-rounded {
-    margin-left: 0;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.blog-item .blog-arrow {
+.rtb-col {
     position: relative;
-    text-align: center;
-    left: 0;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
+    padding: 40px 50px 40px !important;
+    margin-top: 20px;
+    border: 1px solid rgb(230, 230, 230);
+    /*margin: 0 3px !important;*/
+    z-index: 1;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
 }
 
-.blog-item a:hover > .blog-arrow {
-    left: 30px;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
+.rtb-col:hover, .rtb-col:focus, .rtb-col:active {
+    position: relative;
+    /*margin: 0 3px !important;*/
+    z-index: 1;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
 }
 
-.blog-rounded {
-    width: 70px;
-    height: 5px;
-    border-radius: 6px;
-    background-image: linear-gradient(to right, #f47621, #07070779);
-    margin-left: 0;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.btn-read{
+    margin-top: 30px;
+    background-color: #f47621;
+    color: white;
+    border: 2px solid #f47621;
+    border-radius: 10em;
+    transition: 0.6s;
+    font-weight: bold;
 }
 
-
+.btn-read:hover {
+    background-color: #ffffff;
+    color: #f47621;
+    border: 2px solid #f47621;
+    transition: 0.6s;
+    font-weight: bold;
+}
 
