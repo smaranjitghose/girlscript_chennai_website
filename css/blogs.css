@@ -1,3 +1,21 @@
+/* CSS FOR HEADING */
+
+.carousel-item {
+  height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#heading {
+  color: #f47621;
+  font-size: 110px;
+  font-weight: bold;
+  text-shadow: 9px 9px black;
+}
 html, body {
     font-family: 'Lato', sans-serif;
     -webkit-font-smoothing: antialiased;
