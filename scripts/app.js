@@ -43,9 +43,9 @@ let footer = $(`
 	  <h3 class="footer-h">Join Our Newsletter</h3>
 	  <div class="border"></div>
 	  <p class="footer-p">Enter Your Email to get our news and updates.</p>
-	  <form action="" class="newsletter-form" >
-	   <input type="email" class="txtb mr-2 mb-2 mt-4" placeholder="Enter Your Email" required >
-	   <button class="btn btn-spl">Send</button>
+	  <form action="" class="newsletter-form" name="footermail" onsubmit="return validateFooterForm()" method="post" >
+	   <input type="email" id="email" name="email" class="txtb mr-2 mb-2 mt-4" placeholder="Enter Your Email" required >
+	   <button class="btn btn-spl" type="submit">Send</button>
 	  </form>
 	</div>
   </div>
@@ -99,3 +99,16 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 activeTab();
+
+function validateFooterForm(){
+	var emailID = document.footermail.email.value;
+    atpos = emailID.indexOf("@");
+    dotpos = emailID.lastIndexOf(".");
+         
+    if (atpos < 1 || ( dotpos - atpos < 2 )) {
+      alert("Please enter correct email ID")
+      document.footermail.email.focus() ;
+      return false;
+	  }
+	  return true;
+}
