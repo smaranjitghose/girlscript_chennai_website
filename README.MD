@@ -122,7 +122,7 @@ click on `Compare and Pull Request`
 
 **Congratulations!** Sit and relax, you've made your contribution to [GirlScript App Boilerplate](https://github.com/smaranjitghose/girlscript_chennai_website) project.
 
-#### Some more important Git commands 
+#### Some more important Git commands:
 
 - `git stash` - Temporarily shelve changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on
 - `git remote add upstream` - Add upstream with https://github.com/smaranjitghose/girlscript_chennai_website
