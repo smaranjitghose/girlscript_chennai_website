@@ -456,7 +456,7 @@ Parallax section
 .parallax1 {
   background-image: url("https://www.gssoc.tech/images/0.jpg");
   width: 100%;
-  height: 400px;
+  height: 40px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -469,7 +469,7 @@ Parallax section
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   opacity: 0.4;
-  height: 400px;
+  height: 40px;
   width: 100%;
 }
 
@@ -1136,7 +1136,7 @@ section.module.parallax-spl {
 }
 
 /*-----------------
-  Achievements 
+  Achievements
   -------------------*/
 
 .atitle h2 {
@@ -1791,7 +1791,7 @@ a.active {
   background-color: #f47621 !important;
   color: white !important;
 }
-  
+
 .center-btn-settings2:hover {
   color: #f47621 !important;
   background-color: white !important;
@@ -1995,13 +1995,15 @@ a.active {
   width: 13rem;
   height: 13rem;
   padding: 0.5rem 1rem;
-  text-align: justify;
+  text-align: center;
   position: absolute;
   top: 0;
   left: 0;
-  transform: rotateY(180deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  background-color: #f47621;
+  color: white;
+  transform: rotateY(180deg);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -2011,14 +2013,14 @@ a.active {
   .initiatives-cards{
     margin-bottom:18rem;
   }
-  
+
   .flip-card{
     perspective: 0;
   }
   .flip-card-content{
     position:static;
-  } 
-  
+  }
+
   .flip-card-front{
     position:static;
   }
@@ -2027,7 +2029,7 @@ a.active {
     position:static;
     transform: rotateY(0deg);
   }
-  
+
   .flip-card:hover .flip-card-content {
       display:block;
   }
@@ -2077,7 +2079,7 @@ a.active {
 }
 
 @media only screen and (max-width:1017px) and (hover:none) and (pointer:coarse){
-  
+
  .upper{
    align-content: flex-start;
  }
@@ -2086,13 +2088,13 @@ a.active {
     align-content: flex-start;
   }
 
-  
+
 
   .flip-card {
     margin-bottom:16rem;
   }
-  
- 
+
+
 }
 
 /* Carousel Styling */
