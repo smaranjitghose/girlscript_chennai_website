@@ -3,11 +3,29 @@ html, body {
     -webkit-font-smoothing: antialiased;
 }
 
-/*-----------------
-Parallax section
--------------------*/
+/*----------------
+Blog Cards
+-----------------*/
 
+.rtb-col h2{
+    font-family: 'Raleway', sans-serif;
+    color:  #f47621;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-top: 30px;
+    font-size: 1.8em;
+}
 
+.rtb-col h3{
+    color: #f47621;
+    padding-top: 30px;
+    font-size: 1em;
+}
+
+.rtb-col p{
+    color: black;
+    font-size: 1em;
+}
 
 .rtb-col {
     position: relative;
@@ -102,7 +120,7 @@ Parallax section
     font-size:3rem;
 }
 .heading-blog span{
-    color:orangered;
+    color: #f47621;
     font-weight:light;
 }
 
@@ -146,7 +164,7 @@ Parallax section
 }
 
 .tagline span{
-    color:red;
+    color: #f47621;
 }
 
 .organisation{
@@ -157,7 +175,7 @@ Parallax section
 }
 
 .organisation span{
-    color:orangered;
+    color:#f47621;
     font-weight:normal;;
 }
 .header-images{
