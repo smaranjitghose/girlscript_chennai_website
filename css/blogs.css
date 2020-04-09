@@ -6,39 +6,6 @@ html, body {
 /*-----------------
 Parallax section
 -------------------*/
-.blogparallax {
-    background-image: url("https://www.gssoc.tech/images/0.jpg");
-    width: 100%;
-    height: 400px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-  
-.blogshadow {
-    background: rgb(0, 0, 0,0.8);
-    position: relative;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    height: 400px;
-    width: 100%;
-    color: white;
-    display: inline-block;
-}
-
-.blog-para {
-    font-size: 3em;
-    line-height: normal;
-    margin-top: 200px;
-    font-weight: bold;
-}
-
-@media only screen and (max-width: 468px) {
-    .blog-para{
-      font-size:2em;
-    }
-  }
 
 
 
@@ -152,4 +119,54 @@ Parallax section
 
 .tagline-top{
     letter-spacing: 1.5px;
+}
+
+.header-blog{
+    min-height:90vh;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top:5rem;
+    background:#f6f6f6;
+}
+
+.header-blog-content{
+    flex:0 0 1;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.tagline{
+    font-size:1.5rem;
+    margin:1rem 0rem;
+    color:black;
+}
+
+.tagline span{
+    color:red;
+}
+
+.organisation{
+    font-size:3rem;
+    font-weight:bold;
+    text-shadow: 0px 2px 4px rgb(94, 92, 92);
+   
+}
+
+.organisation span{
+    color:orangered;
+    font-weight:normal;;
+}
+.header-images{
+    flex:0 0 1;
+    
+}
+.blogging{
+    display:flex;
+    justify-content:center;
+    width:30rem;
+    align-items:center;
 }
