@@ -1,41 +1,26 @@
+html, body {
+    font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
 :root {
   --gradient-light: #F09819;
   --gradient-dark:#E16831;
   --gradient:linear-gradient(to bottom right,var(--gradient-light),var(--gradient-dark));
 }
 
+.team {
+    overflow-x: hidden;
+}
 
-h3{
+.team h3{
     text-align: center;
-}
-
-.navbar{
-    background: linear-gradient(to right, #F09819, #FF512F);
-}
-
-.nav-link{
-    color: #fff!important;
-    font-weight: 540;
-    font-size: 140%;
-    font-family: 'Raleway', sans-serif;
-}
-
-.navbar-toggler{
-    color: #fff!important;
-    border:none!important;
-}
-
-.activeLink{
-    color: #000!important;
-}
-
-.nav-link:hover {
-    color: #000!important;
 }
 
 .section1{
     height: 600px;
     width: 100%;
+    margin-top: 20px;
 }
 
 #teamHeading{
@@ -78,7 +63,7 @@ h3{
 	box-shadow: 0 0 8px 8px rgba(0,0,0,0.2);
 }
 
-h2{
+.team h2{
     text-align: center;
 }
 
@@ -105,7 +90,7 @@ h2{
 		padding-left: 17%;
 	}
     .section1{
-        margin-top: 100px;
+        margin-top: 140px;
     }
 }
 

@@ -1233,8 +1233,6 @@ a.active {
   }
 }
 @media only screen and (min-width: 993px) {
-  .newsection {
-  }
 
   .joinbox {
     position: relative;
@@ -2148,14 +2146,51 @@ a.active {
 }
 
 .carousel-content {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
   padding: 4rem;
   position: absolute;
-  top: 40%;
+  top: 60%;
   left: 50%;
-  transform: translate(-50%, -40%);
+  transform: translate(-50%, -50%);
   width: 70%;
+}
+
+
+.carousel-inner{
+  min-height:100vh;
+}
+
+.carousel-item{
+  min-height:100vh;
+  
+}
+.carousel-item img{
+  min-height:100vh;
+  
+}
+
+.carousel-inner{
+  min-height:110vh;
+  
+}
+
+#carouselExampleIndicators{
+  min-height:90vh;
+  position: relative;
+  
+} 
+
+.carousel-control-prev{
+  position:absolute;
+  top:25%;
+  left:0%;
+}
+
+.carousel-control-next{
+  position:absolute;
+  top:25%;
+  right:0%;
 }
 
 .main-head {
@@ -2235,5 +2270,28 @@ a.active {
   #footer-c {
     align-items: center;
     text-align: center;
+  }
+}
+
+
+.carousel slide{
+  min-height:100vh;
+
+}
+
+
+
+@media  (max-width:872px){
+  #carouselExampleIndicators{
+    display:none;
+  }
+
+  .fallback{
+    min-height:100vh;
+    background:url("../assets/Images/2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
   }
 }
