@@ -35,6 +35,41 @@ html, body {
       background-color: rgb(250, 250, 250);
       cursor: pointer;
   }
+
+  .go-corner-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    overflow: hidden;
+    top: 65px;
+    right: 70px;
+    background-color: #f47621;
+    border-radius: 0 4px 0 32px;
+  }
+
+  .go-corner-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    overflow: hidden;
+    top: 473.5px;
+    right: 70px;
+    background-color: #f47621;
+    border-radius: 0 4px 0 32px;
+  }
+  
+  .go-arrow {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: white;
+    font-family: courier, sans;
+  }
   
   .announcement-item .announcement-icon {
       width: 35%;
@@ -197,9 +232,42 @@ html, body {
   ...
     transition: 0.5s ease;
     cursor: pointer;
+<<<<<<< HEAD
     margin:30px;
   }
   .card1-text{
       margin-top:20px;
       font-size:29px;
   }
+=======
+}
+
+#card:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #f47621;
+    height: 52px;
+    width: 52px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+}
+
+#card:hover:before {
+  transform: scale(22);
+}
+
+/* #card:hover {
+  border: 2px solid #f47621;
+  padding: 0px;
+  transition: 0.3s;
+} */
+
+#card p{
+    color: rgba(0, 0, 0, 0.603);
+}
+>>>>>>> card improvements
