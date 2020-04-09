@@ -16,7 +16,7 @@ html, body {
     width: 100%;
   }
   
-  .announcement-item a {
+  .announcement-card {
       display: flex;
       padding: 50px;
       overflow: hidden;
@@ -33,6 +33,7 @@ html, body {
       transition: all .3s ease;
       box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2);
       background-color: rgb(250, 250, 250);
+      cursor: pointer;
   }
   
   .announcement-item .announcement-icon {
@@ -101,7 +102,7 @@ html, body {
         display: inline-block;
     }
 
-    .announcement-item a {
+    .announcement-card {
         display: inline-block;    
         align-items: center;
         max-width: 1000px;
@@ -171,56 +172,3 @@ html, body {
 #card p{
     color: rgba(0, 0, 0, 0.603);
 }
-
-/*
-.organize-item {
-    text-align: center;
-    display: flex;
-    padding: 50px;
-    overflow: hidden;
-    max-width: 1000px;
-    margin: auto;
-    font-size: 16px;
-    align-items: center;
-    border-radius: 6px;
-    margin-bottom: 50px;
-    text-decoration: none;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
-    box-shadow: 0 10px 50px 0 rgba(2, 2, 2, 0.2);
-    background: linear-gradient(to right, #f09619d8, #ff522fd8);
-}
-
-.organize-content{
-    width: 100%;
-}
-
-.organize-item .organize-content .organize-title {
-    font-size: 35px;
-    text-transform: capitalize;
-    color: black;
-    font-weight: 800;
-}
-
-.organize-btn {
-    border: 2px solid #fc6a09;
-    background-color: #fc6a09;
-    color: white;
-    font-weight: bold;
-    transition: 0.6s;
-    border-radius: 10em;
-    letter-spacing: 1.5px;
-    box-shadow: 0 0px 10px 0 rgba(221, 220, 220, 0.61);
-}
-
-.organize-btn:hover {
-  background-color: #ffffff;
-  color: #f47621;
-  border: 2px solid #f47621;
-  transition: 0.6s;
-  font-weight: bold;
- }
-
-*/
-
-
