@@ -1,6 +1,6 @@
 let header = $(`
 <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
-  <a class="navbar-brand" href="index.html"><img src="assets/Images/transparent_logo.png" width="80px" id="logo"></a>
+  <a class="navbar-brand" href="index.html"><img src="../assets/Images/transparent_logo.png" width="80px" id="logo"></a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	  <span class="navbar-toggler-icon"></span>
 	</button>
@@ -34,7 +34,7 @@ let footer = $(`
   <div class="row">
 	<div class="col-lg-6 col-md-4 footer-logo">
 	  <center>
-		<img src="assets/Images/transparent_logo.png" alt="" class="logo">
+		<img src="../assets/Images/transparent_logo.png" alt="" class="logo">
 	  </center>
 	</div>
 	<div class="col-lg-6 col-md-8 mb-5" id="footer-c">

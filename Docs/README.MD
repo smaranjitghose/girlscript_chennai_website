@@ -3,7 +3,7 @@
 ![Issues](https://img.shields.io/github/issues/smaranjitghose/girlscript_chennai_website)
 ![Pull Requests](https://img.shields.io/github/issues-pr/smaranjitghose/girlscript_chennai_website?)
 ![Forks](https://img.shields.io/github/forks/smaranjitghose/girlscript_chennai_website)
-![Stars](	https://img.shields.io/github/stars/smaranjitghose/girlscript_chennai_website)
+![Stars](https://img.shields.io/github/stars/smaranjitghose/girlscript_chennai_website)
 ![License](https://img.shields.io/github/license/smaranjitghose/girlscript_chennai_website)
 
 [![Gitter](https://badges.gitter.im/girlscript_chennai_website/community.svg)](https://gitter.im/girlscript_chennai_website/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
@@ -140,15 +140,6 @@ click on `Compare and Pull Request`
 ![code_of_conduct](https://media.giphy.com/media/qHRwTyhWIj4UU/200w_d.gif)
 
 [Make sure you don't violate this](https://github.com/smaranjitghose/girscript_chennai_app/blob/master/CODE_OF_CONDUCT.md)
-
-
-## 📷 A sneak peek at the current UI of the website
-
-![Sneak](https://media.giphy.com/media/ZXBzAsNNHNuOJCY9Gq/giphy.gif)
-
-|  |  |
-|--------|----------|
-|![image 1](snapshots/Capture1.JPG)|![image 2](snapshots/Capture.JPG)|
 
 
 ## 👨 Project Admin
