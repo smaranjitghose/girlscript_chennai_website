@@ -2126,7 +2126,7 @@ a.active {
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.5)
     ),
-    url("../assets/Images/2.jpg");
+    url("../assets/Images/slider_image.jpg");
 }
 .slide2 {
   background-image: linear-gradient(
