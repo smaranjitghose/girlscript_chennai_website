@@ -1,4 +1,4 @@
-# 🙆 GirlsScript Chennai Website
+# GirlScript Website Boilerplate
 
 ![Issues](https://img.shields.io/github/issues/smaranjitghose/girlscript_chennai_website)
 ![Pull Requests](https://img.shields.io/github/issues-pr/smaranjitghose/girlscript_chennai_website?)
@@ -8,118 +8,165 @@
 
 [![Gitter](https://badges.gitter.im/girlscript_chennai_website/community.svg)](https://gitter.im/girlscript_chennai_website/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-This is the website meant to serve the Chennai chapter of GirlScript Chennai. 
-
-## 🙇 Description
-Being an open source project under GirlScript Summer of Code'2020, this website is not only built for the community but also by the community as well. This is a good starting point for anyone new to web development to work on an actual use case.
-### 👀 Sections of the website:
-
-- Home 
-- Annoucements 
-- Achievements 
-- Team 
-- Contact Us
-
-Also for participants looking to contribute beyond just the website...we shall have a separate projects folder..for making certain small scripts to assist the admins of the website..Once approved here and verified..you can directly contribute the same.
-https://github.com/techequilla
-
-### 👇 Checkout the current version: 
-
-[Community Website Boilerplate](https://girlscriptchennai.netlify.com/)
-
-## 📷 Snapshots
-![image 1](snapshots/Capture1.JPG)
-
-![image 2](snapshots/Capture.JPG)
-
-## 📚 Tech Stack Used
-1. HTML
-2. CSS
-3. JavaScript
-
-## 👇 Prerequisites to contribute
-
-- Basic knowledge of HTML, CSS and JavaScript for frontend.
-- The ability to use Git and GitHub.
-- Knowing React and Gatsby is big plus.
-- UI/UX Design skills are appreciated but not mandatory.
-- Some idea about Firebase or willingness to learn it.
-- NodeJS should be installed (check for it's installation on terminal using npm -v)
+This is an open source project for creating a website that shall serve as a template/boilerplate for various chapters of GirlScript. With certain modifications to the content specific to the chapter using this, the need to build a website from scratch and the pains of fixing bugs and figuring out what part fits where is eliminated. Feel free to use this!. If this project helps you out, please give us a mention. Also, we would love to see your version of the same! Do a give a PR in a different branch that showcases how you used this!
 
 
-## 🏆 How to contribute
+This project is also meant to be a starting for all techies interested to get their hands dirty in open-source contributions. A highlight of this project being this project is "built by the community for the community".
+
 
 ![GSSOC'20](https://img.shields.io/badge/GSSOC-20-orange?style=for-the-badge)
 
+#### 👇 Checkout the current version: 
 
-**1.** Fork [this](https://github.com/smaranjitghose//girlscript_chennai_website) repository.
+[GirlScript Website Boilerplate](https://girlscriptchennai.netlify.com/)
 
-**2.** Clone the forked repository.
+####  A follow up project:
+
+[Link to the corresponding app template](https://github.com/smaranjitghose/girlscript_app)
+
+## Tech Stack Used:
+**1.**  HTML <br>
+**2.**  CSS  <br>
+**4.**  JAVASCRIPT <br>
+
+ ![Html](https://media.giphy.com/media/fuJPZBIIqzbt1kAYVc/giphy.gif)
+
+## Contribution Guidelines
+
+#### 👇 Prerequisites:
+
+![Pass](https://media.giphy.com/media/Z9cRCMdAMzXi25dwhE/giphy.gif)
+
+- Ability to use Git and Github is mandatory
+- Working knowledge of HTML and CSS
+- Basic knowledge of ReactJS is a plus and willingness to learn more
+- UI/UX skills are appreciable but not mandatory
+- Additional backend skills of Django/NodeJS
+
+#### Suggested Resources for picking up on the skills:
+
+![Learn](https://media.giphy.com/media/qxsgm2X2Fb5WE/giphy.gif)
+
+- [Dart Programming](https://www.youtube.com/watch?v=Ej_Pcr4uC2Q)
+- [Flutter Crash Course](https://www.youtube.com/watch?v=pTJJsmejUOQ)
+- [Firebase and Flutter App Build](https://www.youtube.com/playlist?list=PL4cUxeGkcC9j--TKIdkb3ISfRbJeJYQwC)
+- [Reso Code's Youtube Channel for best practices](https://www.youtube.com/channel/UCSIvrn68cUk8CS8MbtBmBkA/featured)
+- [Official Flutter Documentation](https://flutter.dev/docs)
+- [Hyper Text Markup Language](https://www.w3schools.com/html/html_intro.asp)
+- [Cascading Style Sheets](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
+
+
+#### Steps:
+![Steps](https://media.giphy.com/media/o5BzNDDFQnepi/giphy.gif)
+
+**1.** Fork [this](https://github.com/smaranjitghose/girlscript_chennai_website) repository :fork_and_knife:
+
+
+<img src="https://user-images.githubusercontent.com/41269164/70219309-9a3eca80-176a-11ea-8a4d-1bd701d07314.png" width=300>
+
+
+**2.** Clone your forked repository to your local system :busts_in_silhouette:
+
 ```terminal
-git clone https://github.com/<your-github-username>//girlscript_chennai_website
+git clone https://github.com/<your-github-username>/girlscript_chennai_website
 ```
 
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT5N0HJ9db7jSvcL4dsDscZQBzqQqqKVs0BnO1OVz26glLWKJRY&usqp=CAU" width="300">
+
 **3.** Navigate to the project directory.
+
 ```terminal
-cd /girlscript_chennai_website
+cd girlscript_chennai_website
 ```
 
 **4.** Create a new branch.
+
 ```terminal
 git checkout -b <your_branch_name>
 ```
 
 **5.** Make changes in source code.
 
-**6.** Commit your changes.
+![changes](https://media.giphy.com/media/QNFhOolVeCzPQ2Mx85/200w_d.gif)
 
-```terminal
-  git add .
-  git commit -m "<your_commit_message>"
+
+**6.** Commit your changes.
+```
+Type in a message relevant for the code reveiwer using
+
+       ```sh
+       # This message get associated with all files you have changed
+       $ git commit -m "description about changes"
+        ```
 ```
 
 **7.** Push your local branch to the remote repository.
+
 ```terminal
 git push -u origin <your_branch_name>
 ```
 
 **8.** Create a Pull Request!
 
-**9.** **Congratulations!** Sit and relax, you've made your contribution to [GirlScript Chennai Website](https://github.com/smaranjitghose//girlscript_chennai_website) project. Wait for your PR to be reviewed by the mentors.
+
+Finally, go to your repository in browser and click on `compare and pull requests`.
+Then add a title and description to your pull request that explains your precious effort.
+
+<img src="https://user-images.githubusercontent.com/41269164/70219707-47194780-176b-11ea-96c2-d0c401ddb1e0.png" width=600>
+		
+click on `Compare and Pull Request`
+		
+<img src="https://user-images.githubusercontent.com/41269164/70219836-8d6ea680-176b-11ea-81d5-549093bf0954.png" width=600>
 
 
-## 📝 Resources to get started with:
+**Congratulations!** Sit and relax, you've made your contribution to [GirlScript App Boilerplate](https://github.com/smaranjitghose/girlscript_chennai_website) project.
 
-- [freecodecamp Curriculum + Blogs](https://www.freecodecamp.org/)
-- [w3Schools](https://www.w3schools.com/)
+#### Tasks:
 
-## 🔥 Code of Conduct
-In order to promote an open and welcoming atmosphere, we as contributors and maintainers commit ourselves to make involvement in our project and in our group a harassment-free experience for all irrespective of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
-### Our Standards
-* There should be clear communication.
-* Listen to everyone's ideas.
-* Learn all the aspects before coming to conclusion.
-* Using inoffensive language
-* Attaining positive work environment should be one of everybody's goals
-### Our Responsibilities
-Authorities are responsible for creating an environment where everyone is treated equally and strict actions should be taken in case of unacceptable behaviour.
-Authorities have the duty and responsibility to delete, modify, or reject comments, code, wiki updates, problems, and other contributions that are not consistent with this Code of Conduct, or temporarily or permanently ban any user for other actions that they find unacceptable, disruptive, offensive, or harmful.
+![Tasks](https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif)
+
+- Improve the UI/UX of the website
+- Work on various pages of the webiste
+- Put in more animations
+- Ensure mobile responsiveness of the website
+- Fix any bugs
+- Build GitHub Actions
+- Make admin panel for the website
+- Work on additional projects for the community like mass mailer,certgen,etc
+
+#### Code of Conduct:
+
+![code_of_conduct](https://media.giphy.com/media/qHRwTyhWIj4UU/200w_d.gif)
+
+[Make sure you don't violate this](https://github.com/smaranjitghose/girscript_chennai_app/blob/master/CODE_OF_CONDUCT.md)
+
+
+## 📷 A sneak peek at the current UI of the website
+
+![Sneak](https://media.giphy.com/media/ZXBzAsNNHNuOJCY9Gq/giphy.gif)
+
+|  |  |
+|--------|----------|
+|![image 1](snapshots/Capture1.JPG)|![image 2](snapshots/Capture.JPG)|
+
 
 ## 👨 Project Admin
+![Admin](https://media.giphy.com/media/26wkRxKJ9yUZzlorK/giphy.gif)
 
-- Smaranjit Ghose <p>[<img src="https://img.icons8.com/windows/32/000000/github-2.png" display = "inline-block">](https://github.com/smaranjitghose) [<img src="https://img.icons8.com/color/48/000000/linkedin-2.png" display = "inline-block">](https://linkedin.com/in/smaranjitghose)</p>
+[Smaranjit Ghose](https://github.com/smaranjitghose)
 
-## 👬  Mentors
+## 👬  Mentors and Project Maintainers
 
-- Sukkrit Sharma  <p>[<img src="https://img.icons8.com/windows/32/000000/github-2.png" display = "inline-block">](https://github.com/sukkritsharmaofficial) [<img src="https://img.icons8.com/ios-glyphs/30/000000/linkedin-2.png"/>](https://linkedin.com/in/sukkritsharma)</p>
-- Saswat Nayak    <p>[<img src="https://img.icons8.com/windows/32/000000/github-2.png" display = "inline-block">](https://github.com/swat1998) [<img src="https://img.icons8.com/ios-glyphs/30/000000/linkedin-2.png"/>](linkedin.com/in/saswat-nayak-a41212166)</p> 
-- Ousnik Polley   <p>[<img src="https://img.icons8.com/windows/32/000000/github-2.png" display = "inline-block">](https://github.com/ousnik) [<img src="https://img.icons8.com/ios-glyphs/30/000000/linkedin-2.png"/>](https://linkedin.com/in/ousnikpolley)</p>
-- Anush Bhatia    <p>[<img src="https://img.icons8.com/windows/32/000000/github-2.png" display = "inline-block">](https://github.com/anushbhatia) [<img src="https://img.icons8.com/ios-glyphs/30/000000/linkedin-2.png"/>](https://linkedin.com/in/anush-bhatia-aa500a158)</p>
+![Project Maintainers](https://media.giphy.com/media/fQZX2aoRC1Tqw/giphy.gif)
+
+- [Sukkrit Sharma](https://github.com/sukkritsharmaofficial)
+- [Saswat Nayak](https://github.com/swat1998)
+- [Ousnik Polley](https://github.com/ousnik)
+- [Anush Bhatia](https://github.com/anushbhatia)
 
 Feel free to ask your queries!! 🙌
 
 ## License 📝
 Refer to [LICENSE](./LICENSE).
-
-Happy Coding!! 💜💜
 

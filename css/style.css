@@ -5,10 +5,12 @@ body {
   -webkit-font-smoothing: antialiased;
   padding-top: 50px;
   background-color: white;
+  margin: 0;
+  padding: 0;
 }
 :root {
-	--theme-color: #f47621;
-	--white-color: #fff;
+  --theme-color: #f47621;
+  --white-color: #fff;
 }
 
 h1,
@@ -71,6 +73,7 @@ a:hover,
 a:focus {
   text-decoration: none;
   outline: none;
+  color: inherit;
 }
 
 ul,
@@ -85,20 +88,26 @@ ol {
 }
 
 .clr-wt {
-	color: var(--white-color) !important;
+  color: var(--white-color) !important;
 }
 .clr-theme {
-	color: var(--theme-color) !important;
+  color: var(--theme-color) !important;
 }
 .fw-bold {
-	font-weight: bold;
+  font-weight: bold;
+}
+.fw-100 {
+  font-weight: 100;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.bg-lgt-grey {
+  background-color: #f5f5f5 !important;
 }
 
-/*-------------------
-About 
---------------------*/
-.about {
-  background-color: #f5f5f5;
+.fs-17px {
+  font-size: 17px;
 }
 
 /*-----------
@@ -142,32 +151,32 @@ Nav bar
 }
 
 @media only screen and (max-width: 1173px) {
-  .nav-item{
-    font-size:.944rem;
+  .nav-item {
+    font-size: 0.944rem;
   }
 }
 
 @media only screen and (max-width: 1141px) {
-  .nav-item{
-    font-size:.887rem;
+  .nav-item {
+    font-size: 0.887rem;
   }
 }
 
 @media only screen and (max-width: 1094px) {
-  .nav-item{
-    font-size:.838rem;
+  .nav-item {
+    font-size: 0.838rem;
   }
 }
 
 @media only screen and (max-width: 1054px) {
-  .nav-item{
-    font-size:.768rem;
+  .nav-item {
+    font-size: 0.768rem;
   }
 }
 
 @media only screen and (max-width: 998px) {
-  .nav-item{
-    font-size:.759rem;
+  .nav-item {
+    font-size: 0.759rem;
   }
 }
 /*---------------------
@@ -475,24 +484,6 @@ Parallax section
   border-right: 12px solid var(--theme-color);
 }
 
-.joinbtn {
-  padding: 18px 40px;
-  font-size: 16px;
-  border: none;
-  font-weight: 700;
-  outline: none;
-  border-radius: 30px;
-  cursor: pointer;
-  background-color: rgb(37, 37, 37);
-  color: white;
-}
-
-.joinbtn:hover {
-  color: #111111;
-  background-color: white;
-  border: 2px solid black;
-}
-
 /*---------------------
   Call To Section
 -----------------------*/
@@ -702,6 +693,11 @@ Parallax section
 footer {
   background: #232323;
   padding: 20px 0;
+  overflow-x: hidden;
+}
+
+.footer-logo {
+  align-items: center;
 }
 
 .footer-container {
@@ -720,6 +716,7 @@ footer {
 
 .social-media {
   margin-top: 3%;
+  align-items: center;
 }
 .footer-h2 {
   margin-top: 2%;
@@ -740,28 +737,24 @@ footer {
 .social-media a:hover {
   transition: 0.5s;
 }
-a.fa-twitter {
-  color: #2bf4ff;
-}
-a.fa-instagram {
-  color: #f58529;
-}
-a.fa-github {
-  color: #ad5c51;
-}
+
+a.fa-instagram,
+a.fa-twitter,
+a.fa-github,
 a.fa-linkedin {
-  color: #1293d2;
+  color: #f47521a6;
 }
+
 .fa-twitter:hover {
   color: #00acee;
 }
 
 .fa-instagram:hover {
-  color: #fb3958;
+  color: #fb39a4;
 }
 
 .fa-github:hover {
-  color: #6e5494;
+  color: #4c3372;
 }
 
 .fa-linkedin:hover {
@@ -772,10 +765,9 @@ a.fa-linkedin {
   border-radius: 10em;
   color: white;
   border-color: orangeOrange;
-  margin: 1rem;
   width: 100px;
-  height: 40px;
-  border: 1px solid #f47621;
+  height: 42px;
+  border: 1.5px solid #f47621;
   transition: all 300ms ease-in;
 }
 
@@ -787,11 +779,6 @@ a.fa-linkedin {
 
 .right-col h1 {
   font-size: 26px;
-}
-
-#footer-c {
-  /* background-color: Orange; */
-  text-align: center;
 }
 
 .border {
@@ -1092,25 +1079,6 @@ section.module.parallax-spl {
   perspective: 700px;
 }
 
-.inibtn {
-  padding: 18px 37px;
-  font-size: 16px;
-  border: none;
-  font-weight: 700;
-  outline: none;
-  border-radius: 30px;
-  margin-left: 20px;
-  cursor: pointer;
-  background-color: #f47621;
-  color: white;
-}
-
-.inibtn:hover {
-  color: #f47621;
-  background-color: white;
-  border: 2px solid #f47621;
-}
-
 @media screen and (max-width: 1024px) {
   .center-div {
     top: 30%;
@@ -1153,9 +1121,7 @@ section.module.parallax-spl {
     margin-top: 45%;
     height: 352px;
   }
-  #footer-c {
-    text-align: center;
-  }
+
   .border {
     margin-left: 19%;
   }
@@ -1164,9 +1130,6 @@ section.module.parallax-spl {
 /*-----------------
   Achievements 
   -------------------*/
-.achieve {
-  background-color: #f5f5f5;
-}
 
 .atitle h2 {
   font-size: 4vw;
@@ -1195,25 +1158,6 @@ section.module.parallax-spl {
   color: black;
   font-weight: 700;
   margin-bottom: 12px;
-}
-
-.anibtn {
-  padding: 16px 30px;
-  font-size: 16px;
-  border: none;
-  font-weight: 700;
-  outline: none;
-  border-radius: 30px;
-  margin-left: 20px;
-  cursor: pointer;
-  background-color: #f47621;
-  color: white;
-}
-
-.anibtn:hover {
-  color: #f47621;
-  background-color: white;
-  border: 2px solid #f47621;
 }
 
 html {
@@ -1289,26 +1233,7 @@ a.active {
   }
 }
 @media only screen and (min-width: 993px) {
-  .newsection {
-    background-color: white;
-  }
 
-  .joinbtn {
-    padding: 18px 40px;
-    font-size: 16px;
-    border: none;
-    font-weight: 700;
-    outline: none;
-    border-radius: 30px;
-    cursor: pointer;
-    background-color: rgb(37, 37, 37);
-    color: white;
-  }
-  .joinbtn:hover {
-    color: #111111;
-    background-color: white;
-    border: 2px solid black;
-  }
   .joinbox {
     position: relative;
   }
@@ -1362,26 +1287,6 @@ a.active {
   }
 }
 @media only screen and (max-width: 576px) {
-  .newsection {
-    background-color: white;
-  }
-  .joinbtn {
-    padding: 18px 40px;
-    font-size: 16px;
-    border: none;
-    font-weight: 700;
-    outline: none;
-    border-radius: 30px;
-    margin-left: 20px;
-    cursor: pointer;
-    background-color: rgb(37, 37, 37);
-    color: white;
-  }
-  .joinbtn:hover {
-    color: #111111;
-    background-color: white;
-    border: 2px solid black;
-  }
   .joinbox {
     position: relative;
   }
@@ -1438,26 +1343,6 @@ a.active {
   }
 }
 @media only screen and (max-width: 767px) and (min-width: 576px) {
-  .newsection {
-    background-color: white;
-  }
-  .joinbtn {
-    padding: 18px 40px;
-    font-size: 16px;
-    border: none;
-    font-weight: 700;
-    outline: none;
-    border-radius: 30px;
-    margin-left: 20px;
-    cursor: pointer;
-    background-color: rgb(37, 37, 37);
-    color: white;
-  }
-  .joinbtn:hover {
-    color: #111111;
-    background-color: white;
-    border: 2px solid black;
-  }
   .joinbox {
     position: relative;
   }
@@ -1511,26 +1396,6 @@ a.active {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  .newsection {
-    background-color: white;
-  }
-  .joinbtn {
-    padding: 18px 40px;
-    font-size: 16px;
-    border: none;
-    font-weight: 700;
-    outline: none;
-    border-radius: 30px;
-    margin-left: 20px;
-    cursor: pointer;
-    background-color: rgb(37, 37, 37);
-    color: white;
-  }
-  .joinbtn:hover {
-    color: #111111;
-    background-color: white;
-    border: 2px solid black;
-  }
   .joinbox {
     position: relative;
   }
@@ -1686,10 +1551,10 @@ a.active {
 }
 
 .material-card .mc-btn-action > i {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media only screen and (max-width: 540px) {
@@ -1894,10 +1759,9 @@ a.active {
   border-color: #fff3e0;
 }
 
-.probtn {
-  padding: 14px 30px;
+.center-btn-settings {
+  padding: 16px 40px;
   font-size: 16px;
-  border: none;
   font-weight: 700;
   outline: none;
   border-radius: 30px;
@@ -1908,10 +1772,20 @@ a.active {
   margin: 0 auto;
   display: block;
 }
-.probtn:hover {
+.center-btn-settings:hover {
   color: #111111;
   background-color: white;
   border: 2px solid black;
+}
+.center-btn-settings2 {
+  background-color: #f47621 !important;
+  color: white !important;
+}
+
+.center-btn-settings2:hover {
+  color: #f47621 !important;
+  background-color: white !important;
+  border: 2px solid #f47621 !important;
 }
 
 .prodisplay {
@@ -1949,7 +1823,7 @@ a.active {
 .overlay {
   width: 16rem;
   height: 16rem;
-  background: #f47621;
+  background: rgba(237, 130, 30, 0.8);
   border-radius: 50%;
   position: absolute;
   top: 0;
@@ -1961,7 +1835,9 @@ a.active {
 
 .overlay-anchor:link,
 .overlay:visited {
-  color: white;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+  font-style: italic;
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -1972,11 +1848,12 @@ a.active {
 }
 .overlay-anchor:hover,
 .overlay-active {
-  color: rgb(202, 196, 196);
+  text-decoration: underline;
+  color: black;
 }
 
 .feature-card:hover .overlay {
-  transform: scale(1);
+  transform: scale(0.95);
 }
 
 @media only screen and (max-width: 976px) {
@@ -2061,6 +1938,7 @@ a.active {
   width: 13rem;
   height: 13rem;
   perspective: 62.5rem;
+  cursor: pointer;
 }
 
 .flip-card-content {
@@ -2119,35 +1997,31 @@ a.active {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-
 @media only screen and (hover: none) and (pointer: coarse) {
-
-  .initiatives-cards{
-    margin-bottom:18rem;
+  .initiatives-cards {
+    margin-bottom: 18rem;
   }
-  
-  .flip-card{
+
+  .flip-card {
     perspective: 0;
   }
-  .flip-card-content{
-    position:static;
-  } 
-  
-  .flip-card-front{
-    position:static;
+  .flip-card-content {
+    position: static;
   }
 
-  .flip-card-back{
-    position:static;
+  .flip-card-front {
+    position: static;
+  }
+
+  .flip-card-back {
+    position: static;
     transform: rotateY(0deg);
   }
-  
+
   .flip-card:hover .flip-card-content {
-      display:block;
+    display: block;
   }
-
 }
-
 
 .flip-card-detail {
   font-size: 0.9rem;
@@ -2157,13 +2031,11 @@ a.active {
   transform: rotateY(180deg);
 }
 
-
 @media only screen and (hover: none) and (pointer: coarse) {
   .flip-card:hover .flip-card-content {
     transform: rotateY(0deg);
   }
 }
-
 
 @media only screen and (max-width: 1014px) {
   .initiatives-cards {
@@ -2181,35 +2053,27 @@ a.active {
   }
 }
 
-
-
-
 @media only screen and (max-width: 632px) {
   .initiatives-cards {
     flex-direction: column;
   }
 }
 
-@media only screen and (max-width:1017px) and (hover:none) and (pointer:coarse){
-  
- .upper{
-   align-content: flex-start;
- }
-  .lower{
-    margin-bottom:2rem;
+@media only screen and (max-width: 1017px) and (hover: none) and (pointer: coarse) {
+  .upper {
+    align-content: flex-start;
+  }
+  .lower {
+    margin-bottom: 2rem;
     align-content: flex-start;
   }
 
-  
-
   .flip-card {
-    margin-bottom:16rem;
+    margin-bottom: 16rem;
   }
-  
- 
 }
 
-/* Carousel Styling */
+/*  Styling */
 
 #slider,
 .wrap {
@@ -2282,15 +2146,51 @@ a.active {
 }
 
 .carousel-content {
-  background: black;
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
   padding: 4rem;
   position: absolute;
-  top: 40%;
+  top: 60%;
   left: 50%;
-  transform: translate(-50%, -40%);
-  opacity: 0.7;
+  transform: translate(-50%, -50%);
   width: 70%;
+}
+
+
+.carousel-inner{
+  min-height:100vh;
+}
+
+.carousel-item{
+  min-height:100vh;
+  
+}
+.carousel-item img{
+  min-height:100vh;
+  
+}
+
+.carousel-inner{
+  min-height:110vh;
+  
+}
+
+#carouselExampleIndicators{
+  min-height:90vh;
+  position: relative;
+  
+} 
+
+.carousel-control-prev{
+  position:absolute;
+  top:25%;
+  left:0%;
+}
+
+.carousel-control-next{
+  position:absolute;
+  top:25%;
+  right:0%;
 }
 
 .main-head {
@@ -2363,5 +2263,35 @@ a.active {
 
   .main-head {
     font-size: 2.3rem;
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  #footer-c {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+
+.carousel slide{
+  min-height:100vh;
+
+}
+
+
+
+@media  (max-width:872px){
+  #carouselExampleIndicators{
+    display:none;
+  }
+
+  .fallback{
+    min-height:100vh;
+    background:url("../assets/Images/2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
   }
 }

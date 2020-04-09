@@ -36,33 +36,33 @@
                         <br />
                         <br />
                         <div class="section-head col-sm-12" style="margin-left: 0.5%;">
-                          <h1><span>Get</span><br /><strong style="color: orangered">In Touch</strong></h1>
+                          <h1 class="headingh1"<span>Get</span><br /><strong style="color: orangered">In Touch</strong></h1>
                           <hr />
                           <br />
                         </div>
 
-                        <form class="form-horizontal " action="https://formspree.io/xyz@gmail.com" method="post"
+                        <form class="form-horizontal" name="myForm" action="https://formspree.io/xyz@gmail.com" onsubmit="return validateForm()" method="post"
                           style="margin-left: 2.5%;margin-right: 2.5%;margin-top: 2.5%;margin-bottom: 2.5%">
 
                             <div class="col-sm-12" style="margin-bottom: 2%">
-                              <input type="text" id="name" name="name" class="form-control"  required />
+                              <input type="text" id="name" name="name" class="form-control"  placeholder=" " required />
                               <label class="form-control-placeholder" for ='name'> Name</label>
                             </div>
                           <div class="form-group">
                             <div class="col-sm-12">
-                              <input type="email" id="email" name="_replyto" class="form-control" required />
+                              <input type="email" id="email" name="email" class="form-control" placeholder=" " required />
                               <label class="form-control-placeholder" for ='email'> E-mail</label>
                             </div>
                           </div>
                           <div class="form-group">
                             <div class="col-sm-12">
-                              <input type="text" id="subject" name="_subject" class="form-control"  required />
+                              <input type="text" id="subject" name="subject" class="form-control"  placeholder=" " required />
                               <label class="form-control-placeholder" for ='subject'> Subject</label>
                             </div>
                           </div>
                           <div class="form-group">
                             <div class="col-sm-12">
-                              <textarea name="message" rows="4" class="form-control" required ></textarea>
+                              <textarea name="message" rows="4" class="form-control" placeholder=" " required ></textarea>
                               <label  class="form-control-placeholder" for ='message'> Message</label>
                             </div>
                           </div>
@@ -125,6 +125,41 @@
       document.getElementById("logo").style.width = "80px";
       document.getElementById("scroll-top").style.display = "none";
     }
+  }
+
+  function validateForm() {
+    var nameVal = document.myForm.name.value;
+    var numbers = /^[0-9]+$/;
+    if(nameVal.match(numbers)){
+      alert("Please enter correct name")
+      document.myForm.name.focus();
+      return false;
+    }
+
+    var emailID = document.myForm.email.value;
+    atpos = emailID.indexOf("@");
+    dotpos = emailID.lastIndexOf(".");
+         
+    if (atpos < 1 || ( dotpos - atpos < 2 )) {
+      alert("Please enter correct email ID")
+      document.myForm.email.focus() ;
+      return false;
+      }
+
+    var subject = document.myForm.subject.value;
+    var message = document.myForm.message.value;
+    if(subject.length < 10) {
+            alert( "Minimum Length of subject must be 10" );
+            document.myForm.subject.focus() ;
+            return false;
+         }
+    if(message.length < 10) {
+            alert( "Minimum Length of message must be 10" );
+            document.myForm.message.focus() ;
+            return false;
+         }
+
+      return( true );
   }
 </script>
 
