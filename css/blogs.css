@@ -1,5 +1,5 @@
 html, body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -40,29 +40,7 @@ Parallax section
     }
   }
 
-/*----------------
-Blog Cards
------------------*/
 
-.rtb-col h2{
-    font-family: 'Raleway', sans-serif;
-    color:  #f47621;
-    text-transform: uppercase;
-    font-weight: 600;
-    padding-top: 30px;
-    font-size: 1.5em;
-}
-  
-.rtb-col h3{
-    color: #f47621;
-    padding-top: 30px;
-    font-size: 1em;
-}
- 
-.rtb-col p{
-    color: black;
-    font-size: 1em;
-}
 
 .rtb-col {
     position: relative;
@@ -118,63 +96,60 @@ Blog Cards
 
 .btn-read{
     margin-top: 30px;
-    background-color: #f47621;
+    background: linear-gradient(to bottom right,#F09819,#E16831);
     color: white;
-    border: 2px solid #f47621;
+    border: 2px solid linear-gradient(to bottom right,#F09819,#E16831);
     border-radius: 10em;
     transition: 0.6s;
     font-weight: bold;
+    box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.1);
 }
 
 .btn-read:hover {
-    background-color: #ffffff;
-    color: #f47621;
+    background: #ffffff;
     border: 2px solid #f47621;
     transition: 0.6s;
     font-weight: bold;
 }
 
-.blogs-social .fa-twitter{
-    color: #f47621;
-    opacity: 0.5;
-    transition: 0.4s;
-}
-
-.blogs-social .fa-facebook{
-    color: #f47621;
-    opacity: 0.5;
-    transition: 0.4s;
-}
-
-.blogs-social .fa-instagram{
-    color: #f47621;
-    opacity: 0.5;
-    transition: 0.4s;
-}
-
+.blogs-social .fa-twitter,
+.blogs-social .fa-facebook,
+.blogs-social .fa-instagram,
 .blogs-social .fa-envelope{
     color: #f47621;
     opacity: 0.5;
     transition: 0.4s;
 }
 
-.blogs-social .fa-twitter:hover{
-    opacity: 1;
-    transition: 0.4s;
-}
-
-.blogs-social .fa-facebook:hover{
-    opacity: 1;
-    transition: 0.4s;
-}
-
-.blogs-social .fa-instagram:hover{
-    opacity: 1;
-    transition: 0.4s;
-} 
-
+.blogs-social .fa-twitter:hover,
+.blogs-social .fa-facebook:hover,
+.blogs-social .fa-instagram:hover,
 .blogs-social .fa-envelope:hover{
     opacity: 1;
     transition: 0.4s;
 }
 
+
+.heading-blog{
+    font-weight:bold;
+    font-size:3rem;
+}
+.heading-blog span{
+    color:orangered;
+    font-weight:light;
+}
+
+.tagline{
+    color: rgb(110, 110, 110);
+}
+
+.logo-gs{
+    width:50px;
+}
+.others{
+    color: rgb(163, 162, 162);
+}
+
+.tagline-top{
+    letter-spacing: 1.5px;
+}
