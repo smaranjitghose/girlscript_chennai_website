@@ -153,15 +153,6 @@ click on `Compare and Pull Request`
 [Make sure you don't violate this](https://github.com/smaranjitghose/girscript_chennai_app/blob/master/CODE_OF_CONDUCT.md)
 
 
-## 📷 A sneak peek at the current UI of the website
-
-![Sneak](https://media.giphy.com/media/ZXBzAsNNHNuOJCY9Gq/giphy.gif)
-
-|  |  |
-|--------|----------|
-|![image 1](snapshots/Capture1.JPG)|![image 2](snapshots/Capture.JPG)|
-
-
 ## 👨 Project Admin
 ![Admin](https://media.giphy.com/media/26wkRxKJ9yUZzlorK/giphy.gif)
 
