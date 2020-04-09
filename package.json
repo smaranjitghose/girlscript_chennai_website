@@ -1,0 +1,26 @@
+{
+  "name": "nodemailer-mail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "build": "babel src --out-dir dist --minified --compact",
+    "dev": "nodemon --exec babel-node src/index.js"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "abhu-A-J",
+  "license": "MIT",
+  "dependencies": {
+    "csv-parse": "^4.8.8",
+    "dotenv": "^8.2.0",
+    "nodemailer": "^6.4.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.5"
+  }
+}
