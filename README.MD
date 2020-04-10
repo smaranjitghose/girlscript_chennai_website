@@ -24,13 +24,6 @@ This project is also meant to be a starting for all techies interested to get th
 
 [Link to the corresponding app template](https://github.com/smaranjitghose/girlscript_app)
 
-## Tech Stack Used:
-**1.**  HTML <br>
-**2.**  CSS  <br>
-**4.**  JAVASCRIPT <br>
-
- ![Html](https://media.giphy.com/media/fuJPZBIIqzbt1kAYVc/giphy.gif)
-
 ## Contribution Guidelines
 
 #### 👇 Prerequisites:
