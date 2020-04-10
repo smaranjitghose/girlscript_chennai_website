@@ -96,7 +96,7 @@ click on `Compare and Pull Request`
 <img src="https://user-images.githubusercontent.com/41269164/70219836-8d6ea680-176b-11ea-81d5-549093bf0954.png" width=600>
 
 
-**Congratulations!** Sit and relax, you've made your contribution to [GirlScript App Boilerplate](https://github.com/smaranjitghose/girlscript_chennai_website) project.
+**Congratulations!** Sit and relax, you've made your contribution to [GirlScript Website Boilerplate](https://github.com/smaranjitghose/girlscript_chennai_website) project.
 
 #### Some more important Git commands:
 
