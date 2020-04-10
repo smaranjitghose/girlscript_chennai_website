@@ -44,7 +44,7 @@ html, body {
     width: 33px;
     height: 33px;
     overflow: hidden;
-    top: 65px;
+    top: 64.5px;
     right: 70px;
     background-color: #f47621;
     border-radius: 0 4px 0 32px;
@@ -233,6 +233,7 @@ html, body {
     transition: 0.5s ease;
     cursor: pointer;
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin:30px;
   }
   .card1-text{
@@ -240,6 +241,9 @@ html, body {
       font-size:29px;
   }
 =======
+=======
+    overflow: hidden;
+>>>>>>> improved hover effects
 }
 
 #card:before {
