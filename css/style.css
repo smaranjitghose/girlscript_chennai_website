@@ -1607,6 +1607,20 @@ a.active {
   transition: all 0.3s;
 }
 
+.material-card .mc-footer a {
+
+  color: #f47621;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+.material-card .mc-footer a:hover {
+
+  color: black;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
 .material-card .mc-footer a:nth-child(1) {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
