@@ -36,20 +36,6 @@ This project is also meant to be a starting for all techies interested to get th
 - UI/UX skills are appreciable but not mandatory
 - Additional backend skills of Django/NodeJS
 
-#### Suggested Resources for picking up on the skills:
-
-![Learn](https://media.giphy.com/media/qxsgm2X2Fb5WE/giphy.gif)
-
-- [Dart Programming](https://www.youtube.com/watch?v=Ej_Pcr4uC2Q)
-- [Flutter Crash Course](https://www.youtube.com/watch?v=pTJJsmejUOQ)
-- [Firebase and Flutter App Build](https://www.youtube.com/playlist?list=PL4cUxeGkcC9j--TKIdkb3ISfRbJeJYQwC)
-- [Reso Code's Youtube Channel for best practices](https://www.youtube.com/channel/UCSIvrn68cUk8CS8MbtBmBkA/featured)
-- [Official Flutter Documentation](https://flutter.dev/docs)
-- [Hyper Text Markup Language](https://www.w3schools.com/html/html_intro.asp)
-- [Cascading Style Sheets](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
-
-
 #### Steps:
 ![Steps](https://media.giphy.com/media/o5BzNDDFQnepi/giphy.gif)
 
