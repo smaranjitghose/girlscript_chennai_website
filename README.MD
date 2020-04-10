@@ -132,19 +132,6 @@ click on `Compare and Pull Request`
 - `git push --force` -> Sync your branch with remote
   _the --force is very important for the first time after rebase, don't forget it._
 
-#### Tasks:
-
-![Tasks](https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif)
-
-- Improve the UI/UX of the website
-- Work on various pages of the webiste
-- Put in more animations
-- Ensure mobile responsiveness of the website
-- Fix any bugs
-- Build GitHub Actions
-- Make admin panel for the website
-- Work on additional projects for the community like mass mailer,certgen,etc
-
 #### Code of Conduct:
 
 ![code_of_conduct](https://media.giphy.com/media/qHRwTyhWIj4UU/200w_d.gif)
