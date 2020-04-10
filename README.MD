@@ -69,7 +69,7 @@ This project is also meant to be a starting for all techies interested to get th
 **2.** Clone your forked repository to your local system :busts_in_silhouette:
 
 ```terminal
-git clone https://github.com/<your-github-username>/girlscript_chennai_website
+git clone --depth 1 https://github.com/<your-github-username>/girlscript_chennai_website
 ```
 
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT5N0HJ9db7jSvcL4dsDscZQBzqQqqKVs0BnO1OVz26glLWKJRY&usqp=CAU" width="300">
@@ -127,7 +127,6 @@ click on `Compare and Pull Request`
 - `git stash` - Temporarily shelve changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on
 - `git remote add upstream` - Add upstream with https://github.com/smaranjitghose/girlscript_chennai_website
 - `git fetch upstream` - Catching up a git fork to upstream master
-- `git checkout branch_name` - Switch to the branch that you are working
 - `git rebase upstream/master` Start the rebase, probably you will need to solve some conflicts, you can always ask here.
 - `git stash pop` -> Recover your uncommited stuff
 - `git push --force` -> Sync your branch with remote
