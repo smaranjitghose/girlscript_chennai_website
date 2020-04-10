@@ -4,11 +4,19 @@ html, body {
 }
 
 .main-section {
-    margin-top: 8%;
+    margin-top: 11%;
 }
 
 .contact-form {
     text-align: left;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.6s;
+}
+
+.contact-form:hover {
+  text-align: left;
+  box-shadow: 0 5px 10px rgba(231, 85, 0, 0.836);
+  transition: 0.6s;
 }
 
 .contact-form p {
@@ -26,7 +34,8 @@ html, body {
   top: 0;
   padding: 6px 0 0 13px;
   transition: all 200ms;
-  opacity: 0.5;
+  opacity: 0.7;
+  color: #f47621;
 }
 
 .form-control:not(:placeholder-shown) + .form-control-placeholder {
@@ -34,6 +43,7 @@ html, body {
   transform: translate3d(0, -100%, 0);
   opacity: 1;
   font-weight: bold;
+  color: black;
 }
 
 .no-border{
@@ -65,4 +75,16 @@ html, body {
   border: 2px solid #f47621;
 }
 
+@media only screen and (max-width: 1059px) {
+  .main-section {
+    margin-top: 20%;
+}
 
+} 
+
+@media only screen and (max-width: 560px) {
+  .main-section {
+    margin-top: 35%;
+}
+
+} 
