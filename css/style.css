@@ -1820,113 +1820,133 @@ a.active {
   margin-bottom: 4rem;
 }
 
-.feature-card {
-  width: 16rem;
-  height: 16rem;
-  border-radius: 50%;
-  position: relative;
-}
-.feature-card-img {
-  width: 16rem;
-  height: 16rem;
-  border-radius: 50%;
-}
-
-.overlay {
-  width: 16rem;
-  height: 16rem;
-  background: rgba(237, 130, 30, 0.8);
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  transform: scale(0);
-  transition: 0.3s ease;
-}
-
-.overlay-anchor:link,
-.overlay:visited {
-  color: rgba(0, 0, 0, 0.5);
-  font-weight: 700;
-  font-style: italic;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  transition: 300ms ease-in-out;
-}
-.overlay-anchor:hover,
-.overlay-active {
-  text-decoration: underline;
-  color: black;
-}
-
-.feature-card:hover .overlay {
-  transform: scale(0.95);
-}
-
-@media only screen and (max-width: 976px) {
-  .feature-card {
-    width: 14rem;
-    height: 14rem;
-  }
-
-  .feature-card-img {
-    width: 14rem;
-    height: 14rem;
-  }
-
-  .overlay {
-    width: 14rem;
-    height: 14rem;
-  }
-}
-
 @media only screen and (max-width: 872px) {
   .feature-cards {
     flex-direction: column;
   }
-
-  .feature-card {
-    width: 16rem;
-    height: 16rem;
-    margin: 1rem;
-  }
-
-  .feature-card-img {
-    width: 16rem;
-    height: 16rem;
-  }
-
-  .overlay {
-    width: 16rem;
-    height: 16rem;
-  }
+}
+.ih-item {
+  position: relative;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.ih-item,
+.ih-item * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ih-item a {
+  color: #333;
+}
+.ih-item a:hover {
+  text-decoration: none;
+}
+.ih-item img {
+  width: 100%;
+  height: 100%;
 }
 
-@media only screen and (max-width: 480px) {
-  .feature-card {
-    width: 12rem;
-    height: 12rem;
-  }
+.ih-item.circle {
+  position: relative;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+}
+.ih-item.circle .img {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+.ih-item.circle .img:before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.ih-item.circle .img img {
+  border-radius: 50%;
+}
+.ih-item.circle .info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
 
-  .feature-card-img {
-    width: 12rem;
-    height: 12rem;
-  }
+.ih-item.square {
+  position: relative;
+  width: 316px;
+  height: 216px;
+  border: 8px solid #fff;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.ih-item.square .info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
 
-  .overlay {
-    width: 12rem;
-    height: 12rem;
-  }
+.ih-item.circle.effect .img {
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  left: 10px;
+  right: 0;
+  width: auto;
+  height: auto;
+}
+.ih-item.circle.effect .img:before {
+  display: none;
+}
+.ih-item.circle.effect1.colored .info {
+  background: #1a4a72;
+  background: rgba(26, 74, 114, 0.6);
+}
+.ih-item.circle.effect .info {
+  top: 10px;
+  bottom: 0;
+  left: 10px;
+  right: 0;
+  background: #333333;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+.ih-item.circle.effect .info h3 {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 40px 22px 0 30px;
+  padding: 55px 0 0 0;
+  height: 120px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
 
-  .overlay-anchor:link,
-  .overlay:visited {
-    font-size: 15px;
-  }
+.ih-item.circle.effect a:hover .info {
+  opacity: 1;
 }
 
 /*------Initiatives Section--------*/
@@ -2309,3 +2329,4 @@ a.active {
     position: relative;
   }
 }
+
