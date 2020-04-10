@@ -68,13 +68,9 @@ git checkout -b <your_branch_name>
 
 
 **6.** Commit your changes.
-```
-Type in a message relevant for the code reveiwer using
 
-       ```sh
-       # This message get associated with all files you have changed
-       $ git commit -m "description about changes"
-        ```
+```terminal
+       $ git commit -m "short description about changes"
 ```
 
 **7.** Push your local branch to the remote repository.
@@ -112,7 +108,7 @@ click on `Compare and Pull Request`
 
 ![code_of_conduct](https://media.giphy.com/media/qHRwTyhWIj4UU/200w_d.gif)
 
-[Make sure you don't violate this](https://github.com/smaranjitghose/girscript_chennai_app/blob/master/CODE_OF_CONDUCT.md)
+[Make sure you don't violate this](https://github.com/smaranjitghose/girscript_chennai_website/blob/master/CODE_OF_CONDUCT.md)
 
 
 ## 👨 Project Admin
