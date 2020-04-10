@@ -161,6 +161,7 @@ html, body {
     box-shadow: 0 15px 26px rgba(0, 0, 0, 0.4);
     padding: 5px;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 #card:hover {
