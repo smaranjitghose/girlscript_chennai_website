@@ -110,18 +110,18 @@ click on `Compare and Pull Request`
 
 [Make sure you don't violate this](https://github.com/smaranjitghose/girscript_chennai_website/blob/master/CODE_OF_CONDUCT.md)
 
+# The Geeks Behind this!:
 
-## 👨 Project Admin
 ![Admin](https://media.giphy.com/media/26wkRxKJ9yUZzlorK/giphy.gif)
 
+[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/0)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/0)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/1)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/1)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/2)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/2)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/3)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/3)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/4)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/4)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/5)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/5)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/6)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/6)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/7)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/7)
 
+#### 👨 Project Admin
 
 <a href="https://sourcerer.io/smaranjitghose"><img src="https://avatars2.githubusercontent.com/u/46641503?v=4" height="50px" width="50px" alt=""/></a>
 [Smaranjit Ghose](https://github.com/smaranjitghose)
 
-## 👬  Mentors and Project Maintainers
-
-![Project Maintainers](https://media.giphy.com/media/fQZX2aoRC1Tqw/giphy.gif)
+#### 👬  Mentors and Project Maintainers
 
 - [Sukkrit Sharma](https://github.com/sukkritsharmaofficial)
 - [Saswat Nayak](https://github.com/swat1998)
