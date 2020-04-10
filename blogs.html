@@ -21,67 +21,33 @@
 <body>
     <section>
         <div class="p-3 mb-5 container" id="blogid">
-            <div class="row">
                 <div class="col-lg-8">
-                    <h3 class="pt-5 pb-5 heading-blog">
-                        Recent <span>Blogs</span></h3>
-                    <div id="retainable-rss-embed" data-rss="https://medium.com/feed/techequilla" 
-                        data-maxcols="1" data-layout="grid" data-poststyle="inline" 
-                        data-readmore="Read more" data-buttonclass="btn  btn-read" data-offset="-100">
-                    </div>        
+                    <h3 class="pt-5 pb-2 mb-4 heading-blog">
+                        Recent <span>Blogs</span></h3>                      
                 </div>
+                <div class="blog-item">
+                    <div class="blog-card">
+                        <div class="row">
+                            <div class="col-6 blog-image">
+                                <img src="https://cdn-images-1.medium.com/max/1024/1*FaUnQ5EPghJ-djub2Vfqsg.jpeg">
+                            </div>
+                            <div class="col-6 blog-content">
+                                <div class="blog-heading">
+                                    Shots #1: From source code to songs and stories — in conversation with Harshinee
+                                </div>
+                                <p>Author: Smaranjit Ghose</p>
+                                <h3 id="shots">Shots #1: From source code to songs and stories — in conversation with Harshinee</h3><br>
+                                <p><strong>Smaranjit:</strong> Welcome to the pilot episode of <strong>Shots —</strong> a series that brings you the untold tales of student techies who constantly strive to make a difference and contribute to the world. I am Smaranjit Ghose, your host for this edition and I attempt to unearth the experiences, choices, and work of these people whom you might blend within your academic life without being aware of how they are making it big every single day. Hop in as we learn some of the trade secrets. Today we have Harshinee Sriram. Thanks, Harshinee for joining me for this interview.</p>
+                                <a href="https://medium.com/techequilla/techequilla-shots-1-25e146d3660" class="btn blog-btn">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
 
-                <div class="p-5 col-lg-4 blogs-social">
-                    <a href="index.html">
-                        <img src="assets/Images/gs_chennai_logo2.png" class="logo-gs" alt="IGirlScript logo">
-                    <h6 class="mt-3 mb-2"> GirlScript Chennai </h6> 
-                    </a>
-                    
-                    <p class="tagline">
-                        India's fastest growing tech community at the heart of Chennai
-                    </p>
-                    <a class="pt-5" href="https://medium.com/techequilla" data-toggle="tooltip" title="medium.com/techequilla" data-placement="left" style="color: rgb(163, 162, 162);text-decoration: underline;">MORE INFORMATION</a>
-                    <p class="pt-4" class="others">OTHERS</p>
-                    <a href="https://twitter.com/girlscriptch">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                    </a> &nbsp;
-                    <a href="https://www.instagram.com/girlscriptchennai/">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </a> &nbsp;
-                    <a href="#">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                    </a> &nbsp;
-                    <a href="contactUs.html">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                    </a>                    
-                </div>
-            </div>
-        </section>
-	<a class="gotopbtn clr-wt" id="scroll-top" href="#"> <i class="fa fa-arrow-up clr-wt"></i> </a>
-        
+    </section>
 </body>
-    <script src="./scripts/app.js"></script>
-    <script src="https://www.retainable.io/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-    <script>
-            $(document).ready(function(){
-                $('[data-toggle="tooltip"]').tooltip();
-            });
-    </script>
-    <script type="text/javascript">
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                document.getElementById("navbar").style.padding = "1px 16px";
-                document.getElementById("logo").width = "45px";
-                document.getElementById("scroll-top").style.display = "block";
-            } else {
-                document.getElementById("navbar").style.padding = "8px 16px";
-                document.getElementById("logo").style.width = "80px";
-                document.getElementById("scroll-top").style.display = "none";
-            }
-        }
-    </script>
+<script src="./scripts/app.js"></script>
+<script src="https://www.retainable.io/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </html>
