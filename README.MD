@@ -66,20 +66,25 @@ git checkout -b <your_branch_name>
 
 ![changes](https://media.giphy.com/media/QNFhOolVeCzPQ2Mx85/200w_d.gif)
 
+**6.** Add the files one at a time
 
-**6.** Commit your changes.
+```terminal
+git add path-to-your-file.
+```
+
+**7.** Commit your changes.
 
 ```terminal
        $ git commit -m "short description about changes"
 ```
 
-**7.** Push your local branch to the remote repository.
+**8.** Push your local branch to the remote repository.
 
 ```terminal
 git push -u origin <your_branch_name>
 ```
 
-**8.** Create a Pull Request!
+**9.** Create a Pull Request!
 
 
 Finally, go to your repository in browser and click on `compare and pull requests`.
