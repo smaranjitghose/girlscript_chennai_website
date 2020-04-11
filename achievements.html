@@ -20,141 +20,6 @@
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.5.2/tiny-slider.css'>
 	<link rel="icon" href="assets/Images/gs.png" type="image/png" sizes="16x16">
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <style>
-      .container .card{
-          position: relative;
-          cursor: pointer;
-          border: none;
-      }
-
-      .container .card .face{
-          width: 300px;
-          height: 200px;
-          transition: 0.5s;
-      }
-
-      .container .card .face.face1{
-          position: relative;
-          background: #333;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          z-index: 1;
-          transform: translateY(100px);
-      }
-
-      .container .card:hover .face.face1{
-          background: #FF8C00;
-          transform: translateY(0);
-      }
-
-      .container .card .face.face1 .content{
-          opacity: 0.2;
-          transition: 0.5s;
-      }
-
-      .container .card:hover .face.face1 .content{
-          opacity: 1;
-      }
-
-      .container .card .face.face1 .content img{
-          max-width: 100px;
-      }
-
-      .container .card .face.face1 .content h3{
-          margin: 10px 0 0;
-          padding: 0;
-          color: #fff;
-          text-align: center;
-          font-size: 1.5em;
-      }
-
-      .container .card .face.face2{
-          position: relative;
-          background: #fff;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          padding: 20px;
-          box-sizing: border-box;
-          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
-          transform: translateY(-100px);
-      }
-
-      .container .card:hover .face.face2{
-          transform: translateY(0);
-      }
-
-      .container .card .face.face2 .content p{
-          margin: 0;
-          padding: 0;
-      }
-
-      .container .card .face.face2 .content a{
-          margin: 15px 0 0;
-          display:  inline-block;
-          text-decoration: none;
-          font-weight: 900;
-          color: #333;
-          padding: 5px;
-          border: 1px solid #333;
-      }
-
-      .container .card .face.face2 .content a:hover{
-          background: #333;
-          color: #fff;
-	  }
-	  
-	  .achievementCard .card-link {
-		display: block;
-		text-align: right;
-		opacity: 0.6;
-		color: gray;
-		transition: all 0.3s ease;
-	  }
-
-	  .achievementCard .card-link > i {
-		  font-size: 14px;
-		  margin-left: 3px;
-		  color: gray;
-	  }
-	  .achievementCard .card-link:hover{
-		  color: black;
-		  opacity: 1;
-	  }
-	  .achievementCard .card-link:hover i {
-		color: black;
-		opacity: 1;
-    }
-    
-    .stat-items {
-      margin-top:2rem;
-    }
-
-        @media only screen and (max-width: 575px) {
-            .card-content {
-                padding-left:25px;
-                padding-right:25px;
-         }     
-        }
-
-        @media only screen and (max-width: 515px) {
-  
-            .card--1 {
-                padding-left:0px;
-                padding-right:0px;
-            } 
-            .card--2 {
-                padding-left:0px;
-                padding-right:0px;    
-            }
-            .card--3 {
-                padding-left:0px;
-                padding-right:0px;
-            }
-            
-          }      
-    </style>
   </head>
   <body>
 	  <!-- Header -->
@@ -167,7 +32,7 @@
             <br><br>
             <div class="container">
               <div class="row text-center">
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-4">
                   <div class="stat-items">
                     <i class="afab fa fa-laptop fa-3x"></i>
                     <h2><span class="counter text-center">50</span></h2>
@@ -175,7 +40,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-4">
                   <div class="stat-items">
                     <i class="afab fa fa-trophy fa-3x"></i>
                     <h2><span class="counter text-center">500</span></h2>
@@ -183,7 +48,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-4">
                   <div class="stat-items">
                     <i class="afab fa fa-laptop fa-3x"></i>
                     <h2><span class="counter text-center">10</span></h2>
@@ -196,7 +61,7 @@
             </div>
           </div>
         </section>
-        <h2 class="text-center fw-bold">Projects under <span class="clr-theme">GirlScript Chennai </span></h2>
+        <h2 class="text-center fw-bold mt-5">Projects under <span class="clr-theme">GirlScript Chennai </span></h2>
 
         <div class="achievement-card">
 
@@ -278,8 +143,10 @@
               </div>
             </div>
           </div>
+
+          <input type="button" id="proshow" class="center-btn-settings btn btn-lg mt-5" value="Show More">
         
-          <div class="project-card">
+          <div class="project-card hidediv" id="prohide" >
             <div class="project-image-holder">
               <img class="project-image" src="https://source.unsplash.com/300x225/?field" alt="field" />
             </div>
@@ -305,7 +172,7 @@
             </div>
           </div>
         
-          <div class="project-card">
+          <div class="project-card hidediv" id="prohide">
             <div class="project-image-holder">
               <img class="project-image" src="https://source.unsplash.com/300x225/?water" alt="water" />
             </div>
@@ -331,7 +198,7 @@
             </div>
           </div>
         
-          <div class="project-card">
+          <div class="project-card hidediv" id="prohide">
             <div class="project-image-holder">
               <img class="project-image" src="https://source.unsplash.com/300x225/?river" alt="river" />
             </div>
@@ -358,187 +225,28 @@ While being proporous in many cases like farming the rains can cause havoc too i
               </div>
             </div>
           </div>
-      
-        
+      <br>
+          <input type="button" id="probtn2" class="center-btn-settings btn btn-lg mt-5 mb-5 prodisplay" value="Show Less">
         </div>
+       
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script  src="./scripts/achievement.js"></script>
- <!--     <section class="container" style="margin-top: 3em">
-        <div class="row active-with-click card-content">
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <article class="material-card Orange">
-                    <h2>
-                        <span class="fw-bold">DeepPixel</span>
-                        <strong>
-                          Made by - Smaranjit Gose
-                        </strong>
-                    </h2>
-                    <div class="mc-content">
-                        <div class="img-container">
-                            <img class="img-responsive" src="assets/Images/i.jpg">
-                        </div>
-                        <div class="mc-description">
-                          Create a Python package📦 for plug in and play😎 different image processing and deep learning tasks without having to know about its working and the scary math that follows 😱.
-
-                        </div>
-                    </div>
-                    <a class="mc-btn-action clr-wt">
-                      <i class="fa fa-bars clr-wt"></i>
-                  </a>
-                    <div class="mc-footer">
-                        <a href="">https://github.com/smaranjitghose/DeepPixel</a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <article class="material-card Orange">
-                  <h2>
-                    <span class="fw-bold">Project Name</span>
-                    <strong>
-                      Made by -
-                    </strong>
-                </h2>
-                    <div class="mc-content">
-                        <div class="img-container">
-                            <img class="img-responsive" src="assets/Images/i.jpg">
-                        </div>
-                        <div class="mc-description">
-                          Project Description
-
-                        </div>
-                    </div>
-                    <a class="mc-btn-action clr-wt">
-                      <i class="fa fa-bars clr-wt"></i>
-                  </a>
-                    <div class="mc-footer">
-                        <a href="">Link to GitHub Repository</a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <article class="material-card Orange">
-                  <h2>
-                    <span class="fw-bold">Project Name</span>
-                    <strong>
-                      Made by -
-                    </strong>
-                </h2>
-                    <div class="mc-content">
-                        <div class="img-container">
-                            <img class="img-responsive" src="assets/Images/i.jpg">
-                        </div>
-                        <div class="mc-description">
-                          Project Description
-
-                        </div>
-                    </div>
-                    <a class="mc-btn-action clr-wt">
-                      <i class="fa fa-bars clr-wt"></i>
-                  </a>
-                    <div class="mc-footer">
-                        <a href="">Link to GitHub Repository</a>
-                    </div>
-            </div>
-
-        </div>
-        <input type="button" id="proshow" class="center-btn-settings btn btn-lg mt-4" value="Show More">
-    </section>
-
-    <section id="prohide" class="container prodisplay">
-      <div class="row active-with-click">
-          <div class="col-md-4 col-sm-12 col-xs-12">
-              <article class="material-card Orange">
-                  <h2>
-                      <span class="fw-bold">Project Name</span>
-                      <strong>
-                        Made by -
-                      </strong>
-                  </h2>
-                  <div class="mc-content">
-                      <div class="img-container">
-                          <img class="img-responsive" src="assets/Images/i.jpg">
-                      </div>
-                      <div class="mc-description">
-                        Project Description
-
-                      </div>
-                  </div>
-                  <a class="mc-btn-action clr-wt">
-                    <i class="fa fa-bars clr-wt"></i>
-                </a>
-                  <div class="mc-footer">
-                      <a href="">Link to GitHub Repository</a>
-                  </div>
-              </article>
-          </div>
-          <div class="col-md-4 col-sm-12 col-xs-12">
-              <article class="material-card Orange">
-                <h2>
-                  <span class="fw-bold">Project Name</span>
-                  <strong>
-                    Made by -
-                  </strong>
-              </h2>
-                  <div class="mc-content">
-                      <div class="img-container">
-                          <img class="img-responsive" src="assets/Images/i.jpg">
-                      </div>
-                      <div class="mc-description">
-                        Project Description
-
-                      </div>
-                  </div>
-                  <a class="mc-btn-action clr-wt">
-                    <i class="fa fa-bars clr-wt"></i>
-                </a>
-                  <div class="mc-footer">
-                      <a href="">Link to GitHub Repository</a>
-                  </div>
-              </article>
-          </div>
-          <div class="col-md-4 col-sm-12 col-xs-12">
-              <article class="material-card Orange">
-                <h2>
-                  <span class="fw-bold">Project Name</span>
-                  <strong>
-                    Made by -
-                  </strong>
-              </h2>
-                  <div class="mc-content">
-                      <div class="img-container">
-                          <img class="img-responsive" src="assets/Images/i.jpg">
-                      </div>
-                      <div class="mc-description">
-                        Project Description
-
-                      </div>
-                  </div>
-                  <a class="mc-btn-action clr-wt">
-                    <i class="fa fa-bars clr-wt"></i>
-                </a>
-                  <div class="mc-footer">
-                      <a href="">Link to GitHub Repository</a>
-                  </div>
-          </div>
-
-      </div>
-
-      <input type="button" id="probtn2" class="center-btn-settings btn btn-lg mt-4" value="Show Less">
-    </section>
-    <script src="scripts/projects.js"></script>
     <script>
       $(document).ready(function(){
+        $("div[id=prohide]").hide();
       $("#proshow").click(function(){
-        $("#prohide").removeClass("prodisplay");
+        $("div[id=prohide]").removeClass("hidediv");
+        $("div[id=prohide]").show();
         $("#proshow").hide();
+        $("#probtn2").show();
       });
       $("#probtn2").click(function(){
-        $("#prohide").addClass("prodisplay");
+        $("div[id=prohide]").hide();
         $("#proshow").show();
+        $("#probtn2").hide();
       });
     });
     </script>
-  -->
 
     <div class="container card1 mt-5 achievementCard">
       <h2> SEE WHAT OUR OTHER <span class="clr-theme">MEMBERS ARE UPTO</span></h2>

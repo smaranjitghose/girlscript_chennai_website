@@ -30,7 +30,7 @@ div.project-card {
   transition: all 0.3s 0s ease-in;
   width: 300px;
   z-index: 1;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 10px rgba(73, 52, 52, 0.9);
   
 }
  
@@ -42,6 +42,7 @@ div.project-card .project-image-holder {
   background: rgba(0, 0, 0, 0.1);
   height: 0;
   padding-bottom: 75%;
+  border-top: 4px solid #f46721;
 }
 
 div.project-card div.project-title {
@@ -174,3 +175,146 @@ div.project-card.show div.flap2 {
   -webkit-transition: all 0.3s 0.2s ease-out;
   transition: all 0.3s 0.2s ease-out;
 }
+
+.container .card{
+  position: relative;
+  cursor: pointer;
+  border: none;
+}
+
+.container .card .face{
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.container .card .face.face1{
+  position: relative;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+.container .card:hover .face.face1{
+  background: #FF8C00;
+  transform: translateY(0);
+}
+
+.container .card .face.face1 .content{
+  opacity: 0.2;
+  transition: 0.5s;
+}
+
+.container .card:hover .face.face1 .content{
+  opacity: 1;
+}
+
+.container .card .face.face1 .content img{
+  max-width: 100px;
+}
+
+.container .card .face.face1 .content h3{
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.container .card .face.face2{
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+  transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2{
+  transform: translateY(0);
+}
+
+.container .card .face.face2 .content p{
+  margin: 0;
+  padding: 0;
+}
+
+.container .card .face.face2 .content a{
+  margin: 15px 0 0;
+  display:  inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+.container .card .face.face2 .content a:hover{
+  background: #333;
+  color: #fff;
+}
+
+.achievementCard .card-link {
+display: block;
+text-align: right;
+opacity: 0.6;
+color: gray;
+transition: all 0.3s ease;
+}
+
+.achievementCard .card-link > i {
+font-size: 14px;
+margin-left: 3px;
+color: gray;
+}
+.achievementCard .card-link:hover{
+color: black;
+opacity: 1;
+}
+.achievementCard .card-link:hover i {
+color: black;
+opacity: 1;
+}
+
+.stat-items {
+margin-top:2rem;
+}
+
+@media only screen and (max-width: 575px) {
+    .card-content {
+        padding-left:25px;
+        padding-right:25px;
+ }     
+}
+
+@media only screen and (max-width: 515px) {
+
+    .card--1 {
+        padding-left:0px;
+        padding-right:0px;
+    } 
+    .card--2 {
+        padding-left:0px;
+        padding-right:0px;    
+    }
+    .card--3 {
+        padding-left:0px;
+        padding-right:0px;
+    }
+    
+  }      
+
+  .hidediv {
+    visibility: hidden;
+  }
+
+  .afab {
+    font-size: 4em;
+    color: #f47621;
+  }
