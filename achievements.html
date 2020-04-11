@@ -32,7 +32,7 @@
             <br><br>
             <div class="container">
               <div class="row text-center">
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-4">
                   <div class="stat-items">
                     <i class="afab fa fa-laptop fa-3x"></i>
                     <h2><span class="counter text-center">50</span></h2>
@@ -40,7 +40,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-4">
                   <div class="stat-items">
                     <i class="afab fa fa-trophy fa-3x"></i>
                     <h2><span class="counter text-center">500</span></h2>
@@ -48,7 +48,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-4">
                   <div class="stat-items">
                     <i class="afab fa fa-laptop fa-3x"></i>
                     <h2><span class="counter text-center">10</span></h2>
@@ -146,7 +146,7 @@
 
           <input type="button" id="proshow" class="center-btn-settings btn btn-lg mt-5" value="Show More">
         
-          <div class="project-card prodisplay" id="prohide" >
+          <div class="project-card hidediv" id="prohide" >
             <div class="project-image-holder">
               <img class="project-image" src="https://source.unsplash.com/300x225/?field" alt="field" />
             </div>
@@ -172,7 +172,7 @@
             </div>
           </div>
         
-          <div class="project-card prodisplay" id="prohide">
+          <div class="project-card hidediv" id="prohide">
             <div class="project-image-holder">
               <img class="project-image" src="https://source.unsplash.com/300x225/?water" alt="water" />
             </div>
@@ -198,7 +198,7 @@
             </div>
           </div>
         
-          <div class="project-card prodisplay" id="prohide">
+          <div class="project-card hidediv" id="prohide">
             <div class="project-image-holder">
               <img class="project-image" src="https://source.unsplash.com/300x225/?river" alt="river" />
             </div>
@@ -235,6 +235,7 @@ While being proporous in many cases like farming the rains can cause havoc too i
       $(document).ready(function(){
         $("div[id=prohide]").hide();
       $("#proshow").click(function(){
+        $("div[id=prohide]").removeClass("hidediv");
         $("div[id=prohide]").show();
         $("#proshow").hide();
         $("#probtn2").show();

@@ -309,3 +309,12 @@ margin-top:2rem;
     }
     
   }      
+
+  .hidediv {
+    visibility: hidden;
+  }
+
+  .afab {
+    font-size: 4em;
+    color: #f47621;
+  }
