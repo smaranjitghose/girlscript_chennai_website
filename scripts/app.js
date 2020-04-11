@@ -32,13 +32,11 @@ let footer = $(`
 <footer>
 <div class="container">
   <div class="row">
-	<div class="col-lg-6 col-md-4 footer-logo">
-	  <center>
-		<img src="assets/Images/transparent_logo.png" alt="" class="logo">
-	  </center>
+    <div class="col-lg-6 col-md-4 footer-logo">
+		<a class="navbar-brand" href="index.html"><img src="assets/Images/transparent_logo.png" alt="" class="logo" ></a>
 	</div>
 	<div class="col-lg-6 col-md-8 mb-5" id="footer-c">
-	  <br> 
+	  <br>
 
 	  <h3 class="footer-h">Join Our Newsletter</h3>
 	  <div class="border"></div>
@@ -57,8 +55,8 @@ let footer = $(`
 		  <a class="fa fa-github" href="https://github.com/girlscriptchennai"></a>
 		  <a class="fa fa-linkedin" href="https://www.linkedin.com/company/girlscript-chennai/"></a>
 		</div>
-		  <h6 class="footer-h3">© 2020 GirlScript Chennai All Rights Reserved.</h6>
-</center>
+		  <h6 class="footer-h3 ">Made with <span style="color: #e25555;">&#9829;</span> </h6>
+	</center>
 </div>
 
 </footer>`);
@@ -104,7 +102,7 @@ function validateFooterForm(){
 	var emailID = document.footermail.email.value;
     atpos = emailID.indexOf("@");
     dotpos = emailID.lastIndexOf(".");
-         
+
     if (atpos < 1 || ( dotpos - atpos < 2 )) {
       alert("Please enter correct email ID")
       document.footermail.email.focus() ;
