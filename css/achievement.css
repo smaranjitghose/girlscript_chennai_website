@@ -1,0 +1,176 @@
+a.toggle-info {
+  background: #131010;
+  border-radius: 4px;
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+  color: #f46721;
+  display: inline-block;
+  padding: 6px 30px 8px;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: all 0.1s 0s ease-out;
+  transition: all 0.1s 0s ease-out;
+}
+
+
+div.achievement-card {
+  margin: 70px auto;
+  max-width: 1300px;
+  text-align: center;
+}
+
+div.project-card {
+  display: inline-block;
+  margin: 20px;
+  max-width: 300px;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  position: relative;
+  text-align: left;
+  -webkit-transition: all 0.3s 0s ease-in;
+  transition: all 0.3s 0s ease-in;
+  width: 300px;
+  z-index: 1;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  
+}
+ 
+div.project-card img {
+  max-width: 300px;
+} 
+
+div.project-card .project-image-holder {
+  background: rgba(0, 0, 0, 0.1);
+  height: 0;
+  padding-bottom: 75%;
+}
+
+div.project-card div.project-title {
+  background: #f46721;
+  padding: 8px 15px 10px;
+  position: relative;
+  z-index: 0;
+}
+div.project-card div.project-title a.toggle-info {
+  border-radius: 32px;
+  height: 32px;
+  padding: 0;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  width: 32px;
+}
+div.project-card div.project-title a.toggle-info span {
+  background: #ffffff;
+  display: block;
+  height: 2px;
+  position: absolute;
+  top: 16px;
+  -webkit-transition: all 0.15s 0s ease-out;
+  transition: all 0.15s 0s ease-out;
+  width: 12px;
+}
+div.project-card div.project-title a.toggle-info span.left {
+  right: 14px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+div.project-card div.project-title a.toggle-info span.right {
+  left: 14px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+div.project-card div.project-title h2 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+div.project-card div.project-title h2 small {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+div.project-card div.card-description {
+  padding: 10px 15px 10px;
+  background-color: #f3d3c4;
+  text-align: justify;
+  position: relative;
+  font-size: 14px;
+}
+div.project-card div.card-actions {
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
+  background-color: #f3d3c4;
+  padding: 10px 15px 20px;
+  text-align: center;
+}
+
+div.project-card div.card-actions a {
+    font-weight: bold;
+    color: white;
+    background-color: #f46721;
+    border-radius: 10em;
+  }
+
+div.project-card div.card-flap {
+  background: #d9d9d9;
+  position: absolute;
+  width: 100%;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
+}
+div.project-card div.flap1 {
+  -webkit-transition: all 0.3s 0.3s ease-out;
+  transition: all 0.3s 0.3s ease-out;
+  z-index: -1;
+}
+div.project-card div.flap2 {
+  -webkit-transition: all 0.3s 0s ease-out;
+  transition: all 0.3s 0s ease-out;
+  z-index: -2;
+}
+div.achievement-card.showing div.project-card {
+  cursor: pointer;
+  opacity: 0.6;
+  -webkit-transform: scale(0.88);
+   transform: scale(0.88);
+}
+.no-touch div.achievement-card.showing div.project-card:hover {
+  opacity: 0.94;
+  -webkit-transform: scale(0.92);
+          transform: scale(0.92);
+}
+div.project-card.show {
+  opacity: 1 !important;
+  -webkit-transform: scale(1) !important;
+          transform: scale(1) !important;
+}
+div.project-card.show div.project-title a.toggle-info {
+  background: #ff6666 !important;
+}
+div.project-card.show div.project-title a.toggle-info span {
+  top: 15px;
+}
+div.project-card.show div.project-title a.toggle-info span.left {
+  right: 10px;
+}
+div.project-card.show div.project-title a.toggle-info span.right {
+  left: 10px;
+}
+div.project-card.show div.card-flap {
+  background: #ffffff;
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+}
+div.project-card.show div.flap1 {
+  -webkit-transition: all 0.3s 0s ease-out;
+  transition: all 0.3s 0s ease-out;
+}
+div.project-card.show div.flap2 {
+  -webkit-transition: all 0.3s 0.2s ease-out;
+  transition: all 0.3s 0.2s ease-out;
+}
