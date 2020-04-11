@@ -712,15 +712,7 @@ footer {
   align-items: center;
 }
 
-.footer-container {
-  max-width: 1300px;
-  margin: auto;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap-reverse;
-}
+
 
 .logo {
   width: 150px;
