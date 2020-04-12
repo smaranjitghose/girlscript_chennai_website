@@ -1,0 +1,26 @@
+<!DOCTYPE .html>
+<html land="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERROR PAGE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+ <body onload="redirect()">
+     <div class="container">
+         <h2>OOPS! Page not found</h2>
+         <h1>404</h1>
+         <p>The link you followed probably broken or the page has been removed.</p>
+         <a href="../index.html">Go Home </a>
+     </div>
+ </body>
+ <script>
+    function redirect() {
+      setTimeout(function(){ 
+              window.location.replace("../index.html");
+          }
+          , 1000);	
+      }
+  </script>
+</html>

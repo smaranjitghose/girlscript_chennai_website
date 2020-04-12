@@ -5,6 +5,8 @@
 ![Forks](https://img.shields.io/github/forks/smaranjitghose/girlscript_chennai_website)
 ![Stars](	https://img.shields.io/github/stars/smaranjitghose/girlscript_chennai_website)
 ![License](https://img.shields.io/github/license/smaranjitghose/girlscript_chennai_website)
+![GSSOC'20](https://img.shields.io/badge/GSSOC-20-orange?style=for-the-badge)
+
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7751d10252d944ae8eb68120e1f20397)](https://app.codacy.com/manual/garimasingh128/girlscript_chennai_website?utm_source=github.com&utm_medium=referral&utm_content=garimasingh128/girlscript_chennai_website&utm_campaign=Badge_Grade_Dashboard)
 [![Gitter](https://badges.gitter.im/girlscript_chennai_website/community.svg)](https://gitter.im/girlscript_chennai_website/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
@@ -12,10 +14,11 @@
 This is an open source project for creating a website that shall serve as a template/boilerplate for various chapters of GirlScript. With certain modifications to the content specific to the chapter using this, the need to build a website from scratch and the pains of fixing bugs and figuring out what part fits where is eliminated. Feel free to use this!. If this project helps you out, please give us a mention. Also, we would love to see your version of the same! Do a give a PR in a different branch that showcases how you used this!
 
 
+
+This is an open source project for creating a website that shall serve as a boilerplate for various chapters of GirlScript. With certain modifications to the content specific to the chapter using this, the need to build a website from scratch and the pains of fixing bugs and figuring out what part fits where is eliminated. Feel free to use this!. If this project helps you out, please give us a mention. Also, we would love to see your version of the same! Do a give a PR in a different branch that showcases how you used this!
+
 This project is also meant to be a starting for all techies interested to get their hands dirty in open-source contributions. A highlight of this project being this project is "built by the community for the community".
 
-
-![GSSOC'20](https://img.shields.io/badge/GSSOC-20-orange?style=for-the-badge)
 
 #### 👇 Checkout the current version: 
 
@@ -24,13 +27,6 @@ This project is also meant to be a starting for all techies interested to get th
 ####  A follow up project:
 
 [Link to the corresponding app template](https://github.com/smaranjitghose/girlscript_app)
-
-## Tech Stack Used:
-**1.**  HTML <br>
-**2.**  CSS  <br>
-**4.**  JAVASCRIPT <br>
-
- ![Html](https://media.giphy.com/media/fuJPZBIIqzbt1kAYVc/giphy.gif)
 
 ## Contribution Guidelines
 
@@ -44,20 +40,6 @@ This project is also meant to be a starting for all techies interested to get th
 - UI/UX skills are appreciable but not mandatory
 - Additional backend skills of Django/NodeJS
 
-#### Suggested Resources for picking up on the skills:
-
-![Learn](https://media.giphy.com/media/qxsgm2X2Fb5WE/giphy.gif)
-
-- [Dart Programming](https://www.youtube.com/watch?v=Ej_Pcr4uC2Q)
-- [Flutter Crash Course](https://www.youtube.com/watch?v=pTJJsmejUOQ)
-- [Firebase and Flutter App Build](https://www.youtube.com/playlist?list=PL4cUxeGkcC9j--TKIdkb3ISfRbJeJYQwC)
-- [Reso Code's Youtube Channel for best practices](https://www.youtube.com/channel/UCSIvrn68cUk8CS8MbtBmBkA/featured)
-- [Official Flutter Documentation](https://flutter.dev/docs)
-- [Hyper Text Markup Language](https://www.w3schools.com/html/html_intro.asp)
-- [Cascading Style Sheets](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
-
-
 #### Steps:
 ![Steps](https://media.giphy.com/media/o5BzNDDFQnepi/giphy.gif)
 
@@ -70,7 +52,7 @@ This project is also meant to be a starting for all techies interested to get th
 **2.** Clone your forked repository to your local system :busts_in_silhouette:
 
 ```terminal
-git clone https://github.com/<your-github-username>/girlscript_chennai_website
+git clone --depth 1 https://github.com/<your-github-username>/girlscript_chennai_website
 ```
 
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT5N0HJ9db7jSvcL4dsDscZQBzqQqqKVs0BnO1OVz26glLWKJRY&usqp=CAU" width="300">
@@ -91,24 +73,25 @@ git checkout -b <your_branch_name>
 
 ![changes](https://media.giphy.com/media/QNFhOolVeCzPQ2Mx85/200w_d.gif)
 
+**6.** Add the files one at a time
 
-**6.** Commit your changes.
-```
-Type in a message relevant for the code reveiwer using
-
-       ```sh
-       # This message get associated with all files you have changed
-       $ git commit -m "description about changes"
-        ```
+```terminal
+git add path-to-your-file.
 ```
 
-**7.** Push your local branch to the remote repository.
+**7.** Commit your changes.
+
+```terminal
+       $ git commit -m "short description about changes"
+```
+
+**8.** Push your local branch to the remote repository.
 
 ```terminal
 git push -u origin <your_branch_name>
 ```
 
-**8.** Create a Pull Request!
+**9.** Create a Pull Request!
 
 
 Finally, go to your repository in browser and click on `compare and pull requests`.
@@ -121,47 +104,36 @@ click on `Compare and Pull Request`
 <img src="https://user-images.githubusercontent.com/41269164/70219836-8d6ea680-176b-11ea-81d5-549093bf0954.png" width=600>
 
 
-**Congratulations!** Sit and relax, you've made your contribution to [GirlScript App Boilerplate](https://github.com/smaranjitghose/girlscript_chennai_website) project.
+**Congratulations!** Sit and relax, you've made your contribution to [GirlScript Website Boilerplate](https://github.com/smaranjitghose/girlscript_chennai_website) project.
 
 #### Some more important Git commands:
 
 - `git stash` - Temporarily shelve changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on
 - `git remote add upstream` - Add upstream with https://github.com/smaranjitghose/girlscript_chennai_website
 - `git fetch upstream` - Catching up a git fork to upstream master
-- `git checkout branch_name` - Switch to the branch that you are working
 - `git rebase upstream/master` Start the rebase, probably you will need to solve some conflicts, you can always ask here.
 - `git stash pop` -> Recover your uncommited stuff
 - `git push --force` -> Sync your branch with remote
   _the --force is very important for the first time after rebase, don't forget it._
 
-#### Tasks:
-
-![Tasks](https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif)
-
-- Improve the UI/UX of the website
-- Work on various pages of the webiste
-- Put in more animations
-- Ensure mobile responsiveness of the website
-- Fix any bugs
-- Build GitHub Actions
-- Make admin panel for the website
-- Work on additional projects for the community like mass mailer,certgen,etc
-
 #### Code of Conduct:
 
 ![code_of_conduct](https://media.giphy.com/media/qHRwTyhWIj4UU/200w_d.gif)
 
-[Make sure you don't violate this](https://github.com/smaranjitghose/girscript_chennai_app/blob/master/CODE_OF_CONDUCT.md)
+[Make sure you don't violate this](https://github.com/smaranjitghose/girscript_chennai_website/blob/master/CODE_OF_CONDUCT.md)
 
+# The Geeks Behind this!:
 
-## 👨 Project Admin
 ![Admin](https://media.giphy.com/media/26wkRxKJ9yUZzlorK/giphy.gif)
 
+[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/0)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/0)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/1)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/1)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/2)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/2)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/3)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/3)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/4)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/4)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/5)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/5)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/6)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/6)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/7)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/7)
+
+#### 👨 Project Admin
+
+<a href="https://sourcerer.io/smaranjitghose"><img src="https://avatars2.githubusercontent.com/u/46641503?v=4" height="50px" width="50px" alt=""/></a>
 [Smaranjit Ghose](https://github.com/smaranjitghose)
 
-## 👬  Mentors and Project Maintainers
-
-![Project Maintainers](https://media.giphy.com/media/fQZX2aoRC1Tqw/giphy.gif)
+#### 👬  Mentors and Project Maintainers
 
 - [Sukkrit Sharma](https://github.com/sukkritsharmaofficial)
 - [Saswat Nayak](https://github.com/swat1998)

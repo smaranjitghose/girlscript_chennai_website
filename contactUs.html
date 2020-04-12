@@ -14,13 +14,15 @@
 	<link rel="stylesheet" href="css/contact-page.css" type="text/css">
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 </head>
-
 <body>
 
+<body>
+    <img src="C:\Users\suman kumar\girlscript_chennai_website\assets\Images\contactus.jpg" />
     <section class="main-section">
         <div class="container pt-5 pb-5">
             <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 contact-form p-5 mb-5">
                 <h1 class="font-weight-bold mb-1">Get In <font style="color: #f47621">Touch.</font></h1>
+
                 <p class="ml-2 mb-5">Got any queries? Fill up our form below.</p>
                 <form class="form-horizontal" name="myForm" action="https://formspree.io/xyz@gmail.com" onsubmit="return validateForm()" method="post">
                     <div class="form-group pb-3">
@@ -33,6 +35,18 @@
                     </div>
                     <div class="form-group pb-3">
                         <input type="text" id="subject" name="subject"  placeholder=" " class="form-control no-border" required>
+                <p class="ml-2 mb-5">Want to get in touch? We'd love to hear from you. Here's how you can reach us...</p>
+                <form class="form-horizontal" name="myForm" action="https://formspree.io/xyz@gmail.com" onsubmit="return validateForm()" method="post">
+                    <div class="form-group pb-3">
+                        <input type="text" id="name" name="name" placeholder=" " class="form-control no-border" required>
+                        <label class="form-control-placeholder" for="name">Name</label>
+                    </div>
+                    <div class="form-group pb-3">
+                        <input type="email" id="email" name="email" placeholder=" " class="form-control no-border" required>
+                        <label class="form-control-placeholder" for="email">Email Address</label>
+                    </div>
+                    <div class="form-group pb-3">
+                        <input type="text" id="subject" name="subject" placeholder=" " class="form-control no-border" required>
                         <label class="form-control-placeholder" for="Subject">Subject</label>
                     </div>
                     <div class="form-group">
@@ -43,6 +57,75 @@
                         <button type="submit" class="center-btn-settings center-btn-settings2 btn btn-lg mt-5" id="submit-button" value="Send"> Send Message </button>
                     </div>
                 </form>
+                    <div>
+                        <!-- START CAPTCHA -->
+                        <br>
+                        <div class="capbox">
+
+                            <div id="CaptchaDiv"></div>
+
+                            <div class="capbox-inner">
+                                Type the number:<br>
+
+                                <input type="hidden" id="txtCaptcha">
+                                <input type="text" name="CaptchaInput" id="CaptchaInput" size="15"><br>
+
+                            </div>
+                        </div>
+                        <br><br>
+                        <!-- END CAPTCHA -->
+                    </div>
+                    <div class="form-group mb-3">
+                        <button type="submit" class="btn btn-secondary btn-lg btn-block" id="submit-button" value="Send"> Send Message </button>
+                    </div>
+                </form>
+                <script type="text/javascript">
+
+                    // Captcha Script
+
+                    function checkform(theform) {
+                        var why = "";
+
+                        if (theform.CaptchaInput.value == "") {
+                            why += "- Please Enter CAPTCHA Code.\n";
+                        }
+                        if (theform.CaptchaInput.value != "") {
+                            if (ValidCaptcha(theform.CaptchaInput.value) == false) {
+                                why += "- The CAPTCHA Code Does Not Match.\n";
+                            }
+                        }
+                        if (why != "") {
+                            alert(why);
+                            return false;
+                        }
+                    }
+
+                    var a = Math.ceil(Math.random() * 9) + '';
+                    var b = Math.ceil(Math.random() * 9) + '';
+                    var c = Math.ceil(Math.random() * 9) + '';
+                    var d = Math.ceil(Math.random() * 9) + '';
+                    var e = Math.ceil(Math.random() * 9) + '';
+
+                    var code = a + b + c + d + e;
+                    document.getElementById("txtCaptcha").value = code;
+                    document.getElementById("CaptchaDiv").innerHTML = code;
+
+                    // Validate input against the generated number
+                    function ValidCaptcha() {
+                        var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
+                        var str2 = removeSpaces(document.getElementById('CaptchaInput').value);
+                        if (str1 == str2) {
+                            return true;
+                        } else {
+                            return false;
+                        }
+                    }
+
+                    // Remove the spaces from the entered and generated code
+                    function removeSpaces(string) {
+                        return string.split(' ').join('');
+                    }
+                </script>
             </div>
         </div>
 
@@ -64,7 +147,11 @@
       var emailID = document.myForm.email.value;
       atpos = emailID.indexOf("@");
       dotpos = emailID.lastIndexOf(".");
-
+  
+      var emailID = document.myForm.email.value;
+      atpos = emailID.indexOf("@");
+      dotpos = emailID.lastIndexOf(".");
+           
       if (atpos < 1 || ( dotpos - atpos < 2 )) {
         alert("Please enter correct email ID")
         document.myForm.email.focus() ;
@@ -84,6 +171,11 @@
               return false;
            }
 
+        return( true );
+    }
+</script>
+</html>
+  
         return( true );
     }
 </script>

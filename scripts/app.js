@@ -34,6 +34,8 @@ let footer = $(`
   <div class="row">
     <div class="col-lg-6 col-md-4 footer-logo">
 		<a class="navbar-brand" href="index.html"><img src="assets/Images/transparent_logo.png" alt="" class="logo" ></a>
+    <div class="col-lg-6 col-md-4 footer-logo"> 
+		<img src="assets/Images/transparent_logo.png" alt="" class="logo">
 	</div>
 	<div class="col-lg-6 col-md-8 mb-5" id="footer-c">
 	  <br>
@@ -56,6 +58,7 @@ let footer = $(`
 		  <a class="fa fa-linkedin" href="https://www.linkedin.com/company/girlscript-chennai/"></a>
 		</div>
 		  <h6 class="footer-h3 ">Made with <span style="color: #e25555;">&#9829;</span> </h6>
+		  <h6 class="footer-h3">Made with ♥</h6>
 	</center>
 </div>
 
