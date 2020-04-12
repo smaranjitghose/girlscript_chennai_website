@@ -90,7 +90,31 @@ header {
     font-size:20px;
  
 }
+@media only screen and (min-width: 1250px) {
+    .img-container{
+        position:absolute;
+        bottom: 80px;
+        right:20px;
+        height:70%;
+        width:90%;
 
+    }
+  }
+  @media only screen and (max-width: 1251px) {
+    .img-container{
+        height:90%;
+        width:75%;
+    }
+    .text-container{
+        padding:30px;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    .img-container{
+        height:90%;
+        width:85%;
+    }
+}
 /* Schedule section */
 
 .content{
