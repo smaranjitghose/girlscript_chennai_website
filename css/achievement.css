@@ -267,11 +267,13 @@ margin-top:2rem;
 	margin-top: 250px !important;
 }
 
-i.fa-chevron-down {
+i.fa-chevron-down, i.fa-chevron-up {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 14px !important;
 	color: var(--white) !important;
-}
-i.fa-chevron-up {
-	color: black !important;
 }
 
 @media only screen and (max-width: 575px) {
