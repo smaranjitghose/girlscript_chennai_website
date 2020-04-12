@@ -252,63 +252,63 @@ While being proporous in many cases like farming the rains can cause havoc too i
       <h2> SEE WHAT OUR OTHER <span class="clr-theme">MEMBERS ARE UPTO</span></h2>
       <div class="container row m-auto">
         <div class="col-xl-4 col-lg-6 col-md-6 card--1">
-          <div class="card shadow p-3 mb-5 bg-white rounded" >
+          <div class="card shadow p-3 mb-5 bg-white rounded card1" >
             <img
               src="https://images.unsplash.com/photo-1580894908361-967195033215?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
               alt=""
               class="card-img-top"
             />
             <div class="card-body">
-              <h5 class="card-title">Achievement 1</h5>
-              <p class="card-text">
+              <h5 class="card-title rh1">Achievement 1</h5>
+              <p class="card-text ct1">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
                 dicta, sunt in incidunt quas inventore commodi quisquam nihil!
                 Cupiditate assumenda ad cumque est facilis maiores voluptate
                 obcaecati inventore qui optio?
 			  </p>
-			  <a href="#" class="card-link">Read full story 
+			  <a href="#" class="card-link rbt1">Read full story 
 				  <i class="fa fa-arrow-right"></i>
 			  </a>
             </div>
           </div>
         </div>
         <div class="col-xl-4 col-lg-6 col-md-6 card--2">
-          <div class="card shadow p-3 mb-5 bg-white rounded" >
+          <div class="card shadow p-3 mb-5 bg-white rounded card2" >
             <img
               src="https://images.unsplash.com/photo-1580894908361-967195033215?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
               alt=""
               class="card-img-top"
             />
             <div class="card-body">
-              <h5 class="card-title">Achievement 2</h5>
-              <p class="card-text">
+              <h5 class="card-title rh2">Achievement 2</h5>
+              <p class="card-text ct2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
                 dicta, sunt in incidunt quas inventore commodi quisquam nihil!
                 Cupiditate assumenda ad cumque est facilis maiores voluptate
                 obcaecati inventore qui optio?
 			  </p>
-			  <a href="#" class="card-link">Read full story 
+			  <a href="#" class="card-link rbt2">Read full story 
 				<i class="fa fa-arrow-right"></i>
 			</a>
             </div>
           </div>
         </div>
         <div class="col-xl-4 col-lg-6 col-md-6 card--3">
-          <div class="card shadow p-3 mb-5 bg-white rounded" >
+          <div class="card shadow p-3 mb-5 bg-white rounded card3" >
             <img
               src="https://images.unsplash.com/photo-1580894908361-967195033215?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
               alt=""
               class="card-img-top"
             />
             <div class="card-body">
-              <h5 class="card-title">Achievement 3</h5>
-              <p class="card-text">
+              <h5 class="card-title rh3">Achievement 3</h5>
+              <p class="card-text ct3">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
                 dicta, sunt in incidunt quas inventore commodi quisquam nihil!
                 Cupiditate assumenda ad cumque est facilis maiores voluptate
                 obcaecati inventore qui optio?
 			  </p>
-			  <a href="#" class="card-link">Read full story 
+			  <a href="#" class="card-link rbt3">Read full story 
 				<i class="fa fa-arrow-right"></i>
 			</a>
             </div>
@@ -329,6 +329,48 @@ While being proporous in many cases like farming the rains can cause havoc too i
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik=" crossorigin="anonymous"></script>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
+<script>
+  $(document).ready(function(){
+    $(".card1").mouseenter(function(){
+      $(".rh1").css("color","white"),
+      $(".ct1").css("color","white"),
+      $(".rb1").css({"background-color": "white"}),
+      $(".rbt1").css("color","black")
+    })
+    $(".card1").mouseleave(function(){
+      $(".rh1").css("color","black"),
+      $(".ct1").css("color","rgba(0, 0, 0, 0.603)"),
+      $(".rb1").css({"background-color": "#f47621"}),
+      $(".rbt1").css("color","gray")
+    })
+    //////
+    $(".card2").mouseenter(function(){
+      $(".rh2").css("color","white"),
+      $(".ct2").css("color","white"),
+      $(".rb2").css({"background-color": "white"}),
+      $(".rbt2").css("color","black")
+    })
+    $(".card2").mouseleave(function(){
+      $(".rh2").css("color","black"),
+      $(".ct2").css("color","rgba(0, 0, 0, 0.603)"),
+      $(".rb2").css({"background-color": "#f47621"}),
+      $(".rbt2").css("color","gray")
+    })
+    //////
+    $(".card3").mouseenter(function(){
+      $(".rh3").css("color","white"),
+      $(".ct3").css("color","white"),
+      $(".rb3").css({"background-color": "white"}),
+      $(".rbt3").css("color","black")
+    })
+    $(".card3").mouseleave(function(){
+      $(".rh3").css("color","black"),
+      $(".ct3").css("color","rgba(0, 0, 0, 0.603)"),
+      $(".rb3").css({"background-color": "#f47621"}),
+      $(".rbt3").css("color","gray")
+    })
+  })
+</script>
 
     <script>
       const slider = tns({
