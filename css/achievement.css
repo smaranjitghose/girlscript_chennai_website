@@ -60,26 +60,7 @@ div.project-card div.project-title a.toggle-info {
   top: 10px;
   width: 32px;
 }
-div.project-card div.project-title a.toggle-info span {
-  background: #ffffff;
-  display: block;
-  height: 2px;
-  position: absolute;
-  top: 16px;
-  -webkit-transition: all 0.15s 0s ease-out;
-  transition: all 0.15s 0s ease-out;
-  width: 12px;
-}
-div.project-card div.project-title a.toggle-info span.left {
-  right: 14px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-div.project-card div.project-title a.toggle-info span.right {
-  left: 14px;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
+
 div.project-card div.project-title h2 {
   font-size: 24px;
   font-weight: 700;
@@ -148,20 +129,12 @@ div.achievement-card.showing div.project-card {
 div.project-card.show {
   opacity: 1 !important;
   -webkit-transform: scale(1) !important;
-          transform: scale(1) !important;
+          transform: scale(1) !important;	  
 }
 div.project-card.show div.project-title a.toggle-info {
   background: #ff6666 !important;
 }
-div.project-card.show div.project-title a.toggle-info span {
-  top: 15px;
-}
-div.project-card.show div.project-title a.toggle-info span.left {
-  right: 10px;
-}
-div.project-card.show div.project-title a.toggle-info span.right {
-  left: 10px;
-}
+
 div.project-card.show div.card-flap {
   background: #ffffff;
   -webkit-transform: rotateX(0deg);
@@ -284,6 +257,21 @@ opacity: 1;
 
 .stat-items {
 margin-top:2rem;
+}
+
+.margin-button {
+	margin-top: 200px !important;
+}
+
+.margin-button2 {
+	margin-top: 250px !important;
+}
+
+i.fa-chevron-down {
+	color: var(--white) !important;
+}
+i.fa-chevron-up {
+	color: black !important;
 }
 
 @media only screen and (max-width: 575px) {
