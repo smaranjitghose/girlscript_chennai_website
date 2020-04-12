@@ -39,9 +39,6 @@ div.project-card img {
   max-width: 300px;
 }
 
-  
-}
- 
 div.project-card img {
   max-width: 300px;
 } 
@@ -299,7 +296,6 @@ margin-top:2rem;
         padding-left:25px;
         padding-right:25px;
   }
- }     
 
 }
 
@@ -322,24 +318,22 @@ margin-top:2rem;
         padding-right:0px;
     }
 
-  }
-    
-  }      
+}   
 
-  .hidediv {
+.hidediv {
     visibility: hidden;
   }
 
-  .afab {
+.afab {
     font-size: 4em;
     color: #f47621;
   }
 
 
-  .cardInnerText {
+.cardInnerText {
     color:black;
   }
-  .card:before {
+.card:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -354,10 +348,10 @@ margin-top:2rem;
     transition: transform 0.25s ease-out;
   }
   
-  .card:hover:before {
+.card:hover:before {
     transform: scale(22);
   }
 
-  .card{
+.card{
     overflow: hidden;
-  }
+  } 
