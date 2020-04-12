@@ -318,3 +318,14 @@ margin-top:2rem;
     font-size: 4em;
     color: #f47621;
   }
+
+  @media only screen and (max-width: 1200px) and (min-width:758px)
+
+  {
+      .card-container{
+
+           margin:0 auto;
+           max-width:50%;
+      }
+    
+  }
