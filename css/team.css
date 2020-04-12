@@ -100,12 +100,13 @@ html, body {
     color:white;
     border:1px solid var(--gradient);
     padding:0.5rem 1.2rem;
-	border-radius: 10em;
+	border-radius: 10px;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .techBtn:hover, .boardBtn:hover, .manageBtn:hover{
     background:white;
     color:orangered;
-    border:1px solid orangered;
+	border:1px solid orangered;
+	box-shadow: 0 0 10px var(--theme-color);
 }

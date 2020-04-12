@@ -772,7 +772,7 @@ a.fa-linkedin {
   height: 42px;
   border: 1.5px solid #f47621;
   transition: all 300ms ease-in;
-  border-radius: 10em;
+  border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -780,6 +780,7 @@ a.fa-linkedin {
   background-color: orangeOrange;
   color: white;
   background: #f47621;
+  box-shadow: 0 0 10px var(--theme-color);
 }
 
 .right-col h1 {
@@ -1204,6 +1205,9 @@ html {
   z-index: 999;
   font-size: 22px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.gotopbtn:hover{
+	box-shadow: 0 0 10px var(--theme-color);
 }
 @media only screen and (max-width: 464px) {
   .gotopbtn {
@@ -1776,13 +1780,14 @@ a.active {
   border: 2px solid #ff9933;
   margin: 0 auto;
   display: block;
-  border-radius: 10em;
+  border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 .center-btn-settings:hover {
   color: #111111;
   background-color: white;
   border: 2px solid black;
+  box-shadow: 0 0 10px var(--theme-color);
 }
 .center-btn-settings2 {
   background-color: #f47621 !important;

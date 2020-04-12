@@ -64,9 +64,6 @@ html, body {
   border-radius: 0 4px 0 32px;
 }
 
-=======
-}
-
 .go-corner-1 {
   display: flex;
   align-items: center;
@@ -142,8 +139,8 @@ html, body {
     color: white;
     font-weight: bold;
     transition: 0.6s;
-	border-radius: 10em;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0,0.2);
 }
 
 .announcement-btn:hover {
@@ -152,6 +149,7 @@ html, body {
   border: 2px solid #f47621;
   transition: 0.6s;
   font-weight: bold;
+  box-shadow: 0 0 10px var(--theme-color);
  }
 
  @media only screen and (max-width: 768px) {
