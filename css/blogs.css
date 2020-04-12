@@ -88,6 +88,24 @@ Blog Cards
     max-width: 700px;
 }
 
+.blogs-social .fa-twitter,
+.blogs-social .fa-facebook,
+.blogs-social .fa-instagram,
+.blogs-social .fa-envelope{
+    color: #f47621;
+    opacity: 0.5;
+    transition: 0.4s;
+}
+
+.blogs-social .fa-twitter:hover,
+.blogs-social .fa-facebook:hover,
+.blogs-social .fa-instagram:hover,
+.blogs-social .fa-envelope:hover{
+    opacity: 1;
+    transition: 0.4s;
+}
+
+
 .heading-blog{
     font-weight:bold;
     font-size:3rem;
@@ -98,26 +116,21 @@ Blog Cards
 }
 
 .blog-btn {
-    margin-top: 30px;
-    border: 2px solid #f47621;
-    background: #f47621;
+    background-color: #EF6F00;
     color: white;
     font-weight: bold;
     transition: 0.6s;
-    border-radius: 10em;
-    border: 2px solid #f47621;
-    box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px #ff9a0e;
 }
 
 .blog-btn:hover {
-  background: #ffffff;
-  color: #f47621;
-  border: 2px solid #f47621;
-  transition: 0.6s;
-  font-weight: bold;
- }
-
- @media only screen and (max-width : 430px){
+    box-shadow: 0 7px 30px #ff9a0e;
+    color: white;
+    font-weight: bold;
+}
+   
+@media only screen and (max-width : 430px){
     .heading-blog{
         font-weight:bold;
         font-size:2rem;
@@ -133,4 +146,5 @@ Blog Cards
         margin-right: 12px;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     }
- }
+}
+ 

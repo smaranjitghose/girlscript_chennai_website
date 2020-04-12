@@ -773,12 +773,15 @@ a.fa-linkedin {
   height: 42px;
   border: 1.5px solid #f47621;
   transition: all 300ms ease-in;
+  border-radius: 5px;
+	box-shadow: 0 3px 6px black;
 }
 
 .btn-spl:hover {
   background-color: orangeOrange;
   color: white;
   background: #f47621;
+	box-shadow: 0 3px 6px black;
 }
 
 .right-col h1 {
@@ -1195,13 +1198,14 @@ html {
   background: #f9690e;
   bottom: 40px;
   right: 50px;
-  border-radius: 34px;
   text-decoration: none;
   text-align: center;
   line-height: 50px;
   color: white;
   z-index: 999;
   font-size: 22px;
+  border-radius: 100%;
+	box-shadow: 0 4px 6px #ff9a0e;
 }
 @media only screen and (max-width: 464px) {
   .gotopbtn {
@@ -1767,29 +1771,33 @@ a.active {
   padding: 16px 40px;
   font-size: 16px;
   font-weight: 700;
-  outline: none;
-  border-radius: 30px;
-  cursor: pointer;
-  background-color: #ff9933;
-  color: white;
-  border: 2px solid #ff9933;
   margin: 0 auto;
   display: block;
+  background-color: #EF6F00;
+  color: white;
+  font-weight: bold;
+  transition: 0.6s;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px #ff9a0e;
 }
 .center-btn-settings:hover {
-  color: #111111;
-  background-color: white;
-  border: 2px solid black;
+  box-shadow: 0 7px 30px #ff9a0e;
+  color: white;
+  font-weight: bold;
 }
 .center-btn-settings2 {
+  background-color: #EF6F00;
+  transition: 0.6s;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px #ff9a0e;
   background-color: #f47621 !important;
   color: white !important;
 }
 
 .center-btn-settings2:hover {
-  color: #f47621 !important;
-  background-color: white !important;
-  border: 2px solid #f47621 !important;
+  box-shadow: 0 7px 30px #ff9a0e;
+  color: white !important;
+  font-weight: bold;
 }
 
 .prodisplay {
