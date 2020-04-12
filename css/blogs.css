@@ -88,10 +88,10 @@ Blog Cards
     background: linear-gradient(to bottom right,#F09819,#E16831);
     color: white;
     border: 2px solid linear-gradient(to bottom right,#F09819,#E16831);
-    border-radius: 10em;
     transition: 0.6s;
     font-weight: bold;
-    box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.1);
+	border-radius: 10em;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .btn-read:hover {
@@ -241,7 +241,8 @@ Blog Cards
     color: white;
     font-weight: bold;
     transition: 0.6s;
-    border-radius: 10em;
+	border-radius: 10em;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .blog-btn:hover {

@@ -766,13 +766,14 @@ a.fa-linkedin {
 }
 
 .btn-spl {
-  border-radius: 10em;
   color: white;
   border-color: orangeOrange;
   width: 100px;
   height: 42px;
   border: 1.5px solid #f47621;
   transition: all 300ms ease-in;
+  border-radius: 10em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .btn-spl:hover {
@@ -1768,13 +1769,14 @@ a.active {
   font-size: 16px;
   font-weight: 700;
   outline: none;
-  border-radius: 30px;
   cursor: pointer;
   background-color: #ff9933;
   color: white;
   border: 2px solid #ff9933;
   margin: 0 auto;
   display: block;
+  border-radius: 10em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 .center-btn-settings:hover {
   color: #111111;

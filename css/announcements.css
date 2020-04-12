@@ -108,7 +108,8 @@ html, body {
     color: white;
     font-weight: bold;
     transition: 0.6s;
-    border-radius: 10em;
+	border-radius: 10em;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .announcement-btn:hover {
