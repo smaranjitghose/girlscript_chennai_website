@@ -318,3 +318,26 @@ margin-top:2rem;
     font-size: 4em;
     color: #f47621;
   }
+
+  .card:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #f47621;
+    height: 60px;
+    width: 52px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .card:hover:before {
+    transform: scale(22);
+  }
+
+  .card{
+    overflow: hidden;
+  }
