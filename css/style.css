@@ -1196,13 +1196,14 @@ html {
   background: #f9690e;
   bottom: 40px;
   right: 50px;
-  border-radius: 34px;
+  border-radius: 100%;
   text-decoration: none;
   text-align: center;
   line-height: 50px;
   color: white;
   z-index: 999;
   font-size: 22px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 @media only screen and (max-width: 464px) {
   .gotopbtn {
