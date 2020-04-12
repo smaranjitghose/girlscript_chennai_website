@@ -259,3 +259,8 @@ html, body {
     margin-top:20px;
     font-size:29px;
 }
+
+.rb1, .rb2, .rb3{
+  padding-top: 15px;
+  font-family: 'Lato', sans-serif;
+}
