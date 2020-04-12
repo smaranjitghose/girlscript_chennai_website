@@ -2031,7 +2031,7 @@ a.active {
   .initiatives-cards {
     margin-bottom: 18rem;
   }
-  
+
   .flip-card {
     perspective: 0;
   }
@@ -2193,23 +2193,23 @@ a.active {
 
 .carousel-item{
   min-height:100vh;
-  
+
 }
 .carousel-item img{
   min-height:100vh;
-  
+
 }
 
 .carousel-inner{
   min-height:110vh;
-  
+
 }
 
 #carouselExampleIndicators{
   min-height:90vh;
   position: relative;
-  
-} 
+
+}
 
 .carousel-control-prev{
   position:absolute;
@@ -2325,4 +2325,3 @@ a.active {
     position: relative;
   }
 }
-

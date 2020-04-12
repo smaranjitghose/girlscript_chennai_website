@@ -31,9 +31,14 @@ div.project-card {
   width: 300px;
   z-index: 1;
   box-shadow: 0 5px 10px rgba(73, 52, 52, 0.9);
-  
+
+
 }
- 
+
+div.project-card img {
+  max-width: 300px;
+}
+
 div.project-card img {
   max-width: 300px;
 } 
@@ -290,12 +295,17 @@ margin-top:2rem;
     .card-content {
         padding-left:25px;
         padding-right:25px;
- }     
+  }
+
 }
 
 @media only screen and (max-width: 515px) {
 
     .card--1 {
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .card--2 {
         padding-left:0px;
         padding-right:0px;
     } 
@@ -307,14 +317,41 @@ margin-top:2rem;
         padding-left:0px;
         padding-right:0px;
     }
-    
-  }      
 
-  .hidediv {
+}   
+
+.hidediv {
     visibility: hidden;
   }
 
-  .afab {
+.afab {
     font-size: 4em;
     color: #f47621;
   }
+
+
+.cardInnerText {
+    color:black;
+  }
+.card:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #f47621;
+    height: 60px;
+    width: 52px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+  }
+  
+.card:hover:before {
+    transform: scale(22);
+  }
+
+.card{
+    overflow: hidden;
+  } 
