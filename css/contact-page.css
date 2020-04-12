@@ -4,13 +4,20 @@ html, body {
 }
 
 .main-section {
-    margin-top: 11%;
+	padding-top: 11%;
+	background-image: linear-gradient(to bottom right,
+	rgba(0,0,0, 0.1),
+	rgba(0, 0, 0, 0.3))
+	,url("../assets/Images/contactusImage.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .contact-form {
     text-align: left;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    transition: 0.6s;
+	transition: 0.6s;
+	background-color: var(--white);
 }
 
 .contact-form:hover {
