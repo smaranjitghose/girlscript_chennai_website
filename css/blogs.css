@@ -83,24 +83,6 @@ Blog Cards
     margin-top: 6rem;
 }
 
-.btn-read{
-    margin-top: 30px;
-    background: linear-gradient(to bottom right,#F09819,#E16831);
-    color: white;
-    border: 2px solid linear-gradient(to bottom right,#F09819,#E16831);
-    border-radius: 10em;
-    transition: 0.6s;
-    font-weight: bold;
-    box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.1);
-}
-
-.btn-read:hover {
-    background: #ffffff;
-    border: 2px solid #f47621;
-    transition: 0.6s;
-    font-weight: bold;
-}
-
 .blogs-social .fa-twitter,
 .blogs-social .fa-facebook,
 .blogs-social .fa-instagram,
@@ -236,18 +218,16 @@ Blog Cards
 }
 
 .blog-btn {
-    border: 2px solid #f47621;
-    background-color: #f47521;
+    background-color: #EF6F00;
     color: white;
     font-weight: bold;
     transition: 0.6s;
-    border-radius: 10em;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px #ff9a0e;
 }
 
 .blog-btn:hover {
-  background-color: #ffffff;
-  color: #f47621;
-  border: 2px solid #f47621;
-  transition: 0.6s;
-  font-weight: bold;
+    box-shadow: 0 7px 30px #ff9a0e;
+    color: white;
+    font-weight: bold;
  }
