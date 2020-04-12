@@ -88,3 +88,49 @@ html, body {
 }
 
 } 
+/* COMPACT CAPTCHA */
+
+.capbox {
+	background-color: #eb7d34;
+	background-image: linear-gradient(#eb7d34, #eb7d34);
+	border: #eb7d34 0px solid;
+         border-radius: 4px 4px 4px 4px;
+	border-width: 2px 2px 2px 20px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	display: inline-block;
+	padding: 5px 8px 5px 8px;
+	
+	}
+
+.capbox-inner {
+	font: bold 12px arial, sans-serif;
+	color: #000000;
+	background-color: #FFFFFF;
+	margin: 0px auto 0px auto;
+	padding: 3px 10px 5px 10px;
+	border-radius: 4px;
+	display: inline-block;
+	vertical-align: middle;
+	}
+
+#CaptchaDiv {
+	color: #000000;
+	font: normal 25px Impact, Charcoal, arial, sans-serif;
+	font-style: italic;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #FFFFFF;
+	user-select: none;
+	display: inline-block;
+	padding: 3px 14px 3px 8px;
+	margin-right: 4px;
+	border-radius: 4px;
+	}
+
+#CaptchaInput {
+	border: #295B00 1px solid;
+	margin: 3px 0px 1px 0px;
+	width: 105px;
+	}
