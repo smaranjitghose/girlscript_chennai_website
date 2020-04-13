@@ -272,8 +272,11 @@ i.fa-chevron-down, i.fa-chevron-up {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-size: 14px !important;
+	font-size: 15px !important;
 	color: var(--white) !important;
+}
+i.fa-chevron-up {
+	transform: translate(-50%, -60%);
 }
 
 @media only screen and (max-width: 575px) {
