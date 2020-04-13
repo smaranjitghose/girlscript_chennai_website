@@ -1792,6 +1792,7 @@ a.active {
   box-shadow: 0 4px 6px #ff9a0e;
   background-color: #f47621 !important;
   color: white !important;
+  width: 200px;
 }
 
 .center-btn-settings2:hover {
