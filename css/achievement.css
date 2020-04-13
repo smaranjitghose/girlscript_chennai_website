@@ -31,9 +31,14 @@ div.project-card {
   width: 300px;
   z-index: 1;
   box-shadow: 0 5px 10px rgba(73, 52, 52, 0.9);
-  
+
+
 }
- 
+
+div.project-card img {
+  max-width: 300px;
+}
+
 div.project-card img {
   max-width: 300px;
 } 
@@ -283,12 +288,17 @@ i.fa-chevron-up {
     .card-content {
         padding-left:25px;
         padding-right:25px;
- }     
+  }
+
 }
 
 @media only screen and (max-width: 515px) {
 
     .card--1 {
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .card--2 {
         padding-left:0px;
         padding-right:0px;
     } 
@@ -300,19 +310,23 @@ i.fa-chevron-up {
         padding-left:0px;
         padding-right:0px;
     }
-    
-  }      
 
-  .hidediv {
+}   
+
+.hidediv {
     visibility: hidden;
   }
 
-  .afab {
+.afab {
     font-size: 4em;
     color: #f47621;
   }
 
-  .card:before {
+
+.cardInnerText {
+    color:black;
+  }
+.card:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -327,10 +341,10 @@ i.fa-chevron-up {
     transition: transform 0.25s ease-out;
   }
   
-  .card:hover:before {
+.card:hover:before {
     transform: scale(22);
   }
 
-  .card{
+.card{
     overflow: hidden;
-  }
+  } 

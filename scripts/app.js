@@ -102,7 +102,7 @@ function validateFooterForm(){
 	var emailID = document.footermail.email.value;
     atpos = emailID.indexOf("@");
     dotpos = emailID.lastIndexOf(".");
-         
+
     if (atpos < 1 || ( dotpos - atpos < 2 )) {
       alert("Please enter correct email ID")
       document.footermail.email.focus() ;

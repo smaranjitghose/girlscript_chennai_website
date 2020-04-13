@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title> Contact Us </title>
@@ -14,13 +14,15 @@
 	<link rel="stylesheet" href="css/contact-page.css" type="text/css">
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 </head>
-    
+<body>
+
 <body>
     <img src="C:\Users\suman kumar\girlscript_chennai_website\assets\Images\contactus.jpg" />
     <section class="main-section">
         <div class="container pt-5 pb-5">
             <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 contact-form p-5 mb-5">
                 <h1 class="font-weight-bold mb-1">Get In <font style="color: #f47621">Touch.</font></h1>
+
                 <p class="ml-2 mb-5">Want to get in touch? We'd love to hear from you. Here's how you can reach us...</p>
                 <form class="form-horizontal" name="myForm" action="https://formspree.io/xyz@gmail.com" onsubmit="return validateForm()" method="post">
                     <div class="form-group pb-3">
@@ -39,6 +41,7 @@
                         <textarea name="message" rows="4" class="form-control no-border" placeholder=" " required></textarea>
                         <label class="form-control-placeholder" for="message">Your Message</label>
                     </div>
+                    
                     <div>
                         <!-- START CAPTCHA -->
                         <br>
@@ -58,7 +61,7 @@
                         <!-- END CAPTCHA -->
                     </div>
                     <div class="form-group mb-3">
-                        <button type="submit" class="btn btn-secondary btn-lg btn-block" id="submit-button" value="Send"> Send Message </button>
+                        <button type="submit" class="center-btn-settings center-btn-settings2 btn btn-lg mt-5" id="submit-button" value="Send"> Send Message </button>
                     </div>
                 </form>
                 <script type="text/javascript">
@@ -108,7 +111,6 @@
                         return string.split(' ').join('');
                     }
                 </script>
-
             </div>
         </div>
 
@@ -126,6 +128,10 @@
         document.myForm.name.focus();
         return false;
       }
+
+      var emailID = document.myForm.email.value;
+      atpos = emailID.indexOf("@");
+      dotpos = emailID.lastIndexOf(".");
   
       var emailID = document.myForm.email.value;
       atpos = emailID.indexOf("@");
@@ -136,7 +142,7 @@
         document.myForm.email.focus() ;
         return false;
         }
-  
+
       var subject = document.myForm.subject.value;
       var message = document.myForm.message.value;
       if(subject.length < 10) {
@@ -149,8 +155,11 @@
               document.myForm.message.focus() ;
               return false;
            }
-  
+
         return( true );
     }
+    $(".btn").mousedown(function(e){
+          e.preventDefault();
 </script>
+</html>
 </html>
