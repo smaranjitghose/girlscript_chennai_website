@@ -122,6 +122,10 @@ Blog Cards
     transition: 0.6s;
     border-radius: 5px;
     box-shadow: 0 4px 6px #ff9a0e;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    width: 144px;
 }
 
 .blog-btn:hover {
