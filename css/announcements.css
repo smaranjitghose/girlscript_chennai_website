@@ -296,10 +296,25 @@ html, body {
 }
 .card1-text{
     margin-top:20px;
-    font-size:29px;
 }
 
 .rb1, .rb2, .rb3{
-  padding-top: 15px;
+  padding-top: 25px;
   font-family: 'Lato', sans-serif;
+}
+
+.card-btn {
+  background-color: rgb(255, 255, 255);
+  color: #ff9a0e;
+  font-weight: bold;
+  transition: 0.6s;
+  border-radius: 5px;
+  padding: 12px;
+  box-shadow: 0 4px 6px #a09999;
+}
+
+.card-btn:hover {
+ box-shadow: 0 7px 30px #ff9a0e;
+ color: white;
+ font-weight: bold;
 }
