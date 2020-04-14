@@ -4,13 +4,22 @@ html, body {
 }
 
 .main-section {
-    margin-top: 11%;
+    padding: 10%;
+    background-repeat: no-repeat;
+	  background-size: cover;
+    background-image: linear-gradient(to bottom right,
+    rgba(0,0,0, 0.4),
+    rgba(0, 0, 0, 0.5))
+    ,url("../assets/Images/contact.jpg");
 }
 
 .contact-form {
     text-align: left;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     transition: 0.6s;
+    background-color: var(--white);
+    margin-left: 10rem; 
+    border-radius: 10px;
 }
 
 .contact-form:hover {
@@ -93,8 +102,8 @@ html, body {
 	background-color: #eb7d34;
 	background-image: linear-gradient(#eb7d34, #eb7d34);
 	border: #eb7d34 0px solid;
-         border-radius: 4px 4px 4px 4px;
-	border-width: 2px 2px 2px 20px;
+  border-radius: 4px;
+	border-width: 2px;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -132,4 +141,46 @@ html, body {
 	border: #295B00 1px solid;
 	margin: 3px 0px 1px 0px;
 	width: 105px;
-	}
+  }
+  
+
+.abc{
+  color: white;
+  padding: 0.3rem;
+  font-size: 20px;
+}
+
+.container-contact{
+  display: flex;
+  padding: 5rem;;
+}
+  
+.def h4{
+  color: #f47621;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.def{
+  padding: 2rem;
+}
+
+.def i{
+  font-size: 40px;
+  color: whitesmoke;
+
+}
+
+.def div{
+  padding: .2rem;
+}
+
+.def-sec{
+  margin-top: 1.5rem;
+  padding-right: 1rem;
+}
+
+.font-weight-bold{
+  text-align: center;
+  padding-bottom: 1.5rem;;
+}
