@@ -2326,3 +2326,12 @@ a.active {
     position: relative;
   }
 }
+
+@media only screen and (max-width: 700px)
+{
+   .logo {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+}
