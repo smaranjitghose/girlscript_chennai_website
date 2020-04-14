@@ -179,227 +179,6 @@ Nav bar
     font-size: 0.759rem;
   }
 }
-/*---------------------
-  Header
------------------------*/
-
-.logo {
-  padding: 24px 0 30px;
-}
-
-.logo a {
-  display: inline-block;
-}
-
-.main-menu {
-  text-align: right;
-  padding: 30px;
-}
-
-.fa {
-  text-decoration: none;
-  color: blueviolet;
-  font-size: 24px;
-}
-
-.main-menu ul li {
-  display: inline-block;
-  list-style: none;
-  margin-left: 35px;
-  position: relative;
-}
-
-.main-menu ul li .dropdown {
-  position: absolute;
-  width: 180px;
-  background: #ffffff;
-  z-index: 99;
-  left: 0;
-  top: 90px;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.main-menu ul li .dropdown li {
-  display: block;
-  margin-right: 0;
-  text-align: left;
-  margin-left: 0;
-}
-
-.main-menu ul li .dropdown li a {
-  padding: 8px 20px;
-  display: block;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  text-transform: capitalize;
-  color: #191919;
-}
-
-.main-menu ul li .dropdown li a:hover {
-  color: #e32879;
-}
-
-.main-menu ul li.active a {
-  color: #e32879;
-}
-
-.main-menu ul li:hover > a {
-  color: #e32879;
-}
-
-.main-menu ul li:hover .dropdown {
-  opacity: 1;
-  visibility: visible;
-  top: 70px;
-}
-
-.main-menu ul li a {
-  font-size: 17px;
-  color: #ffffff;
-  font-weight: 600;
-  display: inline-block;
-  padding-top: 30px;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.main-menu a img {
-  padding: 4px;
-  width: 32px;
-  height: 32px;
-}
-
-.slicknav_menu {
-  display: none;
-}
-
-/*---------------------
-  Hero
------------------------*/
-
-.hero-section {
-  height: 380px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.hs-text span {
-  color: #e32879;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.hs-text h2 {
-  color: #ffffff;
-  text-align: center;
-  font-size: 60px;
-  font-weight: 700;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
-.hs-text p {
-  color: #ffffff;
-  margin-bottom: 45px;
-  text-align: center;
-  font-size: 40px;
-}
-
-/*---------------------
-  About Us Section
------------------------*/
-
-.about-us-section {
-  background-color: orangeOrange;
-}
-
-.section-title h2 {
-  font-size: 40px;
-  font-weight: bold;
-  color: #e32879;
-}
-
-.as-pic img {
-  min-width: 100%;
-}
-
-.as-text {
-  padding-top: 80px;
-  padding-left: 20px;
-}
-
-.as-text h2 {
-  text-align: center;
-}
-
-.as-text.ap-text {
-  padding-top: 14px;
-}
-
-.as-text .section-title {
-  text-align: left;
-  margin-bottom: 15px;
-}
-
-.as-text p {
-  color: #b3b3b3;
-}
-
-.as-text p.f-para {
-  margin-bottom: 10px;
-}
-
-.as-text p.s-para {
-  margin-bottom: 37px;
-}
-
-.as-text .about-counter .ac-item {
-  float: left;
-  margin-right: 48px;
-  position: relative;
-}
-
-.as-text .about-counter .ac-item:after {
-  position: absolute;
-  right: -20px;
-  top: 8px;
-  height: 65px;
-  width: 1px;
-  background: #393939;
-  content: "";
-}
-
-.as-text .about-counter .ac-item:last-child {
-  margin-right: 0;
-  padding-right: 0;
-}
-
-.as-text .about-counter .ac-item:last-child:after {
-  display: none;
-}
-
-.as-text .about-counter .ac-item h2 {
-  color: #ffffff;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.as-text .about-counter .ac-item p {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 0;
-}
 
 /*---------------------
   Counter Section
@@ -410,7 +189,7 @@ Nav bar
 }
 
 .counter-section {
-  /* background: #191919; */
+  background: #191919;
   padding-top: 755px;
   margin-top: -640px;
   padding-bottom: 70px;
@@ -430,16 +209,6 @@ Nav bar
   position: relative;
 }
 
-.counter-item .ci-number {
-  font-size: 48px;
-  color: #e32879;
-  font-weight: 700;
-  line-height: 50px;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
 .counter-item .ci-text {
   padding-left: 150px;
 }
@@ -449,7 +218,7 @@ Nav bar
   color: black;
   font-weight: 700;
   margin-bottom: 12px;
-}
+}  
 
 /*-----------------
 Parallax section
@@ -494,30 +263,6 @@ Parallax section
   background-color: white;
   border-left: 12px solid var(--theme-color);
   border-right: 12px solid var(--theme-color);
-}
-
-/*---------------------
-  Call To Section
------------------------*/
-
-.callto-section {
-  background-color: #e32879;
-  padding: 80px 0;
-}
-
-.ctc-text {
-  text-align: center;
-}
-
-.ctc-text h2 {
-  font-size: 45px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  color: #191919;
-}
-
-.ctc-text p {
-  margin-bottom: 45px;
 }
 
 /*---------------------
@@ -595,7 +340,6 @@ Parallax section
 }
 
 .footer-option ul {
-  /* margin-bottom: 12px; */
   margin: auto;
   display: block;
 }
@@ -628,10 +372,6 @@ Parallax section
   border-radius: 50%;
 }
 
-.footer-option .fo-social a:hover {
-  background: #e32879;
-  font-size: 45px;
-}
 
 .list-inline-item {
   padding: 10px;
@@ -711,8 +451,6 @@ footer {
 .footer-logo {
   align-items: center;
 }
-
-
 
 .logo {
   width: 150px;
@@ -802,16 +540,8 @@ a.fa-linkedin {
 }
 .footer-h {
   color: #c4c4c4;
-  /* border-bottom: 2px solid orangeOrange; */
 }
 
-/* .newsletter-form{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 2%;
-} */
 
 .txtb {
   flex: 1;
@@ -840,10 +570,6 @@ a.fa-linkedin {
   align-items: center;
   justify-content: center;
 }
-/*footer {
-  background-color: orangeOrange;
-}*/
-
 .loc {
   background-image: url("https://toppng.com/uploads/preview/textuOrange-backgrounds-for-websites-1155398483840bc0kagkc.jpg") !important;
 }
@@ -861,12 +587,6 @@ a.fa-linkedin {
 }
 
 .btn-3 {
-  background-image: linear-gradient(
-    to right,
-    #84fab0 20%,
-    #8fd3f4 51%,
-    #84fab0 100%
-  );
   color: black;
 }
 
@@ -932,70 +652,6 @@ a.fa-linkedin {
 }
 
 /*---------------------
-  Tiny Slider
------------------------*/
-
-.myslider {
-  background-color: #e32879;
-}
-
-.myslider div {
-  padding-bottom: 20px;
-}
-
-.myslider h2 {
-  color: #fff;
-  text-align: center;
-  font-weight: bold;
-  padding: 20px;
-}
-
-.slider {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.slider-item img {
-  height: 150px;
-  width: 150px;
-}
-
-.tns-controls {
-  display: none;
-}
-
-li.tns-item {
-  text-align: center;
-}
-
-/*---------------------
-  Achievment Data
------------------------*/
-/*---------------------
-  Overview
------------------------*/
-
-#overview {
-  /* background-color: #e32879; */
-  margin-top: 30px;
-  text-align: center;
-}
-
-#overview p {
-  /* margin-top: 10px; */
-  padding: 30px;
-  color: #e32879;
-  text-align: justify;
-}
-
-#overview h3 {
-  color: #e32879;
-  font-size: 42px;
-  font-weight: 500;
-  letter-spacing: normal;
-}
-
-/*---------------------
   Keynote
 -----------------------*/
 
@@ -1023,25 +679,6 @@ li.tns-item {
   display: block;
 }
 
-/*---------------------
-  Location
------------------------*/
-
-.location {
-  /* width: 350px; */
-  height: 200px;
-  margin: auto;
-  display: block;
-  text-align: center;
-}
-
-.location p {
-  font-size: 16px;
-}
-
-.card-title {
-  padding: 10px;
-}
 
 /*---------------------
   Event
@@ -1051,13 +688,6 @@ li.tns-item {
   text-align: center;
   padding: 50px;
   /* background-color: #e32879; */
-}
-
-#event h4 {
-  color: #e32879;
-  font-size: 32px;
-  font-weight: 500;
-  letter-spacing: normal;
 }
 
 #event p {
@@ -1170,22 +800,6 @@ section.module.parallax-spl {
 html {
   scroll-behavior: smooth;
 }
-
-/*.gotopbtn{
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  background:#f58584;
-  bottom: 40px;
-  right: 50px;
-  border-radius: 34px;
-  text-decoration: none;
-  text-align: center;
-  line-height: 50px;
-  color: white;
-  font-size: 22px;
-}
-*/
 
 html {
   scroll-behavior: smooth;
@@ -1804,8 +1418,6 @@ a.active {
 .prodisplay {
   display: none;
 }
-
-
 
 /*----Feature Cards Section -------*/
 .feature-cards {
