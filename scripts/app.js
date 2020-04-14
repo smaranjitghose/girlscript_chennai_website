@@ -7,7 +7,7 @@ let header = $(`
 	<div class="collapse navbar-collapse" id="navbarNav">
 	  <ul class="navbar-nav ml-5">
 		<li class="nav-item">
-		  <a class="nav-link pr-4"  href="index.html"><span>HOME</span></a>
+		  <a class="nav-link pr-4 active"  href="index.html"><span>HOME</span></a>
 		</li>
 		<li class="nav-item">
 		  <a class="nav-link pr-4" href="announcements.html"><span>ANNOUNCEMENTS</span></a>
