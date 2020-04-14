@@ -150,7 +150,7 @@ Nav bar
   padding: 0.5rem 1rem;
 }
 
-@media only screen and (max-width: 1173px) {
+@media only screen and (max-width: 1185px) {
   .nav-item {
     font-size: 0.944rem;
   }
