@@ -20,8 +20,7 @@ html, body {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     transition: 0.6s;
     background-color: var(--white);
-    border-radius: 10px;
-}
+    margin-left: 5rem; 
 
 .contact-form:hover {
   text-align: left;
@@ -93,13 +92,6 @@ html, body {
   }
 
 }
-@media only screen and (max-width: 560px) {
-  .main-section {
-    margin-top: 35%;
-}
-
-
-} 
 /* COMPACT CAPTCHA */
 
 .capbox {
@@ -187,3 +179,37 @@ html, body {
   text-align: center;
   padding-bottom: 1.5rem;;
 }
+
+/* Responsive Section */
+
+@media only screen and (max-width: 994px) {
+
+ .contact-form{
+   margin-left: 0;
+ }
+ .container-contact{
+   display: inline;
+   padding: 0;
+ }
+ .def{
+   padding: 1rem 0;
+ }
+ .contact-form h1{
+   font-size: 2.1rem;
+  }
+}
+
+@media only screen and (max-width: 358px){
+
+ .capbox-inner{
+   display: -webkit-box;
+   margin: 3px auto 0 auto;
+ }
+ .capbox{
+  margin-left: 2.5rem;
+ }
+ #CaptchaDiv{
+  margin-left: 1.2rem;
+ }
+}
+
