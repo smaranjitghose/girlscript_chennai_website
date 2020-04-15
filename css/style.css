@@ -1947,3 +1947,9 @@ a.active {
     margin: auto;
   }
 }
+
+@media only screen and (max-width: 992px){
+  .navbar {
+    position: relative;
+  }
+}
