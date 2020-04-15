@@ -5,6 +5,7 @@ html, body {
 
 .main-section {
     padding: 10%;
+    background-position: center;
     background-repeat: no-repeat;
 	  background-size: cover;
     background-image: linear-gradient(to bottom right,
@@ -18,7 +19,7 @@ html, body {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     transition: 0.6s;
     background-color: var(--white);
-    margin-left: 10rem; 
+    margin-left: 5rem; 
     border-radius: 10px;
 }
 
@@ -83,19 +84,6 @@ html, body {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 1059px) {
-  .main-section {
-    margin-top: 20%;
-}
-
-} 
-
-@media only screen and (max-width: 560px) {
-  .main-section {
-    margin-top: 35%;
-}
-
-} 
 /* COMPACT CAPTCHA */
 
 .capbox {
@@ -144,7 +132,7 @@ html, body {
   }
   
 
-.abc{
+.side-sec{
   color: white;
   padding: 0.3rem;
   font-size: 20px;
@@ -183,4 +171,63 @@ html, body {
 .font-weight-bold{
   text-align: center;
   padding-bottom: 1.5rem;;
+}
+
+/* Responsive Section */
+
+@media only screen and (max-width: 994px) {
+
+ .contact-form{
+   margin-left: 0;
+ }
+ .container-contact{
+   display: inline;
+   padding: 0;
+ }
+ .def{
+   padding: 1rem 0;
+ }
+ .contact-form h1{
+   font-size: 2.1rem;
+  }
+}
+
+@media only screen and (max-width: 358px){
+
+ .capbox-inner{
+   display: -webkit-box;
+   margin: 3px auto 0 auto;
+ }
+ .capbox{
+  margin-left: 2.5rem;
+ }
+ #CaptchaDiv{
+  margin-left: 1.2rem;
+ }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 448px){
+
+  .main-section{
+    margin-top: 20%;
+  }
+
+}
+
+@media only screen and (max-width: 1059px) and (min-width: 560px) {
+  .main-section {
+    margin-top: 10%;
+  }
+} 
+
+@media only screen and (max-width: 560px) {
+  .main-section {
+    margin-top: 25%;
+  } 
+} 
+
+@media only screen and (max-width: 320px) {
+  .main-section {
+    margin-top: 35%;
+  }
 }
