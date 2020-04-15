@@ -84,23 +84,6 @@ html, body {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 1059px) and (min-width: 560px) {
-  .main-section {
-    margin-top: 10%;
-  }
-} 
-
-@media only screen and (max-width: 560px) {
-  .main-section {
-    margin-top: 25%;
-  } 
-} 
-
-@media only screen and (max-width: 320px) {
-  .main-section {
-    margin-top: 35%;
-  }
-}
 /* COMPACT CAPTCHA */
 
 .capbox {
@@ -149,7 +132,7 @@ html, body {
   }
   
 
-.abc{
+.side-sec{
   color: white;
   padding: 0.3rem;
   font-size: 20px;
@@ -190,6 +173,8 @@ html, body {
   padding-bottom: 1.5rem;;
 }
 
+/* Responsive Section */
+
 @media only screen and (max-width: 994px) {
 
  .contact-form{
@@ -204,5 +189,45 @@ html, body {
  }
  .contact-form h1{
    font-size: 2.1rem;
+  }
+}
+
+@media only screen and (max-width: 358px){
+
+ .capbox-inner{
+   display: -webkit-box;
+   margin: 3px auto 0 auto;
+ }
+ .capbox{
+  margin-left: 2.5rem;
+ }
+ #CaptchaDiv{
+  margin-left: 1.2rem;
+ }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 448px){
+
+  .main-section{
+    margin-top: 20%;
+  }
+
+}
+
+@media only screen and (max-width: 1059px) and (min-width: 560px) {
+  .main-section {
+    margin-top: 10%;
+  }
+} 
+
+@media only screen and (max-width: 560px) {
+  .main-section {
+    margin-top: 25%;
+  } 
+} 
+
+@media only screen and (max-width: 320px) {
+  .main-section {
+    margin-top: 35%;
   }
 }
