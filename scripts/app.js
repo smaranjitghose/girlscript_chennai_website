@@ -58,7 +58,12 @@ let footer = $(`
 		  <h6 class="footer-h3">Made with ♥</h6>
 	</center>
 </div>
-
+<center>
+<label class="switch">
+  <input type="checkbox" name="theme">
+  <span class="slider round"></span>
+</label>
+</center>
 </footer>`);
 let bodyElement = $(`body`);
 bodyElement.prepend(header);
@@ -109,4 +114,24 @@ function validateFooterForm(){
       return false;
 	  }
 	  return true;
+}
+
+
+var checkbox = document.querySelector('input[name=theme]');
+
+checkbox.addEventListener('change', function() {
+  if(this.checked){
+	trans()
+	document.documentElement.setAttribute('data-theme', 'dark');
+  } else{
+	trans()
+	document.documentElement.setAttribute('data-theme', 'light');     
+  }
+})
+
+let trans = () => {
+  document.documentElement.classList.add('transition');
+  window.setTimeout(() => {
+	document.documentElement.classList.remove('transition')
+  }, 1000)
 }
