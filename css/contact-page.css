@@ -206,28 +206,3 @@ html, body {
  }
 }
 
-@media only screen and (max-width: 560px) and (min-width: 448px){
-
-  .main-section{
-    margin-top: 20%;
-  }
-
-}
-
-@media only screen and (max-width: 1059px) and (min-width: 560px) {
-  .main-section {
-    margin-top: 10%;
-  }
-} 
-
-@media only screen and (max-width: 560px) {
-  .main-section {
-    margin-top: 25%;
-  } 
-} 
-
-@media only screen and (max-width: 320px) {
-  .main-section {
-    margin-top: 35%;
-  }
-}
