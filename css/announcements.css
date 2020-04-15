@@ -195,7 +195,6 @@ html, body {
 }
 
 /* CSS for card group */
-
 .card {
   display: grid;
   grid-template-columns: 300px;
@@ -204,7 +203,6 @@ html, body {
   border-radius: 18px;
   background: white;
   box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
-  font-family: roboto;
   text-align: center;
   overflow: hidden;
   position: relative;
@@ -250,15 +248,13 @@ html, body {
   grid-template-rows: 1fr;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  background:#f46721;
 }
 .card-stats .stat {
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   color: white;
-  padding:10px;
+  
 }
 .card:hover {
   transform: scale(1.15);
@@ -288,9 +284,21 @@ html, body {
   cursor: pointer;
   margin:30px;
 }
-.card1-text{
-    margin-top:20px;
-    font-size:29px;
+
+
+.card-btn {
+  background-color: #EF6F00;
+  color: white;
+  font-weight: bold;
+  transition: 0.6s;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px #ff9a0e;
+}
+
+.card-btn:hover {
+ box-shadow: 0 7px 30px #ff9a0e;
+ color: white;
+ font-weight: bold;
 }
 
 .rb1, .rb2, .rb3{
