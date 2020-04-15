@@ -187,3 +187,37 @@ html, body {
   text-align: center;
   padding-bottom: 1.5rem;;
 }
+
+/* Responsive Section */
+
+@media only screen and (max-width: 994px) {
+
+ .contact-form{
+   margin-left: 0;
+ }
+ .container-contact{
+   display: inline;
+   padding: 0;
+ }
+ .def{
+   padding: 1rem 0;
+ }
+ .contact-form h1{
+   font-size: 2.1rem;
+  }
+}
+
+@media only screen and (max-width: 358px){
+
+ .capbox-inner{
+   display: -webkit-box;
+   margin: 3px auto 0 auto;
+ }
+ .capbox{
+  margin-left: 2.5rem;
+ }
+ #CaptchaDiv{
+  margin-left: 1.2rem;
+ }
+}
+
