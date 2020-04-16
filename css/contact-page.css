@@ -17,7 +17,7 @@ html, body {
 
 .contact-form {
     text-align: left;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.486);
     transition: 0.6s;
     background-color: var(--white);
     border-radius: 10px;
@@ -152,6 +152,7 @@ html, body {
   color: white;
   padding: 0.3rem;
   font-size: 20px;
+  margin-top: 30px;
 }
 
 .container-contact{
@@ -165,12 +166,13 @@ html, body {
 }
 
 .def{
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .def i{
-  font-size: 40px;
+  font-size: 27px;
   color: whitesmoke;
+  padding-right: 5px;
 
 }
 
@@ -179,8 +181,9 @@ html, body {
 }
 
 .def-sec{
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
   padding-right: 1rem;
+  font-size: 0.9em;
 }
 
 .font-weight-bold{
