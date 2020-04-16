@@ -29,7 +29,7 @@ html, body {
     color:#000;
 }
 
-#teamHeading span{
+#teamHeading span {
     color:orangered;
     font-weight:normal;
 }
@@ -38,14 +38,14 @@ html, body {
     font-size: 20px;
 }
 
-.team-center-heading{
+.team-center-heading {
     font-size: 50px;
     font-weight: bold;
     color:#000;
 
 }
 
-.team-center-heading span{
+.team-center-heading span {
     font-weight:normal;
     color:orangered;
 }
@@ -89,9 +89,6 @@ html, body {
     .teamSection {
 		padding-left: 17%;
 	}
-    .section1{
-        margin-top: 5rem;
-    }
 }
 
 .techBtn,.boardBtn,.manageBtn{
@@ -111,4 +108,21 @@ html, body {
     box-shadow: 0 7px 30px #ff9a0e;
     color: white;
     font-weight: bold;
+}
+
+@media only screen and (max-width: 372px){
+    #teamHeading {
+	  font-size: 50px;
+    }
+
+    .team-center-heading {
+        font-size: 47px;
+    }
+}
+@media only screen and (max-width: 536px){
+
+    .team-center-heading span {
+        display: flex;
+        justify-content: center;
+    }
 }
