@@ -33,7 +33,7 @@ let footer = $(`
 <div class="container">
   <div class="row">
     <div class="col-lg-6 col-md-4 footer-logo"> 
-		<img src="assets/Images/transparent_logo.png" alt="" class="logo">
+		<img src="assets/Images/logo.png" alt="" class="logo">
 	</div>
 	<div class="col-lg-6 col-md-8 mb-5" id="footer-c">
 	  <br> 
