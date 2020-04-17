@@ -48,7 +48,6 @@ html, body {
   right: 70px;
   background-color: #f47621;
   border-radius: 0 4px 0 32px;
-  color: white;
 }
 
 .go-corner-2 {
@@ -59,12 +58,43 @@ html, body {
   width: 33px;
   height: 33px;
   overflow: hidden;
-  top: 470px;
+  top: 473.5px;
   right: 70px;
   background-color: #f47621;
   border-radius: 0 4px 0 32px;
-  color: white;
 }
+
+=======
+}
+
+.go-corner-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  overflow: hidden;
+  top: 65px;
+  right: 70px;
+  background-color: #f47621;
+  border-radius: 0 4px 0 32px;
+}
+
+.go-corner-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  overflow: hidden;
+  top: 473.5px;
+  right: 70px;
+  background-color: #f47621;
+  border-radius: 0 4px 0 32px;
+}
+
 
 .go-arrow {
   margin-top: -4px;
@@ -156,35 +186,8 @@ html, body {
   }
 }
 
-@media only screen and (max-width: 1200px) {
-  .go-corner-1{
-    right: 16px;
-  }
-  .go-corner-2{
-    right: 16px;
-    top: 470px;
-  }
-}
 
-@media only screen and (max-width: 992px) {
-  .go-corner-2{
-    top: 496px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .go-corner-2{
-    top: 705px;
-  }
-}
-
-@media only screen and (max-width: 691px) {
-  .upcoming-events .container{
-      margin-top: 120px;
-  }
-}
-
-@media only screen and (max-width: 691px) {
+@media only screen and (max-width: 991px) {
   .upcoming-events .container{
       margin-top: 10px;
   }
@@ -203,10 +206,19 @@ html, body {
   text-align: center;
   overflow: hidden;
   position: relative;
-  box-sizing: border-box;
   z-index: 0;
 }
 
+.card-image {
+  grid-area: image;
+}
+.card-text {
+  grid-area: text;
+}
+.card-stats {
+  grid-area: stats;
+  grid-area: stats; 
+}
 .card-image {
   grid-area: image;
   border-top-left-radius: 15px;
@@ -216,9 +228,6 @@ html, body {
 .card-text {
   grid-area: text;
   margin: 25px;
-}
-.card3 .card-text {
-  margin: 38px;
 }
 .card-text .date {
   color: rgb(255, 7, 110);
@@ -248,7 +257,7 @@ html, body {
   
 }
 .card:hover {
-  transform: scale(1.10);
+  transform: scale(1.15);
   box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
 }
 .card:before {
@@ -273,6 +282,7 @@ html, body {
 .card {
   transition: 0.5s ease;
   cursor: pointer;
+  margin:30px;
 }
 
 
@@ -292,6 +302,6 @@ html, body {
 }
 
 .rb1, .rb2, .rb3{
-  padding: 15px;
+  padding-top: 15px;
   font-family: 'Lato', sans-serif;
 }

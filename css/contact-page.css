@@ -4,21 +4,19 @@ html, body {
 }
 
 .main-section {
-    padding: 12%;
+    padding: 10%;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-image: linear-gradient(to bottom right,
-    rgba(0,0,0, 0.4),
-    rgba(0, 0, 0, 0.5))
-    ,url("../assets/Images/contact.jpg");
-    background-attachment: fixed;
-
+	  background-size: cover;
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.808)), url("../assets/Images/contact.jpg");
+}
 
 .contact-form {
     text-align: left;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.486);
     transition: 0.6s;
     background-color: var(--white);
+    margin-left: 5rem; 
     border-radius: 10px;
 }
 
@@ -83,67 +81,51 @@ html, body {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 1059px) {
-  .main-section {
-    margin-top: 10%;
-  }
-  .font-weight-bold {
-    font-size:30px  ;
-  }
-
-}
-@media only screen and (max-width: 560px) {
-  .main-section {
-    margin-top: 35%;
-}
-
-
-} 
 /* COMPACT CAPTCHA */
 
 .capbox {
-  background-color: #eb7d34;
-  background-image: linear-gradient(#eb7d34, #eb7d34);
-  border: #eb7d34 0px solid;
+	background-color: #eb7d34;
+	background-image: linear-gradient(#eb7d34, #eb7d34);
+	border: #eb7d34 0px solid;
   border-radius: 4px;
-  border-width: 2px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  display: inline-block;
-  padding: 5px 8px 5px 8px;
-  
-  }
+	border-width: 2px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	display: inline-block;
+	padding: 5px 8px 5px 8px;
+	
+	}
 
 .capbox-inner {
-  font: bold 12px arial, sans-serif;
-  color: #000000;
-  background-color: #FFFFFF;
-  margin: 0px auto 0px auto;
-  padding: 3px 10px 5px 10px;
-  border-radius: 4px;
-  display: inline-block;
-  vertical-align: middle;
-  }
+	font: bold 12px arial, sans-serif;
+	color: #000000;
+	background-color: #FFFFFF;
+	margin: 0px auto 0px auto;
+	padding: 3px 10px 5px 10px;
+	border-radius: 4px;
+	display: inline-block;
+	vertical-align: middle;
+	}
 
 #CaptchaDiv {
-  color: #000000;
-  font: normal 25px Impact, Charcoal, arial, sans-serif;
-  font-style: italic;
-  text-align: center;
-  vertical-align: middle;
-  background-color: #FFFFFF;
-  user-select: none;
-  display: inline-block;
-  padding: 3px 14px 3px 8px;
-  margin-right: 4px;
-  border-radius: 4px;
-  }
+	color: #000000;
+	font: normal 25px Impact, Charcoal, arial, sans-serif;
+	font-style: italic;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #FFFFFF;
+	user-select: none;
+	display: inline-block;
+	padding: 3px 14px 3px 8px;
+	margin-right: 4px;
+	border-radius: 4px;
+	}
 
 #CaptchaInput {
-  border: #295B00 1px solid;
-  margin: 3px 0px 1px 0px;
-  width: 105px;
+	border: #295B00 1px solid;
+	margin: 3px 0px 1px 0px;
+	width: 105px;
   }
   
 
@@ -157,7 +139,7 @@ html, body {
 .container-contact{
   display: flex;
 }
- 
+  
 .def h4{
   color: #f47621;
   font-size: 1.5rem;
