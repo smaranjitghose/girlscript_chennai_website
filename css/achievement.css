@@ -348,3 +348,24 @@ i.fa-chevron-up {
 .card{
     overflow: hidden;
   } 
+
+.ct1 {
+    letter-spacing: 1px;
+  }
+.ct2 {
+    letter-spacing: 2px;
+ }
+.ct3 {
+    letter-spacing: -1px;
+}
+ 
+@media only screen and (max-width: 1200px) {
+
+    .card--3 {
+        margin: auto;
+    }
+    .ct2{
+      letter-spacing: 2px;
+    }
+
+}  
