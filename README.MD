@@ -120,7 +120,7 @@ click on `Compare and Pull Request`
 
 ![code_of_conduct](https://media.giphy.com/media/qHRwTyhWIj4UU/200w_d.gif)
 
-[Make sure you don't violate this](https://github.com/smaranjitghose/girscript_chennai_website/blob/master/CODE_OF_CONDUCT.md)
+[Make sure you don't violate this](https://github.com/smaranjitghose/girscript_chennai_website/CODE_OF_CONDUCT.md)
 
 # The Geeks Behind this!:
 
