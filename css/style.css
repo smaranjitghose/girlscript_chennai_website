@@ -24,10 +24,10 @@ html[ data-theme="dark"] {
   
   --theme-color: #ff8723;
   --bg1-color: #434343;
-  --font-color: #d9d9d9;
+  --font-color:#e9e9e9;
   --bg2-color: #333333;
   --shadow-color: #fff;
-  --footer-bg: #a1a1a1;
+  --footer-bg: #fff;
   --footer-clr: #191919;
   --btn-bg:#ff8723;
   --flipCard-shadow:#fff;
@@ -662,7 +662,7 @@ a.fa-linkedin {
   z-index: 999;
   font-size: 22px;
   border-radius: 100%;
-	box-shadow: 0 4px 6px #ff9a0e;
+  box-shadow: 0 2px 7px 0px #ff9a0e;
 }
 @media only screen and (max-width: 464px) {
   .gotopbtn {
@@ -706,10 +706,10 @@ a.active {
   font-weight: bold;
   transition: 0.6s;
   border-radius: 5px;
-  box-shadow: 0 4px 6px #ff9a0e;
+  box-shadow: 0 2px 7px 0px #ff9a0e;
 }
 .center-btn-settings:hover {
-  box-shadow: 0 7px 30px #ff9a0e;
+  box-shadow: 0 7px 8px #ff9a0e;
   color: white;
   font-weight: bold;
 }
@@ -717,14 +717,14 @@ a.active {
   background-color: var(--theme-color);
   transition: 0.6s;
   border-radius: 5px;
-  box-shadow: 0 4px 6px #ff9a0e;
+  box-shadow: 0 2px 7px 0px #ff9a0e;
   background-color: var(--theme-color) !important;
   color: white !important;
   width: 200px;
 }
 
 .center-btn-settings2:hover {
-  box-shadow: 0 7px 30px #ff9a0e;
+  box-shadow: 0 7px 8px #ff9a0e;
   color: white !important;
   font-weight: bold;
 }
@@ -982,6 +982,7 @@ a.active {
 
 .flip-card-detail {
   font-size: 0.9rem;
+  color: var(--font-color);
 }
 
 .flip-card:hover .flip-card-content {
