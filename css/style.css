@@ -163,11 +163,11 @@ Nav bar
 .navbar a {
   color: var(--bg1-color);
   font-weight: bold;
-  font-size: 120%;
+  font-size: 95%;
   font-family: "Raleway", sans-serif;
 }
 #logo {
-  width: 80px;
+  width: 200px;
   transition: 0.4s;
 }
 .fixed-top {

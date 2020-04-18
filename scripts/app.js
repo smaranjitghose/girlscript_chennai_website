@@ -1,10 +1,10 @@
 let header = $(`
 <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
-  <a class="navbar-brand" href="index.html"><img src="assets/Images/transparent_logo.png" width="80px" id="logo"></a>
+  <a class="navbar-brand" href="index.html"><img src="assets/Images/Logo1.png" width="210px" id="logo"></a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	  <span class="navbar-toggler-icon"></span>
 	</button>
-	<div class="collapse navbar-collapse" id="navbarNav">
+	<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 	  <ul class="navbar-nav ml-5">
 		<li class="nav-item">
 		  <a class="nav-link pr-4 active"  href="index.html"><span>HOME</span></a>
@@ -71,11 +71,11 @@ bodyElement.append(footer);
 mybutton = document.getElementById("toTop");
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navbar").style.padding = "1px 16px";
-    document.getElementById("logo").width = "45px";
+    document.getElementById("navbar").style.padding = "2px 16px";
+    document.getElementById("logo").width = "160px";
   } else {
-    document.getElementById("navbar").style.padding = "8px 16px";
-    document.getElementById("logo").style.width = "80px";
+    document.getElementById("navbar").style.padding = "4px 16px";
+    document.getElementById("logo").style.width = "210px";
   }
 }
 window.onscroll = function() {
