@@ -64,6 +64,7 @@ body {
   right: 70px;
   background-color: var(--theme-color);
   border-radius: 0 4px 0 32px;
+  color: white;
 }
 
 .go-corner-2 {
@@ -74,10 +75,11 @@ body {
   width: 33px;
   height: 33px;
   overflow: hidden;
-  top: 473.5px;
+  top: 470px;
   right: 70px;
   background-color: var(--theme-color);
   border-radius: 0 4px 0 32px;
+  color: white;
 }
 
 .go-arrow {
@@ -170,13 +172,36 @@ body {
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  .go-corner-1{
+    right: 16px;
+  }
+  .go-corner-2{
+    right: 16px;
+    top: 470px;
+  }
+}
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
+  .go-corner-2{
+    top: 496px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .go-corner-2{
+    top: 705px;
+  }
+}
+
+@media only screen and (max-width: 691px) {
   .upcoming-events .container{
-      margin-top: 10px;
+      margin-top: 120px;
   }
   
 }
+
+
 
 /* CSS for card group */
 .card {
