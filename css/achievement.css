@@ -284,6 +284,20 @@ i.fa-chevron-up {
 	transform: translate(-50%, -60%);
 }
 
+.achieve-card:hover .card-title {
+	color: white;
+}
+.achieve-card:hover .card-text {
+	color:white;
+}
+.achieve-card:hover .card-link {
+	color:black;
+	opacity: 0.8;
+}
+.achieve-card:hover .card-link i {
+	color: black;
+}
+
 @media only screen and (max-width: 575px) {
     .card-content {
         padding-left:25px;
@@ -314,7 +328,7 @@ i.fa-chevron-up {
 }   
 
 .hidediv {
-    visibility: hidden;
+    display: none;
   }
 
 .afab {
