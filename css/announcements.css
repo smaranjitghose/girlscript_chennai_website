@@ -26,6 +26,7 @@ body {
 }
 .recent-events{
   background-color: var(--bg1-color);
+  margin-top: 70px;
 }
 .announcement-item img {
   display: block;
