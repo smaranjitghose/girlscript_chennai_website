@@ -66,7 +66,7 @@ $(document).ready(function () {
 	});
 
 	// Cards - WayPoint
-	$('.card1').waypoint(function(direction) {
+	$('.card--1').waypoint(function(direction) {
 		$('.card--1').addClass('animated bounceInLeft')
 	  }, {
 		offset: '60%'
