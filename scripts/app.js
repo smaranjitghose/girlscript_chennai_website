@@ -7,22 +7,22 @@ let header = $(`
 	<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 	  <ul class="navbar-nav ml-5">
 		<li class="nav-item">
-		  <a class="nav-link pr-4 active"  href="index.html"><span>HOME</span></a>
+		  <a class="nav-link active"  href="index.html"><span>HOME</span></a>
 		</li>
 		<li class="nav-item">
-		  <a class="nav-link pr-4" href="announcements.html"><span>ANNOUNCEMENTS</span></a>
+		  <a class="nav-link" href="announcements.html"><span>ANNOUNCEMENTS</span></a>
 		</li>
 		<li class="nav-item">
-		  <a class="nav-link pr-4" href="team.html"><span>OUR TEAM</span></a>
+		  <a class="nav-link" href="team.html"><span>OUR TEAM</span></a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link pr-4" href="achievements.html"><span>OUR ACHIEVEMENTS</span></a>
+			<a class="nav-link" href="achievements.html"><span>OUR ACHIEVEMENTS</span></a>
 		</li>
 		  <li class="nav-item">
-			<a class="nav-link pr-4" href="blogs.html"><span>BLOGS</span></a>
+			<a class="nav-link" href="blogs.html"><span>BLOGS</span></a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link pr-4" href="contactUs.html"><span>CONTACT US</span></a>
+			<a class="nav-link" href="contactUs.html"><span>CONTACT US</span></a>
 		</li>
 
 	  </ul>
