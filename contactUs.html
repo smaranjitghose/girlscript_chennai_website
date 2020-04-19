@@ -1,184 +1,91 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title> Contact Us </title>
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="assets/Images/gs.png" type="image/png" sizes="16x16">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'>
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+	<title> Contact Us </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="assets/Images/gs.png" type="image/png" sizes="16x16">
+
+	<!-- Google Font Api -->
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<!-- Font Awesome  -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+		crossorigin="anonymous"></script>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<!-- Normalize CSS and AOS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'>
+	<script src='https://unpkg.com/aos@2.3.0/dist/aos.js'></script>
+
+	<!-- Css Styles -->
+	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="css/contact-page.css" type="text/css">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="./scripts/contactUs.js"></script>
 </head>
-<body>
 
 <body>
-    <section class="main-section">
-        <div class="container container-contact pt-5 pb-5">
-            <div class="side-sec" data-aos="fade-right">
-                <div class="def">
-                    <h4>Get in Touch</h4>
-                   <div class="def-sec mb-4">You need more information? <br> What other persons are saying about our product.<br> They are very happy with their purchase.</div> 
-                </div>
-                <div class="def">
-                    <h4><i class="fa fa-map-marker"></i> Find us at the office</h4>
-                    <div class="def-sec mb-4">Bld Mihail Kogalniceanu, nr. 8 7652 Bucharest, Romania </div>
-                </div>
-                <div class="def">
-                    <h4><i class="fa fa-phone"></i> Give us a ring</h4>
-                    <div class="def-sec"> Jordan +40 762 321 762 Mon - Fri, 8002200</div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 contact-form p-4"  data-aos="fade-left">
-                <h2 class="font-weight-bold mb-1">Contact <span style="color: #f47621;"> Us</span></h2>
-                <form class="form-horizontal" name="myForm" action="https://formspree.io/xyz@gmail.com" onsubmit="return validateForm()" method="post">
-                    <div class="form-group pb-3">
-                        <input type="text" id="name" name="name" placeholder=" " class="form-control no-border" required>
-                        <label class="form-control-placeholder" for="name">Name</label>
-                    </div>
-                    <div class="form-group pb-3">
-                        <input type="email" id="email" name="email" placeholder=" " class="form-control no-border" required>
-                        <label class="form-control-placeholder" for="email">Email Address</label>
-                    </div>
-                    <div class="form-group pb-3">
-                        <input type="text" id="subject" name="subject" placeholder=" " class="form-control no-border" required>
-                        <label class="form-control-placeholder" for="Subject">Subject</label>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" rows="4" class="form-control no-border" placeholder=" " required></textarea>
-                        <label class="form-control-placeholder" for="message">Your Message</label>
-                    </div>
-                    
-                    <div>
-                        <!-- START CAPTCHA -->
-                        <br>
-                        <div class="capbox">
+	<section class="main-section">
+		<div class="container container-contact pt-5 pb-5">
+			<div class="side-sec" data-aos="fade-right">
+				<div class="def">
+					<h4>Get in Touch</h4>
+					<div class="def-sec mb-4">You need more information? <br> What other persons are saying about
+						our product.<br> They are very happy with their purchase.</div>
+				</div>
+				<div class="def">
+					<h4><i class="fa fa-map-marker"></i> Find us at the office</h4>
+					<div class="def-sec mb-4">Bld Mihail Kogalniceanu, nr. 8 7652 Bucharest, Romania </div>
+				</div>
+				<div class="def">
+					<h4><i class="fa fa-phone"></i> Give us a ring</h4>
+					<div class="def-sec"> Jordan +40 762 321 762 Mon - Fri, 8002200</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 contact-form p-4" data-aos="fade-left">
+				<h2 class="font-weight-bold mb-1">Contact
+					<span class="clr-theme"> Us</span></h2>
+				<form class="form-horizontal" name="myForm" action="https://formspree.io/xyz@gmail.com"
+					onsubmit="return validateForm()" method="post">
+					<div class="form-group pb-3">
+						<input type="text" id="name" name="name" placeholder=" " class="form-control no-border">
+						<label class="form-control-placeholder" for="name">Name</label>
+					</div>
+					<div class="form-group pb-3">
+						<input type="email" id="email" name="email" placeholder=" " class="form-control no-border">
+						<label class="form-control-placeholder" for="email">Email Address</label>
+					</div>
+					<div class="form-group pb-3">
+						<input type="text" id="subject" name="subject" placeholder=" " class="form-control no-border">
+						<label class="form-control-placeholder" for="Subject">Subject</label>
+					</div>
+					<div class="form-group">
+						<textarea name="message" rows="4" class="form-control no-border" placeholder=" "></textarea>
+						<label class="form-control-placeholder" for="message">Your Message</label>
+					</div>
+					<!-- START CAPTCHA -->
+					<div class="capbox">
+						<div id="CaptchaDiv"></div>
+						<div class="capbox-inner">
+							Type the number:<br>
+							<input type="hidden" id="txtCaptcha">
+							<input type="text" name="CaptchaInput" id="CaptchaInput" size="15"><br>
 
-                            <div id="CaptchaDiv"></div>
-
-                            <div class="capbox-inner">
-                                Type the number:<br>
-
-                                <input type="hidden" id="txtCaptcha">
-                                <input type="text" name="CaptchaInput" id="CaptchaInput" size="15"><br>
-
-                            </div>
-                        </div>
-                        <br><br>
-                        <!-- END CAPTCHA -->
-                    </div>
-                    <div class="form-group mb-3">
-                        <button type="submit" class="center-btn-settings center-btn-settings2 btn btn-lg mt-2" id="submit-button" value="Send"> Send Message </button>
-                    </div>
-                </form>
-                <script type="text/javascript">
-
-                    // Captcha Script
-
-                    function checkform(theform) {
-                        var why = "";
-
-                        if (theform.CaptchaInput.value == "") {
-                            why += "- Please Enter CAPTCHA Code.\n";
-                        }
-                        if (theform.CaptchaInput.value != "") {
-                            if (ValidCaptcha(theform.CaptchaInput.value) == false) {
-                                why += "- The CAPTCHA Code Does Not Match.\n";
-                            }
-                        }
-                        if (why != "") {
-                            alert(why);
-                            return false;
-                        }
-                    }
-
-                    var a = Math.ceil(Math.random() * 9) + '';
-                    var b = Math.ceil(Math.random() * 9) + '';
-                    var c = Math.ceil(Math.random() * 9) + '';
-                    var d = Math.ceil(Math.random() * 9) + '';
-                    var e = Math.ceil(Math.random() * 9) + '';
-
-                    var code = a + b + c + d + e;
-                    document.getElementById("txtCaptcha").value = code;
-                    document.getElementById("CaptchaDiv").innerHTML = code;
-
-                    // Validate input against the generated number
-                    function ValidCaptcha() {
-                        var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
-                        var str2 = removeSpaces(document.getElementById('CaptchaInput').value);
-                        if (str1 == str2) {
-                            return true;
-                        } else {
-                            return false;
-                        }
-                    }
-
-                    // Remove the spaces from the entered and generated code
-                    function removeSpaces(string) {
-                        return string.split(' ').join('');
-                    }
-                </script>
-            </div>
-        </div>
-
-    </section>
-    <script src='https://unpkg.com/aos@2.3.0/dist/aos.js'></script><script>
-        AOS.init({
-          duration: 2000,
-        });
-    </script>
+						</div>
+					</div>
+					<!-- END CAPTCHA -->
+					<button type="submit" class="btn btn-lg mt-2 center-btn-settings center-btn-settings2 mb-3"
+						id="submit-button"> Send Message </button>
+				</form>
+			</div>
+		</div>
+	</section>
 </body>
 <script src="./scripts/app.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script type="text/javascript">
 
-    function validateForm() {
-      var nameVal = document.myForm.name.value;
-      var numbers = /^[0-9]+$/;
-      if(nameVal.match(numbers)){
-        alert("Please enter correct name")
-        document.myForm.name.focus();
-        return false;
-      }
-
-      var emailID = document.myForm.email.value;
-      atpos = emailID.indexOf("@");
-      dotpos = emailID.lastIndexOf(".");
-  
-      var emailID = document.myForm.email.value;
-      atpos = emailID.indexOf("@");
-      dotpos = emailID.lastIndexOf(".");
-           
-      if (atpos < 1 || ( dotpos - atpos < 2 )) {
-        alert("Please enter correct email ID")
-        document.myForm.email.focus() ;
-        return false;
-        }
-
-      var subject = document.myForm.subject.value;
-      var message = document.myForm.message.value;
-      if(subject.length < 10) {
-              alert( "Minimum Length of subject must be 10" );
-              document.myForm.subject.focus() ;
-              return false;
-           }
-      if(message.length < 10) {
-              alert( "Minimum Length of message must be 10" );
-              document.myForm.message.focus() ;
-              return false;
-           }
-
-        return( true );
-    }
-    $(".btn").mousedown(function(e){
-		  e.preventDefault();
-	})
-</script>
 </html>
