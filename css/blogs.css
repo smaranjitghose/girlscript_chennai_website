@@ -133,6 +133,11 @@ Blog Cards
     color: white;
     font-weight: bold;
 }
+
+.border-style{
+    border-left: 12px solid var(--theme-color);
+    border-right: 12px solid var(--theme-color);
+}
    
 @media only screen and (max-width : 430px){
     .heading-blog{

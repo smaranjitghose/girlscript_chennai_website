@@ -20,6 +20,11 @@ html[ data-theme="dark"] {
     -webkit-font-smoothing: antialiased;
 }
 
+.border-style{
+    border-left: 12px solid var(--theme-color);
+    border-right: 12px solid var(--theme-color);
+}
+
 .seperator{
     background: var(--separator-bgColor);
     max-width:75%;
@@ -130,7 +135,7 @@ html[ data-theme="dark"] {
 
 @media only screen and (max-width: 372px){
     #teamHeading {
-	  font-size: 50px;
+	  font-size: 40px;
     }
 
     .team-center-heading {
@@ -142,5 +147,11 @@ html[ data-theme="dark"] {
     .team-center-heading span {
         display: flex;
         justify-content: center;
+    }
+}
+@media only screen and (max-width: 990px){
+
+    .section1 {
+        margin-top: 0;
     }
 }

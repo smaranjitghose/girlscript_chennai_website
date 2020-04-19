@@ -17,8 +17,10 @@ body {
 }
 
 .upcoming-events {
-  padding-top: 10%;
+  padding-top: 5%;
   background-color: var(--bg1-color);
+  border-left: 12px solid var(--theme-color);
+  border-right: 12px solid var(--theme-color);
 }
 
 .upcoming-events .container{
@@ -26,8 +28,10 @@ body {
 }
 .recent-events{
   background-color: var(--bg1-color);
-  margin-top: 70px;
+  border-left: 12px solid var(--theme-color);
+  border-right: 12px solid var(--theme-color);
 }
+
 .announcement-item img {
   display: block;
   width: 100%;
@@ -198,6 +202,12 @@ body {
 @media only screen and (max-width: 691px) {
   .upcoming-events .container{
       margin-top: 120px;
+  }
+  
+}
+@media only screen and (max-width: 950px) {
+  .upcoming-events .container{
+      margin-top: 10%;
   }
   
 }
