@@ -11,6 +11,10 @@ a.toggle-info {
   transition: all 0.1s 0s ease-out;
 }
 
+.card-img-top{
+  height: 250px;
+}
+
 
 div.achievement-card {
   margin: 70px auto;
