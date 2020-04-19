@@ -1,8 +1,23 @@
+html {
+       --box-Shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+       --projectCard-shadow: 0 5px 10px rgba(73, 52, 52, 0.9);
+       --flapCard-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
+       --bg-Card:rgb(250,250,250);
+
+}
+
+html[ data-theme="dark"] {
+       --box-Shadow: 0 2px 0px 0 #fff;
+       --projectCard-shadow: 0 3px 5px #fff;
+       --flapCard-shadow: 0 2px 0px 0 #fff;
+       --bg-Card:#ebebeb;
+}
+
 a.toggle-info {
-  background: #131010;
+  background: #ff2019;
   border-radius: 4px;
-  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
-  color: #f46721;
+  box-shadow: var(--box-Shadow);
+  color: var(--theme-color);
   display: inline-block;
   padding: 6px 30px 8px;
   position: relative;
@@ -30,7 +45,7 @@ div.project-card {
   transition: all 0.3s 0s ease-in;
   width: 300px;
   z-index: 1;
-  box-shadow: 0 5px 10px rgba(73, 52, 52, 0.9);
+  box-shadow:  var(--projectCard-shadow);
 
 
 }
@@ -44,14 +59,14 @@ div.project-card img {
 } 
 
 div.project-card .project-image-holder {
-  background: rgba(0, 0, 0, 0.1);
+  background: var(--font-color);
   height: 0;
   padding-bottom: 75%;
-  border-top: 4px solid #f46721;
+  border-top: 4px solid var(--theme-color);
 }
 
 div.project-card div.project-title {
-  background: #f46721;
+  background: var(--theme-color);
   padding: 8px 15px 10px;
   position: relative;
   z-index: 0;
@@ -83,12 +98,13 @@ div.project-card div.project-title h2 small {
 div.project-card div.card-description {
   padding: 10px 15px 10px;
   background-color: #f3d3c4;
+  color: black;
   text-align: justify;
   position: relative;
   font-size: 14px;
 }
 div.project-card div.card-actions {
-  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
+  box-shadow: var(--flapCard-shadow);
   background-color: #f3d3c4;
   padding: 10px 15px 20px;
   text-align: center;
@@ -97,7 +113,7 @@ div.project-card div.card-actions {
 div.project-card div.card-actions a {
     font-weight: bold;
     color: white;
-    background-color: #f46721;
+    background-color: var(--theme-color);
     border-radius: 10em;
   }
 
@@ -137,7 +153,7 @@ div.project-card.show {
           transform: scale(1) !important;	  
 }
 div.project-card.show div.project-title a.toggle-info {
-  background: #ff6666 !important;
+  background: #ff2019 !important;
 }
 
 div.project-card.show div.card-flap {
@@ -158,84 +174,6 @@ div.project-card.show div.flap2 {
   position: relative;
   cursor: pointer;
   border: none;
-}
-
-.container .card .face{
-  width: 300px;
-  height: 200px;
-  transition: 0.5s;
-}
-
-.container .card .face.face1{
-  position: relative;
-  background: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  transform: translateY(100px);
-}
-
-.container .card:hover .face.face1{
-  background: #FF8C00;
-  transform: translateY(0);
-}
-
-.container .card .face.face1 .content{
-  opacity: 0.2;
-  transition: 0.5s;
-}
-
-.container .card:hover .face.face1 .content{
-  opacity: 1;
-}
-
-.container .card .face.face1 .content img{
-  max-width: 100px;
-}
-
-.container .card .face.face1 .content h3{
-  margin: 10px 0 0;
-  padding: 0;
-  color: #fff;
-  text-align: center;
-  font-size: 1.5em;
-}
-
-.container .card .face.face2{
-  position: relative;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  box-sizing: border-box;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
-  transform: translateY(-100px);
-}
-
-.container .card:hover .face.face2{
-  transform: translateY(0);
-}
-
-.container .card .face.face2 .content p{
-  margin: 0;
-  padding: 0;
-}
-
-.container .card .face.face2 .content a{
-  margin: 15px 0 0;
-  display:  inline-block;
-  text-decoration: none;
-  font-weight: 900;
-  color: #333;
-  padding: 5px;
-  border: 1px solid #333;
-}
-
-.container .card .face.face2 .content a:hover{
-  background: #333;
-  color: #fff;
 }
 
 .achievementCard .card-link {
@@ -260,10 +198,43 @@ color: black;
 opacity: 1;
 }
 
+.card-1,.card-2, .card-3{
+  background-color: var(--bg-Card);
+  box-shadow:var(--flapCard-shadow);
+}
+.stat {
+  padding-bottom: 30px;
+}
+
 .stat-items {
 margin-top:2rem;
 }
 
+.stat-items h2 {
+  font-weight: bold;
+  font-size: 42px;
+  color: var(--theme-color);
+  margin-top: 8px;
+}
+.stat-items p {
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: var(--font-color);
+}
+
+.card-text {
+  text-align: justify;
+  color: rgba(0, 0, 0, 0.604);
+}
+
+.card-title {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: normal;
+  font-size: 22px;
+}
+
+.card
 .margin-button {
 	margin-top: 200px !important;
 }
@@ -319,7 +290,7 @@ i.fa-chevron-up {
 
 .afab {
     font-size: 4em;
-    color: #f47621;
+    color: var(--theme-color);
   }
 
 
@@ -332,7 +303,7 @@ i.fa-chevron-up {
     z-index: -1;
     top: -16px;
     right: -16px;
-    background: #f47621;
+    background-color: var(--theme-color);
     height: 60px;
     width: 52px;
     border-radius: 32px;
@@ -351,7 +322,7 @@ i.fa-chevron-up {
 
 .ct1 {
     letter-spacing: 1px;
-  }
+  }#FF8C00
 .ct2 {
     letter-spacing: 2px;
  }
