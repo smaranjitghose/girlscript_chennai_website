@@ -9,8 +9,6 @@ html, body {
     background-repeat: no-repeat;
 	  background-size: cover;
     background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.808)), url("../assets/Images/contact.jpg");
-    border-left: 12px solid var(--theme-color);
-    border-right: 12px solid var(--theme-color);
 }
 
 .contact-form {
