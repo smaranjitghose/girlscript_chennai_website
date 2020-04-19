@@ -138,6 +138,16 @@ body {
    font-weight: bold;
  }
 
+ .r-events-card:hover .card-text h2 {
+	color: var(--white);
+ }
+ .r-events-card:hover .card-text p{
+	 color: var(--white);
+ }
+ .r-events-card:hover .card-stats{
+	 background-color: var(--white);
+ }
+
  @media only screen and (max-width: 768px) {
 
   .announcement-item img {
@@ -228,6 +238,7 @@ body {
 .card-stats {
   grid-area: stats;
   grid-area: stats; 
+  padding-top: 15px;
 }
 .card-image {
   grid-area: image;
