@@ -1107,13 +1107,13 @@ a.fa-linkedin {
 
 .carousel-control-prev{
   position:absolute;
-  top:25%;
+  top:0;
   left:0%;
 }
 
 .carousel-control-next{
   position:absolute;
-  top:25%;
+  top:0;
   right:0%;
 }
 
