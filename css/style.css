@@ -533,39 +533,12 @@ a.fa-linkedin {
   background-color: #ff9933;
 }
 
-.card-title {
-  text-align: center;
-  color: #ff9933;
-  font-weight: bold;
-  letter-spacing: normal;
-}
-
-.card-text {
-  text-align: justify;
-  color: #e32879;
-}
-
 .ab out--part1 {
   opacity: 0;
 }
 
 .about--part1.animated {
   opacity: 1;
-}
-
-.stat {
-  padding-bottom: 30px;
-}
-
-.stat-items h2 {
-  font-weight: bold;
-  font-size: 42px;
-  color: darkorange;
-  margin-top: 8px;
-}
-.stat-items p {
-  font-weight: bold;
-  letter-spacing: 1px;
 }
 
 /*---------------------
