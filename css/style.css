@@ -300,16 +300,6 @@ Parallax section
   height: 59.5%!important;
 }
 
-/*------------------
-  Join Us Section
--------------------- */
-
-.newsection {
-  background-color: var(--bg1-color);
-  border-left: 12px solid var(--theme-color);
-  border-right: 12px solid var(--theme-color);
-}
-
 /*---------------------
  Team Section
  ----------------------*/
@@ -378,6 +368,10 @@ footer {
 
 .logo {
   width: 250px;
+}
+
+.logo1 {
+  width: 150px;
 }
 
 .social-media {
