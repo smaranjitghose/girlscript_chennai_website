@@ -848,7 +848,7 @@ a.fa-linkedin {
   transition: all 0.8s ease-in-out;
 }
 .ih-item.circle.effect .info h3 {
-  color: var(--font-color);
+  color: white;
   text-transform: uppercase;
   position: relative;
   letter-spacing: 2px;
