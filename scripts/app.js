@@ -35,6 +35,7 @@ let footer = $(`
 	<div class="col-lg-6 col-md-4 footer-logo"> 
 	<div>
 		<img src="assets/Images/logo.png" alt="" class="logo">
+		<p class="switch-text">Switch to change the mode</p>
 		<label class="switch">
 		<input type="checkbox" name="theme" onchange="changeTheme()">
 		<span class="slider round"></span>

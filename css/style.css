@@ -385,6 +385,11 @@ footer {
   margin-left: 80px;
 }
 
+.switch-text{
+  color: orangered;
+  margin-left: 10px;
+}
+
 .logo {
   width: 250px;
   display: block;
@@ -1218,6 +1223,9 @@ a.fa-linkedin {
 
   .switch{
     margin-left: 230px;
+  }
+  .switch-text{
+    margin-left: 150px;
   }
 }
 
