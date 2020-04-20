@@ -247,13 +247,17 @@ header {
     margin: 10px;
 }
 
+.faq:hover{
+    background-color: orange;
+}
+
 .faq p{
     padding: 5px;
 }
 
 .faq .q{
     font-style: italic;
-    color: #55C18F;
+    color: green
 }
 
 .faq .q p{
