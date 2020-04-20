@@ -121,6 +121,9 @@ html, body {
 	padding: 3px 14px 3px 8px;
 	margin-right: 4px;
 	border-radius: 4px;
+	cursor: default;
+	width: 130px;
+	border: none;
 	}
 
 #CaptchaInput {
