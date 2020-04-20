@@ -17,7 +17,7 @@ This project is also meant to be a starting for all techies interested to get th
 
 #### 👇 Checkout the current version: 
 
-[GirlScript Website Boilerplate](https://girlscriptchennai.netlify.com/)
+[GirlScript Website Boilerplate](https://girlscriptboilerplate.netlify.app)
 
 ####  A follow up project:
 
