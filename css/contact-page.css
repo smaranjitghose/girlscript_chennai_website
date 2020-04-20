@@ -195,17 +195,17 @@ html, body {
   }
 }
 
-@media only screen and (max-width: 358px){
+@media only screen and (max-width: 412px){
 
  .capbox-inner{
    display: -webkit-box;
    margin: 3px auto 0 auto;
  }
  .capbox{
-  margin-left: 2.5rem;
+  margin-left: 1.5rem;
  }
  #CaptchaDiv{
-  margin-left: 1.2rem;
+  margin-left: 0.5rem;
  }
 }
 
