@@ -19,6 +19,7 @@ html {
   --nav1-color:#f09819;
   --nav2-color: #ff512f;
   --topBtn-bg: #f47621;
+  --lgt-white: #F8F8F8;
 }
 html[ data-theme="dark"] {
   
@@ -140,6 +141,9 @@ ol {
 }
 .bg-lgt-grey {
   background-color:var(--bg2-color) !important;
+}
+.bg-lgt-wt {
+	background-color: var(--lgt-white);
 }
 
 .fs-17px {
@@ -489,7 +493,7 @@ a.fa-linkedin {
   Achievements Style
 -----------------------*/
 
-.wrapper {--btn-bg
+.wrapper {
   text-align: center;
 }
 
