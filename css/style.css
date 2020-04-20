@@ -1319,6 +1319,26 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+/* Recent Event section */
+.recent-event-section {
+	border-left: 12px solid var(--theme-color);
+	border-right: 12px solid var(--theme-color);
+}
+.conclusion-container{
+	background-color: var(--theme-color);
+	padding: 20px;
+	border-radius: 50px;
+	box-shadow: 3px 3px 5px 6px #ccc;
+}
+.pl-80px{
+	padding-left: 80px;
+}
+
+
+@media only screen and (max-width: 992px){
+  .navbar {
+    position: relative;
+  }
 /*Card Designing*/
 
 .myDiv {
@@ -1341,10 +1361,10 @@ input:checked + .slider:before {
   box-shadow: 0 10px 25px rgba(240, 112, 0, 0.23), 0 6px 0px rgba(240, 112, 0, 0.5);
 }
 
-.bg-lgt-grey{
+ .bg-lgt-grey{
   margin: 15px 0 15px 0;
-} 
-
+ } 
+}
 @media only screen and (max-width: 760px){
 
   .spacing {
@@ -1353,5 +1373,4 @@ input:checked + .slider:before {
   .fw-bold{
      font-size: 30px;
   }
-} 
-
+}
