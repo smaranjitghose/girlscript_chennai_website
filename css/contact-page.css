@@ -200,11 +200,9 @@ html, body {
  .capbox-inner{
    display: -webkit-box;
    margin: 3px auto 0 auto;
-   float: right;
  }
  .capbox{
   margin-left: 2.5rem;
-  width: 100%;
  }
  #CaptchaDiv{
   margin-left: 1.2rem;
