@@ -1,4 +1,12 @@
+function typeWriter(i) {
+	const txt = "GIRLSCRIPT CHENNAI";
+	if (i < txt.length) {
+		document.getElementById("typer").innerHTML += txt.charAt(i);
+		setTimeout(() => typeWriter(i + 1), 80);
+	}
+};
 $(function () {
+	typeWriter(0);
 	const sr = ScrollReveal();
 
 	sr.reveal('.forScroll', {
