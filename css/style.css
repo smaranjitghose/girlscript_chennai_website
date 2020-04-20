@@ -1291,6 +1291,22 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+/* Recent Event section */
+.recent-event-section {
+	border-left: 12px solid var(--theme-color);
+	border-right: 12px solid var(--theme-color);
+}
+.conclusion-container{
+	background-color: var(--theme-color);
+	padding: 20px;
+	border-radius: 50px;
+	box-shadow: 3px 3px 5px 6px #ccc;
+}
+.pl-80px{
+	padding-left: 80px;
+}
+
+
 @media only screen and (max-width: 992px){
   .navbar {
     position: relative;
