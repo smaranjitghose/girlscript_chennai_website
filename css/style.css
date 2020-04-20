@@ -381,22 +381,9 @@ footer {
   align-items: center;
 }
 
-.switch{
-  margin-left: 80px;
-}
-
-.switch-text{
-  color: orangered;
-  margin-left: 10px;
-}
-
 .logo {
-  width: 250px;
+  width: 170px;
   display: block;
-}
-
-.logo1 {
-  width: 150px;
 }
 
 .social-media {
@@ -1215,15 +1202,7 @@ a.fa-linkedin {
     align-items: center;
     text-align: center;
   }
-
-  .switch{
-    margin-left: 230px;
-  }
-  .switch-text{
-    margin-left: 150px;
-  }
 }
-
 
 .carousel slide{
   min-height:100vh;
@@ -1263,7 +1242,7 @@ a.fa-linkedin {
 }
 
 .switch input { 
-  opacity: 0;
+  opacity: 
   width: 0;
   height: 0;
 }

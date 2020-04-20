@@ -33,14 +33,7 @@ let footer = $(`
 <div class="container">
   <div class="row">
 	<div class="col-lg-6 col-md-4 footer-logo"> 
-	<div>
 		<img src="assets/Images/logo.png" alt="" class="logo">
-		<p class="switch-text">Switch to change the mode</p>
-		<label class="switch">
-		<input type="checkbox" name="theme" onchange="changeTheme()">
-		<span class="slider round"></span>
-		</label>
-		</div>
 	</div>
 	<div class="col-lg-6 col-md-8 mb-5" id="footer-c">
 	  <br> 
@@ -65,6 +58,12 @@ let footer = $(`
 		  <h6 class="footer-h3">Made with ♥</h6>
 	</center>
 </div>
+<center>	
+<label class="switch">	
+  <input type="checkbox" name="theme" onchange="changeTheme()">	
+  <span class="slider round"></span>	
+</label>	
+</center>
 </footer>`);
 
 function scrollFunction() {
