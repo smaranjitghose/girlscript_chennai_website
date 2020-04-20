@@ -1,28 +1,28 @@
 let header = $(`
 <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
-  <a class="navbar-brand" href="index.html"><img src="assets/Images/transparent_logo.png" width="80px" id="logo"></a>
+  <a class="navbar-brand" href="index.html"><img src="assets/Images/Logo1.png" width="210px" id="logo"></a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	  <span class="navbar-toggler-icon"></span>
 	</button>
-	<div class="collapse navbar-collapse" id="navbarNav">
+	<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 	  <ul class="navbar-nav ml-5">
 		<li class="nav-item">
-		  <a class="nav-link pr-4 active"  href="index.html"><span>HOME</span></a>
+		  <a class="nav-link active"  href="index.html"><span>HOME</span></a>
 		</li>
 		<li class="nav-item">
-		  <a class="nav-link pr-4" href="announcements.html"><span>ANNOUNCEMENTS</span></a>
+		  <a class="nav-link" href="announcements.html"><span>ANNOUNCEMENTS</span></a>
 		</li>
 		<li class="nav-item">
-		  <a class="nav-link pr-4" href="team.html"><span>OUR TEAM</span></a>
+		  <a class="nav-link" href="team.html"><span>OUR TEAM</span></a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link pr-4" href="achievements.html"><span>OUR ACHIEVEMENTS</span></a>
+			<a class="nav-link" href="achievements.html"><span>OUR ACHIEVEMENTS</span></a>
 		</li>
 		  <li class="nav-item">
-			<a class="nav-link pr-4" href="blogs.html"><span>BLOGS</span></a>
+			<a class="nav-link" href="blogs.html"><span>BLOGS</span></a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link pr-4" href="contactUs.html"><span>CONTACT US</span></a>
+			<a class="nav-link" href="contactUs.html"><span>CONTACT US</span></a>
 		</li>
 
 	  </ul>
@@ -33,7 +33,7 @@ let footer = $(`
 <div class="container">
   <div class="row">
     <div class="col-lg-6 col-md-4 footer-logo"> 
-		<img src="assets/Images/transparent_logo.png" alt="" class="logo">
+		<img src="assets/Images/logo.png" alt="" class="logo">
 	</div>
 	<div class="col-lg-6 col-md-8 mb-5" id="footer-c">
 	  <br> 
@@ -58,7 +58,12 @@ let footer = $(`
 		  <h6 class="footer-h3">Made with ♥</h6>
 	</center>
 </div>
-
+<center>
+<label class="switch">
+  <input type="checkbox" name="theme">
+  <span class="slider round"></span>
+</label>
+</center>
 </footer>`);
 let bodyElement = $(`body`);
 bodyElement.prepend(header);
@@ -66,11 +71,11 @@ bodyElement.append(footer);
 mybutton = document.getElementById("toTop");
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navbar").style.padding = "1px 16px";
-    document.getElementById("logo").width = "45px";
+    document.getElementById("navbar").style.padding = "2px 16px";
+    document.getElementById("logo").width = "160px";
   } else {
-    document.getElementById("navbar").style.padding = "8px 16px";
-    document.getElementById("logo").style.width = "80px";
+    document.getElementById("navbar").style.padding = "4px 16px";
+    document.getElementById("logo").style.width = "210px";
   }
 }
 window.onscroll = function() {
@@ -109,4 +114,24 @@ function validateFooterForm(){
       return false;
 	  }
 	  return true;
+}
+
+
+var checkbox = document.querySelector('input[name=theme]');
+
+checkbox.addEventListener('change', function() {
+  if(this.checked){
+	trans()
+	document.documentElement.setAttribute('data-theme', 'dark');
+  } else{
+	trans()
+	document.documentElement.setAttribute('data-theme', 'light');     
+  }
+})
+
+let trans = () => {
+  document.documentElement.classList.add('transition');
+  window.setTimeout(() => {
+	document.documentElement.classList.remove('transition')
+  }, 1000)
 }

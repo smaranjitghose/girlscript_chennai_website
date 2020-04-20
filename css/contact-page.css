@@ -8,15 +8,12 @@ html, body {
     background-position: center;
     background-repeat: no-repeat;
 	  background-size: cover;
-    background-image: linear-gradient(to bottom right,
-    rgba(0,0,0, 0.4),
-    rgba(0, 0, 0, 0.5))
-    ,url("../assets/Images/contact.jpg");
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.808)), url("../assets/Images/contact.jpg");
 }
 
 .contact-form {
     text-align: left;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.486);
     transition: 0.6s;
     background-color: var(--white);
     margin-left: 5rem; 
@@ -97,7 +94,8 @@ html, body {
 	-webkit-box-sizing: border-box;
 	display: inline-block;
 	padding: 5px 8px 5px 8px;
-	
+	margin-bottom: 20px;
+	margin-top: 10px;
 	}
 
 .capbox-inner {
@@ -136,11 +134,11 @@ html, body {
   color: white;
   padding: 0.3rem;
   font-size: 20px;
+  margin-top: 30px;
 }
 
 .container-contact{
   display: flex;
-  padding: 5rem;;
 }
   
 .def h4{
@@ -150,12 +148,13 @@ html, body {
 }
 
 .def{
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .def i{
-  font-size: 40px;
+  font-size: 27px;
   color: whitesmoke;
+  padding-right: 5px;
 
 }
 
@@ -164,8 +163,9 @@ html, body {
 }
 
 .def-sec{
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
   padding-right: 1rem;
+  font-size: 0.9em;
 }
 
 .font-weight-bold{
