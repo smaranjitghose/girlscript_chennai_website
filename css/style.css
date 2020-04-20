@@ -145,6 +145,10 @@ ol {
 .bg-lgt-wt {
 	background-color: var(--lgt-white);
 }
+.newsection {
+  background-color:var(--bg1-color) !important;
+  padding: 1rem;
+}	
 
 .fs-17px {
   font-size: 17px;
@@ -199,6 +203,13 @@ a.active {
   color: var(--font-color) !important;
   font-weight: 800 !important;
 }
+
+@media only screen and (max-width: 992px){
+  .navbar {
+    position: relative;
+  }
+}
+
 
 @media only screen and (max-width: 1185px) {
   .nav-item {
@@ -1312,4 +1323,38 @@ input:checked + .slider:before {
     position: relative;
   }
 }
+/*Card Designing*/
 
+.myDiv {
+  transition: all 1s;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(240, 112, 0, 0.23), 0 6px 0px rgba(240, 112, 0, 0.5);
+  padding: 10px;
+}
+
+.spacing{
+  padding-left: 60px;
+}	
+
+
+.myDiv1 {
+  transition: all 1s;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(240, 112, 0, 0.23), 0 6px 0px rgba(240, 112, 0, 0.5);
+}
+
+.bg-lgt-grey{
+  margin: 15px 0 15px 0;
+} 
+
+@media only screen and (max-width: 760px){
+
+  .spacing {
+     padding-left: 10px;
+  }
+  .fw-bold{
+     font-size: 30px;
+  }
+}

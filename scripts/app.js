@@ -124,20 +124,11 @@ function changeTheme() {
 	}
 }
 
-function typeWriter(i) {
-	const txt = "GIRLSCRIPT CHENNAI";
-	if (i < txt.length) {
-		document.getElementById("typer").innerHTML += txt.charAt(i);
-		setTimeout(() => typeWriter(i + 1), 80);
-	}
-};
-
 // Window Loads
 $(function () {
 	let bodyElement = $(`body`);
 	bodyElement.prepend(header);
 	bodyElement.append(footer);
-	typeWriter(0);
 	activeTab();
 })
 
