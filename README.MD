@@ -6,10 +6,8 @@
 ![Stars](	https://img.shields.io/github/stars/smaranjitghose/girlscript_chennai_website)
 ![License](https://img.shields.io/github/license/smaranjitghose/girlscript_chennai_website)
 ![GSSOC'20](https://img.shields.io/badge/GSSOC-20-orange?style=for-the-badge)
-
-
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7751d10252d944ae8eb68120e1f20397)](https://app.codacy.com/manual/garimasingh128/girlscript_chennai_website?utm_source=github.com&utm_medium=referral&utm_content=garimasingh128/girlscript_chennai_website&utm_campaign=Badge_Grade_Dashboard)
-[![Gitter](https://badges.gitter.im/girlscript_chennai_website/community.svg)](https://gitter.im/girlscript_chennai_website/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
 
 This is an open source project for creating a website that shall serve as a template/boilerplate for various chapters of GirlScript. With certain modifications to the content specific to the chapter using this, the need to build a website from scratch and the pains of fixing bugs and figuring out what part fits where is eliminated. Feel free to use this!. If this project helps you out, please give us a mention. Also, we would love to see your version of the same! Do a give a PR in a different branch that showcases how you used this!
 

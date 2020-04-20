@@ -38,6 +38,7 @@
 
 	<!-- Defined scripts -->
 	<script src="./scripts/achievement.js"></script>
+	<script src="./scripts/app.js"></script>
 </head>
 
 <body>
@@ -81,8 +82,10 @@
 		<h2 class="text-center fw-bold mt-5">Projects under <span class="clr-theme">GirlScript Chennai </span></h2>
 
 		<div class="achievement-card">
+			<div class="basic-cards">
 			<!-- Project Card 1 -->
-			<div class="project-card">
+
+			<div class="project-card" onclick="displayCard(this)">
 				<div class="project-image-holder">
 					<img class="project-image" src="https://source.unsplash.com/300x225/?wave" alt="wave" />
 				</div>
@@ -110,7 +113,7 @@
 				</div>
 			</div>
 			<!-- Project Card 2 -->
-			<div class="project-card">
+			<div class="project-card" onclick="displayCard(this)">
 				<div class="project-image-holder">
 					<img class="project-image" src="https://source.unsplash.com/300x225/?beach" alt="beach" />
 				</div>
@@ -137,7 +140,7 @@
 				</div>
 			</div>
 			<!-- Project Card 3 -->
-			<div class="project-card">
+			<div class="project-card" onclick="displayCard(this)">
 				<div class="project-image-holder">
 					<img class="project-image" src="https://source.unsplash.com/300x225/?mountain" alt="mountain" />
 				</div>
@@ -163,8 +166,9 @@
 					</div>
 				</div>
 			</div>
+		</div>
 			<div class="more-cards hidediv" id="moreCards">
-				<div class="project-card">
+				<div class="project-card" onclick="displayCard(this)">
 					<div class="project-image-holder">
 						<img class="project-image" src="https://source.unsplash.com/300x225/?field" alt="field" />
 					</div>
@@ -196,7 +200,7 @@
 					</div>
 				</div>
 
-				<div class="project-card">
+				<div class="project-card" onclick="displayCard(this)">
 					<div class="project-image-holder">
 						<img class="project-image" src="https://source.unsplash.com/300x225/?water" alt="water" />
 					</div>
@@ -225,7 +229,7 @@
 					</div>
 				</div>
 
-				<div class="project-card">
+				<div class="project-card" onclick="displayCard(this)">
 					<div class="project-image-holder">
 						<img class="project-image" src="https://source.unsplash.com/300x225/?river" alt="river" />
 					</div>
@@ -257,7 +261,7 @@
 			</div>
 			<br>
 			<button type="button" show-more="false" onclick="showMoreCards(this)" id="proshow"
-				class="center-btn-settings center-btn-settings2 btn btn-lg mt-5">Show More</button>
+				class="center-btn-settings center-btn-settings2 btn btn-lg">Show More</button>
 		</div>
 
 		<div class="container mt-5 achievementCard">
@@ -334,7 +338,6 @@
 	</section>
 	<!-- Footer -->
 	<a class="gotopbtn" href="#"> <i class="fa fa-arrow-up clr-wt"></i> </a>
-	<script src="./scripts/app.js"></script>
 </body>
 
 </html>

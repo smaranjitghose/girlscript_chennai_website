@@ -60,78 +60,88 @@ let footer = $(`
 </div>
 <center>
 <label class="switch">
-  <input type="checkbox" name="theme">
+  <input type="checkbox" name="theme" onchange="changeTheme()">
   <span class="slider round"></span>
 </label>
 </center>
 </footer>`);
-let bodyElement = $(`body`);
-bodyElement.prepend(header);
-bodyElement.append(footer);
-mybutton = document.getElementById("toTop");
+
 function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navbar").style.padding = "2px 16px";
-    document.getElementById("logo").width = "160px";
-  } else {
-    document.getElementById("navbar").style.padding = "4px 16px";
-    document.getElementById("logo").style.width = "210px";
-  }
+	let navBar = document.getElementById("navbar"),
+		logo = document.getElementById("logo");
+	if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+		navBar.style.padding = "2px 16px";
+		logo.width = "160px";
+	} else {
+		navBar.style.padding = "4px 16px";
+		logo.style.width = "210px";
+	}
 }
-window.onscroll = function() {
-  scrollFunction();
-};
 
 function activeTab() {
-  let navBar = $("#navbarNav");
-  let navItems = navBar[0].children[0].children;
-  let pageName = window.location.pathname.toLowerCase();
-  for (let i = 0; i < navItems.length; i++) {
-    let childHref = navItems[i].children[0].pathname.toLowerCase();
-    if (
-      (childHref === pageName || childHref.includes(pageName)) &&
-      window.location.pathname !== "/"
-    )
-      navItems[i].children[0].classList.add("active");
-    else navItems[i].children[0].classList.remove("active");
-  }
+	let navBar = $("#navbarNav");
+	let navItems = navBar[0].children[0].children;
+	let pageName = window.location.pathname.toLowerCase();
+	for (let i = 0; i < navItems.length; i++) {
+		let childHref = navItems[i].children[0].pathname.toLowerCase();
+		if (
+			(childHref === pageName || childHref.includes(pageName)) &&
+			window.location.pathname !== "/"
+		)
+			navItems[i].children[0].classList.add("active");
+		else navItems[i].children[0].classList.remove("active");
+	}
 }
 
 function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-activeTab();
-
-function validateFooterForm(){
-	var emailID = document.footermail.email.value;
-    atpos = emailID.indexOf("@");
-    dotpos = emailID.lastIndexOf(".");
-
-    if (atpos < 1 || ( dotpos - atpos < 2 )) {
-      alert("Please enter correct email ID")
-      document.footermail.email.focus() ;
-      return false;
-	  }
-	  return true;
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
 }
 
+function validateFooterForm() {
+	let emailID = document.footermail.email,
+		atpos = emailID.value.indexOf("@"),
+		dotpos = emailID.value.lastIndexOf(".");
 
-var checkbox = document.querySelector('input[name=theme]');
+	if (atpos < 1 || (dotpos - atpos < 2)) {
+		alert("Please enter correct email ID")
+		emailID.focus();
+		return false;
+	}
+	return true;
+}
 
-checkbox.addEventListener('change', function() {
-  if(this.checked){
-	trans()
-	document.documentElement.setAttribute('data-theme', 'dark');
-  } else{
-	trans()
-	document.documentElement.setAttribute('data-theme', 'light');     
-  }
+function changeTheme() {
+	let docElement = document.documentElement;
+	docElement.classList.add('transition');
+	window.setTimeout(() => {
+		docElement.classList.remove('transition')
+	}, 1000)
+	if (event.target.checked) {
+		docElement.setAttribute('data-theme', 'dark');
+	} else {
+		docElement.setAttribute('data-theme', 'light');
+	}
+}
+
+function typeWriter(i) {
+	const txt = "GIRLSCRIPT CHENNAI";
+	if (i < txt.length) {
+		document.getElementById("typer").innerHTML += txt.charAt(i);
+		setTimeout(() => typeWriter(i + 1), 80);
+	}
+};
+
+// Window Loads
+$(function () {
+	let bodyElement = $(`body`);
+	bodyElement.prepend(header);
+	bodyElement.append(footer);
+	typeWriter(0);
+	activeTab();
 })
 
-let trans = () => {
-  document.documentElement.classList.add('transition');
-  window.setTimeout(() => {
-	document.documentElement.classList.remove('transition')
-  }, 1000)
-}
+window.onscroll = function () {
+	scrollFunction();
+};
+
