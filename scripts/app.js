@@ -32,12 +32,16 @@ let footer = $(`
 <footer>
 <div class="container">
   <div class="row">
-	<div class="col-lg-6 col-md-4 footer-logo"> 
+	<div class="col-lg-4 col-md-4 footer-logo"> 
 		<img src="assets/Images/logo.png" alt="" class="logo">
 	</div>
-	<div class="col-lg-6 col-md-8 mb-5" id="footer-c">
-	  <br> 
-
+	<div class="col-lg-4 col-md-8" id="footer-c">
+		<div class="switch">
+		<label>	
+			<input type="checkbox" name="theme" onchange="changeTheme()">	
+			<span class="slider round"></span>	
+		</label>
+		</div>
 	  <h3 class="footer-h">Join Our Newsletter</h3>
 	  <div class="border"></div>
 	  <p class="footer-p">Enter Your Email to get our news and updates.</p>
@@ -57,13 +61,7 @@ let footer = $(`
 		</div>
 		  <h6 class="footer-h3">Made with ♥</h6>
 	</center>
-</div>
-<center>	
-<label class="switch">	
-  <input type="checkbox" name="theme" onchange="changeTheme()">	
-  <span class="slider round"></span>	
-</label>	
-</center>
+</div>		
 </footer>`);
 
 function scrollFunction() {

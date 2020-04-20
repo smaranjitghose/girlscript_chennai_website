@@ -377,10 +377,6 @@ footer {
   overflow-x: hidden;
 }
 
-.footer-logo {
-  align-items: center;
-}
-
 .logo {
   width: 170px;
   display: block;
@@ -438,7 +434,8 @@ a.fa-linkedin {
   border: 1.5px solid  var(--theme-color);
   transition: all 300ms ease-in;
   border-radius: 5px;
-	box-shadow: 0 3px 6px var(--font-color);
+  box-shadow: 0 3px 6px var(--font-color);
+  margin-left: 90px;
 }
 
 .btn-spl:hover {
@@ -1197,6 +1194,10 @@ a.fa-linkedin {
   }
 }
 
+#footer-c{
+  margin-left: 380px;
+}
+
 @media only screen and (max-width: 770px) {
   #footer-c {
     align-items: center;
@@ -1239,10 +1240,11 @@ a.fa-linkedin {
   width: 60px;
   height: 34px;
   margin-top:1%;
+  margin-left: 100px;
 }
 
 .switch input { 
-  opacity: 
+  opacity: 0;
   width: 0;
   height: 0;
 }
