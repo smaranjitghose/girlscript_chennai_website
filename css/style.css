@@ -375,14 +375,24 @@ footer {
   background: var(--footer-bg);
   padding: 20px 0;
   overflow-x: hidden;
-}--btn-bg
+}
 
 .footer-logo {
   align-items: center;
 }
 
+.switch{
+  margin-left: 80px;
+}
+
+.switch-text{
+  color: orangered;
+  margin-left: 10px;
+}
+
 .logo {
   width: 250px;
+  display: block;
 }
 
 .logo1 {
@@ -1209,6 +1219,13 @@ a.fa-linkedin {
   #footer-c {
     align-items: center;
     text-align: center;
+  }
+
+  .switch{
+    margin-left: 230px;
+  }
+  .switch-text{
+    margin-left: 150px;
   }
 }
 
