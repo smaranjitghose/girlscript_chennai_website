@@ -1,6 +1,19 @@
-html, body {
+html{
     font-family: 'Lato', sans-serif;
     -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+    --contactForm-opacity:.989;
+    --defined-color: white;
+}
+
+html[ data-theme="dark"]{
+    --contactForm-opacity: .92;
+    --defined-color: #ebebeb;
+}
+
+ body {
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 .main-section {
@@ -11,18 +24,31 @@ html, body {
     background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.808)), url("../assets/Images/contact.jpg");
 }
 
+[data-aos^="fade"][data-aos^="fade"].aos-animate {
+  opacity: var(--contactForm-opacity);
+}
+
+.def-sec{
+  color: var(--defined-color);
+}
+
 .contact-form {
+    border: 0px;
     text-align: left;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.486);
+    box-shadow: 0 1px 4px white;
     transition: 0.6s;
     background-color: var(--white);
     margin-left: 5rem; 
-    border-radius: 10px;
+    border-radius: 7px;
+}
+
+.form-heading{
+  font-size:45px;
+  color: #222d39;
 }
 
 .contact-form:hover {
   text-align: left;
-  box-shadow: 0 5px 10px rgba(231, 85, 0, 0.836);
   transition: 0.6s;
 }
 
@@ -41,8 +67,8 @@ html, body {
   top: 0;
   padding: 6px 0 0 13px;
   transition: all 200ms;
-  opacity: 0.7;
-  color: #f47621;
+  font-size:15px;
+  color: #8792a1;
 }
 
 .form-control:not(:placeholder-shown) + .form-control-placeholder {
@@ -55,14 +81,14 @@ html, body {
 
 .no-border{
   border: none;
-  border-bottom: 2.5px solid black;
+  border-bottom: 1.5px solid black;
 }
 
 .no-border:focus{
   border: none;
   border-bottom: 2.5px solid #f47621;
   box-shadow: none;
-  background-color: #f3f3f3;
+  /* background-color: #f3f3f3; */
 }
 
 #submit-button {
@@ -71,12 +97,12 @@ html, body {
   border-radius: 5px;
   text-transform: uppercase;
   color: white;
-  box-shadow: 0 4px 6px #ff9a0e;
+  box-shadow: 0 2px 7px 0px #ff9a0e;
   transition: 0.6s;
 }
 
 #submit-button:hover {
-  box-shadow: 0 7px 30px #ff9a0e;
+  box-shadow: 0 7px 8px #ff9a0e;
   color: white;
   font-weight: bold;
 }
@@ -84,9 +110,7 @@ html, body {
 /* COMPACT CAPTCHA */
 
 .capbox {
-	background-color: #eb7d34;
-	background-image: linear-gradient(#eb7d34, #eb7d34);
-	border: #eb7d34 0px solid;
+	border: black 1px solid;
   border-radius: 4px;
 	border-width: 2px;
 	box-sizing: border-box;
@@ -94,7 +118,7 @@ html, body {
 	-webkit-box-sizing: border-box;
 	display: inline-block;
 	padding: 5px 8px 5px 8px;
-	margin-bottom: 20px;
+	margin-bottom: 35px;
 	margin-top: 10px;
 	}
 
@@ -129,7 +153,8 @@ html, body {
 #CaptchaInput {
 	border: #295B00 1px solid;
 	margin: 3px 0px 1px 0px;
-	width: 105px;
+  width: 105px;
+  height:25px;
   }
   
 
