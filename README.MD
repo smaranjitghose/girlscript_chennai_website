@@ -1,4 +1,5 @@
-# GirlScript Website Boilerplate
+<h1 align="center"><b> GirlSript Website Boilerplate  </b></h1>
+
 
 ![Issues](https://img.shields.io/github/issues/smaranjitghose/girlscript_chennai_website)
 ![Pull Requests](https://img.shields.io/github/issues-pr/smaranjitghose/girlscript_chennai_website?)
@@ -7,10 +8,6 @@
 ![License](https://img.shields.io/github/license/smaranjitghose/girlscript_chennai_website)
 ![GSSOC'20](https://img.shields.io/badge/GSSOC-20-orange?style=for-the-badge)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7751d10252d944ae8eb68120e1f20397)](https://app.codacy.com/manual/garimasingh128/girlscript_chennai_website?utm_source=github.com&utm_medium=referral&utm_content=garimasingh128/girlscript_chennai_website&utm_campaign=Badge_Grade_Dashboard)
-
-
-This is an open source project for creating a website that shall serve as a template/boilerplate for various chapters of GirlScript. With certain modifications to the content specific to the chapter using this, the need to build a website from scratch and the pains of fixing bugs and figuring out what part fits where is eliminated. Feel free to use this!. If this project helps you out, please give us a mention. Also, we would love to see your version of the same! Do a give a PR in a different branch that showcases how you used this!
-
 
 
 This is an open source project for creating a website that shall serve as a boilerplate for various chapters of GirlScript. With certain modifications to the content specific to the chapter using this, the need to build a website from scratch and the pains of fixing bugs and figuring out what part fits where is eliminated. Feel free to use this!. If this project helps you out, please give us a mention. Also, we would love to see your version of the same! Do a give a PR in a different branch that showcases how you used this!
@@ -26,11 +23,9 @@ This project is also meant to be a starting for all techies interested to get th
 
 [Link to the corresponding app template](https://github.com/smaranjitghose/girlscript_app)
 
-## Contribution Guidelines
+ <h2 align="center"><b> Contribution Guidelines  </b></h2>
 
-#### 👇 Prerequisites:
-
-![Pass](https://media.giphy.com/media/Z9cRCMdAMzXi25dwhE/giphy.gif)
+### 👇 Prerequisites:
 
 - Ability to use Git and Github is mandatory
 - Working knowledge of HTML and CSS
@@ -38,10 +33,11 @@ This project is also meant to be a starting for all techies interested to get th
 - UI/UX skills are appreciable but not mandatory
 - Additional backend skills of Django/NodeJS
 
-#### Steps:
-![Steps](https://media.giphy.com/media/o5BzNDDFQnepi/giphy.gif)
+### Steps:
 
-**1.** Fork [this](https://github.com/smaranjitghose/girlscript_chennai_website) repository :fork_and_knife:
+<p align="center"><img width=35% src="https://media.giphy.com/media/o5BzNDDFQnepi/giphy.gif"></p>
+
+**1.** Fork [this](https://github.com/smaranjitghose/girlscript_chennai_website) repository 
 
 
 <img src="https://user-images.githubusercontent.com/41269164/70219309-9a3eca80-176a-11ea-8a4d-1bd701d07314.png" width=300>
@@ -114,24 +110,23 @@ click on `Compare and Pull Request`
 - `git push --force` -> Sync your branch with remote
   _the --force is very important for the first time after rebase, don't forget it._
 
-#### Code of Conduct:
 
-![code_of_conduct](https://media.giphy.com/media/qHRwTyhWIj4UU/200w_d.gif)
 
-[Make sure you don't violate this](https://github.com/smaranjitghose/girscript_chennai_website/CODE_OF_CONDUCT.md)
+ <h2 align="center"><b> The Geeks behind this initiative:</b></h2> 
 
-# The Geeks Behind this!:
+ <p align="center"><img width=50% src="https://media.giphy.com/media/26wkRxKJ9yUZzlorK/giphy.gif"></p>
 
-![Admin](https://media.giphy.com/media/26wkRxKJ9yUZzlorK/giphy.gif)
 
 [![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/0)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/0)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/1)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/1)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/2)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/2)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/3)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/3)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/4)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/4)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/5)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/5)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/6)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/6)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/7)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/7)
 
-#### 👨 Project Admin
 
-<a href="https://sourcerer.io/smaranjitghose"><img src="https://avatars2.githubusercontent.com/u/46641503?v=4" height="50px" width="50px" alt=""/></a>
-[Smaranjit Ghose](https://github.com/smaranjitghose)
+<h3 align="center"><b> 👨 Project Admin</b></h3>
 
-#### 👬  Mentors and Project Maintainers
+
+<p align="center"><img width=20% src="https://avatars2.githubusercontent.com/u/46641503?v=4"></p>
+<h4 align="center"><b> Smaranjit Ghose</b></h4>
+
+### 👬  Mentors and Project Maintainers
 
 - [Sukkrit Sharma](https://github.com/sukkritsharmaofficial)
 - [Saswat Nayak](https://github.com/swat1998)
@@ -140,6 +135,13 @@ click on `Compare and Pull Request`
 
 Feel free to ask your queries!! 🙌
 
-## License 📝
-Refer to [LICENSE](./LICENSE).
+
+<h2 align="center"><b> Code of Conduct</b></h2> 
+
+<p align="center"><img width=35% src="https://media.giphy.com/media/qHRwTyhWIj4UU/200w_d.gif"></p>
+
+
+<h2 align="center"><b> License 📝</b></h2> 
+
+<p align="center"><img width=35% src="https://media.giphy.com/media/xUPGcJGy8I928yIlAQ/giphy.gif"></p>
 
