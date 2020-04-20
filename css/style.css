@@ -151,39 +151,49 @@ Nav bar
 ---------------------*/
 
 .navbar {
-  background: linear-gradient(to right, var(--nav1-color),var(--nav2-color));
-  color: var(--bg1-color) !important;
+  background: linear-gradient(to right, #F09819, rgb(253, 109, 81));
+  color: #ff9e0f;
   overflow: hidden;
   transition: 0.4s;
-  position: fixed; /* Sticky/fixed navbar */
   width: 100%;
-  top: 0; /* At the top */
-  z-index: 99;
-}
-.navbar a {
-  color: var(--bg1-color);
-  font-weight: bold;
-  font-size: 120%;
-  font-family: "Raleway", sans-serif;
-}
-#logo {
-  width: 80px;
-  transition: 0.4s;
-}
-.fixed-top {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-
-.navbar {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
+  box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.25);
+}
+
+.navbar a {
+  color: var(--bg1-color);
+  font-weight: bold;
+  font-size: 95%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.navbar ul li a:hover{
+  box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.1);
+  display: block;
+  background: rgba(255,255,255,0.08);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border-radius: 0.3rem;
+}
+
+#logo {
+  width: 200px;
+  transition: 0.4s;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+a.active {
+  color: var(--font-color) !important;
+  font-weight: 800 !important;
 }
 
 @media only screen and (max-width: 1185px) {
@@ -290,16 +300,6 @@ Parallax section
   height: 59.5%!important;
 }
 
-/*------------------
-  Join Us Section
--------------------- */
-
-.newsection {
-  background-color: var(--bg1-color);
-  border-left: 12px solid var(--theme-color);
-  border-right: 12px solid var(--theme-color);
-}
-
 /*---------------------
  Team Section
  ----------------------*/
@@ -368,6 +368,10 @@ footer {
 
 .logo {
   width: 250px;
+}
+
+.logo1 {
+  width: 150px;
 }
 
 .social-media {
@@ -523,39 +527,12 @@ a.fa-linkedin {
   background-color: #ff9933;
 }
 
-.card-title {
-  text-align: center;
-  color: #ff9933;
-  font-weight: bold;
-  letter-spacing: normal;
-}
-
-.card-text {
-  text-align: justify;
-  color: #e32879;
-}
-
 .ab out--part1 {
   opacity: 0;
 }
 
 .about--part1.animated {
   opacity: 1;
-}
-
-.stat {
-  padding-bottom: 30px;
-}
-
-.stat-items h2 {
-  font-weight: bold;
-  font-size: 42px;
-  color: darkorange;
-  margin-top: 8px;
-}
-.stat-items p {
-  font-weight: bold;
-  letter-spacing: 1px;
 }
 
 /*---------------------
@@ -669,17 +646,6 @@ a.fa-linkedin {
     bottom: 20px;
     right: 15px;
   }
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-ul.navbar-nav a:hover {
-  color: var(--font-color);
-}
-a.active {
-  color: var(--font-color) !important;
-  font-weight: 800 !important;
 }
 
 @media only screen and (max-width: 992px) {
@@ -1141,13 +1107,13 @@ a.active {
 
 .carousel-control-prev{
   position:absolute;
-  top:25%;
+  top:0;
   left:0%;
 }
 
 .carousel-control-next{
   position:absolute;
-  top:25%;
+  top:0;
   right:0%;
 }
 
