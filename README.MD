@@ -6,8 +6,6 @@
 ![Stars](	https://img.shields.io/github/stars/smaranjitghose/girlscript_chennai_website)
 ![License](https://img.shields.io/github/license/smaranjitghose/girlscript_chennai_website)
 ![GSSOC'20](https://img.shields.io/badge/GSSOC-20-orange?style=for-the-badge)
-
-
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7751d10252d944ae8eb68120e1f20397)](https://app.codacy.com/manual/garimasingh128/girlscript_chennai_website?utm_source=github.com&utm_medium=referral&utm_content=garimasingh128/girlscript_chennai_website&utm_campaign=Badge_Grade_Dashboard)
 
 
