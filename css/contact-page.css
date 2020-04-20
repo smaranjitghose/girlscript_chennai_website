@@ -206,3 +206,8 @@ html, body {
  }
 }
 
+@media only screen and (max-width: 994px){
+  body {
+    overflow-x: hidden;
+  }
+}
