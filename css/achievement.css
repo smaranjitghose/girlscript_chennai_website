@@ -26,7 +26,6 @@ a.toggle-info {
   transition: all 0.1s 0s ease-out;
 }
 
-
 div.achievement-card {
   margin: 70px auto;
   max-width: 1300px;
@@ -44,9 +43,9 @@ div.project-card {
   -webkit-transition: all 0.3s 0s ease-in;
   transition: all 0.3s 0s ease-in;
   width: 300px;
-  z-index: 1;
+  z-index: 2;
   box-shadow:  var(--projectCard-shadow);
-
+  cursor: pointer;
 
 }
 
@@ -57,6 +56,13 @@ div.project-card img {
 div.project-card img {
   max-width: 300px;
 } 
+
+.basic-cards {
+	margin-bottom: 2em;
+}
+.more-cards {
+	margin-bottom: 2em;
+}
 
 div.project-card .project-image-holder {
   background: var(--font-color);
@@ -148,6 +154,7 @@ div.achievement-card.showing div.project-card {
           transform: scale(0.92);
 }
 div.project-card.show {
+  z-index: 15;	
   opacity: 1 !important;
   -webkit-transform: scale(1) !important;
           transform: scale(1) !important;	  
@@ -235,7 +242,6 @@ margin-top:2rem;
   color: black;
 }
 
-.card
 .margin-button {
 	margin-top: 200px !important;
 }

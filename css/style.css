@@ -19,6 +19,7 @@ html {
   --nav1-color:#f09819;
   --nav2-color: #ff512f;
   --topBtn-bg: #f47621;
+  --lgt-white: #F8F8F8;
 }
 html[ data-theme="dark"] {
   
@@ -1117,13 +1118,13 @@ a.fa-linkedin {
 
 .carousel-control-prev{
   position:absolute;
-  top:25%;
+  top:0;
   left:0%;
 }
 
 .carousel-control-next{
   position:absolute;
-  top:25%;
+  top:0;
   right:0%;
 }
 
