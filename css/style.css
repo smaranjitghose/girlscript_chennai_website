@@ -1199,9 +1199,15 @@ a.fa-linkedin {
 }
 
 @media only screen and (max-width: 770px) {
-  #footer-c {
-    align-items: center;
+  .footer-logo{
     text-align: center;
+  }
+  #footer-c{
+    margin-left: -45px;
+    text-align: center;
+  }
+  .footer-h{
+    margin-left: 60px;
   }
 }
 
