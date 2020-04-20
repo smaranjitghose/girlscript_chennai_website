@@ -230,6 +230,45 @@ header {
 	margin-top: 2.5em ;
 }
 
+#faq{
+    background-color: white;
+    
+}
+
+#faq h2{
+    padding: 20px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.faq{
+   
+    margin: 10px;
+}
+
+.faq p{
+    padding: 5px;
+}
+
+.faq .q{
+    font-style: italic;
+    color: #55C18F;
+}
+
+.faq .q p{
+    font-weight: bold;
+}
+
+.faq span{
+    font-size: 1.2em;
+    padding-right: 5px;
+   
+    font-style: italic;
+    
+}
+
+
 @media screen and (min-width:500px) {
     .featured-schedule-collection {
         margin-top: 4em;
@@ -261,3 +300,4 @@ header {
         width: 28%;
     }
 }
+
