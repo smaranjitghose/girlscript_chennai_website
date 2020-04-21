@@ -740,6 +740,7 @@ a.fa-linkedin {
 }
 .ih-item a {
   color: var(--font-color);
+  cursor: pointer;
 }
 .ih-item a:hover {
   text-decoration: none;
