@@ -232,14 +232,18 @@ body {
 .card-image {
   grid-area: image;
 }
+
 .card-text {
   grid-area: text;
 }
+
 .card-stats {
   grid-area: stats;
   grid-area: stats; 
-  padding-top: 15px;
+  padding-top: 10px;
+  margin-top: 20px;
 }
+
 .card-image {
   grid-area: image;
   border-top-left-radius: 15px;
@@ -249,7 +253,9 @@ body {
 .card-image img{
   height: 260px;
   width: 270px;
+  border-radius: 10px;
 }
+
 .card-text {
   grid-area: text;
   margin: 25px;
@@ -257,12 +263,12 @@ body {
 
 .card-text p {
   color: grey;
-  font-size:15px;
+  font-size: 15px;
   font-weight: 300;
 }
 .card-text h2 {
-  margin-top:25px;
-  font-size:28px;
+  margin-top: 35px;
+  font-size: 28px;
 }
 
 .card:hover {
@@ -291,7 +297,7 @@ body {
 .card {
   transition: 0.5s ease;
   cursor: pointer;
-  margin:30px;
+  margin: 30px;
 }
 
 
@@ -305,7 +311,7 @@ body {
 }
 
 .card-btn:hover {
-  box-shadow: 0 7px 8px #ff9a0e;
+ box-shadow: 0 7px 8px #ff9a0e;
  color: white;
  font-weight: bold;
 }
