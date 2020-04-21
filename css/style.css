@@ -574,6 +574,9 @@ a.fa-linkedin {
   .vertical {
     display: hidden;
   }
+  .switch{
+    margin-left: 60px;
+  }
 }
 @media screen and (max-width: 600px) {
   section.module.parallax-spl {
@@ -1263,7 +1266,7 @@ a.fa-linkedin {
   left: 2px;
   right: 0;
   bottom: 0;
-  background-color: #f09819;
+  background-color: lightgrey;
   -webkit-transition: .4s;
   transition: .4s;
   margin-top: 2px;

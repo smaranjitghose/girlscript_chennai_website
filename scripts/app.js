@@ -25,13 +25,11 @@ let header = $(`
 			<a class="nav-link" href="contactUs.html"><span>CONTACT US</span></a>
 		</li>
 
-	  </ul>
-	  <center>		
+	  </ul>		
 	<label class="switch">		
 	  <input type="checkbox" name="theme" onchange="changeTheme()">		
 	  <span class="slider round"></span>		
 	</label>		
-	</center>
      </div>
 	</nav>`);
 
