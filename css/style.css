@@ -377,6 +377,10 @@ footer {
   overflow-x: hidden;
 }
 
+.footer-logo {	
+  align-items: center;	
+}
+
 .logo {
   width: 170px;
   display: block;
@@ -435,7 +439,6 @@ a.fa-linkedin {
   transition: all 300ms ease-in;
   border-radius: 5px;
   box-shadow: 0 3px 6px var(--font-color);
-  margin-left: 90px;
 }
 
 .btn-spl:hover {
@@ -1194,20 +1197,11 @@ a.fa-linkedin {
   }
 }
 
-#footer-c{
-  margin-left: 380px;
-}
-
 @media only screen and (max-width: 770px) {
-  .footer-logo{
-    text-align: center;
-  }
+
   #footer-c{
-    margin-left: -45px;
+    align-items: center;
     text-align: center;
-  }
-  .footer-h{
-    margin-left: 60px;
   }
 }
 
@@ -1240,13 +1234,15 @@ a.fa-linkedin {
   }
 }
 
+/* DARK THEME BUTTON*/
+
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 40px;
+  height: 20px;
   margin-top:1%;
-  margin-left: 100px;
+  position: relative;
 }
 
 .switch input { 
@@ -1270,17 +1266,17 @@ a.fa-linkedin {
 .slider:before {
   position: absolute;
   content: "";
-  height: 29px;
-  width: 29px;
-  left: 4px;
-  bottom: 2.5px;
+  height: 16px;
+  width: 16px;
+  left: 3.5px;
+  bottom: 2px;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 input:checked + .slider {
-  background-color: #111;
+  background-color: var(--bg1-color);
 }
 
 input:focus + .slider {
@@ -1288,9 +1284,7 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  transform: translateX(18px);
 }
 
 .slider.round {
@@ -1316,11 +1310,6 @@ input:checked + .slider:before {
 	padding-left: 80px;
 }
 
-
-@media only screen and (max-width: 992px){
-  .navbar {
-    position: relative;
-  }
 /*Card Designing*/
 
 .myDiv {
@@ -1335,7 +1324,6 @@ input:checked + .slider:before {
   padding-left: 60px;
 }	
 
-
 .myDiv1 {
   transition: all 1s;
   border-radius: 20px;
@@ -1346,7 +1334,7 @@ input:checked + .slider:before {
  .bg-lgt-grey{
   margin: 15px 0 15px 0;
  } 
-}
+
 @media only screen and (max-width: 760px){
 
   .spacing {
