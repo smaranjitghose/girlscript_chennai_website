@@ -1255,21 +1255,22 @@ a.fa-linkedin {
   position: absolute;
   cursor: pointer;
   top: 0;
-  left: 0;
+  left: 2px;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #f09819;
   -webkit-transition: .4s;
   transition: .4s;
+  margin-top: 2px;
 }
 
 .slider:before {
   position: absolute;
   content: "";
-  height: 16px;
-  width: 16px;
-  left: 3.5px;
-  bottom: 2px;
+  height: 15px;
+  width: 15px;
+  left: 3px;
+  bottom: 1.5px;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
