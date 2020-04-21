@@ -750,13 +750,13 @@ a.fa-linkedin {
   position: relative;
   width: 16rem;
   height: 16rem;
-  border-radius: 50%;
+  border-radius: 5%;
 }
 .ih-item.circle .img {
   position: relative;
   width: 220px;
   height: 220px;
-  border-radius: 50%;
+  border-radius: 5%;
 }
 .ih-item.circle .img:before {
   position: absolute;
@@ -764,14 +764,15 @@ a.fa-linkedin {
   content: '';
   width: 100%;
   height: 100%;
-  border-radius: 50%;
+  border-radius: 5%;
   box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(255, 255, 255, 0.6);
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
 .ih-item.circle .img img {
-  border-radius: 50%;
+  border-radius: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .ih-item.circle .info {
   position: absolute;
@@ -780,7 +781,7 @@ a.fa-linkedin {
   left: 0;
   right: 0;
   text-align: center;
-  border-radius: 50%;
+  border-radius: 5%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
