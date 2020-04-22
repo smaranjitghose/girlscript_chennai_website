@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500;600&family=Baloo+Paaji+2:wght@400;500;600&family=Comfortaa:wght@400;500;600;700&family=Montserrat:wght@100;400;500&family=Quicksand:wght@300;400;500&family=Raleway:wght@300;400;500;600&display=swap');
+
 html {
        --box-Shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
        --projectCard-shadow: 0 5px 10px rgba(73, 52, 52, 0.9);
@@ -26,10 +28,56 @@ a.toggle-info {
   transition: all 0.1s 0s ease-out;
 }
 
+.counter {
+  font-family: 'Comfortaa', sans-serif;
+  color: #333;
+}
+
+.counter-text {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: bolder;
+}
+
+.card-head {
+  font-family: 'Baloo Bhaina 2', sans-serif;
+  color: #333;
+}
+
+.project-card-head {
+  font-size: 42px;
+}
+
+.clr-theme {
+  font-weight: lighter;
+}
+
+.achievement-card-head {
+  font-size: 38px;
+  letter-spacing: 3px;
+}
+
+.card-title {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.center-btn-settings {
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 3px;
+}
+
+.rh1,.rh2,.rh3 {
+  font-size: 20px;
+  letter-spacing: 1.5px;
+}
+
 div.achievement-card {
   margin: 70px auto;
   max-width: 1300px;
   text-align: center;
+}
+
+.card-text {
+  font-family: 'Comfortaa', sans-serif;
 }
 
 div.project-card {
@@ -88,18 +136,18 @@ div.project-card div.project-title a.toggle-info {
 }
 
 div.project-card div.project-title h2 {
-  font-size: 24px;
-  font-weight: 700;
-  letter-spacing: -0.05em;
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: 1px;
   margin: 0;
   padding: 0;
   color: white;
 }
 div.project-card div.project-title h2 small {
   display: block;
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: -0.025em;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 div.project-card div.card-description {
   padding: 10px 15px 10px;
@@ -108,19 +156,29 @@ div.project-card div.card-description {
   text-align: justify;
   position: relative;
   font-size: 14px;
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 0.2px;
 }
+
 div.project-card div.card-actions {
+  font-family: 'Montserrat', sans-serif;
   box-shadow: var(--flapCard-shadow);
   background-color: #f3d3c4;
   padding: 10px 15px 20px;
   text-align: center;
 }
 
+div.project-card div.card-actions a:hover {
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2)
+}
+
 div.project-card div.card-actions a {
+    font-size: 12px;
     font-weight: bold;
     color: white;
-    background-color: var(--theme-color);
+    background-color: #f46721;
     border-radius: 10em;
+    letter-spacing: 1px;
   }
 
 div.project-card div.card-flap {

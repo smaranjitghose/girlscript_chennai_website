@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500;600&family=Comfortaa:wght@400;500;600;700&family=Montserrat:wght@100;300;400;500&family=Quicksand:wght@300;400;500&family=Raleway:wght@300;400;500;600&display=swap');
+
 html {
   font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -24,6 +26,26 @@ body {
 .upcoming-events .container{
   margin-top: 90px;
 }
+
+.font-weight-bolder {
+  letter-spacing: 1px;
+}
+
+.upcoming {
+  font-family: 'Montserrat', sans-serif;  
+  font-weight: 500;
+}
+
+.upcoming span{
+  font-weight: 300;
+}
+
+.event-part {
+  color: #f47621;
+  font-weight: 300;
+  letter-spacing: 0px;
+}
+
 .recent-events{
   background-color: var(--bg1-color);
   margin-top: 70px;
@@ -51,6 +73,12 @@ body {
     box-shadow: var(--card-shadow);
     background-color: var(--bg-Card);
     cursor: pointer;
+}
+
+.event-body {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
 .go-corner-1 {
@@ -88,6 +116,7 @@ body {
   margin-right: -4px;
   color: var(--font-color);
   font-family: courier;
+  color: white;
 }
 
 .announcement-item .announcement-icon {
@@ -101,11 +130,13 @@ body {
 }
 
 .announcement-item .announcement-content .announcement-title {
-    font-size: 21px;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 20px;
     text-transform: capitalize;
-    color: var(--teme-color);
-    font-weight: 600;
+    color: #f47621;
+    font-weight: 700;
     font-family: 'Lato', sans-serif;
+    letter-spacing: 1.5px;
 }
 
 .announcement-item .fa-map-marker {
@@ -130,6 +161,8 @@ body {
     transition: 0.6s;
     border-radius: 5px;
     box-shadow: 0 2px 7px 0px #ff9a0e;
+    font-family: 'Comfortaa', sans-serif;
+    letter-spacing: 0.2px;
   }
 
 .announcement-btn:hover {
@@ -223,6 +256,17 @@ body {
 
 
 /* CSS for card group */
+
+.recent {
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.recent span {
+  font-weight: 300;
+}
+
 .card {
   display: grid;
   grid-template-columns: 300px;
@@ -236,6 +280,11 @@ body {
   position: relative;
   z-index: 0;
 }
+
+.rh1 ,.rh2 ,.rh3 {
+  font-weight: 500;
+  font-family: 'Comfortaa', sans-serif;
+} 
 
 .card-image {
   grid-area: image;
@@ -273,11 +322,11 @@ body {
 .card-text p {
   color: grey;
   font-size: 15px;
-  font-weight: 300;
 }
 .card-text h2 {
   margin-top: 30px;
   font-size: 28px;
+  color: #f47621;
 }
 
 .card:hover {
@@ -317,6 +366,8 @@ body {
   transition: 0.6s;
   border-radius: 5px;
   box-shadow: 0 2px 7px 0px #ff9a0e;
+  letter-spacing: 0.2px;
+  font-family: 'Comfortaa';    
 }
 
 .card-btn:hover {
@@ -326,7 +377,7 @@ body {
 }
 
 .rb1, .rb2, .rb3{
-  padding-top: 15px;
+  padding-top: 18px;
   font-family: 'Lato', sans-serif;
 }
 
