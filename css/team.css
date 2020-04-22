@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500;600&family=Baloo+Paaji+2:wght@400;500;600&family=Comfortaa:wght@400;500;600;700&family=Montserrat:wght@100;400;500&family=Quicksand:wght@300;400;500&family=Raleway:wght@300;400;500;600&display=swap');
+
 html{
     font-family: 'Lato', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -40,32 +42,50 @@ html[ data-theme="dark"] {
 }
 
 #teamHeading{
-    font-size: 60px;
-    font-weight: bold;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 45px;
+    font-weight: 400;
     color:var(--font-color);
 }
 
 #teamHeading span {
     color: var(--theme-color);
-    font-weight:normal;
 }
 
 #teamPara{
-    font-size: 20px;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 16px;
     color: var(--font-color);
+    font-weight: 400;
+    letter-spacing: 0.6px;
 }
 
 .team-center-heading {
-    font-size: 50px;
-    font-weight: bold;
+    font-family: 'Baloo Bhaina 2', sans-serif;
+    font-size: 55px;
+    font-weight: 400;
     color:var(--font-color);
     text-align: center;
 
 }
 
 .team-center-heading span {
-    font-weight:normal;
+    font-weight: 400;
     color:var(--theme-color);
+}
+
+.team-name {
+    font-size: 18px;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 700;
+    color: #555;
+}
+
+.team-name-2 {
+    font-size: 20px;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 700;
+    color: #555;
 }
 
 .circularDiv{
@@ -118,6 +138,13 @@ html[ data-theme="dark"] {
     transition: 0.6s;
     border-radius: 5px;
     box-shadow: 0 2px 7px 0px #ff9a0e;
+}
+
+.manageBtn {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 17px;
 }
 
 .techBtn:hover, .boardBtn:hover, .manageBtn:hover{
