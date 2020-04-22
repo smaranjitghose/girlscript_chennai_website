@@ -1,9 +1,24 @@
 let header = $(`
 <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
   <a class="navbar-brand" href="index.html"><img src="assets/Images/Logo1.png" width="210px" id="logo"></a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	  <span class="navbar-toggler-icon"></span>
-	</button>
+  <div id="myNav" class="fullScreen-navigation">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="navigation-content">
+          <a href="index.html">HOME</a>
+          <a href="announcements.html">ANNOUNCEMENTS</a>
+          <a href="team.html">OUR TEAM</a>
+		  <a href="achievements.html">OUR ACHIEVEMENTS</a>
+		  <a href="blogs.html">BLOGS</a>
+		  <a href="contactUs.html">CONTACT US</a>
+		  <label class="switch">		
+	         <input type="checkbox" name="theme" onchange="changeTheme()">		
+	         <span class="slider round"></span>		
+          </label>
+		  
+        </div>
+  </div>
+
+	  <span class="navbar-toggler-icon navbar-toggler" onclick="openNav()"></span>
 	<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 	  <ul class="navbar-nav ml-5">
 		<li class="nav-item">
@@ -27,10 +42,10 @@ let header = $(`
 
 	  </ul>		
 	<label class="switch">		
-	  <input type="checkbox" name="theme" onchange="changeTheme()">		
+	  <input type="checkbox" name="theme" id="theme" onchange="changeTheme()">		
 	  <span class="slider round"></span>		
 	</label>		
-     </div>
+	 </div>	 
 	</nav>`);
 
   
@@ -110,16 +125,21 @@ function validateFooterForm() {
 	return true;
 }
 
-function changeTheme() {
+function changeTheme(value) {
 	let docElement = document.documentElement;
+	let checkElement = $('#theme')[0]
 	docElement.classList.add('transition');
 	window.setTimeout(() => {
 		docElement.classList.remove('transition')
 	}, 1000)
-	if (event.target.checked) {
+	if (value === "dark" || checkElement.checked) {
+		checkElement.checked = "true";
 		docElement.setAttribute('data-theme', 'dark');
+		localStorage.setItem("mode","dark")
 	} else {
+		checkElement.checked = false;
 		docElement.setAttribute('data-theme', 'light');
+		localStorage.setItem("mode","light")
 	}
 }
 
@@ -129,9 +149,21 @@ $(function () {
 	bodyElement.prepend(header);
 	bodyElement.append(footer);
 	activeTab();
+	if(localStorage["mode"])
+	{
+		changeTheme(localStorage["mode"]);
+	}
 })
 
 window.onscroll = function () {
 	scrollFunction();
 };
 
+function openNav() {
+	document.getElementById("myNav").style.display = "block";
+
+  }
+  
+  function closeNav() {
+	document.getElementById("myNav").style.display = "none";
+  }

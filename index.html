@@ -26,8 +26,14 @@
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- JQuery -->
+		<!--JQuery slim-->
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+		crossorigin="anonymous"></script>
+		<!--JQuery minified-->
+		<script
+		src="https://code.jquery.com/jquery-3.5.0.min.js"
+		integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
 		crossorigin="anonymous"></script>
 	<!-- Bootstrap -->
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -52,6 +58,7 @@
 		document.getElementsByTagName('html')[0].className += ' Q_js'; // better than noscript
 	</script>
 	<script src="./scripts/app.js"></script>
+	<script src="./scripts/script.js"></script>
 </head>
 
 <body>
@@ -95,17 +102,17 @@
 
 	<section class="newsection bg-lgt-grey p-3">
 		<div class="container p-3 myDiv">
-			<h2 class="pt-4 text-center fw-bold ">ABOUT <span class="clr-theme fw-400">GIRLSCRIPT</span></h2>
+			<h2 class="pt-4 text-center fw-bold heading about-head">ABOUT <span class="clr-theme fw-400">GIRLSCRIPT</span></h2>
 			<div class="row forScroll">
 				<div class="col-lg-8 col-md-7 col-sm-12 mt-5 dark-mode spacing">
 
-					<p class="mt-2 mb-3 fs-17px text-justify"><b>GirlScript Foundation</b> is a section-8 NON PROFIT
+					<p class="mt-2 mb-3 fs-17px text-justify about-para"><b>GirlScript Foundation</b> is a section-8 NON PROFIT
 						company registered under the government of India on 2nd June 2017. GirlScript started as a
 						project has been selected by Mozilla under Open Leadership program out of 51 open-source
 						projects worldwide. GirlScript hosts many tech events and coding competition to help you get
 						started and learn computer programming.
-						<br /><br /><i>No matter whether you are a beginner or an experienced individual, GirlScript is
-							open for all.</i><br />
+						<br /><br /><span class="italic">No matter whether you are a beginner or an experienced individual, GirlScript is
+							open for all.</span><br />
 						</br />GirlScript's mission is to encourage individuals to learn how to code and stand out among
 						the crowd. Along with learning, GirlScript aims to create opportunities and growth via technical
 						education among various groups of people.
@@ -118,8 +125,9 @@
 							<li>Share technical knowledge and content for helping individuals in the programming world.
 							</li>
 						</ul>
+						</p>
 						<br />
-						<p><a href="#" class="clr-theme fw-bold">GirlScript Chennai</a> is India's fastest growing tech
+						<p class="about-para"><a href="#" class="clr-theme fw-bold">GirlScript Chennai</a> is India's fastest growing tech
 							community at the heart of Chennai. We believe in uplifting beginners in tech while promoting
 							diversity.</p>
 
@@ -138,7 +146,7 @@
 		</div>
 	</section>
 	<section class="newsection p-5">
-		<h2 class="pt-5 pb-5 text-center fw-bold ">OUR <span class="clr-theme fw-100">INITIATIVES</span></h2>
+		<h2 class="pt-5 pb-5 text-center fw-bold heading">OUR <span class="clr-theme fw-100">INITIATIVES</span></h2>
 
 		<div class="initiatives-cards forScrollCards">
 
@@ -289,10 +297,10 @@
 
 	<section class="pt-3 pb-3 newsection bg-lgt-grey">
 		<div class="container myDiv1">
-		<h2 class="pt-5 pb-5 text-center fw-bold">OUR <span class="clr-theme fw-100">ACHIEVEMENTS</span></h2>
+		<h2 class="pt-5 pb-5 text-center fw-bold heading">OUR <span class="clr-theme fw-100">ACHIEVEMENTS</span></h2>
 			<div class="row for-Scroll-Achievements">
 				<div class="col-lg-5">
-					<h3 class="text-center p-4 pb-4">OUR ACHIEVEMENTS SPEAK FOR THEMSELVES</h3>
+					<h3 class="text-center p-4 pb-4 achieve-content">Our Achievements Speak For Themselves</h3>
 					<a href="achievements.html" class="center-btn-settings center-btn-settings2 btn btn-lg mt-2">Read
 						More</a>
 
@@ -331,9 +339,9 @@
 	</section>
 
 	<section class="newsection p-5">
-		<h2 class="pt-5 pb-2 text-center fw-bold">WE CREATE TRENDS <span class="clr-theme fw-100">FOR THE WORLD </span>
+		<h2 class="pt-5 pb-2 text-center fw-bold heading">WE CREATE TRENDS <span class="clr-theme fw-100">FOR THE WORLD </span>
 		</h2>
-		<h3 class="mb-5 text-center">Join us and get a chance to learn</h3>
+		<h3 class="mb-5 text-center join-us">Join us and get a chance to learn</h3>
 
 		<div class="feature-cards scroll-feature-cards">
 
@@ -393,11 +401,11 @@
 				</a></div>
 		</div>
 
-		<a href="contactUs.html" class="center-btn-settings center-btn-settings2 btn btn-lg mt-5">GET IN TOUCH</a>
+		<a href="contactUs.html" class="center-btn-settings center-btn-settings2 btn btn-lg mt-5">Get In Touch</a>
 	</section>
 
 	<!-- Footer -->
-	<a class="gotopbtn clr-wt" id="scroll-top" href="#"> <i class="fa fa-chevron-up clr-wt"></i> </a>
+	<a class="gotopbtn clr-wt" id="topBtn" style="display: none";> <i class="fa fa-chevron-up clr-wt"></i> </a>
 
 </body>
 <script src="./scripts/particle.js"></script>

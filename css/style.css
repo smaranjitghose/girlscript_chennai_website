@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500;600&family=Baloo+Paaji+2:wght@400;500;600&family=Comfortaa:wght@400;500;600;700&family=Montserrat:wght@100;400;500&family=Quicksand:wght@300;400;500&family=Raleway:wght@300;400;500;600&display=swap');
+
 html {
   height: 100%;
   font-family: "Libre Franklin", sans-serif;
@@ -213,37 +215,127 @@ a.active {
 
 @media only screen and (max-width: 1185px) {
   .nav-item {
-    font-size: 0.944rem;
+    font-size: 0.93rem;
   }
 }
 
 @media only screen and (max-width: 1141px) {
   .nav-item {
-    font-size: 0.887rem;
+    font-size: 0.85rem;
   }
 }
 
 @media only screen and (max-width: 1094px) {
   .nav-item {
-    font-size: 0.838rem;
+    font-size: 0.72rem;
   }
 }
 
 @media only screen and (max-width: 1054px) {
   .nav-item {
-    font-size: 0.768rem;
+    font-size: 0.71rem;
   }
 }
 
 @media only screen and (max-width: 998px) {
   .nav-item {
-    font-size: 0.759rem;
+    font-size: 0.7rem;
+  }
+}
+
+
+
+.fullScreen-navigation {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #202020;
+}
+
+.navigation-content {
+  position: relative;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.fullScreen-navigation a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #eeeeee;
+  display: block;
+  transition: 0.3s;
+  font-weight:100;
+}
+
+
+.fullScreen-navigation a:hover, .fullScreen-navigation a:focus {
+  color: #f46721;
+}
+
+.fullScreen-navigation .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 45px;
+}
+
+@media screen and (max-width: 480px) {
+  .navigation-content{top:20%}
+  .fullScreen-navigation a {font-size: 15px}
+  .fullScreen-navigation .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
   }
 }
 
 /*---------------------
   Counter Section
 -----------------------*/
+
+.heading {
+  font-family: 'Baloo Bhaina 2', sans-serif;
+  font-size: 45px;
+  color: #444; 
+}
+
+.about-para{
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+.about-para span {
+  color: var(--theme-color);
+}
+.about-para .italic {
+  color: #777;
+}
+
+.about-para + ul{
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+.join-us {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 25px;
+  color: #777;
+}
+
+.achieve-content {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 25px;
+}
+
 
 .containersection {
   background-color: var(--bg2-color);
@@ -274,7 +366,13 @@ a.active {
   padding-left: 150px;
 }
 
+.counter-item .ci-text p{
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 0.5px;
+}
+
 .counter-item .ci-text h4 {
+  font-family: 'Comfortaa',sans-serif;
   font-size: 22px;
   color: var(--font-color);
   font-weight: 700;
@@ -574,9 +672,6 @@ a.fa-linkedin {
   .vertical {
     display: hidden;
   }
-  .switch{
-    margin-left: 60px;
-  }
 }
 @media screen and (max-width: 600px) {
   section.module.parallax-spl {
@@ -624,6 +719,7 @@ a.fa-linkedin {
 }
 
 .counter-item .ci-number {
+  font-family: 'Quicksand', sans-serif;
   font-size: 46px;
   color: var(--font-color);
   font-weight: 700;
@@ -677,7 +773,8 @@ a.fa-linkedin {
 }
 
 .center-btn-settings {
-  padding: 16px 40px;
+  font-family: 'Comfortaa',sans-serif;
+  padding: 10px 40px;
   font-size: 16px;
   font-weight: 700;
   margin: 0 auto;
@@ -843,7 +940,8 @@ a.fa-linkedin {
   transition: all 0.8s ease-in-out;
 }
 .ih-item.circle.effect .info h3 {
-  color: white;
+  font-family: 'Baloo Bhaina 2', sans-serif;
+  color: #ddd;
   text-transform: uppercase;
   position: relative;
   letter-spacing: 2px;
@@ -901,10 +999,12 @@ a.fa-linkedin {
 }
 
 .flip-card-head {
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 16px;
   color: var(--theme-color);
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   margin: 1rem;
 }
 
@@ -967,8 +1067,9 @@ a.fa-linkedin {
 }
 
 .flip-card-detail {
-  font-size: 0.9rem;
-  color: var(--font-color);
+  font-family: 'Comfortaa',sans-serif;
+  font-size: 0.85rem;
+  color: white;
 }
 
 .flip-card:hover .flip-card-content {
@@ -1133,6 +1234,7 @@ a.fa-linkedin {
 }
 
 .main-head {
+  font-family: 'Baloo Bhaina 2', sans-serif;
   color: #fff;
   text-align: center;
   margin: 1rem;
@@ -1140,6 +1242,7 @@ a.fa-linkedin {
 }
 
 .sub-head {
+  font-family: 'Baloo Bhaina 2',sans-serif;
   color: var(--theme-color);
   text-align: center;
   text-transform: uppercase;
