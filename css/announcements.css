@@ -205,11 +205,19 @@ body {
   }
 }
 
-@media only screen and (max-width: 691px) {
-  .upcoming-events .container{
-      margin-top: 120px;
+@media only screen and (max-width: 321px) {
+  .go-corner-2{
+    top: 825px;
   }
-  
+}
+
+@media only screen and (max-width: 992px) {
+  .upcoming-events .container{
+      margin-top: 30px;
+  }
+  .pt-5{
+    margin-top: 1rem;
+  }
 }
 
 
@@ -319,4 +327,31 @@ body {
 .rb1, .rb2, .rb3{
   padding-top: 15px;
   font-family: 'Lato', sans-serif;
+}
+
+.card-text h2 {
+  color: black;
+}
+
+@media only screen and (max-width: 340px) {
+  .card-image img{
+    margin-right: 2.5rem;
+    height: 240px;
+    width: 250px;
+  }
+
+  .card-text{
+    margin-right: 4rem;
+    margin-top: 1rem;
+ }
+
+  .card-btn{
+    margin-right: 35px;
+    padding-top: 10px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .font-weight-bolder {
+    text-align: center;
+}
 }
