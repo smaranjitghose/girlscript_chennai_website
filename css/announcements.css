@@ -213,7 +213,7 @@ body {
 
 @media only screen and (max-width: 992px) {
   .upcoming-events .container{
-      margin-top: 30px;
+      margin-top: 5rem;
   }
   .pt-5{
     margin-top: 1rem;
@@ -249,7 +249,7 @@ body {
   grid-area: stats;
   grid-area: stats; 
   padding-top: 20px;
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 .card-image {
@@ -262,6 +262,7 @@ body {
   height: 250px;
   width: 270px;
   border-radius: 10px;
+  margin-top: 10px;
 }
 
 .card-text {
@@ -275,7 +276,7 @@ body {
   font-weight: 300;
 }
 .card-text h2 {
-  margin-top: 25px;
+  margin-top: 30px;
   font-size: 28px;
 }
 
@@ -336,6 +337,7 @@ body {
 @media only screen and (max-width: 340px) {
   .card-image img{
     margin-right: 2.5rem;
+    margin-top: 5px;
     height: 240px;
     width: 250px;
   }
