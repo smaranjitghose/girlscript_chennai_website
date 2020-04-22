@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500;600&family=Baloo+Paaji+2:wght@400;500;600&family=Comfortaa:wght@400;500;600;700&family=Montserrat:wght@100;400;500&family=Quicksand:wght@300;400;500&family=Raleway:wght@300;400;500;600&display=swap');
+
 html{
     font-family: 'Lato', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -43,6 +45,7 @@ html[ data-theme="dark"]{
 }
 
 .form-heading{
+  font-family: 'Baloo Bhaina 2', sans-serif;
   font-size:45px;
   color: #222d39;
 }
@@ -63,12 +66,14 @@ html[ data-theme="dark"]{
 }
 
 .form-control-placeholder {
+  font-family: 'Quicksand', sans-serif;
   position: absolute;
   top: 0;
   padding: 6px 0 0 13px;
   transition: all 200ms;
-  font-size:15px;
+  font-size:16px;
   color: #8792a1;
+  letter-spacing: 1px;
 }
 
 .form-control:not(:placeholder-shown) + .form-control-placeholder {
@@ -170,6 +175,7 @@ html[ data-theme="dark"]{
 }
   
 .def h4{
+  font-family: 'Comfortaa', sans-serif;
   color: #f47621;
   font-size: 1.5rem;
   font-weight: bold;
@@ -191,6 +197,8 @@ html[ data-theme="dark"]{
 }
 
 .def-sec{
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 1px;
   margin-top: 0.5rem;
   padding-right: 1rem;
   font-size: 0.9em;
