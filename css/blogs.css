@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500;600&family=Baloo+Paaji+2:wght@400;500;600&family=Comfortaa:wght@400;500;600;700&family=Montserrat:wght@100;400;500&family=Quicksand:wght@300;400;500&family=Raleway:wght@300;400;500;600&display=swap');
+
 html {
     font-family: 'Raleway', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -32,21 +34,33 @@ Blog Cards
 }
 
 .rtb-col h2{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     color:  var(--theme-color);
     text-transform: uppercase;
     font-weight: 600;
     padding-top: 30px;
-    font-size: 1.5em;
+    font-size: 1.3em;
+    text-transform: capitalize;
+}
+
+.rtb-col .author {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    color: #444;
+    letter-spacing: 0.5px;
 }
 
 .rtb-col h3{
+    font-family: 'Quicksand', sans-serif;
+    font-weight:500;
     color:var(--theme-color);
     padding-top: 30px;
     font-size: 1em;
+    opacity: 0.9;
 }
 
 .rtb-col p{
+    font-family: 'Quicksand', sans-serif;
     color: black;
     font-size: 1em;
 }
@@ -86,19 +100,30 @@ Blog Cards
 }
 
 .rtb-inline h1{
-    font-size: 1.5em;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 1.3em;
     font-weight: bold;
     color: var(--theme-color);
 }
 
-.rtb-inline h3{
-    font-size: 1em;
+.rtb-inline .post-author {
+    font-family: 'Quicksand', sans-serif;
     font-weight: bold;
+    color: #444;
+    letter-spacing: 0.5px;
+}
+
+.rtb-inline h3{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
     padding-bottom: 20px;
     color : var(--theme-color);
+    opacity: 0.9;
 }
 
 .rtb-inline p{
+    font-family: 'Quicksand', sans-serif;
     text-align: justify;
     color: black;
 }
@@ -111,8 +136,9 @@ Blog Cards
 }
 
 .rtb-inline hr {
-    background-color: black;
+    background-color: #888;
     margin-bottom: 2em;
+    opacity: 0.2;
 }
 
 #blogid{
@@ -140,15 +166,17 @@ Blog Cards
 
 
 .heading-blog{
-    font-weight:bold;
-    font-size:3rem;
+    font-family: 'Baloo Bhaina 2', sans-serif;
+    font-weight: 500;
+    font-size:3.5rem;
 }
 .heading-blog span{
     color: var(--theme-color);
-    font-weight:200;
+    font-weight:100;
 }
 
 .blog-btn {
+    font-family: 'Comfortaa', sans-serif;
     background-color: var(--btn-bg);
     color: white;
     font-weight: bold;
@@ -159,6 +187,7 @@ Blog Cards
     display: flex;
     justify-content: center;
     width: 144px;
+    letter-spacing: 0.5px;
 }
 
 .blog-btn:hover {
