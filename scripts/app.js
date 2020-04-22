@@ -27,7 +27,7 @@ let header = $(`
 
 	  </ul>		
 	<label class="switch">		
-	  <input type="checkbox" name="theme" onchange="changeTheme()">		
+	  <input type="checkbox" name="theme" id="theme" onchange="changeTheme()">		
 	  <span class="slider round"></span>		
 	</label>		
      </div>
@@ -110,16 +110,21 @@ function validateFooterForm() {
 	return true;
 }
 
-function changeTheme() {
+function changeTheme(value) {
 	let docElement = document.documentElement;
+	let checkElement = $('#theme')[0]
 	docElement.classList.add('transition');
 	window.setTimeout(() => {
 		docElement.classList.remove('transition')
 	}, 1000)
-	if (event.target.checked) {
+	if (value === "dark" || checkElement.checked) {
+		checkElement.checked = "true";
 		docElement.setAttribute('data-theme', 'dark');
+		localStorage.setItem("mode","dark")
 	} else {
+		checkElement.checked = false;
 		docElement.setAttribute('data-theme', 'light');
+		localStorage.setItem("mode","light")
 	}
 }
 
@@ -129,6 +134,10 @@ $(function () {
 	bodyElement.prepend(header);
 	bodyElement.append(footer);
 	activeTab();
+	if(localStorage["mode"])
+	{
+		changeTheme(localStorage["mode"]);
+	}
 })
 
 window.onscroll = function () {
