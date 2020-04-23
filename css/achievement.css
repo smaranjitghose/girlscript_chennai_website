@@ -20,7 +20,6 @@ html[ data-theme="dark"] {
 a.toggle-info {
   background: #ff2019;
   border-radius: 4px;
-  box-shadow: var(--box-Shadow);
   color: var(--theme-color);
   display: inline-block;
   padding: 6px 30px 8px;
