@@ -6,11 +6,13 @@ html {
   --bg-Card:rgb(250,250,250);
   --card-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2);
   --boxCard-shadow:5px 5px 15px rgba(0,0,0,0.9);
+  --box-clr:#fff;
 }
 html[ data-theme="dark"] {
- --bg-Card:#ebebeb;
+ --bg-Card:#202020;
  --card-shadow: 0 4px 8px 0 #fff;
- --boxCard-shadow: 0 4px 8px 0 #fff;
+ --boxCard-shadow: 0 2px 4px 0 #f47621;
+ --box-clr: #202020;
 }
 
 body {
@@ -131,11 +133,10 @@ body {
 
 .timeline-content {
   padding: 20px 30px;
-  background-color: white;
+  background-color: var(--box-clr);
   position: relative;
   border-radius: 6px;
-  border: 1px solid black;
-  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 25px rgba(240, 112, 0, 0.23), 0 2px 0px rgba(240, 112, 0, 0.5);
 }
 
 .time {
@@ -146,6 +147,7 @@ body {
   border: 1px solid black;                                                                                                                                                                                                                                                                                                                                              z;
   border-radius: 18px;
   transition: 300ms linear;
+  background-color: var(--box-clr);
 
 }
 
@@ -226,13 +228,24 @@ body {
 
 .card-text p {
   color: grey;
-  font-size: 15px;
+  font-size: 14.9px;
 }
+
 .card-text h2 {
   margin-top: 30px;
   font-size: 28px;
-  color: #f47621;
+  color: var(--font-color);
 }
+
+.r-events-card:hover .card-text h2 {
+	color: var(--white);
+ }
+ .r-events-card:hover .card-text p{
+	 color: var(--white);
+ }
+ .r-events-card:hover .card-stats{
+	 background-color: var(--box-clr);
+ }
 
 .card:hover {
   transform: scale(1.15);
@@ -286,8 +299,13 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-.card-text h2 {
-  color: black;
+.line{
+  background-color: var(--heading-clr);
+  border-top: 0.5px solid rgba(0,0,0,.1);
+}
+
+.description{
+  color: var(--font-color);
 }
 
 @media only screen and (max-width: 340px) {
