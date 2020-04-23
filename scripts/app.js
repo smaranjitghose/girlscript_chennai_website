@@ -1,6 +1,6 @@
 let header = $(`
 <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
-  <a class="navbar-brand" href="index.html"><img src="assets/Images/Logo1.png" width="210px" id="logo"></a>
+  <a class="navbar-brand" href="index.html"><img src="assets/Images/Logo1.png" id="logo"></a>
   <div id="myNav" class="fullScreen-navigation">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="navigation-content">
@@ -86,10 +86,7 @@ function scrollFunction() {
 	if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
 		navBar.style.padding = "2px 16px";
 		logo.width = "160px";
-	} else {
-		navBar.style.padding = "4px 16px";
-		logo.style.width = "210px";
-	}
+    }
 }
 
 function activeTab() {
