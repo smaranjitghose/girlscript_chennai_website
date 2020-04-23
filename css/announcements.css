@@ -160,6 +160,72 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 
+/* Making Timeline Responsive */
+
+
+@media screen and (max-width: 770px) {
+  
+  .timeline::after {
+  left: 31px;
+  }
+
+  /* Making the display none for the time */
+
+  .time{
+    display:none;
+  }
+  
+  .timeline-container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  .timeline-container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  .right {
+  left: 0%;
+  }
+}
+
+
+@media screen and (max-width: 395px) {
+
+  .timeline-content {
+    padding: 7px 12px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    border: 1px solid black;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .timeline-content h3{
+    font-size: 25px;
+  }
+
+  .timeline-content p{
+    font-size: 15px;
+  }
+
+  .timeline-container {
+    width: 100%;
+    padding-left: 55px;
+    padding-right: 5px;
+    padding-bottom:30px;
+    }
+}
+
+
 /* CSS for card group */
 
 .recent {
