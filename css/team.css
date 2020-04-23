@@ -7,14 +7,16 @@ html{
     --separator-bgColor: linear-gradient(to right, rgba(0, 0, 0, 0), #111, rgba(0, 0, 0, 0));
     --box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.1);
     --box-shadowOnHover: 0 0 8px 8px rgba(0,0,0,0.2);
+    --team-name:#555;
 
 }
 
 html[ data-theme="dark"] {
     background-color: var(--bg1-color);
     --separator-bgColor:  #fff;
-    --box-shadow: 0px 0px 3px 3px #fff;
+    --box-shadow: 0px 0px 2px 2px #ffffff;
     --box-shadowOnHover: 0 0 4px 4px #fff;
+    --team-name: #fff;
 }
 
  body {
@@ -78,14 +80,14 @@ html[ data-theme="dark"] {
     font-size: 18px;
     font-family: 'Comfortaa', sans-serif;
     font-weight: 700;
-    color: #555;
+    color: var(--team-name);
 }
 
 .team-name-2 {
     font-size: 20px;
     font-family: 'Comfortaa', sans-serif;
     font-weight: 700;
-    color: #555;
+    color: var(--team-name);
 }
 
 .circularDiv{
