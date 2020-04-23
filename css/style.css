@@ -14,7 +14,7 @@ html {
   --font-color: #111111;
   --bg2-color: #f5f5f5;
   --shadow-color: #191919;
-  --footer-bg: #232323;
+  --footer-bg: 	#101010;
   --footer-clr: #c4c4c4;
   --btn-bg:#f46721;
   --flipCard-shadow:rgba(0, 0, 0, 0.2);
@@ -22,21 +22,23 @@ html {
   --nav2-color: #ff512f;
   --topBtn-bg: #f47621;
   --lgt-white: #F8F8F8;
+  --heading-clr: #444;
 }
 html[ data-theme="dark"] {
   
   --theme-color: #ff8723;
-  --bg1-color: #434343;
+  --bg1-color: #121212;
   --font-color:#e9e9e9;
   --bg2-color: #333333;
   --shadow-color: #fff;
-  --footer-bg: #fff;
-  --footer-clr: #191919;
+  --footer-bg: 	#383838;
+  --footer-clr: #fff;
   --btn-bg:#ff8723;
-  --flipCard-shadow:#fff;
+  --flipCard-shadow:#f09819;
   --nav1-color:#ffa336;
   --nav2-color: #ff8723;
   --topBtn-bg: #ff8723;
+  --heading-clr: #fff;
 }
 
 body {
@@ -303,7 +305,7 @@ a.active {
 .heading {
   font-family: 'Baloo Bhaina 2', sans-serif;
   font-size: 45px;
-  color: #444; 
+  color:var(--heading-clr); 
 }
 
 .about-para{
@@ -328,7 +330,7 @@ a.active {
 .join-us {
   font-family: 'Quicksand', sans-serif;
   font-size: 25px;
-  color: #777;
+  color: var(--font-color);
 }
 
 .achieve-content {
@@ -488,6 +490,7 @@ footer {
   margin-top: 3%;
   align-items: center;
 }
+
 .footer-h2, .footer-h3{
   margin-top: 2%;
   color: var(--footer-clr);
@@ -529,21 +532,19 @@ a.fa-linkedin {
 
 .btn-spl {
   border-radius: 10em;
-  color: var(--bg1-color);
+  color: var(--footer-clr);
   border-color: orangeOrange;
   width: 100px;
   height: 42px;
   border: 1.5px solid  var(--theme-color);
   transition: all 300ms ease-in;
   border-radius: 5px;
-  box-shadow: 0 3px 6px var(--font-color);
 }
 
 .btn-spl:hover {
   background-color: orangeOrange;
   color: var(--bg1-color);
   background: var(--theme-color);
-	box-shadow: 0 3px 6px var(--font-color);
 }
 
 .right-col h1 {
@@ -558,12 +559,13 @@ a.fa-linkedin {
   border-style: none !important;
   margin: 0 auto;
 }
+
 .footer-p {
   margin-top: 1%;
   color: var(--footer-clr);
 }
 .footer-h {
-  color:var(--footer-clr);
+  color: #fff;
 }
 
 
@@ -1037,7 +1039,6 @@ a.fa-linkedin {
   background-color: var(--theme-color);
   color: var(--bg1-color);
   transform: rotateY(180deg);
-  box-shadow: 0 4px 8px 0 var(--flipCard-shadow);
 }
 
 @media only screen and (hover: none) and (pointer: coarse) {
@@ -1442,10 +1443,6 @@ input:checked + .slider:before {
   cursor: pointer;
   box-shadow: 0 10px 25px rgba(240, 112, 0, 0.23), 0 6px 0px rgba(240, 112, 0, 0.5);
 }
-
- .bg-lgt-grey{
-  margin: 15px 0 15px 0;
- } 
 
 @media only screen and (max-width: 760px){
 
