@@ -22,6 +22,7 @@ html {
   --nav2-color: #ff512f;
   --topBtn-bg: #f47621;
   --lgt-white: #F8F8F8;
+  --heading-clr: #444;
 }
 html[ data-theme="dark"] {
   
@@ -37,6 +38,7 @@ html[ data-theme="dark"] {
   --nav1-color:#ffa336;
   --nav2-color: #ff8723;
   --topBtn-bg: #ff8723;
+  --heading-clr: #fff;
 }
 
 body {
@@ -303,7 +305,7 @@ a.active {
 .heading {
   font-family: 'Baloo Bhaina 2', sans-serif;
   font-size: 45px;
-  color: #444; 
+  color:var(--heading-clr); 
 }
 
 .about-para{
