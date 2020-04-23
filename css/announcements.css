@@ -6,11 +6,13 @@ html {
   --bg-Card:rgb(250,250,250);
   --card-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2);
   --boxCard-shadow:5px 5px 15px rgba(0,0,0,0.9);
+  --box-clr: #fff;
 }
 html[ data-theme="dark"] {
- --bg-Card:#ebebeb;
+ --bg-Card:#202020;
  --card-shadow: 0 4px 8px 0 #fff;
- --boxCard-shadow: 0 4px 8px 0 #fff;
+ --boxCard-shadow: 0 4px 8px 0 #f47621;
+ --box-clr: #202020;
 }
 
 body {
@@ -70,15 +72,16 @@ body {
     text-decoration: none;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
-    box-shadow: var(--card-shadow);
-    background-color: var(--bg-Card);
+    box-shadow: 0 10px 25px rgba(240, 112, 0, 0.23);
     cursor: pointer;
+    background-color: var(--box-clr);
 }
 
 .event-body {
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
   letter-spacing: 0.5px;
+  color: var(--font-color);
 }
 
 .go-corner-1 {
@@ -140,18 +143,19 @@ body {
 }
 
 .announcement-item .fa-map-marker {
-    color: #111111;
+   color: var(--font-color);
 }
 
 .announcement-item .fa-calendar {
-    color:  #111111;
+   color: var(--font-color);
 }
 
 .announcement-item .icons {
     color:  #111111;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.527);
-    font-weight: 400;    
+    font-weight: 400; 
+    color: var(--font-color);   
 }
 
 .announcement-btn {
@@ -178,7 +182,7 @@ body {
 	 color: var(--white);
  }
  .r-events-card:hover .card-stats{
-	 background-color: var(--white);
+	 background-color: var(--box-clr);
  }
 
  @media only screen and (max-width: 768px) {
@@ -203,16 +207,9 @@ body {
       align-items: center;
       max-width: 1000px;
       margin: auto;
-      color: #111111;
-      font-family: 'Lato', sans-serif;
       font-size: 16px;
       border-radius: 6px;
       margin-bottom: 50px;
-      text-decoration: none;
-      -webkit-transition: all .3s ease;
-      transition: all .3s ease;
-      box-shadow: var(--card-shadow);
-      background-color: var(--bg-Card);
   }
 }
 
@@ -321,12 +318,12 @@ body {
 
 .card-text p {
   color: grey;
-  font-size: 15px;
+  font-size: 14.9px;
 }
 .card-text h2 {
   margin-top: 30px;
   font-size: 28px;
-  color: #f47621;
+  color: var(--font-color);
 }
 
 .card:hover {
@@ -381,8 +378,9 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-.card-text h2 {
-  color: black;
+.line{
+  background-color: var(--heading-clr);
+  border-top: 0.5px solid rgba(0,0,0,.1);
 }
 
 @media only screen and (max-width: 340px) {

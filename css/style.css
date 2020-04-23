@@ -5,7 +5,6 @@ html {
   font-family: "Libre Franklin", sans-serif;
   -webkit-font-smoothing: antialiased;
   padding-top: 50px;
-  background-color: white;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -152,6 +151,7 @@ ol {
 .newsection {
   background-color:var(--bg1-color) !important;
   padding: 1rem;
+  margin-top: 30px;
 }	
 
 .fs-17px {
