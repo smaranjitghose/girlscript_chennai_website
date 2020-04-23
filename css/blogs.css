@@ -4,7 +4,6 @@ html {
     font-family: 'Raleway', sans-serif;
     -webkit-font-smoothing: antialiased;
     scroll-behavior: smooth;
-    --section-bgColor: #fff;
     --blogCard-shadow: 0 5px 7px black;
     --rtbInline-shadow: 0 5px 7px black;
     --box-clr: #fff;
@@ -12,7 +11,6 @@ html {
 }
 
 html[ data-theme="dark"] {
-    --section-bgColor: #121212;
     --blogCard-shadow: 0 2px 4px 0 #f47621;
     --rtbInline-shadow: 0 5px 7px #f47621;
     --box-clr: #202020;
@@ -28,7 +26,7 @@ Blog Cards
 -----------------*/
 
 .blogs-section{
-    background-color: var(--section-bgColor);
+    color: var(--font-color);
 }
 
 .rtb-col h2{
@@ -105,7 +103,7 @@ Blog Cards
 .rtb-inline .post-author {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
-    color: #444;
+    color:var(--font-theme);
     letter-spacing: 0.5px;
 }
 
@@ -121,13 +119,13 @@ Blog Cards
 .rtb-inline p{
     font-family: 'Quicksand', sans-serif;
     text-align: justify;
-    color: black;
+    color:var(--font-theme);
 }
 
 .rtb-inline .container {
     padding: 30px 0px;
-    background-color: var(--bg-Card);
-    color:black;
+    background-color: var(--box-clr);
+    color:var(--font-theme);
 
 }
 
@@ -194,6 +192,7 @@ Blog Cards
 
 .post-date {
     border-radius: 5px;
+    cursor: pointer;
 }
    
 @media only screen and (max-width : 430px){
