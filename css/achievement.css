@@ -5,14 +5,16 @@ html {
        --projectCard-shadow: 0 5px 10px rgba(73, 52, 52, 0.9);
        --flapCard-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
        --bg-Card:rgb(250,250,250);
+       --box-clr: #fff;
 
 }
 
 html[ data-theme="dark"] {
        --box-Shadow: 0 2px 0px 0 #fff;
-       --projectCard-shadow: 0 3px 5px #fff;
+       --projectCard-shadow: 0 3px 5px #f47621;
        --flapCard-shadow: 0 2px 0px 0 #fff;
        --bg-Card:#ebebeb;
+       --box-clr: #202020;
 }
 
 a.toggle-info {
@@ -30,7 +32,7 @@ a.toggle-info {
 
 .counter {
   font-family: 'Comfortaa', sans-serif;
-  color: #333;
+
 }
 
 .counter-text {
@@ -40,7 +42,7 @@ a.toggle-info {
 
 .card-head {
   font-family: 'Baloo Bhaina 2', sans-serif;
-  color: #333;
+  color: var(--font-color);
 }
 
 .project-card-head {
@@ -245,21 +247,18 @@ div.project-card.show div.flap2 {
 display: block;
 text-align: right;
 opacity: 0.6;
-color: gray;
+color: var(--font-color);
 transition: all 0.3s ease;
 }
 
 .achievementCard .card-link > i {
 font-size: 14px;
 margin-left: 3px;
-color: gray;
+color: var(--font-color);
 }
+
 .achievementCard .card-link:hover{
-color: black;
-opacity: 1;
-}
-.achievementCard .card-link:hover i {
-color: black;
+color: white;
 opacity: 1;
 }
 
@@ -289,7 +288,7 @@ margin-top:2rem;
 
 .card-text {
   text-align: justify;
-  color: rgba(0, 0, 0, 0.604);
+  color: var(--font-color);
 }
 
 .card-title {
@@ -297,7 +296,11 @@ margin-top:2rem;
   font-weight: bold;
   letter-spacing: normal;
   font-size: 22px;
-  color: black;
+  color: #ff8723;
+}
+
+.card:hover .card-title{
+  color:black;
 }
 
 .margin-button {
@@ -308,20 +311,8 @@ margin-top:2rem;
 	margin-top: 250px !important;
 }
 
-i.fa-chevron-down, i.fa-chevron-up {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 15px !important;
-	color: var(--white) !important;
-}
-i.fa-chevron-up {
-	transform: translate(-50%, -60%);
-}
-
 .achieve-card:hover .card-title {
-	color: white;
+	color: black;
 }
 .achieve-card:hover .card-text {
 	color:white;
@@ -397,6 +388,7 @@ i.fa-chevron-up {
 
 .card{
     overflow: hidden;
+    background-color: var(--box-clr);
   } 
 
 .ct1 {

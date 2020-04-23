@@ -287,10 +287,6 @@ body {
   grid-area: image;
 }
 
-.card-text {
-  grid-area: text;
-}
-
 .card-stats {
   grid-area: stats;
   grid-area: stats; 
