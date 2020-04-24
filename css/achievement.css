@@ -18,7 +18,7 @@ html[ data-theme="dark"] {
 }
 
 a.toggle-info {
-  background: #ff2019;
+  background: var(--bg1-color);
   border-radius: 4px;
   color: var(--theme-color);
   display: inline-block;
@@ -27,6 +27,21 @@ a.toggle-info {
   text-decoration: none;
   -webkit-transition: all 0.1s 0s ease-out;
   transition: all 0.1s 0s ease-out;
+}
+a.toggle-info:hover {
+	color: var(--font-color);
+}
+a.toggle-info .fa-chevron-down {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+a.toggle-info .fa-chevron-up {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-45%, -55%);
 }
 
 .counter {
@@ -217,9 +232,6 @@ div.project-card.show {
   opacity: 1 !important;
   -webkit-transform: scale(1) !important;
           transform: scale(1) !important;	  
-}
-div.project-card.show div.project-title a.toggle-info {
-  background: #ff2019 !important;
 }
 
 div.project-card.show div.card-flap {
