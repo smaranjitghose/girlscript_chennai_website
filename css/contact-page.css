@@ -6,11 +6,13 @@ html{
     scroll-behavior: smooth;
     --contactForm-opacity:.989;
     --defined-color: white;
+    --box-clr: #fff;
 }
 
 html[ data-theme="dark"]{
     --contactForm-opacity: .92;
     --defined-color: #ebebeb;
+    --box-clr: #202020;
 }
 
  body {
@@ -37,9 +39,9 @@ html[ data-theme="dark"]{
 .contact-form {
     border: 0px;
     text-align: left;
-    box-shadow: 0 1px 4px white;
+    box-shadow: 0 2px 4px #f47621;
     transition: 0.6s;
-    background-color: var(--white);
+    background-color: var(--box-clr);
     margin-left: 5rem; 
     border-radius: 7px;
 }
@@ -47,7 +49,7 @@ html[ data-theme="dark"]{
 .form-heading{
   font-family: 'Baloo Bhaina 2', sans-serif;
   font-size:45px;
-  color: #222d39;
+  color: var(--font-color);
 }
 
 .contact-form:hover {
