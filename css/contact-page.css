@@ -83,7 +83,7 @@ html[ data-theme="dark"]{
   transform: translate3d(0, -100%, 0);
   opacity: 1;
   font-weight: bold;
-  color: black;
+  color: var(--font-color);
 }
 
 .no-border{
@@ -133,6 +133,14 @@ html[ data-theme="dark"]{
 	margin-bottom: 0;
 	padding-left: 20px;
 }
+input#CaptchaInput::-webkit-outer-spin-button,
+input#CaptchaInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
 .capbox-inner {
 	font: bold 12px arial, sans-serif;
 	color: #000000;
@@ -150,7 +158,6 @@ html[ data-theme="dark"]{
 	font-style: italic;
 	text-align: center;
 	vertical-align: middle;
-	background-color: #FFFFFF;
 	user-select: none;
 	padding: 3px 14px 3px 8px;
 	border-radius: 4px;
@@ -158,7 +165,7 @@ html[ data-theme="dark"]{
 	flex-basis: 30%;
 	max-width: 30%;
 	border: none;
-	color: var(--white);
+	color: var(--bg1-color);
 	background-color: var(--theme-color);
 	letter-spacing: 2.5px;
 	}
