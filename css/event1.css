@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500;600&family=Baloo+Paaji+2:wght@400;500;600&family=Comfortaa:wght@400;500;600;700&family=Montserrat:wght@100;400;500&family=Quicksand:wght@300;400;500&family=Raleway:wght@300;400;500;600&display=swap');
+html {
+    --background-clr: linear-gradient(to bottom,#f7a954,white);
+    --faq-head: black;
+}
+html[ data-theme="dark"] {
+    --background-clr: #121212;
+    --faq-head: #ff8723;
+}
+
+
 body {
     overflow-x: hidden;
+    overflow-y:scroll;
 }
 h2{
     font-size:32.8px;
@@ -23,7 +34,6 @@ header {
 }
 
 .heading{
-    color: black;
     font-family: 'Baloo Bhaina 2', sans-serif;
     font-size: 70px;
     padding-top: 8rem;
@@ -41,11 +51,12 @@ header {
     transform: translateY(-2rem);
     z-index: 1;
     border-radius: 35px;
+    box-shadow: 0 10px 25px rgba(240, 112, 0, 0.23), 0 6px 0px rgba(240, 112, 0, 0.5);
 }
 
 .about-box {
     padding: 0px 120px;
-    background: linear-gradient(to bottom,#f7a954,white);
+    background: var(--background-clr);
 }
 
 @media screen and (max-width: 600px) {
@@ -71,14 +82,14 @@ header {
 }
 
 .caption-1 {
-    color: rgba(0,0,0,0.3);
+    color: var(--heading-clr);
     font-size: 18px;
     font-weight: bold;
 }
 
 .caption-2 {
     font-size: 18px;
-    color: rgba(0,0,0,0.4);
+    color: var(--heading-clr);
 }
 
 .font-change {
@@ -118,8 +129,8 @@ header {
 
 .color-overlay-2{
     position: absolute;
-    background: white;
-    opacity: 0.3;
+    background: #ddd;;
+    opacity: 0.1;
     height: 100%;
     width: 100%;
 }
@@ -261,15 +272,11 @@ header {
     font-size: 60px;
     font-weight: lighter;
     border-bottom: 1px solid rgba(100,100,100,0.3);
-    color: #555;
+    color:#f36511;
 }
 
 .schedule span {
     font-size: 80px;
-}
-
-.schedule-box {
-    background: white;
 }
 
 .content{
@@ -310,6 +317,7 @@ header {
     font-size:25px;
     margin-top: 30px;
     margin-bottom: 7px;
+    color: var(--faq-head);
 }
 .ans{
     font-family: 'Quicksand', sans-serif;
@@ -335,6 +343,7 @@ header {
     -ms-flex-pack: center;
     justify-content: center;
     border-radius: 10px;
+    
 }
 
 .featured-schedule-collection:before {
@@ -455,6 +464,7 @@ header {
     width: 100%;
     text-align: center;
     background: none;
+    color:black;
 }
 
 .featured-schedule-collection > h2 span {
@@ -479,6 +489,7 @@ header {
     0 22.3px 17.9px rgba(0, 0, 0, 0.072),
     0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 10px 25px rgba(240, 112, 0, 0.23), 0 2px 0px rgba(240, 112, 0, 0.5);
 }
 
 .featured-schedule-collection ul li .time:hover > h3{
@@ -488,7 +499,6 @@ header {
 .featured-schedule-collection ul li .time:hover {
     background-color: var(--theme-color);
     cursor: default;
-    box-shadow:
     box-shadow: 0 10px 6px -6px black;
 }
 
@@ -543,18 +553,19 @@ header {
 .register-heading span {
     font-size: 50px;
     font-weight: lighter;
-    color: #555;
+    color: var(--heading-clr);
 }
 
 .register-para {
     font-family: 'Quicksand', sans-serif;
     padding-right: 50%;
     font-size: 18px;  
+    color: var(--heading-clr);
 }
 
 .register-para span {
     font-size: 19px;
-    color: #777;
+    color: var(--heading-clr);
 }
 
 .register-btn {
@@ -597,13 +608,12 @@ header {
     font-family: 'Quicksand', sans-serif;
     font-size: 17px;
     padding-top: 10px;
-    color: #666;
+    color: var(--font-color);
     font-weight: 500;
     letter-spacing: 1px;
 }
 
 .question-border {
-    background-color: #fff;
     border-radius: 10px;
 
 }
@@ -618,7 +628,7 @@ header {
 }
 
 .question-border:hover > .ques {
-    color: white;
+    color: black;
 }
 
 .question-border:hover > .ans{
