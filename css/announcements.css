@@ -143,7 +143,7 @@ body {
 
 .time {
   position: absolute;
-  top: 12px;
+  top: 1px;
   margin: 0;
   padding: 8px 16px;
   border: 1px solid var(--border);                                                                                                                                                                                                                                                                                                                                              z;
@@ -153,16 +153,92 @@ body {
 
 }
 
-.time-1 {
-  right: -180px;
-}
-.time-2 {
-  left: -180px;
+@media screen and (min-width: 770px) {
+
+  .time-1 {
+  right: -220px;
+  }
+
+  .time-2 {
+  left: -220px;
+  }
 }
 
 .timeline-content p,h3,h5 {
   font-family: 'Quicksand', sans-serif;
 }
+
+/* Making Timeline Responsive */
+
+
+@media screen and (max-width: 770px) {
+  
+  .timeline::after {
+  left: 31px;
+  }
+
+  .time{
+    position:relative;
+    width:155px;
+    margin: 10px auto;
+  }
+
+  .timeline-container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  .timeline-container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  .right {
+  left: 0%;
+  }
+}
+
+
+@media screen and (max-width: 395px) {
+
+  .time{
+    position:relative;
+    max-width:95%;
+    margin: 10px auto;
+  }
+
+  .timeline-content {
+    padding: 7px 12px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    border: 1px solid black;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .timeline-content h3{
+    font-size: 25px;
+  }
+
+  .timeline-content p{
+    font-size: 15px;
+  }
+
+  .timeline-container {
+    width: 100%;
+    padding-left: 57px;
+    padding-right: 5px;
+    padding-bottom:30px;
+    }
+}
+
 
 /* CSS for card group */
 
