@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500;600&family=Baloo+Paaji+2:wght@400;500;600&family=Comfortaa:wght@400;500;600;700&family=Montserrat:wght@100;400;500&family=Quicksand:wght@300;400;500&family=Raleway:wght@300;400;500;600&display=swap');
 html {
+     overflow-x: hidden;
     --background-clr: linear-gradient(to bottom,#f7a954,white);
     --faq-head: black;
 }
@@ -7,7 +8,6 @@ html[ data-theme="dark"] {
     --background-clr: #121212;
     --faq-head: #ff8723;
 }
-
 
 body {
     overflow-x: hidden;
@@ -27,16 +27,17 @@ header {
 
 .color-overlay-1 {
     position: absolute;
-    background: white;
+    background-color: var(--bg1-color);
     opacity: 0;
     height: 100%;
     width: 100%;
 }
 
-.heading{
+.heading1{
     font-family: 'Baloo Bhaina 2', sans-serif;
     font-size: 70px;
     padding-top: 8rem;
+    color: var(--heading-clr);
 }
 
 #heading-plus {
@@ -60,17 +61,17 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-    .heading{
+    .heading1{
         font-size:40px;
     }
 }
 @media screen and (max-width: 800px) {
-    .heading{
+    .heading1{
         font-size:45px;
     }
 }
 @media screen and (max-width: 1000px) {
-    .heading{
+    .heading1{
         font-size:50px;
     }
 }
@@ -129,7 +130,7 @@ header {
 
 .color-overlay-2{
     position: absolute;
-    background: #ddd;;
+    background-color: var(--bg1-color);
     opacity: 0.1;
     height: 100%;
     width: 100%;
@@ -158,14 +159,11 @@ header {
     }
 }
 @media screen and (max-width: 818px) {
-    .heading{
+    .heading1{
         padding-top: 20px;
     }
     .about-box{
         padding: 0 20px;
-    }
-    .animation-box {
-        padding-left:0; 
     }
     header {
         background: url('../assets/Images/prepost-bg-1.png');
@@ -199,15 +197,19 @@ header {
     #register-heading{
         font-size: 35px;
         width: 200px;
+        margin: auto;
+        padding: 10px;
     }
     #register-para {
         font-size: 15px;
+        padding: 40px;
     }
     #register-para span{
         font-size: 15px;
     }
     #register-btn {
-        margin-top: 60px; 
+        margin-top: 60px;
+        margin: auto; 
     }
     #faq-heading h1{
         font-size: 35px;
@@ -242,7 +244,6 @@ header {
 }
 
 .container-fluid {
-    padding: 30px;
     z-index: 2;
 }
 
@@ -534,7 +535,7 @@ header {
 
 .color-overlay-3{
     position: absolute;
-    background: #ddd;
+    background-color: var(--bg1-color);
     opacity: 0.1;
     height: 100%;
     width: 100%;
@@ -647,8 +648,7 @@ header {
         background: url(../assets/Images/bg-3-resize.png); 
     }
     .color-overlay-3 {
-        background: white;
-        opacity: 0.6;
+        opacity: 0.8;
     }
 }
 
