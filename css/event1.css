@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500;600&family=Baloo+Paaji+2:wght@400;500;600&family=Comfortaa:wght@400;500;600;700&family=Montserrat:wght@100;400;500&family=Quicksand:wght@300;400;500&family=Raleway:wght@300;400;500;600&display=swap');
-
+body {
+    overflow-x: hidden;
+}
 h2{
     font-size:32.8px;
 }
@@ -95,13 +97,12 @@ header {
 }
 
 .get-info a {
-    opacity: 0.8;
     transition: 0.6s;
 }
 
 .get-info a:hover {
     color: #f36511;
-    opacity: 1;
+    text-shadow: 3px 3px 5px #eee;
 }
 
 .mid-section {
@@ -128,8 +129,7 @@ header {
         padding: 0 20px;
     }
     header {
-        background: url('../assets/Images/post-bg-1.png');
-        background-size: contain;
+        background: url('../assets/images/bg-resize.png');
         background-repeat: no-repeat;
     }
     .color-overlay-1{
@@ -137,6 +137,13 @@ header {
     }
     .content-1{
         text-align: center;
+    }
+}
+@media screen and (max-width: 1054px) {
+    header {
+        background: url('../assets/images/post-bg-1.png');
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 }
 @media screen and (max-width: 818px) {
@@ -225,6 +232,7 @@ header {
 
 .container-fluid {
     padding: 30px;
+    z-index: 2;
 }
 
 @media screen and (max-width: 450px) {
@@ -366,25 +374,50 @@ header {
     content: '';
     position: absolute;
     top: 40px;
-    right: -6px;
-    width: 10px;
-    height: 10px;
+    right: -8px;
+    width: 14px;
+    height: 14px;
+    border: 2px solid white;
     background: rgba(233,33,99,1);
     border-radius: 50%;
-    box-shadow: 0 0 0 3px rgba(233,33,99,0.2); 
+    box-shadow: 0 0 0 3px rgba(233,33,99,0.3);
+}
+
+.featured-schedule-collection ul li:nth-child(odd):after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    right: 36px;
+    width: 0;
+    height: 0;
+    border: 10px solid white;
+    border-width: 10px 0px 10px 13px;
+    border-color: transparent transparent transparent white;
 }
 
 .featured-schedule-collection ul li:nth-child(even):before {
     content: '';
     position: absolute;
     top: 40px;
-    left: -4px;
-    width: 10px;
-    height: 10px;
+    left: -6px;
+    width: 14px;
+    height: 14px;
+    border: 2px solid white;
     background: rgba(233,33,99,1);
     border-radius: 50%;
-    box-shadow: 0 0 0 3px rgba(233,33,99,0.2); 
+    box-shadow: 0 0 0 3px rgba(233,33,99,0.3); 
 }
+
+.featured-schedule-collection ul li:nth-child(even):after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    border: medium solid white;
+    border-width: 10px 13px 10px 0;
+    border-color: transparent white transparent transparent;}
 
 .featured-schedule-collection ul li .time {
     position: absolute;
@@ -432,21 +465,31 @@ header {
 
 .featured-schedule {
     background-color: #FFFFFF;
-    border-radius: 20px;
+    border-radius: 05px;
     min-height: 285px;
     position: relative;
-    padding: 1.5em 2em 3.750em 2em;
+    padding: 1.5em 2em 1em 2em;
     margin-bottom: 3em;
     text-align: justify;
     transition: 0.6s;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
-.featured-schedule-collection ul li h3:hover {
+.featured-schedule-collection ul li .time:hover > h3{
     transform: scale(1.06);
     color: white;
 }
 .featured-schedule-collection ul li .time:hover {
     background-color: var(--theme-color);
+    cursor: default;
+    box-shadow:
+    box-shadow: 0 10px 6px -6px black;
 }
 
 .featured-schedule h3 {
@@ -568,7 +611,7 @@ header {
 .question-border:hover {
 
     transform: translateY(-5px);
-    box-shadow: 0 3px 3px 0px rgba(100,100,100,0.2); 
+    box-shadow: 0 5px 5px 0px rgba(100,100,100,0.2); 
     background: linear-gradient(to right, #FFB75E, #ED8F03);
     transition: 300ms linear;
     cursor: help;
@@ -583,25 +626,117 @@ header {
     letter-spacing: 1px;
 }
 
-@media screen and (min-width:500px) {
+@media screen and (min-width:554px) {
     .featured-schedule-collection {
         margin-top: 4em;
     }
 }
 
-@media screen and (min-width:500px) and (max-width:800px){
-    .featured-schedule {
-        padding: 1em 1em 0.5em 1em;
+@media screen and (max-width:500px) {
+    .register-section {
+        background: url(../assets/Images/bg-3-resize.png); 
+    }
+    .color-overlay-3 {
+        background: white;
+        opacity: 0.6;
     }
 }
 
-@media screen and (min-width:800px) and (max-width:1000px){
+@media screen and (max-width:801px){
+    .featured-schedule {
+        padding: 1em 1em 1.5em 1em;
+    }
+    .featured-schedule-collection {
+        padding: 2.3rem 0.2rem 2.3rem 0.2rem;
+        width: 100%;
+    }
+    .featured-schedule-collection ul li {
+        width: 100%;
+    }
+    .featured-schedule-collection ul li .time {
+        position: relative;
+        border: none;
+        text-align: center;
+        right: 0;
+    }
+    .featured-schedule-collection ul li .time-2 {
+        left: 0;
+    }
+    .featured-schedule-collection ul li .time-4 {
+        left: 0;
+    }
+    .featured-schedule-collection ul li .time:hover {
+        background-color: transparent;
+    }
+    .featured-schedule-collection ul li .time:hover > h3{
+        color: var(--theme-color);
+    }
+    
+    .featured-schedule-collection ul li:nth-child(odd):before {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-38%);
+        top:93%;
+    }
+    .featured-schedule-collection ul li:nth-child(even):before {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-38%);
+        top:93%;
+    }
+    .featured-schedule-collection ul li:nth-child(even):after {
+        opacity: 0;
+    }
+    .featured-schedule-collection ul li:nth-child(odd):after {
+        opacity: 0;
+    }
+
+}
+
+@media screen and (min-width:801px) and (max-width:1000px){
     .featured-schedule {
         padding: 1em 1em 0.1em 1em;
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 801px) and (max-width:1012px){
+    .featured-schedule-collection {
+        border-radius: 0; 
+    }
+    .featured-schedule-collection ul li:nth-child(even) {
+        float: none;
+    }
+    .featured-schedule-collection ul li .time-1 {
+        right: -306px;
+    }
+    .featured-schedule-collection ul li .time-2 {
+        width: 194.6px;  
+        left: 540px;
+    }
+    .featured-schedule-collection ul li .time-3 {
+        right: -216px;
+    }
+    .featured-schedule-collection ul li .time-4 {
+        width: 170.06px;  
+        left: 540px;
+    }
+    .featured-schedule-collection ul li .time-5 {
+        right: -276px;
+    }
+    .featured-schedule-collection ul li:nth-child(even):before {
+        content: '';
+        position: absolute;
+        left: 509px;
+    }
+    .featured-schedule-collection ul li:nth-child(even):after {
+        opacity: 0;
+    }
+    .featured-schedule-collection ul li:nth-child(odd):after {
+        opacity: 0;
+    }
+}
+
+@media screen and (min-width: 1012px) {
     .featured-schedule-collection {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -611,16 +746,5 @@ header {
 
     .featured-schedule {
         margin: 0 2% 3.750em 2%;
-    }
-}
-@media screen and (max-width:500px) {
-    .featured-schedule-collection ul li:nth-child(even){
-        float: left;
-    }
-    .schedule-box{
-        overflow-x: hidden;
-    }
-    .featured-schedule-collection {
-        border-radius: 0;
     }
 }
