@@ -140,7 +140,7 @@ body {
 
 .time {
   position: absolute;
-  top: 12px;
+  top: 1px;
   margin: 0;
   padding: 8px 16px;
   border: 1px solid black;                                                                                                                                                                                                                                                                                                                                              z;
@@ -149,11 +149,15 @@ body {
 
 }
 
-.time-1 {
-  right: -180px;
-}
-.time-2 {
-  left: -180px;
+@media screen and (min-width: 770px) {
+
+  .time-1 {
+  right: -220px;
+  }
+
+  .time-2 {
+  left: -220px;
+  }
 }
 
 .timeline-content p,h3,h5 {
@@ -169,12 +173,12 @@ body {
   left: 31px;
   }
 
-  /* Making the display none for the time */
-
   .time{
-    display:none;
+    position:relative;
+    width:155px;
+    margin: 10px auto;
   }
-  
+
   .timeline-container {
   width: 100%;
   padding-left: 70px;
@@ -200,6 +204,12 @@ body {
 
 @media screen and (max-width: 395px) {
 
+  .time{
+    position:relative;
+    max-width:95%;
+    margin: 10px auto;
+  }
+
   .timeline-content {
     padding: 7px 12px;
     background-color: white;
@@ -219,7 +229,7 @@ body {
 
   .timeline-container {
     width: 100%;
-    padding-left: 55px;
+    padding-left: 57px;
     padding-right: 5px;
     padding-bottom:30px;
     }
