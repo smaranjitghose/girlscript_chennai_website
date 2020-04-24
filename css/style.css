@@ -22,6 +22,8 @@ html {
   --topBtn-bg: #f47621;
   --lgt-white: #F8F8F8;
   --heading-clr: #444;
+  --eventcard: 5px 5px 15px rgba(0,0,0,0.6);
+  --box-clr: #fff;
 }
 html[ data-theme="dark"] {
   
@@ -38,6 +40,8 @@ html[ data-theme="dark"] {
   --nav2-color: #ff8723;
   --topBtn-bg: #ff8723;
   --heading-clr: #fff;
+  --eventcard: 0 2px 4px 0 #f47621;
+  --box-clr: #202020;
 }
 
 body {
@@ -472,7 +476,9 @@ Parallax section
   height: 15rem;
   box-shadow: 0 4px 8px 0 var(--flipCard-shadow);
 }
+
 /* footer */
+
 footer {
   background: var(--footer-bg);
   padding: 20px 0;
@@ -499,7 +505,6 @@ footer {
 }
 
 .social-media a {
-  /* color: white; */
   margin-right: 25px;
   font-size: 26px;
   text-decoration: none;
@@ -1420,10 +1425,26 @@ input:checked + .slider:before {
 	background-color: var(--theme-color);
 	padding: 20px;
 	border-radius: 50px;
-	box-shadow: 3px 3px 5px 6px #ccc;
+	box-shadow: var(--eventcard);
 }
 .pl-80px{
 	padding-left: 80px;
+}
+.box{
+  background-color: var(--box-clr);
+}
+.color {
+   color: var(--font-color);
+   font-family: 'Quicksand', sans-serif;
+}
+.event-heading{
+  color: var(--theme-color);
+  font-family: 'Baloo Bhaina 2', sans-serif;
+  font-size: 3rem;
+}
+.event-para {
+  color: var(--font-color);
+  font-family: 'Quicksand', sans-serif;
 }
 
 /*Card Designing*/
