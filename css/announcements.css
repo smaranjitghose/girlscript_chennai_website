@@ -7,12 +7,14 @@ html {
   --card-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2);
   --boxCard-shadow:5px 5px 15px rgba(0,0,0,0.9);
   --box-clr:#fff;
+  --border: black;
 }
 html[ data-theme="dark"] {
  --bg-Card:#202020;
  --card-shadow: 0 4px 8px 0 #fff;
  --boxCard-shadow: 0 2px 4px 0 #f47621;
  --box-clr: #202020;
+ --border: white;
 }
 
 body {
@@ -144,7 +146,7 @@ body {
   top: 12px;
   margin: 0;
   padding: 8px 16px;
-  border: 1px solid black;                                                                                                                                                                                                                                                                                                                                              z;
+  border: 1px solid var(--border);                                                                                                                                                                                                                                                                                                                                              z;
   border-radius: 18px;
   transition: 300ms linear;
   background-color: var(--box-clr);
