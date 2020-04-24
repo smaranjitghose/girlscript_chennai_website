@@ -2,11 +2,9 @@
 html {
      overflow-x: hidden;
     --background-clr: linear-gradient(to bottom,#f7a954,white);
-    --faq-head: black;
 }
 html[ data-theme="dark"] {
     --background-clr: #121212;
-    --faq-head: #ff8723;
 }
 
 body {
@@ -318,7 +316,7 @@ header {
     font-size:25px;
     margin-top: 30px;
     margin-bottom: 7px;
-    color: var(--faq-head);
+    color: #ff8723;
 }
 .ans{
     font-family: 'Quicksand', sans-serif;
