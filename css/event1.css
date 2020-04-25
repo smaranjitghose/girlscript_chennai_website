@@ -128,7 +128,7 @@ header {
 
 .color-overlay-2{
     position: absolute;
-    background-color: var(--bg1-color);
+    background-color: var(--bg2-color);
     opacity: 0.1;
     height: 100%;
     width: 100%;
@@ -192,22 +192,8 @@ header {
     #register-heading span{
         font-size: 30px;
     }
-    #register-heading{
-        font-size: 35px;
-        width: 200px;
-        margin: auto;
-        padding: 10px;
-    }
-    #register-para {
-        font-size: 15px;
-        padding: 40px;
-    }
     #register-para span{
         font-size: 15px;
-    }
-    #register-btn {
-        margin-top: 60px;
-        margin: auto; 
     }
     #faq-heading h1{
         font-size: 35px;
@@ -221,6 +207,23 @@ header {
     }
     #faq-question .ans{
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #register-heading{
+        font-size: 35px;
+        width: 200px;
+        margin: auto;
+        padding: 10px;
+    }
+    #register-para {
+        font-size: 15px;
+        padding: 40px;
+    }
+    #register-btn {
+        margin-top: 60px;
+        margin: auto; 
     }
 }
 
@@ -533,7 +536,7 @@ header {
 
 .color-overlay-3{
     position: absolute;
-    background-color: var(--bg1-color);
+    background-color: var(--bg2-color);
     opacity: 0.1;
     height: 100%;
     width: 100%;
