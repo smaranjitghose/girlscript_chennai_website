@@ -251,8 +251,6 @@ a.active {
   }
 }
 
-
-
 .fullScreen-navigation {
   height: 100%;
   width: 100%;
@@ -262,6 +260,36 @@ a.active {
   top: 0;
   left: 0;
   background-color: #202020;
+}
+
+.svg-img{
+  position: absolute;
+  right:2px;
+  width:440.7px;
+   height:390.98px;
+}
+
+@media screen and (max-width: 480px){
+  
+  .svg-img{
+    width:240.7px;
+    height:240.98px;
+  }
+}
+
+#right-wheel, #left-wheel {
+  animation: wheel 2s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes wheel{
+  from{
+    transform: rotateZ(0deg);
+  }
+  to{
+    transform: rotateZ(360deg);
+  }
 }
 
 .navigation-content {
@@ -295,12 +323,21 @@ a.active {
 }
 
 @media screen and (max-width: 480px) {
-  .navigation-content{top:20%}
-  .fullScreen-navigation a {font-size: 15px}
+
+  .navigation-content
+    {
+    top:10%;
+    margin-top:10px;
+  }
+
+  .fullScreen-navigation a 
+  {font-size: 15px}
+
   .fullScreen-navigation .closebtn {
+
   font-size: 40px;
   top: 15px;
-  right: 35px;
+  right: 20px;
   }
 }
 
