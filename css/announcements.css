@@ -44,6 +44,11 @@ body {
   font-weight: 300;
 }
 
+.timeline-container .card-stats{
+  text-align: center;
+  margin-bottom: 5px;
+}
+
 .event-part {
   color: #f47621;
   font-weight: 300;
