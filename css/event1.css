@@ -3,17 +3,23 @@ html {
      overflow-x: hidden;
     --background-clr: linear-gradient(to bottom,#f7a954,white);
 }
+
 html[ data-theme="dark"] {
     --background-clr: #121212;
 }
 
-body {
-    overflow-x: hidden;
-    overflow-y:scroll;
+@media only screen and (max-width: 1440px) {
+    body{
+        overflow-x: hidden;
+        overflow-y: scroll;
+    
+    }
 }
+
 h2{
     font-size:32.8px;
 }
+
 header {
   position: relative;
   background-repeat: no-repeat;
@@ -571,25 +577,29 @@ header {
 }
 
 .register-btn {
-    color: #fff;
-    background-color: #17a2b8;
     margin: 4em 0 0 10px;
     z-index: 1;
-    font-family: 'Quicksand', sans-serif ;
     font-size: 16px;
     letter-spacing: 2px;
-    font-weight: 500;
+    font-weight: 700;
     position: relative;
-    border: 1px solid white;
+    text-align: center;
     width: 120px;
-    padding: 8px;
-    border-radius: 20px;
+    background-color: var(--theme-color) !important;
+    font-family: 'Comfortaa',sans-serif;
+    padding: 10px 10px;
+    display: block;
+    color: white;
     transition: 0.6s;
+    border-radius: 5px;
+    box-shadow: 0 2px 7px 0px #ff9a0e;
+    border: 1px solid transparent;
 }
 
 .register-btn:hover {
-    background-color: #158196;
-    box-shadow: 0 3px 3px 0 rgba(100,100,100,0.2);  
+    box-shadow: 0 7px 8px #ff9a0e;
+    color: white;
+    
 } 
 
 .faq-heading {
