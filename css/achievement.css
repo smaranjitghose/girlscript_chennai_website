@@ -18,7 +18,7 @@ html[ data-theme="dark"] {
 }
 
 a.toggle-info {
-  background: #ff2019;
+  background: var(--bg1-color);
   border-radius: 4px;
   color: var(--theme-color);
   display: inline-block;
@@ -27,6 +27,21 @@ a.toggle-info {
   text-decoration: none;
   -webkit-transition: all 0.1s 0s ease-out;
   transition: all 0.1s 0s ease-out;
+}
+a.toggle-info:hover {
+	color: var(--font-color);
+}
+a.toggle-info .fa-chevron-down {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+a.toggle-info .fa-chevron-up {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-45%, -55%);
 }
 
 .counter {
@@ -218,9 +233,6 @@ div.project-card.show {
   -webkit-transform: scale(1) !important;
           transform: scale(1) !important;	  
 }
-div.project-card.show div.project-title a.toggle-info {
-  background: #ff2019 !important;
-}
 
 div.project-card.show div.card-flap {
   background: #ffffff;
@@ -298,10 +310,6 @@ margin-top:2rem;
   color: #ff8723;
 }
 
-.card:hover .card-title{
-  color:black;
-}
-
 .margin-button {
 	margin-top: 200px !important;
 }
@@ -310,18 +318,17 @@ margin-top:2rem;
 	margin-top: 250px !important;
 }
 
-.achieve-card:hover .card-title {
-	color: black;
+.card:hover .card-title {
+	color: white;
 }
-.achieve-card:hover .card-text {
+.card:hover .card-text {
 	color:white;
 }
-.achieve-card:hover .card-link {
-	color:black;
-	opacity: 0.8;
+.card:hover .card-link {
+	color:#fff;
 }
-.achieve-card:hover .card-link i {
-	color: black;
+.card:hover .card-link i {
+	color: #fff;
 }
 
 @media only screen and (max-width: 575px) {

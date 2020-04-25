@@ -142,7 +142,7 @@ body {
 
 .time {
   position: absolute;
-  top: 1px;
+  top: 2px;
   margin: 0;
   padding: 8px 16px;
   border: 1px solid var(--border);                                                                                                                                                                                                                                                                                                                                              z;
@@ -190,9 +190,7 @@ body {
   
   .timeline-container::before {
   left: 60px;
-  border: medium solid white;
   border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
   }
 
   .left::after, .right::after {
@@ -210,16 +208,12 @@ body {
   .time{
     position:relative;
     max-width:95%;
-    margin: 10px auto;
+    margin: 10px;
   }
 
   .timeline-content {
     padding: 7px 12px;
-    background-color: white;
     position: relative;
-    border-radius: 6px;
-    border: 1px solid black;
-    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.5);
   }
 
   .timeline-content h3{
@@ -406,5 +400,5 @@ body {
 @media only screen and (max-width: 1199px) {
   .font-weight-bolder {
     text-align: center;
-}
+ }
 }

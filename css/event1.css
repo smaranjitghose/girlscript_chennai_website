@@ -1,10 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500;600&family=Baloo+Paaji+2:wght@400;500;600&family=Comfortaa:wght@400;500;600;700&family=Montserrat:wght@100;400;500&family=Quicksand:wght@300;400;500&family=Raleway:wght@300;400;500;600&display=swap');
-body {
-    overflow-x: hidden;
+html {
+     overflow-x: hidden;
+    --background-clr: linear-gradient(to bottom,#f7a954,white);
 }
+
+html[ data-theme="dark"] {
+    --background-clr: #121212;
+}
+
+@media only screen and (max-width: 1440px) {
+    body{
+        overflow-x: hidden;
+        overflow-y: scroll;
+    
+    }
+}
+
 h2{
     font-size:32.8px;
 }
+
 header {
   position: relative;
   background-repeat: no-repeat;
@@ -16,17 +31,17 @@ header {
 
 .color-overlay-1 {
     position: absolute;
-    background: white;
+    background-color: var(--bg1-color);
     opacity: 0;
     height: 100%;
     width: 100%;
 }
 
-.heading{
-    color: black;
+.heading1{
     font-family: 'Baloo Bhaina 2', sans-serif;
     font-size: 70px;
     padding-top: 8rem;
+    color: var(--heading-clr);
 }
 
 #heading-plus {
@@ -41,25 +56,26 @@ header {
     transform: translateY(-2rem);
     z-index: 1;
     border-radius: 35px;
+    box-shadow: 0 10px 25px rgba(240, 112, 0, 0.23), 0 6px 0px rgba(240, 112, 0, 0.5);
 }
 
 .about-box {
     padding: 0px 120px;
-    background: linear-gradient(to bottom,#f7a954,white);
+    background: var(--background-clr);
 }
 
 @media screen and (max-width: 600px) {
-    .heading{
+    .heading1{
         font-size:40px;
     }
 }
 @media screen and (max-width: 800px) {
-    .heading{
+    .heading1{
         font-size:45px;
     }
 }
 @media screen and (max-width: 1000px) {
-    .heading{
+    .heading1{
         font-size:50px;
     }
 }
@@ -71,14 +87,14 @@ header {
 }
 
 .caption-1 {
-    color: rgba(0,0,0,0.3);
+    color: var(--heading-clr);
     font-size: 18px;
     font-weight: bold;
 }
 
 .caption-2 {
     font-size: 18px;
-    color: rgba(0,0,0,0.4);
+    color: var(--heading-clr);
 }
 
 .font-change {
@@ -118,8 +134,8 @@ header {
 
 .color-overlay-2{
     position: absolute;
-    background: white;
-    opacity: 0.3;
+    background-color: var(--bg2-color);
+    opacity: 0.1;
     height: 100%;
     width: 100%;
 }
@@ -147,14 +163,11 @@ header {
     }
 }
 @media screen and (max-width: 818px) {
-    .heading{
+    .heading1{
         padding-top: 20px;
     }
     .about-box{
         padding: 0 20px;
-    }
-    .animation-box {
-        padding-left:0; 
     }
     header {
         background: url('../assets/Images/prepost-bg-1.png');
@@ -185,18 +198,8 @@ header {
     #register-heading span{
         font-size: 30px;
     }
-    #register-heading{
-        font-size: 35px;
-        width: 200px;
-    }
-    #register-para {
-        font-size: 15px;
-    }
     #register-para span{
         font-size: 15px;
-    }
-    #register-btn {
-        margin-top: 60px; 
     }
     #faq-heading h1{
         font-size: 35px;
@@ -210,6 +213,23 @@ header {
     }
     #faq-question .ans{
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #register-heading{
+        font-size: 35px;
+        width: 200px;
+        margin: auto;
+        padding: 10px;
+    }
+    #register-para {
+        font-size: 15px;
+        padding: 40px;
+    }
+    #register-btn {
+        margin-top: 60px;
+        margin: auto; 
     }
 }
 
@@ -231,7 +251,6 @@ header {
 }
 
 .container-fluid {
-    padding: 30px;
     z-index: 2;
 }
 
@@ -261,15 +280,11 @@ header {
     font-size: 60px;
     font-weight: lighter;
     border-bottom: 1px solid rgba(100,100,100,0.3);
-    color: #555;
+    color:#f36511;
 }
 
 .schedule span {
     font-size: 80px;
-}
-
-.schedule-box {
-    background: white;
 }
 
 .content{
@@ -310,6 +325,7 @@ header {
     font-size:25px;
     margin-top: 30px;
     margin-bottom: 7px;
+    color: #ff8723;
 }
 .ans{
     font-family: 'Quicksand', sans-serif;
@@ -335,6 +351,7 @@ header {
     -ms-flex-pack: center;
     justify-content: center;
     border-radius: 10px;
+    
 }
 
 .featured-schedule-collection:before {
@@ -455,6 +472,7 @@ header {
     width: 100%;
     text-align: center;
     background: none;
+    color:black;
 }
 
 .featured-schedule-collection > h2 span {
@@ -479,6 +497,7 @@ header {
     0 22.3px 17.9px rgba(0, 0, 0, 0.072),
     0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 10px 25px rgba(240, 112, 0, 0.23), 0 2px 0px rgba(240, 112, 0, 0.5);
 }
 
 .featured-schedule-collection ul li .time:hover > h3{
@@ -488,7 +507,6 @@ header {
 .featured-schedule-collection ul li .time:hover {
     background-color: var(--theme-color);
     cursor: default;
-    box-shadow:
     box-shadow: 0 10px 6px -6px black;
 }
 
@@ -524,7 +542,7 @@ header {
 
 .color-overlay-3{
     position: absolute;
-    background: #ddd;
+    background-color: var(--bg2-color);
     opacity: 0.1;
     height: 100%;
     width: 100%;
@@ -543,40 +561,45 @@ header {
 .register-heading span {
     font-size: 50px;
     font-weight: lighter;
-    color: #555;
+    color: var(--heading-clr);
 }
 
 .register-para {
     font-family: 'Quicksand', sans-serif;
     padding-right: 50%;
     font-size: 18px;  
+    color: var(--heading-clr);
 }
 
 .register-para span {
     font-size: 19px;
-    color: #777;
+    color: var(--heading-clr);
 }
 
 .register-btn {
-    color: #fff;
-    background-color: #17a2b8;
     margin: 4em 0 0 10px;
     z-index: 1;
-    font-family: 'Quicksand', sans-serif ;
     font-size: 16px;
     letter-spacing: 2px;
-    font-weight: 500;
+    font-weight: 700;
     position: relative;
-    border: 1px solid white;
+    text-align: center;
     width: 120px;
-    padding: 8px;
-    border-radius: 20px;
+    background-color: var(--theme-color) !important;
+    font-family: 'Comfortaa',sans-serif;
+    padding: 10px 10px;
+    display: block;
+    color: white;
     transition: 0.6s;
+    border-radius: 5px;
+    box-shadow: 0 2px 7px 0px #ff9a0e;
+    border: 1px solid transparent;
 }
 
 .register-btn:hover {
-    background-color: #158196;
-    box-shadow: 0 3px 3px 0 rgba(100,100,100,0.2);  
+    box-shadow: 0 7px 8px #ff9a0e;
+    color: white;
+    
 } 
 
 .faq-heading {
@@ -597,13 +620,12 @@ header {
     font-family: 'Quicksand', sans-serif;
     font-size: 17px;
     padding-top: 10px;
-    color: #666;
+    color: var(--font-color);
     font-weight: 500;
     letter-spacing: 1px;
 }
 
 .question-border {
-    background-color: #fff;
     border-radius: 10px;
 
 }
@@ -618,7 +640,7 @@ header {
 }
 
 .question-border:hover > .ques {
-    color: white;
+    color: black;
 }
 
 .question-border:hover > .ans{
@@ -637,8 +659,7 @@ header {
         background: url(../assets/Images/bg-3-resize.png); 
     }
     .color-overlay-3 {
-        background: white;
-        opacity: 0.6;
+        opacity: 0.8;
     }
 }
 
