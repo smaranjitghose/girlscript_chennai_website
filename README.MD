@@ -1,4 +1,4 @@
-<h1 align="center"><b> GirlSript Website Boilerplate  </b></h1>
+<h1 align="center"><b> GirlScript Website Boilerplate  </b></h1>
 
 
 ![Issues](https://img.shields.io/github/issues/smaranjitghose/girlscript_chennai_website)
