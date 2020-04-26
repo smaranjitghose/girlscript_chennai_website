@@ -4,19 +4,12 @@ html{
     font-family: 'Lato', sans-serif;
     -webkit-font-smoothing: antialiased;
     background-color: var(--bg1-color);
-    --separator-bgColor: linear-gradient(to right, rgba(0, 0, 0, 0), #111, rgba(0, 0, 0, 0));
-    --box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.1);
-    --box-shadowOnHover: 0 0 8px 8px rgba(0,0,0,0.2);
-    --team-name:#555;
-
+    --member-animation: all .35s cubic-bezier(.14,.51,0,1);
 }
 
 html[ data-theme="dark"] {
     background-color: var(--bg1-color);
-    --separator-bgColor:  #fff;
-    --box-shadow: 0px 0px 2px 2px #ffffff;
-    --box-shadowOnHover: 0 0 4px 4px #fff;
-    --team-name: #fff;
+    --member-animation: all .35s cubic-bezier(.14,.51,0,1);
 }
 
  body {
@@ -24,152 +17,170 @@ html[ data-theme="dark"] {
     -webkit-font-smoothing: antialiased;
 }
 
-.seperator{
-    background: var(--separator-bgColor);
-    max-width:75%;
+section {
+    padding: 120px 0;
 }
 
-.team {
-    overflow-x: hidden;
-}
-
-.team h3{
-    text-align: center;
-}
-
-.section1{
-    height: 600px;
+.container {
     width: 100%;
-    margin-top: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container .row:first-child {
+    margin-top: 0px;
 }
 
-#teamHeading{
+.row {
+    margin: 0px;
+}
+
+.section-heading {
+ 
+    margin-bottom: 5px;
+    width: 100%;
+    user-select: none;
+    text-align:center;
     font-family: 'Comfortaa', sans-serif;
-    font-size: 45px;
+    font-size: 50px;
     font-weight: 400;
     color:var(--font-color);
+    user-select: none;
+    text-align:center;
 }
 
 #teamHeading span {
     color: var(--theme-color);
 }
 
-#teamPara{
-    font-family: 'Comfortaa', sans-serif;
-    font-size: 16px;
-    color: var(--font-color);
-    font-weight: 400;
-    letter-spacing: 0.6px;
+#team .team-description {
+    margin: 0 auto;
 }
 
-.team-center-heading {
-    font-family: 'Baloo Bhaina 2', sans-serif;
-    font-size: 55px;
-    font-weight: 400;
-    color:var(--font-color);
-    text-align: center;
-
-}
-
-.team-center-heading span {
-    font-weight: 400;
-    color:var(--theme-color);
-}
-
-.team-name {
-    font-size: 18px;
-    font-family: 'Comfortaa', sans-serif;
-    font-weight: 700;
-    color: var(--team-name);
-}
-
-.team-name-2 {
+#team .team-description h4 {
+    padding: 0;
     font-size: 20px;
-    font-family: 'Comfortaa', sans-serif;
-    font-weight: 700;
-    color: var(--team-name);
-}
-
-.circularDiv{
-    height: 220px;
-    width: 220px;
-    border-radius: 50%;
-    box-shadow: var(--box-shadow);
-	cursor: pointer;
-	transition: all 0.4s;
-}
-.circularDiv:hover {
-	transform: scale(1.05);
-	box-shadow: var(--box-shadowOnHover);
-}
-
-.team h2{
+    max-width: 500px;
     text-align: center;
 }
 
-.boardRowHide, .techRowHide, .manageRowHide{
-    margin-top: 20px;
-    display: none;
+#team h4 {
+    color: #616161;
+    font-size: 1.25rem;
+    text-align: left;
+    padding-top: 3rem;
+    font-weight: 200;
+    padding-bottom: 6rem;
+    line-height: 1.618;
 }
 
-.boardRowShow, .techRowShow, .manageRowShow{
-    margin-top: 20px;
+.container-year-button {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.container .row:last-child {
+    margin-bottom: 0px;
 }
 
-@media only screen and (max-width: 440px){
-    #teamImg{
-        height: 250px;
-        width: 250px;
-        padding-left: 15px;
-    }
+.row {
+    margin: 0px;
 }
 
-@media only screen and (max-width:768px){
-    .teamSection {
-		padding-left: 17%;
-	}
+#teamGrid {
+    width: 100%;
+    margin: 0;
+    margin-top: 100px;
+}
+.gs-team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-content: center;
+    align-items: stretch;
+    grid-gap: 110px 6%;
+}
+.gs-team-member {
+    padding: 20px 60px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0px 0px rgba(239, 112, 0, 0.10), 20px 16px 50px -20px rgb(240, 112, 0);
+    position: relative;
+    transition: var(--member-animation);
 }
 
-.techBtn,.boardBtn,.manageBtn{
-  
-    background-color: var(--theme-color);
-    border-color: var(--theme-color);
-    color: white;
+.gs-team-member-image {
+    height: 100px;
+    overflow: visible;
+    background-position: center;
+    position: relative;
+}
+
+.gs-team-member-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    position: absolute;
+    top: -70px;
+    left: -30px;
+    box-shadow: 8px 12px 20px -10px rgb(183, 183, 183);
+}
+
+.gs-team-member-info {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.gs-team-member-info .gs-fullname {
+    font-size: 1.5rem;
+    line-height: 38px;
+    margin-bottom: 10px;
+    color: #EF6F00;
+    transition: var(--member-animation);
     font-weight: bold;
-    transition: 0.6s;
-    border-radius: 5px;
-    box-shadow: 0 2px 7px 0px #ff9a0e;
 }
 
-.manageBtn {
-    font-family: 'Quicksand', sans-serif;
-    letter-spacing: 3px;
-    font-weight: 600;
-    font-size: 17px;
+.gs-team-member-info .gs-position {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 1rem;
 }
 
-.techBtn:hover, .boardBtn:hover, .manageBtn:hover{
-    background-color: var(--theme-color);
-    border-color: var(--theme-color);
-    box-shadow: 0 7px 8px #ff9a0e;
+.gs-team-member-social {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.gs-team-member-social a:first-child {
+    border-top-right-radius: 10px;
+}
+
+.gs-team-member-social a {
+    padding: 8px 12px;
+    font-size: 1.3rem;
+    text-align: center;
+    border: none;
+    border-image-width: 0;
+    background-color: rgba(239, 112, 0, 0.75);
     color: white;
-    font-weight: bold;
+    outline: none;
+    transition: var(--member-animation);
+}
+.gs-team-member .gs-team-member-social a:hover {
+    background-color: #ef7000a8;
 }
 
-@media only screen and (max-width: 372px){
-    #teamHeading {
-	  font-size: 50px;
-    }
-
-    .team-center-heading {
-        font-size: 47px;
-    }
+.gs-team-member:hover .gs-team-member-social a {
+    transition: var(--member-animation);
 }
-@media only screen and (max-width: 536px){
 
-    .team-center-heading span {
-        display: flex;
-        justify-content: center;
-    }
+.gs-team-member-social a:last-child {
+    border-bottom-left-radius: 10px;
+}
+
+ @media only screen and (min-width: 993px){
+   .container {
+    width: 70%;
+  }
 }
