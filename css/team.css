@@ -203,6 +203,10 @@ section {
     border-top: 0.1px solid rgba(0,0,0,.1);
 }
 
+.fab:hover{
+    color: var(--bg1-color);
+}
+
  @media only screen and (min-width: 993px){
    .container {
     width: 70%;
@@ -214,3 +218,11 @@ section {
      margin: 20px;
    }
  }
+
+ @media only screen and (max-width: 1330px) and (min-width: 1217px){
+    .gs-team-member-info .gs-fullname{
+        font-size: 1.6rem;
+
+    }
+   }
+ 
