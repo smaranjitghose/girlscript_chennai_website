@@ -222,7 +222,11 @@ section {
  @media only screen and (max-width: 1330px) and (min-width: 1217px){
     .gs-team-member-info .gs-fullname{
         font-size: 1.6rem;
-
     }
-   }
+}
+@media only screen and (max-width: 767px) and (min-width: 574px){
+    .gs-team-member-info .gs-fullname{
+        font-size: 1.6rem;
+    }
+}
  
