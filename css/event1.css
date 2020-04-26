@@ -4,17 +4,15 @@ html {
     --background-clr: linear-gradient(to bottom,#f7a954,white);
     --shadow-clr: #eee;
 }
-
 html[ data-theme="dark"] {
     --background-clr: #121212;
-    --shadow-clr: rgba(100,100,100,0.5);
+    --shadow-clr: rgba(100,100,100,0.4);
 }
 
 @media only screen and (max-width: 1440px) {
     body{
         overflow-x: hidden;
         overflow-y: scroll;
-    
     }
 }
 
@@ -115,12 +113,12 @@ header {
 }
 
 .get-info a {
-    transition: 0.6s;
+    transition: 0.5s;
 }
 
 .get-info a:hover {
     color: #f36511;
-    text-shadow: 3px 3px 5px var(--shadow-clr);
+    text-shadow: 5px 5px 7px var(--shadow-clr);
 }
 
 .mid-section {
