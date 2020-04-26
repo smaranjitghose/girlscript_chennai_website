@@ -207,6 +207,23 @@ section {
     color: var(--bg1-color);
 }
 
+@media only screen and (max-width: 565px){
+
+    .container .row:last-child{
+        padding:10px;
+    }
+}
+
+@media only screen and (max-width: 533px){
+
+    #team .team-description h4{
+        padding:10px;
+        text-align: justify;
+
+    }
+}
+
+
  @media only screen and (min-width: 993px){
    .container {
     width: 70%;
