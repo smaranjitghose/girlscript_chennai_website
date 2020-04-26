@@ -94,7 +94,7 @@ section {
     grid-gap: 110px 6%;
 }
 .gs-team-member {
-    padding: 20px 60px 20px 20px;
+    padding: 20px 50px 20px 20px;
     border-radius: 10px;
     position: relative;
     transition: var(--member-animation);
@@ -136,8 +136,8 @@ section {
 }
 
 .gs-team-member-image img {
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
     border-radius: 10px;
     position: absolute;
     top: -70px;
@@ -147,10 +147,12 @@ section {
 
 .gs-team-member-info {
     font-family: 'Comfortaa', sans-serif;
+    margin-top:35px;
+    margin-bottom:15px;
 }
 
 .gs-team-member-info .gs-fullname {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     line-height: 38px;
     margin-bottom: 10px;
     color: #EF6F00;
@@ -169,10 +171,8 @@ section {
     position: absolute;
     top: 0;
     right: 0;
-}
-
-.gs-team-member-social a:first-child {
     border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .gs-team-member-social a {
@@ -188,10 +188,6 @@ section {
 
 .gs-team-member:hover .gs-team-member-social a {
     transition: var(--member-animation);
-}
-
-.gs-team-member-social a:last-child {
-    border-bottom-left-radius: 10px;
 }
 
  @media only screen and (min-width: 993px){
