@@ -150,7 +150,8 @@ body {
   top: 2px;
   margin: 0;
   padding: 8px 16px;
-  border: 1px solid var(--border);                                                                                                                                                                                                                                                                                                                                              z;
+	border: 1px solid var(--border);
+	z-index: 5;
   border-radius: 18px;
   transition: 300ms linear;
   background-color: var(--box-clr);
@@ -212,7 +213,7 @@ body {
     margin: 10px auto;
   }
   .time h5 {
-    font-size: 
+    font-size: 30px;
     color: #f47621;
     font-weight: bolder;
     letter-spacing: 1px;
@@ -443,7 +444,8 @@ body {
   .timeline-content h3 {
     font-size: 24px;
     text-align: center;
-  }
+	}
+}
 @media only screen and (max-width: 991px) {
   .timeline-content h3 {
     font-size: 18px;
