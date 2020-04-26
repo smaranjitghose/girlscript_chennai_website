@@ -101,13 +101,13 @@ section {
 }
 
 .gs-team--board{
-    box-shadow: 10px 10px 0px 0px rgba(239, 112, 0, 0.10), 20px 16px 50px -20px rgb(240, 112, 0);
+    box-shadow: 8px 8px 0px 0px rgba(239, 112, 0, 0.10), 20px 16px 50px -20px rgb(240, 112, 0);
 }
 .gs-team--tech {
-    box-shadow: 10px 10px 0px 0px rgba(51, 105, 30, 0.1), 20px 16px 50px -20px rgb(51, 105, 30);
+    box-shadow: 8px 8px 0px 0px rgba(51, 105, 30, 0.1), 20px 16px 50px -20px rgb(51, 105, 30);
 }
 .gs-team--mang {
-    box-shadow: 10px 10px 0px 0px rgba(136, 14, 79, 0.1), 20px 16px 50px -20px rgb(136, 14, 79);
+    box-shadow: 8px 8px 0px 0px rgba(136, 14, 79, 0.1), 20px 16px 50px -20px rgb(136, 14, 79);
 }
 .gs-team--board .gs-team-member-social {
     background-color: rgba(240, 112, 0, 0.75);
@@ -163,6 +163,7 @@ section {
 .gs-team-member-info .gs-position {
     font-family: 'Comfortaa', sans-serif;
     font-size: 1rem;
+    color:var(--font-color);
 }
 
 .gs-team-member-social {
@@ -185,9 +186,21 @@ section {
     outline: none;
     transition: var(--member-animation);
 }
+.gs-team-member-social a:first-child {
+    border-top-right-radius: 10px;
+}
+
+.gs-team-member-social a:last-child {
+    border-bottom-left-radius: 10px;
+}
 
 .gs-team-member:hover .gs-team-member-social a {
     transition: var(--member-animation);
+}
+
+.line {
+    background-color: var(--heading-clr);
+    border-top: 0.1px solid rgba(0,0,0,.1);
 }
 
  @media only screen and (min-width: 993px){
@@ -195,3 +208,9 @@ section {
     width: 70%;
   }
 }
+
+@media only screen and (max-width: 570px){
+    .gs-team-grid {
+     margin: 20px;
+   }
+ }
