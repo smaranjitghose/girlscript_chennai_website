@@ -2,10 +2,12 @@
 html {
      overflow-x: hidden;
     --background-clr: linear-gradient(to bottom,#f7a954,white);
+    --shadow-clr: #eee;
 }
 
 html[ data-theme="dark"] {
     --background-clr: #121212;
+    --shadow-clr: rgba(100,100,100,0.5);
 }
 
 @media only screen and (max-width: 1440px) {
@@ -118,7 +120,7 @@ header {
 
 .get-info a:hover {
     color: #f36511;
-    text-shadow: 3px 3px 5px #eee;
+    text-shadow: 3px 3px 5px var(--shadow-clr);
 }
 
 .mid-section {
