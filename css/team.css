@@ -32,10 +32,6 @@ section {
     margin-top: 0px;
 }
 
-.row {
-    margin: 0px;
-}
-
 .section-heading {
  
     margin-bottom: 5px;
@@ -85,10 +81,6 @@ section {
     margin-bottom: 0px;
 }
 
-.row {
-    margin: 0px;
-}
-
 #teamGrid {
     width: 100%;
     margin: 0;
@@ -104,9 +96,36 @@ section {
 .gs-team-member {
     padding: 20px 60px 20px 20px;
     border-radius: 10px;
-    box-shadow: 10px 10px 0px 0px rgba(239, 112, 0, 0.10), 20px 16px 50px -20px rgb(240, 112, 0);
     position: relative;
     transition: var(--member-animation);
+}
+
+.gs-team--board{
+    box-shadow: 10px 10px 0px 0px rgba(239, 112, 0, 0.10), 20px 16px 50px -20px rgb(240, 112, 0);
+}
+.gs-team--tech {
+    box-shadow: 10px 10px 0px 0px rgba(51, 105, 30, 0.1), 20px 16px 50px -20px rgb(51, 105, 30);
+}
+.gs-team--mang {
+    box-shadow: 10px 10px 0px 0px rgba(136, 14, 79, 0.1), 20px 16px 50px -20px rgb(136, 14, 79);
+}
+.gs-team--board .gs-team-member-social {
+    background-color: rgba(240, 112, 0, 0.75);
+}
+.gs-team--tech .gs-team-member-social {
+    background-color: rgba(51, 105, 30, 0.75);
+}
+.gs-team--mang .gs-team-member-social {
+    background-color: rgba(136, 14, 79, 0.75);
+}
+.gs-team--board .gs-team-member-social :hover {
+    background-color: rgba(240, 112, 0, 0.75);
+}
+.gs-team--tech .gs-team-member-social :hover {
+    background-color: rgba(51, 105, 30, 0.75);
+}
+.gs-team--mang .gs-team-member-social :hover {
+    background-color: rgba(136, 14, 79, 0.75);
 }
 
 .gs-team-member-image {
@@ -162,13 +181,9 @@ section {
     text-align: center;
     border: none;
     border-image-width: 0;
-    background-color: rgba(239, 112, 0, 0.75);
     color: white;
     outline: none;
     transition: var(--member-animation);
-}
-.gs-team-member .gs-team-member-social a:hover {
-    background-color: #ef7000a8;
 }
 
 .gs-team-member:hover .gs-team-member-social a {
