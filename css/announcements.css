@@ -154,7 +154,6 @@ body {
   border-radius: 18px;
   transition: 300ms linear;
   background-color: var(--box-clr);
-
 }
 
 @media screen and (min-width: 770px) {
@@ -181,11 +180,6 @@ body {
   left: 31px;
   }
 
-  .time{
-    position:relative;
-    width:155px;
-    margin: 10px auto;
-  }
 
   .timeline-container {
   width: 100%;
@@ -202,11 +196,50 @@ body {
   left: 15px;
   }
   
+  .left::before {
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #f47621 transparent transparent;
+  }
+
   .right {
   left: 0%;
   }
-}
 
+  .time {
+    border: none;
+    position:relative;
+    width:175px;
+    margin: 10px auto;
+  }
+  .time h5 {
+    font-size: 
+    color: #f47621;
+    font-weight: bolder;
+    letter-spacing: 1px;
+  }
+  .time-1 {
+  right: 215px;
+  }
+  .time-2 {
+  left: -215px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .time-1 {
+    right: 125px;
+  }
+  .time-2 {
+    left: -125px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .time-1 {
+    right: 0px;
+  }
+  .time-2 {
+    left: 0px;
+  }
+}
 
 @media screen and (max-width: 395px) {
 
@@ -381,6 +414,7 @@ body {
 }
 
 .description{
+  letter-spacing: 0.5px;
   color: var(--font-color);
 }
 
@@ -405,5 +439,22 @@ body {
 @media only screen and (max-width: 1199px) {
   .font-weight-bolder {
     text-align: center;
- }
+  }
+  .timeline-content h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+@media only screen and (max-width: 991px) {
+  .timeline-content h3 {
+    font-size: 18px;
+  }
+  .description {
+    font-size: 14px;    
+  }
+  .card-stats {
+    transform: scale(0.85);
+  }
+  .time{
+    transform: scale(0.8);
+  }
 }
