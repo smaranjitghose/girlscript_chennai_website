@@ -66,6 +66,122 @@ let header = $(`
 
   
 let footer = $(`
+<div class="waves">
+    <svg width="100%" height="150px" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+	<linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#b2b2b2" /><stop offset="50%" stop-color="#b2b2b2" /><stop offset="100%" stop-color="#b2b2b2" /></linearGradient>
+	<path fill="url(#grad3)" d="M0 67 C 273,183 822,-40 1920.00,106 V 359 H 0  V 67 Z">
+	  <animate repeatCount="indefinite" fill="url(#grad2)" attributeName="d" dur="5s" attributeType="XML"values="
+	  M0 77 
+	  C 473,283
+		822,-40
+		1920,116 
+	  V 359 
+	  H 0 
+	  V 67 
+	  Z; 
+	  M0 77 
+	  C 473,-40
+		1222,283
+		1920,136
+	  V 359 
+	  H 0 
+	  V 67 
+	  Z; 
+	  M0 77 
+	  C 973,260
+		1722,-53
+		1920,120 
+	  V 359 
+	  H 0 
+	  V 67 
+	  Z; 
+	  M0 77 
+	  C 473,283
+		822,-40
+		1920,116   
+	  V 359 
+	  H 0 
+	  V 67 
+	  Z
+		  ">
+	  </animate>
+	</path><linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#636363" /><stop offset="50%" stop-color="#636363" /><stop offset="100%" stop-color="#636363" /></linearGradient>
+	<path fill="url(#grad2)" d="M0 67 C 273,183 822,-40 1920.00,106 V 359 H 0  V 67 Z">
+	  <animate repeatCount="indefinite" fill="url(#grad2)" attributeName="d" dur="10s" attributeType="XML"values="
+	  M0 77 
+	  C 473,283
+		822,-40
+		1920,116 
+	  V 359 
+	  H 0 
+	  V 67 
+	  Z; 
+	  M0 77 
+	  C 473,-40
+		1222,283
+		1920,136
+	  V 359 
+	  H 0 
+	  V 67 
+	  Z; 
+	  M0 77 
+	  C 973,260
+		1722,-53
+		1920,120 
+	  V 359 
+	  H 0 
+	  V 67 
+	  Z; 
+	  M0 77 
+	  C 473,283
+		822,-40
+		1920,116   
+	  V 359 
+	  H 0 
+	  V 67 
+	  Z
+		  ">
+	  </animate>
+	</path><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#101010" /><stop offset="50%" stop-color="#101010" /><stop offset="100%" stop-color="#101010" /></linearGradient>
+      <path fill="url(#grad1)" d="M0 67 C 273,183 822,-40 1920.00,106 V 359 H 0  V 67 Z">
+        <animate repeatCount="indefinite" fill="url(#grad1)" attributeName="d" dur="15s" attributeType="XML"values="
+            M0 77 
+            C 473,283
+              822,-40
+              1920,116 
+            V 359 
+            H 0 
+            V 67 
+            Z; 
+            M0 77 
+            C 473,-40
+              1222,283
+              1920,136
+            V 359 
+            H 0 
+            V 67 
+            Z; 
+            M0 77 
+            C 973,260
+              1722,-53
+              1920,120 
+            V 359 
+            H 0 
+            V 67 
+            Z; 
+            M0 77 
+            C 473,283
+              822,-40
+              1920,116   
+            V 359 
+            H 0 
+            V 67 
+            Z
+            ">
+        </animate>
+	  </path>
+    </svg>
+  </div>
 <footer>
 <div class="container">
   <div class="row">

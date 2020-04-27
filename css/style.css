@@ -516,6 +516,56 @@ Parallax section
 
 /* footer */
 
+/* Svg wave */
+
+#grad1{
+  position: relative;
+  width: 100%;
+  bottom: 0px;
+  left: 0;
+  animation-name: move-left;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#grad2{
+  position: relative;
+  width: 100%;
+  bottom: 0px;
+  left: 0;
+  animation-name: move-left;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#grad3{
+  position: relative;
+  width: 100%;
+  bottom: 0px;
+  left: 0;
+  animation-name: move-left;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes example {
+  0%   {
+    left:0px;
+    top:0px;}
+  
+  50%  {
+    left:-2000px;
+    top:200px;}
+  
+  100% {
+    left:0px; 
+    top:0px;}
+}
+
+
 footer {
   background: var(--footer-bg);
   padding: 20px 0;
