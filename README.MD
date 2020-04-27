@@ -128,10 +128,8 @@ click on `Compare and Pull Request`
 
 ### 👬  Mentors and Project Maintainers
 
-- [Sukkrit Sharma](https://github.com/sukkritsharmaofficial)
-- [Saswat Nayak](https://github.com/swat1998)
-- [Ousnik Polley](https://github.com/ousnik)
 - [Anush Bhatia](https://github.com/anushbhatia)
+- [Sukkrit Sharma](https://github.com/sukkritsharmaofficial)
 
 Feel free to ask your queries!! 🙌
 
