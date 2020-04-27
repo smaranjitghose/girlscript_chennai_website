@@ -399,12 +399,16 @@ margin-top:2rem;
 
 .ct1 {
     letter-spacing: 1px;
-  }#FF8C00
+  }
 .ct2 {
     letter-spacing: 2px;
  }
 .ct3 {
-    letter-spacing: -1px;
+    letter-spacing: 0px;
+}
+
+.card-img-top{
+  border-radius: 5px;
 }
  
 @media only screen and (max-width: 1200px) {
