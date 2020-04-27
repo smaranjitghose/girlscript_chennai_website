@@ -540,6 +540,17 @@ Parallax section
   animation-direction: alternate;
 }
 
+#grad3{
+  position: relative;
+  width: 100%;
+  bottom: 0px;
+  left: 0;
+  animation-name: move-left;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
 @keyframes example {
   0%   {
     left:0px;
