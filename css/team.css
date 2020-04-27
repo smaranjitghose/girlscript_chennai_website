@@ -93,11 +93,18 @@ section {
     align-items: stretch;
     grid-gap: 110px 6%;
 }
+
+.gs-team-member:hover{
+    transform: translateY(-10px);
+    transition: all 0.2s ease-out;
+}
+
 .gs-team-member {
     padding: 20px 50px 20px 20px;
     border-radius: 10px;
     position: relative;
     transition: var(--member-animation);
+    cursor:pointer;
 }
 
 .gs-team--board{
