@@ -214,10 +214,9 @@ body {
     margin: 10px auto;
   }
   .time h5 {
-    font-size: 30px;
+    font-size: 20px;
     color: #f47621;
     font-weight: bolder;
-    letter-spacing: 1px;
   }
   .time-1 {
   right: 215px;
@@ -435,7 +434,6 @@ body {
  }
 
   .card-btn{
-    margin-right: 35px;
     padding-top: 10px;
   }
 }
@@ -450,15 +448,42 @@ body {
 }
 @media only screen and (max-width: 991px) {
   .timeline-content h3 {
-    font-size: 18px;
+    font-size: 20px;
   }
   .description {
-    font-size: 14px;    
+    font-size: 15px;    
   }
   .card-stats a{
     transform: scale(0.85);
   }
   .time{
     transform: scale(0.8);
+  }
+}
+
+@media screen and (max-width: 396px){
+.timeline-container::before {
+    left: 46px;
+  }
+.time{
+    margin:auto;
+  }
+}
+
+@media screen and (max-width: 403px) and (min-width: 396){
+  .timeline-container::before {
+      left: 60px;
+  }
+}
+
+@media only screen and (max-width: 340px){
+.card-btn1 {
+    margin:auto;
+  }
+}
+
+@media only screen and (max-width: 340px){
+  .card-btn2 {
+      margin-right: 45px;
   }
 }
