@@ -1,4 +1,6 @@
-# Contributing Guidelines for Girlscript Website Boilerplate.  
+<p align="center"><img width=50% src="assets/Images/Docs/contribution.png"></p>
+
+<h1 align="center"><b> Contributing Guidelines </b></h13> 
 
 ![GSSOC'20](https://img.shields.io/badge/GSSOC-20-orange?style=for-the-badge)
 
@@ -8,8 +10,6 @@ We want to make contributing to this project as easy and transparent as possible
 * Reporting a bug
 * Submitting a fix
 * Proposing new features
-
-<p align="center"><img width=30% src="assets/Images/Docs/contribution.png"></p>
 
 ### Steps:
 
