@@ -11,7 +11,7 @@ We want to make contributing to this project as easy and transparent as possible
 *  Fork [this](https://github.com/smaranjitghose/girlscript_chennai_website.git) repository.
 *  Clone the forked repository.
     ```
-    git clone https://github.com/<your_user_name>/girlscript_chennai_website.git
+    git clone --depth 1 https://github.com/<your_user_name>/girlscript_chennai_website.git
     ```
 * Navigate to the project directory.
     ```
