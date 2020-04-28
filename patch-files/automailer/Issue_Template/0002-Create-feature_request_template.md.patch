@@ -1,0 +1,39 @@
+From f1c3098be0a59a0cf15166728534f07bf2eff28f Mon Sep 17 00:00:00 2001
+From: Aman-Codes <54680709+Aman-Codes@users.noreply.github.com>
+Date: Tue, 28 Apr 2020 12:27:30 +0530
+Subject: [PATCH 2/5] Create feature_request_template.md
+
+---
+ .GitHub/feature_request_template.md | 20 ++++++++++++++++++++
+ 1 file changed, 20 insertions(+)
+ create mode 100644 .GitHub/feature_request_template.md
+
+diff --git a/.GitHub/feature_request_template.md b/.GitHub/feature_request_template.md
+new file mode 100644
+index 0000000..0214585
+--- /dev/null
++++ b/.GitHub/feature_request_template.md
+@@ -0,0 +1,20 @@
++---
++name: Feature request
++about: Suggest an idea for this project
++title: ''
++labels: ''
++assignees: ''
++
++---
++
++**Is your feature request related to a problem? Please describe.**
++A clear and concise description of what the problem is.
++
++**Describe the solution you'd like**
++A clear and concise description of what you want to happen.
++
++**Describe alternatives you've considered**
++A clear and concise description of any alternative solutions or features you've considered.
++
++**Additional context**
++Add any other context or screenshots about the feature request here.
+-- 
+2.26.2.windows.1
+
