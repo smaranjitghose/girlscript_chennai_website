@@ -1,4 +1,6 @@
-# Contributing Guidelines for Girlscript Chennai website.  🚀
+# Contributing Guidelines for Girlscript Website Boilerplate.  🚀
+
+![GSSOC'20](https://img.shields.io/badge/GSSOC-20-orange?style=for-the-badge)
 
 We value all the people who are interested in contributing to Girlscript Chennai website. This is required to create a unified development environment.
 
