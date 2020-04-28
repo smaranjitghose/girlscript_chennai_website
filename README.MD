@@ -1,4 +1,4 @@
-<h1 style="text-align: center"><b> GirlScript Website Boilerplate  </b></h1>
+<p align="center"><img width=30% src="assets/Images/logo_for_boilerplate.png"></p>
 
 
 ![Issues](https://img.shields.io/github/issues/smaranjitghose/girlscript_chennai_website)
@@ -7,7 +7,6 @@
 ![Stars](	https://img.shields.io/github/stars/smaranjitghose/girlscript_chennai_website)
 ![License](https://img.shields.io/github/license/smaranjitghose/girlscript_chennai_website)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7751d10252d944ae8eb68120e1f20397)](https://app.codacy.com/manual/garimasingh128/girlscript_chennai_website?utm_source=github.com&utm_medium=referral&utm_content=garimasingh128/girlscript_chennai_website&utm_campaign=Badge_Grade_Dashboard)
-
 
 This is an open source project for creating a website that shall serve as a boilerplate for various chapters of GirlScript. With certain modifications to the content specific to the chapter using this, the need to build a website from scratch and the pains of fixing bugs and figuring out what part fits where is eliminated. Feel free to use this!. If this project helps you out, please give us a mention. Also, we would love to see your version of the same! Do a give a PR in a different branch that showcases how you used this!
 
