@@ -129,7 +129,7 @@ Feel free to ask your queries!! 🙌
 <p align="center"><img width=35% src="https://media.giphy.com/media/qHRwTyhWIj4UU/200w_d.gif"></p>
 
 
-<h2 align="center"><b> License 📝</b></h2> 
+<h2 align="center"><b> License  📝</b></h2> 
 
 <p align="center"><img width=35% src="https://media.giphy.com/media/xUPGcJGy8I928yIlAQ/giphy.gif"></p>
 
