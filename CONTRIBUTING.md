@@ -12,15 +12,7 @@ We want to make contributing to this project as easy and transparent as possible
 
 ## How to contribute ☘️:
 
-### 👇 Prerequisites:
 
-- Ability to use Git and Github is mandatory
-- Working knowledge of HTML and CSS
-- Basic knowledge of JavaScript
-- Additional frontend frameworks like Bootstrap
-- UI/UX skills are appreciable but not mandatory
-
-### Steps:
 
 <p style="text-align: center"><img width=35% src="https://media.giphy.com/media/o5BzNDDFQnepi/giphy.gif"></p>
 
