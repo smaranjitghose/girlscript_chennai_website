@@ -113,12 +113,13 @@ click on `Compare and Pull Request`
 <p align="center"><img width=20% src="https://avatars2.githubusercontent.com/u/46641503?v=4"></p>
 <h4 align="center"><b> Smaranjit Ghose</b></h4>
 
-### 👬  Mentors and Project Maintainers
+
+<h3 align="center"><b> Project Maintainers and Mentors 👬 </b></h3>
 
 - [Anush Bhatia](https://github.com/anushbhatia)
+- [Saswat Nayak](https://github.com/swat1998)
+- [Ousnik Polley](https://github.com/ousnik)
 - [Sukkrit Sharma](https://github.com/sukkritsharmaofficial)
-- Saswat Nayak
-- Ousnik Polley
 
 Feel free to ask your queries!! 🙌
 
@@ -131,4 +132,6 @@ Feel free to ask your queries!! 🙌
 <h2 align="center"><b> License 📝</b></h2> 
 
 <p align="center"><img width=35% src="https://media.giphy.com/media/xUPGcJGy8I928yIlAQ/giphy.gif"></p>
+
+Refer to [LICENSE](./LICENSE).
 
