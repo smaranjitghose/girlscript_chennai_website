@@ -22,14 +22,6 @@ This project is also meant to be a starting for all techies interested to get th
 
 [Link to the corresponding app template](https://github.com/smaranjitghose/girlscript_app)
 
-### 👇 Prerequisites:
-
-- Ability to use Git and Github is mandatory
-- Working knowledge of HTML and CSS
-- Basic knowledge of ReactJS is a plus and willingness to learn more
-- UI/UX skills are appreciable but not mandatory
-- Additional backend skills of Django/NodeJS
-
  <h2 style="text-align: center"><b> The Geeks behind this initiative:</b></h2> 
 
  <p style="text-align: center"><img width=50% src="https://media.giphy.com/media/26wkRxKJ9yUZzlorK/giphy.gif"></p>
