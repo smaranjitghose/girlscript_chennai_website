@@ -24,6 +24,8 @@ html {
   --heading-clr: #444;
   --eventcard: 5px 5px 15px rgba(0,0,0,0.6);
   --box-clr: #fff;
+  --wave1-bg:#636363;
+  --wave2-bg: #b2b2b2;
 }
 html[ data-theme="dark"] {
   
@@ -42,6 +44,8 @@ html[ data-theme="dark"] {
   --heading-clr: #fff;
   --eventcard: 0 2px 4px 0 #f47621;
   --box-clr: #202020;
+  --wave1-bg:#686868;
+  --wave2-bg: #b2b2b2;
 }
 
 body {
@@ -529,6 +533,10 @@ Parallax section
   animation-direction: alternate;
 }
 
+#grad1 stop{
+  stop-color: var(--footer-bg);
+}
+
 #grad2{
   position: relative;
   width: 100%;
@@ -540,6 +548,10 @@ Parallax section
   animation-direction: alternate;
 }
 
+#grad2 stop{
+  stop-color:var(--wave1-bg) ;
+}
+
 #grad3{
   position: relative;
   width: 100%;
@@ -549,6 +561,10 @@ Parallax section
   animation-duration: 12s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+}
+
+#grad3 stop{
+  stop-color: var(--wave2-bg);
 }
 
 @keyframes example {
