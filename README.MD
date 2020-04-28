@@ -100,18 +100,6 @@ click on `Compare and Pull Request`
 
 **Congratulations!** Sit and relax, you've made your contribution to [GirlScript Website Boilerplate](https://github.com/smaranjitghose/girlscript_chennai_website) project.
 
-#### Some more important Git commands:
-
-- `git stash` - Temporarily shelve changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on
-- `git remote add upstream` - Add upstream with https://github.com/smaranjitghose/girlscript_chennai_website
-- `git fetch upstream` - Catching up a git fork to upstream master
-- `git rebase upstream/master` Start the rebase, probably you will need to solve some conflicts, you can always ask here.
-- `git stash pop` -> Recover your uncommited stuff
-- `git push --force` -> Sync your branch with remote
-  _the --force is very important for the first time after rebase, don't forget it._
-
-
-
  <h2 align="center"><b> The Geeks behind this initiative:</b></h2> 
 
  <p align="center"><img width=50% src="https://media.giphy.com/media/26wkRxKJ9yUZzlorK/giphy.gif"></p>
