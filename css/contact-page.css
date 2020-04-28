@@ -20,6 +20,10 @@ html[ data-theme="dark"]{
   -webkit-font-smoothing: antialiased;
 }
 
+.waves{
+  background-color: #000000;
+}
+
 .main-section {
     padding: 10%;
     background-position: center;
