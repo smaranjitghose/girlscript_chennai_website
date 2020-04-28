@@ -42,7 +42,7 @@ This project is also meant to be a starting for all techies interested to get th
 <p align="center"><img width=20% src="https://avatars2.githubusercontent.com/u/46641503?v=4"></p>
 <h4 align="center"><b> Smaranjit Ghose </b></h3>
 
-<h3 align="center"><b> Project Maintainers/b></h3>
+<h3 align="center"><b> Project Maintainers</h3>
 
 - [Anush Bhatia](https://github.com/anushbhatia)
 - [Saswat Nayak](https://github.com/swat1998)
