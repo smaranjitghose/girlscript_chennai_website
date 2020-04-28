@@ -118,6 +118,8 @@ click on `Compare and Pull Request`
 
 - [Anush Bhatia](https://github.com/anushbhatia)
 - [Sukkrit Sharma](https://github.com/sukkritsharmaofficial)
+- Saswat Nayak
+- Ousnik Polley
 
 Feel free to ask your queries!! 🙌
 
