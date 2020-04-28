@@ -22,7 +22,7 @@ We want to make contributing to this project as easy and transparent as possible
 
 ### Steps:
 
-<p style="text-align: center"><img width=35% src="https://media.giphy.com/media/o5BzNDDFQnepi/giphy.gif"></p>
+<p align="center"><img width=35% src="https://media.giphy.com/media/o5BzNDDFQnepi/giphy.gif"></p>
 
 *  Fork [this](https://github.com/smaranjitghose/girlscript_chennai_website.git) repository.
 
@@ -55,7 +55,7 @@ We want to make contributing to this project as easy and transparent as possible
 *  ## Before creating an issue, discuss it with the project mentors in the [Slack Channel](https://gssoc20.slack.com)
 * Make changes in the source code after getting yourself assigned by the mentors.
 
-<p style="text-align: center"><img width=35% src="https://media.giphy.com/media/bAplZhiLAsNnG/giphy.gif"></p>
+<p align="center"><img width=35% src="https://media.giphy.com/media/bAplZhiLAsNnG/giphy.gif"></p>
 
 * Commit your changes.
     ```
