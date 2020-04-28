@@ -1,6 +1,6 @@
 <p align="center"><img width=50% src="assets/Images/Docs/contribution.png"></p>
 
-<h1 align="center"><b> Contributing Guidelines </b></h13> 
+<h1 align="center"><b> Contributing Guidelines </b></h3> 
 
 ![GSSOC'20](https://img.shields.io/badge/GSSOC-20-orange?style=for-the-badge)
 
@@ -11,7 +11,7 @@ We want to make contributing to this project as easy and transparent as possible
 * Submitting a fix
 * Proposing new features
 
-### Steps:
+<h2 align="center"><b> Steps </b></h2> 
 
 **1.**  Fork [this](https://github.com/smaranjitghose/girlscript_chennai_website.git) repository.
 
@@ -85,19 +85,20 @@ git push -u origin <your_branch_name>
 
 **Congratulations!** Sit and relax, you've made your contribution to [GirlScript Website Boilerplate](https://github.com/smaranjitghose/girlscript_chennai_website) project.
 
-<h2 align="center"><b>Score Distribution for GSSOC</b></h2>
+
+<h2 align="center"><b>Grading for Contributions (GSSOC'2020) </b></h2>
 
 You will get the following points on the basis of difficulty of the project. 
 
-| Type        | Points          
-| ----------- |:------:
-|  Beginner     | 2 
-|  Easy | 4      
-|  Medium | 7
-| Hard| 10
+| Labels   | Points |        
+| -------- |:------:|
+| Beginner | 2  |
+| Easy     | 4  |
+| Medium   | 7  |
+| Hard     | 10 |
 
-Here, You can [Check your score](https://www.gssoc.tech/profile.html).
+You can check your total score [here](https://www.gssoc.tech/profile.html).
 
-<p align="center"><img width=35% src="assets/Images/Docs/contributing.png"></p>
+<p align="center"><img width=50% src="assets/Images/Docs/Contributing.png"></p>
 
 ***
