@@ -1259,17 +1259,9 @@ a.fa-linkedin {
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.5)
     ),
-    url("../assets/Images/slider_image.jpg");
-}
-.slide2 {
-  background-image: linear-gradient(
-      to bottom right,
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.5)
-    ),
     url("../assets/Images/event2.jpeg");
 }
-.slide3 {
+.slide2 {
   background-image: linear-gradient(
       to bottom right,
       rgba(0, 0, 0, 0.8),
