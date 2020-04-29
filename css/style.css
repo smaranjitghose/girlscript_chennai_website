@@ -939,6 +939,12 @@ a.fa-linkedin {
     flex-direction: column;
   }
 }
+
+@media only screen and (max-width: 872px) {
+  .feature-cards{
+    margin-bottom: 0rem;
+  }
+}
 .ih-item {
   position: relative;
   -webkit-transition: all 0.35s ease-in-out;
@@ -1492,9 +1498,16 @@ a.fa-linkedin {
 }
 
 input:checked + .slider {
-  background-color: var(--bg1-color);
+  background-color: var(--bg2-color);
 }
 
+@media only screen and (max-width: 991px)
+{
+  input:checked + .slider {
+  background-color: rgb(106, 68, 241);
+  }
+}
+   
 input:focus + .slider {
   box-shadow: 0 0 1px #111;
 }
