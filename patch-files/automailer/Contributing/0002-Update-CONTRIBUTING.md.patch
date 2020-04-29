@@ -1,0 +1,25 @@
+From dbe2abfb2ed52ddaeed6d974894d8978d86efecd Mon Sep 17 00:00:00 2001
+From: Aman-Codes <54680709+Aman-Codes@users.noreply.github.com>
+Date: Tue, 28 Apr 2020 19:33:46 +0530
+Subject: [PATCH 2/2] Update CONTRIBUTING.md
+
+---
+ CONTRIBUTING.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/CONTRIBUTING.md b/CONTRIBUTING.md
+index 8649c93..cd9e080 100644
+--- a/CONTRIBUTING.md
++++ b/CONTRIBUTING.md
+@@ -127,7 +127,7 @@ git push -u origin Branch_Name
+ ```
+ 
+ Finally, go to your repository in browser and click on `compare and pull requests`.
+-Use our [pull request template format]( https://github.com/smaranjitghose/automailer/blob/master/.github/pull_request_template.md)
++Use our [pull request template format](https://github.com/smaranjitghose/automailer/blob/master/.GitHub/pull_request_template.md)
+ Then add a title and description to your pull request that explains your precious effort. 
+ 
+ Sit and relax till we review your PR, you've made your contribution to our project.
+-- 
+2.26.2.windows.1
+
