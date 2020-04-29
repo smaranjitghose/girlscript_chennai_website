@@ -1500,9 +1500,16 @@ a.fa-linkedin {
 }
 
 input:checked + .slider {
-  background-color: var(--bg1-color);
+  background-color: var(--bg2-color);
 }
 
+@media only screen and (max-width: 991px)
+{
+  input:checked + .slider {
+  background-color: rgb(106, 68, 241);
+  }
+}
+   
 input:focus + .slider {
   box-shadow: 0 0 1px #111;
 }
