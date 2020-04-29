@@ -939,6 +939,12 @@ a.fa-linkedin {
     flex-direction: column;
   }
 }
+
+@media only screen and (max-width: 872px) {
+  .feature-cards{
+    margin-bottom: 0rem;
+  }
+}
 .ih-item {
   position: relative;
   -webkit-transition: all 0.35s ease-in-out;
