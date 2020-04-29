@@ -1,6 +1,6 @@
 let header = $(`
 <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
-  <a class="navbar-brand" href="index.html"><img src="assets/Images/Logo1.png" id="logo" alt="Girl Script Chennai Chapter Logo" aria-label="Girl Script Chennai Chapter Logo"></a>
+  <a class="navbar-brand" href="index.html"><img src="assets/Images/logo/Logo1.png" id="logo" alt="Girl Script Chennai Chapter Logo" aria-label="Girl Script Chennai Chapter Logo"></a>
   <div id="myNav" class="fullScreen-navigation">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="navigation-content">
@@ -186,7 +186,7 @@ let footer = $(`
 <div class="container">
   <div class="row">
 	<div class="col-lg-6 col-md-4 footer-logo"> 
-		<img src="assets/Images/logo.png" alt="Girl Script Chennai Chapter Logo" class="logo" aria-label="Girl Script Chennai Chapter Logo">
+		<img src="assets/Images/logo/logo.png" alt="Girl Script Chennai Chapter Logo" class="logo" aria-label="Girl Script Chennai Chapter Logo">
 	</div>
 	<div class="col-lg-6 col-md-8 mb-5" id="footer-c">		
 	  <br> 
