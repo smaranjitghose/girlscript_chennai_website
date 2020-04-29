@@ -24,7 +24,7 @@ header {
   position: relative;
   background-repeat: no-repeat;
   height: 500px;
-  background: url('../assets/Images/bg-1.png');
+  background: url('../assets/Images/event/bg-1.png');
   text-align: left;
   background-size: 100% 500px;
 }
@@ -122,7 +122,7 @@ header {
 }
 
 .mid-section {
-    background: url('../assets/Images/bg-2.png');
+    background: url('../assets/Images/event/bg-2.png');
     position: relative;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -145,7 +145,7 @@ header {
         padding: 0 20px;
     }
     header {
-        background: url('../assets/images/bg-resize.png');
+        background: url('../assets/images/event/bg-resize.png');
         background-repeat: no-repeat;
     }
     .color-overlay-1{
@@ -157,7 +157,7 @@ header {
 }
 @media screen and (max-width: 1054px) {
     header {
-        background: url('../assets/images/post-bg-1.png');
+        background: url('../assets/images/event/post-bg-1.png');
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -170,7 +170,7 @@ header {
         padding: 0 20px;
     }
     header {
-        background: url('../assets/Images/prepost-bg-1.png');
+        background: url('../assets/Images/event/prepost-bg-1.png');
         height: 400px;
         background-size: 100% 100%;
         background-repeat: no-repeat;
@@ -530,7 +530,7 @@ header {
 }
 
 .register-section {
-    background: url('../assets/Images/bg-3.png');
+    background: url('../assets/Images/event/bg-3.png');
     position: relative;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -656,7 +656,7 @@ header {
 
 @media screen and (max-width:500px) {
     .register-section {
-        background: url(../assets/Images/bg-3-resize.png); 
+        background: url(../assets/Images/event/bg-3-resize.png); 
     }
     .color-overlay-3 {
         opacity: 0.8;

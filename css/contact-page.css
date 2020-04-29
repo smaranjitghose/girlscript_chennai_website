@@ -29,7 +29,7 @@ html[ data-theme="dark"]{
     background-position: center;
     background-repeat: no-repeat;
 	  background-size: cover;
-    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.808)), url("../assets/Images/contact.jpg");
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.808)), url("../assets/Images/contact/contact.jpg");
 }
 
 [data-aos^="fade"][data-aos^="fade"].aos-animate {
