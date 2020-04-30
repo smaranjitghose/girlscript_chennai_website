@@ -39,4 +39,26 @@ window.addEventListener("load", () => {
     });
 
     userObserver.observe({ entryTypes: ["mark", "measure"] });
+
+
+    // Paint Timing API's
+
+    const paintObserver = new PerformanceObserver(list => {
+        const firstPaint = list.getEntriesByName("first-paint");
+        if (firstPaint.length > 0) {
+            perf("Paint", "First-Paint", firstPaint[0].startTime);
+        }
+
+        const firstContentfulPaint = list.getEntriesByName("first-contentful-paint");
+        if (firstContentfulPaint.length > 0) {
+            perf("Paint", "First-Contentful-Paint", firstContentfulPaint[0].startTime);
+        }
+    });
+
+    try {
+        paintObserver.observe({ entryTypes: ["Paint"] });
+    }
+    catch (e) {
+        console.log("Paint Timing API not Available!")
+    }
 });
