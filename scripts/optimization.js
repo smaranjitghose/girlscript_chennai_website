@@ -19,4 +19,15 @@ window.addEventListener("load", () => {
         perf("navigation", "ttfb", ttfb);
     }
 
+
+    // Resource Timing API
+
+    const resEntries = performance.getEntriesByType("resource");
+    resEntries.forEach(entry => {
+        const size = `${Math.round(entry.encodedBodySize / 1024)}kb`;
+        const ttfb = entry.responseStart - entry.fetchStart;
+
+        perf(entry.initiatorType, entry.name, ttfb, size)
+    });
+
 });
