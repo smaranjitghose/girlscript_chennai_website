@@ -1,5 +1,5 @@
 function perf(type, name, data, options = "") {
-    console.log(`%c${type}: %c${name} | %c${data ? Math.round(data) : ''}ms %c${options}`, "color:red", "color:green", "color:blue", "color:lightblue")
+    console.log(`%c${type}: %c${name} | %c${data ? Math.round(data)+'ms' : ''} %c${options}`, "color:red", "color:green", "color:blue", "color:lightblue")
 }
 
 window.addEventListener("load", () => {
@@ -56,7 +56,7 @@ window.addEventListener("load", () => {
     });
 
     try {
-        paintObserver.observe({ entryTypes: ["Paint"] });
+        paintObserver.observe({ entryTypes: ["paint"] });
     }
     catch (e) {
         console.log("Paint Timing API not Available!")
@@ -66,7 +66,7 @@ window.addEventListener("load", () => {
       // Long Task API : Thread Blockers
     const taskObserver = new PerformanceObserver(list => {
         list.getEntries().forEach(entry => {
-            perf("Long Task", "Thread Used for to Long");
+            perf("Long Task", "Thread Used for to Long >=2s",2000);
         });
     });
 
