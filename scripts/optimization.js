@@ -61,4 +61,19 @@ window.addEventListener("load", () => {
     catch (e) {
         console.log("Paint Timing API not Available!")
     }
+    
+
+      // Long Task API : Thread Blockers
+    const taskObserver = new PerformanceObserver(list => {
+        list.getEntries().forEach(entry => {
+            perf("Long Task", "Thread Used for to Long");
+        });
+    });
+
+    try{
+        taskObserver.observe({entryTypes:["longtask"]})
+    }
+    catch (e) {
+        console.log("Not supported ! Update Broswer or check docs!")
+    }
 });
