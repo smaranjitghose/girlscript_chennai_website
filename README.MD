@@ -40,7 +40,7 @@ This project is also meant to be a starting for all techies interested to get th
 
 - [Anush Bhatia](https://github.com/anushbhatia)
 - [Saswat Nayak](https://github.com/swat1998)
-- [Ousnik Polley](https://github.com/ousnik)
+- [Smaranjit Ghose](https://github.com/smaranjitghose)
 - [Sukkrit Sharma](https://github.com/sukkritsharmaofficial)
 
 
