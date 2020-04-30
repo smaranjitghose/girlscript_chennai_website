@@ -30,4 +30,13 @@ window.addEventListener("load", () => {
         perf(entry.initiatorType, entry.name, ttfb, size)
     });
 
+    // Performace Oberserver for User Timing : Custom
+    const userObserver = new PerformanceObserver(list => {
+        list.getEntries().forEach(entry => {
+            perf(entry.entryType, entry.name,
+                entry.entryType == "mark" ? entry.startTime : entry.duration);
+        });
+    });
+
+    userObserver.observe({ entryTypes: ["mark", "measure"] });
 });
