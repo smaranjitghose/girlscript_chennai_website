@@ -49,6 +49,10 @@ header {
     font-weight: lighter;
 }
 
+.space{
+    padding:35px;
+}
+
 .animation-box {
     background: linear-gradient(to bottom right,#F2F0D1,#D3E3C1,#F2F0D1);
     padding: 1em 30px;
@@ -121,26 +125,8 @@ header {
     text-shadow: 5px 5px 7px var(--shadow-clr);
 }
 
-.mid-section {
-    background: url('../assets/Images/event/bg-2.png');
-    position: relative;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 650px;
-    height: 150px;
-    width: 100%;
-    box-sizing: border-box;
-}
 
-.color-overlay-2{
-    position: absolute;
-    background-color: var(--bg2-color);
-    opacity: 0.1;
-    height: 100%;
-    width: 100%;
-}
-
-@media screen and (max-width: 1248px) {
+@media screen and (max-width: 1048px) {
     .about-box{
         padding: 0 20px;
     }
@@ -155,14 +141,14 @@ header {
         text-align: center;
     }
 }
-@media screen and (max-width: 1054px) {
+@media screen and (max-width: 1000px) {
     header {
         background: url('../assets/images/event/post-bg-1.png');
         background-size: contain;
         background-repeat: no-repeat;
     }
 }
-@media screen and (max-width: 818px) {
+@media screen and (max-width: 900px) {
     .heading1{
         padding-top: 20px;
     }
