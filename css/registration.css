@@ -34,8 +34,7 @@
   
   .wrapper {
     min-height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: 100% 100%;
     display: flex;
     align-items: center; }
   
@@ -57,8 +56,9 @@
   
   form {
     width: 50%;
-    padding-left: 45px; }
-  
+    padding-left: 45px;
+ }
+ 
   .form-group {
     display: flex; }
     .form-group .form-wrapper {
@@ -176,20 +176,62 @@
       transform: translate(-50%, -50%);
       display: none;
       content: '\f26b'; }
+
+
   
-  @media (max-width: 991px) {
+ @media only screen and (max-width: 991px) {
     .inner {
-      min-width: 768px; } }
-  @media (max-width: 767px) {
+      min-width: 768px; 
+    } 
+    }
+
+    @media only screen and (max-width: 767px) {
+    
     .inner {
       min-width: auto;
       background: none;
       padding-top: 0;
-      padding-bottom: 0; }
-  
+      padding-bottom: 0;
+     }
+    }
+
+
+  /* Making Form responsive   */
+ 
+    
+ @media only screen and (max-width: 1000px) {
     form {
-      width: 100%;
-      padding-right: 15px;
-      padding-left: 15px; } }
+      width: 60%;
+    }
+  }
+
+  @media only screen and (max-width: 778px) {
+    form {
+      width: 75%;
+    }
+  }
   
-  
+  @media only screen and (max-width: 515px) {
+    form {
+      width: 90%;
+      padding-right: 25px;
+      padding-left: 25px; 
+    }
+  } 
+
+  @media only screen and (max-width: 440px) {
+
+    form {
+        width: 90%
+    }
+
+    .inner h3 {
+      font-size: 30px;
+    }
+    .form-wrapper,.checkbox label{
+        font-size:13px;
+    }
+    button{
+        font-size:14px;
+    }
+  }
