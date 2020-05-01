@@ -56,7 +56,7 @@ This project is also meant to be a starting for all techies interested to get th
                                                                                                                                         
  Feel free to ask your queries!! 🙌
 
-<a href="./LICENSE"><h2 align= "center"><b> License 📝</b></h2></a> 
+<a href="./LICENSE"><h2 align= "center"><b> [License](/LICENSE) 📝</b></h2></a> 
 
 <p align="center"><img width=35% src="https://media.giphy.com/media/xUPGcJGy8I928yIlAQ/giphy.gif"></p>
 
