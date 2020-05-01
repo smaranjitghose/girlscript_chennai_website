@@ -9,7 +9,9 @@
     font-family: 'Quicksand', sans-serif;
     color: #666;
     font-size: 16px;
-    margin: 0; }
+    margin: 0; 
+    background-color: rgba(0, 0, 0, 0.950);
+  }
   
   input, textarea, select, button {
     font-family: 'Quicksand', sans-serif;
@@ -36,15 +38,32 @@
     min-height: 100vh;
     background-size: 100% 100%;
     display: flex;
-    align-items: center; }
+    align-items: center; 
+    background-size: cover;	    
+    background-repeat: no-repeat;
+  }
   
   .inner {
     min-width: 850px;
     margin: auto;
     padding-top: 68px;
     padding-bottom: 50px;
-       
-}
+
+  }
+    .form {
+      transition: all 1s;
+      border-radius: 20px;
+      cursor: pointer;
+      box-shadow: 0 20px 35px rgba(240, 112, 0, 0.23), 0 6px 0px rgba(240, 112, 0, 0.5);
+      padding-right: 20px;
+      padding-left: 45px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      width: 60%;
+      margin-top: 40px;
+      margin-right: auto;
+      margin-left: auto;
+  }
     .inner h3 {
       text-transform: uppercase;
       font-size: 32px;
@@ -52,25 +71,34 @@
       text-align: center;
       margin-bottom: 32px;
       color: #333;
-      letter-spacing: 2px; }
-  
-  form {
-    width: 50%;
-    padding-left: 45px;
- }
+      letter-spacing: 2px; 
+    }
+
+    .label{
+      display: flex;
+      justify-content: flex-start;
+    }
  
   .form-group {
-    display: flex; }
+    display: flex;
+    margin-top: 10px;
+   }
     .form-group .form-wrapper {
-      width: 50%; }
+      width: 50%; 
+    }
       .form-group .form-wrapper:first-child {
-        margin-right: 20px; }
+        margin-right: 20px; 
+      }
   
   .form-wrapper {
-    margin-bottom: 17px; }
+    margin-bottom: 17px; 
+  }
     .form-wrapper label {
       margin-bottom: 9px;
-      display: block; }
+      display: block; 
+      display: flex;
+      justify-content: end;
+  }
   
   .form-control {
     border: 1px solid #ccc;
@@ -80,17 +108,21 @@
     padding: 0 20px;
     border-radius: 20px;
     font-family: "Muli-Bold";
-    background: none; }
+    background: none; 
+  }
     .form-control:focus {
-      border: 1px solid #f46721; }
+      border: 1px solid #f46721; 
+    }
   
   select {
     -moz-appearance: none;
     -webkit-appearance: none;
     cursor: pointer;
-    padding-left: 20px; }
+    padding-left: 20px; 
+  }
     select option[value=""][disabled] {
-      display: none; }
+      display: none; 
+    }
   
   button {
     border: none;
@@ -104,10 +136,10 @@
     justify-content: center;
     padding: 0;
     background: #666;
-    font-size: 17px;
+    font-size: 15px;
     color: #fff;
     text-transform: uppercase;
-    font-family: "Muli-SemiBold";
+    font-family: 'Comfortaa',sans-serif;
     border-radius: 20px;
     overflow: hidden;
     -webkit-transform: perspective(1px) translateZ(0);
