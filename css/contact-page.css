@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500;600&family=Baloo+Paaji+2:wght@400;500;600&family=Comfortaa:wght@400;500;600;700&family=Montserrat:wght@100;400;500&family=Quicksand:wght@300;400;500&family=Raleway:wght@300;400;500;600&display=swap');
 
 html{
@@ -29,6 +31,8 @@ html[ data-theme="dark"]{
     background-position: center;
     background-repeat: no-repeat;
 	  background-size: cover;
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.849)), to(rgba(0, 0, 0, 0.808))), url("../assets/Images/contact/contact.jpg");
+    background-image: -o-linear-gradient(top left, rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.808)), url("../assets/Images/contact/contact.jpg");
     background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.808)), url("../assets/Images/contact/contact.jpg");
 }
 
@@ -43,7 +47,10 @@ html[ data-theme="dark"]{
 .contact-form {
     border: 0px;
     text-align: left;
-    box-shadow: 0 2px 4px #f47621;
+    -webkit-box-shadow: 0 2px 4px #f47621;
+            box-shadow: 0 2px 4px #f47621;
+    -webkit-transition: 0.6s;
+    -o-transition: 0.6s;
     transition: 0.6s;
     background-color: var(--box-clr);
     margin-left: 5rem; 
@@ -58,6 +65,8 @@ html[ data-theme="dark"]{
 
 .contact-form:hover {
   text-align: left;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
   transition: 0.6s;
 }
 
@@ -76,6 +85,8 @@ html[ data-theme="dark"]{
   position: absolute;
   top: 0;
   padding: 6px 0 0 13px;
+  -webkit-transition: all 200ms;
+  -o-transition: all 200ms;
   transition: all 200ms;
   font-size:16px;
   color: #8792a1;
@@ -85,7 +96,8 @@ html[ data-theme="dark"]{
 
 .form-control:not(:placeholder-shown) + .form-control-placeholder {
   font-size: 100%;
-  transform: translate3d(0, -100%, 0);
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
   opacity: 1;
   font-weight: bold;
   color: var(--font-color);
@@ -100,7 +112,8 @@ html[ data-theme="dark"]{
 .no-border:focus{
   border: none;
   border-bottom: 2.5px solid #f47621;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   /* background-color: #f3f3f3; */
 }
 
@@ -110,12 +123,16 @@ html[ data-theme="dark"]{
   border-radius: 5px;
   text-transform: uppercase;
   color: white;
-  box-shadow: 0 2px 7px 0px #ff9a0e;
+  -webkit-box-shadow: 0 2px 7px 0px #ff9a0e;
+          box-shadow: 0 2px 7px 0px #ff9a0e;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
   transition: 0.6s;
 }
 
 #submit-button:hover {
-  box-shadow: 0 7px 8px #ff9a0e;
+  -webkit-box-shadow: 0 7px 8px #ff9a0e;
+          box-shadow: 0 7px 8px #ff9a0e;
   color: white;
   font-weight: bold;
 }
@@ -129,12 +146,22 @@ html[ data-theme="dark"]{
 	padding: 5px 8px 5px 8px;
 	margin-bottom: 35px;
 	margin-top: 5em;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: end;
-	flex-wrap: wrap;
+	-webkit-box-align: end;
+	-webkit-align-items: end;
+	    -ms-flex-align: end;
+	        align-items: end;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
 	}
 .capbox .form-group {
-	flex-basis: 70%;
+	-webkit-flex-basis: 70%;
+	    -ms-flex-preferred-size: 70%;
+	        flex-basis: 70%;
 	max-width: 70%;
 	margin-bottom: 0;
 	padding-left: 20px;
@@ -164,11 +191,16 @@ input[type=number] {
 	font-style: italic;
 	text-align: center;
 	vertical-align: middle;
-	user-select: none;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
 	padding: 3px 14px 3px 8px;
 	border-radius: 4px;
 	cursor: default;
-	flex-basis: 30%;
+	-webkit-flex-basis: 30%;
+	    -ms-flex-preferred-size: 30%;
+	        flex-basis: 30%;
 	max-width: 30%;
 	border: none;
 	color: var(--bg1-color);
@@ -184,6 +216,9 @@ input[type=number] {
 }
 
 .container-contact{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
   
@@ -248,12 +283,16 @@ input[type=number] {
    margin: 3px auto 0 auto;
  }
  .capbox .form-group{
-  flex-basis: 100%;
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
   max-width: 100%;
   padding-left: 0;
  }
  #CaptchaDiv{
-	flex-basis: 100%;
+	-webkit-flex-basis: 100%;
+	    -ms-flex-preferred-size: 100%;
+	        flex-basis: 100%;
 	max-width: 100%;
 	margin-bottom: 30px;
  }
