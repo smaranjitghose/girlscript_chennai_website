@@ -3,10 +3,6 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents: 
-
 GirlScript Website Boilerplate
 ==========================================================
 
@@ -19,24 +15,19 @@ This is an open source project for creating a website that shall serve as a boil
 
 This project is also meant to be a starting for all techies interested to get their hands dirty in open-source contributions. A highlight of this project being this project is "built by the community for the community".
 
-Home
-============
+**Content**
 
-Announcement
-===============
+.. toctree::
+   :maxdepth: 2 
 
-achievement
-=============
+   home
+   announcement
+   achievement
+   event
+   register
+   blog
+   team
+   contactus
+   headerfooter
 
-blog
-=============
-
-team
-==============
-
-contributors
-==============
-
-contact us
-==============
 
