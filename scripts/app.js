@@ -236,11 +236,6 @@ function activeTab() {
 	}
 }
 
-function topFunction() {
-	document.body.scrollTop = 0;
-	document.documentElement.scrollTop = 0;
-}
-
 function validateFooterForm() {
 	let emailID = document.footermail.email,
 		atpos = emailID.value.indexOf("@"),
@@ -286,6 +281,7 @@ $(function () {
 
 window.onscroll = function () {
 	scrollFunction();
+	onScrollFunction();
 };
 
 //Single Declartion of changed theme button
@@ -305,3 +301,18 @@ function openNav() {
 	let  positionOfToggleButtonForBigScreen = document.getElementById("themeChangeButtonBigScreen");
 	positionOfToggleButtonForBigScreen.appendChild(toggleThemeButton);
   }	
+
+  let goToTopbutton = document.getElementById("topBtn");
+  
+  function scrollFunction() {
+	if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+	  goToTopbutton.style.display = "block";
+	} else {
+	  goToTopbutton.style.display = "none";
+	}
+  }
+  
+  goToTopbutton.addEventListener("click", function() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+}); 
