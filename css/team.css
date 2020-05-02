@@ -36,7 +36,10 @@ section {
  
     margin-bottom: 5px;
     width: 100%;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     text-align:center;
     font-family: 'Comfortaa', sans-serif;
     font-size: 50px;
@@ -72,9 +75,18 @@ section {
 }
 
 .container-year-button {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
 }
 .container .row:last-child {
@@ -87,15 +99,26 @@ section {
     margin-top: 100px;
 }
 .gs-team-grid {
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    justify-content: center;
-    align-items: stretch;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
     grid-gap: 110px 6%;
 }
 
 .gs-team-member:hover{
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+            transform: translateY(-10px);
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
 }
 
@@ -103,18 +126,23 @@ section {
     padding: 20px 50px 20px 20px;
     border-radius: 10px;
     position: relative;
+    -webkit-transition: var(--member-animation);
+    -o-transition: var(--member-animation);
     transition: var(--member-animation);
     cursor:pointer;
 }
 
 .gs-team--board{
-    box-shadow: 8px 8px 0px 0px rgba(239, 112, 0, 0.10), 20px 16px 50px -20px rgb(240, 112, 0);
+    -webkit-box-shadow: 8px 8px 0px 0px rgba(239, 112, 0, 0.10), 20px 16px 50px -20px rgb(240, 112, 0);
+            box-shadow: 8px 8px 0px 0px rgba(239, 112, 0, 0.10), 20px 16px 50px -20px rgb(240, 112, 0);
 }
 .gs-team--tech {
-    box-shadow: 8px 8px 0px 0px rgba(51, 105, 30, 0.1), 20px 16px 50px -20px rgb(51, 105, 30);
+    -webkit-box-shadow: 8px 8px 0px 0px rgba(51, 105, 30, 0.1), 20px 16px 50px -20px rgb(51, 105, 30);
+            box-shadow: 8px 8px 0px 0px rgba(51, 105, 30, 0.1), 20px 16px 50px -20px rgb(51, 105, 30);
 }
 .gs-team--mang {
-    box-shadow: 8px 8px 0px 0px rgba(136, 14, 79, 0.1), 20px 16px 50px -20px rgb(136, 14, 79);
+    -webkit-box-shadow: 8px 8px 0px 0px rgba(136, 14, 79, 0.1), 20px 16px 50px -20px rgb(136, 14, 79);
+            box-shadow: 8px 8px 0px 0px rgba(136, 14, 79, 0.1), 20px 16px 50px -20px rgb(136, 14, 79);
 }
 .gs-team--board .gs-team-member-social {
     background-color: rgba(240, 112, 0, 0.75);
@@ -149,7 +177,8 @@ section {
     position: absolute;
     top: -70px;
     left: -30px;
-    box-shadow: 8px 12px 20px -10px rgb(183, 183, 183);
+    -webkit-box-shadow: 8px 12px 20px -10px rgb(183, 183, 183);
+            box-shadow: 8px 12px 20px -10px rgb(183, 183, 183);
 }
 
 .gs-team-member-info {
@@ -163,6 +192,8 @@ section {
     line-height: 38px;
     margin-bottom: 10px;
     color: #EF6F00;
+    -webkit-transition: var(--member-animation);
+    -o-transition: var(--member-animation);
     transition: var(--member-animation);
     font-weight: bold;
 }
@@ -174,8 +205,15 @@ section {
 }
 
 .gs-team-member-social {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     position: absolute;
     top: 0;
     right: 0;
@@ -191,6 +229,8 @@ section {
     border-image-width: 0;
     color: white;
     outline: none;
+    -webkit-transition: var(--member-animation);
+    -o-transition: var(--member-animation);
     transition: var(--member-animation);
 }
 .gs-team-member-social a:first-child {
@@ -202,6 +242,8 @@ section {
 }
 
 .gs-team-member:hover .gs-team-member-social a {
+    -webkit-transition: var(--member-animation);
+    -o-transition: var(--member-animation);
     transition: var(--member-animation);
 }
 
