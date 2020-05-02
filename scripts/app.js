@@ -64,7 +64,7 @@ let header = $(`
 	 </div>	 
 	</nav>`);
 
-  
+
 let footer = $(`
 <div class="waves">
     <svg width="100%" height="150px" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -212,13 +212,22 @@ let footer = $(`
 </div>		
 </footer>`);
 
+let goToTopbutton = $(`	<a onclick="topBtnClick()" class="gotopbtn clr-wt" id="topBtn"> <i class="fa fa-chevron-up clr-wt"></i> </a>
+`);
+
 function scrollFunction() {
 	let navBar = document.getElementById("navbar"),
 		logo = document.getElementById("logo");
 	if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
 		navBar.style.padding = "2px 16px";
 		logo.width = "160px";
-    }
+	}
+	let goTopBtn = document.getElementById("topBtn");
+	if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+		goTopBtn.style.opacity = 1;
+	} else {
+		goTopBtn.style.opacity = 0;
+	}
 }
 
 function activeTab() {
@@ -259,11 +268,11 @@ function changeTheme(value) {
 	if (value === "dark" || checkElement.checked) {
 		checkElement.checked = "true";
 		docElement.setAttribute('data-theme', 'dark');
-		localStorage.setItem("mode","dark")
+		localStorage.setItem("mode", "dark")
 	} else {
 		checkElement.checked = false;
 		docElement.setAttribute('data-theme', 'light');
-		localStorage.setItem("mode","light")
+		localStorage.setItem("mode", "light")
 	}
 }
 
@@ -272,16 +281,15 @@ $(function () {
 	let bodyElement = $(`body`);
 	bodyElement.prepend(header);
 	bodyElement.append(footer);
+	bodyElement.append(goToTopbutton);
 	activeTab();
-	if(localStorage["mode"])
-	{
+	if (localStorage["mode"]) {
 		changeTheme(localStorage["mode"]);
 	}
 })
 
 window.onscroll = function () {
 	scrollFunction();
-	onScrollFunction();
 };
 
 //Single Declartion of changed theme button
@@ -293,26 +301,16 @@ function openNav() {
 	let positionOfToggleButtonForSmallScreen = document.getElementById("themeChangeButtonSmallScreen");
 	positionOfToggleButtonForSmallScreen.appendChild(toggleThemeButton);
 }
-  
-  function closeNav() {
+
+function closeNav() {
 	document.getElementById("myNav").style.display = "none";
 	let toggleThemeButton = document.getElementById("themeChangeButton");
 	toggleThemeButton.remove();
-	let  positionOfToggleButtonForBigScreen = document.getElementById("themeChangeButtonBigScreen");
+	let positionOfToggleButtonForBigScreen = document.getElementById("themeChangeButtonBigScreen");
 	positionOfToggleButtonForBigScreen.appendChild(toggleThemeButton);
-  }	
+}
 
-  let goToTopbutton = document.getElementById("topBtn");
-  
-  function scrollFunction() {
-	if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-	  goToTopbutton.style.display = "block";
-	} else {
-	  goToTopbutton.style.display = "none";
-	}
-  }
-  
-  goToTopbutton.addEventListener("click", function() {
-	  document.body.scrollTop = 0;
-	  document.documentElement.scrollTop = 0;
-}); 
+function topBtnClick() {
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+}
