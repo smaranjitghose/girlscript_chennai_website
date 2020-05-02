@@ -853,7 +853,8 @@ a.fa-linkedin {
   box-shadow: 0 2px 7px 0px #ff9a0e;
   cursor: pointer;
 	opacity: 0;
-	transition: opacity ease-in-out 0.4s;
+	visibility: hidden;
+	transition: opacity ease-in-out 0.4s, visibility ease-in-out 0.4s;
 }
 .gotopbtn i {
 	position: absolute;

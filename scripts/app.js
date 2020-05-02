@@ -225,8 +225,11 @@ function scrollFunction() {
 	let goTopBtn = document.getElementById("topBtn");
 	if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
 		goTopBtn.style.opacity = 1;
+		goTopBtn.style.visibility = "visible";
 	} else {
 		goTopBtn.style.opacity = 0;
+		goTopBtn.style.visibility = "hidden";
+
 	}
 }
 
