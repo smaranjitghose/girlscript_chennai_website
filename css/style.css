@@ -1086,7 +1086,7 @@ a.fa-linkedin {
 .upper,
 .lower {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   flex: 0 0 50%;
 }
