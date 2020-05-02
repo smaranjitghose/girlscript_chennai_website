@@ -852,7 +852,15 @@ a.fa-linkedin {
   border-radius: 100%;
   box-shadow: 0 2px 7px 0px #ff9a0e;
   cursor: pointer;
-  
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity ease-in-out 0.4s, visibility ease-in-out 0.4s;
+}
+.gotopbtn i {
+	position: absolute;
+	top: 47%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 @media only screen and (max-width: 464px) {
   .gotopbtn {
