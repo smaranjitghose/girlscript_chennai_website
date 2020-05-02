@@ -79,7 +79,7 @@ html[ data-theme="dark"] {
       padding-top: 30px;
       padding-bottom: 30px;
       width: 60%;
-      margin-top: 40px;
+      margin-top: 7rem;
       margin-right: auto;
       margin-left: auto;
       background-color: var(--bg2-color);
@@ -220,6 +220,7 @@ html[ data-theme="dark"] {
     .txt{
       color: var(--font-color);
     }
+    
   .checkmark {
     position: absolute;
     top: 50%;
@@ -234,13 +235,15 @@ html[ data-theme="dark"] {
     color: #000;
     font-size: 10px;
     font-weight: bolder; }
+    
     .checkmark:after {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       display: none;
-      content: '\f26b'; }
+      content: '\2713'; 
+    }
 
 
   
@@ -248,7 +251,7 @@ html[ data-theme="dark"] {
     .inner {
       min-width: 768px; 
     } 
-    }
+  }
 
     @media only screen and (max-width: 767px) {
     
@@ -258,23 +261,10 @@ html[ data-theme="dark"] {
       padding-top: 0;
       padding-bottom: 0;
      }
-    }
+  }
 
 
   /* Making Form responsive   */
- 
-    
- @media only screen and (max-width: 1000px) {
-    form {
-      width: 60%;
-    }
-  }
-
-  @media only screen and (max-width: 778px) {
-    form {
-      width: 75%;
-    }
-  }
   
   @media only screen and (max-width: 515px) {
     form {
@@ -289,7 +279,6 @@ html[ data-theme="dark"] {
     form {
         width: 90%
     }
-
     .inner h3 {
       font-size: 30px;
     }
@@ -298,5 +287,21 @@ html[ data-theme="dark"] {
     }
      .register-btn{
         font-size:14px;
+    }
+  }
+
+  @media (max-width: 1440px){
+    .form {
+        margin: auto;
+        margin-top: 50px !important;
+        width: 70%;
+    }
+  }
+  @media (max-width: 767px){
+    .form {
+        width:90%;
+    }
+    .inner h3{
+        font-size: 30px;;
     }
   }

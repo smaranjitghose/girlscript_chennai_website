@@ -77,9 +77,6 @@
 	<!-- Css Styles -->
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="css/registration.css">
-	<!-- Defined scripts -->
-	<script src="./scripts/app.js"></script>
-	<script src="./scripts/script.js"></script>
 
 </head>
 
@@ -98,27 +95,21 @@
 					<div class="form-wrapper">
 						<label class="txt" for="">Last Name</label>
 						<input type="text" class="form-control">
-
-					</div>
+                    </div>
 				</div>
 				<div class="form-wrapper">
 					<label class="txt" for="">Email</label>
-					<input type="text" class="form-control">
-				</div>
-				<div class="form-wrapper">
-					<label class="txt" for="">Password</label>
-					<input type="password" class="form-control">
-				</div>
-				<div class="form-wrapper">
-					<label class="txt" for="">Why you want to register?</label>
-					<input type="phone-number" class="form-control">
+					<input type="text" name="email" id="email" pattern=".+@globex.com" class="form-control" >
 				</div>
 				<div class="form-wrapper">
 					<label class="txt" for="">Phone Number</label>
-					<input type="phone-number" class="form-control">
+					<input type="text" maxlength="10" id="phone" name="country_code" class="form-control">
 				</div>
-
-				<div class="checkbox">
+				<div class="form-wrapper">
+					<label class="txt" for="">Why you want to register?</label>
+					<textarea type="phone-number" class="form-control"></textarea>
+				</div>
+                  <div class="checkbox">
 					<label class="txt label">
 						<input type="checkbox"> I accept the terms of use & privacy policy.
 						<span class="checkmark"></span>
