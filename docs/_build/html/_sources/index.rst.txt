@@ -6,7 +6,7 @@
 GirlScript Website Boilerplate
 ==========================================================
 
-.. image:: ./logo_for_boilerplate.png
+.. image:: ./images/logo_for_boilerplate.png
   :width: 200
   :align: center
   :alt: Alternative text
