@@ -450,18 +450,6 @@ Parallax section
   width: 100%;
 }
 
-/*------------------
-  Particle-js Section
--------------------- */
-
-#particle-js{
-  overflow: hidden;
-}
-#particle-js canvas{
-  position: absolute;
-  height: 59.5%!important;
-}
-
 /*---------------------
  Team Section
  ----------------------*/
