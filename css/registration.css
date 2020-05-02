@@ -220,6 +220,7 @@ html[ data-theme="dark"] {
     .txt{
       color: var(--font-color);
     }
+    
   .checkmark {
     position: absolute;
     top: 50%;
@@ -241,7 +242,7 @@ html[ data-theme="dark"] {
       left: 50%;
       transform: translate(-50%, -50%);
       display: none;
-      content: '\f26b'; 
+      content: '\2713'; 
     }
 
 
