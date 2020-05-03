@@ -205,7 +205,7 @@ Nav bar
 }
 
 #logo {
-  width: 160px;
+  width: 150px;
   transition: 0.4s;
 }
 
@@ -497,7 +497,6 @@ Parallax section
 }
 .img-logo {
   height: 15rem;
-  box-shadow: 0 4px 8px 0 var(--flipCard-shadow);
 }
 
 /* footer */
@@ -575,7 +574,7 @@ footer {
 }
 
 .logo {
-  width: 170px;
+  width: 150px;
   display: block;
 }
 
