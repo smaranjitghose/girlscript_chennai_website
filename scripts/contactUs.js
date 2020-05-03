@@ -11,8 +11,7 @@ function ValidCaptcha(str2) {
 	}
 }
 function validateForm() {
-	let captchaInput = document.myForm.captchaInput,
-
+	let captchaInput = document.myForm.captchaInput;	
 	if (captchaInput.value === "") {
 		alert("Please Enter CAPTCHA Code.");
 		captchaInput.focus();
