@@ -257,3 +257,12 @@ Blog Cards
 .rtb-pagination-container .row .source-link a {
     color: var(--font-color) !important;
 }
+
+@media only screen and (max-width : 430px){
+    .width1 {
+        width:470px;
+    }
+    .width2 {
+        width:450px;
+    }
+}    
