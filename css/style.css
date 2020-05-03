@@ -26,6 +26,7 @@ html {
   --box-clr: #fff;
   --wave1-bg:#636363;
   --wave2-bg: #b2b2b2;
+  --bg-image: url("../assets/Images/logo/gs_chennai_logo1.png");
 }
 html[ data-theme="dark"] {
   
@@ -46,6 +47,7 @@ html[ data-theme="dark"] {
   --box-clr: #202020;
   --wave1-bg:#686868;
   --wave2-bg: #b2b2b2;
+  --bg-image: url("../assets/Images/logo/gs_chennai_logo2.png");
 }
 
 body {
@@ -495,8 +497,13 @@ Parallax section
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
 }
-.img-logo {
-  height: 15rem;
+
+.img-logo  {
+
+  content: var(--bg-image);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  
 }
 
 /* footer */
