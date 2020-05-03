@@ -497,7 +497,6 @@ Parallax section
 }
 .img-logo {
   height: 15rem;
-  box-shadow: 0 4px 8px 0 var(--flipCard-shadow);
 }
 
 /* footer */
