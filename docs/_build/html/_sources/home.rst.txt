@@ -15,7 +15,7 @@ We have added the background image to the moving slides, and the display text ab
   :align: center
   :alt: Alternative text
 
-To make any changes in the code follow the below steps :
+If you want to make changes in this section, carry out the following changes in code:
 
 * To change the background image - Go to file  `style.css <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/css/style.css>`__  and search :python:`.slide1` in the url change the link to a different image. You can add new image in the :python:`../assets/Images/carousel/image_name` and then add this link in the url. Similarly you can search for :python:`.slide2` and modfify it. 
 
@@ -31,7 +31,7 @@ To make any changes in the code follow the below steps :
   :align: center
   :alt: Alternative text
 
-To make any changes in the code follow the below steps :
+If you want to make changes in this section, carry out the following changes in code:
 
 * To change the content - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`about-para` where you can change it. |
 
@@ -52,20 +52,20 @@ To make any changes in the code follow the below steps :
   :align: center
   :alt: Alternative text
 
-- To add some different image - Go to  `style.css <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/css/style.css>`__  and search :python:`.parallax1` and change the url. 
+-  For changing the image - Go to  `style.css <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/css/style.css>`__  and search :python:`.parallax1` and change the url. 
 
 .. note::
    There are three Parallax in the home page.
 
 
-4. **Our Initiatives**:  This section describes about the different initiatives taken by girlscript.
+4. **Our Initiatives**:  This section describes about the different initiatives taken by your GirlScript Chapter.
 
 .. image:: ./images/homepage/initiatives.png
   :width: 600
   :align: center
   :alt: Alternative text
 
-To make any changes in the code follow the below steps:
+If you want to make changes in this section, carry out the following changes in code:
 
 - To make changes in the content of the heading - Go to `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`INITIATIVES`, you will see <h2> tag where you can make changes.
 
@@ -76,14 +76,14 @@ To make any changes in the code follow the below steps:
 * To change the designing of the card - Go to the file `style.css <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/css/style.css>`__ and search :python:`.flip-card-front` and do the desired changes.
 
  
-5. **Our Achievements**: This section describes the achievements by the girlscript. It is a card which is divided into 3 parts.
+5. **Our Achievements**: This section describes the achievements taken by your GirlScript Chapter. It is a card which is divided into 3 parts.
 
 .. image:: ./images/homepage/achievements.png
   :width: 600
   :align: center
   :alt: Alternative text
 
-To make changes in the left part follow the below steps :
+If you want to make changes in the left part, carry out the following changes in code:
 
 - To make changes in the content - Go to `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`achieve-content`, and make changes in the <h3> tag.
 
@@ -91,7 +91,7 @@ To make changes in the left part follow the below steps :
 
 - To make changes in the CSS of the button -  Go to the file `style.css <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/css/style.css>`__ and search :python:`.center-btn-settings` or :python:`.center-btn-settings2` and do the desired changes. 
 
-To make changes in the right part follow the below steps :
+If you want to make changes in the right part, carry out the following changes in code:
 
 - To make changes in the number count - Go to `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`ci-number`, and make changes inside the div container and similarly for other number count also.
 
@@ -99,7 +99,7 @@ To make changes in the right part follow the below steps :
 
 - To make changes in the box shadow of the container - Go to the file `style.css <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/css/style.css>`__ and search :python:`.myDiv` where you can change the box-shadow by giving appropriate size and color to it.
 
-To make any changes in the animation effect of the whole section - Go to `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`sparkley` or :python:`sparkle-canvas`, do your desired changes whether you want or not or any style.
+To modify the animation effect of the whole section - Go to `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`sparkley` or :python:`sparkle-canvas`, do your desired changes whether you want or not or any style.
 
 
 
@@ -110,7 +110,7 @@ To make any changes in the animation effect of the whole section - Go to `index.
   :align: center
   :alt: Alternative text
 
-To make changes in the code follow the below steps :
+If you want to make changes in this section, carry out the following changes in code:
 
 - To make changes in the heading and the content - Go to `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`WE CREATE TRENDS` or :python:`join-us`, you will see <h2> tag or <h3> tag where changes can be done.
 
