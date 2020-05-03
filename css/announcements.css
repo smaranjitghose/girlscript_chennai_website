@@ -315,12 +315,16 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: image;
+  grid-row:1;
+  grid-column:1;
 }
 
 .card-text {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: text;
+  grid-row:2;
+  grid-column:1;
 }
 
 .card-stats {
@@ -330,6 +334,8 @@ body {
   grid-area: stats; 
   padding-top: 20px;
   margin-top: 8px;
+   grid-row:3;
+  grid-column:1;
 }
 
 .card-image {
