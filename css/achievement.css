@@ -450,5 +450,10 @@ margin-top:2rem;
     .ct2{
       letter-spacing: 2px;
     }
-
+}
+@media only screen and (max-width: 390px){
+  .col1{width: 390px;}
+  div.project-card{margin: 0px;
+        margin-bottom:20px;
+    }
 }  
