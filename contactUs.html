@@ -54,19 +54,19 @@
 				<form class="form-horizontal" name="myForm" action="https://formspree.io/xyz@gmail.com"
 					onsubmit="return validateForm()" method="post">
 					<div class="form-group pb-3">
-						<input type="text" id="name" name="name" placeholder=" " class="form-control no-border">
+						<input type="text" id="name" name="name" pattern="[A-Za-z]" oninvalid="setCustomValidity('Please enter the correct name ')" placeholder=" " class="form-control no-border">
 						<label class="form-control-placeholder" for="name">Name</label>
 					</div>
 					<div class="form-group pb-3">
-						<input type="email" id="email" name="email" placeholder=" " class="form-control no-border">
+						<input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" oninvalid="setCustomValidity('Please enter the correct e-mail address ')" placeholder=" " class="form-control no-border">
 						<label class="form-control-placeholder" for="email">Email Address</label>
 					</div>
 					<div class="form-group pb-3">
-						<input type="text" id="subject" name="subject" placeholder=" " class="form-control no-border">
+						<input type="text" id="subject" name="subject" placeholder=" " minlength="10" pattern="[A-Za-z0-9]" oninvalid="setCustomValidity('Minimum Length of subject must be 10')" class="form-control no-border">
 						<label class="form-control-placeholder" for="subject">Subject</label>
 					</div>
 					<div class="form-group">
-						<textarea name="message" id="message" rows="4" class="form-control no-border" placeholder=" "></textarea>
+						<textarea name="message" id="message" rows="4" minlength="10" pattern="[A-Za-z0-9]" oninvalid="setCustomValidity('Minimum Length of subject must be 10')" class="form-control no-border" placeholder=" "></textarea>
 						<label class="form-control-placeholder" for="message">Your Message</label>
 					</div>
 					<!-- START CAPTCHA -->
