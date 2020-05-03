@@ -11,19 +11,45 @@ function ValidCaptcha(str2) {
 	}
 }
 function validateForm() {
-	let captchaInput = document.myForm.captchaInput;	
-	if (captchaInput.value === "") {
-		alert("Please Enter CAPTCHA Code.");
-		captchaInput.focus();
-		return false;
-	}
-	else if (!(ValidCaptcha(captchaInput.value))) {
-		alert("The CAPTCHA Code Does Not Match.");
-		captchaInput.focus();
-		return false;
-	}
+	let captchaInput = document.myForm.captchaInput,
+	    name = document.myForm.name,
+	    emailId = document.myForm.email,
+	    subject = document.myForm.subject,
+		message = document.myForm.message,
+		letters = /^[0-9]+$/;
 
-	return true;
+		if (!name.value.match(letters) || name.value === "" ) {
+			alert(name.value === "" ? "Please enter Name" : "Please enter correct Name")
+			name.focus();
+			return false;
+		}
+		else if (emailId.value === ""){
+			alert("Please enter the emailID");
+			emailId.focus();
+			return false;
+		}
+		else if (subject.value === "" ){
+			alert("Please enter the subject");
+			subject.focus();
+			return false;
+		}
+		else if (message.value === "" ){
+			alert("Please enter the message");
+			message.focus();
+			return false;
+		}
+	    else if (captchaInput.value === "") {
+		    alert("Please Enter CAPTCHA Code.");
+		    captchaInput.focus();
+		    return false;
+	    }
+	    else if (!(ValidCaptcha(captchaInput.value))) {
+		    alert("The CAPTCHA Code Does Not Match.");
+		    captchaInput.focus();
+		    return false;
+	    }
+	  
+return true;
 }
 
 $(function () {
