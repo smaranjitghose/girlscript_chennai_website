@@ -913,6 +913,11 @@ a.fa-linkedin {
   display: none;
 }
 
+
+#my-canvas{
+  position: absolute;
+}
+
 /*----Feature Cards Section -------*/
 .feature-cards {
   max-width: 1140px;
