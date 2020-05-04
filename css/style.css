@@ -1243,7 +1243,7 @@ a.fa-linkedin {
 
 .img-front {
 	background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
-		url("../assets/Images/Front-img/event.jpeg");
+		url("../assets/Images/Front-img/event.jpg");
 }
 
 .img-front {
@@ -1370,7 +1370,7 @@ h2.sub-head {
 }
 
 /* Media Queries */
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 972px) {
 	.img-content {
 		padding: 3rem;
 	}
