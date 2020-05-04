@@ -64,7 +64,6 @@ let header = $(`
 	 </div>	 
 	</nav>`);
 
-
 let footer = $(`
 <div class="waves">
     <svg width="100%" height="150px" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -216,45 +215,41 @@ let goToTopbutton = $(`	<a onclick="topBtnClick()" class="gotopbtn clr-wt" id="t
 `);
 
 function scrollFunction() {
-	let navBar = document.getElementById("navbar"),
-		logo = document.getElementById("logo");
+	let navBar = document.getElementById('navbar'),
+		logo = document.getElementById('logo');
 	if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-		navBar.style.padding = "2px 16px";
-		logo.width = "160px";
+		navBar.style.padding = '2px 16px';
+		logo.width = '160px';
 	}
-	let goTopBtn = document.getElementById("topBtn");
+	let goTopBtn = document.getElementById('topBtn');
 	if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
 		goTopBtn.style.opacity = 1;
-		goTopBtn.style.visibility = "visible";
+		goTopBtn.style.visibility = 'visible';
 	} else {
 		goTopBtn.style.opacity = 0;
-		goTopBtn.style.visibility = "hidden";
-
+		goTopBtn.style.visibility = 'hidden';
 	}
 }
 
 function activeTab() {
-	let navBar = $("#navbarNav");
+	let navBar = $('#navbarNav');
 	let navItems = navBar[0].children[0].children;
 	let pageName = window.location.pathname.toLowerCase();
 	for (let i = 0; i < navItems.length; i++) {
 		let childHref = navItems[i].children[0].pathname.toLowerCase();
-		if (
-			(childHref === pageName || childHref.includes(pageName)) &&
-			window.location.pathname !== "/"
-		)
-			navItems[i].children[0].classList.add("active");
-		else navItems[i].children[0].classList.remove("active");
+		if ((childHref === pageName || childHref.includes(pageName)) && window.location.pathname !== '/')
+			navItems[i].children[0].classList.add('active');
+		else navItems[i].children[0].classList.remove('active');
 	}
 }
 
 function validateFooterForm() {
 	let emailID = document.footermail.email,
-		atpos = emailID.value.indexOf("@"),
-		dotpos = emailID.value.lastIndexOf(".");
+		atpos = emailID.value.indexOf('@'),
+		dotpos = emailID.value.lastIndexOf('.');
 
-	if (atpos < 1 || (dotpos - atpos < 2)) {
-		alert("Please enter correct email ID")
+	if (atpos < 1 || dotpos - atpos < 2) {
+		alert('Please enter correct email ID');
 		emailID.focus();
 		return false;
 	}
@@ -263,53 +258,53 @@ function validateFooterForm() {
 
 function changeTheme(value) {
 	let docElement = document.documentElement;
-	let checkElement = $('#theme')[0]
+	let checkElement = $('#theme')[0];
 	docElement.classList.add('transition');
 	window.setTimeout(() => {
-		docElement.classList.remove('transition')
-	}, 1000)
-	if (value === "dark" || checkElement.checked) {
-		checkElement.checked = "true";
+		docElement.classList.remove('transition');
+	}, 1000);
+	if (value === 'dark' || checkElement.checked) {
+		checkElement.checked = 'true';
 		docElement.setAttribute('data-theme', 'dark');
-		localStorage.setItem("mode", "dark")
+		localStorage.setItem('mode', 'dark');
 	} else {
 		checkElement.checked = false;
 		docElement.setAttribute('data-theme', 'light');
-		localStorage.setItem("mode", "light")
+		localStorage.setItem('mode', 'light');
 	}
 }
 
 // Window Loads
-$(function () {
+$(function() {
 	let bodyElement = $(`body`);
 	bodyElement.prepend(header);
 	bodyElement.append(footer);
 	bodyElement.append(goToTopbutton);
 	activeTab();
-	if (localStorage["mode"]) {
-		changeTheme(localStorage["mode"]);
+	if (localStorage['mode']) {
+		changeTheme(localStorage['mode']);
 	}
-})
+});
 
-window.onscroll = function () {
+window.onscroll = function() {
 	scrollFunction();
 };
 
 //Single Declartion of changed theme button
 
 function openNav() {
-	document.getElementById("myNav").style.display = "block";
-	let toggleThemeButton = document.getElementById("themeChangeButton");
+	document.getElementById('myNav').style.display = 'block';
+	let toggleThemeButton = document.getElementById('themeChangeButton');
 	toggleThemeButton.remove();
-	let positionOfToggleButtonForSmallScreen = document.getElementById("themeChangeButtonSmallScreen");
+	let positionOfToggleButtonForSmallScreen = document.getElementById('themeChangeButtonSmallScreen');
 	positionOfToggleButtonForSmallScreen.appendChild(toggleThemeButton);
 }
 
 function closeNav() {
-	document.getElementById("myNav").style.display = "none";
-	let toggleThemeButton = document.getElementById("themeChangeButton");
+	document.getElementById('myNav').style.display = 'none';
+	let toggleThemeButton = document.getElementById('themeChangeButton');
 	toggleThemeButton.remove();
-	let positionOfToggleButtonForBigScreen = document.getElementById("themeChangeButtonBigScreen");
+	let positionOfToggleButtonForBigScreen = document.getElementById('themeChangeButtonBigScreen');
 	positionOfToggleButtonForBigScreen.appendChild(toggleThemeButton);
 }
 
