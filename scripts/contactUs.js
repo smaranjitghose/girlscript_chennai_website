@@ -11,48 +11,45 @@ function ValidCaptcha(str2) {
 	}
 }
 function validateForm() {
-	let name = document.myForm.name,
-		emailId = document.myForm.email,
-		subject = document.myForm.subject,
+	let captchaInput = document.myForm.captchaInput,
+	    name = document.myForm.name,
+	    emailId = document.myForm.email,
+	    subject = document.myForm.subject,
 		message = document.myForm.message,
-		atpos = emailId.value.indexOf("@"),
-		dotpos = emailId.value.lastIndexOf("."),
-		captchaInput = document.myForm.captchaInput,
-		numbers = /^[0-9]+$/;
+		letters = /^[0-9]+$/;
 
-	if (name.value.match(numbers) || name.value === "") {
-		alert(name.value === "" ? "Please enter name" : "Please enter correct name")
-		name.focus();
-		return false;
-	}
-	else if (atpos < 1 || (dotpos - atpos < 2)) {
-		alert("Please enter correct email ID")
-		emailId.focus();
-		return false;
-	}
-
-	else if (subject.value.length < 10) {
-		alert("Minimum Length of subject must be 10");
-		subject.focus();
-		return false;
-	}
-	else if (message.value.length < 10) {
-		alert("Minimum Length of message must be 10");
-		message.focus();
-		return false;
-	}
-	else if (captchaInput.value === "") {
-		alert("Please Enter CAPTCHA Code.");
-		captchaInput.focus();
-		return false;
-	}
-	else if (!(ValidCaptcha(captchaInput.value))) {
-		alert("The CAPTCHA Code Does Not Match.");
-		captchaInput.focus();
-		return false;
-	}
-
-	return true;
+		if (!name.value.match(letters) || name.value === "" ) {
+			alert(name.value === "" ? "Please enter Name" : "Please enter correct Name")
+			name.focus();
+			return false;
+		}
+		else if (emailId.value === ""){
+			alert("Please enter the emailID");
+			emailId.focus();
+			return false;
+		}
+		else if (subject.value === "" ){
+			alert("Please enter the subject");
+			subject.focus();
+			return false;
+		}
+		else if (message.value === "" ){
+			alert("Please enter the message");
+			message.focus();
+			return false;
+		}
+	    else if (captchaInput.value === "") {
+		    alert("Please Enter CAPTCHA Code.");
+		    captchaInput.focus();
+		    return false;
+	    }
+	    else if (!(ValidCaptcha(captchaInput.value))) {
+		    alert("The CAPTCHA Code Does Not Match.");
+		    captchaInput.focus();
+		    return false;
+	    }
+	  
+return true;
 }
 
 $(function () {

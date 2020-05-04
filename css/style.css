@@ -26,6 +26,7 @@ html {
   --box-clr: #fff;
   --wave1-bg:#636363;
   --wave2-bg: #b2b2b2;
+  --bg-image: url("../assets/Images/logo/gs_chennai_logo1.png");
 }
 html[ data-theme="dark"] {
   
@@ -46,6 +47,7 @@ html[ data-theme="dark"] {
   --box-clr: #202020;
   --wave1-bg:#686868;
   --wave2-bg: #b2b2b2;
+  --bg-image: url("../assets/Images/logo/gs_chennai_logo2.png");
 }
 
 body {
@@ -181,7 +183,8 @@ Nav bar
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.25);
+	box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.25);
+	position: fixed;
 }
 
 .navbar a {
@@ -204,7 +207,7 @@ Nav bar
 }
 
 #logo {
-  width: 160px;
+  width: 150px;
   transition: 0.4s;
 }
 
@@ -217,13 +220,6 @@ a.active {
   color: var(--font-color) !important;
   font-weight: 800 !important;
 }
-
-@media only screen and (max-width: 992px){
-  .navbar {
-    position: relative;
-  }
-}
-
 
 @media only screen and (max-width: 1185px) {
   .nav-item {
@@ -501,9 +497,13 @@ Parallax section
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
 }
-.img-logo {
-  height: 15rem;
-  box-shadow: 0 4px 8px 0 var(--flipCard-shadow);
+
+.img-logo  {
+
+  content: var(--bg-image);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  
 }
 
 /* footer */
@@ -581,7 +581,7 @@ footer {
 }
 
 .logo {
-  width: 170px;
+  width: 150px;
   display: block;
 }
 
@@ -852,7 +852,15 @@ a.fa-linkedin {
   border-radius: 100%;
   box-shadow: 0 2px 7px 0px #ff9a0e;
   cursor: pointer;
-  
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity ease-in-out 0.4s, visibility ease-in-out 0.4s;
+}
+.gotopbtn i {
+	position: absolute;
+	top: 47%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 @media only screen and (max-width: 464px) {
   .gotopbtn {
@@ -1083,7 +1091,7 @@ a.fa-linkedin {
 .upper,
 .lower {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   flex: 0 0 50%;
 }
