@@ -1472,7 +1472,7 @@ a.fa-linkedin {
 .slider {
   position: absolute;
   cursor: pointer;
-  top: 0;
+  top: 1px;
   left: 2px;
   right: 0;
   bottom: 0;
@@ -1485,16 +1485,16 @@ a.fa-linkedin {
 .slider:before {
   position: absolute;
   content: "";
-  height: 20px;
-  width: 20px;
+  height: 18px;
+  width: 18px;
   bottom: -.8px;
-  background: white url('https://i.ibb.co/7JfqXxB/sunny.png');
+  background: white url("../assets/Images/mode/sunny.png");
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: 0 0px 15px #2020203d;
   -webkit-transition: .4s;
   transition: .4s;
-  right: 1.2rem;
+  right: 0.85rem;
 }
 
 input:checked + .slider {
@@ -1509,7 +1509,7 @@ input:checked + .slider:before {
   -webkit-transform: translateX(24px);
   -ms-transform: translateX(24px);
   transform: translateX(24px);
-  background: white url('https://i.ibb.co/FxzBYR9/night.png');
+  background: white url("../assets/Images/mode/night.png");
   background-repeat: no-repeat;
   background-position: center;
   right: 1.5rem;
@@ -1517,6 +1517,8 @@ input:checked + .slider:before {
 
 .slider.round {
   border-radius: 34px;
+  width: 32px;
+  height: 16px;
 }
 
 .slider.round:before {
