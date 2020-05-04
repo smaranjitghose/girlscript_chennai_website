@@ -26,7 +26,7 @@ html {
 	--box-clr: #fff;
 	--wave1-bg: #636363;
 	--wave2-bg: #b2b2b2;
-	--bg-image: url("../assets/Images/logo/gs_chennai_logo1.png");
+	--bg-image: url("../assets/Images/logo/logo_for_boilerplate_1.png");
 }
 html[ data-theme="dark"] {
 	--theme-color: #ff8723;
@@ -46,7 +46,7 @@ html[ data-theme="dark"] {
 	--box-clr: #202020;
 	--wave1-bg: #686868;
 	--wave2-bg: #b2b2b2;
-	--bg-image: url("../assets/Images/logo/gs_chennai_logo2.png");
+	--bg-image: url("../assets/Images/logo/logo_for_boilerplate_2.png");
 }
 
 body {

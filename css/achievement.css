@@ -101,6 +101,7 @@ div.achievement-card {
 
 .card-text {
   font-family: 'Comfortaa', sans-serif;
+  text-align: justify;
 }
 
 div.project-card {

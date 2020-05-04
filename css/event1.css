@@ -755,3 +755,9 @@ header {
         margin: 0 2% 3.750em 2%;
     }
 }
+
+@media screen and (max-width: 900px) {
+    .col-lg-6  {
+       margin-top: 4.5rem;
+    }
+}
