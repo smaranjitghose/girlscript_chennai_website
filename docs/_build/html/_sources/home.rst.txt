@@ -19,8 +19,6 @@ If you want to make changes in this section, carry out the following changes in 
 * To change the background image - Go to file  `style.css <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/css/style.css>`__  and search :python:`.slide1` in the url change the link to a different image. You can add new image in the :python:`../assets/Images/carousel/image_name` and then add this link in the url. Similarly you can search for :python:`.slide2` and modfify it. 
 
 - To change the carousel content - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`carousel-content`, you will see <h1> and <h2> tag where you can modify your content accordingly. 
-
-* To change the color of the carousel content - Go to file  `style.css <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/css/style.css>`__  and search :python:`.main-head` or :python:`.sub-head` where you will see the color field and you can change it there.
    
 
 2. **About**: About section describes about the Girlscript Foundation and their goals.
@@ -34,13 +32,9 @@ If you want to make changes in this section, carry out the following changes in 
 
 * To change the content - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`about-para` where you can change it. |
 
-- To change the color of the heading and that of inner content part - Go to file `style.css <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/css/style.css>`__ and search :python:`.heading` where you can modify it. Similarly you can search :python:`.about-para`, you will see <p> tag where you can modify your content accordingly.
+- To add or modify the points in the Goals section - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`Goals`, you will see <li> tag (which is used for those black dots) within which you can change it's content accordingly.
 
-* To add or modify the points in the Goals section - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`Goals`, you will see <li> tag (which is used for those black dots) within which you can change it's content accordingly.
-
-- To change the image - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`.img-logo`, you will see the <img> tag and in src you can change the image.
-
-* To change the box-shadow of the card - Go to file `style.css <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/css/style.css>`__ and search :python:`.myDiv` where you can change the box-shadow by giving appropriate size and color to it.
+* To change the image - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`.img-logo`, you will see the <img> tag and in src you can change the image.
 
 
 
@@ -72,8 +66,6 @@ If you want to make changes in this section, carry out the following changes in 
 
 - To make changes in the card description - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`flip-card-detail`, you will see <p> tag where you can make changes.
 
-* To change the designing of the card - Go to file `style.css <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/css/style.css>`__ and search :python:`.flip-card-front` and do the desired changes.
-
  
 5. **Our Achievements**: This section describes the achievements taken by your GirlScript Chapter. It is a card which is divided into 3 parts.
 
@@ -87,8 +79,7 @@ If you want to make changes in the left part, carry out the following changes in
 - To make changes in the content - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`achieve-content`, and make changes in the <h3> tag.
 
 * To make changes in the path of button - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`achieve-content` , you will see <a> tag where in href you can give the path of the file.
-
-- To make changes in the CSS of the button -  Go to file `style.css <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/css/style.css>`__ and search :python:`.center-btn-settings` or :python:`.center-btn-settings2` and do the desired changes. 
+ 
 
 If you want to make changes in the right part, carry out the following changes in code:
 
@@ -96,10 +87,8 @@ If you want to make changes in the right part, carry out the following changes i
 
 * To make changes in the heading and content - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`ci-text`, for heading <h4> tag and for content <p> tag and then do the desired changes accordingly.
 
-- To make changes in the box shadow of the container - Go to file `style.css <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/css/style.css>`__ and search :python:`.myDiv` where you can change the box-shadow by giving appropriate size and color to it.
 
 To modify the animation effect of the whole section - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`sparkley` or :python:`sparkle-canvas`, do your desired changes whether you want or not or any style.
-
 
 
 6. **Various Trends**: This section covers various trends upon which contributions have been made.
@@ -114,10 +103,6 @@ If you want to make changes in this section, carry out the following changes in 
 - To make changes in the heading and the content - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`WE CREATE TRENDS` or :python:`join-us`, you will see <h2> tag or <h3> tag where changes can be done.
 
 * To make changes in the card images - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`ih-item circle effect`, you will see <img> tag where you can change the path of the image according to your image. And accordingly you can change the other images also.
-
-- To make changes in the box shadow of the images - Go to file `style.css <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/css/style.css>`__ and search :python:`.ih-item.circle.effect` where you can change the box-shadow by giving appropriate size and color to it.  
-
-* To make changes in the CSS of the button -  Go to file `style.css <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/css/style.css>`__ and search :python:`.center-btn-settings` or :python:`.center-btn-settings2` and do the desired changes. 
 
 .. note::
    - In visual code studio, To search for a word, press *ctrl + f* and for a file, press *ctrl + p* .
