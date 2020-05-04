@@ -1476,7 +1476,7 @@ a.fa-linkedin {
   left: 2px;
   right: 0;
   bottom: 0;
-  background-color: #2196f3;
+  background-color: #fff;
   -webkit-transition: .4s;
   transition: .4s;
   margin-top: 2px;
@@ -1488,7 +1488,7 @@ a.fa-linkedin {
   height: 18px;
   width: 18px;
   bottom: -.8px;
-  background: white url("../assets/Images/mode/sunny.png");
+  background: white url("../assets/Images/dark_mode_switch/sunny.png");
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: 0 0px 15px #2020203d;
@@ -1498,25 +1498,25 @@ a.fa-linkedin {
 }
 
 input:checked + .slider {
-  background-color: #ccc;
+  background-color: #191919;
 }
    
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px #000;
 }
 
 input:checked + .slider:before {
   -webkit-transform: translateX(24px);
   -ms-transform: translateX(24px);
   transform: translateX(24px);
-  background: white url("../assets/Images/mode/night.png");
+  background: white url("../assets/Images/dark_mode_switch/night.png");
   background-repeat: no-repeat;
   background-position: center;
   right: 1.5rem;
 }
 
 .slider.round {
-  border-radius: 34px;
+  border-radius: 32px;
   width: 32px;
   height: 16px;
 }
