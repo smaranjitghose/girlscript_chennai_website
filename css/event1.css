@@ -10,7 +10,7 @@ html[ data-theme="dark"] {
     --shadow-clr: rgba(100,100,100,0.4);
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1496px) {
     body{
         overflow-x: hidden;
         overflow-y: scroll;
@@ -248,6 +248,7 @@ header {
 
 .container-fluid {
     z-index: 2;
+    margin-top: 50px;
 }
 
 @media screen and (max-width: 450px) {
@@ -696,6 +697,7 @@ header {
     }
     .color-overlay-3 {
         opacity: 0.8;
+
     }
 }
 
@@ -813,6 +815,6 @@ header {
 
 @media screen and (max-width: 900px) {
     .col-lg-6  {
-       margin-top: 4.5rem;
+       margin-top: 4.2rem;
     }
 }
