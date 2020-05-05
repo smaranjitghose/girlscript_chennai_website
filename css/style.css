@@ -806,6 +806,38 @@ a.fa-linkedin {
   Achievements
   -------------------*/
 
+  #my-canvas{
+    position:absolute;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    #my-canvas {
+      width: 940px;
+      height: 484px;
+    }
+  }
+
+  @media only screen and (max-width: 990px) {
+    #my-canvas {
+      width: 700px;
+      height: 562px;
+    }
+  }
+
+  @media only screen and (max-width: 760px) {
+    #my-canvas {
+      width: 520px;
+      height: 626px;
+    }
+  }
+
+  @media only screen and (max-width: 490px) {
+    #my-canvas {
+      width: 940px;
+      height: 756px;
+    }
+  }
+
 .atitle h2 {
   font-size: 4vw;
   color: var(--font-color);
