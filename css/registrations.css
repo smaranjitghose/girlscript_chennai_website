@@ -4,10 +4,6 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
-.waves{
-	background-color: rgb(253, 97, 46);
-}
-
 h1 {
 	position: relative;
 	color: #fff;
@@ -148,30 +144,3 @@ h1 {
 .wrong #inputProgress {
 	border-color: #ff2d26;
 }
-
-@media only screen and (max-width: 350px)  {
-    #register {
-      width: 95%;
-	}
-	#inputContainer{
-        margin-bottom: 10px;
-	}
-	#inputProgress {
-        width: 65% !important;
-	}
-  } 
-
-
-@media only screen and (max-width: 450px) and  (min-width: 350px){
-    #register {
-      width: 80%;
-	}
-
-	#inputProgress {
-        width: 75% !important;
-	}
-	#inputContainer{
-        margin-bottom: 10px;
-	}
-}
-
