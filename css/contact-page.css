@@ -79,6 +79,21 @@ html[ data-theme="dark"]{
   position: relative;
   margin-bottom: 2.5rem;
 }
+.error-message {
+	position: absolute;
+	top: -20px;
+	right: 10px;
+	color: red;
+	font-size: 14px;
+	margin: 0;
+	letter-spacing: 1.2px;
+	display: none;
+}
+.error-message i {
+	font-size: 15px;
+	display: inline-block;
+	margin-right: 3px;
+}
 
 .form-control-placeholder {
   font-family: 'Quicksand', sans-serif;
@@ -143,9 +158,9 @@ html[ data-theme="dark"]{
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	padding: 5px 8px 5px 8px;
+	padding: 1.5em 8px;
 	margin-bottom: 35px;
-	margin-top: 5em;
+	margin-top: 3em;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -156,7 +171,8 @@ html[ data-theme="dark"]{
 	        align-items: end;
 	-webkit-flex-wrap: wrap;
 	    -ms-flex-wrap: wrap;
-	        flex-wrap: wrap;
+					flex-wrap: wrap;
+	position: relative;				
 	}
 .capbox .form-group {
 	-webkit-flex-basis: 70%;

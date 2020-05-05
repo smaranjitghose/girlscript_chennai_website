@@ -10,46 +10,54 @@ function ValidCaptcha(str2) {
 		return false;
 	}
 }
+function validateEmail(emailID) {
+	let atpos = emailID.indexOf('@'),
+		dotpos = emailID.lastIndexOf('.');
+
+	if (atpos < 1 || dotpos - atpos < 2) {
+		return true;
+	}
+	return false;
+}
+function displayError(tagName, tag, lessLength = false) {
+	let errorBlock = $(`#error-${tagName}`);
+	errorBlock.css("display", "block")
+	let errorText = $(errorBlock[0].children[1]);
+	errorText.empty();
+	errorText.append(tag.value === "" ? `Please enter ${tagName}` :
+		lessLength ? "Mininim length should be 10 characters" : `Please enter correct ${tagName}`)
+	tag.focus();
+}
 function validateForm() {
 	let captchaInput = document.myForm.captchaInput,
-	    name = document.myForm.name,
-	    emailId = document.myForm.email,
-	    subject = document.myForm.subject,
+		name = document.myForm.name,
+		emailId = document.myForm.email,
+		subject = document.myForm.subject,
 		message = document.myForm.message,
 		letters = /^[0-9]+$/;
+	$('.error-message').css("display", "none");
+	if (name.value.match(letters) || name.value === "") {
+		displayError("name", name)
+		return false;
+	}
+	else if (emailId.value === "" || validateEmail(emailId.value)) {
+		displayError("email", emailId)
+		return false;
+	}
+	else if (subject.value === "" || subject.value.length < 10) {
+		displayError("subject", subject, subject.value.length < 10);
+		return false;
+	}
+	else if (message.value === "" || message.value.length < 10) {
+		displayError("message", message, message.value.length < 10)
+		return false;
+	}
+	else if (captchaInput.value === "" || !(ValidCaptcha(captchaInput.value))) {
+		displayError("captcha", captchaInput)
+		return false;
+	}
 
-		if (!name.value.match(letters) || name.value === "" ) {
-			alert(name.value === "" ? "Please enter Name" : "Please enter correct Name")
-			name.focus();
-			return false;
-		}
-		else if (emailId.value === ""){
-			alert("Please enter the emailID");
-			emailId.focus();
-			return false;
-		}
-		else if (subject.value === "" ){
-			alert("Please enter the subject");
-			subject.focus();
-			return false;
-		}
-		else if (message.value === "" ){
-			alert("Please enter the message");
-			message.focus();
-			return false;
-		}
-	    else if (captchaInput.value === "") {
-		    alert("Please Enter CAPTCHA Code.");
-		    captchaInput.focus();
-		    return false;
-	    }
-	    else if (!(ValidCaptcha(captchaInput.value))) {
-		    alert("The CAPTCHA Code Does Not Match.");
-		    captchaInput.focus();
-		    return false;
-	    }
-	  
-return true;
+	return true;
 }
 
 $(function () {
