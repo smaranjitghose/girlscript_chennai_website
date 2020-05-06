@@ -145,7 +145,7 @@ body {
   position: relative;
   border-radius: 6px;
   -webkit-box-shadow: 0 10px 25px rgba(240, 112, 0, 0.23), 0 2px 0px rgba(240, 112, 0, 0.5);
-          box-shadow: 0 10px 25px rgba(240, 112, 0, 0.23), 0 2px 0px rgba(240, 112, 0, 0.5);
+      box-shadow: 0 10px 25px rgba(240, 112, 0, 0.23), 0 2px 0px rgba(240, 112, 0, 0.5);
 }
 
 .time {
@@ -298,8 +298,8 @@ body {
       grid-template-areas: "image" "text" "stats";
   border-radius: 18px;
   background: var(--bg-Card);
-  -webkit-box-shadow: var(--boxCard-shadow);
-          box-shadow: var(--boxCard-shadow);
+  -webkit-box-shadow: 0 10px 25px rgba(240, 112, 0, 0.23), 0 2px 0px rgba(240, 112, 0, 0.5);
+      box-shadow: 0 10px 25px rgba(240, 112, 0, 0.23), 0 2px 0px rgba(240, 112, 0, 0.5);
   text-align: center;
   overflow: hidden;
   position: relative;
@@ -382,8 +382,8 @@ body {
   -webkit-transform: scale(1.15);
       -ms-transform: scale(1.15);
           transform: scale(1.15);
-  -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
-          box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0 10px 25px rgba(240, 112, 0, 0.23), 0 2px 0px rgba(240, 112, 0, 0.5);
+      box-shadow: 0 10px 25px rgba(240, 112, 0, 0.23), 0 2px 0px rgba(240, 112, 0, 0.5);
 }
 .card:before {
   content: "";
