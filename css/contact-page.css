@@ -79,6 +79,7 @@ html[ data-theme="dark"]{
   position: relative;
   margin-bottom: 2.5rem;
 }
+
 .error-message {
 	position: absolute;
 	top: -20px;
@@ -130,6 +131,12 @@ html[ data-theme="dark"]{
   -webkit-box-shadow: none;
           box-shadow: none;
   /* background-color: #f3f3f3; */
+}
+.form-group-error {
+	border-bottom: 2.5px solid red;
+}
+.form-group-error:focus {
+	border-bottom: 2.5px solid red;
 }
 
 #submit-button {

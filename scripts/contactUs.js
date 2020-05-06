@@ -26,9 +26,10 @@ function displayError(tagName, tag, lessLength = false) {
 	errorText.empty();
 	errorText.append(tag.value === "" ? `Please enter ${tagName}` :
 		lessLength ? "Mininim length should be 10 characters" : `Please enter correct ${tagName}`)
+		$(`#${tagName}`).addClass("form-group-error")
 	tag.focus();
 }
-function validateForm() {
+function validateForm(inputBox=undefined) {
 	let captchaInput = document.myForm.captchaInput,
 		name = document.myForm.name,
 		emailId = document.myForm.email,
@@ -36,23 +37,24 @@ function validateForm() {
 		message = document.myForm.message,
 		letters = /^[0-9]+$/;
 	$('.error-message').css("display", "none");
-	if (name.value.match(letters) || name.value === "") {
+	$('.no-border').removeClass("form-group-error")
+	if ((name.value.match(letters) || name.value === "") && inputBox === "name") {
 		displayError("name", name)
 		return false;
 	}
-	else if (emailId.value === "" || validateEmail(emailId.value)) {
+	else if ((emailId.value === "" || validateEmail(emailId.value))&& inputBox === "email") {
 		displayError("email", emailId)
 		return false;
 	}
-	else if (subject.value === "" || subject.value.length < 10) {
+	else if ((subject.value === "" || subject.value.length < 10) && inputBox === "subject") {
 		displayError("subject", subject, subject.value.length < 10);
 		return false;
 	}
-	else if (message.value === "" || message.value.length < 10) {
+	else if ((message.value === "" || message.value.length < 10) && inputBox === "message") {
 		displayError("message", message, message.value.length < 10)
 		return false;
 	}
-	else if (captchaInput.value === "" || !(ValidCaptcha(captchaInput.value))) {
+	else if ((captchaInput.value === "" || !(ValidCaptcha(captchaInput.value))) && inputBox === "captcha") {
 		displayError("captcha", captchaInput)
 		return false;
 	}
