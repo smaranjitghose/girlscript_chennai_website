@@ -60,7 +60,14 @@ let header = $(`
 		<input type="checkbox" name="theme" id="theme" onchange="changeTheme()">		
 		<span class="slider round"></span>		
 		</label>
-	</div>				
+	</div>	
+	
+		
+<div class="scroll-indicator">
+<div class="progress-container">
+  <div class="progress-bar" id="myBar"></div>
+</div>  
+</div>
 	 </div>	 
 	</nav>`);
 

@@ -264,6 +264,33 @@ a.active {
 	}
 }
 
+
+/* Scroll-Indicator */
+
+.scroll-indicator
+{
+	position: fixed;
+	top: 68px;
+	z-index: 1;
+	width: 100%;
+	background: -o-linear-gradient(left, #f09819, rgb(253, 109, 81));
+  }
+  
+  .progress-container 
+  {
+	width: 100%;
+	height: 3.5px;
+	background: -o-linear-gradient(left, #f09819, rgb(253, 109, 81));
+  }
+  
+  .progress-bar 
+  {
+	height: 3.5px;
+	background: #636363;
+	width: 0%;
+  }
+
+
 .fullScreen-navigation {
 	height: 100%;
 	width: 100%;
