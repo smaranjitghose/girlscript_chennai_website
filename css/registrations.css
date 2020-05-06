@@ -1,7 +1,8 @@
 body {
 	margin: 0;
-	background: #f5511c;
+	background: #fff;
 	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
 }
 
 h1 {
@@ -15,7 +16,7 @@ h1 {
 
 #progress {
 	position: absolute;
-	background: rgb(253, 97, 46);
+	background-color: rgb(247, 183, 109);
 	height: 100vh;
 	width: 0;
 	-webkit-transition: width 0.2s ease-in-out;
@@ -144,3 +145,32 @@ h1 {
 .wrong #inputProgress {
 	border-color: #ff2d26;
 }
+
+/* Responsive */
+
+@media only screen and (max-width: 350px)  {
+    #register {
+      width: 95%;
+	}
+	#inputContainer{
+        margin-bottom: 10px;
+	}
+	#inputProgress {
+        width: 65% !important;
+	}
+  } 
+
+
+@media only screen and (max-width: 450px) and  (min-width: 350px){
+    #register {
+      width: 80%;
+	}
+
+	#inputProgress {
+        width: 75% !important;
+	}
+	#inputContainer{
+        margin-bottom: 10px;
+	}
+}
+

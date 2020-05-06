@@ -128,7 +128,8 @@ html[ data-theme="dark"] {
     padding: 0 20px;
     border-radius: 20px;
     font-family: "Muli-Bold";
-    background: none; 
+    background: none;
+    background-color: white; 
   }
     .form-control:focus {
       border: 1px solid #f46721; 
