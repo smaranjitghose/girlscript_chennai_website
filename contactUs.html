@@ -52,7 +52,7 @@
 				<h2 class="font-weight-bold mb-1 form-heading">Contact
 					<span class="clr-theme"> Us</span></h2>
 				<form class="form-horizontal" name="myForm" action="https://formspree.io/xyz@gmail.com"
-					onsubmit="return validateForm()" method="post">
+					onsubmit="return validateForm('submit')" method="post">
 					<div class="form-group pb-3">
 						<span class="error-message" id="error-name"><i class="fa fa-exclamation-triangle"></i> <span> Error</span></span>
 						<input type="text" id="name" name="name" placeholder=" " oninput="return validateForm('name')"  class="form-control no-border" >

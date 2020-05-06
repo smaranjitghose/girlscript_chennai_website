@@ -38,23 +38,23 @@ function validateForm(inputBox=undefined) {
 		letters = /^[0-9]+$/;
 	$('.error-message').css("display", "none");
 	$('.no-border').removeClass("form-group-error")
-	if ((name.value.match(letters) || name.value === "") && inputBox === "name") {
+	if ((name.value.match(letters) || name.value === "") && (inputBox === "name" || inputBox==="submit")) {
 		displayError("name", name)
 		return false;
 	}
-	else if ((emailId.value === "" || validateEmail(emailId.value))&& inputBox === "email") {
+	else if ((emailId.value === "" || validateEmail(emailId.value))&& (inputBox === "email" || inputBox === "submit")) {
 		displayError("email", emailId)
 		return false;
 	}
-	else if ((subject.value === "" || subject.value.length < 10) && inputBox === "subject") {
+	else if ((subject.value === "" || subject.value.length < 10) && (inputBox === "subject" || inputBox === "submit")) {
 		displayError("subject", subject, subject.value.length < 10);
 		return false;
 	}
-	else if ((message.value === "" || message.value.length < 10) && inputBox === "message") {
+	else if ((message.value === "" || message.value.length < 10) && (inputBox === "message" || inputBox === "submit")) {
 		displayError("message", message, message.value.length < 10)
 		return false;
 	}
-	else if ((captchaInput.value === "" || !(ValidCaptcha(captchaInput.value))) && inputBox === "captcha") {
+	else if ((captchaInput.value === "" || !(ValidCaptcha(captchaInput.value))) && (inputBox === "captcha" || inputBox === "submit")) {
 		displayError("captcha", captchaInput)
 		return false;
 	}
