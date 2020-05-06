@@ -7,18 +7,18 @@ Home Page
 This is the landing page of our website which includes the introduction, goals, achievement etc.
 The home page is divided into various sections which are as follows :
 
-1. **Carousel**: A carousel is a set of rotating banners, or a slideshow, that displays on the homepage of your store. It allows you to display up to five slides consisting of images and text, which can be linked to specific products or pages. The image will change every few seconds. We have added the background image to the moving slides, and the display text above it is "WELCOME TO GIRLSCRIPT CHENNAI".
+1. **Banner**: It is the welcome section of the landing page that displays WELCOME TO GIRLSCRIPT CHENNAI".
 
-.. image:: ./images/homepage/carousel.JPG
+.. image:: ./images/homepage/frontimg.PNG
   :width: 600
   :align: center
   :alt: Alternative text
 
 If you want to make changes in this section, carry out the following changes in code:
 
-* To change the background image - Go to file  `style.css <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/css/style.css>`__  and search :python:`.slide1` in the url change the link to a different image. You can add new image in the :python:`../assets/Images/carousel/image_name` and then add this link in the url. Similarly you can search for :python:`.slide2` and modfify it. 
+* To change the background image - Go to file  `style.css <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/css/style.css>`__  and search :python:`.img-front` in the url change the link to a different image. You can add new image in the :python:`../assets/Images/Front-img/image_name` and then add this link in the url.
 
-- To change the carousel content - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`carousel-content`, you will see <h1> and <h2> tag where you can modify your content accordingly. 
+- To change the Welcome text - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`img-content`, you will see <h1> and <h2> tag where you can modify your content accordingly. 
    
 
 2. **About**: About section describes about the Girlscript Foundation and their goals.
