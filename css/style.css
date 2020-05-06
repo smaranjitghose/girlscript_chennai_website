@@ -826,13 +826,6 @@ a.fa-linkedin {
 
   @media only screen and (max-width: 760px) {
     #my-canvas {
-      width: 520px;
-      height: 626px;
-    }
-  }
-
-  @media only screen and (max-width: 490px) {
-    #my-canvas {
       display:none;
     }
   }
