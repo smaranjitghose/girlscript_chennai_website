@@ -1,0 +1,296 @@
+From c537952df0320661475a910dccde98129b5b6c8b Mon Sep 17 00:00:00 2001
+From: adyasha <adyashamohanty8104@gmail.com>
+Date: Wed, 6 May 2020 20:53:33 +0530
+Subject: [PATCH 1/2] Update-readme.md and separate the css
+
+---
+ README.MD  | 42 ++++++++++++++++-------------
+ popup.html | 78 +-----------------------------------------------------
+ style.css  | 75 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 99 insertions(+), 96 deletions(-)
+ create mode 100644 style.css
+
+diff --git a/README.MD b/README.MD
+index de566ee..7a5e7d9 100644
+--- a/README.MD
++++ b/README.MD
+@@ -1,31 +1,32 @@
+-# Profile Chrome Extension
++<h2 align= "center"><b> Profile Chrome Extension </b></h2>
+ 
+ Are you someone who is active on multiple social media platforms📱?
+ 
+-![fame](https://media.giphy.com/media/LWFXXqaSEmO7twXDxP/giphy.gif)
++<p align= "center"><img src="https://media.giphy.com/media/LWFXXqaSEmO7twXDxP/giphy.gif"></p>
+ 
+ Well if the answer is Yes💃,your Bookmarks Bar must be cluttered with them?
+ 
+-![cluttered](https://media.giphy.com/media/3ELDuBKag7o8E/giphy.gif)
++<p align= "center"><img src="https://media.giphy.com/media/3ELDuBKag7o8E/giphy.gif"></p>
+ 
+ Want to clean it up a bit?🧹 But what about those one-click solutions you had? Can you preserve them?
+ 
+-![how](https://media.giphy.com/media/H6JdkRnhXQaImiCYp2/giphy.gif)
++<p align= "center"><img src="https://media.giphy.com/media/H6JdkRnhXQaImiCYp2/giphy.gif"></p>
+ 
+ Definitely you can with your custom chrome extension 💻. 
+ 
+-![yes](https://media.giphy.com/media/nFjDu1LjEADh6/giphy.gif)
++<p align= "center"><img src="https://media.giphy.com/media/nFjDu1LjEADh6/giphy.gif"></p>
+ 
+ Wondering who is gonna build that classy thing for you?🤔🤔 Look no further. You are covered!
+ 
+-![really](https://media.giphy.com/media/12FfNKPlSR5k2c/giphy.gif)
++<p align= "center"><img src="https://media.giphy.com/media/12FfNKPlSR5k2c/giphy.gif"></p>
+ 
+-# Lets see what we have here 👀:
+-![Snapshot](https://github.com/smaranjitghose/profile_chrome_extension/blob/master/assets/snapshot.png)
++<h2 align= "center"><b> Lets see what we have here 👀: </b></h2>
+ 
+-# Want it for yourself? Here you go
++<p align= "center"><img src="https://github.com/smaranjitghose/profile_chrome_extension/blob/master/assets/snapshot.png"></p>
+ 
+-![give it](https://media.giphy.com/media/KamhkkcTtvOJ0FCjnB/giphy.gif)
++<h2 align= "center"><b> Want it for yourself? Here you go </b></h2>
++
++<p align= "center"><img src="https://media.giphy.com/media/KamhkkcTtvOJ0FCjnB/giphy.gif"></p>
+ 
+ - Clone this repository ⏬
+ - Move inside 👉 the repo 
+@@ -56,7 +57,7 @@ Wondering who is gonna build that classy thing for you?🤔🤔 Look no further.
+   "permissions": ["activeTab"]
+ }
+ ```
+-![wait-what](https://media.giphy.com/media/SqmkZ5IdwzTP2/giphy.gif)
++<p align= "center"><img src="https://media.giphy.com/media/SqmkZ5IdwzTP2/giphy.gif"></p>
+ 
+ - Don't worry! We are in this together. Let's do this one step at a time.
+     - First Update the name you want to give to your chrome extension
+@@ -82,7 +83,7 @@ Wondering who is gonna build that classy thing for you?🤔🤔 Look no further.
+ - Save ⚓ the changes to the File
+ - That was easy right?. Now, lets see the basic web dev mantra behind our extension
+ 
+-![easy](https://media.giphy.com/media/3oz8xRF0v9WMAUVLNK/giphy.gif)
++<p align= "center"><img src="https://media.giphy.com/media/3oz8xRF0v9WMAUVLNK/giphy.gif"></p>
+ 
+ - Open the ```popup.html``` in your favourite IDE (Again,I prefer [VS Code](https://code.visualstudio.com/) )
+   - Change the title:
+@@ -135,7 +136,7 @@ Wondering who is gonna build that classy thing for you?🤔🤔 Look no further.
+ - Save ⚓ the changes to the File 
+ - Damn! That was a lot of changes. Now let's use our chrome extension.
+ 
+-![Finish-It](https://media.giphy.com/media/WgRqTUQbqULJEq9swo/giphy.gif)
++<p align= "center"><img src="https://media.giphy.com/media/WgRqTUQbqULJEq9swo/giphy.gif"></p>
+ 
+    - Open Google Chrome
+    - In the Search Bar, type ```chrome://extensions```
+@@ -145,11 +146,11 @@ Wondering who is gonna build that classy thing for you?🤔🤔 Look no further.
+ 
+ - Baam!💣 you just made your own Chrome Extension💻 for handling your social media profiles
+ 
+-![easy](https://media.giphy.com/media/3o7btNa0RUYa5E7iiQ/giphy.gif)
++<p align= "center"><img src="https://media.giphy.com/media/3o7btNa0RUYa5E7iiQ/giphy.gif"></p>
+ 
+-#### Want to take this a step further? And share it with the world!
++ <h2 align= "center"><b>Want to take this a step further? And share it with the world!</b></h2> 
+ 
+-![more](https://media.giphy.com/media/l0Exdm9UbTHAFcJi0/giphy.gif)
++<p align= "center"><img src="https://media.giphy.com/media/l0Exdm9UbTHAFcJi0/giphy.gif"></p>
+ 
+ - Compress all the content of the ```profile_chrome_extension``` into a .zip file 📦
+ - Go to [Chrome Webstore](https://developer.chrome.com/webstore/publish). Please carefully read the instructons
+@@ -165,14 +166,17 @@ Wondering who is gonna build that classy thing for you?🤔🤔 Look no further.
+ 
+ Boom!💥  You are a Google Chrome Extension Developer now and just got your first extension published (FYI:Give it some hours to be done)
+ 
+-![Done](https://media.giphy.com/media/VACYDIiciYDtu/giphy.gif)
++<p align= "center"><img src="https://media.giphy.com/media/VACYDIiciYDtu/giphy.gif"></p>
+ 
+ # Always grateful 🙏 to Professor [Daniel Shiffman](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw) for his tutorials and walkthroughs
+ 
+-![Thank You](https://media.giphy.com/media/AeWoyE3ZT90YM/giphy.gif)
++<p align= "center"><img src="https://media.giphy.com/media/AeWoyE3ZT90YM/giphy.gif"></p>
+ 
+-# License 📜
++ <h2 align= "center"><b>  License 📜</b></h2>
+ 
+ [MIT License](https://github.com/smaranjitghose/profile_chrome_extension/blob/master/LICENSE)
+ 
+ # **Crafted with ❤ by Smaranjit Ghose**
++
++[![built with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/smaranjitghose) [![smile please](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://github.com/smaranjitghose) 
++***
+diff --git a/popup.html b/popup.html
+index 67ac492..0267417 100644
+--- a/popup.html
++++ b/popup.html
+@@ -13,84 +13,8 @@
+       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+       crossorigin="anonymous"
+     />
+-    <style>
+-      /* Modal Structure */
+-
+-      html,
+-      body {
+-        font-family: "Open Sans", sans-serif;
+-        font-size: 14px;
+-        margin: 0;
+-        min-height: 180px;
+-        padding: 0;
+-        width: 384px;
+-      }
+-
+-      h1 {
+-        font-family: "Menlo", monospace;
+-        font-size: 22px;
+-        font-weight: 400;
+-        margin: 0;
+-        color: #2f5876;
+-      }
+-
+-      a:link,
+-      a:visited {
+-        color: #000000;
+-        outline: 0;
+-        text-decoration: none;
+-      }
+-
+-      img {
+-        width: 30px;
+-      }
+-
+-      .modal-header {
+-        align-items: center;
+-        border-bottom: 0.5px solid #dadada;
+-      }
+-
+-      .modal-content {
+-        padding: 0 22px;
+-      }
+-
+-      .modal-icons {
+-        border-top: 0.5px solid #dadada;
+-        height: 50px;
+-        width: 100%;
+-      }
+-
+-      .logo {
+-        padding: 16px;
+-      }
+-
+-      .logo-icon {
+-        vertical-align: text-bottom;
+-        margin-right: 12px;
+-      }
+-
+-      .flex-container {
+-        display: flex;
+-        justify-content: space-between;
+-        padding: 10px 22px;
+-      }
+-
+-      .flex {
+-        opacity: 1;
+-        transition: opacity 0.2s ease-in-out;
+-        width: 120px;
+-      }
+-
+-      .flex:hover {
+-        opacity: 0.4;
+-      }
+-
+-      .flex .fa {
+-        font-size: 40px;
+-        color: #3c797b;
+-      }
+-    </style>
+     <script src="popup.js"></script>
++    <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+ 
+   <body>
+diff --git a/style.css b/style.css
+new file mode 100644
+index 0000000..a603f9c
+--- /dev/null
++++ b/style.css
+@@ -0,0 +1,75 @@
++/* Modal Structure */
++
++html,
++body {
++  font-family: "Open Sans", sans-serif;
++  font-size: 14px;
++  margin: 0;
++  min-height: 180px;
++  padding: 0;
++  width: 384px;
++}
++
++h1 {
++  font-family: "Menlo", monospace;
++  font-size: 22px;
++  font-weight: 400;
++  margin: 0;
++  color: #2f5876;
++}
++
++a:link,
++a:visited {
++  color: #000000;
++  outline: 0;
++  text-decoration: none;
++}
++
++img {
++  width: 30px;
++}
++
++.modal-header {
++  align-items: center;
++  border-bottom: 0.5px solid #dadada;
++}
++
++.modal-content {
++  padding: 0 22px;
++}
++
++.modal-icons {
++  border-top: 0.5px solid #dadada;
++  height: 50px;
++  width: 100%;
++}
++
++.logo {
++  padding: 16px;
++}
++
++.logo-icon {
++  vertical-align: text-bottom;
++  margin-right: 12px;
++}
++
++.flex-container {
++  display: flex;
++  justify-content: space-between;
++  padding: 10px 22px;
++}
++
++.flex {
++  opacity: 1;
++  transition: opacity 0.2s ease-in-out;
++  width: 120px;
++}
++
++.flex:hover {
++  opacity: 0.4;
++}
++
++.flex .fa {
++  font-size: 40px;
++  color: #3c797b;
++}
+-- 
+2.24.0.windows.2
+
