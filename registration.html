@@ -4,7 +4,7 @@
 <head>
 	<title>GirlScript Foundation-Chennai Chapter | Registration</title>
 	<meta charset="utf-8">
-	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport" />
 
 	<meta name="keywords"
 		content="tech events, coding competition, introduction to coding, computer coding for beginners, girls who code program, coding contest, coding competition, girls can code, introduction to programming, learn computer programming">
@@ -40,7 +40,7 @@
 
 	<meta name="og:url" content="https://girlscriptboilerplate.netlify.app/registration.html">
 
-	<meta name="og:image" content="assets/Images/GirlScriptChennaiLogo.png">
+	<meta name="og:image" content="assets/Images/gs_chennai_logo2.png">
 
 	<link rel="index" title="GirlScript Foundation-Chennai Chapter | Registration"
 		href="https://girlscriptboilerplate.netlify.app/registration.html" />
@@ -84,30 +84,31 @@
 
 	<div class="wrapper" style="background-image: url('assets/Images/registration/form.jpg');">
 		<div class="inner">
-			<form class="form" action="">
+			<form class="form" action="" name="registrationForm" 
+			    onsubmit="return registrationValidateForm()" method="post">
 				<h3 class="font-weight-bold mb-1 form-heading">REGISTRATION
 					<span class="clr-theme"> FORM</span></h3>
 				<div class="form-groups">
 					<div class="form-wrapper">
 						<label class="txt" for="">First Name</label>
-						<input type="text" class="form-control">
+						<input type="text" id ="fname" name="fname" class="form-control">
 					</div>
 					<div class="form-wrapper">
 						<label class="txt" for="">Last Name</label>
-						<input type="text" class="form-control">
+						<input type="text" id ="lname" name="lname" class="form-control">
                     </div>
 				</div>
 				<div class="form-wrapper">
 					<label class="txt" for="">Email</label>
-					<input type="text" name="email" id="email" pattern=".+@globex.com" class="form-control" >
+					<input type="text" id ="email" name="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="form-control" >
 				</div>
 				<div class="form-wrapper">
 					<label class="txt" for="">Phone Number</label>
-					<input type="text" maxlength="10" id="phone" name="country_code" class="form-control">
+					<input type="text" id ="phone" name="phone" maxlength="10" id="phone" pattern="[1-9]{1}[0-9]{9}" class="form-control">
 				</div>
 				<div class="form-wrapper">
 					<label class="txt" for="">Why you want to register?</label>
-					<textarea type="phone-number" class="form-control"></textarea>
+					<textarea type="text" id ="subject" name="subject" class="form-control"></textarea>
 				</div>
                   <div class="checkbox">
 					<label class="txt label">
@@ -122,6 +123,7 @@
 </body>
 
 <!--External JS File-->
+<script src="./scripts/registration.js"></script>
 <script src="./scripts/app.js"></script>
 	
 </html>
