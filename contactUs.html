@@ -52,28 +52,33 @@
 				<h2 class="font-weight-bold mb-1 form-heading">Contact
 					<span class="clr-theme"> Us</span></h2>
 				<form class="form-horizontal" name="myForm" action="https://formspree.io/xyz@gmail.com"
-					onsubmit="return validateForm()" method="post">
+					onsubmit="return validateForm('submit')" method="post">
 					<div class="form-group pb-3">
-						<input type="text" id="name" name="name"  class="form-control no-border" >
+						<span class="error-message" id="error-name"><i class="fa fa-exclamation-triangle"></i> <span> Error</span></span>
+						<input type="text" id="name" name="name" placeholder=" " oninput="return validateForm('name')"  class="form-control no-border" >
 						<label class="form-control-placeholder" for="name">Name</label>
 					</div>
 					<div class="form-group pb-3">
-						<input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"  class="form-control no-border" >
+						<span class="error-message" id="error-email"><i class="fa fa-exclamation-triangle"></i> <span> Error</span></span>
+						<input type="email" id="email" name="email" placeholder=" " oninput="return validateForm('email')"  class="form-control no-border" >
 						<label class="form-control-placeholder" for="email">Email Address</label>
 					</div>
 					<div class="form-group pb-3">
-						<input type="text" id="subject" name="subject"  class="form-control no-border">
+						<span class="error-message" id="error-subject"><i class="fa fa-exclamation-triangle"></i> <span> Error</span></span>
+						<input type="text" id="subject" name="subject" placeholder=" " oninput="return validateForm('subject')"  class="form-control no-border">
 						<label class="form-control-placeholder" for="subject">Subject</label>
 					</div>
 					<div class="form-group">
-						<textarea name="message" id="message" rows="4" minlength="10" class="form-control no-border"></textarea>
+						<span class="error-message" id="error-message"><i class="fa fa-exclamation-triangle"></i> <span> Error</span></span>
+						<textarea name="message" id="message" placeholder=" " rows="4" oninput="return validateForm('message')" class="form-control no-border"></textarea>
 						<label class="form-control-placeholder" for="message">Your Message</label>
 					</div>
 					<!-- START CAPTCHA -->
 					<div class="capbox">
+						<span class="error-message" id="error-captcha"><i class="fa fa-exclamation-triangle"></i> <span> Error</span></span>
 						<input type="text" readonly id="CaptchaDiv"/>
 						<div class="form-group">
-							<input type="number" class="form-control no-border" placeholder=" " name="captchaInput" id="CaptchaInput" size="15">
+							<input type="number" class="form-control no-border" placeholder=" " oninput="return validateForm('captcha')" name="captchaInput" id="CaptchaInput" size="15">
 							<label class="form-control-placeholder" for="CaptchaInput">Enter the Captcha</label>
 						</div>
 					</div>
