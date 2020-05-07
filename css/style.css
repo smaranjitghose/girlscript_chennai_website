@@ -1404,201 +1404,6 @@ a.fa-linkedin {
 	}
 }
 
-/* Front image animation */
-
-.wrap {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 100vh;
-	overflow-x: hidden;
-}
-
-.wrap {
-	position: relative;
-}
-
-.img-front {
-	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.5))),
-		url("../assets/Images/Front-img/event.jpg");
-	background-image: -o-linear-gradient(top left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
-		url("../assets/Images/Front-img/event.jpg");
-	background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
-		url("../assets/Images/Front-img/event.jpg");
-}
-
-.img-front {
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	min-height: 100vh;
-}
-
-.img-content {
-	background-color: rgba(0, 0, 0, 0.0);
-	color: white;
-	padding: 4rem;
-	position: absolute;
-	top: 60%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	    -ms-transform: translate(-50%, -50%);
-	        transform: translate(-50%, -50%);
-	width: 70%;
-}
-
-.img-inner {
-	min-height: 100vh;
-}
-
-#front-part {
-	min-height: 90vh;
-	position: relative;
-}
-
-.main-head {
-	font-family: 'Baloo Bhaina 2', sans-serif;
-	color: #fff;
-	text-align: center;
-	font-size: 4.5rem;
-	width: 100%;
-	-webkit-animation: blurFadeInOut 3s ease-in backwards;
-	animation: blurFadeInOut 3s ease-in backwards;
-}
-
-h1.main-head {
-	-webkit-animation-delay: 0s;
-	animation-delay: 0s;
-}
- 
-.sub-head {
-	font-family: 'Baloo Bhaina 2', sans-serif;
-	color: var(--theme-color);
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 3.5rem;
-	margin: 1px;
-	margin-top: 10px;
-	letter-spacing: 2px;
-	-webkit-animation: blurFadeInOut 3s ease-in backwards;
-	animation: blurFadeInOut 3s ease-in backwards;
-}
-
-h2.sub-head {
-	-webkit-animation-delay: 4s;
-	animation-delay: 4s;
-}
-
-@keyframes blurFadeInOut {
-	0% {
-		opacity: 0;
-		text-shadow: 0px 0px 40px #fff;
-		-webkit-transform: scale(1.3);
-		        transform: scale(1.3);
-	}
-	20%, 75% {
-		opacity: 1;
-		text-shadow: 0px 0px 1px #fff;
-		-webkit-transform: scale(1);
-		        transform: scale(1);
-	}
-	100% {
-		opacity: 0;
-		text-shadow: 0px 0px 50px #fff;
-		-webkit-transform: scale(0);
-		        transform: scale(0);
-	}
-}
-
-
-@-webkit-keyframes blurFadeInOut {
-	0% {
-		opacity: 0;
-		text-shadow: 0px 0px 40px #fff;
-		-webkit-transform: scale(1.3);
-	}
-	20%, 75% {
-		opacity: 1;
-		text-shadow: 0px 0px 1px #fff;
-		-webkit-transform: scale(1);
-	}
-	100% {
-		opacity: 0;
-		text-shadow: 0px 0px 50px #fff;
-		-webkit-transform: scale(0);
-	}
-}
-
-/* Media Queries */
-@media only screen and (max-width: 972px) {
-	.img-content {
-		padding: 3rem;
-	}
-	.main-head {
-		font-size: 3.8rem;
-	}
-	.sub-head {
-		font-size: 2.6rem;
-	}
-}
-
-@media only screen and (max-width: 753px) {
-	.img-content {
-		padding: 2rem;
-	}
-	.main-head {
-		font-size: 3rem;
-	}
-	.sub-head {
-		font-size: 1.8rem;
-		letter-spacing: 1px;
-	}
-}
-
-@media only screen and (max-width: 500px) {
-	.img-content {
-		padding: 3rem 2rem;
-	}
-	.main-head {
-		font-size: 2.6rem;
-	}
-	.sub-head {
-		font-size: 1.5rem;
-		letter-spacing: 1px;
-	}
-}
-
-@media only screen and (max-width: 430px) {
-	.img-content {
-		padding: 2rem 1rem;
-		width: 90%;
-	}
-
-	.main-head {
-		font-size: 2.3rem;
-	}
-}
-
-@media only screen and (max-width: 770px) {
-	#footer-c {
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
-		text-align: center;
-	}
-}
-@media only screen and (max-width: 770px) {
-	.logo {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
-		margin: auto;
-	}
-}
-
 /* DARK THEME BUTTON*/
 
 .switch {
@@ -1750,5 +1555,240 @@ input:checked + .slider:before {
 	}
 	.fw-bold {
 		font-size: 30px;
+	}
+}
+
+
+/* Front image animation */
+
+.wrap {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	overflow-x: hidden;
+}
+
+.wrap {
+	position: relative;
+}
+
+.sp-content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+	z-index: 1000;
+	overflow-x: hidden;
+}
+.sp-container h2 {
+	font-family: 'Baloo Bhaina 2', sans-serif;
+	position: absolute;
+	top: 50%;
+	line-height: 100px;
+	height: 90px;
+	margin-top: -50px;
+	font-size: 70px;
+	width: 100%;
+	text-align: center;
+	color: transparent;
+	-webkit-animation: blurFadeInOut 3s ease-in backwards;
+	animation: blurFadeInOut 3s ease-in backwards;
+}
+
+.frame-3 span{
+	color: var(--theme-color) !important;
+	text-transform: uppercase;
+	font-size: 4.5rem;
+}
+.sp-container h2.frame-1 {
+	-webkit-animation-delay: 0s;
+	animation-delay: 0s;
+}
+.sp-container h2.frame-2 {
+	-webkit-animation-delay: 3s;
+	animation-delay: 3s;
+}
+
+.sp-container h2.frame-3 {
+	-webkit-animation: none;
+	animation: none;
+	color: transparent;
+	text-shadow: 0px 0px 1px #000;
+}
+.sp-container h2.frame-3 span {
+	-webkit-animation: blurFadeIn 3s ease-in 6s backwards;
+	-moz-animation: blurFadeIn 1s ease-in 6s backwards;
+	-ms-animation: blurFadeIn 3s ease-in 6s backwards;
+	animation: blurFadeIn 3s ease-in 6s backwards;
+	color: transparent;
+	text-shadow: 0px 0px 1px #000;
+}
+.sp-container h2.frame-3 span:nth-child(2) {
+	-webkit-animation-delay: 7s;
+	animation-delay: 7s;
+}
+.sp-container h2.frame-3 span:nth-child(3) {
+	-webkit-animation-delay: 8s;
+	animation-delay: 8s;
+}
+
+.img-front {
+	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.5))),
+		url("../assets/Images/Front-img/event.jpg");
+	background-image: -o-linear-gradient(top left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+		url("../assets/Images/Front-img/event.jpg");
+	background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+		url("../assets/Images/Front-img/event.jpg");
+}
+
+.img-front {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+}
+
+
+@-webkit-keyframes blurFadeInOut {
+	0% {
+		opacity: 0;
+		text-shadow: 0px 0px 40px #fff;
+		-webkit-transform: scale(1.3);
+	}
+	20%, 75% {
+		opacity: 1;
+		text-shadow: 0px 0px 1px #fff;
+		-webkit-transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		text-shadow: 0px 0px 50px #fff;
+		-webkit-transform: scale(0);
+	}
+}
+@-webkit-keyframes blurFadeIn {
+	0% {
+		opacity: 0;
+		text-shadow: 0px 0px 40px #000;
+		-webkit-transform: scale(1.3);
+	}
+	50% {
+		opacity: 0.5;
+		text-shadow: 0px 0px 10px #000;
+		-webkit-transform: scale(1.1);
+	}
+	100% {
+		opacity: 1;
+		text-shadow: 0px 0px 1px #000;
+		-webkit-transform: scale(1);
+	}
+}
+@-webkit-keyframes fadeInBack {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(0);
+	}
+	50% {
+		opacity: 0.4;
+		-webkit-transform: scale(2);
+	}
+	100% {
+		opacity: 0.2;
+		-webkit-transform: scale(5);
+	}
+}
+
+@-moz-keyframes blurFadeInOut {
+	0% {
+		opacity: 0;
+		text-shadow: 0px 0px 40px #fff;
+		-moz-transform: scale(1.3);
+	}
+	20%, 75% {
+		opacity: 1;
+		text-shadow: 0px 0px 1px #fff;
+		-moz-transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		text-shadow: 0px 0px 50px #fff;
+		-moz-transform: scale(0);
+	}
+}
+@-moz-keyframes blurFadeIn {
+	0% {
+		opacity: 0;
+		text-shadow: 0px 0px 40px #000;
+		-moz-transform: scale(1.3);
+	}
+	100% {
+		opacity: 1;
+		text-shadow: 0px 0px 1px #000;
+		-moz-transform: scale(1);
+	}
+}
+@-moz-keyframes fadeInBack {
+	0% {
+		opacity: 0;
+		-moz-transform: scale(0);
+	}
+	50% {
+		opacity: 0.4;
+		-moz-transform: scale(2);
+	}
+	100% {
+		opacity: 0.2;
+		-moz-transform: scale(5);
+	}
+}
+
+@keyframes blurFadeInOut {
+	0% {
+		opacity: 0;
+		text-shadow: 0px 0px 40px #fff;
+		transform: scale(1.3);
+	}
+	20%, 75% {
+		opacity: 1;
+		text-shadow: 0px 0px 1px #fff;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		text-shadow: 0px 0px 50px #fff;
+		transform: scale(0);
+	}
+}
+@keyframes blurFadeIn {
+	0% {
+		opacity: 0;
+		text-shadow: 0px 0px 40px #000;
+		transform: scale(1.3);
+	}
+	50% {
+		opacity: 0.5;
+		text-shadow: 0px 0px 10px #000;
+		transform: scale(1.1);
+	}
+	100% {
+		opacity: 1;
+		text-shadow: 0px 0px 1px #000;
+		transform: scale(1);
+	}
+}
+@keyframes fadeInBack {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+	}
+	50% {
+		opacity: 0.4;
+		transform: scale(2);
+	}
+	100% {
+		opacity: 0.2;
+		transform: scale(5);
 	}
 }
