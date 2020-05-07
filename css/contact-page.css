@@ -299,7 +299,7 @@ input[type=number] {
   }
 }
 
-@media only screen and (max-width: 412px){
+@media only screen and (max-width: 576px){
 
  .capbox-inner{
    display: -webkit-box;
@@ -318,6 +318,12 @@ input[type=number] {
 	        flex-basis: 100%;
 	max-width: 100%;
 	margin-bottom: 30px;
+ }
+ .error-message {
+	 right: initial;
+	 top: initial;
+	 left: 0;
+	 bottom: -10px;
  }
 }
 
