@@ -4,8 +4,8 @@
 <head>
 	<title>GirlScript Website Boilerplate</title>
 	<meta charset="utf-8">
-	<meta content="width=device-width, initial-scale=1" name="viewport" />
-	
+	<meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport" />
+	<meta name="google-site-verification" content="e0dcB4k63dAZ7bMt_F9jWwZadbNO18iuZ_NZKDEavJs" />
 	<meta name="keywords"
 		content="tech events, coding competition, introduction to coding, computer coding for beginners, girls who code program, coding contest, coding competition, girls can code, introduction to programming, learn computer programming">
 	<meta name="description"
@@ -37,10 +37,10 @@
 	<meta name="og:site_name" content="https://girlscriptboilerplate.netlify.app/">
 	<meta name="og:title" content="GirlScript Website Boilerplate">
 	<meta name="og:url" content="https://girlscriptboilerplate.netlify.app/">
-	<meta name="og:image" content="assets/Images/GirlScriptChennaiLogo.png">
+	<meta name="og:image" content="assets/Images/logo/gs_chennai_logo2.png">
 	
 	
-	<link rel="icon" href="assets/Images/gs.png" type="image/png" sizes="16x16">
+	<link rel="icon" href="assets/Images/logo/gs.png" type="image/png" sizes="16x16">
 	
 	<link rel="index" title="GirlScript Website Boilerplater" href="https://girlscriptboilerplate.netlify.app/" />
 	
@@ -80,8 +80,6 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	
 	<!-- Defined Scripts -->
-	<script src="./scripts/index.js"></script>
-    <script src="./scripts/sparkle.js"></script>
 	<script type="text/javascript">
 		document.getElementsByTagName('html')[0].className += ' Q_js'; // better than noscript
 	</script>
@@ -90,40 +88,23 @@
 <body>
 
 	<!-- Header -->
-	<!-- CAROUSEL START -->
-	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="2800">
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<div class="carousel-content">
+	<!-- ANIMATION START -->
+	<div id="front-part">
+		<div class="img-inner">
+				<div class="img-content">
 					<h1 class="main-head ">Welcome to</h1>
-					<h2 class="sub-head">GIRLSCRIPT CHENNAI</h2>
+					<h2 class="sub-head">Girlscript Chennai</h2>
 				</div>
-				<div class="slide slide1">&nbsp;</div>
+				<div class="img-front"></div>
 			</div>
-			<div class="carousel-item">
-				<div class="carousel-content">
-					<h1 class="main-head">Welcome to</h1>
-					<h2 class="sub-head">GIRLSCRIPT CHENNAI</h2>
-				</div>
-				<div class="slide slide2">&nbsp;</div>
-			</div>
-		</div>
-		<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-		</a>
-	</div>
-	<!-- CAROUSEL END -->
+	   </div>
+	<!-- ANIMATION END -->
 
 	<section class="newsection bg-lgt-grey pb-5 pb-5">
 		<div class="container p-3 myDiv">
 			<h2 class="pt-4 text-center fw-bold heading about-head">ABOUT <span class="clr-theme fw-400">GIRLSCRIPT</span></h2>
 			<div class="row forScroll">
-				<div class="col-lg-8 col-md-7 col-sm-12 mt-5 dark-mode spacing">
+				<div class="col-lg-9 col-md-8 col-sm-12 mt-5 dark-mode spacing">
 
 					<p class="mt-2 mb-3 fs-17px text-justify about-para"><b>GirlScript Foundation</b> is a section-8 NON PROFIT
 						company registered under the government of India on 2nd June 2017. GirlScript started as a
@@ -151,8 +132,8 @@
 							diversity.</p>
 
 				</div>
-				<div class="col-lg-4 col-md-5 col-sm-12 text-center">
-					<img src="assets/Images/logo/gs_chennai_logo2.png" class="mt-5 ml-2 img-logo" alt="Girl Script Chennai Chapter Logo" aria-label="Girl Script Chennai Chapter Logo">
+				<div class="col-lg-3 col-md-4 col-sm-12 text-center">
+					<img src="assets/Images/logo/logo_for_boilerplate_1.png" class="mt-5 ml-2 img-logo" alt="Girl Script Chennai Chapter Logo" aria-label="Girl Script Chennai Chapter Logo">
 				</div>
 			</div>
 
@@ -314,7 +295,8 @@
 	</section>
 
 	<section class="pt-5 pb-5 newsection bg-lgt-grey">
-		<div class="container myDiv1 sparkley">
+		<div class="container myDiv1">
+			<canvas id ="my-canvas"></canvas>
 		<h2 class="pt-5 pb-5 text-center fw-bold heading">OUR <span class="clr-theme fw-100">ACHIEVEMENTS</span></h2>
 			<div class="row for-Scroll-Achievements">
 				<div class="col-lg-5">
@@ -421,10 +403,7 @@
 
 		<a href="contactUs.html" class="center-btn-settings center-btn-settings2 btn btn-lg mt-5">Get In Touch</a>
 	</section>
-
-	<!-- Footer -->
-	<a class="gotopbtn clr-wt" id="topBtn" style="display: none";> <i class="fa fa-chevron-up clr-wt"></i> </a>
-
+	<script src="./scripts/confetti.min.js"></script>
 </body>
 <script src="./scripts/scroll-reveal.js"></script>
 <script src="./scripts/app.js"></script>
@@ -437,5 +416,6 @@
   gtag('js', new Date());
   gtag('config', 'UA-164715490-1');
 </script>
-<script src="./scripts/optimization.js"></script>
+<!-- <script src="./scripts/optimization.js"></script> -->
+<script src="./scripts/cacheImages.js"></script>
 </html>

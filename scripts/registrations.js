@@ -1,6 +1,9 @@
+// NAVBAR AND FOOTER
+
+
 let header = $(`
 <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
-  <a class="navbar-brand" href="index.html"><img src="assets/Images/logo/logo1.png" id="logo" alt="Girl Script Chennai Chapter Logo" aria-label="Girl Script Chennai Chapter Logo"></a>
+  <a class="navbar-brand" href="index.html"><img src="assets/Images/logo/Logo1.png" id="logo" alt="Girl Script Chennai Chapter Logo" aria-label="Girl Script Chennai Chapter Logo"></a>
   <div id="myNav" class="fullScreen-navigation">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="navigation-content">
@@ -65,122 +68,6 @@ let header = $(`
 	</nav>`);
 
 let footer = $(`
-<div class="waves">
-    <svg width="100%" height="150px" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-	<linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" /><stop offset="50%" /><stop offset="100%" /></linearGradient>
-	<path fill="url(#grad3)" d="M0 67 C 273,183 822,-40 1920.00,106 V 359 H 0  V 67 Z">
-	  <animate repeatCount="indefinite" fill="url(#grad2)" attributeName="d" dur="5s" attributeType="XML"values="
-	  M0 77 
-	  C 473,283
-		822,-40
-		1920,116 
-	  V 359 
-	  H 0 
-	  V 67 
-	  Z; 
-	  M0 77 
-	  C 473,-40
-		1222,283
-		1920,136
-	  V 359 
-	  H 0 
-	  V 67 
-	  Z; 
-	  M0 77 
-	  C 973,260
-		1722,-53
-		1920,120 
-	  V 359 
-	  H 0 
-	  V 67 
-	  Z; 
-	  M0 77 
-	  C 473,283
-		822,-40
-		1920,116   
-	  V 359 
-	  H 0 
-	  V 67 
-	  Z
-		  ">
-	  </animate>
-	</path><linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" /><stop offset="50%" /><stop offset="100%" /></linearGradient>
-	<path fill="url(#grad2)" d="M0 67 C 273,183 822,-40 1920.00,106 V 359 H 0  V 67 Z">
-	  <animate repeatCount="indefinite" fill="url(#grad2)" attributeName="d" dur="10s" attributeType="XML"values="
-	  M0 77 
-	  C 473,283
-		822,-40
-		1920,116 
-	  V 359 
-	  H 0 
-	  V 67 
-	  Z; 
-	  M0 77 
-	  C 473,-40
-		1222,283
-		1920,136
-	  V 359 
-	  H 0 
-	  V 67 
-	  Z; 
-	  M0 77 
-	  C 973,260
-		1722,-53
-		1920,120 
-	  V 359 
-	  H 0 
-	  V 67 
-	  Z; 
-	  M0 77 
-	  C 473,283
-		822,-40
-		1920,116   
-	  V 359 
-	  H 0 
-	  V 67 
-	  Z
-		  ">
-	  </animate>
-	</path><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" /><stop offset="50%" /><stop offset="100%" /></linearGradient>
-      <path fill="url(#grad1)" d="M0 67 C 273,183 822,-40 1920.00,106 V 359 H 0  V 67 Z">
-        <animate repeatCount="indefinite" fill="url(#grad1)" attributeName="d" dur="15s" attributeType="XML"values="
-            M0 77 
-            C 473,283
-              822,-40
-              1920,116 
-            V 359 
-            H 0 
-            V 67 
-            Z; 
-            M0 77 
-            C 473,-40
-              1222,283
-              1920,136
-            V 359 
-            H 0 
-            V 67 
-            Z; 
-            M0 77 
-            C 973,260
-              1722,-53
-              1920,120 
-            V 359 
-            H 0 
-            V 67 
-            Z; 
-            M0 77 
-            C 473,283
-              822,-40
-              1920,116   
-            V 359 
-            H 0 
-            V 67 
-            Z
-            ">
-        </animate>
-	  </path>
-    </svg>
-  </div>
 <footer>
 <div class="container">
   <div class="row">
@@ -210,9 +97,6 @@ let footer = $(`
 	</center>
 </div>		
 </footer>`);
-
-let goToTopbutton = $(`	<a onclick="topBtnClick()" class="gotopbtn clr-wt" id="topBtn"> <i class="fa fa-chevron-up clr-wt"></i> </a>
-`);
 
 function scrollFunction() {
 	let navBar = document.getElementById('navbar'),
@@ -312,3 +196,122 @@ function topBtnClick() {
 	document.body.scrollTop = 0;
 	document.documentElement.scrollTop = 0;
 }
+
+
+
+
+
+// Registration starts
+
+var questions = [
+  {question:"What's your first name?"},
+  {question:"What's your last name?"},
+  {question:"What's your email?", pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/},
+  {question:"Create your password", type: "password"}
+]
+
+
+;(function(){
+
+  var tTime = 100  // transition transform time from #register in ms
+  var wTime = 200  // transition width time from #register in ms
+  var eTime = 1000 // transition width time from inputLabel in ms
+
+  // init
+  // --------------
+  var position = 0
+
+  putQuestion()
+
+  progressButton.addEventListener('click', validate)
+  inputField.addEventListener('keyup', function(e){
+    transform(0, 0) // ie hack to redraw
+    if(e.keyCode == 13) validate()
+  })
+
+  // functions
+  // --------------
+
+  // load the next question
+  function putQuestion() {
+    inputLabel.innerHTML = questions[position].question
+    inputField.value = ''
+    inputField.type = questions[position].type || 'text'  
+    inputField.focus()
+    showCurrent()
+  }
+  
+  // when all the questions have been answered
+  function done() {
+    
+    // remove the box if there is no next question
+    register.className = 'close'
+    
+    // add the h1 at the end with the welcome text
+    var h1 = document.createElement('h1')
+    h1.appendChild(document.createTextNode('Welcome ' + questions[0].value + '!'))
+    setTimeout(function() {
+      register.parentElement.appendChild(h1)     
+      setTimeout(function() {h1.style.opacity = 1}, 50)
+    }, eTime)
+    
+  }
+
+  // when submitting the current question
+  function validate() {
+
+    // set the value of the field into the array
+    questions[position].value = inputField.value
+
+    // check if the pattern matches
+    if (!inputField.value.match(questions[position].pattern || /.+/)) wrong()
+    else ok(function() {
+      
+      // set the progress of the background
+      progress.style.width = ++position * 100 / questions.length + 'vw'
+
+      // if there is a new question, hide current and load next
+      if (questions[position]) hideCurrent(putQuestion)
+      else hideCurrent(done)
+             
+    })
+
+  }
+
+  // helper
+  // --------------
+
+  function hideCurrent(callback) {
+    inputContainer.style.opacity = 0
+    inputProgress.style.transition = 'none'
+    inputProgress.style.width = 0
+    setTimeout(callback, wTime)
+  }
+
+  function showCurrent(callback) {
+    inputContainer.style.opacity = 1
+    inputProgress.style.transition = ''
+    inputProgress.style.width = '100%'
+    setTimeout(callback, wTime)
+  }
+
+  function transform(x, y) {
+    register.style.transform = 'translate(' + x + 'px ,  ' + y + 'px)'
+  }
+
+  function ok(callback) {
+    register.className = ''
+    setTimeout(transform, tTime * 0, 0, 10)
+    setTimeout(transform, tTime * 1, 0, 0)
+    setTimeout(callback,  tTime * 2)
+  }
+
+  function wrong(callback) {
+    register.className = 'wrong'
+    for(var i = 0; i < 6; i++) // shaking motion
+      setTimeout(transform, tTime * i, (i%2*2-1)*20, 0)
+    setTimeout(transform, tTime * 6, 0, 0)
+    setTimeout(callback,  tTime * 7)
+  }
+
+}())
