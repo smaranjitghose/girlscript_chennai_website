@@ -13,6 +13,19 @@ function showMoreCards(DOMbtn) {
 		btn.append("Show More");
 		btn.attr("show-more", "false")
 		moreCardDiv.addClass('hidediv');
+		// Card opened from more cards - then -
+		console.log(moreCardDiv[0].parentElement)
+		let moreDivFlag = false
+		for (i of moreCardDiv[0].children) {
+			moreDivFlag = i.classList.value.includes("show") ? true : false;
+			i.classList.remove('show')
+			if (moreDivFlag) {
+				btn.removeClass('margin-button');
+				moreCardDiv[0].parentElement.classList.remove("showing");
+				break;
+			}
+
+		}
 	}
 
 }
@@ -34,11 +47,11 @@ function displayCard(domCard) {
 	else if (achievementCard.hasClass("showing")) {
 		//Some other card is already open -
 		// close that card and open current card;
-		let div = $("div.project-card.show")
+		let div = $("div.project-card.show"),
+			button = $(div[0].children[1].children[0]);
 		div.removeClass('show');
-		let button = $("i.fa-chevron-up");
-		button.removeClass('fa-chevron-up')
-		button.addClass('fa-chevron-down')
+		button.empty();
+		button.append('<i class="fa fa-chevron-down"></i>')
 		clickedCard.addClass("show");
 		chevronButton.empty();
 		chevronButton.append(`<i class="fa fa-chevron-up"></i>`)

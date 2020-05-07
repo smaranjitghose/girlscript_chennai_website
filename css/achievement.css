@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500;600&family=Baloo+Paaji+2:wght@400;500;600&family=Comfortaa:wght@400;500;600;700&family=Montserrat:wght@100;400;500&family=Quicksand:wght@300;400;500&family=Raleway:wght@300;400;500;600&display=swap');
 
 html {
@@ -26,6 +28,7 @@ a.toggle-info {
   position: relative;
   text-decoration: none;
   -webkit-transition: all 0.1s 0s ease-out;
+  -o-transition: all 0.1s 0s ease-out;
   transition: all 0.1s 0s ease-out;
 }
 a.toggle-info:hover {
@@ -35,13 +38,17 @@ a.toggle-info .fa-chevron-down {
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 }
 a.toggle-info .fa-chevron-up {
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translate(-45%, -55%);
+	-webkit-transform: translate(-45%, -55%);
+	    -ms-transform: translate(-45%, -55%);
+	        transform: translate(-45%, -55%);
 }
 
 .counter {
@@ -94,6 +101,7 @@ div.achievement-card {
 
 .card-text {
   font-family: 'Comfortaa', sans-serif;
+  text-align: justify;
 }
 
 div.project-card {
@@ -105,10 +113,12 @@ div.project-card {
   position: relative;
   text-align: left;
   -webkit-transition: all 0.3s 0s ease-in;
+  -o-transition: all 0.3s 0s ease-in;
   transition: all 0.3s 0s ease-in;
   width: 300px;
   z-index: 2;
-  box-shadow:  var(--projectCard-shadow);
+  -webkit-box-shadow:  var(--projectCard-shadow);
+          box-shadow:  var(--projectCard-shadow);
   cursor: pointer;
 
 }
@@ -178,14 +188,16 @@ div.project-card div.card-description {
 
 div.project-card div.card-actions {
   font-family: 'Montserrat', sans-serif;
-  box-shadow: var(--flapCard-shadow);
+  -webkit-box-shadow: var(--flapCard-shadow);
+          box-shadow: var(--flapCard-shadow);
   background-color: #f3d3c4;
   padding: 10px 15px 20px;
   text-align: center;
 }
 
 div.project-card div.card-actions a:hover {
-  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2)
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2);
+          box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2)
 }
 
 div.project-card div.card-actions a {
@@ -202,17 +214,20 @@ div.project-card div.card-flap {
   position: absolute;
   width: 100%;
   -webkit-transform-origin: top;
-          transform-origin: top;
+          -ms-transform-origin: top;
+      transform-origin: top;
   -webkit-transform: rotateX(-90deg);
           transform: rotateX(-90deg);
 }
 div.project-card div.flap1 {
   -webkit-transition: all 0.3s 0.3s ease-out;
+  -o-transition: all 0.3s 0.3s ease-out;
   transition: all 0.3s 0.3s ease-out;
   z-index: -1;
 }
 div.project-card div.flap2 {
   -webkit-transition: all 0.3s 0s ease-out;
+  -o-transition: all 0.3s 0s ease-out;
   transition: all 0.3s 0s ease-out;
   z-index: -2;
 }
@@ -220,18 +235,21 @@ div.achievement-card.showing div.project-card {
   cursor: pointer;
   opacity: 0.6;
   -webkit-transform: scale(0.88);
-   transform: scale(0.88);
+   -ms-transform: scale(0.88);
+      transform: scale(0.88);
 }
 .no-touch div.achievement-card.showing div.project-card:hover {
   opacity: 0.94;
   -webkit-transform: scale(0.92);
-          transform: scale(0.92);
+          -ms-transform: scale(0.92);
+      transform: scale(0.92);
 }
 div.project-card.show {
   z-index: 15;	
   opacity: 1 !important;
   -webkit-transform: scale(1) !important;
-          transform: scale(1) !important;	  
+          -ms-transform: scale(1) !important;
+      transform: scale(1) !important;	  
 }
 
 div.project-card.show div.card-flap {
@@ -241,10 +259,12 @@ div.project-card.show div.card-flap {
 }
 div.project-card.show div.flap1 {
   -webkit-transition: all 0.3s 0s ease-out;
+  -o-transition: all 0.3s 0s ease-out;
   transition: all 0.3s 0s ease-out;
 }
 div.project-card.show div.flap2 {
   -webkit-transition: all 0.3s 0.2s ease-out;
+  -o-transition: all 0.3s 0.2s ease-out;
   transition: all 0.3s 0.2s ease-out;
 }
 
@@ -259,6 +279,8 @@ display: block;
 text-align: right;
 opacity: 0.6;
 color: var(--font-color);
+-webkit-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
 transition: all 0.3s ease;
 }
 
@@ -275,7 +297,8 @@ opacity: 1;
 
 .card-1,.card-2, .card-3{
   background-color: var(--bg-Card);
-  box-shadow:var(--flapCard-shadow);
+  -webkit-box-shadow:var(--flapCard-shadow);
+          box-shadow:var(--flapCard-shadow);
 }
 .stat {
   padding-bottom: 30px;
@@ -298,7 +321,6 @@ margin-top:2rem;
 }
 
 .card-text {
-  text-align: justify;
   color: var(--font-color);
 }
 
@@ -383,13 +405,23 @@ margin-top:2rem;
     height: 74px;
     width: 52px;
     border-radius: 32px;
-    transform: scale(1);
-    transform-origin: 50% 50%;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transition: -webkit-transform 0.25s ease-out;
+    transition: -webkit-transform 0.25s ease-out;
+    -o-transition: transform 0.25s ease-out;
     transition: transform 0.25s ease-out;
+    transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
   }
   
 .card:hover:before {
-    transform: scale(22);
+    -webkit-transform: scale(22);
+        -ms-transform: scale(22);
+            transform: scale(22);
   }
 
 .card{
@@ -419,5 +451,10 @@ margin-top:2rem;
     .ct2{
       letter-spacing: 2px;
     }
-
+}
+@media only screen and (max-width: 390px){
+  .col1{width: 390px;}
+  div.project-card{margin: 0px;
+        margin-bottom:20px;
+    }
 }  
