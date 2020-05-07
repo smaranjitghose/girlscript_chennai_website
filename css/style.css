@@ -1403,6 +1403,28 @@ a.fa-linkedin {
 		margin-bottom: 16rem;
 	}
 }
+/* fooet and logo */
+
+
+@media only screen and (max-width: 770px) {
+	#footer-c {
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		 align-items: center;
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 770px) {
+	.logo {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+	        -ms-flex-pack: center;
+		justify-content: center;
+		margin: auto;
+	}
+}
 
 /* DARK THEME BUTTON*/
 
@@ -1619,8 +1641,6 @@ input:checked + .slider:before {
 }
 .sp-container h2.frame-3 span {
 	-webkit-animation: blurFadeIn 3s ease-in 6s backwards;
-	-moz-animation: blurFadeIn 1s ease-in 6s backwards;
-	-ms-animation: blurFadeIn 3s ease-in 6s backwards;
 	animation: blurFadeIn 3s ease-in 6s backwards;
 	color: transparent;
 	text-shadow: 0px 0px 1px #000;
@@ -1700,50 +1720,6 @@ input:checked + .slider:before {
 	}
 }
 
-@-moz-keyframes blurFadeInOut {
-	0% {
-		opacity: 0;
-		text-shadow: 0px 0px 40px #fff;
-		-moz-transform: scale(1.3);
-	}
-	20%, 75% {
-		opacity: 1;
-		text-shadow: 0px 0px 1px #fff;
-		-moz-transform: scale(1);
-	}
-	100% {
-		opacity: 0;
-		text-shadow: 0px 0px 50px #fff;
-		-moz-transform: scale(0);
-	}
-}
-@-moz-keyframes blurFadeIn {
-	0% {
-		opacity: 0;
-		text-shadow: 0px 0px 40px #000;
-		-moz-transform: scale(1.3);
-	}
-	100% {
-		opacity: 1;
-		text-shadow: 0px 0px 1px #000;
-		-moz-transform: scale(1);
-	}
-}
-@-moz-keyframes fadeInBack {
-	0% {
-		opacity: 0;
-		-moz-transform: scale(0);
-	}
-	50% {
-		opacity: 0.4;
-		-moz-transform: scale(2);
-	}
-	100% {
-		opacity: 0.2;
-		-moz-transform: scale(5);
-	}
-}
-
 @keyframes blurFadeInOut {
 	0% {
 		opacity: 0;
@@ -1792,3 +1768,50 @@ input:checked + .slider:before {
 		transform: scale(5);
 	}
 }
+
+/* Media Queries */
+
+@media only screen and (max-width: 1274px) {
+	.sp-container h2 {
+	  font-size: 3.5rem;
+	}
+  
+	.frame-3 span {
+	  font-size: 4rem;
+	}
+  }
+  @media only screen and (max-width: 1070px) {
+	.sp-container h2 {
+	  font-size: 3rem;
+	}
+  
+	.frame-3 span {
+	  font-size: 3.5rem;
+	}
+  }
+  
+  @media only screen and (max-width: 838px) {
+	.sp-container h2 {
+	  font-size: 3rem;
+	}
+  
+	.frame-3 span {
+	  font-size: 3.2rem;
+	}
+  }
+  
+  @media only screen and (max-width: 504px) {
+	.sp-container h2 {
+	  font-size: 2.7rem;
+	}
+  
+	.frame-3 span {
+	  font-size: 3rem;
+	}
+  
+	.sp-container h2 {
+	  margin-top: -90px;
+	}
+  }
+  
+  
