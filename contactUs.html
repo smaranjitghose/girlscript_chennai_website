@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 
@@ -5,7 +6,7 @@
 	<title> Contact Us </title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="assets/Images/gs.png" type="image/png" sizes="16x16">
+	<link rel="icon" href="assets/Images/logo/gs.png" type="image/png" sizes="16x16">
 
 	<!-- Google Font Api -->
 	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -17,18 +18,17 @@
   		integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
   		crossorigin="anonymous"></script>
 	<!-- Bootstrap -->
+	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	
 	<!-- Normalize CSS and AOS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 	<link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'>
-	<script src='https://unpkg.com/aos@2.3.0/dist/aos.js'></script>
 
 	<!-- Css Styles -->
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="css/contact-page.css" type="text/css">
-	<!-- Defined scripts -->
-	<script src="./scripts/contactUs.js"></script>
 </head>
 
 <body>
@@ -54,19 +54,19 @@
 				<form class="form-horizontal" name="myForm" action="https://formspree.io/xyz@gmail.com"
 					onsubmit="return validateForm()" method="post">
 					<div class="form-group pb-3">
-						<input type="text" id="name" name="name" placeholder=" " class="form-control no-border">
+						<input type="text" id="name" name="name"  class="form-control no-border" >
 						<label class="form-control-placeholder" for="name">Name</label>
 					</div>
 					<div class="form-group pb-3">
-						<input type="email" id="email" name="email" placeholder=" " class="form-control no-border">
+						<input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"  class="form-control no-border" >
 						<label class="form-control-placeholder" for="email">Email Address</label>
 					</div>
 					<div class="form-group pb-3">
-						<input type="text" id="subject" name="subject" placeholder=" " class="form-control no-border">
+						<input type="text" id="subject" name="subject"  class="form-control no-border">
 						<label class="form-control-placeholder" for="subject">Subject</label>
 					</div>
 					<div class="form-group">
-						<textarea name="message" id="message" rows="4" class="form-control no-border" placeholder=" "></textarea>
+						<textarea name="message" id="message" rows="4" minlength="10" class="form-control no-border"></textarea>
 						<label class="form-control-placeholder" for="message">Your Message</label>
 					</div>
 					<!-- START CAPTCHA -->
@@ -85,11 +85,11 @@
 		</div>
 	</section>
 	<!-- Footer -->
-	<a class="gotopbtn clr-wt" id="topBtn" style="display: none";> <i class="fa fa-chevron-up clr-wt"></i> </a>
-
 	<!--External JS File-->
 	<script src="./scripts/app.js"></script>
-	
+	<script src="./scripts/aos.js"></script>
+	<script src="./scripts/contactUs.js"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
 	
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164715490-1"></script>
