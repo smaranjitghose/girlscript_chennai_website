@@ -364,12 +364,12 @@ header {
     background: #c5c5c5;
 }
 
-.featured-schedule-collection ul {
+.featured-schedule-collection .schedule-box {
     margin: 0;
     padding: 0;
 }
 
-.featured-schedule-collection ul li {
+.featured-schedule-collection .schedule-box .links {
     list-style: none;
     line-height: normal;
     position: relative;
@@ -379,17 +379,17 @@ header {
             box-sizing: border-box;
 }
 
-.featured-schedule-collection ul li:nth-child(odd) {
+.featured-schedule-collection .schedule-box .links:nth-child(odd) {
     float: left;
     clear: both;
 }
 
-.featured-schedule-collection ul li:nth-child(even) {
+.featured-schedule-collection .schedule-box .links:nth-child(even) {
     float: right;
     clear: both;
 }
 
-.featured-schedule-collection ul li:nth-child(odd):before {
+.featured-schedule-collection .schedule-box .links:nth-child(odd):before {
     content: '';
     position: absolute;
     top: 40px;
@@ -403,7 +403,7 @@ header {
             box-shadow: 0 0 0 3px rgba(233,33,99,0.3);
 }
 
-.featured-schedule-collection ul li:nth-child(odd):after {
+.featured-schedule-collection .schedule-box .links:nth-child(odd):after {
     content: '';
     position: absolute;
     top: 40px;
@@ -415,7 +415,7 @@ header {
     border-color: transparent transparent transparent white;
 }
 
-.featured-schedule-collection ul li:nth-child(even):before {
+.featured-schedule-collection .schedule-box .links:nth-child(even):before {
     content: '';
     position: absolute;
     top: 40px;
@@ -429,7 +429,7 @@ header {
             box-shadow: 0 0 0 3px rgba(233,33,99,0.3); 
 }
 
-.featured-schedule-collection ul li:nth-child(even):after {
+.featured-schedule-collection .schedule-box .links:nth-child(even):after {
     content: '';
     position: absolute;
     top: 40px;
@@ -440,7 +440,7 @@ header {
     border-width: 10px 13px 10px 0;
     border-color: transparent white transparent transparent;}
 
-.featured-schedule-collection ul li .time {
+.featured-schedule-collection .schedule-box .links .time {
     position: absolute;
     top: 6px;
     margin: 0;
@@ -453,19 +453,19 @@ header {
 
 }
 
-.featured-schedule-collection ul li .time-1 {
+.featured-schedule-collection .schedule-box .links .time-1 {
     right: -280px;
 }
-.featured-schedule-collection ul li .time-2 {
+.featured-schedule-collection .schedule-box .links .time-2 {
     left: -270px;
 }
-.featured-schedule-collection ul li .time-3 {
+.featured-schedule-collection .schedule-box .links .time-3 {
     right: -190px;
 }
-.featured-schedule-collection ul li .time-4 {
+.featured-schedule-collection .schedule-box .links .time-4 {
     left: -250px;
 }
-.featured-schedule-collection ul li .time-5 {
+.featured-schedule-collection .schedule-box .links .time-5 {
     right: -250px;
 }
 
@@ -516,13 +516,13 @@ header {
             box-shadow: 0 10px 25px rgba(240, 112, 0, 0.23), 0 2px 0px rgba(240, 112, 0, 0.5);
 }
 
-.featured-schedule-collection ul li .time:hover > h3{
+.featured-schedule-collection .schedule-box .links .time:hover > h3{
     -webkit-transform: scale(1.06);
         -ms-transform: scale(1.06);
             transform: scale(1.06);
     color: white;
 }
-.featured-schedule-collection ul li .time:hover {
+.featured-schedule-collection .schedule-box .links .time:hover {
     background-color: var(--theme-color);
     cursor: default;
     -webkit-box-shadow: 0 10px 6px -6px black;
