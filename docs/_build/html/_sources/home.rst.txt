@@ -7,7 +7,7 @@ Home Page
 This is the landing page of our website which includes the introduction, goals, achievement etc.
 The home page is divided into various sections which are as follows :
 
-1. **Banner**: It is the welcome section of the landing page that displays WELCOME TO GIRLSCRIPT CHENNAI".
+1. **Banner**: It is the welcome section of the landing page that displays "Welcome to India's Largest Tech Community" **GIRLSCRIPT WEBSITE BOILERPLATE** using text animation.
 
 .. image:: ./images/homepage/frontimg.PNG
   :width: 600
@@ -18,7 +18,7 @@ If you want to make changes in this section, carry out the following changes in 
 
 * To change the background image - Go to file  `style.css <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/css/style.css>`__  and search :python:`.img-front` in the url change the link to a different image. You can add new image in the :python:`../assets/Images/Front-img/image_name` and then add this link in the url.
 
-- To change the Welcome text - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`img-content`, you will see <h1> and <h2> tag where you can modify your content accordingly. 
+- To change the text animation - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`sp-content`, you will see three <h2> tag having different clases where you can modify your content accordingly. 
    
 
 2. **About**: About section describes about the Girlscript Foundation and their goals.
@@ -88,7 +88,7 @@ If you want to make changes in the right part, carry out the following changes i
 * To make changes in the heading and content - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`ci-text`, for heading <h4> tag and for content <p> tag and then do the desired changes accordingly.
 
 
-To modify the animation effect of the whole section - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`sparkley` or :python:`sparkle-canvas`, do your desired changes whether you want or not or any style.
+To modify the animation effect of the whole section - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`my-canvas`, do your desired changes whether you want or not or any style.
 
 
 6. **Various Trends**: This section covers various trends upon which contributions have been made.
