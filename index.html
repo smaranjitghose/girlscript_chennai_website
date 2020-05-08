@@ -7,7 +7,7 @@
 	<meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport" />
 	<meta name="google-site-verification" content="e0dcB4k63dAZ7bMt_F9jWwZadbNO18iuZ_NZKDEavJs" />
 	<meta name="keywords"
-		content="tech events, coding competition, introduction to coding, computer coding for beginners, girls who code program, coding contest, coding competition, girls can code, introduction to programming, learn computer programming">
+		content="tech events, women in tech, girl code, coding websites, girls way to coding, introduction to coding, computer coding for beginners, girls who code program, coding contest, coding competition, girls can code, introduction to programming, learn computer programming, open source, open sourcing, contributing to open source">
 	<meta name="description"
 		content="This website is a base for Chennai chapter, and serves a template for other chapters. All the channel-specific tech events, coding competitions, and other resources are mentioned in this website.">
 	
@@ -80,7 +80,13 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	
 	<!-- Defined Scripts -->
+
+	<script src="./scripts/index.js"></script>
+    <script src="./scripts/sparkle.js"></script>
+	<script>
+
 	<script type="text/javascript">
+
 		document.getElementsByTagName('html')[0].className += ' Q_js'; // better than noscript
 	</script>
 	</head>
@@ -89,15 +95,18 @@
 
 	<!-- Header -->
 	<!-- ANIMATION START -->
-	<div id="front-part">
-		<div class="img-inner">
-				<div class="img-content">
-					<h1 class="main-head ">Welcome to</h1>
-					<h2 class="sub-head">Girlscript Chennai</h2>
-				</div>
-				<div class="img-front"></div>
-			</div>
-	   </div>
+    <div class="sp-container">
+		<div class="sp-content">
+	        <h2 class="frame-1">Welcome to</h2>
+			<h2 class="frame-2">India's Largest Tech Community</h2>
+			<h2 class="frame-3">
+				<span>GirlScript</span>
+				<span>Website</span>
+				<span>Boilerplate</span>
+			</h2>
+		</div>
+	   <div class="img-front"></div>
+	</div>
 	<!-- ANIMATION END -->
 
 	<section class="newsection bg-lgt-grey pb-5 pb-5">
@@ -113,7 +122,7 @@
 						started and learn computer programming.
 						<br /><br /><span class="italic">No matter whether you are a beginner or an experienced individual, GirlScript is
 							open for all.</span><br />
-						</br />GirlScript's mission is to encourage individuals to learn how to code and stand out among
+						<br />GirlScript's mission is to encourage individuals to learn how to code and stand out among
 						the crowd. Along with learning, GirlScript aims to create opportunities and growth via technical
 						education among various groups of people.
 						<br /><br /><b>Goals</b>:
@@ -125,7 +134,7 @@
 							<li>Share technical knowledge and content for helping individuals in the programming world.
 							</li>
 						</ul>
-						</p>
+						
 						<br />
 						<p class="about-para"><a href="#" class="clr-theme fw-bold">GirlScript Chennai</a> is India's fastest growing tech
 							community at the heart of Chennai. We believe in uplifting beginners in tech while promoting
@@ -140,11 +149,11 @@
 		</div>
 	</section>
 
-	<section>
+	<div>
 		<div class="parallax1">
 			<div class="parashadow"></div>
 		</div>
-	</section>
+	</div>
 	<section class="newsection p-5">
 		<h2 class="pt-5 pb-5 text-center fw-bold heading">OUR <span class="clr-theme fw-100">INITIATIVES</span></h2>
 
@@ -157,7 +166,7 @@
 						<div class="flip-card-front">
 							<h5 class="flip-card-head">Open Source<span>Projects</span></h5>
 							<div class="flip-card-img">
-								<svg version="1.1" id="Capa_1" height="75" width="75" xmlns="http://www.w3.org/2000/svg"
+								<svg version="1.1" class="Capa_1" height="75" width="75" xmlns="http://www.w3.org/2000/svg"
 									xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
 									style="enable-background:new 0 0 512 512;" xml:space="preserve"
 									fill="var(--font-color)">
@@ -228,7 +237,7 @@
 						<div class="flip-card-front">
 							<h5 class="flip-card-head">Public <span>Speaking</span></h5>
 							<div class="flip-card-img">
-								<svg id="Capa_1" height="75" width="75" enable-background="new 0 0 512 512"
+								<svg class="Capa_1" height="75" width="75" enable-background="new 0 0 512 512"
 									viewBox="0 0 512 512" fill="var(--font-color)" xmlns="http://www.w3.org/2000/svg">
 									<g>
 										<g>
@@ -257,17 +266,17 @@
 								<svg height="75" viewBox="0 0 54 60" width="75" fill="var(--font-color)"
 									xmlns="http://www.w3.org/2000/svg">
 									<g id="Page-1" fill="none" fill-rule="evenodd">
-										<g id="033---Thinking-Chat" fill="var(--font-color)" fill-rule="nonzero"
+										<g id="Thinking-Chat" fill="var(--font-color)" fill-rule="nonzero"
 											transform="translate(-1)">
-											<path id="Shape"
+											<path class="Shape"
 												d="m49.939 23.84c.7370236-.5462619 1.2533607-1.3390434 1.455-2.234-.0077372-1.0546989-.2914784-2.0889926-.823-3-.3656189-.7557023-.6611891-1.5433315-.883-2.353l-.08-.349c-.2310037-1.1117607-.5315952-2.2079178-.9-3.282-.874456-2.43689-2.235368-4.67048683-4-6.565-2.915-3.1-7.119-4.326-10.846-5.119-5.2510938-1.20830061-10.7041864-1.24244647-15.97-.1-4.9743024 1.08580545-9.42709114 3.84153752-12.618 7.809-2.99154771 4.1405024-4.49753871 9.1697512-4.274 14.273.073 5.17 2.315 8.211 4.293 10.893 1.03674367 1.2983991 1.92306145 2.7100664 2.642 4.208 1.20724708 2.7735651 1.65588536 5.8180935 1.3 8.822-.27604832 3.0543446-1.0583986 6.0414695-2.315 8.839-.469615.942833-.41662065 2.0617708.14 2.956.53242362.8540814 1.47058708 1.3699388 2.477 1.362h20.29c1.2657573-.0029856 2.3893439-.8110031 2.795-2.01.458-1.346 1.7-4.476 3.65-5.635 2.7567858.9959022 5.5655816 1.8414786 8.414 2.533 1.926042.4187098 3.8412192-.7497685 4.35-2.654.4357265-1.1435919.4918256-2.3970561.16-3.575-.1277733-.3625604-.1564267-.7526612-.083-1.13.079-.314.308-.471.894-.807.237-.137.475-.276.7-.435.3205193-.2297853.5324273-.5812778.586-.972.0396393-.506467-.0732019-1.0132077-.324-1.455.335-.258.7-.546.907-.73.938-.794.351-1.839-.037-2.53-.133-.237-.286-.508-.436-.826-.1365881-.3181727-.1745588-.6700114-.109-1.01.051-.267.744-.623 1.2-.858.3631825-.1735944.7113715-.3769554 1.041-.608.7531798-.4100399 1.2862581-1.1324049 1.456-1.973.111-1.21-.785-2.381-3.924-5.778-.7846756-.9210894-1.2751292-2.0563085-1.408-3.259-.0648356-.3225957-.1806181-.6328117-.343-.919-.0857972-.1464966-.1504377-.3043945-.192-.469.004-.291.325-.608.815-1.06zm-1.355-1.471c-.8265205.5857734-1.3586903 1.5009303-1.459 2.509.0183198.4909924.1585325.9697091.408 1.393.0579648.1078655.108742.2194416.152.334.1915821 1.5917538.8590037 3.0886602 1.915 4.295 1.184 1.282 3.388 3.667 3.409 4.207-.198364.2228311-.4237742.4200229-.671.587-.2408937.1608855-.4932338.3039339-.755.428-.853.438-2.022 1.039-2.254 2.267-.1444728.7552439-.051551 1.536695.266 2.237.171.362.347.677.5.949.053.095.113.2.164.3-.4.323-.982.76-1.224.94-.2154783.1604229-.3573498.4007958-.3936547.6669694-.036305.2661735.0360101.5357606.2006547.7480306.1496429.1971486.2795977.4084927.388.631l-.218.126c-.8814979.3844594-1.5520522 1.1334945-1.837 2.052-.1573875.6876769-.1311778 1.4046502.076 2.079.2473888.8088651.2121218 1.6778423-.1 2.464-.2077933.9297085-1.1162204 1.5264725-2.052 1.348-2.901031-.7106688-5.7612565-1.5786177-8.568-2.6h-.007c-.971-.333-1.857-.646-2.575-.9-.766-.27-1.344-.474-1.639-.568-4.148-1.315-4.99-2.825-4.966-3.862.0122933-.5515738-.4244449-1.0088959-.976-1.022-.2671265-.0137477-.5281319.0830783-.7216623.2677172-.1935303.1846389-.3025159.4408054-.3013377.7082828-.058 2.5 2.081 4.458 6.356 5.809.282.09.839.287 1.578.547l.761.268c-1.5163268 1.6543831-2.647112 3.6242922-3.311 5.768-.1297178.3877077-.4911836.6503729-.9.654h-20.292c-.31483773.0076047-.60984285-.1532379-.774-.422-.19146874-.3208838-.20057875-.7186876-.024-1.048 1.348733-2.9888561 2.1899225-6.1815913 2.489-9.447.3970931-3.3572954-.1053979-6.7598083-1.456-9.859-.77706068-1.6374611-1.73862708-3.1807987-2.866-4.6-1.974-2.675-3.84-5.204-3.906-9.732-.214923-4.6537877 1.14493528-9.2441902 3.86-13.03 2.92542828-3.58485964 6.9742114-6.07853237 11.492-7.078 2.283641-.53313148 4.6219851-.79626651 6.967-.784 2.7302024.01151941 5.4516991.30880606 8.12.887 3.426.729 7.269 1.838 9.807 4.534 1.5797197 1.69771727 2.7977287 3.6989265 3.58 5.882.3418752.9953153.6201035 2.0113661.833 3.042l.081.351c.2467429.9352269.5815735 1.8449617 1 2.717.3226373.5997485.5484246 1.2467354.669 1.917-.039.316-.421.67-.825 1.039z" />
-											<path id="Shape"
+											<path class="Shape"
 												d="m25 5.617c-9.925 0-18 6.985-18 15.571s8.075 15.571 18 15.571c2.1047194.0177244 4.1998243-.2857674 6.213-.9l5.867 2.938c.6411297.3180382 1.4041152.2645511 1.9946018-.1398264.5904867-.4043776.9161679-1.096432.8513982-1.8091736l-.572-6.267c2.3257833-2.5781311 3.6233152-5.920895 3.646-9.393 0-8.588-8.075-15.571-18-15.571zm12.841 23.654c-.3579932.4059619-.5314566.9422862-.479 1.481l.607 6.248-5.861-2.935c-.2698928-.1331212-.5670667-.2015945-.868-.2-.1997363.000286-.3982925.0306257-.589.09-1.8333138.5470239-3.7378668.8179955-5.651.804-8.822 0-16-6.088-16-13.571s7.178-13.571 16-13.571 16 6.088 16 13.571c-.0267229 2.9904466-1.1509046 5.8669139-3.159 8.083z" />
-											<path id="Shape"
+											<path class="Shape"
 												d="m15 17c-2.209139 0-4 1.790861-4 4s1.790861 4 4 4 4-1.790861 4-4-1.790861-4-4-4zm0 6c-1.1045695 0-2-.8954305-2-2s.8954305-2 2-2 2 .8954305 2 2-.8954305 2-2 2z" />
-											<path id="Shape"
+											<path class="Shape"
 												d="m25 17c-2.209139 0-4 1.790861-4 4s1.790861 4 4 4 4-1.790861 4-4-1.790861-4-4-4zm0 6c-1.1045695 0-2-.8954305-2-2s.8954305-2 2-2 2 .8954305 2 2-.8954305 2-2 2z" />
-											<path id="Shape"
+											<path class="Shape"
 												d="m35 17c-2.209139 0-4 1.790861-4 4s1.790861 4 4 4 4-1.790861 4-4-1.790861-4-4-4zm0 6c-1.1045695 0-2-.8954305-2-2s.8954305-2 2-2 2 .8954305 2 2-.8954305 2-2 2z" />
 										</g>
 									</g>
@@ -288,11 +297,11 @@
 
 	</section>
 
-	<section>
+	<div>
 		<div class="parallax1">
 			<div class="parashadow"></div>
 		</div>
-	</section>
+	</div>
 
 	<section class="pt-5 pb-5 newsection bg-lgt-grey">
 		<div class="container myDiv1">
@@ -332,11 +341,11 @@
 			</div>
 		</div>
 	</section>
-	<section>
+	<div>
 		<div class="parallax1">
 			<div class="parashadow"></div>
 		</div>
-	</section>
+	</div>
 
 	<section class="newsection p-5">
 		<h2 class="pt-5 pb-2 text-center fw-bold heading">WE CREATE TRENDS <span class="clr-theme fw-100">FOR THE WORLD </span>
@@ -403,8 +412,14 @@
 
 		<a href="contactUs.html" class="center-btn-settings center-btn-settings2 btn btn-lg mt-5">Get In Touch</a>
 	</section>
+
+
+	<!-- Footer -->
+	<a class="gotopbtn clr-wt" id="topBtn" style="display: none;"> <i class="fa fa-chevron-up clr-wt"></i> </a>
+
 	<script src="./scripts/confetti.min.js"></script>
-</body>
+
+
 <script src="./scripts/scroll-reveal.js"></script>
 <script src="./scripts/app.js"></script>
 
@@ -416,6 +431,9 @@
   gtag('js', new Date());
   gtag('config', 'UA-164715490-1');
 </script>
-<!-- <script src="./scripts/optimization.js"></script> -->
+
+<script src="./scripts/optimization.js"></script>
+	<!-- <script src="./scripts/optimization.js"></script> -->
 <script src="./scripts/cacheImages.js"></script>
+</body>
 </html>
