@@ -39,11 +39,7 @@ This project is also meant to be a starting for all techies interested to get th
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/smaranjitghose/girlscript_chennai_website) [![GitHub pull requests](https://img.shields.io/github/issues-pr-closed-raw/smaranjitghose/girlscript_chennai_website?logo=git&logoColor=white)](https://github.com/smaranjitghose/girlscript_chennai_website/pulls?q=is%3Apr+is%3Aclosed)
 
 - [Anush Bhatia](https://github.com/anushbhatia)
-- [Saswat Nayak](https://github.com/swat1998)
 - [Smaranjit Ghose](https://github.com/smaranjitghose)
-- [Sukkrit Sharma](https://github.com/sukkritsharmaofficial)
-
-
 
 [![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/0)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/0)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/1)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/1)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/2)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/2)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/3)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/3)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/4)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/4)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/5)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/5)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/6)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/6)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/7)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/7)
 
