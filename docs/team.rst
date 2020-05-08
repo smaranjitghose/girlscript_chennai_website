@@ -27,3 +27,8 @@ If you want to make changes in this section, carry out the following changes in 
 
 - To add an additional team member - Go to `team.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/team.html>`__ and search :python:`gs-team-member` , you can copy the whole <div> and make the changes within it accordingly and also give it the required class like :python:`gs-team--board` (gs-team--"teamCategory") so that it can be distinguished. 
 
+.. note::
+
+   - In order to get different icons for your social media, you can prefer `this <https://fontawesome.com/v4.7.0/icons/>`__  where you can search and copy the html code of that icon to your code.
+
+
