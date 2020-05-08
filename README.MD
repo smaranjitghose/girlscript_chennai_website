@@ -12,9 +12,7 @@ This is an open source project for creating a website that shall serve as a boil
 This project is also meant to be a starting for all techies interested to get their hands dirty in open-source contributions. A highlight of this project being this project is "built by the community for the community".
 
 
-#### 👇 Checkout the current version: 
-
-[GirlScript Website Boilerplate](https://girlscriptboilerplate.netlify.app)
+👉 [Checkout the current version](https://girlscriptboilerplate.netlify.app): 
 
 
 <a href="./CONTRIBUTING.md"><h2 align= "center"><b> Contribution Guidelines</b></h2></a> 
