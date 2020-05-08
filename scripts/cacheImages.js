@@ -12,7 +12,16 @@ async function getData() {
     "/assets/Images/Front-img/event.jpg",
     "/assets/Images/logo/Logo1.png",
     "/assets/Images/logo/logo.png",
+    "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0",
+    "/assets/Images/announcement/producthunt.png",
+    "/assets/Images/announcement/contributors.png",
+    "/assets/Images/announcement/DU-Express.png",
+    "/assets/Images/achievement/ach1.jpg",
+    "/assets/Images/achievement/ach2.jpg",
+    "/assets/Images/achievement/ach3.jpg",
+    "/assets/Images/contact/contact.jpg"
   ];
+
   let cachedData = await getCachedData(cacheName, urls);
 
   if (cachedData) {
@@ -31,7 +40,7 @@ async function getCachedData(cacheName, url) {
   const cacheStorage = await caches.open(cacheName);
 
   for (const request of await cacheStorage.keys()) {
-    if (request.url.endsWith(".jpg") || request.url.endsWith(".png")) {
+    if (request.url.endsWith(".jpg") || request.url.endsWith(".png") || request.url.startsWith("https")) {
       result.push(await cacheStorage.match(request));
     }
   }
