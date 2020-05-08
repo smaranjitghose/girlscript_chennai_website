@@ -22,7 +22,7 @@ html[ data-theme="dark"] {
     --register-bgColor: #fff;
     --register-boxShadow: 0 4px 6px 1px rgba(245, 81, 28, 0.74), 0 2px 7px 1px rgba(245, 81, 28, 0.14), 0 2px 3px -3px rgba(245, 81, 28, 0.14);
 	--registerClose-boxShadow: 0 8px 12px 1px rgba(245,81,28,0);
-	--next-color: #f5511c;
+	--next-color: #fff;
 	--inputProgress-bgColor: rgb(245,81,28);
 	--wrongInputProgress-color: #f5511c;
 	--inputLabel-color: #fff;
