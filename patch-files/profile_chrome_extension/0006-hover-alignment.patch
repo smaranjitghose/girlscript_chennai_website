@@ -1,0 +1,181 @@
+From 7c00816fcad96ed0412fc5c70ceaad10b6ce1f92 Mon Sep 17 00:00:00 2001
+From: adyasha <adyashamohanty8104@gmail.com>
+Date: Sat, 9 May 2020 02:27:48 +0530
+Subject: [PATCH] hover & alignment
+
+---
+ popup.html | 26 +++++++++++++-------------
+ style.css  | 50 ++++++++++++++++++++++++++++++++++----------------
+ 2 files changed, 47 insertions(+), 29 deletions(-)
+
+diff --git a/popup.html b/popup.html
+index f925888..9671783 100644
+--- a/popup.html
++++ b/popup.html
+@@ -14,34 +14,34 @@
+ 
+   <body>
+     <div class="modal-header">
+-      <h1 align="center"><b>My Profile Hub</h1>
++      <h1>My Profile Hub</h1>
+     </div>
+     <div class="modal-icons">
+       <div class="flex-container">
+         <div class="flex">
+           <a href="https://github.com/smaranjitghose" target="_blank">
+-            <img src="./assets/logos/github.png">
++            <img class= "pulse-grow-on-hover" src="./assets/logos/github.png">
+           </a>
+         </div>
+          <div class="flex">
+           <a href="https://www.linkedin.com/in/smaranjitghose/" target="_blank">
+-            <img src="./assets/logos/linkedin.png">
++            <img class= "pulse-grow-on-hover" src="./assets/logos/linkedin.png">
+           </a>
+         </div>
+         <div class="flex">
+           <a href="http://smaranjitghose.codes/" target="_blank">
+-            <img src="./assets/logos/laptop.png">
++            <img class= "pulse-grow-on-hover" src="./assets/logos/laptop.png">
+           </a>
+         </div>
+ 
+         <div class="flex">
+           <a href="https://medium.com/@smaranjitghose" target="_blank">
+-            <img src="./assets/logos/medium.png">
++            <img class= "pulse-grow-on-hover" src="./assets/logos/medium.png">
+           </a>
+         </div>
+         <div class="flex">
+         <a href="https://twitter.com/smaranjitghose" target="_blank">
+-          <img src="./assets/logos/Twitter.png">
++          <img class= "pulse-grow-on-hover" src="./assets/logos/Twitter.png">
+         </a>
+         </div>
+       </div>
+@@ -49,32 +49,32 @@
+       <div class="flex-container">
+         <div class="flex">
+           <a href="https://protonmail.com/ " target="_blank">
+-            <img src="./assets/logos/mail2.png">
++            <img class= "pulse-grow-on-hover" src="./assets/logos/mail2.png">
+           </a>
+         </div>
+         <div class="flex">
+             <a href="https://protonmail.com/ " target="_blank">
+-              <img src="./assets/logos/mail1.png">
++              <img class= "pulse-grow-on-hover" src="./assets/logos/mail1.png">
+             </a>
+         </div>
+         <div class="flex">
+           <a href="https://www.kaggle.com/smaranjitghose" target="_blank">
+-            <img src="./assets/logos/kaggle.jpg">
++            <img class= "pulse-grow-on-hover" src="./assets/logos/kaggle.jpg">
+           </a>
+         </div>
+         <div class="flex">
+           <a href="https://www.facebook.com/" target="_blank">
+-            <img src="./assets/logos/facebook.png">
+-          </a> <br>
++            <img class= "pulse-grow-on-hover" src="./assets/logos/facebook.png">
++          </a> 
+         </div>
+         <div class="flex">
+           <a href="https://www.instagram.com/" target="_blank">
+-            <img src="./assets/logos/instagram.png">
++            <img class= "pulse-grow-on-hover" src="./assets/logos/instagram.png">
+           </a>
+         </div>
+         <div class="flex">
+           <a href="https://leetcode.com/ " target="_blank">
+-            <img src="./assets/logos/leetcode.png">
++            <img class= "pulse-grow-on-hover" src="./assets/logos/leetcode.png">
+           </a>
+       </div>
+     </div>
+diff --git a/style.css b/style.css
+index 4e3d8f4..345eb83 100644
+--- a/style.css
++++ b/style.css
+@@ -1,11 +1,9 @@
+-/* Modal Structure */
+-
+ html,
+ body {
+   font-family: "Helvetica" sans-serif	;
+   font-size: 14px;
+   margin: 0;
+-  min-height: 180px;
++  min-height: 135px;
+   padding: 0;
+   width: 384px;
+ }
+@@ -13,10 +11,13 @@ body {
+ h1 {
+   font-family: 'Trocchi', serif;
+   font-size: 22px;
+-  font-weight: 400;
++  font-weight: bold;
+   margin: 0;
+   letter-spacing: 2px;
+   color: #2f5876;
++  text-align: center;
++  margin-top: 1px;
++  margin-bottom: 1px;
+ }
+ 
+ a:link,
+@@ -62,20 +63,37 @@ p {
+   font-size: 17px;
+ }
+ 
+-.flex:hover {
+-  animation: spinAround 1.5s linear infinite;
++.flex {
++  font-size: 30px;
+ }
+ 
+-@keyframes spinAround {
+-  from {
+-    transform: rotate(0deg);
++
++@-webkit-keyframes pulse-grow-on-hover{
++	to {
++	  -webkit-transform: scale(1.1);
++	  transform: scale(1.1);
++	}
+   }
+-  to {
+-    transform: rotate(360deg);
++  @keyframes pulse-grow-on-hover {
++	to {
++	  -webkit-transform: scale(1.2);
++	  transform: scale(1.2);
++	}
++  }
++  .pulse-grow-on-hover {
++	-webkit-transform: perspective(2px) translateZ(0);
++	transform: perspective(2px) translateZ(0);
+   }
+-}
+-
+-.flex {
+-  font-size: 30px;
+-}
+ 
++  .pulse-grow-on-hover:hover {
++	-webkit-animation-name: pulse-grow-on-hover;
++	animation-name: pulse-grow-on-hover;
++	-webkit-animation-duration: 0.2s;
++	animation-duration: 0.2s;
++	-webkit-animation-timing-function: linear;
++	animation-timing-function: linear;
++	-webkit-animation-iteration-count: infinite;
++	animation-iteration-count: infinite;
++	-webkit-animation-direction: alternate;
++	animation-direction: alternate;
++  }
+\ No newline at end of file
+-- 
+2.24.0.windows.2
+
