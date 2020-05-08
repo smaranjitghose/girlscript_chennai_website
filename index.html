@@ -404,7 +404,24 @@
 
 		<a href="contactUs.html" class="center-btn-settings center-btn-settings2 btn btn-lg mt-5">Get In Touch</a>
 	</section>
-	<script src="./scripts/confetti.min.js"></script>
+	<script defer src="./scripts/confetti.min.js"></script>
+ 
+	<!-- Defer Parsing of JS -->
+
+	<script type="text/javascript">
+		function downloadJSAtOnload() {
+			var element = document.createElement("script");
+			element.src = "./scripts/confetti.min.js";
+			document.body.appendChild(element);
+		}
+		if (window.addEventListener)
+			window.addEventListener("load", downloadJSAtOnload, false);
+		else if (window.attachEvent)
+			window.attachEvent("onload", downloadJSAtOnload);
+		else window.onload = downloadJSAtOnload;
+
+	</script>
+	
 </body>
 <script src="./scripts/scroll-reveal.js"></script>
 <script src="./scripts/app.js"></script>
