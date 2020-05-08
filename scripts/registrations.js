@@ -105,14 +105,6 @@ function scrollFunction() {
 		navBar.style.padding = '2px 16px';
 		logo.width = '160px';
 	}
-	let goTopBtn = document.getElementById('topBtn');
-	if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-		goTopBtn.style.opacity = 1;
-		goTopBtn.style.visibility = 'visible';
-	} else {
-		goTopBtn.style.opacity = 0;
-		goTopBtn.style.visibility = 'hidden';
-	}
 }
 
 function activeTab() {
@@ -163,7 +155,6 @@ $(function() {
 	let bodyElement = $(`body`);
 	bodyElement.prepend(header);
 	bodyElement.append(footer);
-	bodyElement.append(goToTopbutton);
 	activeTab();
 	if (localStorage['mode']) {
 		changeTheme(localStorage['mode']);
@@ -192,22 +183,16 @@ function closeNav() {
 	positionOfToggleButtonForBigScreen.appendChild(toggleThemeButton);
 }
 
-function topBtnClick() {
-	document.body.scrollTop = 0;
-	document.documentElement.scrollTop = 0;
-}
-
-
 
 
 
 // Registration starts
 
 var questions = [
-  {question:"What's your first name?"},
-  {question:"What's your last name?"},
+  {question:"What's your first name?" , pattern:"[A-Za-z]"},
+  {question:"What's your last name?" , pattern:"[A-Za-z]"},
   {question:"What's your email?", pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/},
-  {question:"Create your password", type: "password"}
+  {question:"Create your password",  type: "password"}
 ]
 
 
