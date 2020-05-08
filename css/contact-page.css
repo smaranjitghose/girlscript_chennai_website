@@ -153,8 +153,8 @@ html[ data-theme="dark"]{
 }
 
 #submit-button:hover {
-  -webkit-box-shadow: 0 7px 8px #ff9a0e;
-          box-shadow: 0 7px 8px #ff9a0e;
+ 
+  box-shadow: 2px 2px 2px #ff9a0e;
   color: white;
   font-weight: bold;
 }
