@@ -80,6 +80,22 @@ html[ data-theme="dark"]{
   margin-bottom: 2.5rem;
 }
 
+.error-message {
+	position: absolute;
+	top: -20px;
+	right: 10px;
+	color: red;
+	font-size: 14px;
+	margin: 0;
+	letter-spacing: 1.2px;
+	display: none;
+}
+.error-message i {
+	font-size: 15px;
+	display: inline-block;
+	margin-right: 3px;
+}
+
 .form-control-placeholder {
   font-family: 'Quicksand', sans-serif;
   position: absolute;
@@ -116,6 +132,12 @@ html[ data-theme="dark"]{
           box-shadow: none;
   /* background-color: #f3f3f3; */
 }
+.form-group-error {
+	border-bottom: 2.5px solid red;
+}
+.form-group-error:focus {
+	border-bottom: 2.5px solid red;
+}
 
 #submit-button {
   background-color: #EF6F00;
@@ -143,9 +165,9 @@ html[ data-theme="dark"]{
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	padding: 5px 8px 5px 8px;
+	padding: 1.5em 8px;
 	margin-bottom: 35px;
-	margin-top: 5em;
+	margin-top: 3em;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -156,7 +178,8 @@ html[ data-theme="dark"]{
 	        align-items: end;
 	-webkit-flex-wrap: wrap;
 	    -ms-flex-wrap: wrap;
-	        flex-wrap: wrap;
+					flex-wrap: wrap;
+	position: relative;				
 	}
 .capbox .form-group {
 	-webkit-flex-basis: 70%;
@@ -276,7 +299,7 @@ input[type=number] {
   }
 }
 
-@media only screen and (max-width: 412px){
+@media only screen and (max-width: 576px){
 
  .capbox-inner{
    display: -webkit-box;
@@ -295,6 +318,12 @@ input[type=number] {
 	        flex-basis: 100%;
 	max-width: 100%;
 	margin-bottom: 30px;
+ }
+ .error-message {
+	 right: initial;
+	 top: initial;
+	 left: 0;
+	 bottom: -10px;
  }
 }
 
