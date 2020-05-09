@@ -4,7 +4,7 @@
 <head>
 	<title>GirlScript Website Boilerplate</title>
 	<meta charset="utf-8">
-	<meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport" />
+	<meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport" user-scalable=no/>
 	<meta name="google-site-verification" content="e0dcB4k63dAZ7bMt_F9jWwZadbNO18iuZ_NZKDEavJs" />
 	<meta name="keywords"
 		content="tech events, women in tech, girl code, coding websites, girls way to coding, introduction to coding, computer coding for beginners, girls who code program, coding contest, coding competition, girls can code, introduction to programming, learn computer programming, open source, open sourcing, contributing to open source">
@@ -79,9 +79,7 @@
 	<link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	
-	
 
-	
 
 	<script type="text/javascript">
 		document.getElementsByTagName('html')[0].className += ' Q_js'; // better than noscript
@@ -409,12 +407,12 @@
 
 		<a href="contactUs.html" class="center-btn-settings center-btn-settings2 btn btn-lg mt-5">Get In Touch</a>
 	</section>
-	<script defer src="./scripts/confetti.min.js"></script>
+	
  
   <!-- Footer -->
 	<a class="gotopbtn clr-wt" id="topBtn" style="display: none;"> <i class="fa fa-chevron-up clr-wt"></i> </a>
 
-<script src="./scripts/scroll-reveal.js"></script>
+
 <script src="./scripts/app.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -429,23 +427,12 @@
 </script>
 
 <!-- <script src="./scripts/optimization.js"></script> -->
+
+<script defer src="./scripts/confetti.min.js"></script>
+
 <script src="./scripts/cacheImages.js"></script>
 
-	<!-- Defer Parsing of JS -->
-
-	<script type="text/javascript">
-		function downloadJSAtOnload() {
-			var element = document.createElement("script");
-			element.src = "./scripts/confetti.min.js";
-			document.body.appendChild(element);
-		}
-		if (window.addEventListener)
-			window.addEventListener("load", downloadJSAtOnload, false);
-		else if (window.attachEvent)
-			window.attachEvent("onload", downloadJSAtOnload);
-		else window.onload = downloadJSAtOnload;
-
-	</script>
+	
 
 </body>
 </html>
