@@ -17,18 +17,22 @@ This project is also meant to be a starting for all techies interested to get th
 
 <a href="./CONTRIBUTING.md"><h2 align= "center"><b> Contribution Guidelines</b></h2></a> 
 <p align= "center"><img width=55% src="https://media.giphy.com/media/JqzadBtonJVr0u8LUg/giphy.gif"></p>
+<br>
 
 <a href="./Code_of_conduct.md"><h2 align= "center"><b> Code of Conduct</b></h2></a> 
 <p align="center"><img width=35% src="https://media.giphy.com/media/qHRwTyhWIj4UU/200w_d.gif"></p>
+<br>
 
 <h2 align= "center"><b> The Geeks behind this initiative </b></h2>
 <p align="center"><img width=50% src="https://media1.giphy.com/media/3oz8xTuidCL4UuBtq8/giphy.gif"></p>
+<br>
 
-<p align="center"><img width=20% src="https://avatars2.githubusercontent.com/u/46641503?v=4"></p>
-<h4 align="center"><b>Smaranjit Ghose</b></h4>
+<h2 align= "center"><b> Project Mentors</b></h2>
 
-<p align="center"><img width=20% src="https://avatars2.githubusercontent.com/u/40017559?v=4"></p>
-<h4 align="center"><b>Anush Bhatia</b></h4>
+<p align="center"><img width=20% src="https://avatars2.githubusercontent.com/u/46641503?v=4" style= margin-right:30px;><img width=20% src="https://avatars2.githubusercontent.com/u/40017559?v=4" style= margin-left:40px;></p>
+
+<a href="https://github.com/smaranjitghose"><h4 align="center"><b style= margin-right:6rem;>Smaranjit Ghose</b></a><a href="https://github.com/smaranjitghose"><a href="https://github.com/anushbhatia"><b style=margin-left:4.8rem; >Anush Bhatia</b></h4></a>
+<br>
 
 [![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/0)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/0)
 [![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/1)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/1)
@@ -39,8 +43,7 @@ This project is also meant to be a starting for all techies interested to get th
 [![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/6)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/6)
 [![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/7)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/7)
 
-
-                                                                                                                                        
-<a href="./LICENSE"><h2 align= "center"><b> [License](/LICENSE) 📝</b></h2></a> 
+<br>                                                                                                                               
+<a href="./LICENSE"><h2 align= "center"><b>License 📝</b></h2></a> 
 <p align="center"><img width=35% src="https://media.giphy.com/media/xUPGcJGy8I928yIlAQ/giphy.gif"></p>
 
