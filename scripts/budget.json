@@ -1,0 +1,47 @@
+
+[
+    {
+      "path": "/*",
+      "options": {
+         "firstPartyHostnames": ["*.my-site.com", "my-site.cdn.com"]
+      },
+      "timings": [
+        {
+          "metric": "interactive",
+          "budget": 5000
+        },
+        {
+          "metric": "first-meaningful-paint",
+          "budget": 2000
+        }
+      ],
+      "resourceSizes": [
+        {
+          "resourceType": "total",
+          "budget": 500
+        },
+        {
+          "resourceType": "script",
+          "budget": 150
+        }
+      ],
+      "resourceCounts": [
+        {
+          "resourceType": "third-party",
+          "budget": 100
+        }
+      ]
+    },
+    {
+      "options": {
+         "firstPartyHostnames": ["*.my-site.com", "my-site.cdn.com"]
+      },
+      "path": "/checkout",
+      "resourceSizes": [
+        {
+          "resourceType": "script",
+          "budget": 200
+        }
+      ]
+    }
+  ]
