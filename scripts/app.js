@@ -209,10 +209,11 @@ let footer = $(`
 		  <h6 class="footer-h3">Made with ♥</h6>
 	</center>
 </div>		
-</footer>`);
-
-let goToTopbutton = $(`	<a onclick="topBtnClick()" class="gotopbtn clr-wt" id="topBtn"> <i class="fa fa-chevron-up clr-wt"></i> </a>
+</footer>
+<a onclick="topBtnClick()" class="gotopbtn clr-wt" id="topBtn"> <i class="fa fa-chevron-up clr-wt"></i> </a>
 `);
+
+let goToTopbutton = $(`#topBtn`);
 
 function scrollFunction() {
 	let navBar = document.getElementById('navbar'),
@@ -222,7 +223,7 @@ function scrollFunction() {
 		logo.width = '160px';
 	}
 	let goTopBtn = document.getElementById('topBtn');
-	if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+	if (document.body.scrollTop > 120|| document.documentElement.scrollTop > 120) {
 		goTopBtn.style.opacity = 1;
 		goTopBtn.style.visibility = 'visible';
 	} else {
