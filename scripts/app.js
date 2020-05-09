@@ -66,120 +66,48 @@ let header = $(`
 
 let footer = $(`
 <div class="waves">
-    <svg width="100%" height="150px" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-	<linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" /><stop offset="50%" /><stop offset="100%" /></linearGradient>
-	<path fill="url(#grad3)" d="M0 67 C 273,183 822,-40 1920.00,106 V 359 H 0  V 67 Z">
-	  <animate repeatCount="indefinite" fill="url(#grad2)" attributeName="d" dur="5s" attributeType="XML"values="
-	  M0 77 
-	  C 473,283
-		822,-40
-		1920,116 
-	  V 359 
-	  H 0 
-	  V 67 
-	  Z; 
-	  M0 77 
-	  C 473,-40
-		1222,283
-		1920,136
-	  V 359 
-	  H 0 
-	  V 67 
-	  Z; 
-	  M0 77 
-	  C 973,260
-		1722,-53
-		1920,120 
-	  V 359 
-	  H 0 
-	  V 67 
-	  Z; 
-	  M0 77 
-	  C 473,283
-		822,-40
-		1920,116   
-	  V 359 
-	  H 0 
-	  V 67 
-	  Z
-		  ">
-	  </animate>
-	</path><linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" /><stop offset="50%" /><stop offset="100%" /></linearGradient>
-	<path fill="url(#grad2)" d="M0 67 C 273,183 822,-40 1920.00,106 V 359 H 0  V 67 Z">
-	  <animate repeatCount="indefinite" fill="url(#grad2)" attributeName="d" dur="10s" attributeType="XML"values="
-	  M0 77 
-	  C 473,283
-		822,-40
-		1920,116 
-	  V 359 
-	  H 0 
-	  V 67 
-	  Z; 
-	  M0 77 
-	  C 473,-40
-		1222,283
-		1920,136
-	  V 359 
-	  H 0 
-	  V 67 
-	  Z; 
-	  M0 77 
-	  C 973,260
-		1722,-53
-		1920,120 
-	  V 359 
-	  H 0 
-	  V 67 
-	  Z; 
-	  M0 77 
-	  C 473,283
-		822,-40
-		1920,116   
-	  V 359 
-	  H 0 
-	  V 67 
-	  Z
-		  ">
-	  </animate>
-	</path><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" /><stop offset="50%" /><stop offset="100%" /></linearGradient>
-      <path fill="url(#grad1)" d="M0 67 C 273,183 822,-40 1920.00,106 V 359 H 0  V 67 Z">
-        <animate repeatCount="indefinite" fill="url(#grad1)" attributeName="d" dur="15s" attributeType="XML"values="
-            M0 77 
-            C 473,283
-              822,-40
-              1920,116 
-            V 359 
-            H 0 
-            V 67 
-            Z; 
-            M0 77 
-            C 473,-40
-              1222,283
-              1920,136
-            V 359 
-            H 0 
-            V 67 
-            Z; 
-            M0 77 
-            C 973,260
-              1722,-53
-              1920,120 
-            V 359 
-            H 0 
-            V 67 
-            Z; 
-            M0 77 
-            C 473,283
-              822,-40
-              1920,116   
-            V 359 
-            H 0 
-            V 67 
-            Z
-            ">
-        </animate>
-	  </path>
-    </svg>
+<svg viewBox="0 0 120 28">
+<defs> 
+   <filter id="goo">
+	 <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur" />
+	 <feColorMatrix in="blur" mode="matrix" values="
+		  1 0 0 0 0  
+		  0 1 0 0 0  
+		  0 0 1 0 0  
+		  0 0 0 13 -9" result="goo" />
+	 <xfeBlend in="SourceGraphic" in2="goo" />
+   </filter>
+	<path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+ </defs> 
+
+  <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2" ></use> 
+  <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0" ></use>
+
+
+ <g class="gooeff" filter="url(#goo)">
+ <circle class="drop drop1" cx="20" cy="2" r="8.8"  />
+ <circle class="drop drop2" cx="25" cy="2.5" r="7.5"  />
+ <circle class="drop drop3" cx="16" cy="2.8" r="9.2"  />
+ <circle class="drop drop4" cx="18" cy="2" r="8.8"  />
+ <circle class="drop drop5" cx="22" cy="2.5" r="7.5"  />
+ <circle class="drop drop6" cx="26" cy="2.8" r="9.2"  />
+ <circle class="drop drop1" cx="5" cy="4.4" r="8.8"  />
+ <circle class="drop drop2" cx="5" cy="4.1" r="7.5"  />
+ <circle class="drop drop3" cx="8" cy="3.8" r="9.2"  />
+ <circle class="drop drop4" cx="3" cy="4.4" r="8.8"  />
+ <circle class="drop drop5" cx="7" cy="4.1" r="7.5"  />
+ <circle class="drop drop6" cx="10" cy="4.3" r="9.2"  />
+ 
+ <circle class="drop drop1" cx="1.2" cy="5.4" r="8.8"  />
+ <circle class="drop drop2" cx="5.2" cy="5.1" r="7.5"  />
+ <circle class="drop drop3" cx="10.2" cy="5.3" r="9.2"  />
+   <circle class="drop drop4" cx="3.2" cy="5.4" r="8.8"  />
+ <circle class="drop drop5" cx="14.2" cy="5.1" r="7.5"  />
+ <circle class="drop drop6" cx="17.2" cy="4.8" r="9.2"  />
+ <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+</g>  
+
+</svg>
   </div>
 <footer>
 <div class="container">
@@ -215,100 +143,110 @@ let goToTopbutton = $(`	<a onclick="topBtnClick()" class="gotopbtn clr-wt" id="t
 `);
 
 function scrollFunction() {
-	let navBar = document.getElementById('navbar'),
-		logo = document.getElementById('logo');
-	if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-		navBar.style.padding = '2px 16px';
-		logo.width = '160px';
-	}
-	let goTopBtn = document.getElementById('topBtn');
-	if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-		goTopBtn.style.opacity = 1;
-		goTopBtn.style.visibility = 'visible';
-	} else {
-		goTopBtn.style.opacity = 0;
-		goTopBtn.style.visibility = 'hidden';
-	}
+  let navBar = document.getElementById("navbar"),
+    logo = document.getElementById("logo");
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    navBar.style.padding = "2px 16px";
+    logo.width = "160px";
+  }
+  let goTopBtn = document.getElementById("topBtn");
+  if (
+    document.body.scrollTop > 800 ||
+    document.documentElement.scrollTop > 800
+  ) {
+    goTopBtn.style.opacity = 1;
+    goTopBtn.style.visibility = "visible";
+  } else {
+    goTopBtn.style.opacity = 0;
+    goTopBtn.style.visibility = "hidden";
+  }
 }
 
 function activeTab() {
-	let navBar = $('#navbarNav');
-	let navItems = navBar[0].children[0].children;
-	let pageName = window.location.pathname.toLowerCase();
-	for (let i = 0; i < navItems.length; i++) {
-		let childHref = navItems[i].children[0].pathname.toLowerCase();
-		if ((childHref === pageName || childHref.includes(pageName)) && window.location.pathname !== '/')
-			navItems[i].children[0].classList.add('active');
-		else navItems[i].children[0].classList.remove('active');
-	}
+  let navBar = $("#navbarNav");
+  let navItems = navBar[0].children[0].children;
+  let pageName = window.location.pathname.toLowerCase();
+  for (let i = 0; i < navItems.length; i++) {
+    let childHref = navItems[i].children[0].pathname.toLowerCase();
+    if (
+      (childHref === pageName || childHref.includes(pageName)) &&
+      window.location.pathname !== "/"
+    )
+      navItems[i].children[0].classList.add("active");
+    else navItems[i].children[0].classList.remove("active");
+  }
 }
 
 function validateFooterForm() {
-	let emailID = document.footermail.email,
-		atpos = emailID.value.indexOf('@'),
-		dotpos = emailID.value.lastIndexOf('.');
+  let emailID = document.footermail.email,
+    atpos = emailID.value.indexOf("@"),
+    dotpos = emailID.value.lastIndexOf(".");
 
-	if (atpos < 1 || dotpos - atpos < 2) {
-		alert('Please enter correct email ID');
-		emailID.focus();
-		return false;
-	}
-	return true;
+  if (atpos < 1 || dotpos - atpos < 2) {
+    alert("Please enter correct email ID");
+    emailID.focus();
+    return false;
+  }
+  return true;
 }
 
 function changeTheme(value) {
-	let docElement = document.documentElement;
-	let checkElement = $('#theme')[0];
-	docElement.classList.add('transition');
-	window.setTimeout(() => {
-		docElement.classList.remove('transition');
-	}, 1000);
-	if (value === 'dark' || checkElement.checked) {
-		checkElement.checked = 'true';
-		docElement.setAttribute('data-theme', 'dark');
-		localStorage.setItem('mode', 'dark');
-	} else {
-		checkElement.checked = false;
-		docElement.setAttribute('data-theme', 'light');
-		localStorage.setItem('mode', 'light');
-	}
+  let docElement = document.documentElement;
+  let checkElement = $("#theme")[0];
+  docElement.classList.add("transition");
+  window.setTimeout(() => {
+    docElement.classList.remove("transition");
+  }, 1000);
+  if (value === "dark" || checkElement.checked) {
+    checkElement.checked = "true";
+    docElement.setAttribute("data-theme", "dark");
+    localStorage.setItem("mode", "dark");
+  } else {
+    checkElement.checked = false;
+    docElement.setAttribute("data-theme", "light");
+    localStorage.setItem("mode", "light");
+  }
 }
 
 // Window Loads
-$(function() {
-	let bodyElement = $(`body`);
-	bodyElement.prepend(header);
-	bodyElement.append(footer);
-	bodyElement.append(goToTopbutton);
-	activeTab();
-	if (localStorage['mode']) {
-		changeTheme(localStorage['mode']);
-	}
+$(function () {
+  let bodyElement = $(`body`);
+  bodyElement.prepend(header);
+  bodyElement.append(footer);
+  bodyElement.append(goToTopbutton);
+  activeTab();
+  if (localStorage["mode"]) {
+    changeTheme(localStorage["mode"]);
+  }
 });
 
-window.onscroll = function() {
-	scrollFunction();
+window.onscroll = function () {
+  scrollFunction();
 };
 
 //Single Declartion of changed theme button
 
 function openNav() {
-	document.getElementById('myNav').style.display = 'block';
-	let toggleThemeButton = document.getElementById('themeChangeButton');
-	toggleThemeButton.remove();
-	let positionOfToggleButtonForSmallScreen = document.getElementById('themeChangeButtonSmallScreen');
-	positionOfToggleButtonForSmallScreen.appendChild(toggleThemeButton);
+  document.getElementById("myNav").style.display = "block";
+  let toggleThemeButton = document.getElementById("themeChangeButton");
+  toggleThemeButton.remove();
+  let positionOfToggleButtonForSmallScreen = document.getElementById(
+    "themeChangeButtonSmallScreen"
+  );
+  positionOfToggleButtonForSmallScreen.appendChild(toggleThemeButton);
 }
 
 function closeNav() {
-	document.getElementById('myNav').style.display = 'none';
-	let toggleThemeButton = document.getElementById('themeChangeButton');
-	toggleThemeButton.remove();
-	let positionOfToggleButtonForBigScreen = document.getElementById('themeChangeButtonBigScreen');
-	positionOfToggleButtonForBigScreen.appendChild(toggleThemeButton);
+  document.getElementById("myNav").style.display = "none";
+  let toggleThemeButton = document.getElementById("themeChangeButton");
+  toggleThemeButton.remove();
+  let positionOfToggleButtonForBigScreen = document.getElementById(
+    "themeChangeButtonBigScreen"
+  );
+  positionOfToggleButtonForBigScreen.appendChild(toggleThemeButton);
 }
 
 function topBtnClick() {
-	document.body.scrollTop = 0;
-	document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
