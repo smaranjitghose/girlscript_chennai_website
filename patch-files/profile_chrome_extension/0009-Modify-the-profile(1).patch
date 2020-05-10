@@ -1,0 +1,614 @@
+From d790e8a2242aecd250aa6c6116c8da0d1b2e3618 Mon Sep 17 00:00:00 2001
+From: adyasha <adyashamohanty8104@gmail.com>
+Date: Sun, 10 May 2020 23:04:15 +0530
+Subject: [PATCH 1/3] Modify the profiles
+
+---
+ assets/smaranjit_ghose_profile_icon_big.png   | Bin 4311 -> 0 bytes
+ assets/smaranjit_ghose_profile_icon_small.png | Bin 1004 -> 0 bytes
+ edit.html                                     | 145 ++++++++++++++++++
+ edit.js                                       |  68 ++++++++
+ manifest.json                                 |   6 +-
+ popup.html                                    |  27 ++--
+ popup.js                                      |  94 ++++++++++++
+ style.css                                     |  20 +++
+ 8 files changed, 345 insertions(+), 15 deletions(-)
+ delete mode 100644 assets/smaranjit_ghose_profile_icon_big.png
+ delete mode 100644 assets/smaranjit_ghose_profile_icon_small.png
+ create mode 100644 edit.html
+ create mode 100644 edit.js
+ create mode 100644 popup.js
+
+diff --git a/assets/smaranjit_ghose_profile_icon_big.png b/assets/smaranjit_ghose_profile_icon_big.png
+deleted file mode 100644
+index 6a6923889e72a4e30db0e577034a3c30d8b83c58..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 4311
+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
+
+diff --git a/assets/smaranjit_ghose_profile_icon_small.png b/assets/smaranjit_ghose_profile_icon_small.png
+deleted file mode 100644
+index 14415d25a2f82eae3b133ad96eb6f1c6277f9c9d..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 1004
+zcmeAS@N?(olHy`uVBq!ia0vp^!XV7S1|*9D%+3HQmUKs7M+SzC{oH>NS%G|oWRD<U
+z28Jp%28M<f28Lfip@tU>45bDP46hOx7_4S6Fo+k-*%fF5lweEpc6VX;4}uH!E}sk(
+z;VkfoEM{O3Dgj}}duj3&Ktc8rPhVH|CoH@|#*DXA*H2_%V7l$;;uvCadg^4~jF51V
+z<MrPkpPlWQ_UX!z46nZ)rU4r{R3mh!tXkL_rg))MLFASz_tDUDJ*TDCf_JueEA3jx
+zdVA8;pjBJy9CmXgEs0<ij=pGe)@Rc6%FoaCR{M(^v#Hlzkg+J(`Mv)C^E?0l$Ee=p
+zdMglUv0hMwf$L>N^y7lK!e6)I&c)R?FOl4^aMOt!)#8=aFZ8|{3Z5#?f0nxM&pYEs
+zOSl)?28R2Tu51!N>z)1o;gN~!XVhFd{ZXFJ&{&?4X_05~>7D-P?Ht*zyb?WDf7`#*
+z@Q{Riy~**zQSy&WZ?i4?@u>N7&;1*nTl*HX>jm=#|68~A;q%+hf9&?|ob1Dx!G5gq
+zWZ<#JbBxVKeJ0!QRPC6U{QlpO=gQL=JT^D*pRYOcq`5aEOwcn-;UrVr_B;9AYdD*G
+z-o8$s8M&sU?AxLM2V--K^)EQ3Wz(y-`E8ug_J2Ol0q@h1tDkPvP?&Ww)?BbcaAsAO
+z`@Ck8Tid%9)JUr>ka4S?@-5flbd}52PcuzxcTYMLH|x&X{e>-IPPr@3e0U&#B$IQk
+zP5xdh$NKX!emr}hRxVm6QP~vY^6~ZDw|_#T56@d0eB<$bxu>t*#%8qq%jk0x+cZTi
+z@PNAV^Pd&>`%nAVZ4uD@&mr(=%YlvW-FMcNPuTcff5BYiA9p5Mdq30ZUE^?zCo_e0
+z4)?9^JPYPux+ryi+rG$COIv;}xnh>ERObA|bk!9iDK)iEWSB296-uqk%h;MF`P4<X
+zI$HDUOHH$Y6R%Ei9a}h6V0of@``0uF!xQ0-YF$Ya0=HP2%kwbEO*ve7wxm?{^=U(~
+ziw{gR7}rO?{9;_n-Q2VAU!-5GOrqI4H7(UU>(@P<ZXf^f!)xIiva{b^_#(BmrSvYh
+z%Gn8SVoXl){-v$bhYnuPD}44U?%28hZEV-1+t}Z4tUhg$Ri`=W&dk(C*48cmeamME
+zutmC;XXaT{K9t?J^OG9TIr-&tg%>}Tk(>9x{$i$jQM2&9v%r+ETH+c}l9E`GYL#4+
+z3Zxi}42%qP4NP<mjYAAAtV|893=Dx>D+7bK{_`wQH00)|WTsW()-Xp%4VXO{7(8A5
+KT-G@yGywpg`ms;|
+
+diff --git a/edit.html b/edit.html
+new file mode 100644
+index 0000000..92fd760
+--- /dev/null
++++ b/edit.html
+@@ -0,0 +1,145 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Profile Launcher: Edit Links</title>
++    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"/>
++    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
++    <style>
++      /* Modal Structure */
++      body{
++          padding: 20px;
++      }
++      h1 {
++        font-family: "Menlo", monospace;
++        font-size: 22px;
++        font-weight: 400;
++        margin: 0;
++        color: #2f5876;
++      }
++
++      a:link,
++      a:visited {
++        color: #000000;
++        outline: 0;
++        text-decoration: none;
++      }
++
++      img {
++        width: 30px;
++      }
++
++      .modal-header {
++        align-items: center;
++        border-bottom: 0.5px solid #dadada;
++      }
++
++      .modal-content {
++        padding: 0 22px;
++      }
++
++      .modal-icons {
++        border-top: 0.5px solid #dadada;
++        height: 50px;
++        width: 100%;
++      }
++
++      .logo {
++        padding: 16px;
++      }
++
++      .logo-icon {
++        vertical-align: text-bottom;
++        margin-right: 12px;
++      }
++
++      .flex-container {
++        display: flex;
++        justify-content: space-between;
++        padding: 10px 22px;
++      }
++
++      .flex {
++        opacity: 1;
++        transition: opacity 0.2s ease-in-out;
++        width: 120px;
++      }
++
++      .flex:hover {
++        opacity: 0.4;
++      }
++
++      .flex .fa {
++        font-size: 40px;
++        color: #3c797b;
++      }
++      .form-control{
++          padding: 5px;
++          border-radius: 3px 3px 3px 3px;
++      }
++      .btn{
++        color: #fff !important;
++        border-radius: .25rem;
++        padding: .375rem .75rem;
++        line-height: 1rem;
++        font-size: 1rem; 
++        text-align: center;
++        vertical-align: middle;
++        background-color: #007bff;
++        border: 1px solid 007bff;
++        margin-top: .25rem;
++        margin-bottom: .25rem;
++        box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3);
++      }
++      .btn:hover{
++        color: #fff;
++        background-color: #0069d9;
++        border-color: #0062cc;
++      }
++    </style>
++</head>
++<body>
++    <center>
++        <h1>Profile Launcher</h1>
++        <br>
++        <input class="form-control" id="github" type="text" placeholder="Github">
++        <br>
++        <br>
++        <input class="form-control" id="linkedin" type="text" placeholder="LinkedIn">
++        <br>
++        <br>
++        <input class="form-control" id="website" type="text" placeholder="Website">
++        <br>
++        <br>
++        <input class="form-control" id="medium" type="text" placeholder="Medium">
++        <br>
++        <br>
++        <input class="form-control" id="twitter" type="text" placeholder="Twitter">
++        <br>
++        <br>
++        <input class="form-control" id="mail" type="text" placeholder="Mail">
++        <br>
++        <br>
++        <input class="form-control" id="custommail" type="text" placeholder="Mail">
++        <br>
++        <br>
++        <input class="form-control" id="kaggle" type="text" placeholder="Kaggle">
++        <br>
++        <br>
++        <input class="form-control" id="facebook" type="text" placeholder="Facebook">
++        <br>
++        <br>
++        <input class="form-control" id="instagram" type="text" placeholder="Instagram">
++        <br>
++        <br>
++        <input class="form-control" id="leetcode" type="text" placeholder="Leetcode">
++        <br>
++        <br>
++        <button class="btn" id="save">Save</button>
++        &nbsp;&nbsp;
++        <a class="btn" role="button" href="popup.html">Back</a>
++    </center>
++    <script src="edit.js"></script>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/edit.js b/edit.js
+new file mode 100644
+index 0000000..433599b
+--- /dev/null
++++ b/edit.js
+@@ -0,0 +1,68 @@
++var github_link = document.getElementById('github');
++var linkedin_link = document.getElementById('linkedin');
++var website_link = document.getElementById('website');
++var medium_link = document.getElementById('medium');
++var twitter_link = document.getElementById('twitter');
++var mail_link = document.getElementById('mail');
++var custom_mail_link = document.getElementById('custommail');
++var kaggle_link = document.getElementById('kaggle');
++var facebook_link = document.getElementById('facebook');
++var instagram_link = document.getElementById('instagram');
++var leetcode_link = document.getElementById('leetcode');
++
++var save_button = document.getElementById('save');
++
++let array = ["github","linkedin","website","medium","twitter","mail","custommail","kaggle","facebook","instagram","leetcode",];
++chrome.storage.sync.get(array,function(links){
++    if(!chrome.runtime.error){
++        console.log(links);
++        if(links.github)
++            github_link.value=links.github;
++        if(links.linkedin)
++            linkedin_link.value=links.linkedin;
++        if(links.website)
++            website_link.value=links.website;
++        if(links.medium)
++            medium_link.value=links.medium;
++        if(links.twitter)
++            twitter_link.value=links.twitter;
++        if(links.mail)
++            mail_link.value=links.mail;
++        if(links.custommail)
++            custom_mail_link.value=links.custommail;
++        if(links.kaggle)
++            kaggle_link.value=links.kaggle;
++        if(links.facebook)
++            facebook_link.value=links.facebook;
++        if(links.instagram)
++           instagram_link.value=links.instagram;
++        if(links.leetcode)
++            leetcode_link.value=links.leetcode;
++    }
++});
++
++
++save_button.addEventListener('click',function(){
++    UpdateLinks();
++});
++function UpdateLinks(){
++    let dict = {
++        "github":github_link.value,
++        "linkedin":linkedin_link.value,
++        "website":website_link.value,
++        "medium":medium_link.value,
++        "twitter":twitter_link.value,
++        "mail":mail_link.value,
++        "custommail":custom_mail_link.value,
++        "kaggle":kaggle_link.value,
++        "facebook":facebook_link.value,
++        "instagram":instagram_link.value,
++        "leetcode":leetcode_link.value,
++    }
++    chrome.storage.sync.set(dict,function(){
++        if(!chrome.runtime.error){
++            console.log("Links Updated");
++            window.location.pathname='popup.html'
++        }
++    })
++}
+\ No newline at end of file
+diff --git a/manifest.json b/manifest.json
+index ca4db7e..61a3a15 100644
+--- a/manifest.json
++++ b/manifest.json
+@@ -3,10 +3,10 @@
+   "name": "My Profile Hub",
+   "description": "All my profiles under the same roof",
+   "version": "0.0.2",
+-  "icons": { "128": "smaranjit_ghose_profile_icon_big.png" },
++  "icons": { "128": "assets/your_profile_icon_big.png" },
+   "browser_action": {
+-    "default_icon": "smaranjit_ghose_profile_icon_small.png",
++    "default_icon": "assets/your_profile_icon_small.png",
+     "default_popup": "popup.html"
+   },
+-  "permissions": ["activeTab"]
++  "permissions": ["activeTab","storage"]
+ }
+\ No newline at end of file
+diff --git a/popup.html b/popup.html
+index 5e30819..d3324e4 100644
+--- a/popup.html
++++ b/popup.html
+@@ -7,7 +7,6 @@
+       rel="stylesheet"
+       type="text/css"
+       />
+-    <script src="popup.js"></script>
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <link rel="icon" href="assets/your_profile_icon_big.png" type="image/png" sizes="30x30">
+   </head>
+@@ -19,28 +18,28 @@
+     <div class="modal-icons">
+       <div class="flex-container">
+         <div class="flex">
+-          <a href="https://github.com/smaranjitghose" target="_blank">
++          <a id="github_link" href="#!" target="_blank">
+             <img class= "pulse-grow-on-hover" src="./assets/logos/github.png">
+           </a>
+         </div>
+          <div class="flex">
+-          <a href="https://www.linkedin.com/in/smaranjitghose/" target="_blank">
++          <a id="linkedin_link" href="#!" target="_blank">
+             <img class= "pulse-grow-on-hover" src="./assets/logos/linkedin.png">
+           </a>
+         </div>
+         <div class="flex">
+-          <a href="http://smaranjitghose.codes/" target="_blank">
++          <a id="website_link" href="#!" target="_blank">
+             <img class= "pulse-grow-on-hover" src="./assets/logos/laptop.png">
+           </a>
+         </div>
+ 
+         <div class="flex">
+-          <a href="https://medium.com/@smaranjitghose" target="_blank">
++          <a id="medium_link" href="#!" target="_blank">
+             <img class= "pulse-grow-on-hover" src="./assets/logos/medium.png">
+           </a>
+         </div>
+         <div class="flex">
+-        <a href="https://twitter.com/smaranjitghose" target="_blank">
++        <a id="twitter_link" href="#!" target="_blank">
+           <img class= "pulse-grow-on-hover" src="./assets/logos/Twitter.png">
+         </a>
+         </div>
+@@ -48,35 +47,39 @@
+       
+       <div class="flex-container">
+         <div class="flex">
+-          <a href="https://protonmail.com/ " target="_blank">
++          <a id="mail_link" href="#!" target="_blank">
+             <img class= "pulse-grow-on-hover" src="./assets/logos/mail2.png">
+           </a>
+         </div>
+         <div class="flex">
+-            <a href="https://protonmail.com/ " target="_blank">
++            <a id="custom_mail_link" href="#!" target="_blank">
+               <img class= "pulse-grow-on-hover" src="./assets/logos/mail1.png">
+             </a>
+         </div>
+         <div class="flex">
+-          <a href="https://www.kaggle.com/smaranjitghose" target="_blank">
++          <a id="kaggle_link" href="#!" target="_blank">
+             <img class= "pulse-grow-on-hover" src="./assets/logos/kaggle.jpg">
+           </a>
+         </div>
+         <div class="flex">
+-          <a href="https://www.facebook.com/" target="_blank">
++          <a id="facebook_link" href="#!" target="_blank">
+             <img class= "pulse-grow-on-hover" src="./assets/logos/facebook.png">
+           </a> 
+         </div>
+         <div class="flex">
+-          <a href="https://www.instagram.com/" target="_blank">
++          <a id="instagram_link" href="#!" target="_blank" target="_blank">
+             <img class= "pulse-grow-on-hover" src="./assets/logos/instagram.png">
+           </a>
+         </div>
+         <div class="flex">
+-          <a href="https://leetcode.com/ " target="_blank">
++          <a id="leetcode_link" href="#!" target="_blank" target="_blank">
+             <img class= "pulse-grow-on-hover" src="./assets/logos/leetcode.png">
+           </a>
+       </div>
+     </div>
++    <br>
++    <a class="btn" role="button" href="edit.html">Edit</a>
++    <br>
++    <script src="popup.js"></script>
+   </body>
+ </html>
+\ No newline at end of file
+diff --git a/popup.js b/popup.js
+new file mode 100644
+index 0000000..aaa6611
+--- /dev/null
++++ b/popup.js
+@@ -0,0 +1,94 @@
++var github_link = document.getElementById("github_link");
++var linkedin_link = document.getElementById("linkedin_link");
++var website_link = document.getElementById("website_link");
++var medium_link = document.getElementById("medium_link");
++var twitter_link = document.getElementById("twitter_link");
++var mail_link = document.getElementById("mail_link");
++var custom_mail_link = document.getElementById("custom_mail_link");
++var kaggle_link = document.getElementById("kaggle_link");
++var facebook_link = document.getElementById("facebook_link");
++var instagram_link = document.getElementById("instagram_link");
++var leetcode_link = document.getElementById("leetcode_link");
++
++let array = [
++  "github",
++  "linkedin",
++  "website",
++  "medium",
++  "twitter",
++  "mail",
++  "custommail",
++  "kaggle",
++  "facebook",
++  "instagram",
++  "leetcode",
++];
++
++function void_click() {
++  void 0;
++}
++chrome.storage.sync.get(array, function (links) {
++  if (!chrome.runtime.error) {
++    console.log(links);
++
++    if (links.github) github_link.href = links.github;
++    else
++      github_link.addEventListener("click", function (event) {
++        event.preventDefault();
++      });
++
++    if (links.linkedin) linkedin_link.href = links.linkedin;
++    else
++      linkedin_link.addEventListener("click", function (event) {
++        event.preventDefault();
++      });
++
++    if (links.website) website_link.href = links.website;
++    else
++      website_link.addEventListener("click", function (event) {
++        event.preventDefault();
++      });
++
++    if (links.medium) medium_link.href = links.medium;
++    else
++      medium_link.addEventListener("click", function (event) {
++        event.preventDefault();
++      });
++
++    if (links.twitter) twitter_link.href = links.twitter;
++    else
++      twitter_link.addEventListener("click", function (event) {
++        event.preventDefault();
++      });
++
++    if (links.mail) mail_link.href = links.mail;
++    else
++      mail_link.addEventListener("click", function (event) {
++        event.preventDefault();
++      });
++
++    if (links.custommail) custom_mail_link.href = links.custommail;
++    else
++      custom_mail_link.addEventListener("click", function (event) {
++        event.preventDefault();
++      });
++
++    if (links.kaggle) kaggle_link.href = links.kaggle;
++    else
++      kaggle_link.addEventListener("click", function (event) {
++        event.preventDefault();
++      });
++
++    if (links.facebook) facebook_link.href = links.facebook;
++    else
++      facebook_link.addEventListener("click", function (event) {
++        event.preventDefault();
++      });
++
++    if (links.instagram) instagram_link.href = links.instagram;
++    else
++      mail_link.addEventListener("click", function (event) {
++        event.preventDefault();
++      });
++  }
++});
+diff --git a/style.css b/style.css
+index 345eb83..7a24a61 100644
+--- a/style.css
++++ b/style.css
+@@ -96,4 +96,24 @@ p {
+ 	animation-iteration-count: infinite;
+ 	-webkit-animation-direction: alternate;
+ 	animation-direction: alternate;
++  }
++
++  .btn{
++    color: #fff !important;
++    border-radius: .25rem;
++    padding: .375rem .75rem;
++    line-height: 1rem;
++    font-size: 1rem; 
++    text-align: center;
++    vertical-align: middle;
++    background-color: #007bff;
++    border: 1px solid 007bff;
++    margin-top: .25rem;
++    margin-bottom: .25rem;
++    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3);
++  }
++  .btn:hover{
++    color: #fff;
++    background-color: #0069d9;
++    border-color: #0062cc;
+   }
+\ No newline at end of file
+-- 
+2.24.0.windows.2
+

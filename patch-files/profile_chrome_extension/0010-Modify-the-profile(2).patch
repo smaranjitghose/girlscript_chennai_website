@@ -1,0 +1,118 @@
+From 772f13c89c67cc27abb3f0ff38784f006ca015da Mon Sep 17 00:00:00 2001
+From: adyasha <adyashamohanty8104@gmail.com>
+Date: Mon, 11 May 2020 01:21:20 +0530
+Subject: [PATCH 2/3] Modify the profile (adding comments)
+
+---
+ ...ur_profile_icon_big.png => profile_icon_big.png} | Bin
+ ...rofile_icon_small.png => profile_icon_small.png} | Bin
+ edit.html                                           |   2 +-
+ edit.js                                             |   8 +++++++-
+ manifest.json                                       |   6 +++---
+ popup.js                                            |   5 +++++
+ 6 files changed, 16 insertions(+), 5 deletions(-)
+ rename assets/{your_profile_icon_big.png => profile_icon_big.png} (100%)
+ rename assets/{your_profile_icon_small.png => profile_icon_small.png} (100%)
+
+diff --git a/assets/your_profile_icon_big.png b/assets/profile_icon_big.png
+similarity index 100%
+rename from assets/your_profile_icon_big.png
+rename to assets/profile_icon_big.png
+diff --git a/assets/your_profile_icon_small.png b/assets/profile_icon_small.png
+similarity index 100%
+rename from assets/your_profile_icon_small.png
+rename to assets/profile_icon_small.png
+diff --git a/edit.html b/edit.html
+index 92fd760..33ff7b1 100644
+--- a/edit.html
++++ b/edit.html
+@@ -101,7 +101,7 @@
+ </head>
+ <body>
+     <center>
+-        <h1>Profile Launcher</h1>
++        <h1>Modify your Profiles!</h1>
+         <br>
+         <input class="form-control" id="github" type="text" placeholder="Github">
+         <br>
+diff --git a/edit.js b/edit.js
+index 433599b..4ec7a0d 100644
+--- a/edit.js
++++ b/edit.js
+@@ -1,3 +1,5 @@
++/*Here we add a reference to the IDs in edit.html file and give it a proper name to it*/
++
+ var github_link = document.getElementById('github');
+ var linkedin_link = document.getElementById('linkedin');
+ var website_link = document.getElementById('website');
+@@ -9,9 +11,10 @@ var kaggle_link = document.getElementById('kaggle');
+ var facebook_link = document.getElementById('facebook');
+ var instagram_link = document.getElementById('instagram');
+ var leetcode_link = document.getElementById('leetcode');
+-
+ var save_button = document.getElementById('save');
+ 
++/*It will accept all those links given by the user */
++
+ let array = ["github","linkedin","website","medium","twitter","mail","custommail","kaggle","facebook","instagram","leetcode",];
+ chrome.storage.sync.get(array,function(links){
+     if(!chrome.runtime.error){
+@@ -41,6 +44,7 @@ chrome.storage.sync.get(array,function(links){
+     }
+ });
+ 
++/* It will update the links according to it*/
+ 
+ save_button.addEventListener('click',function(){
+     UpdateLinks();
+@@ -59,6 +63,8 @@ function UpdateLinks(){
+         "instagram":instagram_link.value,
+         "leetcode":leetcode_link.value,
+     }
++
++    /*It is used to check whether your function is working or not*/
+     chrome.storage.sync.set(dict,function(){
+         if(!chrome.runtime.error){
+             console.log("Links Updated");
+diff --git a/manifest.json b/manifest.json
+index 61a3a15..c4ed111 100644
+--- a/manifest.json
++++ b/manifest.json
+@@ -1,11 +1,11 @@
+ {
+   "manifest_version": 2,
+   "name": "My Profile Hub",
+-  "description": "All my profiles under the same roof",
++  "description": "All of your social media profiles under the same roof!",
+   "version": "0.0.2",
+-  "icons": { "128": "assets/your_profile_icon_big.png" },
++  "icons": { "128": "assets/profile_icon_big.png" },
+   "browser_action": {
+-    "default_icon": "assets/your_profile_icon_small.png",
++    "default_icon": "assets/profile_icon_small.png",
+     "default_popup": "popup.html"
+   },
+   "permissions": ["activeTab","storage"]
+diff --git a/popup.js b/popup.js
+index aaa6611..ae0681c 100644
+--- a/popup.js
++++ b/popup.js
+@@ -1,3 +1,5 @@
++/*Here we add a reference to the IDs present in the popup.html file and give it a proper name to it*/
++
+ var github_link = document.getElementById("github_link");
+ var linkedin_link = document.getElementById("linkedin_link");
+ var website_link = document.getElementById("website_link");
+@@ -27,6 +29,9 @@ let array = [
+ function void_click() {
+   void 0;
+ }
++
++/* It will showcase the result after clicking it*/
++
+ chrome.storage.sync.get(array, function (links) {
+   if (!chrome.runtime.error) {
+     console.log(links);
+-- 
+2.24.0.windows.2
+
