@@ -35,7 +35,7 @@ This project is also meant to be a starting for all techies interested to get th
 </p>
 
 <a href="https://github.com/smaranjitghose">
-<h4 align="center"><b>Smaranjit Ghose</b></a>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+<h4 align="center"><b>Smaranjit Ghose</b></a>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
 <a href="https://github.com/anushbhatia"><b>Anush Bhatia</b></h4></a>
 <br>
 
