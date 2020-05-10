@@ -21,8 +21,9 @@ html[ data-theme="dark"] {
     --register-boxShadow: 0 4px 6px 1px rgba(245, 81, 28, 0.74), 0 2px 7px 1px rgba(245, 81, 28, 0.14), 0 2px 3px -3px rgba(245, 81, 28, 0.14);
     --registerClose-boxShadow: 0 8px 12px 1px rgba(245, 81, 28, 0);
     --next-color: #fff;
+    --next-hover: #fff;
     --inputProgress-bgColor: rgb(245, 81, 28);
-    --wrongInputProgress-color: #f5511c;
+    --wrongInputProgress-color: #fff;
     --inputLabel-color: #fff;
     --input-bgColor: #333333;
 }
@@ -111,6 +112,9 @@ h1 {
 
 .next:hover {
     color: var(--next-hover);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .wrong .next {
