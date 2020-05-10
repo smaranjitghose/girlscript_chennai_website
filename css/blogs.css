@@ -250,8 +250,6 @@ Blog Cards
     .rtb-col {
         position: relative;
         padding: 30px 20px 30px !important;
-        margin-left: 12px;
-        margin-right: 12px;
         -webkit-box-shadow: var(--rtbInline-shadow);
                 box-shadow: var(--rtbInline-shadow);
     }
@@ -272,17 +270,14 @@ Blog Cards
     color: var(--font-color) !important;
 }
 
-@media only screen and (max-width : 430px){
-    .width1 {
-        width:470px;
-    }
-    .width2 {
-        width:450px;
-    }
-}    
-
 @media only screen and (max-width : 900px){
    .row{
     padding:20px;
    }
 }
+
+@media only screen and (max-width : 430px){
+    body{
+        overflow-x:hidden;
+    }
+}    
