@@ -109,7 +109,7 @@ let footer = $(`
 
 </svg>
   </div>
-<footer>
+<footer id="footer">
 <div class="container">
   <div class="row">
 	<div class="col-lg-6 col-md-4 footer-logo"> 
