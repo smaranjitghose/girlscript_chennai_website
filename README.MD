@@ -29,9 +29,14 @@ This project is also meant to be a starting for all techies interested to get th
 
 <h2 align= "center"><b> Project Mentors</b></h2>
 
-<p align="center"><img width=20% src="https://avatars2.githubusercontent.com/u/46641503?v=4" style= margin-right:30px;><img width=20% src="https://avatars2.githubusercontent.com/u/40017559?v=4" style= margin-left:40px;></p>
+<p align="center">
+<img width=20% src="https://avatars2.githubusercontent.com/u/46641503?v=4">&ensp;&ensp;&ensp;
+<img width=20% src="https://avatars2.githubusercontent.com/u/40017559?v=4">
+</p>
 
-<a href="https://github.com/smaranjitghose"><h4 align="center"><b style= margin-right:6rem;>Smaranjit Ghose</b></a><a href="https://github.com/smaranjitghose"><a href="https://github.com/anushbhatia"><b style=margin-left:4.8rem; >Anush Bhatia</b></h4></a>
+<a href="https://github.com/smaranjitghose">
+<h4 align="center"><b>Smaranjit Ghose</b></a>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+<a href="https://github.com/anushbhatia"><b>Anush Bhatia</b></h4></a>
 <br>
 
 [![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/0)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/0)
