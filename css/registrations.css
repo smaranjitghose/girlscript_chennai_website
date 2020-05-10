@@ -14,7 +14,6 @@ html {
 }
 
 html[ data-theme="dark"] {
-    --h1font-color: #fff;
     --progress-bgcolor: #333333;
     --bg-color: #121212;
     --register-bgColor: #fff;
@@ -26,6 +25,7 @@ html[ data-theme="dark"] {
     --wrongInputProgress-color: #fff;
     --inputLabel-color: #fff;
     --input-bgColor: #333333;
+    --h1font-color: #fff;
 }
 
 body {
@@ -115,6 +115,10 @@ h1 {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
+}
+
+.next:active {
+    color: var( --next-hover);
 }
 
 .wrong .next {
