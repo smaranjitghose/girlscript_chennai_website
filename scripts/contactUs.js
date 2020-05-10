@@ -1,35 +1,36 @@
 // Remove the spaces from the entered and generated code
-function removeSpaces(string) {
-	return string.split(' ').join('');
-}
-function ValidCaptcha(str2) {
+
+// VanillaJS functions written in ES6 using arrow functions
+
+let removeSpaces = string => string.split(' ').join('');
+
+let ValidCaptcha = str2 => {
 	let str1 = removeSpaces(document.getElementById('CaptchaDiv').value);
-	if (str1 == str2) {
-		return true;
-	} else {
-		return false;
-	}
+	if (str1 == str2) return true;
+	else return false;
 }
-function validateEmail(emailID) {
+
+let validateEmail = emailID => {
 	let atpos = emailID.indexOf('@'),
 		dotpos = emailID.lastIndexOf('.');
 
-	if (atpos < 1 || dotpos - atpos < 2) {
+	if (atpos < 1 || dotpos - atpos < 2)
 		return true;
-	}
 	return false;
 }
-function displayError(tagName, tag, lessLength = false) {
+
+let displayError = (tagName, tag, lessLength = false) => {
 	let errorBlock = $(`#error-${tagName}`);
 	errorBlock.css("display", "block")
 	let errorText = $(errorBlock[0].children[1]);
 	errorText.empty();
 	errorText.append(tag.value === "" ? `Please enter ${tagName}` :
 		lessLength ? "Mininim length should be 10 characters" : `Please enter correct ${tagName}`)
-		$(`#${tagName}`).addClass("form-group-error")
+	$(`#${tagName}`).addClass("form-group-error")
 	tag.focus();
 }
-function validateForm(inputBox=undefined) {
+
+let validateForm = (inputBox = undefined) => {
 	let captchaInput = document.myForm.captchaInput,
 		name = document.myForm.name,
 		emailId = document.myForm.email,
@@ -38,11 +39,11 @@ function validateForm(inputBox=undefined) {
 		letters = /^[0-9]+$/;
 	$('.error-message').css("display", "none");
 	$('.no-border').removeClass("form-group-error")
-	if ((name.value.match(letters) || name.value === "") && (inputBox === "name" || inputBox==="submit")) {
+	if ((name.value.match(letters) || name.value === "") && (inputBox === "name" || inputBox === "submit")) {
 		displayError("name", name)
 		return false;
 	}
-	else if ((emailId.value === "" || validateEmail(emailId.value))&& (inputBox === "email" || inputBox === "submit")) {
+	else if ((emailId.value === "" || validateEmail(emailId.value)) && (inputBox === "email" || inputBox === "submit")) {
 		displayError("email", emailId)
 		return false;
 	}
@@ -62,7 +63,7 @@ function validateForm(inputBox=undefined) {
 	return true;
 }
 
-$(function () {
+$(() => {
 	let code = "";
 	for (let i = 0; i < 5; i++)
 		code += Math.ceil(Math.random() * 9);
@@ -72,5 +73,4 @@ $(function () {
 	AOS.init({
 		duration: 2000,
 	});
-
 })
