@@ -1,118 +1,175 @@
-
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+	<head>
+		<title>Contact Us</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" user-scalable="no" />
+		<link rel="icon" href="assets/Images/logo/gs.png" type="image/png" sizes="16x16" />
 
-<head>
-	<title> Contact Us </title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" user-scalable=no>
-	<link rel="icon" href="assets/Images/logo/gs.png" type="image/png" sizes="16x16">
-
-	<!-- Google Font Api -->
-	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-	<!-- Font Awesome  -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- JQuery -->
+		<!-- Google Font Api -->
+		<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+		<!-- Font Awesome  -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<!-- JQuery -->
 		<!--JQuery minified-->
-		<script src="https://code.jquery.com/jquery-3.5.0.min.js"
-  		integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
-  		crossorigin="anonymous"></script>
-	<!-- Bootstrap -->
-	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-	
-	<!-- Normalize CSS and AOS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-	<link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'>
+		<script
+			src="https://code.jquery.com/jquery-3.5.0.min.js"
+			integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+			crossorigin="anonymous"
+		></script>
+		<!-- Bootstrap -->
 
-	<!-- Css Styles -->
-	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<link rel="stylesheet" href="css/contact-page.css" type="text/css">
-</head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-<body>
-	<div class="loader-box">
-		<div class="hollowLoader">
-			<div class="largeBox"></div>
-			<div class="smallBox"></div>
-		</div>
-	</div>
-	<section class="main-section">
-		<div class="container container-contact pt-5 pb-5">
-			<div class="side-sec" data-aos="fade-right">
-				<div class="def">
-					<h4>Get in Touch</h4>
-					<div class="def-sec mb-4">Have a doubt in mind? <br> Want to share something with us?</div>
-				</div>
-				<div class="def">
-					<h4><i class="fa fa-map-marker"></i> Find us at the office</h4>
-					<div class="def-sec mb-4"> Chennai,India </div>
-				</div>
-				<div class="def">
-					<h4><i class="fa fa-phone"></i> Give us a ring</h4>
-					<div class="def-sec"> Jordan +91 762321762</div>
-				</div>
+		<!-- Normalize CSS and AOS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+		<link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css" />
+
+		<!-- Css Styles -->
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<link rel="stylesheet" href="css/contact-page.css" type="text/css" />
+	</head>
+
+	<body>
+		<div class="loader-box">
+			<div class="hollowLoader">
+				<div class="largeBox"></div>
+				<div class="smallBox"></div>
 			</div>
-			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 contact-form p-4" data-aos="fade-left">
-				<h2 class="font-weight-bold mb-1 form-heading">Contact
-					<span class="clr-theme"> Us</span></h2>
-				<form class="form-horizontal" name="myForm" action="https://formspree.io/xyz@gmail.com"
-					onsubmit="return validateForm('submit')" method="post">
-					<div class="form-group pb-3">
-						<span class="error-message" id="error-name"><i class="fa fa-exclamation-triangle"></i> <span> Error</span></span>
-						<input type="text" id="name" name="name" placeholder=" " oninput="return validateForm('name')"  class="form-control no-border" >
-						<label class="form-control-placeholder" for="name">Name</label>
-					</div>
-					<div class="form-group pb-3">
-						<span class="error-message" id="error-email"><i class="fa fa-exclamation-triangle"></i> <span> Error</span></span>
-						<input type="email" id="email" name="email" placeholder=" " oninput="return validateForm('email')"  class="form-control no-border" >
-						<label class="form-control-placeholder" for="email">Email Address</label>
-					</div>
-					<div class="form-group pb-3">
-						<span class="error-message" id="error-subject"><i class="fa fa-exclamation-triangle"></i> <span> Error</span></span>
-						<input type="text" id="subject" name="subject" placeholder=" " oninput="return validateForm('subject')"  class="form-control no-border">
-						<label class="form-control-placeholder" for="subject">Subject</label>
-					</div>
-					<div class="form-group">
-						<span class="error-message" id="error-message"><i class="fa fa-exclamation-triangle"></i> <span> Error</span></span>
-						<textarea name="message" id="message" placeholder=" " rows="4" oninput="return validateForm('message')" class="form-control no-border"></textarea>
-						<label class="form-control-placeholder" for="message">Your Message</label>
-					</div>
-					<!-- START CAPTCHA -->
-					<div class="capbox">
-						<span class="error-message" id="error-captcha"><i class="fa fa-exclamation-triangle"></i> <span> Error</span></span>
-						<input type="text" readonly id="CaptchaDiv"/>
-						<div class="form-group">
-
-							<input type="number" class="form-control no-border" placeholder=" " oninput="return validateForm('captcha')" name="captchaInput" id="CaptchaInput">
-
-							<label class="form-control-placeholder" for="CaptchaInput">Enter the Captcha</label>
+		</div>
+		<section class="main-section">
+			<div class="container container-contact pt-5 pb-5">
+				<div class="side-sec" data-aos="fade-right">
+					<div class="def">
+						<h4>Get in Touch</h4>
+						<div class="def-sec mb-4">
+							Have a doubt in mind? <br />
+							Want to share something with us?
 						</div>
 					</div>
-					<!-- END CAPTCHA -->
-					<button type="submit" class="btn btn-lg mt-2 center-btn-settings center-btn-settings2 mb-3"
-						id="submit-button"> Send Message </button>
-				</form>
+					<div class="def">
+						<h4><i class="fa fa-map-marker"></i> Find us at the office</h4>
+						<div class="def-sec mb-4">Chennai,India</div>
+					</div>
+					<div class="def">
+						<h4><i class="fa fa-phone"></i> Give us a ring</h4>
+						<div class="def-sec">Jordan +91 762321762</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 contact-form p-4" data-aos="fade-left">
+					<h2 class="font-weight-bold mb-1 form-heading">Contact <span class="clr-theme"> Us</span></h2>
+					<form
+						class="form-horizontal"
+						name="myForm"
+						action="https://formspree.io/xyz@gmail.com"
+						onsubmit="return validateForm('submit')"
+						method="post"
+					>
+						<div class="form-group pb-3">
+							<span class="error-message" id="error-name"
+								><i class="fa fa-exclamation-triangle"></i> <span> Error</span></span
+							>
+							<input
+								type="text"
+								id="name"
+								name="name"
+								placeholder=" "
+								oninput="return validateForm('name')"
+								class="form-control no-border"
+							/>
+							<label class="form-control-placeholder" for="name">Name</label>
+						</div>
+						<div class="form-group pb-3">
+							<span class="error-message" id="error-email"
+								><i class="fa fa-exclamation-triangle"></i> <span> Error</span></span
+							>
+							<input
+								type="email"
+								id="email"
+								name="email"
+								placeholder=" "
+								oninput="return validateForm('email')"
+								class="form-control no-border"
+							/>
+							<label class="form-control-placeholder" for="email">Email Address</label>
+						</div>
+						<div class="form-group pb-3">
+							<span class="error-message" id="error-subject"
+								><i class="fa fa-exclamation-triangle"></i> <span> Error</span></span
+							>
+							<input
+								type="text"
+								id="subject"
+								name="subject"
+								placeholder=" "
+								oninput="return validateForm('subject')"
+								class="form-control no-border"
+							/>
+							<label class="form-control-placeholder" for="subject">Subject</label>
+						</div>
+						<div class="form-group">
+							<span class="error-message" id="error-message"
+								><i class="fa fa-exclamation-triangle"></i> <span> Error</span></span
+							>
+							<textarea
+								name="message"
+								id="message"
+								placeholder=" "
+								rows="4"
+								oninput="return validateForm('message')"
+								class="form-control no-border"
+							></textarea>
+							<label class="form-control-placeholder" for="message">Your Message</label>
+						</div>
+						<!-- START CAPTCHA -->
+						<div class="capbox">
+							<span class="error-message" id="error-captcha"
+								><i class="fa fa-exclamation-triangle"></i> <span> Error</span></span
+							>
+							<input type="text" readonly id="CaptchaDiv" />
+							<div class="form-group">
+								<input
+									type="number"
+									class="form-control no-border"
+									placeholder=" "
+									oninput="return validateForm('captcha')"
+									name="captchaInput"
+									id="CaptchaInput"
+								/>
+
+								<label class="form-control-placeholder" for="CaptchaInput">Enter the Captcha</label>
+							</div>
+						</div>
+						<!-- END CAPTCHA -->
+						<button
+							type="submit"
+							class="btn btn-lg mt-2 center-btn-settings center-btn-settings2 mb-3"
+							id="submit-button"
+						>
+							Send Message
+						</button>
+					</form>
+				</div>
 			</div>
-		</div>
-	</section>
-	<!-- Footer -->
-	<!--External JS File-->
-	<script src="./scripts/app.js"></script>
-	<script src="./scripts/aos.js"></script>
-	<script src="./scripts/contactUs.js"></script>
+		</section>
+		<!-- Footer -->
+		<!--External JS File-->
+		<script src="./scripts/app.js"></script>
+		<script src="./scripts/aos.js"></script>
+		<script src="./scripts/contactUs.js"></script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-	
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164715490-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-		gtag('config', 'UA-164715490-1');
-	</script>
-<script src="./scripts/cacheImages.js"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
 
-</body>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164715490-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+			gtag('config', 'UA-164715490-1');
+		</script>
+		<script src="./scripts/cacheImages.js"></script>
+	</body>
 </html>
