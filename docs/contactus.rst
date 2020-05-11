@@ -51,7 +51,7 @@ If you want to make changes in this section, carry out the following changes in 
 .. note::
 
    - You can refer `this <https://fontawesome.com/v4.7.0/icons/>`__  where you can get different icons according to your requirement and you can copy the html code of the icon to add it in the code and do the further designing.
-
-   - To study about various input types in form refer `this <https://www.w3schools.com/html/html_form_input_types.asp>`__ .
-
+   
+   * To study about various input types in form refer `this <https://www.w3schools.com/html/html_form_input_types.asp>`__ .
+   
    - You can refer `this <https://www.tutorialspoint.com/javascript/javascript_form_validations.htm>`__ for adding javascript form validation
