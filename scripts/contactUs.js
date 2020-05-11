@@ -4,21 +4,15 @@ function removeSpaces(string) {
 }
 function ValidCaptcha(str2) {
 	let str1 = removeSpaces(document.getElementById('CaptchaDiv').value);
-	if (str1 == str2) {
-		return true;
-	} else {
-		return false;
-	}
+	return str1 == str2;
 }
+
 function validateEmail(emailID) {
 	let atpos = emailID.indexOf('@'),
 		dotpos = emailID.lastIndexOf('.');
-
-	if (atpos < 1 || dotpos - atpos < 2) {
-		return true;
-	}
-	return false;
+    return (atpos < 1 || dotpos - atpos < 2);
 }
+
 function displayError(tagName, tag, lessLength = false) {
 	let errorBlock = $(`#error-${tagName}`);
 	errorBlock.css('display', 'block');
@@ -41,6 +35,7 @@ function validateForm(inputBox = undefined) {
 		subject = document.myForm.subject,
 		message = document.myForm.message,
 		letters = /^[0-9]+$/;
+		
 	$('.error-message').css('display', 'none');
 	$('.no-border').removeClass('form-group-error');
 	if ((name.value.match(letters) || name.value === '') && (inputBox === 'name' || inputBox === 'submit')) {
@@ -77,7 +72,7 @@ function validateForm(inputBox = undefined) {
 
 $(function () {
 	let code = '';
-	for (let i = 0; i < 5; i++) code += Math.ceil(Math.random() * 9);
+	for (let i = 0; i < 5; i++) code += Math.floor(Math.random() * 10);
 	document.getElementById('CaptchaDiv').value = code;
 
 	// Init AOS
