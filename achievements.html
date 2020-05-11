@@ -104,10 +104,7 @@ This project is also meant to be a starting for all techies interested to get th
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
 	<link rel="stylesheet" href="css/achievement.css" type="text/css" />
 	<link rel="icon" href="assets/Images/gs.png" type="image/png" sizes="16x16">
-
-	<!-- Defined scripts -->
-	<script src="./scripts/achievement.js"></script>
-	</head>
+</head>
 
 <body class="col1">
 	<!-- Header -->
@@ -417,6 +414,7 @@ This project is also meant to be a starting for all techies interested to get th
   <a class="gotopbtn clr-wt" id="topBtn" style="display: none;"> <i class="fa fa-chevron-up clr-wt"></i> </a>
     <!--External JS File-->
     <script src="./scripts/app.js"></script>
+    <script src="./scripts/achievement.js"></script>
 	
 	 <!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164715490-1"></script>
@@ -425,6 +423,20 @@ This project is also meant to be a starting for all techies interested to get th
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
 		gtag('config', 'UA-164715490-1');
+
+		// Defer Parsing of JS 
+
+	function downloadJSAtOnload() {
+		var element = document.createElement("script");
+		element.src = "./scripts/achievement.js";
+		document.body.appendChild(element);
+	}
+	if (window.addEventListener)
+		window.addEventListener("load", downloadJSAtOnload, false);
+	else if (window.attachEvent)
+		window.attachEvent("onload", downloadJSAtOnload);
+	else window.onload = downloadJSAtOnload;
+
 	</script>
 <script src="./scripts/cacheImages.js"></script>
 
