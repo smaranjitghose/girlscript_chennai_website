@@ -1967,3 +1967,47 @@ input:checked + .slider:before {
             transform: rotate(90deg);
     }
 }
+
+
+@media only screen and (max-width:990px){
+  .svg-img{
+    position: absolute;
+    top:0;
+    right:0;
+    width:20rem;
+  }
+}
+
+@media only screen and (max-width:810px){
+  .svg-img{
+    right:-2rem;
+    width:16rem;
+    z-index:-20;
+  }
+  .navigation-content a{
+    font-size:1.2rem;
+  }
+}
+
+@media only screen and (max-width:620px){
+  .navigation-content a{
+    font-size:0.9rem;
+  }
+  .svg-img{
+    width:14rem;
+    z-index:-20;
+  }
+}
+
+
+@media only screen and (max-width:590px){
+  
+  .svg-img{
+    top:-110%;
+    left:20%;
+    width:14rem;
+    z-index:-20;
+  }
+}
+
+
