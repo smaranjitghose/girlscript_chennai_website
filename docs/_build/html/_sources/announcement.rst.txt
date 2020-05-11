@@ -45,3 +45,8 @@ If you want to make changes in this section, carry out the following changes in 
 * To make changes in the button - Go to `announcements.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/announcements.html>`__ and search :python:`card-stats`, you will see <a> tag where you can change the path in the href.
 
 - To add an additional event - Go to `announcements.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/announcements.html>`__ and search :python:`card r-events-card` where you can copy the whole <div> and change it's heading and description under <h2> and <p> page accordingly.
+
+
+.. note::
+   
+      - To search images with better quality, you can refer `this <https://unsplash.com/>`__ .
