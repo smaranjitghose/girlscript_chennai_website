@@ -47,6 +47,27 @@ If you want to make changes in this section, carry out the following changes in 
 
 - To change the text of the button :  Go to `achievements.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/achievements.html>`__ and search :python:`proshow` , you will see <button> tag where you can make changes.
 
+3. **Latest Achievements and Announcements**: This section consists of the latest achievements and announcements by your Girlscript Chapter.
+
+.. image:: ./images/achievementpage/achievements.JPG
+  :width: 600
+  :align: center
+  :alt: Alternative text
+
+If you want to make changes in this section, carry out the following changes in code:
+
+- To make changes in the heading : Go to `achievements.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/achievements.html>`__ and search :python:`achievement-card-head`, you will see <h2> tag where you can modify the heading.
+
+* To make changes in the content : Go to `achievements.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/achievements.html>`__ and search :python:`card-body`, you will see <h5> and <p> tag where you can make changes in heading and description respectively.
+
+- To modify the image : Go to `achievements.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/achievements.html>`__ and search :python:`card-img-top` , you will see <img> tag where in src you can add the link/path of your image.
+
+* To read the full story :  Go to `achievements.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/achievements.html>`__ and search :python:`card-link` , you will see <a> tag where in href you can give the link of the page.
+
+- To add an additional article:  Go to `achievements.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/achievements.html>`__ and search :python:`card` , you will see <div> tag within which you can make changes.
+
 .. note::
 
    - To add emojis to the description, you can refer `this <https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md>`__ and copy your desired emoji directly from there.
+   
+   * To search images with better quality, you can refer `this <https://unsplash.com/>`__ .

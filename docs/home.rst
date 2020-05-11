@@ -109,5 +109,5 @@ If you want to make changes in this section, carry out the following changes in 
 
    - To change the color in style.css use `Color Picker <https://www.w3schools.com/colors/colors_picker.asp>`__ .
 
-   - For futhur references check `here <https://www.w3schools.com/>`__ (best for beginners).
+   - For futher references check `here <https://www.w3schools.com/>`__ (best for beginners).
 
