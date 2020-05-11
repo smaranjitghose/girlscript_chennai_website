@@ -1,0 +1,170 @@
+From 6e16d9d105ba909c13e34c8d5667a57bcb68b804 Mon Sep 17 00:00:00 2001
+From: adyasha <adyashamohanty8104@gmail.com>
+Date: Mon, 11 May 2020 20:47:40 +0530
+Subject: [PATCH 4/4] Enhancement of pages
+
+---
+ edit.html  | 29 ++++++++++++++++-------------
+ popup.html |  6 ++----
+ style.css  | 22 ++++++++++++----------
+ 3 files changed, 30 insertions(+), 27 deletions(-)
+
+diff --git a/edit.html b/edit.html
+index ca5e4ab..d45ebe5 100644
+--- a/edit.html
++++ b/edit.html
+@@ -10,6 +10,7 @@
+       /* Modal Structure */
+       body{
+           padding: 20px;
++          text-align: center;
+       }
+       h1 {
+         font-family: "Menlo", monospace;
+@@ -32,7 +33,7 @@
+ 
+       .modal-header {
+         align-items: center;
+-        border-bottom: 0.5px solid #dadada;
++        border-bottom: 0.5px solid #fff;
+       }
+ 
+       .modal-content {
+@@ -40,7 +41,7 @@
+       }
+ 
+       .modal-icons {
+-        border-top: 0.5px solid #dadada;
++        border-top: 0.5px solid #fff;
+         height: 50px;
+         width: 100%;
+       }
+@@ -81,26 +82,30 @@
+       .btn{
+         color: #fff !important;
+         border-radius: .25rem;
+-        padding: .375rem .75rem;
++        padding: 5px;
+         line-height: 1rem;
+         font-size: 1rem; 
+         text-align: center;
+         vertical-align: middle;
+-        background-color: #007bff;
++        background-color: rgba(19, 124, 156, 0.836);
+         border: 1px solid 007bff;
+         margin-top: .25rem;
+         margin-bottom: .25rem;
+-        box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3);
++        cursor: pointer;
++      }
++      .btn-left{
++        margin-right: 20px;
++      }
++      .btn-right{
++        margin-left: 20px;
+       }
+       .btn:hover{
+-        color: #fff;
+-        background-color: #0069d9;
+-        border-color: #0062cc;
++        box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3);
++        opacity: 0.8;
+       }
+     </style>
+ </head>
+ <body>
+-    <center>
+         <h1>Modify your Profiles!</h1>
+         <br>
+         <input class="form-control" id="github" type="text" placeholder="Github">
+@@ -130,10 +135,8 @@
+         <input class="form-control" id="leetcode" type="text" placeholder="Leetcode">
+         <br>
+         <br>
+-        <button class="btn" id="save">Save</button>
+-        &nbsp;&nbsp;
+-        <a class="btn" role="button" href="popup.html">Back</a>
+-    </center>
++        <a class="btn btn-left" id="save">Save</a>
++        <a class="btn btn-right" role="button" href="popup.html">Back</a>
+     <script src="edit.js"></script>
+ </body>
+ </html>
+diff --git a/popup.html b/popup.html
+index 5f00b82..39f039c 100644
+--- a/popup.html
++++ b/popup.html
+@@ -13,7 +13,8 @@
+ 
+   <body>
+     <div class="modal-header">
+-      <h1>My Profile Hub</h1>
++      <h1>My Profile Hub <a class="btn" role="button" href="edit.html">Edit</a></h1>
++      
+     </div>
+     <div class="modal-icons">
+       <div class="flex-container">
+@@ -77,9 +78,6 @@
+           </a>
+       </div>
+     </div>
+-    <br>
+-    <a class="btn" role="button" href="edit.html">Edit</a>
+-    <br>
+     <script src="popup.js"></script>
+   </body>
+ </html>
+\ No newline at end of file
+diff --git a/style.css b/style.css
+index 7a24a61..b42da40 100644
+--- a/style.css
++++ b/style.css
+@@ -12,12 +12,13 @@ h1 {
+   font-family: 'Trocchi', serif;
+   font-size: 22px;
+   font-weight: bold;
+-  margin: 0;
++  padding: 4px;
+   letter-spacing: 2px;
+   color: #2f5876;
+   text-align: center;
+   margin-top: 1px;
+   margin-bottom: 1px;
++  margin-left: 24px;
+ }
+ 
+ a:link,
+@@ -101,19 +102,20 @@ p {
+   .btn{
+     color: #fff !important;
+     border-radius: .25rem;
+-    padding: .375rem .75rem;
++    padding: 4px;
+     line-height: 1rem;
+-    font-size: 1rem; 
++    font-family: "Helvetica" sans-serif; 
++    font-size: 13px; 
+     text-align: center;
+     vertical-align: middle;
+-    background-color: #007bff;
++    background-color: rgba(19, 124, 156, 0.836);
+     border: 1px solid 007bff;
+-    margin-top: .25rem;
+-    margin-bottom: .25rem;
+-    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3);
++    float: right;
++    margin-right: 10px;
++    margin-top: 2px;
++    cursor: pointer;
+   }
+   .btn:hover{
+-    color: #fff;
+-    background-color: #0069d9;
+-    border-color: #0062cc;
++    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3);
++    opacity: 0.8;
+   }
+\ No newline at end of file
+-- 
+2.24.0.windows.2
+
