@@ -1881,7 +1881,7 @@ input:checked + .slider:before {
 
 
 .loader-box{
-  background-color: #34495e; 
+  background-color: #000; 
   position:fixed;
   top:0;
   left:0;
@@ -1918,7 +1918,7 @@ input:checked + .slider:before {
 .smallBox {
     height: 3rem;
     width: 3rem;
-    background-color: #34495e;
+    background-color: #000;
     position: fixed;
     z-index: 999;
     outline: 1px solid transparent;
