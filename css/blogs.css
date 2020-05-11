@@ -205,8 +205,8 @@ Blog Cards
   -o-transition: 0.6s;
   transition: 0.6s;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 7px 0px #ff9a0e;
-  box-shadow: 0 2px 7px 0px #ff9a0e;
+  -webkit-box-shadow: 0 2px 7px #ff9a0e;
+  box-shadow: 0 2px 7px #ff9a0e;
   margin: 1rem auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -221,8 +221,8 @@ Blog Cards
 }
 
 .blog-btn:hover {
-  -webkit-box-shadow: 0 5px 8px #ff9a0e;
-  box-shadow: 0 5px 8px #ff9a0e;
+  -webkit-box-shadow: 0 7px 25px #ff9a0e;
+  box-shadow: 0 7px 25px #ff9a0e;
   color: white;
   font-weight: bold;
 }

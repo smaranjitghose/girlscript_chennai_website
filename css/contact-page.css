@@ -145,16 +145,16 @@ html[ data-theme="dark"]{
   border-radius: 5px;
   text-transform: uppercase;
   color: white;
-  -webkit-box-shadow: 0 2px 7px 0px #ff9a0e;
-          box-shadow: 0 2px 7px 0px #ff9a0e;
+  -webkit-box-shadow: 0 2px 7px #ff9a0e;
+          box-shadow: 0 2px 7px #ff9a0e;
   -webkit-transition: 0.6s;
   -o-transition: 0.6s;
   transition: 0.6s;
 }
 
 #submit-button:hover {
-  -webkit-box-shadow: 0 7px 8px #ff9a0e;
-          box-shadow: 0 7px 8px #ff9a0e;
+  -webkit-box-shadow: 0 7px 25px #ff9a0e;
+          box-shadow: 0 7px 25px #ff9a0e;
   color: white;
   font-weight: bold;
 }

@@ -13,7 +13,7 @@ html {
   --font-color: #111111;
   --bg2-color: #f5f5f5;
   --shadow-color: #191919;
-  --footer-bg: #101010;
+  --footer-bg: #000;
   --footer-clr: #c4c4c4;
   --btn-bg: #f46721;
   --flipCard-shadow: rgba(0, 0, 0, 0.2);
@@ -1051,36 +1051,17 @@ a.fa-linkedin {
   -webkit-transition: 0.6s;
   -o-transition: 0.6s;
   transition: 0.6s;
+  width: 200px;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 7px 0px #ff9a0e;
   box-shadow: 0 2px 7px 0px #ff9a0e;
 }
 .center-btn-settings:hover {
-  -webkit-box-shadow: 0 7px 8px #ff9a0e;
-  box-shadow: 0 7px 8px #ff9a0e;
+  -webkit-box-shadow: 0 7px 25px #ff9a0e;
+  box-shadow: 0 7px 25px #ff9a0e;
   color: white;
   font-weight: bold;
 }
-.center-btn-settings2 {
-  background-color: var(--theme-color);
-  -webkit-transition: 0.6s;
-  -o-transition: 0.6s;
-  transition: 0.6s;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 2px 7px 0px #ff9a0e;
-  box-shadow: 0 2px 7px 0px #ff9a0e;
-  background-color: var(--theme-color) !important;
-  color: white !important;
-  width: 200px;
-}
-
-.center-btn-settings2:hover {
-  -webkit-box-shadow: 0 7px 8px #ff9a0e;
-  box-shadow: 0 7px 8px #ff9a0e;
-  color: white !important;
-  font-weight: bold;
-}
-
 .prodisplay {
   display: none;
 }
