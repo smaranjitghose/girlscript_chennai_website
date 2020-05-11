@@ -662,124 +662,126 @@ header {
 }
 
 .question-border:hover > .ques {
-	color: black;
+    color: black;
 }
 
-.question-border:hover > .ans {
-	color: rgba(255, 255, 255, 0.9);
-	letter-spacing: 1px;
+.question-border:hover > .ans{
+    color: rgba(255,255,255,0.9);
+    letter-spacing: 1px;
 }
 
-@media screen and (min-width: 554px) {
-	.featured-schedule-collection {
-		margin-top: 4em;
-	}
+@media screen and (min-width:554px) {
+    .featured-schedule-collection {
+        margin-top: 4em;
+    }
 }
 
-@media screen and (max-width: 500px) {
-	.register-section {
-		background: url(../assets/Images/event/bg-3-resize.png);
-	}
-	.color-overlay-3 {
-		opacity: 0.8;
-	}
+@media screen and (max-width:500px) {
+    .register-section {
+        background: url(../assets/Images/event/bg-3-resize.png); 
+    }
+    .color-overlay-3 {
+        opacity: 0.8;
+
+    }
 }
 
-@media screen and (max-width: 801px) {
-	.featured-schedule {
-		padding: 1em 1em 1.5em 1em;
-	}
-	.featured-schedule-collection {
-		padding: 2.3rem 0.2rem 2.3rem 0.2rem;
-		width: 100%;
-	}
-	.featured-schedule-collection ul li {
-		width: 100%;
-	}
-	.featured-schedule-collection ul li .time {
-		position: relative;
-		border: none;
-		text-align: center;
-		right: 0;
-	}
-	.featured-schedule-collection ul li .time-2 {
-		left: 0;
-	}
-	.featured-schedule-collection ul li .time-4 {
-		left: 0;
-	}
-	.featured-schedule-collection ul li .time:hover {
-		background-color: transparent;
-	}
-	.featured-schedule-collection ul li .time:hover > h3 {
-		color: var(--theme-color);
-	}
+@media screen and (max-width:801px){
+    .featured-schedule {
+        padding: 1em 1em 1.5em 1em;
+    }
+    .featured-schedule-collection {
+        padding: 2.3rem 0.2rem 2.3rem 0.2rem;
+        width: 100%;
+    }
+    .featured-schedule-collection .schedule-box .links {
+        width: 100%;
+    }
+    .featured-schedule-collection .schedule-box .links .time {
+        position: relative;
+        border: none;
+        text-align: center;
+        right: 0;
+    }
+    .featured-schedule-collection .schedule-box .links .time-2 {
+        left: 0;
+    }
+    .featured-schedule-collection .schedule-box .links .time-4 {
+        left: 0;
+    }
+    .featured-schedule-collection .schedule-box .links .time:hover {
+        background-color: transparent;
+    }
+    .featured-schedule-collection .schedule-box .links .time:hover > h3{
+        color: var(--theme-color);
+    }
+    
+    .featured-schedule-collection .schedule-box .links:nth-child(odd):before {
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-38%);
+            -ms-transform: translateX(-38%);
+                transform: translateX(-38%);
+        top:93%;
+    }
+    .featured-schedule-collection .schedule-box .links:nth-child(even):before {
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-38%);
+            -ms-transform: translateX(-38%);
+                transform: translateX(-38%);
+        top:93%;
+    }
+    .featured-schedule-collection .schedule-box .links:nth-child(even):after {
+        opacity: 0;
+    }
+    .featured-schedule-collection .schedule-box .links:nth-child(odd):after {
+        opacity: 0;
+    }
 
-	.featured-schedule-collection ul li:nth-child(odd):before {
-		position: absolute;
-		left: 50%;
-		-webkit-transform: translateX(-38%);
-		-ms-transform: translateX(-38%);
-		transform: translateX(-38%);
-		top: 93%;
-	}
-	.featured-schedule-collection ul li:nth-child(even):before {
-		position: absolute;
-		left: 50%;
-		-webkit-transform: translateX(-38%);
-		-ms-transform: translateX(-38%);
-		transform: translateX(-38%);
-		top: 93%;
-	}
-	.featured-schedule-collection ul li:nth-child(even):after {
-		opacity: 0;
-	}
-	.featured-schedule-collection ul li:nth-child(odd):after {
-		opacity: 0;
-	}
 }
 
-@media screen and (min-width: 801px) and (max-width: 1000px) {
-	.featured-schedule {
-		padding: 1em 1em 0.1em 1em;
-	}
+@media screen and (min-width:801px) and (max-width:1000px){
+    .featured-schedule {
+        padding: 1em 1em 0.1em 1em;
+    }
 }
 
-@media screen and (min-width: 801px) and (max-width: 1012px) {
-	.featured-schedule-collection {
-		border-radius: 0;
-	}
-	.featured-schedule-collection ul li:nth-child(even) {
-		float: none;
-	}
-	.featured-schedule-collection ul li .time-1 {
-		right: -306px;
-	}
-	.featured-schedule-collection ul li .time-2 {
-		width: 194.6px;
-		left: 540px;
-	}
-	.featured-schedule-collection ul li .time-3 {
-		right: -216px;
-	}
-	.featured-schedule-collection ul li .time-4 {
-		width: 170.06px;
-		left: 540px;
-	}
-	.featured-schedule-collection ul li .time-5 {
-		right: -276px;
-	}
-	.featured-schedule-collection ul li:nth-child(even):before {
-		content: '';
-		position: absolute;
-		left: 509px;
-	}
-	.featured-schedule-collection ul li:nth-child(even):after {
-		opacity: 0;
-	}
-	.featured-schedule-collection ul li:nth-child(odd):after {
-		opacity: 0;
-	}
+@media screen and (min-width: 801px) and (max-width:1012px){
+    .featured-schedule-collection {
+        border-radius: 0; 
+    }
+    .featured-schedule-collection .schedule-box .links:nth-child(even) {
+        float: none;
+    }
+    .featured-schedule-collection .schedule-box .links .time-1 {
+        right: -306px;
+    }
+    .featured-schedule-collection .schedule-box .links .time-2 {
+        width: 194.6px;  
+        left: 540px;
+    }
+    .featured-schedule-collection .schedule-box .links .time-3 {
+        right: -216px;
+    }
+    .featured-schedule-collection.schedule-box .links .time-4 {
+        width: 170.06px;  
+        left: 540px;
+    }
+    .featured-schedule-collection .schedule-box .links .time-5 {
+        right: -276px;
+    }
+    .featured-schedule-collection .schedule-box .links:nth-child(even):before {
+        content: '';
+        position: absolute;
+        left: 509px;
+    }
+    .featured-schedule-collection .schedule-box .links:nth-child(even):after {
+        opacity: 0;
+    }
+    .featured-schedule-collection .schedule-box .links:nth-child(odd):after {
+        opacity: 0;
+    }
 }
 
 @media screen and (min-width: 1012px) {
