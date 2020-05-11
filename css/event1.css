@@ -709,29 +709,29 @@ header {
         padding: 2.3rem 0.2rem 2.3rem 0.2rem;
         width: 100%;
     }
-    .featured-schedule-collection ul li {
+    .featured-schedule-collection .schedule-box .links {
         width: 100%;
     }
-    .featured-schedule-collection ul li .time {
+    .featured-schedule-collection .schedule-box .links .time {
         position: relative;
         border: none;
         text-align: center;
         right: 0;
     }
-    .featured-schedule-collection ul li .time-2 {
+    .featured-schedule-collection .schedule-box .links .time-2 {
         left: 0;
     }
-    .featured-schedule-collection ul li .time-4 {
+    .featured-schedule-collection .schedule-box .links .time-4 {
         left: 0;
     }
-    .featured-schedule-collection ul li .time:hover {
+    .featured-schedule-collection .schedule-box .links .time:hover {
         background-color: transparent;
     }
-    .featured-schedule-collection ul li .time:hover > h3{
+    .featured-schedule-collection .schedule-box .links .time:hover > h3{
         color: var(--theme-color);
     }
     
-    .featured-schedule-collection ul li:nth-child(odd):before {
+    .featured-schedule-collection .schedule-box .links:nth-child(odd):before {
         position: absolute;
         left: 50%;
         -webkit-transform: translateX(-38%);
@@ -739,7 +739,7 @@ header {
                 transform: translateX(-38%);
         top:93%;
     }
-    .featured-schedule-collection ul li:nth-child(even):before {
+    .featured-schedule-collection .schedule-box .links:nth-child(even):before {
         position: absolute;
         left: 50%;
         -webkit-transform: translateX(-38%);
@@ -747,10 +747,10 @@ header {
                 transform: translateX(-38%);
         top:93%;
     }
-    .featured-schedule-collection ul li:nth-child(even):after {
+    .featured-schedule-collection .schedule-box .links:nth-child(even):after {
         opacity: 0;
     }
-    .featured-schedule-collection ul li:nth-child(odd):after {
+    .featured-schedule-collection .schedule-box .links:nth-child(odd):after {
         opacity: 0;
     }
 
@@ -766,35 +766,35 @@ header {
     .featured-schedule-collection {
         border-radius: 0; 
     }
-    .featured-schedule-collection ul li:nth-child(even) {
+    .featured-schedule-collection .schedule-box .links:nth-child(even) {
         float: none;
     }
-    .featured-schedule-collection ul li .time-1 {
+    .featured-schedule-collection .schedule-box .links .time-1 {
         right: -306px;
     }
-    .featured-schedule-collection ul li .time-2 {
+    .featured-schedule-collection .schedule-box .links .time-2 {
         width: 194.6px;  
         left: 540px;
     }
-    .featured-schedule-collection ul li .time-3 {
+    .featured-schedule-collection .schedule-box .links .time-3 {
         right: -216px;
     }
-    .featured-schedule-collection ul li .time-4 {
+    .featured-schedule-collection.schedule-box .links .time-4 {
         width: 170.06px;  
         left: 540px;
     }
-    .featured-schedule-collection ul li .time-5 {
+    .featured-schedule-collection .schedule-box .links .time-5 {
         right: -276px;
     }
-    .featured-schedule-collection ul li:nth-child(even):before {
+    .featured-schedule-collection .schedule-box .links:nth-child(even):before {
         content: '';
         position: absolute;
         left: 509px;
     }
-    .featured-schedule-collection ul li:nth-child(even):after {
+    .featured-schedule-collection .schedule-box .links:nth-child(even):after {
         opacity: 0;
     }
-    .featured-schedule-collection ul li:nth-child(odd):after {
+    .featured-schedule-collection .schedule-box .links:nth-child(odd):after {
         opacity: 0;
     }
 }
