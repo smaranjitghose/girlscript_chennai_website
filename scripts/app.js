@@ -109,7 +109,7 @@ let footer = $(`
 
 </svg>
   </div>
-<footer>
+<footer id="footer">
 <div class="container">
   <div class="row">
 	<div class="col-lg-6 col-md-4 footer-logo"> 
@@ -206,17 +206,28 @@ function changeTheme(value) {
   }
 }
 
+
+const loader = `	`;
+window.onload = function () {
+	
+}
+
 // Window Loads
 $(function () {
   let bodyElement = $(`body`);
-  bodyElement.prepend(header);
+	$('.loader-box').fadeOut(500, function () {
+		$('.loader-box').remove();
+	});
+	bodyElement.prepend(header);
   bodyElement.append(footer);
-  bodyElement.append(goToTopbutton);
+	bodyElement.append(goToTopbutton);
   activeTab();
   if (localStorage["mode"]) {
     changeTheme(localStorage["mode"]);
   }
 });
+
+
 
 window.onscroll = function () {
   scrollFunction();
@@ -248,3 +259,6 @@ function topBtnClick() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+	
