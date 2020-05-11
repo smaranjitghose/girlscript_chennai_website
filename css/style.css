@@ -172,7 +172,13 @@ Nav bar
 
 .navbar {
   background: -o-linear-gradient(left, #f09819, rgb(253, 109, 81));
-  background: -webkit-gradient(linear, left top, right top, from(#f09819), to(rgb(253, 109, 81)));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#f09819),
+    to(rgb(253, 109, 81))
+  );
   background: linear-gradient(to right, #f09819, rgb(253, 109, 81));
   color: #ff9e0f;
   overflow: hidden;
@@ -195,7 +201,7 @@ Nav bar
   -webkit-box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.25);
   position: fixed;
-  z-index:400;
+  z-index: 400;
 }
 
 .navbar a {
@@ -553,130 +559,130 @@ svg {
 
 .wave {
   -webkit-animation: wave 3s linear;
-          animation: wave 3s linear;
+  animation: wave 3s linear;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   fill: var(--footer-bg);
 }
 .drop {
   fill: var(--footer-bg);
   -webkit-animation: drop 3.2s linear infinite normal;
-          animation: drop 3.2s linear infinite normal;
+  animation: drop 3.2s linear infinite normal;
   stroke: var(--footer-bg);
   stroke-width: 0.5;
   -webkit-transform: translateY(25px);
-      -ms-transform: translateY(25px);
-          transform: translateY(25px);
+  -ms-transform: translateY(25px);
+  transform: translateY(25px);
   transform-box: fill-box;
   -webkit-transform-origin: 50% 100%;
-      -ms-transform-origin: 50% 100%;
-          transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
 }
 .drop2 {
   -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  animation-delay: 3s;
   -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  animation-duration: 3s;
 }
 .drop3 {
   -webkit-animation-delay: -2s;
-          animation-delay: -2s;
+  animation-delay: -2s;
   -webkit-animation-duration: 3.4s;
-          animation-duration: 3.4s;
+  animation-duration: 3.4s;
 }
 .drop4 {
   -webkit-animation-delay: 1.7s;
-          animation-delay: 1.7s;
+  animation-delay: 1.7s;
 }
 .drop5 {
   -webkit-animation-delay: 2.7s;
-          animation-delay: 2.7s;
+  animation-delay: 2.7s;
   -webkit-animation-duration: 3.1s;
-          animation-duration: 3.1s;
+  animation-duration: 3.1s;
 }
 .drop6 {
   -webkit-animation-delay: -2.1s;
-          animation-delay: -2.1s;
+  animation-delay: -2.1s;
   -webkit-animation-duration: 3.2s;
-          animation-duration: 3.2s;
+  animation-duration: 3.2s;
 }
 .gooeff {
   -webkit-filter: url(#goo);
-          filter: url(#goo);
+  filter: url(#goo);
   fill: var(--footer-bg);
 }
 
-#wave1{
+#wave1 {
   fill: var(--footer-bg);
 }
 #wave2 {
   -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-duration: 5s;
   animation-direction: reverse;
   fill: var(--wave1-bg);
 }
 
 #wave3 {
   -webkit-animation-duration: 7s;
-          animation-duration: 7s;
+  animation-duration: 7s;
   fill: var(--wave2-bg);
 }
 
 @-webkit-keyframes drop {
   0% {
     -webkit-transform: translateY(25px);
-            transform: translateY(25px);
+    transform: translateY(25px);
   }
   30% {
     -webkit-transform: translateY(-10px) scale(0.1);
-            transform: translateY(-10px) scale(0.1);
+    transform: translateY(-10px) scale(0.1);
   }
   30.001% {
     -webkit-transform: translateY(25px) scale(1);
-            transform: translateY(25px) scale(1);
+    transform: translateY(25px) scale(1);
   }
   70% {
     -webkit-transform: translateY(25px);
-            transform: translateY(25px);
+    transform: translateY(25px);
   }
   100% {
     -webkit-transform: translateY(-10px) scale(0.1);
-            transform: translateY(-10px) scale(0.1);
+    transform: translateY(-10px) scale(0.1);
   }
 }
 
 @keyframes drop {
   0% {
     -webkit-transform: translateY(25px);
-            transform: translateY(25px);
+    transform: translateY(25px);
   }
   30% {
     -webkit-transform: translateY(-10px) scale(0.1);
-            transform: translateY(-10px) scale(0.1);
+    transform: translateY(-10px) scale(0.1);
   }
   30.001% {
     -webkit-transform: translateY(25px) scale(1);
-            transform: translateY(25px) scale(1);
+    transform: translateY(25px) scale(1);
   }
   70% {
     -webkit-transform: translateY(25px);
-            transform: translateY(25px);
+    transform: translateY(25px);
   }
   100% {
     -webkit-transform: translateY(-10px) scale(0.1);
-            transform: translateY(-10px) scale(0.1);
+    transform: translateY(-10px) scale(0.1);
   }
 }
 @-webkit-keyframes wave {
   to {
     -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
 @keyframes wave {
   to {
     -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
 
@@ -1705,7 +1711,8 @@ input:checked + .slider:before {
     url("../assets/Images/Front-img/event.jpg");
   background-image: -webkit-gradient(
       linear,
-      left top, right bottom,
+      left top,
+      right bottom,
       from(rgba(0, 0, 0, 0.8)),
       to(rgba(0, 0, 0, 0.5))
     ),
@@ -1780,20 +1787,20 @@ input:checked + .slider:before {
     opacity: 0;
     text-shadow: 0px 0px 40px #fff;
     -webkit-transform: scale(1.3);
-            transform: scale(1.3);
+    transform: scale(1.3);
   }
   20%,
   75% {
     opacity: 1;
     text-shadow: 0px 0px 1px #fff;
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   100% {
     opacity: 0;
     text-shadow: 0px 0px 50px #fff;
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
 }
 @keyframes blurFadeIn {
@@ -1801,36 +1808,36 @@ input:checked + .slider:before {
     opacity: 0;
     text-shadow: 0px 0px 40px #000;
     -webkit-transform: scale(1.3);
-            transform: scale(1.3);
+    transform: scale(1.3);
   }
   50% {
     opacity: 0.5;
     text-shadow: 0px 0px 10px #000;
     -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    transform: scale(1.1);
   }
   100% {
     opacity: 1;
     text-shadow: 0px 0px 1px #000;
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 @keyframes fadeInBack {
   0% {
     opacity: 0;
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
   50% {
     opacity: 0.4;
     -webkit-transform: scale(2);
-            transform: scale(2);
+    transform: scale(2);
   }
   100% {
     opacity: 0.2;
     -webkit-transform: scale(5);
-            transform: scale(5);
+    transform: scale(5);
   }
 }
 
@@ -1879,135 +1886,129 @@ input:checked + .slider:before {
   }
 }
 
-
-.loader-box{
-  background-color: #000; 
-  position:fixed;
-  top:0;
-  left:0;
+.loader-box {
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
-  height:100%;
-  z-index:999;
+  height: 100%;
+  z-index: 999;
 }
 
 .hollowLoader {
   width: 3rem;
   height: 3rem;
   -webkit-animation: loaderAnim 1.25s infinite ease-in-out;
-          animation: loaderAnim 1.25s infinite ease-in-out;
+  animation: loaderAnim 1.25s infinite ease-in-out;
   outline: 1px solid transparent;
 }
 
 .largeBox {
-    height:3rem;
-    width: 3rem;
-    background-color: #ECECEC;
-    outline: 1px solid transparent;
-    position: fixed;
-  }
+  height: 3rem;
+  width: 3rem;
+  background-color: #ececec;
+  outline: 1px solid transparent;
+  position: fixed;
+}
 
 .smallBox {
-    height: 3rem;
-    width: 3rem;
-    background-color: #000;
-    position: fixed;
-    z-index: 999;
-    outline: 1px solid transparent;
-    -webkit-animation: smallBoxAnim 1.25s alternate infinite ease-in-out;
-            animation: smallBoxAnim 1.25s alternate infinite ease-in-out;
+  height: 3rem;
+  width: 3rem;
+  background-color: #000;
+  position: fixed;
+  z-index: 999;
+  outline: 1px solid transparent;
+  -webkit-animation: smallBoxAnim 1.25s alternate infinite ease-in-out;
+  animation: smallBoxAnim 1.25s alternate infinite ease-in-out;
 }
 @-webkit-keyframes smallBoxAnim {
   0% {
     -webkit-transform: scale(0.2);
-            transform: scale(0.2);
+    transform: scale(0.2);
   }
   100% {
     -webkit-transform: scale(0.75);
-            transform: scale(0.75);
+    transform: scale(0.75);
   }
 }
 @keyframes smallBoxAnim {
   0% {
     -webkit-transform: scale(0.2);
-            transform: scale(0.2);
+    transform: scale(0.2);
   }
   100% {
     -webkit-transform: scale(0.75);
-            transform: scale(0.75);
+    transform: scale(0.75);
   }
 }
 
 @-webkit-keyframes loaderAnim {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-    }
+    transform: rotate(90deg);
+  }
 }
 
 @keyframes loaderAnim {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-    }
+    transform: rotate(90deg);
+  }
 }
 
-
-@media only screen and (max-width:990px){
-  .svg-img{
+@media only screen and (max-width: 990px) {
+  .svg-img {
     position: absolute;
-    top:0;
-    right:0;
-    width:20rem;
+    top: 0;
+    right: 0;
+    width: 20rem;
   }
 }
 
-@media only screen and (max-width:810px){
-  .svg-img{
-    right:-2rem;
-    width:16rem;
-    z-index:-20;
+@media only screen and (max-width: 810px) {
+  .svg-img {
+    right: -2rem;
+    width: 16rem;
+    z-index: -20;
   }
-  .navigation-content a{
-    font-size:1.2rem;
-  }
-}
-
-@media only screen and (max-width:620px){
-  .navigation-content a{
-    font-size:0.9rem;
-  }
-  .svg-img{
-    width:14rem;
-    z-index:-20;
+  .navigation-content a {
+    font-size: 1.2rem;
   }
 }
 
-
-@media only screen and (max-width:590px){
-  
-  .svg-img{
-    top:-110%;
-    left:20%;
-    width:14rem;
-    z-index:-20;
+@media only screen and (max-width: 620px) {
+  .navigation-content a {
+    font-size: 0.9rem;
+  }
+  .svg-img {
+    width: 14rem;
+    z-index: -20;
   }
 }
 
-
+@media only screen and (max-width: 590px) {
+  .svg-img {
+    top: -110%;
+    left: 20%;
+    width: 14rem;
+    z-index: -20;
+  }
+}
