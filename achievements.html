@@ -108,6 +108,7 @@ This project is also meant to be a starting for all techies interested to get th
 		/>
 		<!-- JQuery -->
 		<!--JQuery minified-->
+
 		<script
 			src="https://code.jquery.com/jquery-3.5.0.min.js"
 			integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
@@ -150,7 +151,6 @@ This project is also meant to be a starting for all techies interested to get th
 		<link rel="icon" href="assets/Images/gs.png" type="image/png" sizes="16x16" />
 
 		<!-- Defined scripts -->
-		<script src="./scripts/achievement.js"></script>
 	</head>
 
 	<body class="col1">
@@ -495,10 +495,38 @@ This project is also meant to be a starting for all techies interested to get th
 				</div>
 			</div>
 		</div>
-		<!-- Footer -->
-		<a class="gotopbtn clr-wt" id="topBtn" style="display: none;"> <i class="fa fa-chevron-up clr-wt"></i> </a>
-		<!--External JS File-->
-		<script src="./scripts/app.js"></script>
+
+	 <!-- Footer -->
+  <a class="gotopbtn clr-wt" id="topBtn" style="display: none;"> <i class="fa fa-chevron-up clr-wt"></i> </a>
+    <!--External JS File-->
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/achievement.js"></script>
+	
+	 <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164715490-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-164715490-1');
+
+		// Defer Parsing of JS 
+
+	function downloadJSAtOnload() {
+		var element = document.createElement("script");
+		element.src = "./scripts/achievement.js";
+		document.body.appendChild(element);
+	}
+	if (window.addEventListener)
+		window.addEventListener("load", downloadJSAtOnload, false);
+	else if (window.attachEvent)
+		window.attachEvent("onload", downloadJSAtOnload);
+	else window.onload = downloadJSAtOnload;
+
+	</script>
+<script src="./scripts/cacheImages.js"></script>
+
+</body>
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164715490-1"></script>
