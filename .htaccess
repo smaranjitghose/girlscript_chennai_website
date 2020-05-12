@@ -84,3 +84,7 @@ Header set Cache-Control "max-age=31536000, public"
 <filesMatch ".(css|js)$">
 Header set Cache-Control "max-age=2628000, public"
 </filesMatch>
+
+# BEGIN Turn ETags Off
+FileETag None
+# END Turn ETags Off
