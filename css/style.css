@@ -31,7 +31,7 @@ html {
 html[data-theme='dark'] {
 	--theme-color: #ff8723;
 	--bg1-color: #121212;
-	--font-color: #e9e9e9;
+	--font-color: #fff;
 	--bg2-color: #333333;
 	--shadow-color: #fff;
 	--footer-bg: #383838;
@@ -200,9 +200,10 @@ Nav bar
 
 .navbar a {
 	color: var(--bg1-color);
-	font-weight: bold;
+	font-weight: 600;
 	font-size: 95%;
 	font-family: 'Josefin Sans', sans-serif;
+	transition: 0.6s;
 }
 
 .navbar ul li a:hover {
@@ -213,9 +214,11 @@ Nav bar
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
+	font-family: 'Quicksand', sans-serif;
 	padding-right: 1rem;
 	padding-left: 1rem;
-	border-radius: 0.3rem;
+	border-radius: 2rem;
+	letter-spacing: 1px;
 }
 
 #logo {
@@ -233,6 +236,8 @@ Nav bar
 a.active {
 	color: var(--font-color) !important;
 	font-weight: 800 !important;
+	text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
 }
 
 @media only screen and (max-width: 1185px) {
@@ -700,6 +705,7 @@ footer {
 
 .footer-h2,
 .footer-h3 {
+	font-family: 'Comfortaa', sans-serif;
 	margin-top: 2%;
 	color: var(--footer-clr);
 }
@@ -740,6 +746,7 @@ a.fa-linkedin {
 }
 
 .btn-spl {
+	font-family: 'Quicksand', sans-serif;
 	border-radius: 10em;
 	color: var(--footer-clr);
 	border-color: orangeOrange;
@@ -749,12 +756,12 @@ a.fa-linkedin {
 	-webkit-transition: all 300ms ease-in;
 	-o-transition: all 300ms ease-in;
 	transition: all 300ms ease-in;
-	border-radius: 5px;
+	letter-spacing: 1px;
 }
 
 .btn-spl:hover {
 	background-color: orangeOrange;
-	color: var(--bg1-color);
+	color: white;
 	background: var(--theme-color);
 }
 
@@ -772,14 +779,18 @@ a.fa-linkedin {
 }
 
 .footer-p {
+	font-family: 'Quicksand', sans-serif;
 	margin-top: 1%;
 	color: var(--footer-clr);
+	letter-spacing: 1px;
 }
 .footer-h {
+	font-family: 'Quicksand', sans-serif;
 	color: #fff;
 }
 
 .txtb {
+	font-family: 'Quicksand', sans-serif;
 	-webkit-box-flex: 1;
 	-ms-flex: 1;
 	flex: 1;
@@ -794,9 +805,14 @@ a.fa-linkedin {
 	min-width: 260px;
 }
 
+.txtb::placeholder {
+	font-family: 'Quicksand', sans-serif;
+}
+
 .txtb:focus.txtb:invalid {
 	border: 3px solid orangeOrange;
 }
+
 .txtb:valid {
 	border: 3px solid var(--theme-color);
 }
@@ -1232,7 +1248,7 @@ a.fa-linkedin {
 	transition: all 0.8s ease-in-out;
 }
 .ih-item.circle.effect .info h3 {
-	font-family: 'Baloo Bhaina 2', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	color: #ddd;
 	text-transform: uppercase;
 	position: relative;
