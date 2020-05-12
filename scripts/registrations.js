@@ -98,208 +98,199 @@ let footer = $(`
 </footer>`);
 
 function scrollFunction() {
-  let navBar = document.getElementById("navbar"),
-    logo = document.getElementById("logo");
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    navBar.style.padding = "2px 16px";
-    logo.width = "160px";
-  }
+	let navBar = document.getElementById('navbar'),
+		logo = document.getElementById('logo');
+	if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+		navBar.style.padding = '2px 16px';
+		logo.width = '160px';
+	}
 }
 
 function activeTab() {
-  let navBar = $("#navbarNav");
-  let navItems = navBar[0].children[0].children;
-  let pageName = window.location.pathname.toLowerCase();
-  for (let i = 0; i < navItems.length; i++) {
-    let childHref = navItems[i].children[0].pathname.toLowerCase();
-    if (
-      (childHref === pageName || childHref.includes(pageName)) &&
-      window.location.pathname !== "/"
-    )
-      navItems[i].children[0].classList.add("active");
-    else navItems[i].children[0].classList.remove("active");
-  }
+	let navBar = $('#navbarNav');
+	let navItems = navBar[0].children[0].children;
+	let pageName = window.location.pathname.toLowerCase();
+	for (let i = 0; i < navItems.length; i++) {
+		let childHref = navItems[i].children[0].pathname.toLowerCase();
+		if ((childHref === pageName || childHref.includes(pageName)) && window.location.pathname !== '/')
+			navItems[i].children[0].classList.add('active');
+		else navItems[i].children[0].classList.remove('active');
+	}
 }
 
 function validateFooterForm() {
-  let emailID = document.footermail.email,
-    atpos = emailID.value.indexOf("@"),
-    dotpos = emailID.value.lastIndexOf(".");
+	let emailID = document.footermail.email,
+		atpos = emailID.value.indexOf('@'),
+		dotpos = emailID.value.lastIndexOf('.');
 
-  if (atpos < 1 || dotpos - atpos < 2) {
-    alert("Please enter correct email ID");
-    emailID.focus();
-    return false;
-  }
-  return true;
+	if (atpos < 1 || dotpos - atpos < 2) {
+		alert('Please enter correct email ID');
+		emailID.focus();
+		return false;
+	}
+	return true;
 }
 
 function changeTheme(value) {
-  let docElement = document.documentElement;
-  let checkElement = $("#theme")[0];
-  docElement.classList.add("transition");
-  window.setTimeout(() => {
-    docElement.classList.remove("transition");
-  }, 1000);
-  if (value === "dark" || checkElement.checked) {
-    checkElement.checked = "true";
-    docElement.setAttribute("data-theme", "dark");
-    localStorage.setItem("mode", "dark");
-  } else {
-    checkElement.checked = false;
-    docElement.setAttribute("data-theme", "light");
-    localStorage.setItem("mode", "light");
-  }
+	let docElement = document.documentElement;
+	let checkElement = $('#theme')[0];
+	docElement.classList.add('transition');
+	window.setTimeout(() => {
+		docElement.classList.remove('transition');
+	}, 1000);
+	if (value === 'dark' || checkElement.checked) {
+		checkElement.checked = 'true';
+		docElement.setAttribute('data-theme', 'dark');
+		localStorage.setItem('mode', 'dark');
+	} else {
+		checkElement.checked = false;
+		docElement.setAttribute('data-theme', 'light');
+		localStorage.setItem('mode', 'light');
+	}
 }
 
 // Window Loads
 $(function () {
-  let bodyElement = $(`body`);
-  bodyElement.prepend(header);
-  bodyElement.append(footer);
-  activeTab();
-  if (localStorage["mode"]) {
-    changeTheme(localStorage["mode"]);
-  }
+	let bodyElement = $(`body`);
+	bodyElement.prepend(header);
+	bodyElement.append(footer);
+	activeTab();
+	if (localStorage['mode']) {
+		changeTheme(localStorage['mode']);
+	}
 });
 
 window.onscroll = function () {
-  scrollFunction();
+	scrollFunction();
 };
 
 //Single Declartion of changed theme button
 
 function openNav() {
-  document.getElementById("myNav").style.display = "block";
-  let toggleThemeButton = document.getElementById("themeChangeButton");
-  toggleThemeButton.remove();
-  let positionOfToggleButtonForSmallScreen = document.getElementById(
-    "themeChangeButtonSmallScreen"
-  );
-  positionOfToggleButtonForSmallScreen.appendChild(toggleThemeButton);
+	document.getElementById('myNav').style.display = 'block';
+	let toggleThemeButton = document.getElementById('themeChangeButton');
+	toggleThemeButton.remove();
+	let positionOfToggleButtonForSmallScreen = document.getElementById('themeChangeButtonSmallScreen');
+	positionOfToggleButtonForSmallScreen.appendChild(toggleThemeButton);
 }
 
 function closeNav() {
-  document.getElementById("myNav").style.display = "none";
-  let toggleThemeButton = document.getElementById("themeChangeButton");
-  toggleThemeButton.remove();
-  let positionOfToggleButtonForBigScreen = document.getElementById(
-    "themeChangeButtonBigScreen"
-  );
-  positionOfToggleButtonForBigScreen.appendChild(toggleThemeButton);
+	document.getElementById('myNav').style.display = 'none';
+	let toggleThemeButton = document.getElementById('themeChangeButton');
+	toggleThemeButton.remove();
+	let positionOfToggleButtonForBigScreen = document.getElementById('themeChangeButtonBigScreen');
+	positionOfToggleButtonForBigScreen.appendChild(toggleThemeButton);
 }
 
 // Registration starts
 
 var questions = [
-  { question: "What's your first name?", pattern: "[A-Za-z]" },
-  { question: "What's your last name?", pattern: "[A-Za-z]" },
-  { question: "What's your email?", pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ },
-  { question: "Create your password", type: "password" },
+	{ question: "What's your first name?", pattern: '[A-Za-z]' },
+	{ question: "What's your last name?", pattern: '[A-Za-z]' },
+	{ question: "What's your email?", pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ },
+	{ question: 'Create your password', type: 'password' }
 ];
 
 (function () {
-  var tTime = 100; // transition transform time from #register in ms
-  var wTime = 200; // transition width time from #register in ms
-  var eTime = 1000; // transition width time from inputLabel in ms
+	var tTime = 100; // transition transform time from #register in ms
+	var wTime = 200; // transition width time from #register in ms
+	var eTime = 1000; // transition width time from inputLabel in ms
 
-  // init
-  // --------------
-  var position = 0;
+	// init
+	// --------------
+	var position = 0;
 
-  putQuestion();
+	putQuestion();
 
-  progressButton.addEventListener("click", validate);
-  inputField.addEventListener("keyup", function (e) {
-    transform(0, 0); // ie hack to redraw
-    if (e.keyCode == 13) validate();
-  });
+	progressButton.addEventListener('click', validate);
+	inputField.addEventListener('keyup', function (e) {
+		transform(0, 0); // ie hack to redraw
+		if (e.keyCode == 13) validate();
+	});
 
-  // functions
-  // --------------
+	// functions
+	// --------------
 
-  // load the next question
-  function putQuestion() {
-    inputLabel.innerHTML = questions[position].question;
-    inputField.value = "";
-    inputField.type = questions[position].type || "text";
-    inputField.focus();
-    showCurrent();
-  }
+	// load the next question
+	function putQuestion() {
+		inputLabel.innerHTML = questions[position].question;
+		inputField.value = '';
+		inputField.type = questions[position].type || 'text';
+		inputField.focus();
+		showCurrent();
+	}
 
-  // when all the questions have been answered
-  function done() {
-    // remove the box if there is no next question
-    register.className = "close";
+	// when all the questions have been answered
+	function done() {
+		// remove the box if there is no next question
+		register.className = 'close';
 
-    // add the h1 at the end with the welcome text
-    var h1 = document.createElement("h1");
-    h1.appendChild(
-      document.createTextNode("Welcome " + questions[0].value + "!")
-    );
-    setTimeout(function () {
-      register.parentElement.appendChild(h1);
-      setTimeout(function () {
-        h1.style.opacity = 1;
-      }, 50);
-    }, eTime);
-  }
+		// add the h1 at the end with the welcome text
+		var h1 = document.createElement('h1');
+		h1.appendChild(document.createTextNode('Welcome ' + questions[0].value + '!'));
+		setTimeout(function () {
+			register.parentElement.appendChild(h1);
+			setTimeout(function () {
+				h1.style.opacity = 1;
+			}, 50);
+		}, eTime);
+	}
 
-  // when submitting the current question
-  function validate() {
-    // set the value of the field into the array
-    questions[position].value = inputField.value;
+	// when submitting the current question
+	function validate() {
+		// set the value of the field into the array
+		questions[position].value = inputField.value;
 
-    // check if the pattern matches
-    if (!inputField.value.match(questions[position].pattern || /.+/)) wrong();
-    else
-      ok(function () {
-        // set the progress of the background
-        progress.style.width = (++position * 100) / questions.length + "vw";
+		// check if the pattern matches
+		if (!inputField.value.match(questions[position].pattern || /.+/)) wrong();
+		else
+			ok(function () {
+				// set the progress of the background
+				progress.style.width = (++position * 100) / questions.length + 'vw';
 
-        // if there is a new question, hide current and load next
-        if (questions[position]) hideCurrent(putQuestion);
-        else hideCurrent(done);
-      });
-  }
+				// if there is a new question, hide current and load next
+				if (questions[position]) hideCurrent(putQuestion);
+				else hideCurrent(done);
+			});
+	}
 
-  // helper
-  // --------------
+	// helper
+	// --------------
 
-  function hideCurrent(callback) {
-    inputContainer.style.opacity = 0;
-    inputProgress.style.transition = "none";
-    inputProgress.style.width = 0;
-    setTimeout(callback, wTime);
-  }
+	function hideCurrent(callback) {
+		inputContainer.style.opacity = 0;
+		inputProgress.style.transition = 'none';
+		inputProgress.style.width = 0;
+		setTimeout(callback, wTime);
+	}
 
-  function showCurrent(callback) {
-    inputContainer.style.opacity = 1;
-    inputProgress.style.transition = "";
-    inputProgress.style.width = "100%";
-    setTimeout(callback, wTime);
-  }
+	function showCurrent(callback) {
+		inputContainer.style.opacity = 1;
+		inputProgress.style.transition = '';
+		inputProgress.style.width = '100%';
+		setTimeout(callback, wTime);
+	}
 
-  function transform(x, y) {
-    register.style.transform = "translate(" + x + "px ,  " + y + "px)";
-  }
+	function transform(x, y) {
+		register.style.transform = 'translate(' + x + 'px ,  ' + y + 'px)';
+	}
 
-  function ok(callback) {
-    register.className = "";
-    setTimeout(transform, tTime * 0, 0, 10);
-    setTimeout(transform, tTime * 1, 0, 0);
-    setTimeout(callback, tTime * 2);
-  }
+	function ok(callback) {
+		register.className = '';
+		setTimeout(transform, tTime * 0, 0, 10);
+		setTimeout(transform, tTime * 1, 0, 0);
+		setTimeout(callback, tTime * 2);
+	}
 
-  function wrong(callback) {
-    register.className = "wrong";
-    for (
-      var i = 0;
-      i < 6;
-      i++ // shaking motion
-    )
-      setTimeout(transform, tTime * i, ((i % 2) * 2 - 1) * 20, 0);
-    setTimeout(transform, tTime * 6, 0, 0);
-    setTimeout(callback, tTime * 7);
-  }
+	function wrong(callback) {
+		register.className = 'wrong';
+		for (
+			var i = 0;
+			i < 6;
+			i++ // shaking motion
+		)
+			setTimeout(transform, tTime * i, ((i % 2) * 2 - 1) * 20, 0);
+		setTimeout(transform, tTime * 6, 0, 0);
+		setTimeout(callback, tTime * 7);
+	}
 })();
