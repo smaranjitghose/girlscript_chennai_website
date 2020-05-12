@@ -5,7 +5,7 @@ html {
 	-webkit-font-smoothing: antialiased;
 	scroll-behavior: smooth;
 	--contactForm-opacity: 0.989;
-	--defined-color: white;
+	--defined-color: #000;
 	--box-clr: #fff;
 }
 
@@ -20,27 +20,8 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-.waves {
-	background-color: #000000;
-}
-
 .main-section {
-	padding: 10%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-image: -webkit-gradient(
-			linear,
-			left top,
-			right bottom,
-			from(rgba(0, 0, 0, 0.849)),
-			to(rgba(0, 0, 0, 0.808))
-		),
-		url('../assets/Images/contact/contact.jpg');
-	background-image: -o-linear-gradient(top left, rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.808)),
-		url('../assets/Images/contact/contact.jpg');
-	background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.808)),
-		url('../assets/Images/contact/contact.jpg');
+	padding-top: 10%;
 }
 
 [data-aos^='fade'][data-aos^='fade'].aos-animate {
@@ -49,6 +30,7 @@ body {
 
 .def-sec {
 	color: var(--defined-color);
+	font-weight: 500;
 }
 
 .contact-form {
@@ -265,7 +247,7 @@ input[type='number'] {
 
 .def i {
 	font-size: 27px;
-	color: whitesmoke;
+	color: var(--defined-color);
 	padding-right: 5px;
 }
 
