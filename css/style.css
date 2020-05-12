@@ -25,10 +25,10 @@ html {
 	--bg-image: url('../assets/Images/logo/logo_for_boilerplate_1.png');
 	--logo-image:url('../assets/Images/logo/Logo1.png');
 	--box-shadow: 0 10px 25px rgba(240, 112, 0, 0.23), 0 6px 0px rgba(240, 112, 0, 0.5);
-	--btn-bg: #fff;
-	--nav-bar: linear-gradient(to right, #f09819, rgb(253, 109, 81));
-	--nav-color: #ff9e0f;
-	--nav-clr: #fff;
+	--btn-shadow: 0 5px 10px #ff9a0e;
+	--nav-bar: #fff;
+	--nav-color: #ff9a0e;
+	--nav-clr: #000;
 
 }
 html[data-theme='dark'] {
@@ -48,7 +48,7 @@ html[data-theme='dark'] {
 	--bg-image: url('../assets/Images/logo/logo_for_boilerplate_2.png');
 	--logo-image:url('../assets/Images/logo/Logo2.png');
 	--box-shadow: 0 3px 14px rgba(0, 0, 0, 0.2);
-	--btn-bg: #666;
+	--btn-shadow: 0 3px 14px rgba(0, 0, 0, 0.2);
 	--nav-bar:#000;
 	--nav-color:#000;
 	--nav-clr: rgb(245, 90, 43);
@@ -179,7 +179,7 @@ Nav bar
 
 .navbar {
 	background:var(--nav-bar);
-	color: var(--nav-color);
+	color: var(--nav-bar);
 	overflow: hidden;
 	-webkit-transition: 0.4s;
 	-o-transition: 0.4s;
@@ -201,7 +201,6 @@ Nav bar
 	box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.25);
 	position: fixed;
 	z-index: 400;
-	border-bottom: 1px solid #272727;
 }
 
 .navbar a {
@@ -241,7 +240,7 @@ Nav bar
 }
 
 a.active {
-	color: var(--font-color) !important;
+	color: var(--nav-color) !important;
 	font-weight: 800 !important;
 	text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
     0px -4px 10px rgba(255,255,255,0.3);
@@ -764,6 +763,7 @@ a.fa-linkedin {
 	-o-transition: all 300ms ease-in;
 	transition: all 300ms ease-in;
 	letter-spacing: 1px;
+	border-radius: 5px;
 }
 
 .btn-spl:hover {
@@ -1071,10 +1071,10 @@ a.fa-linkedin {
 	font-size: 16px;
 	color: var(--font-color);
 	font-weight: 700;
-	background-color: var(--btn-bg);
+	background: var(--theme-color);
 	width: 200px;
 	font-family: 'Comfortaa', sans-serif;
-	border-radius: 20px;
+	border-radius: 10px;
 	overflow: hidden;
 	-webkit-transform: perspective(1px) translateZ(0);
 	transform: perspective(1px) translateZ(0);
@@ -1086,32 +1086,8 @@ a.fa-linkedin {
 	transition-duration: 0.5s;
 }
 
-.center-btn-settings:before {
-	content: '';
-	position: absolute;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: var(--theme-color);
-	-webkit-transform: scaleX(0);
-	transform: scaleX(0);
-	-webkit-transform-origin: 0 50%;
-	transform-origin: 0 50%;
-	-webkit-transition-property: transform;
-	transition-property: transform;
-	-webkit-transition-duration: 0.5s;
-	transition-duration: 0.5s;
-	-webkit-transition-timing-function: ease-out;
-	transition-timing-function: ease-out;
-}
-
-.center-btn-settings:hover:before {
-	-webkit-transform: scaleX(1);
-	transform: scaleX(1);
-	-webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-	transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+.center-btn-settings:hover {
+	box-shadow: var(--btn-shadow);
 }
 
 .prodisplay {
@@ -1520,7 +1496,7 @@ a.fa-linkedin {
 	left: 2px;
 	right: 0;
 	bottom: 0;
-	background-color: #fff;
+	background-color: #ff9e0f;
 	-webkit-transition: 0.4s;
 	-o-transition: 0.4s;
 	transition: 0.4s;
@@ -1547,7 +1523,7 @@ a.fa-linkedin {
 }
 
 input:checked + .slider {
-	background-color: #fff;
+	background-color: grey;
 }
 
 input:focus + .slider {
