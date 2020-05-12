@@ -151,7 +151,7 @@ function scrollFunction() {
 		logo.width = '160px';
 	}
 	let goTopBtn = document.getElementById('topBtn');
-	if (document.body.scrollTop > 120|| document.documentElement.scrollTop > 120) {
+	if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
 		goTopBtn.style.opacity = 1;
 		goTopBtn.style.visibility = 'visible';
 	} else {
@@ -161,104 +161,89 @@ function scrollFunction() {
 }
 
 function activeTab() {
-  let navBar = $("#navbarNav");
-  let navItems = navBar[0].children[0].children;
-  let pageName = window.location.pathname.toLowerCase();
-  for (let i = 0; i < navItems.length; i++) {
-    let childHref = navItems[i].children[0].pathname.toLowerCase();
-    if (
-      (childHref === pageName || childHref.includes(pageName)) &&
-      window.location.pathname !== "/"
-    )
-      navItems[i].children[0].classList.add("active");
-    else navItems[i].children[0].classList.remove("active");
-  }
+	let navBar = $('#navbarNav');
+	let navItems = navBar[0].children[0].children;
+	let pageName = window.location.pathname.toLowerCase();
+	for (let i = 0; i < navItems.length; i++) {
+		let childHref = navItems[i].children[0].pathname.toLowerCase();
+		if ((childHref === pageName || childHref.includes(pageName)) && window.location.pathname !== '/')
+			navItems[i].children[0].classList.add('active');
+		else navItems[i].children[0].classList.remove('active');
+	}
 }
 
 function validateFooterForm() {
-  let emailID = document.footermail.email,
-    atpos = emailID.value.indexOf("@"),
-    dotpos = emailID.value.lastIndexOf(".");
+	let emailID = document.footermail.email,
+		atpos = emailID.value.indexOf('@'),
+		dotpos = emailID.value.lastIndexOf('.');
 
-  if (atpos < 1 || dotpos - atpos < 2) {
-    alert("Please enter correct email ID");
-    emailID.focus();
-    return false;
-  }
-  return true;
+	if (atpos < 1 || dotpos - atpos < 2) {
+		alert('Please enter correct email ID');
+		emailID.focus();
+		return false;
+	}
+	return true;
 }
 
 function changeTheme(value) {
-  let docElement = document.documentElement;
-  let checkElement = $("#theme")[0];
-  docElement.classList.add("transition");
-  window.setTimeout(() => {
-    docElement.classList.remove("transition");
-  }, 1000);
-  if (value === "dark" || checkElement.checked) {
-    checkElement.checked = "true";
-    docElement.setAttribute("data-theme", "dark");
-    localStorage.setItem("mode", "dark");
-  } else {
-    checkElement.checked = false;
-    docElement.setAttribute("data-theme", "light");
-    localStorage.setItem("mode", "light");
-  }
+	let docElement = document.documentElement;
+	let checkElement = $('#theme')[0];
+	docElement.classList.add('transition');
+	window.setTimeout(() => {
+		docElement.classList.remove('transition');
+	}, 1000);
+	if (value === 'dark' || checkElement.checked) {
+		checkElement.checked = 'true';
+		docElement.setAttribute('data-theme', 'dark');
+		localStorage.setItem('mode', 'dark');
+	} else {
+		checkElement.checked = false;
+		docElement.setAttribute('data-theme', 'light');
+		localStorage.setItem('mode', 'light');
+	}
 }
-
 
 const loader = `	`;
-window.onload = function () {
-	
-}
+window.onload = function () {};
 
 // Window Loads
 $(function () {
-  let bodyElement = $(`body`);
+	let bodyElement = $(`body`);
 	$('.loader-box').fadeOut(500, function () {
 		$('.loader-box').remove();
 	});
 	bodyElement.prepend(header);
-  bodyElement.append(footer);
+	bodyElement.append(footer);
 	bodyElement.append(goToTopbutton);
-  activeTab();
-  if (localStorage["mode"]) {
-    changeTheme(localStorage["mode"]);
-  }
+	activeTab();
+	if (localStorage['mode']) {
+		changeTheme(localStorage['mode']);
+	}
 });
 
-
-
 window.onscroll = function () {
-  scrollFunction();
+	scrollFunction();
 };
 
 //Single Declartion of changed theme button
 
 function openNav() {
-  document.getElementById("myNav").style.display = "block";
-  let toggleThemeButton = document.getElementById("themeChangeButton");
-  toggleThemeButton.remove();
-  let positionOfToggleButtonForSmallScreen = document.getElementById(
-    "themeChangeButtonSmallScreen"
-  );
-  positionOfToggleButtonForSmallScreen.appendChild(toggleThemeButton);
+	document.getElementById('myNav').style.display = 'block';
+	let toggleThemeButton = document.getElementById('themeChangeButton');
+	toggleThemeButton.remove();
+	let positionOfToggleButtonForSmallScreen = document.getElementById('themeChangeButtonSmallScreen');
+	positionOfToggleButtonForSmallScreen.appendChild(toggleThemeButton);
 }
 
 function closeNav() {
-  document.getElementById("myNav").style.display = "none";
-  let toggleThemeButton = document.getElementById("themeChangeButton");
-  toggleThemeButton.remove();
-  let positionOfToggleButtonForBigScreen = document.getElementById(
-    "themeChangeButtonBigScreen"
-  );
-  positionOfToggleButtonForBigScreen.appendChild(toggleThemeButton);
+	document.getElementById('myNav').style.display = 'none';
+	let toggleThemeButton = document.getElementById('themeChangeButton');
+	toggleThemeButton.remove();
+	let positionOfToggleButtonForBigScreen = document.getElementById('themeChangeButtonBigScreen');
+	positionOfToggleButtonForBigScreen.appendChild(toggleThemeButton);
 }
 
 function topBtnClick() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
 }
-
-
-	
