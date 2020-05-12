@@ -26,11 +26,45 @@ If you want to make changes in this section, carry out the following changes in 
 
 * To change the background image: Go to `event1.css <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/css/event1.css>`__ and search :python:`header`, in the url change the link to a different image. You can add new image in the :python:`../assets/Images/event/image_name` and then add this link in the url. 
 
-
 .. note::
 
    - To change image in responsive mode, change the link of the URL of background image within the media queries, As different background images are currently present for responsive views.
 
+2. **About** : This section describes about the how to kickstart as a beginner.
+
+.. image:: ./images/eventpage/about.JPG
+  :width: 600
+  :align: center
+  :alt: Alternative text
+
+If you want to make changes in this section, carry out the following changes in code:
+
+- To make changes in the heading:  Go to `event1.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/event1.html>`__ and search :python:`container-heading`, you will see <div> tag where you can make changes.
+
+* To make changes in the description:  Go to `event1.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/event1.html>`__ and search :python:`text-container`, you will see <p> tag where you can make changes.
+
+- To change the image: Go to `event1.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/event1.html>`__ and search :python:`Image of event`, you will see <img> tag where in href you can give path of the new image. 
+
+3. **Schedule** : This section contains the timeline of all the events which are going to be conducted by your Girlscript Community.
+
+.. image:: ./images/eventpage/schedule.JPG
+  :width: 600
+  :align: center
+  :alt: Alternative text
+
+If you want to make changes in this section, carry out the following changes in code:
+
+- To make changes in the heading: Go to `event1.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/event1.html>`__ and search :python:`schedule-heading`, you will see <h2> tag where you can make changes.
+
+* To change the icon in the cards:  Go to `event1.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/event1.html>`__ and search :python:`fa` , you will see <i> tag where you can modify the class of your icon.
+
+- To modify the heading and description of card:  Go to `event1.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/event1.html>`__ and search :python:`featured-schedule` , you will see <h2> and <p> tag where you can modify the heading and the description respectively.
+
+* To change the time of the event: Go to `event1.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/event1.html>`__ and search :python:`time` , you will see <h3> tag where you can make changes.
+
+- To add an additional event card: Go to `event1.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/event1.html>`__ and search :python:`col-sm-12 links`, where you can copy the whole <div> and make changes accordingly.
+
+.. note::
    - To get free vector images with high resolution refer `this <https://www.flaticon.com/>`__ .
 
-   
+   * You can refer `this <https://fontawesome.com/v4.7.0/icons/>`__  where you can get different icons according to your requirement and you can copy the html code of the icon to add it in the code and do the further designing.
