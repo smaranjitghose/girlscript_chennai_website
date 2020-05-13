@@ -47,3 +47,13 @@ const generateTrendsCard = (cardDetails, position = 'bottom') => {
 
 }
 
+const injectTrendsCards = () => {
+    trendCardsDetails.forEach((trendCard, index) => {
+        if (index < 2)
+            generateTrendsCard(trendCard, 'top');
+        else
+            generateTrendsCard(trendCard);
+    });
+}
+
+injectTrendsCards();
