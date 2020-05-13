@@ -155,33 +155,70 @@ const teamData = [
 
 const generateCards = cardDetail => {
 	const { name, position, linkedIn, github, image, cssClass } = cardDetail;
-	
 	const teamCard = `
-	<div class="gs-team-member gs-team--${cssClass}">
-      	<div class="gs-team-member-image">
-			<img
-                class="lazy"
-                src=${image}
-                alt=${name}-${position}
-                aria-label=${name}-${position}
-            />
-        </div>
-        <div class="gs-team-member-info">
-              <div class="gs-fullname">${name}</div>
-              <div class="gs-position">${position}</div>
-        </div>
-        <div class="gs-team-member-social">
-            <a href=${github} target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
-            <a
-              href=${linkedIn}
-              target="_blank"
-            >
-            <i class="fab fa-linkedin"></i>
-            </a>
-            </div>
-		</div>`;
+		
+		<div class="col-12 " style="width:600px; height: 400px;">
+		<div class="our-team">
+			<div class="picture">
+				<img class="img-fluid" 
+					class="lazy"
+					src=${image}
+					alt=${name}-${position}
+					aria-label=${name}-${position}
+				>
+			</div>
+			<div class="team-content">
+				<h3 class="name">
+					<div class="gs-fullname">${name}</div>
+				</h3>
+				<h4 class="title">
+					<div class="gs-position">${position}</div>
+				</h4>
+			</div>
+			<ul class="social">
+				<li><a 
+					href=${github} 
+					class="fa fa-github" 
+					aria-hidden="true" 
+					target="_blank">
+					</a></li>
+
+				<li><a 
+					href=${linkedIn} 
+					class="fa fa-linkedin" 
+					aria-hidden="true" 
+					target="_blank">
+					</a></li>
+			</ul>
+			</div>
+		</div>
+	`;
+	// const teamCard = `
+	// <div class="gs-team-member gs-team--${cssClass}" data-tilt >
+    //   	<div class="gs-team-member-image">
+	// 		<img
+    //             class="lazy"
+    //             src=${image}
+    //             alt=${name}-${position}
+    //             aria-label=${name}-${position}
+    //         />
+    //     </div>
+    //     <div class="gs-team-member-info">
+    //           <div class="gs-fullname">${name}</div>
+    //           <div class="gs-position">${position}</div>
+    //     </div>
+    //     <div class="gs-team-member-social">
+    //         <a href=${github} target="_blank">
+    //             <i class="fab fa-github"></i>
+    //         </a>
+    //         <a
+    //           href=${linkedIn}
+    //           target="_blank"
+    //         >
+    //         <i class="fab fa-linkedin"></i>
+    //         </a>
+    //         </div>
+	// 	</div>`;
 
 	let teamCardInjectionSpace = document.getElementById('inject-cards');
 	teamCardInjectionSpace.innerHTML += teamCard;
