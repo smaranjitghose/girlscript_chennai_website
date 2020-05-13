@@ -42,14 +42,14 @@ const generateTrendsCard = (cardDetails, position = 'bottom') => {
 						</div>
 					</a>
                 </div>`;
-    const injectionSection = document.getElementById(`trends-${position}`);
+    let injectionSection = document.getElementById(`trends-${position}`);
     injectionSection.innerHTML += trendCard;
 
 }
 
 const injectTrendsCards = () => {
     trendCardsDetails.forEach((trendCard, index) => {
-        if (index < 2)
+        if (index < 3)
             generateTrendsCard(trendCard, 'top');
         else
             generateTrendsCard(trendCard);
