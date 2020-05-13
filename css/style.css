@@ -29,7 +29,8 @@ html {
 	--nav-bar: #fff;
 	--nav-color: #ff9a0e;
 	--nav-clr: #000;
-
+	--txt-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+ 				  0px -4px 10px rgba(255,255,255,0.3);
 }
 html[data-theme='dark'] {
 	--theme-color: rgb(245, 90, 43);
@@ -50,8 +51,10 @@ html[data-theme='dark'] {
 	--box-shadow: 0 3px 14px rgba(0, 0, 0, 0.2);
 	--btn-shadow: 0 3px 14px rgba(0, 0, 0, 0.2);
 	--nav-bar:#000;
-	--nav-color:#000;
+	--nav-color:#fff;
 	--nav-clr: rgb(245, 90, 43);
+	--txt-shadow: 2px 7px 5px rgba(255,255,255,0.3), 
+ 				  0px -4px 10px rgba(0,0,0,0.3);
 }
 
 body {
@@ -242,8 +245,7 @@ Nav bar
 a.active {
 	color: var(--nav-color) !important;
 	font-weight: 800 !important;
-	text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
-    0px -4px 10px rgba(255,255,255,0.3);
+	text-shadow: var(--txt-shadow);
 }
 
 @media only screen and (max-width: 1185px) {
