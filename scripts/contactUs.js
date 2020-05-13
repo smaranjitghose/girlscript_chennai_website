@@ -1,3 +1,5 @@
+"use strict";
+
 // Remove the spaces from the entered and generated code
 function removeSpaces(string) {
 	return string.split(' ').join('');

@@ -1,3 +1,5 @@
+"use strict";
+
 async function getData() {
 	const cacheVersion = 1;
 	const cacheName = `girlscript-${cacheVersion}`;

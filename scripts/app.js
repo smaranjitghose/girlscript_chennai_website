@@ -1,3 +1,5 @@
+"use strict";
+
 let header = $(`
 <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
   <a class="navbar-brand" href="index.html"><img src="assets/Images/logo/logo1.png" id="logo" alt="Girl Script Chennai Chapter Logo" aria-label="Girl Script Chennai Chapter Logo"></a>

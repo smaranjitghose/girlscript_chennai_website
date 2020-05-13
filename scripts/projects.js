@@ -1,3 +1,5 @@
+"use strict";
+
 const basicCards = document.getElementById('basicCards');
 const moreCards = document.getElementById('moreCards');
 

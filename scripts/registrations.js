@@ -1,3 +1,5 @@
+"use strict";
+
 // NAVBAR AND FOOTER
 
 let header = $(`
