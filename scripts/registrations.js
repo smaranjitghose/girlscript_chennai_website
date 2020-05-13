@@ -71,7 +71,7 @@ let footer = $(`
 <div class="container">
   <div class="row">
 	<div class="col-lg-6 col-md-4 footer-logo"> 
-		<img src="assets/Images/logo/logo.png" alt="Girl Script Chennai Chapter Logo" class="logo" aria-label="Girl Script Chennai Chapter Logo">
+		<img data-src="assets/Images/logo/logo.png" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Girl Script Chennai Chapter Logo" class="logo" aria-label="Girl Script Chennai Chapter Logo">
 	</div>
 	<div class="col-lg-6 col-md-8 mb-5" id="footer-c">		
 	  <br> 
@@ -281,3 +281,13 @@ var questions = [
 		setTimeout(callback, tTime * 7);
 	}
 })();
+
+
+function init() {
+	var imgDefer = document.getElementsByTagName('img');
+	for (var i=0; i<imgDefer.length; i++) {
+	if(imgDefer[i].getAttribute('data-src')) {
+	imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+	} } }
+	window.onload = init;
+	
