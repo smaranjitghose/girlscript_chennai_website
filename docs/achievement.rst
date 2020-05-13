@@ -70,4 +70,4 @@ If you want to make changes in this section, carry out the following changes in 
 
    - To add emojis to the description, you can refer `this <https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md>`__ and copy your desired emoji directly from there.
    
-   - To search images with better quality, you can refer `this <https://unsplash.com/>`__ .
+   * To search images with better quality, you can refer `this <https://unsplash.com/>`__ .
