@@ -12,6 +12,7 @@ html {
 	--line1-clr:#f47621;
 	--br-clr: #000;
 	--card-clr: #f47621;
+	--time-border: #000;
 
 }
 html[data-theme='dark'] {
@@ -24,6 +25,7 @@ html[data-theme='dark'] {
 	--line1-clr: rgb(245, 90, 43);
 	--br-clr: #272727;
 	--card-clr: none;
+	--time-border: #fff;
 }
 
 body {
@@ -212,7 +214,7 @@ h5 {
 
 	.left::before {
 		border-width: 10px 10px 10px 0;
-		border-color: transparent #f47621 transparent transparent;
+		border-color: transparent var(--line-clr) transparent transparent;
 	}
 
 	.right {
@@ -227,8 +229,6 @@ h5 {
 	}
 	.time h5 {
 		font-size: 20px;
-		color: #f47621;
-		font-weight: bolder;
 	}
 	.time-1 {
 		right: 215px;
@@ -237,6 +237,13 @@ h5 {
 		left: -215px;
 	}
 }
+@media screen and (max-width: 760px){
+	.time {
+		border: 1px solid var(--time-border);
+	}
+}
+
+
 @media screen and (max-width: 767px) {
 	.time-1 {
 		right: 125px;
@@ -432,7 +439,7 @@ h5 {
 
 .card-btn {
 	background: var(--theme-color);
-	color: var(--font-color);
+	color: var(--btn-text);
 	font-weight: bold;
 	-webkit-transition: 0.6s;
 	-o-transition: 0.6s;
@@ -446,6 +453,8 @@ h5 {
 
 .card-btn:hover {
 	box-shadow: var(--btn-shadow);
+	-webkit-box-shadow: var(--btn-shadow);
+	color: var(--btn-hover);
 }
 
 .rb1,

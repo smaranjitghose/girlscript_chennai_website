@@ -31,6 +31,9 @@ html {
 	--nav-clr: #000;
 	--txt-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
 	0px -4px 10px rgba(255,255,255,0.3);
+	--navbar-toggle: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+	--btn-text: #fff;
+	--btn-hover: none;
 
 }
 html[data-theme='dark'] {
@@ -56,6 +59,9 @@ html[data-theme='dark'] {
 	--nav-clr: rgb(245, 90, 43);
 	--txt-shadow: 2px 7px 5px rgba(255,255,255,0.3), 
 	0px -4px 10px rgba(0,0,0,0.3);
+	--navbar-toggle: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+	--btn-text: #000;
+	--btn-hover: whitesmoke;
 }
 
 body {
@@ -241,7 +247,7 @@ Nav bar
 }
 
 .navbar-toggler-icon {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+	background-image: var(--navbar-toggle);
 	cursor: pointer;
 }
 
@@ -1074,7 +1080,7 @@ a.fa-linkedin {
 	display: block;
 	padding: 10px 40px;
 	font-size: 16px;
-	color: var(--font-color);
+	color: var(--btn-text);
 	font-weight: 700;
 	background: var(--theme-color);
 	width: 200px;
@@ -1094,6 +1100,9 @@ a.fa-linkedin {
 
 .center-btn-settings:hover {
 	box-shadow: var(--btn-shadow);
+	-webkit-box-shadow: var(--btn-shadow);
+	color: var(--btn-hover);
+
 }
 
 .prodisplay {
@@ -1558,12 +1567,6 @@ input:checked + .slider:before {
 	border-radius: 50%;
 }
 
-@media only screen and (max-width: 991px) {
-	input:checked + .slider {
-		background-color: rgb(106, 68, 241);
-	}
-}
-
 /* Recent Event section */
 .recent-event-section {
 	border-left: 12px solid var(--theme-color);
@@ -1604,6 +1607,7 @@ input:checked + .slider:before {
 	transition: all 1s;
 	border-radius: 20px;
 	cursor: pointer;
+	-webkit-box-shadow: var(--box-shadow);
 	box-shadow: var(--box-shadow);
 	padding: 10px;
 	background-color: var(--bg2-color);
@@ -1619,6 +1623,7 @@ input:checked + .slider:before {
 	transition: all 1s;
 	border-radius: 20px;
 	cursor: pointer;
+	-webkit-box-shadow: var(--box-shadow);
 	box-shadow: var(--box-shadow);
 	padding: 15px;
 	background-color: var(--bg2-color);
