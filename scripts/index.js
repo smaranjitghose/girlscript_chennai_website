@@ -27,3 +27,23 @@ const trendCardsDetails = [
 ];
 
 
+const generateTrendsCard = (cardDetails, position = 'bottom') => {
+    const { backgroundCover, displayName } = cardDetails;
+
+    const trendCard = `<div class="ih-item circle effect">
+					<a>
+						<div class="img">
+							<img src=${backgroundCover} alt=${displayName} aria-label=${displayName} />
+						</div>
+						<div class="info">
+							<div class="info-back">
+								<h3>${displayName}</h3>
+							</div>
+						</div>
+					</a>
+                </div>`;
+    const injectionSection = document.getElementById(`trends-${position}`);
+    injectionSection.innerHTML += trendCard;
+
+}
+
