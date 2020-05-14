@@ -1,0 +1,65 @@
+From 7c736f7b34070119133d7d6fc419eeb6b12c7fb2 Mon Sep 17 00:00:00 2001
+From: adyasha <adyashamohanty8104@gmail.com>
+Date: Thu, 14 May 2020 19:43:57 +0530
+Subject: [PATCH 2/2] minor changes
+
+---
+ assets/css/custom.css | 18 +++++++++++++-----
+ 1 file changed, 13 insertions(+), 5 deletions(-)
+
+diff --git a/assets/css/custom.css b/assets/css/custom.css
+index c9dee02..5f057ea 100644
+--- a/assets/css/custom.css
++++ b/assets/css/custom.css
+@@ -3,6 +3,8 @@ body {
+   -webkit-font-smoothing: antialiased;
+   color: rgb(185, 192, 198);
+   background-color: #000;
++  display: inline;
++  position: relative;
+ }
+ 
+ .wrapper{
+@@ -32,6 +34,11 @@ canvas{
+   color:black;
+ }
+ 
++.inline-btn:hover{
++  background-color: #272727 !important;
++  border: none !important;
++}
++
+ .slidecontainer {
+   width: 100%;
+ }
+@@ -40,7 +47,7 @@ canvas{
+   -webkit-appearance: none;
+   width: 100%;
+   height: 25px;
+-  background: #d3d3d3;
++  background: #272727;
+   outline: none;
+   opacity: 0.7;
+   -webkit-transition: .2s;
+@@ -95,12 +102,13 @@ a:hover {
+ 
+ .footer{
+   text-align: center;
++  padding: 2.5rem 0 0 !important;
+ }
+ 
+ label{
+   font-weight:100 !important;
+ }
+-/* 
+-.column{
+-  padding:5px !important;
+-} */
+\ No newline at end of file
++
++.octocat .octocat-arm, .octocat .octocat-body{
++  fill: #000 !important;
++}
+-- 
+2.24.0.windows.2
+
