@@ -6,11 +6,13 @@ html {
 	scroll-behavior: smooth;
 	--contactForm-opacity: 0.989;
 	--form-bg: #fff;
+	--padding-placeholder: 2px 0 0 8px;
 }
 
 html[data-theme='dark'] {
 	--contactForm-opacity: 0.92;
-	--form-bg: #686868;
+	--form-bg: #707070;
+	--padding-placeholder: 2px;
 }
 
 body {
@@ -117,6 +119,10 @@ body {
 	margin-right: 3px;
 }
 
+.form-control{
+	padding: .35rem .5rem !important;
+}
+
 .form-control-placeholder {
 	font-family: 'Quicksand', sans-serif;
 	position: absolute;
@@ -139,6 +145,7 @@ body {
 	font-weight: bold;
 	color: var(--font-color);
 	cursor: default;
+	padding: var(--padding-placeholder);
 }
 
 .no-border {
@@ -177,8 +184,9 @@ body {
 	position: relative;
 	-webkit-transition-property: color;
 	transition-property: color;
-	-webkit-transition-duration: 0.6s;
-	transition-duration: 0.6s;
+	-webkit-transition: 0.6s;
+	-o-transition: 0.6s;
+	transition: 0.6s;
 }
 
 #submit-button:hover {
