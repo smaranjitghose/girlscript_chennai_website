@@ -4,22 +4,26 @@ html {
 	--box-Shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
 	--projectCard-shadow: 0 5px 10px rgba(73, 52, 52, 0.9);
 	--flapCard-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
-	--bg-Card: rgb(250, 250, 250);
 	--box-clr: #fff;
+	--project-card: #f47621;
+	--project-desc: #f3d3c4;
+	--down-btn:#f47621;
 }
 
 html[data-theme='dark'] {
 	--box-Shadow: 0 2px 0px 0 #fff;
-	--projectCard-shadow: 0 3px 5px #f47621;
+	--projectCard-shadow: 0 3px 14px rgba(0, 0, 0, 0.2);
 	--flapCard-shadow: 0 2px 0px 0 #fff;
-	--bg-Card: #ebebeb;
 	--box-clr: #202020;
+	--project-card: #272727;
+	--project-desc: #272727;
+	--down-btn: #fff;
 }
 
 a.toggle-info {
 	background: var(--bg1-color);
 	border-radius: 4px;
-	color: var(--theme-color);
+	color: var(--down-btn);
 	display: inline-block;
 	padding: 6px 30px 8px;
 	position: relative;
@@ -29,7 +33,7 @@ a.toggle-info {
 	transition: all 0.1s 0s ease-out;
 }
 a.toggle-info:hover {
-	color: var(--font-color);
+	color: var(--nav-clr);
 }
 a.toggle-info .fa-chevron-down {
 	position: absolute;
@@ -84,11 +88,17 @@ a.toggle-info .fa-chevron-up {
 	letter-spacing: 3px;
 }
 
-.rh1,
-.rh2,
-.rh3 {
+.rh1,.rh2,.rh3 {
 	font-size: 20px;
 	letter-spacing: 1.5px;
+}
+
+.container{
+	padding-top: 5px;
+}
+
+.row {
+	padding-top: 35px;
 }
 
 div.achievement-card {
@@ -139,11 +149,11 @@ div.project-card .project-image-holder {
 	background: var(--font-color);
 	height: 0;
 	padding-bottom: 75%;
-	border-top: 4px solid var(--theme-color);
+	border-top: 4px solid var(--project-card);
 }
 
 div.project-card div.project-title {
-	background: var(--theme-color);
+	background: var(--project-card);
 	padding: 8px 15px 10px;
 	position: relative;
 	z-index: 0;
@@ -174,8 +184,8 @@ div.project-card div.project-title h2 small {
 }
 div.project-card div.card-description {
 	padding: 10px 15px 10px;
-	background-color: #f3d3c4;
-	color: black;
+	background-color: var(--project-desc);
+	color: var(--font-color);
 	text-align: justify;
 	position: relative;
 	font-size: 14px;
@@ -187,7 +197,7 @@ div.project-card div.card-actions {
 	font-family: 'Montserrat', sans-serif;
 	-webkit-box-shadow: var(--flapCard-shadow);
 	box-shadow: var(--flapCard-shadow);
-	background-color: #f3d3c4;
+	background-color: var(--project-desc);
 	padding: 10px 15px 20px;
 	text-align: center;
 }
@@ -201,7 +211,7 @@ div.project-card div.card-actions a {
 	font-size: 12px;
 	font-weight: bold;
 	color: white;
-	background-color: #f46721;
+	background-color: var(--theme-color);
 	border-radius: 10em;
 	letter-spacing: 1px;
 }
@@ -292,13 +302,13 @@ div.project-card.show div.flap2 {
 	opacity: 1;
 }
 
-.card-1,
-.card-2,
-.card-3 {
-	background-color: var(--bg-Card);
-	-webkit-box-shadow: var(--flapCard-shadow);
-	box-shadow: var(--flapCard-shadow);
+.card-1,.card-2,.card-3 {
+	border-radius: 20px !important;
+	background-color: var(--bg1-Card);
+	-webkit-box-shadow: var(--box-shadow) !important;
+	box-shadow: var(--box-shadow)!important;
 }
+
 .stat {
 	padding-bottom: 30px;
 }
@@ -328,7 +338,7 @@ div.project-card.show div.flap2 {
 	font-weight: bold;
 	letter-spacing: normal;
 	font-size: 22px;
-	color: #ff8723;
+	color: var(--theme-color);
 }
 
 .margin-button {
@@ -352,19 +362,10 @@ div.project-card.show div.flap2 {
 	color: #fff;
 }
 
-@media only screen and (max-width: 575px) {
-	.card-content {
-		padding-left: 25px;
-		padding-right: 25px;
-	}
-}
+
 
 @media only screen and (max-width: 515px) {
 	.card--1 {
-		padding-left: 0px;
-		padding-right: 0px;
-	}
-	.card--2 {
 		padding-left: 0px;
 		padding-right: 0px;
 	}
@@ -443,15 +444,24 @@ div.project-card.show div.flap2 {
 		margin: auto;
 	}
 	.ct2 {
-		letter-spacing: 2px;
+		letter-spacing: 1px;
 	}
 }
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 500px) {
 	.col1 {
-		width: 390px;
+		width: 450px;
 	}
 	div.project-card {
 		margin: 0px;
 		margin-bottom: 20px;
+	}
+	.card-text{
+		text-align: center;
+	}
+	.achievementCard .card-link{
+		text-align: center;
+	}
+	.card-title{
+		font-size:20px;
 	}
 }
