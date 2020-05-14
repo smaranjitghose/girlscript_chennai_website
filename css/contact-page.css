@@ -12,7 +12,7 @@ html {
 html[data-theme='dark'] {
 	--contactForm-opacity: 0.92;
 	--form-bg: #707070;
-	--padding-placeholder: 2px;
+	--padding-placeholder: 2px 0 0 5px;
 }
 
 body {
@@ -119,10 +119,6 @@ body {
 	margin-right: 3px;
 }
 
-.form-control{
-	padding: .35rem .5rem !important;
-}
-
 .form-control-placeholder {
 	font-family: 'Quicksand', sans-serif;
 	position: absolute;
@@ -155,8 +151,9 @@ body {
 
 .form-control{
 	background-color: var(--form-bg);
-	color: black;
+	color: var(--font-color);
 	font-weight: 500;
+	padding: .35rem .5rem !important;
 }
 
 .no-border:focus {
