@@ -102,4 +102,40 @@ const injectTrendsCards = () => {
 	});
 };
 
+
+const generateInitiavesCard = (initiativeDetail, position) => {
+	const { mainHeading, subHeading, description, classFix, svg } = initiativeDetail;
+	const initiativeCard = `<div class="flip-card ${classFix}">
+						<div class="flip-card-content">
+							<div class="flip-card-front">
+								<h5 class="flip-card-head">
+								${mainHeading}<span>${subHeading}
+								</span>
+								</h5>
+								<div class="flip-card-img">
+									${svg}
+								</div>
+							</div>
+							<div class="flip-card-back">
+								<p class="flip-card-detail">
+									${description}
+								</p>
+							</div>
+						</div>
+					</div>`;
+	
+	const injectionPoint = document.getElementById(`initiatives-${position}`);
+	injectionPoint.innerHTML += initiativeCard;
+}
+
+const injectInitiavesCards = () => {
+	initiativesDetails.forEach((initiativeDetail, index) => {
+		if (index < 2)
+			generateInitiavesCard(initiativeDetail, 'upper');
+		else
+			generateInitiavesCard(initiativeDetail, 'lower');
+	});
+}
+
 injectTrendsCards();
+injectInitiavesCards();
