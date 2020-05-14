@@ -1,3 +1,12 @@
+"use strict";
+
+// import necessary SVG Files
+
+import { openSourceSvg } from './svg.js';
+import { researchWorkSvg } from './svg.js';
+import { publicSpeakingSvg } from './svg.js';
+import { interpersonalSvg } from './svg.js';
+
 const breakPosition = {
 	'0': 'top',
 	'1': 'bottom'
@@ -30,6 +39,41 @@ const trendCardsDetails = [
 	}
 ];
 
+const initiativesDetails = [
+	{
+		mainHeading: 'Open Source',
+		subHeading: 'Projects',
+		description: `Open-source software code. Generally, open source refers to a computer program in
+					which the source code is available to the general public for use.`,
+		classFix: '',
+		svg: openSourceSvg
+	},
+	{
+		mainHeading: 'Research',
+		subHeading: 'Work',
+		description: `Research is "creative and systematic work undertaken to increase the stock of
+					knowledge, and the use of this stock of knowledge to devise new applications."`,
+		classFix: '',
+		svg: researchWorkSvg
+	},
+	{
+		mainHeading: 'Public',
+		subHeading: 'Speaking',
+		description: `GirlScript, with it's various conferences and meet- ups, helps its community to
+					master the art of public speaking and build the leaders of tomorrow.`,
+		classFix: 'fix-touch',
+		svg: publicSpeakingSvg
+	},
+	{
+		mainHeading: 'Interpersonal',
+		subHeading: 'Development',
+		description: `Interpersonal skills are the skills we use every day when we communicate and
+					interact with other people, both individually and in groups.`,
+		classFix: 'fix-touch',
+		svg: interpersonalSvg
+	}
+];
+
 const generateTrendsCard = (cardDetails, position) => {
 	const { backgroundCover, displayName } = cardDetails;
 
@@ -45,7 +89,7 @@ const generateTrendsCard = (cardDetails, position) => {
 						</div>
 					</a>
                 </div>`;
-	console.log(`trends-${position}`);
+
 	let injectionSection = document.getElementById(`trends-${position}`);
 
 	injectionSection.innerHTML += trendCard;
@@ -54,7 +98,6 @@ const generateTrendsCard = (cardDetails, position) => {
 const injectTrendsCards = () => {
 	trendCardsDetails.forEach((trendCard, index) => {
 		const breakPoint = Math.floor(index / 3);
-		console.log(breakPoint);
 		generateTrendsCard(trendCard, breakPosition[breakPoint]);
 	});
 };
