@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import NavLink from '../NavLink';
+import DarkModeToggle from '../DarkModeToggle';
 
 export default function Navbar() {
   return (
@@ -31,45 +33,13 @@ export default function Navbar() {
           id="navbarNav"
         >
           <ul className="navbar-nav ml-5">
-            <li className="nav-item">
-              <a className="nav-link active" href="index.html">
-                <span>HOME</span>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="announcements.html">
-                <span>ANNOUNCEMENTS</span>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="team.html">
-                <span>OUR TEAM</span>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="achievements.html">
-                <span>OUR ACHIEVEMENTS</span>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="blogs.html">
-                <span>BLOGS</span>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="contactUs.html">
-                <span>CONTACT US</span>
-              </a>
-            </li>
-            <div
-              className="nav-item mt-auto mb-auto pl-2"
-              id="themeChangeButtonBigScreen"
-            >
-              <label className="switch" id="themeChangeButton">
-                <input type="checkbox" name="theme" id="theme" />
-                <span className="slider round"></span>
-              </label>
-            </div>
+            <NavLink url="" linkText="HOME" />
+            <NavLink url="" linkText="ANNOUNCEMENTS" />
+            <NavLink url="" linkText="OUR TEAM" />
+            <NavLink url="" linkText="OUR ACHIEVEMENTS" />
+            <NavLink url="" linkText="BLOGS" />
+            <NavLink url="" linkText="CONTACT US" />
+            <DarkModeToggle />
           </ul>
         </div>
       </nav>
