@@ -1064,6 +1064,9 @@ a.fa-linkedin {
 		-webkit-perspective: 700px;
 		perspective: 700px;
 	}
+	input:checked + .slider {
+		border-color: #FCFCFC !important;
+	}
 }
 
 @media only screen and (max-width: 767px) {
@@ -1491,80 +1494,119 @@ a.fa-linkedin {
 /* DARK THEME BUTTON*/
 
 .switch {
-	position: relative;
-	display: inline-block;
-	width: 40px;
-	height: 20px;
-	margin-top: 0.5%;
+  position: relative;
+  display: inline-block;
+  width: 62px;
+	height: 33px;
+	margin-bottom: 0;
 }
 
-.switch input {
-	opacity: 0;
-	width: 0;
-	height: 0;
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
 .slider {
-	position: absolute;
-	cursor: pointer;
-	top: 1px;
-	left: 2px;
-	right: 0;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
 	bottom: 0;
-	background-color: #ff9e0f;
-	-webkit-transition: 0.4s;
-	-o-transition: 0.4s;
-	transition: 0.4s;
-	margin-top: 2px;
+	border-radius: 30px;
+	border: 2px solid rgb(0,204,255);
+  background-color: #81C0D5;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+	width: 22px;
+  left: 4px;
+	bottom: 3px;
+	border-radius: 50%;
+	background-color: #F5EB42;
+  border: 2px solid #E4C74D;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.cloud {
 	position: absolute;
-	content: '';
+	top: 50%;
+	width: 30px;
 	height: 20px;
-	width: 20px;
-	bottom: -2px;
-	background: white url('../assets/Images/dark_mode_switch/sunny.png');
-	background-repeat: no-repeat;
-	background-position: center;
-	-webkit-box-shadow: 0 0px 15px #2020203d;
-	box-shadow: 0 0px 15px #2020203d;
-	background-size: 18px 18px;
-	margin: auto 0;
-	-webkit-transition: 0.4s;
-	-o-transition: 0.4s;
-	transition: 0.4s;
-	right: 0.89rem;
-}
 
+}
+.stars{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	display: none;
+	cursor: pointer;
+}
+.stars span{
+	position: absolute;
+	display: inline-block;
+	background-color: #FCFCFC;
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
+}
+.stars span:first-child{
+	right: 10px;
+	top: 4px;
+}
+.stars span:last-child{
+	top: 50%;
+	left: 15%;
+	height: 8px;
+  width: 8px;
+}
+.stars span:nth-child(2){
+	bottom: 4px;
+	right: 25px;
+}
+.stars span:nth-child(3){
+	left: 20px;
+	top: 3px;
+	opacity: 0.7;
+}
+.stars span:nth-child(4){
+	right: 10px;
+	bottom: 15px;
+	opacity: 0.6;
+	height: 7px;
+	width: 7px;
+	background-color: rgb(192,192,192);
+}
+input:checked ~ .cloud{
+	display: none;
+}
+input:checked ~ .stars {
+	display: block;
+}
 input:checked + .slider {
-	background-color: grey;
+	background-color: #484848;
+  border-color: #202020;
 }
-
+input:checked + .slider:before {
+	border-color: #DEE1C5;
+  background-color: #FFFDF2;
+}
 input:focus + .slider {
-	-webkit-box-shadow: 0 0 1px #000;
-	box-shadow: 0 0 1px #000;
+  box-shadow: 0 0 1px #2196F3;
 }
 
 input:checked + .slider:before {
-	-webkit-transform: translateX(24px);
-	-ms-transform: translateX(24px);
-	transform: translateX(24px);
-	background: white url('../assets/Images/dark_mode_switch/night.png');
-	background-size: 15px 15px;
-	background-repeat: no-repeat;
-	background-position: center;
-	right: 1.5rem;
-}
-
-.slider.round {
-	border-radius: 32px;
-	width: 32px;
-	height: 16px;
-}
-
-.slider.round:before {
-	border-radius: 50%;
+  -webkit-transform: translateX(22px);
+  -ms-transform: translateX(22px);
+  transform: translateX(22px);
 }
 
 /* Recent Event section */
