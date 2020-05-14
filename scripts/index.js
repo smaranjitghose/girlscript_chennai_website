@@ -1,3 +1,5 @@
+"use strict";
+
 // import necessary SVG Files
 
 import { openSourceSvg } from './svg.js';

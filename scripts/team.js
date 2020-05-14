@@ -1,3 +1,5 @@
+"use strict";
+
 const teamData = [
 	{
 		name: 'Smaranjit Ghose',

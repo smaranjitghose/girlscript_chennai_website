@@ -1,3 +1,5 @@
+"use strict";
+
 document.addEventListener('DOMContentLoaded', function () {
 	let lazyImages = [].slice.call(document.querySelectorAll('img.lazy'));
 	let active = false;

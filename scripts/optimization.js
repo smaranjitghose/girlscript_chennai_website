@@ -1,3 +1,5 @@
+"use strict";
+
 function perf(type, name, data, options = '') {
 	console.log(
 		`%c${type}: %c${name} | %c${data ? Math.round(data) + 'ms' : ''} %c${options}`,
