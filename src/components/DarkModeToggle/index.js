@@ -73,7 +73,7 @@ const StyledSlider = styled.span`
   }
 `;
 
-export default function DarkModeToggle() {
+const DarkModeToggle = () => {
   return (
     <div className="nav-item mt-auto mb-auto pl-2">
       <StyledLabel>
@@ -83,3 +83,5 @@ export default function DarkModeToggle() {
     </div>
   );
 }
+
+export default DarkModeToggle;

@@ -17,13 +17,13 @@ const StyledNavLink = styled.li`
   @media only screen and (max-width: 1054px) {
     font-size: 0.71rem;
   }
-
+  
   @media only screen and (max-width: 998px) {
     font-size: 0.7rem;
   }
 `;
 
-const NavLink = (url, linkText) => {
+const NavLink = ({ url, linkText }) => {
   return (
     <StyledNavLink className="nav-item">
       <Link href={url}>
