@@ -6,7 +6,7 @@ let header = $(`
   <div id="myNav" class="fullScreen-navigation">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="navigation-content">
-          <a href="index.html">HOME</a>
+          <a href="index.html" class="active">HOME</a>
           <a href="announcements.html">ANNOUNCEMENTS</a>
           <a href="team.html">OUR TEAM</a>
 		  <a href="achievements.html">OUR ACHIEVEMENTS</a>
