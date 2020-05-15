@@ -24,3 +24,37 @@ const recentEventsDetails = [
         referencePage: '#!'
     }
 ];
+
+
+const generateEventsCard = (eventDetail,fixClassIndex) => {
+    const { coverImage, eventName, altName, eventDescription, referencePage } = eventDetail;
+    const eventCard = `<div class="card r-events-card">
+						<div class="card-image">
+							<img
+								src="${coverImage}"
+								alt="${altName}"
+								aria-label="${altName}"
+							/>
+						</div>
+						<div class="card-text">
+							<h2 class="rh${fixClassIndex}">${eventName}</h2>
+							<p class="pt-1 event-body">
+								${eventDescription}
+							</p>
+						</div>
+						<div class="card-stats">
+							<a href="${referencePage}" class="btn card-btn card1-text card-btn2"> Read More</a>
+						</div>
+					</div>`;
+    console.log(eventCard)
+    const recentEventsSection = document.getElementById('eventCards');
+    recentEventsSection.innerHTML += eventCard;
+}
+
+const insertEventCards = () => {
+    recentEventsDetails.forEach((detail,index) => {
+        generateEventsCard(detail,index+1);
+    });
+}
+
+insertEventCards();
