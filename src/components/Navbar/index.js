@@ -33,12 +33,12 @@ export default function Navbar() {
           id="navbarNav"
         >
           <ul className="navbar-nav ml-5">
-            <NavLink url="" linkText="HOME" />
-            <NavLink url="" linkText="ANNOUNCEMENTS" />
-            <NavLink url="" linkText="OUR TEAM" />
-            <NavLink url="" linkText="OUR ACHIEVEMENTS" />
-            <NavLink url="" linkText="BLOGS" />
-            <NavLink url="" linkText="CONTACT US" />
+            <NavLink url="/" linkText="HOME" />
+            <NavLink url="/announcements" linkText="ANNOUNCEMENTS" />
+            <NavLink url="/team" linkText="OUR TEAM" />
+            <NavLink url="/achievements" linkText="OUR ACHIEVEMENTS" />
+            <NavLink url="/blogs" linkText="BLOGS" />
+            <NavLink url="/contact" linkText="CONTACT US" />
             <DarkModeToggle />
           </ul>
         </div>
