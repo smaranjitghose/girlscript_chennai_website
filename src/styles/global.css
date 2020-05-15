@@ -249,3 +249,10 @@ a.active {
   font-weight: 800 !important;
   text-shadow: var(--txt-shadow);
 }
+
+.temp{
+  margin-top:20vh;
+}
+.center{
+  text-align:center;
+}

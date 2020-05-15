@@ -7,6 +7,7 @@ const TeamPage = () => {
       <Head>
         <title>GirlScript Website Boilerplate | Team </title>
       </Head>
+      <h2 className="center temp">This is Team Page</h2>
     </Layout>
   );
 };

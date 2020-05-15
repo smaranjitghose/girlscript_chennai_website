@@ -7,6 +7,7 @@ const BlogPage = () => {
       <Head>
         <title>GirlScript Website Boilerplate | Blogs</title>
       </Head>
+      <h2 className="center temp">This is Blog Page</h2>
     </Layout>
   );
 };
