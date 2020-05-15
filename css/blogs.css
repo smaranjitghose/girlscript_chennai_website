@@ -4,19 +4,17 @@ html {
 	font-family: 'Raleway', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	scroll-behavior: smooth;
-	--blogCard-shadow: 0 5px 7px black;
+	--blogCard-shadow: 0 10px 25px rgba(240, 112, 0, 0.23), 0 6px 0px rgba(240, 112, 0, 0.5);
 	--rtbInline-shadow: 0 5px 7px black;
 	--box-clr: #fff;
 	--postDate-color: #000;
-	--postDate-bgColor: #fff;
 }
 
 html[data-theme='dark'] {
-	--blogCard-shadow: 0 2px 4px 0 #f47621;
+	--blogCard-shadow: 0 3px 14px rgba(0, 0, 0, 0.2);
 	--rtbInline-shadow: 0 5px 7px #f47621;
-	--box-clr: #202020;
+	--box-clr: #272727;
 	--postDate-color: #fff;
-	--postDate-bgColor: #202020;
 }
 
 body {
@@ -69,6 +67,7 @@ Blog Cards
 	position: relative;
 	padding: 40px 50px 40px !important;
 	margin-top: 10px;
+	border-radius: 5px;
 	z-index: 1;
 	-webkit-box-shadow: var(--blogCard-shadow);
 	box-shadow: var(--blogCard-shadow);
@@ -94,7 +93,6 @@ Blog Cards
 .rtb-col:focus,
 .rtb-col:active {
 	position: relative;
-	/*margin: 0 3px !important;*/
 	z-index: 1;
 	-webkit-box-shadow: var(--blogCard-shadow);
 	box-shadow: var(--blogCard-shadow);
@@ -199,15 +197,15 @@ Blog Cards
 .blog-btn:link,
 .blog-btn:visited{
 	font-family: 'Comfortaa', sans-serif;
-	background-color: var(--btn-bg);
-	color: var(--theme-color);
+	background-color: var(--theme-color);
+	color: var(--btn-text);
 	font-weight: bold;
+	width: 144px;
+	letter-spacing: 0.5px;
 	-webkit-transition: 0.6s;
 	-o-transition: 0.6s;
 	transition: 0.6s;
 	border-radius: 5px;
-	-webkit-box-shadow: 0 2px 7px 0px #ff9a0e;
-	box-shadow: 0 2px 7px 0px #ff9a0e;
 	margin: 1rem auto;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -215,21 +213,18 @@ Blog Cards
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	width: 144px;
-	letter-spacing: 0.5px;
 }
 
 .blog-btn:hover,
 .blog-btn:active {
-	-webkit-box-shadow: 0 5px 8px #ff9a0e;
-	box-shadow: 0 5px 8px #ff9a0e;
-	color: var(--theme-color);;
-	font-weight: bold;
+	box-shadow: var(--btn-shadow);
+	-webkit-box-shadow: var(--btn-shadow);
+	color: var(--btn-hover);
 }
 
 .post-date[data-v-6ad3d82e] {
-	color: var(--postDate-color);
-	background-color: var(--postDate-bgColor);
+	color: var(--postDate-color) !important;
+	background-color: var(--box-clr) !important;
 	border-radius: 5px;
 	cursor: pointer;
 }
