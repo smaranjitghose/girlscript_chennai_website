@@ -309,13 +309,20 @@ a.active {
 .fullScreen-navigation a {
 	padding: 8px;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 25px;
+	font-weight: 600 !important;
 	color: var(--nav-clr);
 	display: block;
 	-webkit-transition: 0.6s;
 	-o-transition: 0.6s;
 	transition: 0.6s;
 	font-weight: 100;
+}
+
+a.home{
+	color: var(--nav-color) !important;
+	font-weight: 800 !important;
+	text-shadow: var(--txt-shadow);
 }
 
 
