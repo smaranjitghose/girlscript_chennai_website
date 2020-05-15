@@ -1,12 +1,12 @@
-"use strict";
+'use strict';
 
 let header = $(`
 <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
   <a class="navbar-brand" href="index.html"><img src="assets/Images/logo/logo1.png" id="logo" alt="Girl Script Chennai Chapter Logo" aria-label="Girl Script Chennai Chapter Logo"></a>
   <div id="myNav" class="fullScreen-navigation">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="navigation-content">
-          <a href="index.html">HOME</a>
+        <div class="navigation-content" id="smallnav">
+          <a class="active home" href="index.html">HOME</a>
           <a href="announcements.html">ANNOUNCEMENTS</a>
           <a href="team.html">OUR TEAM</a>
 		  <a href="achievements.html">OUR ACHIEVEMENTS</a>
@@ -21,7 +21,7 @@ let header = $(`
 	<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 	  <ul class="navbar-nav ml-5">
 		<li class="nav-item">
-		  <a class="nav-link active"  href="index.html"><span>HOME</span></a>
+		  <a class="nav-link active home"  href="index.html"><span>HOME</span></a>
 		</li>
 		<li class="nav-item">
 		  <a class="nav-link" href="announcements.html"><span>ANNOUNCEMENTS</span></a>
@@ -152,9 +152,23 @@ function activeTab() {
 	let pageName = window.location.pathname.toLowerCase();
 	for (let i = 0; i < navItems.length; i++) {
 		let childHref = navItems[i].children[0].pathname.toLowerCase();
-		if ((childHref === pageName || childHref.includes(pageName)) && window.location.pathname !== '/')
+		if ((childHref === pageName || childHref.includes(pageName)) && window.location.pathname !== '/') {
 			navItems[i].children[0].classList.add('active');
-		else navItems[i].children[0].classList.remove('active');
+			navItems[0].children[0].classList.remove('home');
+		} else navItems[i].children[0].classList.remove('active');
+	}
+}
+
+function activeSmallTab() {
+	let navBar = $('#smallnav');
+	let navItems = navBar[0].children;
+	let pageName = window.location.pathname.toLowerCase();
+	for (let i = 0; i < navItems.length; i++) {
+		let childHref = navItems[i].pathname.toLowerCase();
+		if ((childHref === pageName || childHref.includes(pageName)) && window.location.pathname !== '/') {
+			navItems[i].classList.add('active');
+			navItems[0].classList.remove('home');
+		} else navItems[i].classList.remove('active');
 	}
 }
 
@@ -189,6 +203,7 @@ $(function () {
 	bodyElement.append(footer);
 	bodyElement.append(goToTopbutton);
 	activeTab();
+	activeSmallTab();
 	if (localStorage['mode']) {
 		changeTheme(localStorage['mode']);
 	}
@@ -221,11 +236,12 @@ function topBtnClick() {
 	document.documentElement.scrollTop = 0;
 }
 
-
 function init() {
-var imgDefer = document.getElementsByTagName('img');
-for (var i=0; i<imgDefer.length; i++) {
-if(imgDefer[i].getAttribute('data-src')) {
-imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
-} } }
+	var imgDefer = document.getElementsByTagName('img');
+	for (var i = 0; i < imgDefer.length; i++) {
+		if (imgDefer[i].getAttribute('data-src')) {
+			imgDefer[i].setAttribute('src', imgDefer[i].getAttribute('data-src'));
+		}
+	}
+}
 window.onload = init;
