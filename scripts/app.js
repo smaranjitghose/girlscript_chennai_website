@@ -5,8 +5,8 @@ let header = $(`
   <a class="navbar-brand" href="index.html"><img src="assets/Images/logo/logo1.png" id="logo" alt="Girl Script Chennai Chapter Logo" aria-label="Girl Script Chennai Chapter Logo"></a>
   <div id="myNav" class="fullScreen-navigation">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="navigation-content">
-          <a href="index.html">HOME</a>
+        <div class="navigation-content" id="smallnav">
+          <a class="active" href="index.html">HOME</a>
           <a href="announcements.html">ANNOUNCEMENTS</a>
           <a href="team.html">OUR TEAM</a>
 		  <a href="achievements.html">OUR ACHIEVEMENTS</a>
@@ -158,6 +158,18 @@ function activeTab() {
 	}
 }
 
+function activeSmallTab() {
+	let navBar = $('#smallnav');
+	let navItems = navBar[0].children;
+	let pageName = window.location.pathname.toLowerCase();
+	for (let i = 0; i < navItems.length; i++) {
+		let childHref = navItems[i].pathname.toLowerCase();
+		if ((childHref === pageName || childHref.includes(pageName)) && window.location.pathname !== '/')
+			navItems[i].classList.add('active');
+		else navItems[i].classList.remove('active');
+	}
+}
+
 function changeTheme(value) {
 	let docElement = document.documentElement;
 	let checkElement = $('#theme')[0];
@@ -189,6 +201,7 @@ $(function () {
 	bodyElement.append(footer);
 	bodyElement.append(goToTopbutton);
 	activeTab();
+	activeSmallTab();
 	if (localStorage['mode']) {
 		changeTheme(localStorage['mode']);
 	}
