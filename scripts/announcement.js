@@ -7,28 +7,27 @@ const recentEventsDetails = [
                                 Thankyou for being with Girlscript and helping it make a success.`,
 		referencePage: '#!'
 	},
-    {
-        coverImage: 'assets/Images/announcement/contributors.png',
-        eventName: 'Contributions',
-        altName: 'Contributors Illustration',
-        eventDescription: `We are extremely elated to see so many participants coming up with different skills and
+	{
+		coverImage: 'assets/Images/announcement/contributors.png',
+		eventName: 'Contributions',
+		altName: 'Contributors Illustration',
+		eventDescription: `We are extremely elated to see so many participants coming up with different skills and
 								new ways of approaching solution and contribute to the project.`,
-        referencePage: '#!'
-    },
-    {
-        coverImage: 'assets/Images/announcement/DU-Express.png',
-        eventName: 'DU Express',
-        altName: 'DU Express Logo',
-        eventDescription: `We would like to thank DU Express (@DuExpress) to be our Media Partner for GirlScript
+		referencePage: '#!'
+	},
+	{
+		coverImage: 'assets/Images/announcement/DU-Express.png',
+		eventName: 'DU Express',
+		altName: 'DU Express Logo',
+		eventDescription: `We would like to thank DU Express (@DuExpress) to be our Media Partner for GirlScript
 								Summer Of Code 2020.`,
-        referencePage: '#!'
-    }
+		referencePage: '#!'
+	}
 ];
 
-
-const generateEventsCard = (eventDetail,fixClassIndex) => {
-    const { coverImage, eventName, altName, eventDescription, referencePage } = eventDetail;
-    const eventCard = `<div class="card r-events-card">
+const generateEventsCard = (eventDetail, fixClassIndex) => {
+	const { coverImage, eventName, altName, eventDescription, referencePage } = eventDetail;
+	const eventCard = `<div class="card r-events-card">
 						<div class="card-image">
 							<img
 								src="${coverImage}"
@@ -46,15 +45,15 @@ const generateEventsCard = (eventDetail,fixClassIndex) => {
 							<a href="${referencePage}" class="btn card-btn card1-text card-btn2"> Read More</a>
 						</div>
 					</div>`;
-    console.log(eventCard)
-    const recentEventsSection = document.getElementById('eventCards');
-    recentEventsSection.innerHTML += eventCard;
-}
+	
+	const recentEventsSection = document.getElementById('eventCards');
+	recentEventsSection.innerHTML += eventCard;
+};
 
 const insertEventCards = () => {
-    recentEventsDetails.forEach((detail,index) => {
-        generateEventsCard(detail,index+1);
-    });
-}
+	recentEventsDetails.forEach((detail, index) => {
+		generateEventsCard(detail, index + 1);
+	});
+};
 
 insertEventCards();
