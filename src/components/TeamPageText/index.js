@@ -1,4 +1,3 @@
-import './index.module.css';
 import styled from 'styled-components';
 
 const TeamHeading = styled.h1`
@@ -34,20 +33,18 @@ const MainText = styled.h4`
 
 const TeamPageText = () => {
   return (
-    <div className="container">
-      <div className="row">
-        <TeamHeading>
-          Our <span className="team-part">Team</span>
-        </TeamHeading>
-        <TeamDescription>
-          <hr />
-          <MainText>
-            We &apos; ve got a strong team filled with caffeine addicted
-            developers, gradient loving designers and machine like working
-            managers.
-          </MainText>
-        </TeamDescription>
-      </div>
+    <div className="row">
+      <TeamHeading>
+        Our <span className="team-part">Team</span>
+      </TeamHeading>
+      <TeamDescription>
+        <hr />
+        <MainText>
+          We &apos; ve got a strong team filled with caffeine addicted
+          developers, gradient loving designers and machine like working
+          managers.
+        </MainText>
+      </TeamDescription>
     </div>
   );
 };

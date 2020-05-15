@@ -257,3 +257,40 @@ a.active {
 .team-part {
   color: var(--theme-color);
 }
+
+.gs-team--board {
+  -webkit-box-shadow: 8px 8px 0px 0px rgba(239, 112, 0, 0.1),
+    20px 16px 50px -20px rgb(240, 112, 0);
+  box-shadow: 8px 8px 0px 0px rgba(239, 112, 0, 0.1),
+    20px 16px 50px -20px rgb(240, 112, 0);
+}
+.gs-team--tech {
+  -webkit-box-shadow: 8px 8px 0px 0px rgba(51, 105, 30, 0.1),
+    20px 16px 50px -20px rgb(51, 105, 30);
+  box-shadow: 8px 8px 0px 0px rgba(51, 105, 30, 0.1),
+    20px 16px 50px -20px rgb(51, 105, 30);
+}
+.gs-team--mang {
+  -webkit-box-shadow: 8px 8px 0px 0px rgba(136, 14, 79, 0.1),
+    20px 16px 50px -20px rgb(136, 14, 79);
+  box-shadow: 8px 8px 0px 0px rgba(136, 14, 79, 0.1),
+    20px 16px 50px -20px rgb(136, 14, 79);
+}
+.gs-team--board .gs-team-member-social {
+  background-color: rgba(240, 112, 0, 0.75);
+}
+.gs-team--tech .gs-team-member-social {
+  background-color: rgba(51, 105, 30, 0.75);
+}
+.gs-team--mang .gs-team-member-social {
+  background-color: rgba(136, 14, 79, 0.75);
+}
+.gs-team--board .gs-team-member-social :hover {
+  background-color: rgba(240, 112, 0, 0.75);
+}
+.gs-team--tech .gs-team-member-social :hover {
+  background-color: rgba(51, 105, 30, 0.75);
+}
+.gs-team--mang .gs-team-member-social :hover {
+  background-color: rgba(136, 14, 79, 0.75);
+}
