@@ -25,12 +25,14 @@ const StyledNavLink = styled.li`
 
 export default function NavLink({ url, linkText }) {
   return (
-    <StyledNavLink className="nav-item">
-      <Link href={url}>
-        <a className="nav-link">
-          <span>{linkText}</span>
-        </a>
-      </Link>
-    </StyledNavLink>
+    <center>
+      <StyledNavLink className="nav-item">
+        <Link href={url}>
+          <a className="nav-link">
+            <span>{linkText}</span>
+          </a>
+        </Link>
+      </StyledNavLink>
+    </center>
   );
 }
