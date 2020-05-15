@@ -298,52 +298,6 @@ a.active {
 	background-color:var(--nav-bar);
 }
 
-.svg-img {
-	position: absolute;
-	right: 2px;
-	width: 440.7px;
-	height: 390.98px;
-}
-
-@media screen and (max-width: 480px) {
-	.svg-img {
-		width: 240.7px;
-		height: 240.98px;
-	}
-}
-
-#right-wheel,
-#left-wheel {
-	-webkit-animation: wheel 2s infinite linear;
-	animation: wheel 2s infinite linear;
-	-webkit-transform-origin: center;
-	-ms-transform-origin: center;
-	transform-origin: center;
-	transform-box: fill-box;
-}
-
-@-webkit-keyframes wheel {
-	from {
-		-webkit-transform: rotateZ(0deg);
-		transform: rotateZ(0deg);
-	}
-	to {
-		-webkit-transform: rotateZ(360deg);
-		transform: rotateZ(360deg);
-	}
-}
-
-@keyframes wheel {
-	from {
-		-webkit-transform: rotateZ(0deg);
-		transform: rotateZ(0deg);
-	}
-	to {
-		-webkit-transform: rotateZ(360deg);
-		transform: rotateZ(360deg);
-	}
-}
-
 .navigation-content {
 	position: relative;
 	top: 30%;
@@ -380,7 +334,6 @@ a.active {
 
 @media screen and (max-width: 480px) {
 	.navigation-content {
-		top: 10%;
 		margin-top: 10px;
 	}
 
