@@ -250,9 +250,10 @@ a.active {
   text-shadow: var(--txt-shadow);
 }
 
-.temp{
-  margin-top:20vh;
+.container .row:first-child {
+  margin-top: 20vh;
 }
-.center{
-  text-align:center;
+
+.team-part {
+  color: var(--theme-color);
 }

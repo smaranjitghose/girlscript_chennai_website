@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Layout from '../../components/Layout';
+import TeamPageText from '../../components/TeamPageText';
 
 const TeamPage = () => {
   return (
@@ -7,7 +8,7 @@ const TeamPage = () => {
       <Head>
         <title>GirlScript Website Boilerplate | Team </title>
       </Head>
-      <h2 className="center temp">This is Team Page</h2>
+      <TeamPageText />
     </Layout>
   );
 };
