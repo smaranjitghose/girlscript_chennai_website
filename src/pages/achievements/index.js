@@ -8,7 +8,7 @@ const AchievementsPage = () => {
         <title>GirlScript Website Boilerplate | Achievements</title>
       </Head>
 
-      <h2 className="center temp">This is Contact Page</h2>
+      <h2 className="center temp">This is Achievements Page</h2>
     </Layout>
   );
 };
