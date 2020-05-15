@@ -383,3 +383,10 @@ svg {
     transform: translateX(-100%);
   }
 }
+
+.temp {
+  margin-top: 20vh;
+}
+.center {
+  text-align: center;
+}

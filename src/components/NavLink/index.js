@@ -23,7 +23,7 @@ const StyledNavLink = styled.li`
   }
 `;
 
-export default function NavLink({ url, linkText }) {
+const NavLink = ({ url, linkText }) => {
   return (
     <center>
       <StyledNavLink className="nav-item">
@@ -35,4 +35,6 @@ export default function NavLink({ url, linkText }) {
       </StyledNavLink>
     </center>
   );
-}
+};
+
+export default NavLink;

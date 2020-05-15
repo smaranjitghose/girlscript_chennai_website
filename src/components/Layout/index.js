@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 
-export default function Layout({ children }) {
+const Layout = ({ children }) => {
   return (
     <>
       <Head>
@@ -37,4 +37,6 @@ export default function Layout({ children }) {
       <Footer />
     </>
   );
-}
+};
+
+export default Layout;

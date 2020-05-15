@@ -26,7 +26,7 @@ const StyledFooter = styled.footer`
   }
 `;
 
-export default function Footer() {
+const Footer = () => {
   return (
     <>
       <WavesSvg />
@@ -48,4 +48,6 @@ export default function Footer() {
       </StyledFooter>
     </>
   );
-}
+};
+
+export default Footer;
