@@ -20,7 +20,7 @@ const teamData = [
 			{
 				linkedIn: 'https://www.linkedin.com/in/smaranjitghose/',
 				github: 'https://github.com/smaranjitghose',
-				twitter: ''
+				twitter: '#!'
 			}
 		]
 	},
@@ -33,7 +33,7 @@ const teamData = [
 			{
 				linkedIn: 'https://www.linkedin.com/in/anush-bhatia-aa500a158/',
 				github: 'https://github.com/anushbhatia',
-				twitter: ''
+				twitter: '#!'
 			}
 		]
 	},
@@ -46,7 +46,7 @@ const teamData = [
 			{
 				linkedIn: 'https://www.linkedin.com/in/saswat-nayak-a41212166/',
 				github: 'https://github.com/swat1998',
-				twitter: ''
+				twitter: '#!'
 			}
 		]
 	},
@@ -93,8 +93,8 @@ const teamData = [
 		image: 'bidisha_mukherjea.jpg',
 		profiles: [
 			{
-				linkedIn: ' ',
-				github: ' '
+				linkedIn: '#!',
+				github: '#!'
 			}
 		]
 	},
@@ -105,8 +105,8 @@ const teamData = [
 		image: 'ambarish_datar.jpg',
 		profiles: [
 			{
-				linkedIn: ' ',
-				github: ' '
+				linkedIn: '#!',
+				github: '#!'
 			}
 		]
 	},
@@ -118,7 +118,7 @@ const teamData = [
 		profiles: [
 			{
 				linkedIn: 'https://www.linkedin.com/in/apoorvagupta30/',
-				github: ' '
+				github: '#!'
 			}
 		]
 	},
@@ -129,8 +129,8 @@ const teamData = [
 		image: 'Rishabh_Verma.jpg',
 		profiles: [
 			{
-				linkedIn: ' ',
-				github: ' '
+				linkedIn: '#!',
+				github: '#!'
 			}
 		]
 	},
@@ -141,8 +141,8 @@ const teamData = [
 		image: 'arnab_dutta.jpg',
 		profiles: [
 			{
-				linkedIn: ' ',
-				github: ' '
+				linkedIn: '#!',
+				github: '#!'
 			}
 		]
 	},
@@ -154,7 +154,7 @@ const teamData = [
 		profiles: [
 			{
 				linkedIn: 'https://www.linkedin.com/in/suryanshi-kaushik-206433182/',
-				github: ' '
+				github: '#!'
 			}
 		]
 	},
@@ -165,8 +165,8 @@ const teamData = [
 		image: 'ritik_rajput.jpg',
 		profiles: [
 			{
-				linkedIn: '',
-				github: ' '
+				linkedIn: '#!',
+				github: '#!'
 			}
 		]
 	},
@@ -177,8 +177,8 @@ const teamData = [
 		image: 'ram_maheshwari.jpg',
 		profiles: [
 			{
-				linkedIn: '',
-				github: ' '
+				linkedIn: '#!',
+				github: '#!'
 			}
 		]
 	},
@@ -190,7 +190,7 @@ const teamData = [
 		profiles: [
 			{
 				linkedIn: 'https://www.linkedin.com/in/kaurjasprit/',
-				github: ' '
+				github: '#!'
 			}
 		]
 	},
@@ -201,8 +201,8 @@ const teamData = [
 		image: 'sriyash.jpg',
 		profiles: [
 			{
-				linkedIn: ' ',
-				github: ' '
+				linkedIn: '#!',
+				github: '#!'
 			}
 		]
 	},
