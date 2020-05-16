@@ -24,7 +24,7 @@ html[data-theme='dark'] {
 	--line-clr: #272727;
 	--line1-clr: rgb(245, 90, 43);
 	--br-clr: #272727;
-	--card-clr: none;
+	--card-clr: rgb(245, 90, 43);
 	--time-border: #fff;
 }
 

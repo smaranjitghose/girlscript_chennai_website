@@ -21,7 +21,7 @@ async function getData() {
 		'/assets/Images/achievement/ach1.jpg',
 		'/assets/Images/achievement/ach2.jpg',
 		'/assets/Images/achievement/ach3.jpg',
-		'/assets/Images/contact/contact.jpg'
+		'/assets/Images/contact/contact.png'
 	];
 
 	let cachedData = await getCachedData(cacheName, urls);

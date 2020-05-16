@@ -6,8 +6,8 @@ const teamData = [
 		position: 'The Board',
 		linkedIn: 'https://www.linkedin.com/in/smaranjitghose/',
 		github: 'https://github.com/smaranjitghose',
-		cssClass: 'board',
-		image: 'assets/Images/team/smaranjit_ghose.jpg'
+		twitter:'',
+		image: 'https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80'
 	},
 
 	{
@@ -15,8 +15,8 @@ const teamData = [
 		position: 'The Board',
 		linkedIn: 'https://www.linkedin.com/in/anush-bhatia-aa500a158/',
 		github: 'https://github.com/anushbhatia',
-		cssClass: 'board',
-		image: 'assets/Images/team/anush_bhatia.jpg'
+		twitter: '',
+		image: ''
 	},
 
 	{
