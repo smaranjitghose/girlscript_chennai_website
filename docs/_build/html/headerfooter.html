@@ -16,7 +16,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Contact us Page" href="contactus.html" /> 
+    <link rel="prev" title="Register Page" href="register.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
@@ -25,7 +25,7 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="contactus.html" title="Contact us Page"
+          <a href="register.html" title="Register Page"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">Girlscript_website_boilerplate  documentation</a> &#187;</li> 
       </ul>
@@ -38,6 +38,48 @@
             
   <div class="section" id="header-and-footer-section">
 <h1>Header and Footer Section<a class="headerlink" href="#header-and-footer-section" title="Permalink to this headline">¶</a></h1>
+<ol class="arabic simple">
+<li><p><strong>Header</strong>: This section contains the navbar that has the links to other sections of the website.</p></li>
+</ol>
+<p>There are 2 sections within the navbar
+a) Navbar (Laptop View) :</p>
+<a class="reference internal image-reference" href="_images/headerlaptop.JPG"><img alt="Alternative text" class="align-center" src="_images/headerlaptop.JPG" style="width: 600px;" /></a>
+<p>If you want to make changes in this section, carry out the following changes in code:</p>
+<ul class="simple">
+<li><p>To change the logo :  Go to file <a class="reference external" href="https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/app.js">app.js</a> and search <code class="code python docutils literal notranslate"><span class="name"><span class="pre">navbar</span></span><span class="operator"><span class="pre">-</span></span><span class="name"><span class="pre">brand</span></span></code>, you will see  &lt;img&gt; tag where in src you can set the path of the new image.</p></li>
+</ul>
+<ul class="simple">
+<li><p>To modify the navbar items : Go to file <a class="reference external" href="https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/app.js">app.js</a> and search <code class="code python docutils literal notranslate"><span class="name"><span class="pre">nav</span></span><span class="operator"><span class="pre">-</span></span><span class="name"><span class="pre">link</span></span></code>, you will see &lt;span&gt; tag where you can make changes.</p></li>
+</ul>
+<ul class="simple">
+<li><p>To change the link of navbar items : Go to file <a class="reference external" href="https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/app.js">app.js</a> and search <code class="code python docutils literal notranslate"><span class="name"><span class="pre">nav</span></span><span class="operator"><span class="pre">-</span></span><span class="name"><span class="pre">link</span></span></code>, you will see &lt;a&gt; tag where in href you can make changes.</p></li>
+</ul>
+<ul class="simple">
+<li><p>To append an additional navbar item : Go to file <a class="reference external" href="https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/app.js">app.js</a> and search <code class="code python docutils literal notranslate"><span class="name"><span class="pre">nav</span></span><span class="operator"><span class="pre">-</span></span><span class="name"><span class="pre">item</span></span></code>, where you can copy the &lt;li&gt; tag and make the changes accordingly.</p></li>
+</ul>
+<ol class="loweralpha simple" start="2">
+<li><p>Full Screen Navigation (Responsive View) :</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/headerfullnav.JPG"><img alt="Alternative text" class="align-center" src="_images/headerfullnav.JPG" style="width: 600px;" /></a>
+<p>If you want to make changes in this section, carry out the following changes in code:</p>
+<ul class="simple">
+<li><p>To change the svg image :  Go to file <a class="reference external" href="https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/app.js">app.js</a> and search <code class="code python docutils literal notranslate"><span class="name"><span class="pre">svg</span></span><span class="operator"><span class="pre">-</span></span><span class="name"><span class="pre">img</span></span></code>, you will see  &lt;svg&gt; tag where you can modify it.</p></li>
+</ul>
+<ul class="simple">
+<li><p>To modify the navbar items : Go to file <a class="reference external" href="https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/app.js">app.js</a> and search <code class="code python docutils literal notranslate"><span class="name"><span class="pre">navigation</span></span><span class="operator"><span class="pre">-</span></span><span class="name"><span class="pre">content</span></span></code>, you will see &lt;a&gt; tag where you can make changes.</p></li>
+</ul>
+<ul class="simple">
+<li><p>To change the link of navbar items : Go to file <a class="reference external" href="https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/app.js">app.js</a> and search <code class="code python docutils literal notranslate"><span class="name"><span class="pre">navigation</span></span><span class="operator"><span class="pre">-</span></span><span class="name"><span class="pre">content</span></span></code>, you will see &lt;a&gt; tag where in href you can make changes.</p></li>
+</ul>
+<ul class="simple">
+<li><p>To append an additional navbar item : Go to file <a class="reference external" href="https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/app.js">app.js</a> and search <code class="code python docutils literal notranslate"><span class="name"><span class="pre">navigation</span></span><span class="operator"><span class="pre">-</span></span><span class="name"><span class="pre">content</span></span></code>, where you can copy the &lt;a&gt; tag and make the changes accordingly.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>You can refer <a class="reference external" href="https://fontawesome.com/v4.7.0/icons/">this</a>  where you can get different icons according to your requirement and you can copy the html code of that icon and add it into your code and do the further designing.</p></li>
+</ul>
+</div>
 </div>
 
 
@@ -47,8 +89,8 @@
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="contactus.html"
-                        title="previous chapter">Contact us Page</a></p>
+  <p class="topless"><a href="register.html"
+                        title="previous chapter">Register Page</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -77,7 +119,7 @@
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="contactus.html" title="Contact us Page"
+          <a href="register.html" title="Register Page"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">Girlscript_website_boilerplate  documentation</a> &#187;</li> 
       </ul>

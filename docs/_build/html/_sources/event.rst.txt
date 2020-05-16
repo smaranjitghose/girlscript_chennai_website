@@ -46,7 +46,6 @@ If you want to make changes in this section, carry out the following changes in 
 
 - To change the image: Go to `event1.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/event1.html>`__ and search :python:`Image of event`, you will see <img> tag where in href you can give path of the new image. 
 
-
 3. **Schedule** : This section contains the timeline of all the events which are going to be conducted by your Girlscript Chapter.
 
 .. image:: ./images/eventpage/schedule.JPG
@@ -65,6 +64,7 @@ If you want to make changes in this section, carry out the following changes in 
 * To change the time of the event: Go to `event1.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/event1.html>`__ and search :python:`time` , you will see <h3> tag where you can make changes.
 
 - To add an additional event card: Go to `event1.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/event1.html>`__ and search :python:`col-sm-12 links`, where you can copy the whole <div> and make changes accordingly.
+
 
 .. note::
    - To get free vector images with high resolution refer `this <https://www.flaticon.com/>`__ .
