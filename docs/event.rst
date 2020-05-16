@@ -30,6 +30,7 @@ If you want to make changes in this section, carry out the following changes in 
 
    - To change image in responsive mode, change the link of the URL of background image within the media queries, As different background images are currently present for responsive views.
 
+
 2. **About** : This section describes about the how to kickstart as a beginner.
 
 .. image:: ./images/eventpage/about.JPG
@@ -44,6 +45,7 @@ If you want to make changes in this section, carry out the following changes in 
 * To make changes in the description:  Go to `event1.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/event1.html>`__ and search :python:`text-container`, you will see <p> tag where you can make changes.
 
 - To change the image: Go to `event1.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/event1.html>`__ and search :python:`Image of event`, you will see <img> tag where in href you can give path of the new image. 
+
 
 3. **Schedule** : This section contains the timeline of all the events which are going to be conducted by your Girlscript Chapter.
 
@@ -69,3 +71,43 @@ If you want to make changes in this section, carry out the following changes in 
    - To get free vector images with high resolution refer `this <https://www.flaticon.com/>`__ .
 
    * You can refer `this <https://fontawesome.com/v4.7.0/icons/>`__  where you can get different icons according to your requirement and you can copy the html code of the icon to add it in the code and do the further designing.
+
+
+4. **Register**: In this section, the registration of the upcoming event is done.
+
+.. image:: ./images/eventpage/register.PNG
+  :width: 600
+  :align: center
+  :alt: Alternative text
+
+If you want to make changes in this section, carry out the following changes in code:
+
+- To make changes in the heading: Go to `event1.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/event1.html>`__ and search :python:`register-heading`, you will see <h1> tag where you can make changes.
+
+* To make changes in the description: Go to `event1.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/event1.html>`__ and search :python:`register-para`, you will see <div> tag where you can make changes.
+
+- To make changes in the link to register form:  Go to `event1.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/event1.html>`__ and search :python:`register-btn`, you will see <button> tag where in href you can modify the link.
+
+*  To change the background image: Go to `event1.css <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/css/event1.css>`__ and search :python:`.register-section`, in the url change the link to a different image. You can add new image in the :python:`../assets/Images/event/image_name` and then add this link in the url. 
+
+.. note::
+
+   - To change image in responsive mode, change the link of the URL of background image within the media queries, As different background images are currently present for responsive views.
+
+
+5. **FAQs**: In this section all the general queries are answered.
+
+.. image:: ./images/eventpage/faqs.PNG
+  :width: 600
+  :align: center
+  :alt: Alternative text
+
+If you want to make changes in this section, carry out the following changes in code:
+
+- To make changes in the heading: Go to `event1.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/event1.html>`__ and search :python:`faq-heading`, you will see <h1> tag where you can make changes.
+
+* To make changes in the subheading: Go to `event1.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/event1.html>`__ and search :python:`faq-subheading`, you will see <div> tag where you can make changes.
+
+- To modify the questions and answers:  Go to `event1.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/event1.html>`__ and search :python:`question-border` , you will see <h3> and <p> tag where you can modify the question and the answer respectively.
+
+* To add an additional FAQ: Go to `event1.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/event1.html>`__ and search :python:`faq-question`, where you will see <div> with class :python:`row`, you can copy the whole <div> and make changes accordingly.
