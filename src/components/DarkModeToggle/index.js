@@ -82,6 +82,6 @@ const DarkModeToggle = () => {
       </StyledLabel>
     </div>
   );
-}
+};
 
 export default DarkModeToggle;
