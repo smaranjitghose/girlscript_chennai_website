@@ -96,6 +96,24 @@ const memberUpToCardsDetails = [
 	}
 ];
 
+const countDownDetails = [
+	{
+		text: 'Events Conducted',
+		countFrom: 50,
+		iconClasses: 'afab fa fa-laptop fa-3x'
+	},
+	{
+		text: 'Projects Undertaken',
+		countFrom: 15,
+		iconClasses: 'afab fa fa-trophy fa-3x'
+	},
+	{
+		text: 'People Impacted',
+		countFrom: 1500,
+		iconClasses: 'afab fa fa-user fa-3x'
+	}
+];
+
 const produceProjectCards = (cardDetails, mode = 'extra') => {
 	const { coverImage, projectName, projectAuthor, projectDescription, githubLink, alternateName } = cardDetails;
 	const projectCard = `<div class="project-card" onclick="displayCard(this)">
@@ -136,7 +154,7 @@ const produceProjectCards = (cardDetails, mode = 'extra') => {
 	}
 };
 
-const produceUpToCards = (cardDetail,cardNumberFix) => {
+const produceUpToCards = (cardDetail, cardNumberFix) => {
 	const { coverImage, altName, cardTitle, description, referencePage } = cardDetail;
 	const uptoCard = `<div class="col-xl-4 col-lg-6 col-md-6 card--${cardNumberFix}">
 							<div class="card shadow p-3 mb-5 rounded card-${cardNumberFix}">
@@ -164,6 +182,21 @@ const produceUpToCards = (cardDetail,cardNumberFix) => {
 	UpToCardsParent.innerHTML += uptoCard;
 };
 
+const produceCountDownComponent = counDownCard => {
+	const { text, countFrom, iconClasses } = counDownCard;
+
+	const countCard = `<div class="col-md-4 col-sm-4">
+								<div class="stat-items">
+									<i class="afab fa fa-trophy fa-3x"></i>
+									<h2><span class="counter text-center">15</span></h2>
+									<p class="counter-text">Projects Undertaken</p>
+								</div>
+					</div>`;
+
+	const countDownSection = document.getElementById('countDown');
+	countDownSection.innerHTML += countCard;
+};
+
 const injectProjectCards = () => {
 	projectDetails.forEach(cardDetail => {
 		produceProjectCards(cardDetail, 'basic');
@@ -174,10 +207,17 @@ const injectProjectCards = () => {
 };
 
 const injectUpToCards = () => {
-	memberUpToCardsDetails.forEach((cardDetail,index) => {
-		produceUpToCards(cardDetail,index+1);
+	memberUpToCardsDetails.forEach((cardDetail, index) => {
+		produceUpToCards(cardDetail, index + 1);
 	});
 };
 
+const injectCountDownCards = () => {
+	countDownDetails.forEach(cardDetail => {
+		produceCountDownComponent(cardDetail);
+	});
+}
+
+injectCountDownCards();
 injectProjectCards();
 injectUpToCards();
