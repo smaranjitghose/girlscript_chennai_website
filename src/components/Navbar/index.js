@@ -2,7 +2,7 @@ import Link from 'next/link';
 import NavLink from '../NavLink';
 import DarkModeToggle from '../DarkModeToggle';
 
-export default function Navbar() {
+const Navbar = () => {
   return (
     <>
       <nav className="navbar fixed-top navbar-expand-lg" id="navbar">
@@ -45,4 +45,6 @@ export default function Navbar() {
       </nav>
     </>
   );
-}
+};
+
+export default Navbar;

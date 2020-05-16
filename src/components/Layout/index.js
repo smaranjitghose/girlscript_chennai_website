@@ -2,10 +2,14 @@ import Head from 'next/head';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 
-export default function Layout({ children }) {
+const Layout = ({ children }) => {
   return (
     <>
       <Head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
         <link
           rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -28,11 +32,11 @@ export default function Layout({ children }) {
           crossOrigin="anonymous"
         ></script>
       </Head>
-      <header>
-        <Navbar />
-      </header>
+      <Navbar />
       <main>{children}</main>
       <Footer />
     </>
   );
-}
+};
+
+export default Layout;
