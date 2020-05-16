@@ -6,8 +6,8 @@ const teamData = [
 		position: 'The Board',
 		linkedIn: 'https://www.linkedin.com/in/smaranjitghose/',
 		github: 'https://github.com/smaranjitghose',
-		cssClass: 'board',
-		image: 'assets/Images/team/smaranjit_ghose.jpg'
+		twitter:'',
+		image: ''
 	},
 
 	{
@@ -15,8 +15,8 @@ const teamData = [
 		position: 'The Board',
 		linkedIn: 'https://www.linkedin.com/in/anush-bhatia-aa500a158/',
 		github: 'https://github.com/anushbhatia',
-		cssClass: 'board',
-		image: 'assets/Images/team/anush_bhatia.jpg'
+		twitter: '',
+		image: ''
 	},
 
 	{
