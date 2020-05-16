@@ -705,7 +705,7 @@ a.fa-instagram,
 a.fa-twitter,
 a.fa-github,
 a.fa-linkedin {
-	color: #fd751ba6;
+	color: var(--theme-color);
 }
 
 .fa-twitter:hover {
