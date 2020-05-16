@@ -23,11 +23,12 @@ This project is also meant to be a starting for all techies interested to get th
    home
    announcement
    achievement
-   event
-   register
    blog
    team
+   event
+   contributors
    contactus
+   register
    headerfooter
 
 

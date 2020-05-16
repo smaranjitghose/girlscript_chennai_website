@@ -64,6 +64,7 @@ If you want to make changes in this section, carry out the following changes in 
 
 - To add an additional event card: Go to `event1.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/event1.html>`__ and search :python:`col-sm-12 links`, where you can copy the whole <div> and make changes accordingly.
 
+
 .. note::
    - To get free vector images with high resolution refer `this <https://www.flaticon.com/>`__ .
 
