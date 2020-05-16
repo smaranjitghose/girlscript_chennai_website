@@ -3,7 +3,7 @@ html {
 	overflow-x: hidden;
 	--background-clr: linear-gradient(to bottom, #f7a954, white);
 	--shadow-clr: #eee;
-	--bg-clr: linear-gradient(to bottom right, #f2f0d1, #d3e3c1, #f2f0d1);
+	--bg-clr: #fff;
 	--font-clr: #666;
 	--feature-bg: #fff;
 	--feature-box: #313131;
@@ -13,7 +13,7 @@ html[data-theme='dark'] {
 	--shadow-clr: rgba(100, 100, 100, 0.4);
 	--bg-clr:#272727;
 	--font-clr: #fff;
-	--feature-bg: #707070;
+	--feature-bg:#383838;
 	--feature-box:#272727;
 }
 
@@ -485,7 +485,7 @@ header {
 	width: 100%;
 	text-align: center;
 	background: none;
-	color: black;
+	color:var(--font-color);
 }
 
 .featured-schedule-collection > h2 span {
