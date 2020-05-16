@@ -4,7 +4,6 @@ const favClassesDataSet = {
 	linkedIn: 'fa fa-linkedin',
 	twitter: 'fa fa-twitter',
 	github: 'fa fa-github',
-	dribble: 'fa fa-dribble',
 	facebook: 'fa fa-facebook'
 };
 
@@ -16,142 +15,229 @@ const teamData = [
 	{
 		name: 'Smaranjit Ghose',
 		position: 'The Board',
-		linkedIn: 'https://www.linkedin.com/in/smaranjitghose/',
-		github: 'https://github.com/smaranjitghose',
-		image: 'smaranjit_ghose.jpg'
+		image: 'smaranjit_ghose.jpg',
+		profiles: [
+			{
+				linkedIn: 'https://www.linkedin.com/in/smaranjitghose/',
+				github: 'https://github.com/smaranjitghose',
+				twitter: ''
+			}
+		]
 	},
 
 	{
 		name: 'Anush Bhatia',
 		position: 'The Board',
-		linkedIn: 'https://www.linkedin.com/in/anush-bhatia-aa500a158/',
-		github: 'https://github.com/anushbhatia',
-		image: 'anush_bhatia.jpg'
+		image: 'anush_bhatia.jpg',
+		profiles: [
+			{
+				linkedIn: 'https://www.linkedin.com/in/anush-bhatia-aa500a158/',
+				github: 'https://github.com/anushbhatia',
+				twitter: ''
+			}
+		]
 	},
 
 	{
 		name: 'Saswat Nayak',
 		position: 'The Board',
-		linkedIn: 'https://www.linkedin.com/in/saswat-nayak-a41212166/',
-		github: 'https://github.com/swat1998',
-		image: 'saswat_nayak.jpg'
+		image: 'saswat_nayak.jpg',
+		profiles: [
+			{
+				linkedIn: 'https://www.linkedin.com/in/saswat-nayak-a41212166/',
+				github: 'https://github.com/swat1998',
+				twitter: ''
+			}
+		]
 	},
 
 	{
 		name: 'Ousnik Polley',
 		position: 'The Board',
-		linkedIn: 'https://www.linkedin.com/in/ousnikpolley/',
-		github: 'https://github.com/ousnik',
-		image: 'ousnik_polley.jpg'
+		image: 'ousnik_polley.jpg',
+		profiles: [
+			{
+				linkedIn: 'https://www.linkedin.com/in/ousnikpolley/',
+				github: 'https://github.com/ousnik'
+			}
+		]
 	},
 
 	{
 		name: 'Sukkrit Sharma',
 		position: 'The Board',
-		linkedIn: 'https://www.linkedin.com/in/sukkritsharma/',
-		github: 'https://github.com/sukkritsharmaofficial',
-		image: 'sukkrit_sharma.jpg'
+		image: 'sukkrit_sharma.jpg',
+		profiles: [
+			{
+				linkedIn: 'https://www.linkedin.com/in/sukkritsharma/',
+				github: 'https://github.com/sukkritsharmaofficial'
+			}
+		]
 	},
 
 	{
 		name: 'Suhrid Datta',
 		position: 'Technical Team',
-		linkedIn: 'https://www.linkedin.com/in/suhrid-datta-834863157/',
-		github: 'https://github.com/suhriddatta',
-		image: 'suhrid_datta.jpg'
+		image: 'suhrid_datta.jpg',
+		profiles: [
+			{
+				linkedIn: 'https://www.linkedin.com/in/suhrid-datta-834863157/',
+				github: 'https://github.com/suhriddatta'
+			}
+		]
 	},
 
 	{
 		name: 'Bidisha Mukherjee',
 		position: 'Technical Team',
-		linkedIn: ' ',
-		github: ' ',
-		image: 'bidisha_mukherjea.jpg'
+		image: 'bidisha_mukherjea.jpg',
+		profiles: [
+			{
+				linkedIn: ' ',
+				github: ' '
+			}
+		]
 	},
 
 	{
 		name: 'Ambarish Dattar',
 		position: 'Technical Team',
-		linkedIn: ' ',
-		github: ' ',
-		image: 'ambarish_datar.jpg'
+		image: 'ambarish_datar.jpg',
+		profiles: [
+			{
+				linkedIn: ' ',
+				github: ' '
+			}
+		]
 	},
 
 	{
 		name: 'Apoorva Gupta',
 		position: 'Technical Team',
-		linkedIn: 'https://www.linkedin.com/in/apoorvagupta30/',
-		github: ' ',
-		image: 'apoorva_gupta.jpg'
+		image: 'apoorva_gupta.jpg',
+		profiles: [
+			{
+				linkedIn: 'https://www.linkedin.com/in/apoorvagupta30/',
+				github: ' '
+			}
+		]
 	},
 
 	{
 		name: 'Rishabh Verma',
 		position: 'Technical Team',
-		linkedIn: '',
-		github: ' ',
-		image: 'Rishabh_Verma.jpg'
+		image: 'Rishabh_Verma.jpg',
+		profiles: [
+			{
+				linkedIn: ' ',
+				github: ' '
+			}
+		]
 	},
 
 	{
 		name: 'Arnab Dutta Purkayastha',
 		position: 'Creatives Team',
-		linkedIn: '',
-		github: ' ',
-		image: 'arnab_dutta.jpg'
+		image: 'arnab_dutta.jpg',
+		profiles: [
+			{
+				linkedIn: ' ',
+				github: ' '
+			}
+		]
 	},
 
 	{
 		name: 'Suryanshi Kaushik',
 		position: 'Creatives Team',
-		linkedIn: 'https://www.linkedin.com/in/suryanshi-kaushik-206433182/',
-		github: ' ',
-		image: 'suryanshi_kaushik.jpg'
+		image: 'suryanshi_kaushik.jpg',
+		profiles: [
+			{
+				linkedIn: 'https://www.linkedin.com/in/suryanshi-kaushik-206433182/',
+				github: ' '
+			}
+		]
 	},
 
 	{
 		name: 'Ritik Rajput',
 		position: 'Creatives Team',
-		linkedIn: ' ',
-		github: ' ',
-		image: 'ritik_rajput.jpg'
+		image: 'ritik_rajput.jpg',
+		profiles: [
+			{
+				linkedIn: '',
+				github: ' '
+			}
+		]
 	},
 
 	{
 		name: 'Ram Maheshwari',
 		position: 'Management Team',
-		linkedIn: '',
-		github: ' ',
-		image: 'ram_maheshwari.jpg'
+		image: 'ram_maheshwari.jpg',
+		profiles: [
+			{
+				linkedIn: '',
+				github: ' '
+			}
+		]
 	},
 
 	{
 		name: 'Jasprit Kaur',
 		position: 'Publicity Team',
-		linkedIn: 'https://www.linkedin.com/in/kaurjasprit/',
-		github: ' ',
-		image: 'jasprit_kaur.jpg'
+		image: 'jasprit_kaur.jpg',
+		profiles: [
+			{
+				linkedIn: 'https://www.linkedin.com/in/kaurjasprit/',
+				github: ' '
+			}
+		]
 	},
 
 	{
 		name: 'Sriyash',
 		position: 'Management Team',
-		linkedIn: ' ',
-		github: ' ',
-		image: 'sriyash.jpg'
+		image: 'sriyash.jpg',
+		profiles: [
+			{
+				linkedIn: ' ',
+				github: ' '
+			}
+		]
 	},
 
 	{
 		name: 'Rahul Sarvadevabhatla',
 		position: 'Management Team',
-		linkedIn: 'https://www.linkedin.com/in/sarvadevabhatla-rahul-9419981a2/',
-		github: ' ',
-		image: 'rahul_sarvadevabhatla.jpg'
+		image: 'rahul_sarvadevabhatla.jpg',
+		profiles: [
+			{
+				linkedIn: 'https://www.linkedin.com/in/sarvadevabhatla-rahul-9419981a2/',
+				github: ' '
+			}
+		]
 	}
 ];
 
+const generateProfileLinks = profileObject => {
+	let result = [];
+	for (let profile in profileObject) {
+		const classtoAdd = mapProfileLinksToFavClasses(profile);
+		const listItem = `<li>
+							<a href="${profileObject[profile]}" target="__blank">
+								<i class="${classtoAdd}"></i>
+							</a>
+						</li>`;
+		result.push(listItem);
+	}
+	return result.join(' ');
+};
+
 const generateCards = cardDetail => {
-	const { name, position, linkedIn, github, image } = cardDetail;
+	const { name, position, image, profiles } = cardDetail;
+
+	const getProfilesLinksDynamic = generateProfileLinks(profiles[0]);
 
 	const teamCard = `<div class="cardwrapper">
 					<div class="customcard">
@@ -160,12 +246,7 @@ const generateCards = cardDetail => {
 								alt="${name}" aria-label="${name}">
 						</div>
 						<div class="socials">
-							<li><a href="${linkedIn}" target="__blank">
-								<i class="fa fa-linkedin"></i></a>
-							</li>
-							<li><a href="${github}" target="__blank">
-								<i class="fa fa-github"></i></a>
-							</li>
+							${getProfilesLinksDynamic}
 						</div>
 						<div class="details">
 							<h2>${name}<br>
@@ -174,8 +255,8 @@ const generateCards = cardDetail => {
 						</div>
 				
 					</div>
-				</div>`
-	
+				</div>`;
+
 	let teamCardInjectionSpace = document.getElementById('inject-cards');
 	teamCardInjectionSpace.innerHTML += teamCard;
 };
