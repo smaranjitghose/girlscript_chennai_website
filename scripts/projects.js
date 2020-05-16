@@ -187,9 +187,9 @@ const produceCountDownComponent = counDownCard => {
 
 	const countCard = `<div class="col-md-4 col-sm-4">
 								<div class="stat-items">
-									<i class="afab fa fa-trophy fa-3x"></i>
-									<h2><span class="counter text-center">15</span></h2>
-									<p class="counter-text">Projects Undertaken</p>
+									<i class="${iconClasses}"></i>
+									<h2><span class="counter text-center">${countFrom}</span></h2>
+									<p class="counter-text">${text}</p>
 								</div>
 					</div>`;
 
