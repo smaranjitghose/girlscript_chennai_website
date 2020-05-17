@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500;600&family=Baloo+Paaji+2:wght@400;500;600&family=Comfortaa:wght@400;500;600;700&family=Montserrat:wght@100;400;500&family=Quicksand:wght@300;400;500&family=Raleway:wght@300;400;500;600&display=swap');
 
 html {
-	--progress-bgcolor: rgb(247, 183, 109);
+	--progress-bgcolor: #ff8e25;
 	--bg-color: #fff;
 	--register-bgColor: #fff;
 	--next-color: #f5511c;
