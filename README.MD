@@ -34,7 +34,7 @@ This project is also meant to be a starting for all techies interested to get th
 
 | <img src="https://avatars2.githubusercontent.com/u/46641503?v=4" width=150px height=150px/> |
 | :-------------------------------------------------------------------: |
-|                                                                                                                                    **[Smaranjit Ghose](https://github.com/smaranjitghose)**                                                                                                                                                                                                                                                                                                                                      |
+|__[Smaranjit Ghose](https://github.com/smaranjitghose)__|
 | <a href= "https://github.com/smaranjitghose"><img src="https://img.favpng.com/23/4/18/github-computer-icons-gitlab-png-favpng-iV2NWRJ8BzeUSu2TZcUNUCC5Z.jpg" width="32px" height="32px"></a> <a href="https://www.linkedin.com/in/smaranjitghose/">&ensp;&ensp;<img src="https://img.favpng.com/8/16/24/social-media-computer-icons-linkedin-logo-png-favpng-ar5mkcVLJLBzqJGEENKfjMRdk.jpg" width="32px" height="32px"></a>   
  </span><br>
 
