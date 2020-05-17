@@ -233,11 +233,13 @@ h1 {
 }
 
 #success-screen{
-	position:absolute;
-	width:100%;
-	height:100%;
-	z-index:10;
+	position: absolute;
+	min-width:100%;
+	min-height:100%;
+	z-index:2;
 }
 .hide{
 	display:none;
+	opacity:0;
+	visibility: hidden;
 }

@@ -213,7 +213,8 @@ let questions = [
 	function done() {
 		// remove the box if there is no next question
 		register.className = 'close';
-
+		const confettiSuccessScreen = document.getElementById('success-screen');
+		confettiSuccessScreen.classList.remove('hide');
 		// add the h1 at the end with the welcome text
 		let h1 = document.createElement('h1');
 		h1.appendChild(document.createTextNode('Welcome ' + questions[0].value + '!'));
