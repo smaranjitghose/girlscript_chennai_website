@@ -101,8 +101,8 @@ function displayCard(domCard) {
 
 $(function () {
 	$('.material-card > .mc-btn-action').click(function () {
-		var card = $(this).parent('.material-card');
-		var icon = $(this).children('i');
+		let card = $(this).parent('.material-card');
+		let icon = $(this).children('i');
 
 		if (card.hasClass('mc-active')) {
 			card.removeClass('mc-active');

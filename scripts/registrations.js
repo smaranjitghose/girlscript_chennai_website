@@ -163,7 +163,7 @@ window.onload = init;
 
 // Registration starts
 
-var questions = [
+let questions = [
 	{ question: "What's your first name?", pattern: '[A-Za-z]' },
 	{ question: "What's your last name?", pattern: '[A-Za-z]' },
 	{ question: "What's your email?", pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ },
@@ -171,9 +171,9 @@ var questions = [
 ];
 
 (function () {
-	var tTime = 100; // transition transform time from #register in ms
-	var wTime = 200; // transition width time from #register in ms
-	var eTime = 1000; // transition width time from inputLabel in ms
+	let tTime = 100; // transition transform time from #register in ms
+	let wTime = 200; // transition width time from #register in ms
+	let eTime = 1000; // transition width time from inputLabel in ms
 
 	// init....
 	
@@ -204,7 +204,7 @@ var questions = [
 		register.className = 'close';
 
 		// add the h1 at the end with the welcome text
-		var h1 = document.createElement('h1');
+		let h1 = document.createElement('h1');
 		h1.appendChild(document.createTextNode('Welcome ' + questions[0].value + '!'));
 		setTimeout(function () {
 			register.parentElement.appendChild(h1);
@@ -262,7 +262,7 @@ var questions = [
 	function wrong(callback) {
 		register.className = 'wrong';
 		for (
-			var i = 0;
+			let i = 0;
 			i < 6;
 			i++ // shaking motion
 		)
@@ -274,8 +274,8 @@ var questions = [
 
 
 function init() {
-	var imgDefer = document.getElementsByTagName('img');
-	for (var i=0; i<imgDefer.length; i++) {
+	let imgDefer = document.getElementsByTagName('img');
+	for (let i=0; i<imgDefer.length; i++) {
 	if(imgDefer[i].getAttribute('data-src')) {
 	imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
 	} } }

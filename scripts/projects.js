@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const basicCards = document.getElementById('basicCards');
 const moreCards = document.getElementById('moreCards');
@@ -67,7 +67,54 @@ const addditionalProjects = [
 	}
 ];
 
-const produceProjectCards = (cardDetails,mode='extra') => {
+const memberUpToCardsDetails = [
+	{
+		coverImage: './assets/Images/achievement/ach1.jpg',
+		altName: 'forbes30_under_30',
+		cardTitle: 'Forbes 30 under 30',
+		description: `Congratulations to our founding director, Anubha Maneshwar for making it to
+						Forbes under 30 list of class 2020. 300 Entrepreneurs made it to the list in 10
+						categories.`,
+		referencePage: '#!'
+	},
+	{
+		coverImage: './assets/Images/achievement/ach2.jpg',
+		altName: 'education outreach',
+		cardTitle: 'Education Outreach',
+		description: `GirlScript Foundation are here with Education Outreach Scholarship under which
+					first 1000 students will get Scholarship in 5 different courses.`,
+		referencePage: '#!'
+	},
+	{
+		coverImage: './assets/Images/achievement/ach3.jpg',
+		altName: 'APAC 2020 Scholarship',
+		cardTitle: 'APAC 2020 Scholarship',
+		description: `Women Techmakers Scholars Program APAC 2020 Scholarship is an opportunity for
+										all undergraduate women to get a great exposure in the field of Compsc. by
+										encouraging women to excel.`,
+		referencePage: '#!'
+	}
+];
+
+const countDownDetails = [
+	{
+		text: 'Events Conducted',
+		countFrom: 50,
+		iconClasses: 'afab fa fa-laptop fa-3x'
+	},
+	{
+		text: 'Projects Undertaken',
+		countFrom: 15,
+		iconClasses: 'afab fa fa-trophy fa-3x'
+	},
+	{
+		text: 'People Impacted',
+		countFrom: 1500,
+		iconClasses: 'afab fa fa-user fa-3x'
+	}
+];
+
+const produceProjectCards = (cardDetails, mode = 'extra') => {
 	const { coverImage, projectName, projectAuthor, projectDescription, githubLink, alternateName } = cardDetails;
 	const projectCard = `<div class="project-card" onclick="displayCard(this)">
 						<div class="project-image-holder">
@@ -102,23 +149,75 @@ const produceProjectCards = (cardDetails,mode='extra') => {
 					</div>`;
 	if (mode === 'basic') {
 		basicCards.innerHTML += projectCard;
-
-	}
-	else {
+	} else {
 		moreCards.innerHTML += projectCard;
 	}
 };
 
+const produceUpToCards = (cardDetail, cardNumberFix) => {
+	const { coverImage, altName, cardTitle, description, referencePage } = cardDetail;
+	const uptoCard = `<div class="col-xl-4 col-lg-6 col-md-6 card--${cardNumberFix}">
+							<div class="card shadow p-3 mb-5 rounded card-${cardNumberFix}">
+								<img
+									src="${coverImage}"
+									alt="${altName}"
+									class="card-img-top"
+									aria-label="${altName}"
+								/>
+								<div class="card-body">
+									<h5 class="card-title rh${cardNumberFix}">${cardTitle}</h5>
+									<p class="card-text ct${cardNumberFix}">
+										${description}
+									</p>
+									<a href="${referencePage}" class="card-link rbt${cardNumberFix}"
+										>Read full story
 
-const injectProjectCards =  () => {
-	projectDetails.forEach((cardDetail) => {
-		produceProjectCards(cardDetail, 'basic')
+										<i class="fa fa-arrow-right"></i>
+									</a>
+								</div>
+							</div>
+						</div>`;
+
+	const UpToCardsParent = document.getElementById('upToCards');
+	UpToCardsParent.innerHTML += uptoCard;
+};
+
+const produceCountDownComponent = counDownCard => {
+	const { text, countFrom, iconClasses } = counDownCard;
+
+	const countCard = `<div class="col-md-4 col-sm-4">
+								<div class="stat-items">
+									<i class="${iconClasses}"></i>
+									<h2><span class="counter text-center">${countFrom}</span></h2>
+									<p class="counter-text">${text}</p>
+								</div>
+					</div>`;
+
+	const countDownSection = document.getElementById('countDown');
+	countDownSection.innerHTML += countCard;
+};
+
+const injectProjectCards = () => {
+	projectDetails.forEach(cardDetail => {
+		produceProjectCards(cardDetail, 'basic');
 	});
-	addditionalProjects.forEach((cardDetail) => {
-		produceProjectCards(cardDetail)
+	addditionalProjects.forEach(cardDetail => {
+		produceProjectCards(cardDetail);
+	});
+};
+
+const injectUpToCards = () => {
+	memberUpToCardsDetails.forEach((cardDetail, index) => {
+		produceUpToCards(cardDetail, index + 1);
+	});
+};
+
+const injectCountDownCards = () => {
+	countDownDetails.forEach(cardDetail => {
+		produceCountDownComponent(cardDetail);
 	});
 }
 
-
+injectCountDownCards();
 injectProjectCards();
-
+injectUpToCards();
