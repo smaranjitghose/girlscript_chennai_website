@@ -30,25 +30,10 @@ This project is also meant to be a starting for all techies interested to get th
 <h2 align= "center"><b> Project Mentors</b></h2>
 
 
-<span align="center"> 
+|<p align="center"><img width=70% src="https://avatars2.githubusercontent.com/u/46641503?v=4"></p>|<p align="center"><img width=80% src="https://avatars1.githubusercontent.com/u/40017559?s=400&u=1f74977f5a5fd09b42a16df416e9f6674b9b783c&v=4"></p>|
+| ---------------------------------|-----------------------------|
+|<a href="https://github.com/smaranjitghose"><h2 align= "center"><b>Smaranjit Ghose</b></h2></a>|<a href="https://github.com/anushbhatia"><h2 align= "center"><b>Anush Bhatia</b></h2></a>|
 
-| <img src="https://avatars2.githubusercontent.com/u/46641503?v=4" width=150px height=150px/> |
-| :-------------------------------------------------------------------: |
-|__[Smaranjit Ghose](https://github.com/smaranjitghose)__|
-| <a href= "https://github.com/smaranjitghose"><img src="https://img.favpng.com/23/4/18/github-computer-icons-gitlab-png-favpng-iV2NWRJ8BzeUSu2TZcUNUCC5Z.jpg" width="32px" height="32px"></a> <a href="https://www.linkedin.com/in/smaranjitghose/">&ensp;&ensp;<img src="https://img.favpng.com/8/16/24/social-media-computer-icons-linkedin-logo-png-favpng-ar5mkcVLJLBzqJGEENKfjMRdk.jpg" width="32px" height="32px"></a>   
- </span><br>
-
-<span align="center">
-
- |                                                                                                      <img src="https://avatars2.githubusercontent.com/u/40017559?v=4" width=150px height=150px />                                                                             |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                                                                                   **[Anush Bhatia](https://github.com/anushbhatia)**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| <a href="https://github.com/anushbhatia"><img src="https://img.favpng.com/23/4/18/github-computer-icons-gitlab-png-favpng-iV2NWRJ8BzeUSu2TZcUNUCC5Z.jpg" width="32px" height="32px"></a> <a href="https://www.linkedin.com/in/anush-bhatia-aa500a158/">&ensp;&ensp;<img src="https://img.favpng.com/8/16/24/social-media-computer-icons-linkedin-logo-png-favpng-ar5mkcVLJLBzqJGEENKfjMRdk.jpg" width="32px" height="32px"></a>   
- </span><br>
-
-
-
-<div align="center">
 
 [![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/0)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/0)
 [![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/1)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/1)
