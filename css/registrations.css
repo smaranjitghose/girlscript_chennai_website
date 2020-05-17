@@ -48,6 +48,7 @@ h1 {
 	-o-transition: 0.8s ease-in-out;
 	transition: 0.8s ease-in-out;
 	text-align: center;
+	z-index: 100;
 }
 
 #progress {
@@ -237,6 +238,7 @@ h1 {
 	min-width:100%;
 	min-height:100%;
 	z-index:2;
+	background:#29d8d8;
 }
 .hide{
 	display:none;
