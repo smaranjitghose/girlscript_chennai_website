@@ -5,65 +5,40 @@ const moreCards = document.getElementById('moreCards');
 
 const projectDetails = [
 	{
-		coverImage: 'https://source.unsplash.com/300x225/?wave',
-		projectName: 'DeepPixel',
+		coverImage: 'smile_please.jpg',
+		projectName: 'SmilePlease',
 		projectAuthor: 'Smaranjit Ghose',
-		projectDescription: `Create a Python package📦 for plug in and play😎 different image processing and deep
-								learning tasks without having to know about its working and the scary math that follows 😱.`,
-		githubLink: 'https://github.com/smaranjitghose/DeepPixel',
-		alternateName: 'Wave'
+		projectDescription: `Wondering, if you could build the spell behind Apple's FaceID or perhaps even something better?But where, to start from..?Well, Python has your back for this as you craft your first script that detects a face to your attempt to reach the state-of-the-artzap
+		`,
+		githubLink: 'https://github.com/smaranjitghose/SmilePlease',
+		alternateName: 'Smileplease Project'
 	},
 	{
-		coverImage: 'https://source.unsplash.com/300x225/?beach',
-		projectName: 'Notepy',
+		coverImage: 'chrome_profiler.jpg',
+		projectName: 'Profile Chrome Extension',
 		projectAuthor: 'Smaranjit Ghose',
-		projectDescription: `Who doesn't the remember the legend👑 of notepad! Before there was VSCODE,Sublime,Atom
-								or PyCharm, notepad was your defacto text editor⚡`,
-		githubLink: 'https://github.com/smaranjitghose/smaransnotepy',
-		alternateName: 'Beach'
+		projectDescription: `Tried of having all your favorite links cluttered and messed in yur bookmarks? Then we might a solution for you! Check out our simple chrome extension for keeping all your social media profiles under the same roof right by your side at all times!`,
+		githubLink: 'https://github.com/smaranjitghose/profile_chrome_extension',
+		alternateName: 'Profile extension'
 	},
 	{
-		coverImage: 'https://source.unsplash.com/300x225/?mountain',
-		projectName: 'AutoPromPicker',
+		coverImage: 'Anonymizer.jpg',
+		projectName: 'Face Anonymizer',
 		projectAuthor: 'Smaranjit Ghose',
-		projectDescription: `"Nah! That's just a fairytale scenario", if this is your thought about prom then maybe
-								python 🐍can do some magic do ensure that we can pair all of our mates in a manner they
-								never break up`,
-		githubLink: 'https://https://github.com/smaranjitghose/AutoPromPicker',
-		alternateName: 'Mountain'
+		projectDescription: `A python project that uses facial recognition to anonymize your face.`,
+		githubLink: 'https://github.com/smaranjitghose/incognitopy',
+		alternateName: 'Face Anonymizer Project'
 	}
 ];
 
 const addditionalProjects = [
 	{
-		coverImage: 'https://source.unsplash.com/300x225/?field',
-		projectName: 'SmilePlease sketchPy',
+		coverImage: 'invisibility.jpg',
+		projectName: 'Cloak of Invisibility',
 		projectAuthor: 'Smaranjit Ghose',
-		projectDescription: `Your face 😍is an incredible thing that you possess. From granting you an unique
-								identity to bringing out your charisma😎 to share with the world, the human face holds a
-								lot of information.`,
-		githubLink: 'https://github.com/smaranjitghose/SmilePlease',
-		alternateName: 'Field'
-	},
-	{
-		coverImage: 'https://source.unsplash.com/300x225/?water',
-		projectName: 'sketchPy',
-		projectAuthor: 'Smaranjit Ghose',
-		projectDescription: `Ever wondered where that artist in you 👨‍🎨 got lost in the turmoil of career pursuits 👨‍💼?
-								Yes! That creative mind of yours 🧠🔥 which used draw potraits of anything you saw asap.
-								Well, pass a smile 😊 because python🐍 has your back now with another magic spell!`,
-		githubLink: 'https://github.com/smaranjitghose/sketchPy',
-		alternateName: 'Water'
-	},
-	{
-		coverImage: 'https://source.unsplash.com/300x225/?river',
-		projectName: 'Floodater',
-		projectAuthor: 'Smaranjit Ghose',
-		projectDescription: `The romantic atmosphere, chilling effect, those evening savouries and the very sound of
-								rain itself is mesmerizing to most of us. While being proporous in many cases like
-								farming the rains can cause havoc too if it happens continuously in excess`,
-		githubLink: 'https://github.com/smaranjitghose/floodater',
-		alternateName: 'River'
+		projectDescription: `Ever wondered how Harry Potter used to become invisible using the cloak of invisibility.Now its your turn to do the same cuz python's here to help you experience magic in real life..!`,
+		githubLink: 'https://github.com/smaranjitghose/PyDeceive/tree/master',
+		alternateName: 'Cloak of Invisibility Project'
 	}
 ];
 
@@ -120,9 +95,10 @@ const produceProjectCards = (cardDetails, mode = 'extra') => {
 						<div class="project-image-holder">
 							<img
 								class="project-image"
-								src=${coverImage}
+								src="/assets/Images/projects/${coverImage}"
 								alt=${alternateName}
 								aria-label=${alternateName}
+								height="225" width="300"
 							/>
 						</div>
 						<div class="project-title">
