@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 GirlScript Website Boilerplate
-==========================================================
+===============================
 
 .. image:: ./images/logo_for_boilerplate.png
   :width: 200
@@ -14,6 +14,36 @@ GirlScript Website Boilerplate
 This is an open source project for creating a website that shall serve as a boilerplate for various chapters of GirlScript. With certain modifications to the content specific to the chapter using this, the need to build a website from scratch and the pains of fixing bugs and figuring out what part fits where is eliminated. Feel free to use this!. If this project helps you out, please give us a mention. Also, we would love to see your version of the same! Do a give a PR in a different branch that showcases how you used this!
 
 This project is also meant to be a starting for all techies interested to get their hands dirty in open-source contributions. A highlight of this project being this project is "built by the community for the community".
+
+----------------------------------------------------------------------
+
+**Contributor Covenant Code of Conduct**
+
+The code of conduct helps to welcome all people to contribute and pledges in return to value them as whole human beings and to foster an atmosphere of kindness, cooperation, and understanding.
+
+So to read more about it click `here <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/Code_of_Conduct.md>`__ .
+
+
+**Contributing Guidelines**
+
+We value all the people who are interested in contributing to Girlscript website boilerplate. This is required to create a unified development environment.These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
+
+We want to make contributing to this project as easy and transparent as possible, whether it's:
+
+- Reporting a bug
+
+* Submitting a fix
+
+- Proposing new features
+
+You can click `here <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/CONTRIBUTING.md>`__ to know about the complete guidelines to follow for contributing to this project.
+
+
+**License**
+
+To read about License and Copyrights click `here <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/LICENSE>`__.
+
+----------------------------------------------------------------------
 
 **Content**
 
@@ -31,4 +61,5 @@ This project is also meant to be a starting for all techies interested to get th
    register
    headerfooter
 
+   
 
