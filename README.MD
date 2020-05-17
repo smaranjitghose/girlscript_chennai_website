@@ -32,7 +32,7 @@ This project is also meant to be a starting for all techies interested to get th
 
 |<p align="center"><img width=70% src="https://avatars2.githubusercontent.com/u/46641503?v=4"></p>|<p align="center"><img width=80% src="https://avatars1.githubusercontent.com/u/40017559?s=400&u=1f74977f5a5fd09b42a16df416e9f6674b9b783c&v=4"></p>|
 | ---------------------------------|-----------------------------|
-|<a href="https://github.com/smaranjitghose"><h2 align= "center"><b>Smaranjit Ghose</b></h2></a>|<a href="https://github.com/anushbhatia"><h2 align= "center"><b>Anush Bhatia</b></h2></a>|
+|<a href="https://github.com/smaranjitghose"><h2 align= "center">Smaranjit Ghose</h2></a>|<a href="https://github.com/anushbhatia"><h2 align= "center">Anush Bhatia</h2></a>|
 
 
 [![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/0)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/0)
