@@ -30,15 +30,25 @@ This project is also meant to be a starting for all techies interested to get th
 <h2 align= "center"><b> Project Mentors</b></h2>
 
 
-<div align="center"> 
+<span align="center"> 
 
-|                                                                                           <img src="https://avatars2.githubusercontent.com/u/46641503?v=4" width=150px height=150px /> <img src="https://avatars2.githubusercontent.com/u/40017559?v=4" width=150px height=150px />                                                                             |
+|                                                                                           <img src="https://avatars2.githubusercontent.com/u/46641503?v=4" width=150px height=150px/>                                                                             |
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                                                                                    **[Smaranjit Ghose](https://github.com/smaranjitghose)** &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;                                                                                                                                                                                                                                                                                                               **[Anush Bhatia](https://github.com/anushbhatia)**                                                                                                                                       |
-| <a href= "https://github.com/smaranjitghose"><img src="https://img.favpng.com/23/4/18/github-computer-icons-gitlab-png-favpng-iV2NWRJ8BzeUSu2TZcUNUCC5Z.jpg" width="32px" height="32px"></a> <a href="https://www.linkedin.com/in/smaranjitghose/">&ensp;&ensp;<img src="https://img.favpng.com/8/16/24/social-media-computer-icons-linkedin-logo-png-favpng-ar5mkcVLJLBzqJGEENKfjMRdk.jpg" width="32px" height="32px"></a> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<a href="https://github.com/anushbhatia"><img src="https://img.favpng.com/23/4/18/github-computer-icons-gitlab-png-favpng-iV2NWRJ8BzeUSu2TZcUNUCC5Z.jpg" width="32px" height="32px"></a> <a href="https://www.linkedin.com/in/anush-bhatia-aa500a158/">&ensp;&ensp;<img src="https://img.favpng.com/8/16/24/social-media-computer-icons-linkedin-logo-png-favpng-ar5mkcVLJLBzqJGEENKfjMRdk.jpg" width="32px" height="32px"></a>   
- </div><br>
+|                                                                                                                                    **[Smaranjit Ghose](https://github.com/smaranjitghose)**                                                                                                                                                                                                                                                                                                                                      |
+| <a href= "https://github.com/smaranjitghose"><img src="https://img.favpng.com/23/4/18/github-computer-icons-gitlab-png-favpng-iV2NWRJ8BzeUSu2TZcUNUCC5Z.jpg" width="32px" height="32px"></a> <a href="https://www.linkedin.com/in/smaranjitghose/">&ensp;&ensp;<img src="https://img.favpng.com/8/16/24/social-media-computer-icons-linkedin-logo-png-favpng-ar5mkcVLJLBzqJGEENKfjMRdk.jpg" width="32px" height="32px"></a>   
+ </span><br>
+
+<span align="center">
+
+ |                                                                                                      <img src="https://avatars2.githubusercontent.com/u/40017559?v=4" width=150px height=150px />                                                                             |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|                                                                                                                                   **[Anush Bhatia](https://github.com/anushbhatia)**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| <a href="https://github.com/anushbhatia"><img src="https://img.favpng.com/23/4/18/github-computer-icons-gitlab-png-favpng-iV2NWRJ8BzeUSu2TZcUNUCC5Z.jpg" width="32px" height="32px"></a> <a href="https://www.linkedin.com/in/anush-bhatia-aa500a158/">&ensp;&ensp;<img src="https://img.favpng.com/8/16/24/social-media-computer-icons-linkedin-logo-png-favpng-ar5mkcVLJLBzqJGEENKfjMRdk.jpg" width="32px" height="32px"></a>   
+ </span><br>
 
 
+
+<div align="center">
 
 [![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/0)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/0)
 [![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/1)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/1)
@@ -49,7 +59,10 @@ This project is also meant to be a starting for all techies interested to get th
 [![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/6)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/6)
 [![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/images/7)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/girlscript_chennai_website/links/7)
 
-<br>                                                                                                                               
+</div>
+
+<br>
+                                                                                                                               
 <a href="./LICENSE"><h2 align= "center"><b>License 📝</b></h2></a> 
 <p align="center"><img width=35% src="https://media.giphy.com/media/xUPGcJGy8I928yIlAQ/giphy.gif"></p>
 
