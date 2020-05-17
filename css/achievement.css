@@ -150,6 +150,11 @@ div.project-card .project-image-holder {
 	height: 0;
 	padding-bottom: 75%;
 	border-top: 4px solid var(--project-card);
+	max-width:300px;
+}
+
+div.project-card .project-image-holder img{
+	max-width:300px;
 }
 
 div.project-card div.project-title {
@@ -464,4 +469,9 @@ div.project-card.show div.flap2 {
 	.card-title{
 		font-size:20px;
 	}
+}
+
+.profile-image{
+	max-width:100%;
+	height:auto;
 }
