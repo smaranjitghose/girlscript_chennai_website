@@ -1,189 +1,261 @@
-"use strict";
+'use strict';
+
+const favClassesDataSet = {
+	linkedIn: 'fa fa-linkedin',
+	twitter: 'fa fa-twitter',
+	github: 'fa fa-github',
+	facebook: 'fa fa-facebook'
+};
+
+const mapProfileLinksToFavClasses = profileName => {
+	return favClassesDataSet[profileName];
+};
 
 const teamData = [
 	{
 		name: 'Smaranjit Ghose',
 		position: 'The Board',
-		linkedIn: 'https://www.linkedin.com/in/smaranjitghose/',
-		github: 'https://github.com/smaranjitghose',
-		twitter:'',
-		image: 'https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80'
+		image: 'smaranjit_ghose.jpg',
+		profiles: [
+			{
+				linkedIn: 'https://www.linkedin.com/in/smaranjitghose/',
+				github: 'https://github.com/smaranjitghose',
+				twitter: '#!'
+			}
+		]
 	},
 
 	{
 		name: 'Anush Bhatia',
 		position: 'The Board',
-		linkedIn: 'https://www.linkedin.com/in/anush-bhatia-aa500a158/',
-		github: 'https://github.com/anushbhatia',
-		twitter: '',
-		image: ''
+		image: 'anush_bhatia.jpg',
+		profiles: [
+			{
+				linkedIn: 'https://www.linkedin.com/in/anush-bhatia-aa500a158/',
+				github: 'https://github.com/anushbhatia',
+				twitter: '#!'
+			}
+		]
 	},
 
 	{
 		name: 'Saswat Nayak',
 		position: 'The Board',
-		linkedIn: 'https://www.linkedin.com/in/saswat-nayak-a41212166/',
-		github: 'https://github.com/swat1998',
-		cssClass: 'board',
-		image: 'assets/Images/team/saswat_nayak.jpg'
+		image: 'saswat_nayak.jpg',
+		profiles: [
+			{
+				linkedIn: 'https://www.linkedin.com/in/saswat-nayak-a41212166/',
+				github: 'https://github.com/swat1998',
+				twitter: '#!'
+			}
+		]
 	},
 
 	{
 		name: 'Ousnik Polley',
 		position: 'The Board',
-		linkedIn: 'https://www.linkedin.com/in/ousnikpolley/',
-		github: 'https://github.com/ousnik',
-		cssClass: 'board',
-		image: 'assets/Images/team/ousnik_polley.jpg'
+		image: 'ousnik_polley.jpg',
+		profiles: [
+			{
+				linkedIn: 'https://www.linkedin.com/in/ousnikpolley/',
+				github: 'https://github.com/ousnik'
+			}
+		]
 	},
 
 	{
 		name: 'Sukkrit Sharma',
 		position: 'The Board',
-		linkedIn: 'https://www.linkedin.com/in/sukkritsharma/',
-		github: 'https://github.com/sukkritsharmaofficial',
-		cssClass: 'board',
-		image: 'assets/Images/team/sukkrit_sharma.jpg'
+		image: 'sukkrit_sharma.jpg',
+		profiles: [
+			{
+				linkedIn: 'https://www.linkedin.com/in/sukkritsharma/',
+				github: 'https://github.com/sukkritsharmaofficial'
+			}
+		]
 	},
 
 	{
 		name: 'Suhrid Datta',
 		position: 'Technical Team',
-		linkedIn: 'https://www.linkedin.com/in/suhrid-datta-834863157/',
-		github: 'https://github.com/suhriddatta',
-		cssClass: 'tech',
-		image: 'assets/Images/team/suhrid_datta.jpg'
+		image: 'suhrid_datta.jpg',
+		profiles: [
+			{
+				linkedIn: 'https://www.linkedin.com/in/suhrid-datta-834863157/',
+				github: 'https://github.com/suhriddatta'
+			}
+		]
 	},
 
 	{
 		name: 'Bidisha Mukherjee',
 		position: 'Technical Team',
-		linkedIn: ' ',
-		github: ' ',
-		cssClass: 'tech',
-		image: 'assets/Images/team/bidisha_mukherjea.jpg'
+		image: 'bidisha_mukherjea.jpg',
+		profiles: [
+			{
+				linkedIn: '#!',
+				github: '#!'
+			}
+		]
 	},
 
 	{
 		name: 'Ambarish Dattar',
 		position: 'Technical Team',
-		linkedIn: ' ',
-		github: ' ',
-		cssClass: 'tech',
-		image: 'assets/Images/team/ambarish_datar.jpg'
+		image: 'ambarish_datar.jpg',
+		profiles: [
+			{
+				linkedIn: '#!',
+				github: '#!'
+			}
+		]
 	},
 
 	{
 		name: 'Apoorva Gupta',
 		position: 'Technical Team',
-		linkedIn: 'https://www.linkedin.com/in/apoorvagupta30/',
-		github: ' ',
-		cssClass: 'tech',
-		image: 'assets/Images/team/apoorva_gupta.jpg'
+		image: 'apoorva_gupta.jpg',
+		profiles: [
+			{
+				linkedIn: 'https://www.linkedin.com/in/apoorvagupta30/',
+				github: '#!'
+			}
+		]
 	},
 
 	{
 		name: 'Rishabh Verma',
 		position: 'Technical Team',
-		linkedIn: '',
-		github: ' ',
-		cssClass: 'tech',
-		image: 'assets/Images/team/Rishabh_Verma.jpg'
+		image: 'Rishabh_Verma.jpg',
+		profiles: [
+			{
+				linkedIn: '#!',
+				github: '#!'
+			}
+		]
 	},
 
 	{
 		name: 'Arnab Dutta Purkayastha',
 		position: 'Creatives Team',
-		linkedIn: '',
-		github: ' ',
-		cssClass: 'mang',
-		image: 'assets/Images/team/arnab_dutta.jpg'
+		image: 'arnab_dutta.jpg',
+		profiles: [
+			{
+				linkedIn: '#!',
+				github: '#!'
+			}
+		]
 	},
 
 	{
 		name: 'Suryanshi Kaushik',
 		position: 'Creatives Team',
-		linkedIn: 'https://www.linkedin.com/in/suryanshi-kaushik-206433182/',
-		github: ' ',
-		cssClass: 'mang',
-		image: 'assets/Images/team/suryanshi_kaushik.jpg'
+		image: 'suryanshi_kaushik.jpg',
+		profiles: [
+			{
+				linkedIn: 'https://www.linkedin.com/in/suryanshi-kaushik-206433182/',
+				github: '#!'
+			}
+		]
 	},
 
 	{
 		name: 'Ritik Rajput',
 		position: 'Creatives Team',
-		linkedIn: ' ',
-		github: ' ',
-		cssClass: 'mang',
-		image: 'assets/Images/team/ritik_rajput.jpg'
+		image: 'ritik_rajput.jpg',
+		profiles: [
+			{
+				linkedIn: '#!',
+				github: '#!'
+			}
+		]
 	},
 
 	{
 		name: 'Ram Maheshwari',
 		position: 'Management Team',
-		linkedIn: '',
-		github: ' ',
-		cssClass: 'mang',
-		image: 'assets/Images/team/ram_maheshwari.jpg'
+		image: 'ram_maheshwari.jpg',
+		profiles: [
+			{
+				linkedIn: '#!',
+				github: '#!'
+			}
+		]
 	},
 
 	{
 		name: 'Jasprit Kaur',
 		position: 'Publicity Team',
-		linkedIn: 'https://www.linkedin.com/in/kaurjasprit/',
-		github: ' ',
-		cssClass: 'mang',
-		image: 'assets/Images/team/jasprit_kaur.jpg'
+		image: 'jasprit_kaur.jpg',
+		profiles: [
+			{
+				linkedIn: 'https://www.linkedin.com/in/kaurjasprit/',
+				github: '#!'
+			}
+		]
 	},
 
 	{
 		name: 'Sriyash',
 		position: 'Management Team',
-		linkedIn: ' ',
-		github: ' ',
-		cssClass: 'mang',
-		image: 'assets/Images/team/sriyash.jpg'
+		image: 'sriyash.jpg',
+		profiles: [
+			{
+				linkedIn: '#!',
+				github: '#!'
+			}
+		]
 	},
 
 	{
 		name: 'Rahul Sarvadevabhatla',
 		position: 'Management Team',
-		linkedIn: 'https://www.linkedin.com/in/sarvadevabhatla-rahul-9419981a2/',
-		github: ' ',
-		cssClass: 'mang',
-		image: 'assets/Images/team/rahul_sarvadevabhatla.jpg'
+		image: 'rahul_sarvadevabhatla.jpg',
+		profiles: [
+			{
+				linkedIn: 'https://www.linkedin.com/in/sarvadevabhatla-rahul-9419981a2/',
+				github: ' '
+			}
+		]
 	}
 ];
 
+const generateProfileLinks = profileObject => {
+	let result = [];
+	for (let profile in profileObject) {
+		const classtoAdd = mapProfileLinksToFavClasses(profile);
+		const listItem = `<li>
+							<a href="${profileObject[profile]}" target="__blank">
+								<i class="${classtoAdd}"></i>
+							</a>
+						</li>`;
+		result.push(listItem);
+	}
+	return result.join(' ');
+};
+
 const generateCards = cardDetail => {
-	const { name, position, linkedIn, github, image, cssClass } = cardDetail;
-	
-	const teamCard = `
-	<div class="gs-team-member gs-team--${cssClass}">
-      	<div class="gs-team-member-image">
-			<img
-                class="lazy"
-                src=${image}
-                alt=${name}-${position}
-                aria-label=${name}-${position}
-            />
-        </div>
-        <div class="gs-team-member-info">
-              <div class="gs-fullname">${name}</div>
-              <div class="gs-position">${position}</div>
-        </div>
-        <div class="gs-team-member-social">
-            <a href=${github} target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
-            <a
-              href=${linkedIn}
-              target="_blank"
-            >
-            <i class="fab fa-linkedin"></i>
-            </a>
-            </div>
-		</div>`;
+	const { name, position, image, profiles } = cardDetail;
+
+	const getProfilesLinksDynamic = generateProfileLinks(profiles[0]);
+
+	const teamCard = `<div class="cardwrapper">
+					<div class="customcard">
+						<div class="card-image">
+							<img src="/assets/Images/team/${image}"
+								alt="${name}" aria-label="${name}">
+						</div>
+						<div class="socials">
+							${getProfilesLinksDynamic}
+						</div>
+						<div class="details">
+							<h2>${name}<br>
+								<span class="job-title">${position}</span>
+							</h2>
+						</div>
+				
+					</div>
+				</div>`;
 
 	let teamCardInjectionSpace = document.getElementById('inject-cards');
 	teamCardInjectionSpace.innerHTML += teamCard;
