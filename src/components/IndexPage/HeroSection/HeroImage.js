@@ -10,5 +10,5 @@ export const HeroImage = styled.div`
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.5)
     ),
-    url('/assets/images/Hero.jpg');
+    url('/assets/images/Index/Hero.jpg');
 `;

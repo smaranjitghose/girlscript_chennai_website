@@ -1,10 +1,14 @@
+import Link from 'next/link';
+import { SectionContainer } from '../SectionContainer';
+import { StyledButton } from '../StyledButton';
+
 const trendCardsDetails = [
   {
     backgroundCover: 'assets/images/Index/ml.jpg',
     displayName: 'Machine Learning',
   },
   {
-    backgroundCover: 'assets/images/Index/IoT1.jpg',
+    backgroundCover: 'assets/images/Index/IOT1.jpg',
     displayName: 'Internet of Things',
   },
   {
@@ -49,7 +53,7 @@ const TrendsCard = ({ id }) => {
 
 const TrendsSection = () => {
   return (
-    <section className="newsection p-5" id="newsSection">
+    <SectionContainer className="p-5">
       <h2 className="pt-5 pb-2 text-center fw-bold heading">
         WE CREATE TRENDS{' '}
         <span className="clr-theme fw-100">FOR THE WORLD </span>
@@ -69,11 +73,10 @@ const TrendsSection = () => {
         <TrendsCard id={4} />
         <TrendsCard id={5} />
       </div>
-
-      <a href="contactUs.html" className="center-btn-settings btn btn-lg mt-5">
-        Get In Touch
-      </a>
-    </section>
+      <Link href="/contact">
+        <StyledButton className="btn btn-lg mt-5">Get In Touch</StyledButton>
+      </Link>
+    </SectionContainer>
   );
 };
 
