@@ -1,35 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500;600&family=Baloo+Paaji+2:wght@400;500;600&family=Comfortaa:wght@400;500;600;700&family=Montserrat:wght@100;400;500&family=Quicksand:wght@300;400;500&family=Raleway:wght@300;400;500;600&display=swap');
 
 html {
-	--progress-bgcolor: rgb(247, 183, 109);
+	--progress-bgcolor: #ff8e25;
 	--bg-color: #fff;
 	--register-bgColor: #fff;
-	--register-boxShadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12),
-		0 8px 10px -5px rgba(0, 0, 0, 0.3);
-	--registerClose-boxShadow: 0 16px 24px 2px rgba(0, 0, 0, 0);
 	--next-color: #f5511c;
 	--next-hover: #333;
 	--inputProgress-bgColor: #ff8e25;
-	--wrongInputProgress-color: #ff2d26;
 	--inputLabel-color: #9e9e9e;
 	--input-bgColor: #fff;
-	--h1font-color: #fff;
 }
 
 html[data-theme='dark'] {
-	--progress-bgcolor: #333333;
-	--bg-color: #121212;
+	--progress-bgcolor: #383838;
+	--bg-color: #272727;
 	--register-bgColor: #fff;
-	--register-boxShadow: 0 4px 6px 1px rgba(245, 81, 28, 0.74), 0 2px 7px 1px rgba(245, 81, 28, 0.14),
-		0 2px 3px -3px rgba(245, 81, 28, 0.14);
-	--registerClose-boxShadow: 0 8px 12px 1px rgba(245, 81, 28, 0);
 	--next-color: #fff;
 	--next-hover: #fff;
 	--inputProgress-bgColor: rgb(245, 81, 28);
-	--wrongInputProgress-color: #fff;
 	--inputLabel-color: #fff;
 	--input-bgColor: #333333;
-	--h1font-color: #fff;
 }
 
 body {
@@ -42,7 +32,7 @@ body {
 h1 {
 	font-family: 'Comfortaa', sans-serif;
 	position: relative;
-	color: var(--h1font-color);
+	color: #fff;
 	opacity: 0;
 	-webkit-transition: 0.8s ease-in-out;
 	-o-transition: 0.8s ease-in-out;
@@ -85,8 +75,10 @@ h1 {
 	position: relative;
 	width: 410px;
 	padding: 2px 15px 20px 15px;
-	-webkit-box-shadow: var(--register-boxShadow);
-	box-shadow: var(--register-boxShadow);
+	-webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12),
+	0 8px 10px -5px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12),
+	0 8px 10px -5px rgba(0, 0, 0, 0.3);
 	-webkit-transition: -webkit-transform 0.1s ease-in-out;
 	transition: -webkit-transform 0.1s ease-in-out;
 	-o-transition: transform 0.1s ease-in-out;
@@ -102,8 +94,8 @@ h1 {
 	-webkit-transition: 0.8s ease-in-out;
 	-o-transition: 0.8s ease-in-out;
 	transition: 0.8s ease-in-out;
-	-webkit-box-shadow: var(--registerClose-boxShadow);
-	box-shadow: var(--registerClose-boxShadow);
+	-webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0);
+	box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0);
 }
 
 .next {
@@ -128,7 +120,7 @@ h1 {
 }
 
 .wrong .next {
-	color: var(--wrongInputProgress-color);
+	color:#ff2d26;
 }
 
 .close .next {
@@ -193,7 +185,7 @@ h1 {
 }
 
 .wrong #inputProgress {
-	border-color: var(--wrongInputProgress-color);
+	border-color: #ff2d26;
 }
 
 /* Responsive */
