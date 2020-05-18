@@ -37,8 +37,40 @@ const addditionalProjects = [
 		projectName: 'Cloak of Invisibility',
 		projectAuthor: 'Smaranjit Ghose',
 		projectDescription: `Ever wondered how Harry Potter used to become invisible using the cloak of invisibility.Now its your turn to do the same cuz python's here to help you experience magic in real life..!`,
-		githubLink: 'https://github.com/smaranjitghose/PyDeceive/tree/master',
+		githubLink: 'https://github.com/smaranjitghose/PyDeceive/',
 		alternateName: 'Cloak of Invisibility Project'
+	},
+	{
+		coverImage: 'doc2pen.jpg',
+		projectName: 'Doc2Pen',
+		projectAuthor: 'Smaranjit Ghose',
+		projectDescription: `A student's savior to submit those assignments by just typing them out and getting it hand written on the go!`,
+		githubLink: 'https://github.com/smaranjitghose/doc2pen',
+		alternateName: 'Doc2Pen'
+	},
+	{
+		coverImage: 'sketch.jpg',
+		projectName: 'sketchPy',
+		projectAuthor: 'Smaranjit Ghose',
+		projectDescription: `The python friend of our's who takes your creativity to next level! Convert all your images to a sketch with the use of this simple spplication`,
+		githubLink: 'https://github.com/smaranjitghose/sketchPy',
+		alternateName: 'Doc2Pen'
+	},
+	{
+		coverImage: 'pomodoro.jpg',
+		projectName: 'PyPomodoro',
+		projectAuthor: 'Smaranjit Ghose',
+		projectDescription: `The ancient technique to boost your productivity just took a form in Python! The Pomodoro application that boosts you work by 10x guaranteed!`,
+		githubLink: 'https://github.com/smaranjitghose/PyPomodoro',
+		alternateName: 'PyPomodoro'
+	},
+	{
+		coverImage: 'portfolio.jpg',
+		projectName: 'Awesome Portfolio Websites',
+		projectAuthor: 'Smaranjit Ghose',
+		projectDescription: `Showcase your skills with the rest of the world through our beautifully created portfolio websites.`,
+		githubLink: 'https://github.com/smaranjitghose/PyPomodoro',
+		alternateName: 'Awesome Portfolio Websites'
 	}
 ];
 
