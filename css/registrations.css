@@ -9,6 +9,7 @@ html {
 	--inputProgress-bgColor: #ff8e25;
 	--inputLabel-color: #9e9e9e;
 	--input-bgColor: #fff;
+	--confetti-bg:#ff8e25;
 }
 
 html[data-theme='dark'] {
@@ -20,6 +21,7 @@ html[data-theme='dark'] {
 	--inputProgress-bgColor: rgb(245, 81, 28);
 	--inputLabel-color: #fff;
 	--input-bgColor: #333333;
+	--confetti-bg: #272727;
 }
 
 body {
@@ -225,12 +227,14 @@ h1 {
 	}	
 }
 
+/* Confetti */
+
 #success-screen{
 	position: absolute;
 	min-width:100%;
 	min-height:100%;
 	z-index:2;
-	background:#29d8d8;
+	background:var(--confetti-bg);
 }
 .hide{
 	display:none;
