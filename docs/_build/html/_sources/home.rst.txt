@@ -62,11 +62,21 @@ If you want to make changes in this section, carry out the following changes in 
 
 - To make changes in the content of the heading - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`INITIATIVES`, you will see <h2> tag where you can make changes.
 
-* To make changes in the heading and icon present on the cards - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`flip-card-head`, you will see <h5> tag where you can make changes and to change the icon search :python:`flip-card-img` and replace the svg version of the image there.
+* To make changes in the heading and subheading on the cards - Go to file `index.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/index.js>`__ and search :python:`const initiativesDetails`, you will see an array of object within which under :python:`mainHeading` and :python:`subHeading`  you can make changes.
 
-- To make changes in the card description - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`flip-card-detail`, you will see <p> tag where you can make changes.
+- To make changes in the card description -  Go to file `index.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/index.js>`__ and search :python:`const initiativesDetails`, you will see an array of object within which under :python:`description` you can make changes.
 
- 
+* To add a svg -  Go to file `svg.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/svg.js>`__ and create a variable and assign it with the svg content of the image.
+
+- To changes the svg of the icon in card  -  Go to file `index.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/index.js>`__ and search :python:`const initiativesDetails`, you will see an array of object within which under :python:`svg` you can add variable name of that svg and import it on the top of the file.
+
+* To add a new card - Go to file `index.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/index.js>`__ and search :python:`const initiativesDetails`, you will see an array of object within which you can create a new object and make the changes accordingly.
+
+.. note::
+
+   - To get free vector icons with high resolution refer `this <https://www.flaticon.com/>`__ .
+
+
 5. **Our Achievements**: This section describes the achievements taken by your GirlScript Chapter. It is a card which is divided into 3 parts.
 
 .. image:: ./images/homepage/achievements.png
@@ -102,7 +112,11 @@ If you want to make changes in this section, carry out the following changes in 
 
 - To make changes in the heading and the content - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`WE CREATE TRENDS` or :python:`join-us`, you will see <h2> tag or <h3> tag where changes can be done.
 
-* To make changes in the card images - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`ih-item circle effect`, you will see <img> tag where you can change the path of the image according to your image. And accordingly you can change the other images also.
+* To make changes in the card images - Go to file `index.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/index.js>`__ and search :python:`const trendCardsDetails`, you will see an array of object within which under :python:`backgroundCover` you can add the path of the image. And accordingly you can change the other images also.
+
+- To make changes in the display name on the card - Go to file `index.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/index.js>`__ and search :python:`const trendCardsDetails`, you will see an array of object within which under :python:`displayName` you can make your changes.
+
+* To add a new card - Go to file `index.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/index.js>`__ and search :python:`const trendCardsDetails`, you will see an array of object within which you can create a new object and make the changes accordingly.
 
 .. note::
    - In visual code studio, To search for a word, press *ctrl + f* and for a file, press *ctrl + p* .
