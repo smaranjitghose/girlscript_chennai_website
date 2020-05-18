@@ -26,7 +26,7 @@ const StyledNavLink = styled.li`
 const NavLink = ({ url, linkText }) => {
   return (
     <center>
-      <StyledNavLink className="nav-item">
+      <StyledNavLink>
         <Link href={url}>
           <a className="nav-link">
             <span>{linkText}</span>

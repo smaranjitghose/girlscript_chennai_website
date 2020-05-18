@@ -67,7 +67,7 @@ const Details = styled.div`
   position: absolute;
   bottom: 0;
   left: 0;
-  background: var(--details-color);
+  background: #fff;
   width: 100%;
   padding: 1rem;
   opacity: 0;
