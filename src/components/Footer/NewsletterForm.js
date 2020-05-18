@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { useState } from 'react';
 
 const StyledFormContainer = styled.div`
   @media only screen and (max-width: 770px) {
@@ -77,14 +78,27 @@ const StyledButton = styled.button`
   }
 `;
 
-export default function NewsletterForm() {
+const NewsletterForm = () => {
+  const [name, setName] = useState({
+    heading: 'Join our Newsletter',
+    subheading: 'Enter Your Email to get our news and updates',
+  });
+
+  const changeHeading = (e) => {
+    e.preventDefault();
+    setName({
+      heading: 'Thanks',
+      subheading: 'For subscribing to the form',
+    });
+  };
+
   return (
     <StyledFormContainer className="col-lg-6 col-md-8 mb-5">
       <br />
-      <h3 className="footer-h">Join Our Newsletter</h3>
+      <h3 className="footer-h">{name.heading}</h3>
       <div className="border"></div>
-      <p className="footer-p">Enter Your Email to get our news and updates.</p>
-      <form action="" name="footermail" method="post">
+      <p className="footer-p">{name.subheading}</p>
+      <form action="" name="footermail" method="post" onSubmit={changeHeading}>
         <input
           type="email"
           id="email"
@@ -100,4 +114,6 @@ export default function NewsletterForm() {
       </form>
     </StyledFormContainer>
   );
-}
+};
+
+export default NewsletterForm;
