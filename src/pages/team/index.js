@@ -7,7 +7,11 @@ import styled from 'styled-components';
 const CustomContainer = styled.div`
   width: 100%;
   padding: 0 150px;
-  margin: 20vh 0;
+  margin-top: 20vh;
+`;
+
+const TeamContainer = styled.div`
+  width: 100%;
 `;
 
 const TeamPage = () => {
@@ -18,8 +22,10 @@ const TeamPage = () => {
       </Head>
       <CustomContainer>
         <TeamPageText />
-        <TeamPageDisplay />
       </CustomContainer>
+      <TeamContainer>
+        <TeamPageDisplay />
+      </TeamContainer>
     </Layout>
   );
 };

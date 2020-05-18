@@ -392,10 +392,6 @@ svg {
   }
 }
 
-.temp {
-  margin-top: 20vh;
-}
-.center {
-  text-align: center;
-
+li{
+  list-style:none;
 }
