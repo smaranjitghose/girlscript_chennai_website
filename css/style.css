@@ -216,7 +216,8 @@ Nav bar
 .navbar a {
 	color: var(--nav-clr);
 	font-weight: bold;
-	font-size: 95%;
+	font-size: 15px;
+	font-weight: 700;
 	font-family: 'Josefin Sans', sans-serif;
 	transition: 0.6s;
 	-o-transition: 0.6s;
