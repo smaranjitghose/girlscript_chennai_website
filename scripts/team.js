@@ -1,270 +1,74 @@
-'use strict';
+    Vue.config.devtools = true;
 
-const favClassesDataSet = {
-	linkedIn: 'fa fa-linkedin',
-	twitter: 'fa fa-twitter',
-	github: 'fa fa-github',
-	facebook: 'fa fa-facebook'
-};
+Vue.component('Card', {
+  template: `
+    <div class="card-wrap"
+      @mousemove="handleMouseMove"
+      @mouseenter="handleMouseEnter"
+      @mouseleave="handleMouseLeave"
+      ref="Card">
+      <div class="Card"
+        :style="cardStyle">
+        <div class="card-Bg" :style="[cardBgTransform, cardBgImage]"></div>
+        <div class="card-info">
+          <slot name="header"></slot>
+          <slot name="content"></slot>
+        </div>
+      </div>
+    </div>`,
+  mounted() {
+    this.width = this.$refs.Card.offsetWidth;
+    this.height = this.$refs.Card.offsetHeight;
+  },
+  props: ['dataImage'],
+  data: () => ({
+    width: 0,
+    height: 0,
+    mouseX: 0,
+    mouseY: 0,
+    mouseLeaveDelay: null }),
 
-const mapProfileLinksToFavClasses = profileName => {
-	return favClassesDataSet[profileName];
-};
+  computed: {
+    mousePX() {
+      return this.mouseX / this.width;
+    },
+    mousePY() {
+      return this.mouseY / this.height;
+    },
+    cardStyle() {
+      const rX = this.mousePX * 30;
+      const rY = this.mousePY * -30;
+      return {
+        transform: `rotateY(${rX}deg) rotateX(${rY}deg)` };
 
-const teamData = [
-	{
-		name: 'Smaranjit Ghose',
-		position: 'The Board',
-		image: 'smaranjit_ghose.jpg',
-		profiles: [
-			{
-				linkedIn: 'https://www.linkedin.com/in/smaranjitghose/',
-				github: 'https://github.com/smaranjitghose',
-				twitter: '#!'
-			}
-		]
-	},
+    },
+    cardBgTransform() {
+      const tX = this.mousePX * -40;
+      const tY = this.mousePY * -40;
+      return {
+        transform: `translateX(${tX}px) translateY(${tY}px)` };
 
-	{
-		name: 'Anush Bhatia',
-		position: 'The Board',
-		image: 'anush_bhatia.jpg',
-		profiles: [
-			{
-				linkedIn: 'https://www.linkedin.com/in/anush-bhatia-aa500a158/',
-				github: 'https://github.com/anushbhatia',
-				twitter: '#!'
-			}
-		]
-	},
+    },
+    cardBgImage() {
+      return {
+        backgroundImage: `url(${this.dataImage})` };
 
-	{
-		name: 'Saswat Nayak',
-		position: 'The Board',
-		image: 'saswat_nayak.jpg',
-		profiles: [
-			{
-				linkedIn: 'https://www.linkedin.com/in/saswat-nayak-a41212166/',
-				github: 'https://github.com/swat1998',
-				twitter: '#!'
-			}
-		]
-	},
+    } },
 
-	{
-		name: 'Ousnik Polley',
-		position: 'The Board',
-		image: 'ousnik_polley.jpg',
-		profiles: [
-			{
-				linkedIn: 'https://www.linkedin.com/in/ousnikpolley/',
-				github: 'https://github.com/ousnik'
-			}
-		]
-	},
+  methods: {
+    handleMouseMove(e) {
+      this.mouseX = e.pageX - this.$refs.Card.offsetLeft - this.width / 2;
+      this.mouseY = e.pageY - this.$refs.Card.offsetTop - this.height / 2;
+    },
+    handleMouseEnter() {
+      clearTimeout(this.mouseLeaveDelay);
+    },
+    handleMouseLeave() {
+      this.mouseLeaveDelay = setTimeout(() => {
+        this.mouseX = 0;
+        this.mouseY = 0;
+      }, 1000);
+    } } });
 
-	{
-		name: 'Sukkrit Sharma',
-		position: 'The Board',
-		image: 'sukkrit_sharma.jpg',
-		profiles: [
-			{
-				linkedIn: 'https://www.linkedin.com/in/sukkritsharma/',
-				github: 'https://github.com/sukkritsharmaofficial'
-			}
-		]
-	},
-
-	{
-		name: 'Suhrid Datta',
-		position: 'Technical Team',
-		image: 'suhrid_datta.jpg',
-		profiles: [
-			{
-				linkedIn: 'https://www.linkedin.com/in/suhrid-datta-834863157/',
-				github: 'https://github.com/suhriddatta'
-			}
-		]
-	},
-
-	{
-		name: 'Bidisha Mukherjee',
-		position: 'Technical Team',
-		image: 'bidisha_mukherjea.jpg',
-		profiles: [
-			{
-				linkedIn: '#!',
-				github: '#!'
-			}
-		]
-	},
-
-	{
-		name: 'Ambarish Dattar',
-		position: 'Technical Team',
-		image: 'ambarish_datar.jpg',
-		profiles: [
-			{
-				linkedIn: '#!',
-				github: '#!'
-			}
-		]
-	},
-
-	{
-		name: 'Apoorva Gupta',
-		position: 'Technical Team',
-		image: 'apoorva_gupta.jpg',
-		profiles: [
-			{
-				linkedIn: 'https://www.linkedin.com/in/apoorvagupta30/',
-				github: '#!'
-			}
-		]
-	},
-
-	{
-		name: 'Rishabh Verma',
-		position: 'Technical Team',
-		image: 'Rishabh_Verma.jpg',
-		profiles: [
-			{
-				linkedIn: '#!',
-				github: '#!'
-			}
-		]
-	},
-
-	{
-		name: 'Arnab Dutta Purkayastha',
-		position: 'Creatives Team',
-		image: 'arnab_dutta.jpg',
-		profiles: [
-			{
-				linkedIn: '#!',
-				github: '#!'
-			}
-		]
-	},
-
-	{
-		name: 'Suryanshi Kaushik',
-		position: 'Creatives Team',
-		image: 'suryanshi_kaushik.jpg',
-		profiles: [
-			{
-				linkedIn: 'https://www.linkedin.com/in/suryanshi-kaushik-206433182/',
-				github: '#!'
-			}
-		]
-	},
-
-	{
-		name: 'Ritik Rajput',
-		position: 'Creatives Team',
-		image: 'ritik_rajput.jpg',
-		profiles: [
-			{
-				linkedIn: '#!',
-				github: '#!'
-			}
-		]
-	},
-
-	{
-		name: 'Ram Maheshwari',
-		position: 'Management Team',
-		image: 'ram_maheshwari.jpg',
-		profiles: [
-			{
-				linkedIn: '#!',
-				github: '#!'
-			}
-		]
-	},
-
-	{
-		name: 'Jasprit Kaur',
-		position: 'Publicity Team',
-		image: 'jasprit_kaur.jpg',
-		profiles: [
-			{
-				linkedIn: 'https://www.linkedin.com/in/kaurjasprit/',
-				github: '#!'
-			}
-		]
-	},
-
-	{
-		name: 'Sriyash',
-		position: 'Management Team',
-		image: 'sriyash.jpg',
-		profiles: [
-			{
-				linkedIn: '#!',
-				github: '#!'
-			}
-		]
-	},
-
-	{
-		name: 'Rahul Sarvadevabhatla',
-		position: 'Management Team',
-		image: 'rahul_sarvadevabhatla.jpg',
-		profiles: [
-			{
-				linkedIn: 'https://www.linkedin.com/in/sarvadevabhatla-rahul-9419981a2/',
-				github: ' '
-			}
-		]
-	}
-];
-
-const generateProfileLinks = profileObject => {
-	let result = [];
-	for (let profile in profileObject) {
-		const classtoAdd = mapProfileLinksToFavClasses(profile);
-		const listItem = `<li>
-							<a href="${profileObject[profile]}" target="__blank">
-								<i class="${classtoAdd}"></i>
-							</a>
-						</li>`;
-		result.push(listItem);
-	}
-	return result.join(' ');
-};
-
-const generateCards = cardDetail => {
-	const { name, position, image, profiles } = cardDetail;
-
-	const getProfilesLinksDynamic = generateProfileLinks(profiles[0]);
-
-	const teamCard = `<div class="cardwrapper">
-					<div class="customcard">
-						<div class="card-image">
-							<img src="/assets/Images/team/${image}"
-								alt="${name}" aria-label="${name}">
-						</div>
-						<div class="socials">
-							${getProfilesLinksDynamic}
-						</div>
-						<div class="details">
-							<h2>${name}<br>
-								<span class="job-title">${position}</span>
-							</h2>
-						</div>
-				
-					</div>
-				</div>`;
-
-	let teamCardInjectionSpace = document.getElementById('inject-cards');
-	teamCardInjectionSpace.innerHTML += teamCard;
-};
-
-const injectCardsToPage = () => {
-	teamData.forEach(teamCard => {
-		generateCards(teamCard);
-	});
-};
-
-injectCardsToPage();
+const app = new Vue({
+  el: '#app' });
