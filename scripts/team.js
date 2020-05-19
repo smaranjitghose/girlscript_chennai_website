@@ -70,5 +70,15 @@ Vue.component('Card', {
       }, 1000);
     } } });
 
-const app = new Vue({
-  el: '#app' });
+const board = new Vue({
+  el: '#board'});
+
+const technical = new Vue({
+  el: '#technical'});
+
+const creatives = new Vue({
+  el: '#creatives'});
+
+const management = new Vue({
+  el: '#management'});
+    
