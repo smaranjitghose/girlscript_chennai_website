@@ -37,22 +37,24 @@ const eventSchedule = [
 const produceSchedulePart = (scheduleDetail, position) => {
     
     const { stageName, stageDetails, timings, favClasses } = scheduleDetail;
-    const classFix = !(position === 'left') ? 'time-1' : 'time-2';
+    let classFix = (position === 'left') ? 'time-1' : 'time-2';
 
-    const scheduleBox = `<div class="col-sm-12 links">
+    const scheduleBox = `<div class="col-sm-12 links"> 
 									<div class="featured-schedule">
 										<div class="col pb-3 text-center">
 											<i class="${favClasses}"></i>
 
 											<h2><span>${stageName}</span></h2>
 											<br />
-											<p>${stageDetails}</p>
+											<p>
+												${stageDetails}
+											</p>
 										</div>
 										<div class="time ${classFix}">
 											<h3>${timings}</h3>
 										</div>
 									</div>
-                                </div>`;
+								</div>`;
     
     const scheduleSection = document.getElementById('schedule-box');
     scheduleSection.innerHTML += scheduleBox;
@@ -60,9 +62,12 @@ const produceSchedulePart = (scheduleDetail, position) => {
 
 const insertSchedule = () => {
     eventSchedule.forEach((detail, index) => {
-        const position = (index % 2 === 0) ? 'left' : 'right';
+        let position = (index % 2 == 0) ? 'left' : 'right';
         produceSchedulePart(detail, position);
     });
+    const avoidReflectionFix = `<div style="clear: both;"></div>`;
+    const scheduleSection = document.getElementById('schedule-box');
+    scheduleSection.innerHTML += avoidReflectionFix;
 }
 
 insertSchedule();
