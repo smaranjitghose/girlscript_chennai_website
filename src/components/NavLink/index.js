@@ -17,7 +17,7 @@ const StyledNavLink = styled.li`
   @media only screen and (max-width: 1054px) {
     font-size: 0.71rem;
   }
-  
+
   @media only screen and (max-width: 998px) {
     font-size: 0.7rem;
   }
@@ -26,7 +26,7 @@ const StyledNavLink = styled.li`
 const NavLink = ({ url, linkText }) => {
   return (
     <center>
-      <StyledNavLink className="nav-item">
+      <StyledNavLink>
         <Link href={url}>
           <a className="nav-link">
             <span>{linkText}</span>
@@ -35,6 +35,6 @@ const NavLink = ({ url, linkText }) => {
       </StyledNavLink>
     </center>
   );
-}
+};
 
 export default NavLink;
