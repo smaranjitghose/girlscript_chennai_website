@@ -11,7 +11,7 @@ const mapProfileLinksToFavClasses = profileName => {
   return favClassesDataSet[profileName];
 };
 
-const teamData = [
+const teamData_board = [
   {
     name: 'Smaranjit Ghose',
     position: 'The Board',
@@ -74,6 +74,9 @@ const teamData = [
       }
     ]
   },
+];
+
+const teamData_technical = [
 
   {
     name: 'Suhrid Datta',
@@ -134,7 +137,9 @@ const teamData = [
       }
     ]
   },
+];
 
+const teamData_creatives= [
   {
     name: 'Arnab Dutta Purkayastha',
     position: 'Creatives Team',
@@ -170,7 +175,8 @@ const teamData = [
       }
     ]
   },
-
+];
+const teamData_management = [
   {
     name: 'Ram Maheshwari',
     position: 'Management Team',
@@ -185,7 +191,7 @@ const teamData = [
 
   {
     name: 'Jasprit Kaur',
-    position: 'Publicity Team',
+    position: 'Management Team',
     image: 'jasprit_kaur.jpg',
     profiles: [
       {
@@ -214,11 +220,13 @@ const teamData = [
     profiles: [
       {
         linkedIn: 'https://www.linkedin.com/in/sarvadevabhatla-rahul-9419981a2/',
-        github: ' '
+        github: '#!'
       }
     ]
   }
 ];
+
+// Generates links  for social handles
 
 const generateProfileLinks = profileObject => {
   let result = [];
@@ -233,6 +241,7 @@ const generateProfileLinks = profileObject => {
   return result.join(' ');
 };
 
+// Generates HTML for each team members from array
 const generateCards = cardDetail => {
   const { name, position, image, profiles } = cardDetail;
   
@@ -247,13 +256,27 @@ const generateCards = cardDetail => {
         <span>${position}</span>
     </p>
   </card>`;
-  app.innerHTML += teamCard;  
+  return teamCard;
 };
 
-const injectCardsToPage = () => {
-  teamData.forEach(teamCard => {
-    generateCards(teamCard);
-  });
+// Creates cards through `generateCards()` for each team
+const injectCardsToPage = (team) => {
+  let members = team.map((item) => {
+    return generateCards(item)
+  })
+
+  return members;
 };
 
-injectCardsToPage();
+
+// The board team
+board.innerHTML = injectCardsToPage(teamData_board);
+
+//The Technical team
+technical.innerHTML = injectCardsToPage(teamData_technical);
+
+//The Creatives team
+creatives.innerHTML = injectCardsToPage(teamData_creatives);
+
+//The management team
+management.innerHTML = injectCardsToPage(teamData_management);
