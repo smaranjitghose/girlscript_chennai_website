@@ -254,17 +254,14 @@ svg {
   overflow: visible;
 }
 
-<<<<<<< HEAD ======= .team-part {
-  color: var(--theme-color);
-}
-
->>>>>>>3edbfd502a5989e65f242481b6d9a1f2e246735b .wave {
+.wave {
   -webkit-animation: wave 3s linear;
   animation: wave 3s linear;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   fill: var(--footer-bg);
 }
+
 .drop {
   fill: var(--footer-bg);
   -webkit-animation: drop 3.2s linear infinite normal;
