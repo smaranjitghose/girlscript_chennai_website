@@ -33,6 +33,23 @@ const eventSchedule = [
 	}
 ];
 
+const FAQ = [
+	{
+		question: `Does it cost anything?`,
+		answer: `No - our events are always free of charge.`
+	},
+	{
+		question: `Does registering mean I am all set to attend?`,
+		answer: `Not yet. While your chances of getting a seat are pretty good, we will confirm
+				attendees on a case-by -case basis to ensure we attract the right audience.Note that
+				your seat is not confirmed until you receive a confirmation code.`
+	},
+	{
+		question: `When will I hear back if I have a spot?`,
+		answer: `We'll try to confirm you at least two days before the event!`
+	}
+];
+
 const produceSchedulePart = (scheduleDetail, position) => {
 	const { stageName, stageDetails, timings, favClasses } = scheduleDetail;
 	let classFix = position === 'left' ? 'time-1' : 'time-2';
@@ -58,6 +75,21 @@ const produceSchedulePart = (scheduleDetail, position) => {
 	scheduleSection.innerHTML += scheduleBox;
 };
 
+const produceFAQCards = faq => {
+	const { question, answer } = faq;
+
+	const faqCard = `<div class="row">
+							<div class="col m-3 question-border">
+								<h3 class="ques">${question}</h3>
+								<p class="ans">
+									${answer}
+								</p>
+							</div>
+						</div>`;
+	const faqSection = document.getElementById('faq-question');
+	faqSection.innerHTML += faqSection;
+};
+
 const insertSchedule = () => {
 	eventSchedule.forEach((detail, index) => {
 		let position = index % 2 == 0 ? 'left' : 'right';
@@ -68,4 +100,14 @@ const insertSchedule = () => {
 	scheduleSection.innerHTML += avoidReflectionFix;
 };
 
+const insertFAQ = () => {
+	FAQ.forEach(faq => {
+		produceFAQCards(faq);
+	});
+
+	const scheduleSection = document.getElementById('schedule-box');
+	scheduleSection.innerHTML += `<br /><br /><br />`;
+};
+
 insertSchedule();
+insertFAQ;
