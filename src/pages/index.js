@@ -13,7 +13,7 @@ export default function Home() {
       <Head>
         <title>GirlScript Website Boilerplate</title>
       </Head>
-      {/* <HeroSection /> */}
+      <HeroSection />
       <AboutSection />
       <ParallaxSeperator />
       <InitiativesSection />
