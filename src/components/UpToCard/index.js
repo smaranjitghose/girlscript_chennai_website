@@ -58,7 +58,7 @@ const CustomCard = styled.div`
     0 6px 0px rgba(240, 112, 0, 0.5);
   padding: 1rem;
   margin-bottom: 3rem;
-  word-wrap: break-word;
+
   background-clip: border-box;
   background-color: white;
   z-index: 1;
@@ -94,19 +94,17 @@ const CustomCard = styled.div`
   }
 `;
 
-const UpToCard = () => {
+const UpToCard = ({ detail, index }) => {
+  const { coverImage, altName, cardTitle, description, referencePage } = detail;
+
   return (
     <div className="col-xl-4 col-lg-6 col-md-6">
       <CustomCard>
-        <CardImage src="/assets/images/achievements/ach1.jpg" alt="Hello" />
+        <CardImage src={coverImage} alt={altName} />
         <CardBody>
-          <h5>Forbes 30 under 30</h5>
-          <p className="card-text ct1">
-            Congratulations to our founding director, Anubha Maneshwar for
-            making it to Forbes under 30 list of class 2020. 300 Entrepreneurs
-            made it to the list in 10 categories.
-          </p>
-          <a href="#!">
+          <h5>{cardTitle}</h5>
+          <p className={`ct${index}`}>{description}</p>
+          <a href={referencePage}>
             Read full story <i className="fa fa-arrow-right"></i>
           </a>
         </CardBody>

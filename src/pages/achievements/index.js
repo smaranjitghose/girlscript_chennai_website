@@ -41,7 +41,7 @@ const AchievementsPage = () => {
         </Heading>
         <div className="container row m-auto">
           {uptoDetails.map((detail, index) => (
-            <UpToCard key={index} detail={detail} />
+            <UpToCard key={index} detail={detail} index={index} />
           ))}
         </div>
       </div>

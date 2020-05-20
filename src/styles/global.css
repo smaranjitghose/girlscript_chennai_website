@@ -887,3 +887,13 @@ li {
 .space-out {
   margin-top: 20vh;
 }
+
+.ct1 {
+  letter-spacing: 1px;
+}
+.ct2 {
+  letter-spacing: 2px;
+}
+.ct3 {
+  letter-spacing: 0px;
+}
