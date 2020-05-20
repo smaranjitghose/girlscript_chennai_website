@@ -87,7 +87,7 @@ const produceFAQCards = faq => {
 							</div>
 						</div>`;
 	const faqSection = document.getElementById('faq-question');
-	faqSection.innerHTML += faqSection;
+	faqSection.innerHTML += faqCard;
 };
 
 const insertSchedule = () => {
@@ -110,4 +110,4 @@ const insertFAQ = () => {
 };
 
 insertSchedule();
-insertFAQ;
+insertFAQ();
