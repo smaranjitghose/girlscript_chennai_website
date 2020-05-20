@@ -1,0 +1,23 @@
+[
+  {
+    "coverImage": "./assets/Images/achievement/ach1.jpg",
+    "altName": "forbes30_under_30",
+    "cardTitle": "Forbes 30 under 30",
+    "description": "Congratulations to our founding director, Anubha Maneshwar for making it to\n\t\t\t\t\t\tForbes under 30 list of class 2020. 300 Entrepreneurs made it to the list in 10\n\t\t\t\t\t\tcategories.",
+    "referencePage": "#!"
+  },
+  {
+    "coverImage": "./assets/Images/achievement/ach2.jpg",
+    "altName": "education outreach",
+    "cardTitle": "Education Outreach",
+    "description": "GirlScript Foundation are here with Education Outreach Scholarship under which\n\t\t\t\t\tfirst 1000 students will get Scholarship in 5 different courses.",
+    "referencePage": "#!"
+  },
+  {
+    "coverImage": "./assets/Images/achievement/ach3.jpg",
+    "altName": "APAC 2020 Scholarship",
+    "cardTitle": "APAC 2020 Scholarship",
+    "description": "Women Techmakers Scholars Program APAC 2020 Scholarship is an opportunity for\n\t\t\t\t\t\t\t\t\t\tall undergraduate women to get a great exposure in the field of Compsc. by\n\t\t\t\t\t\t\t\t\t\tencouraging women to excel.",
+    "referencePage": "#!"
+  }
+]

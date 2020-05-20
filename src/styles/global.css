@@ -883,3 +883,7 @@ svg {
 li {
   list-style: none;
 }
+
+.space-out {
+  margin-top: 20vh;
+}
