@@ -88,8 +88,14 @@ const NewsletterForm = () => {
     e.preventDefault();
     setName({
       heading: 'Thanks',
-      subheading: 'For subscribing to the form',
+      subHeading: 'For subscribing to the form',
     });
+  };
+
+  const [email, setEmail] = useState('');
+
+  const changeEmail = (e) => {
+    setEmail(e.target.value);
   };
 
   return (
@@ -97,7 +103,7 @@ const NewsletterForm = () => {
       <br />
       <h3 className="footer-h">{name.heading}</h3>
       <div className="border"></div>
-      <p className="footer-p">{name.subheading}</p>
+      <p className="footer-p">{name.subHeading}</p>
       <form action="" name="footermail" method="post" onSubmit={changeHeading}>
         <input
           type="email"
@@ -106,6 +112,8 @@ const NewsletterForm = () => {
           name="email"
           className="emailInput mr-2 mb-2 mt-4"
           placeholder="Enter Your Email"
+          value={email}
+          onChange={changeEmail}
           required
         />
         <StyledButton className="btn" type="submit">
