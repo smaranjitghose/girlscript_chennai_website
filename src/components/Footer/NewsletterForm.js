@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { useState } from 'react';
+import { useState, useReducer } from 'react';
 
 const StyledFormContainer = styled.div`
   @media only screen and (max-width: 770px) {
@@ -78,32 +78,45 @@ const StyledButton = styled.button`
   }
 `;
 
+const initialState = {
+  heading: 'Join our Newsletter',
+  subHeading: 'Enter Your Email to get our news and updates',
+};
+
+const reducer = (state, action) => {
+  switch (action.type) {
+    case 'change':
+      return {
+        heading: 'Thanks',
+        subHeading: 'For subscribing to the form',
+      };
+    default:
+      throw new Error();
+  }
+};
+
 const NewsletterForm = () => {
-  const [name, setName] = useState({
-    heading: 'Join our Newsletter',
-    subheading: 'Enter Your Email to get our news and updates',
-  });
-
-  const changeHeading = (e) => {
-    e.preventDefault();
-    setName({
-      heading: 'Thanks',
-      subHeading: 'For subscribing to the form',
-    });
-  };
-
   const [email, setEmail] = useState('');
 
   const changeEmail = (e) => {
     setEmail(e.target.value);
   };
 
+  const changeHeading = (e) => {
+    e.preventDefault();
+    dispatch({
+      type: 'change',
+    });
+  };
+
+  const [state, dispatch] = useReducer(reducer, initialState);
+
   return (
     <StyledFormContainer className="col-lg-6 col-md-8 mb-5">
       <br />
-      <h3 className="footer-h">{name.heading}</h3>
+      <h3 className="footer-h">{state.heading}</h3>
       <div className="border"></div>
-      <p className="footer-p">{name.subHeading}</p>
+      <p className="footer-p">{state.subHeading}</p>
       <form action="" name="footermail" method="post" onSubmit={changeHeading}>
         <input
           type="email"
