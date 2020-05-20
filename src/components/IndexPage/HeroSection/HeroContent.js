@@ -102,9 +102,9 @@ const HeroContent = () => {
       <FrameOne>Welcome to</FrameOne>
       <FrameTwo>India&#39;s Largest Tech Community</FrameTwo>
       <FrameThree>
-        <span>GirlScript</span>
-        <span>Website</span>
-        <span>Boilerplate</span>
+        <span> GirlScript </span>
+        <span> Website </span>
+        <span> Boilerplate </span>
       </FrameThree>
     </StyledContent>
   );
