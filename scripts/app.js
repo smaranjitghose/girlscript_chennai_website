@@ -164,34 +164,40 @@ function activeSmallTab() {
 	let navItems = navBar[0].children;
 	let pageName = window.location.pathname.toLowerCase();
 	for (let i = 0; i < navItems.length; i++) {
-		let childHref = navItems[i].pathname.toLowerCase();
-		if ((childHref === pageName || childHref.includes(pageName)) && window.location.pathname !== '/') {
-			navItems[i].classList.add('active');
-			navItems[0].classList.remove('home');
-		} else navItems[i].classList.remove('active');
+		if (navItems[i].pathname) {
+			let childHref = navItems[i].pathname.toLowerCase();
+			if ((childHref === pageName || childHref.includes(pageName)) && window.location.pathname !== '/') {
+				navItems[i].classList.add('active');
+				navItems[0].classList.remove('home');
+			} else navItems[i].classList.remove('active');
+		}
+		
 	}
 }
 
 function changeTheme(value) {
 	let docElement = document.documentElement;
 	let checkElement = $('#theme')[0];
+	console.log(checkElement.checked);
 	docElement.classList.add('transition');
 	window.setTimeout(() => {
 		docElement.classList.remove('transition');
 	}, 1000);
-	if (value === 'dark' || checkElement.checked) {
-		checkElement.checked = 'true';
+	if (value === 'dark' || checkElement.checked==true) {
+		checkElement.checked = true;
 		docElement.setAttribute('data-theme', 'dark');
 		localStorage.setItem('mode', 'dark');
+		console.log('Switched to dark mode');
 	} else {
 		checkElement.checked = false;
 		docElement.setAttribute('data-theme', 'light');
 		localStorage.setItem('mode', 'light');
+		console.log('Switched to light mode');
+
 	}
 }
 
-const loader = `	`;
-window.onload = function () {};
+
 
 // Window Loads
 $(function () {

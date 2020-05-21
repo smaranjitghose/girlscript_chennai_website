@@ -1463,8 +1463,8 @@ a.fa-linkedin {
 
 .switch input { 
   opacity: 0;
-  width: 0;
-  height: 0;
+  width: 5rem;
+  height: 1rem;
 }
 
 .slider {
