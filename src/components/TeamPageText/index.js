@@ -10,6 +10,9 @@ const TeamHeading = styled.h1`
   color: #000;
   user-select: none;
   text-align: center;
+  > span {
+    color: #f47621;
+  }
 `;
 
 const TeamDescription = styled.div`
