@@ -171,7 +171,6 @@ function activeSmallTab() {
 				navItems[0].classList.remove('home');
 			} else navItems[i].classList.remove('active');
 		}
-		
 	}
 }
 
@@ -183,7 +182,7 @@ function changeTheme(value) {
 	window.setTimeout(() => {
 		docElement.classList.remove('transition');
 	}, 1000);
-	if (value === 'dark' || checkElement.checked==true) {
+	if (value === 'dark' || checkElement.checked == true) {
 		checkElement.checked = true;
 		docElement.setAttribute('data-theme', 'dark');
 		localStorage.setItem('mode', 'dark');
@@ -191,11 +190,8 @@ function changeTheme(value) {
 		checkElement.checked = false;
 		docElement.setAttribute('data-theme', 'light');
 		localStorage.setItem('mode', 'light');
-
 	}
 }
-
-
 
 // Window Loads
 $(function () {
@@ -241,7 +237,6 @@ function topBtnClick() {
 }
 
 function init() {
-
 	let imgDefer = document.getElementsByTagName('img');
 	for (let i = 0; i < imgDefer.length; i++) {
 		if (imgDefer[i].getAttribute('data-src')) {
