@@ -37,6 +37,7 @@ const Layout = ({ children }) => {
           integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
           crossOrigin="anonymous"
         ></script>
+        <script src="https://www.retainable.io/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
       </Head>
       <Navbar />
       <main>{children}</main>
