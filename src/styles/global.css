@@ -932,7 +932,15 @@ li {
 .medium-widget-article__row {
   transition: 0.5s;
 }
+
 .medium-widget-article__row:hover {
   transform: translateY(-10px);
   transition: 0.5s;
+}
+
+@media only screen and(max-width:800px) {
+  .medium-widget-article__item {
+    max-width: 500px;
+    margin: 0 auto;
+  }
 }

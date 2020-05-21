@@ -21,11 +21,6 @@ const Container = styled.div`
       color: #f47621;
     }
   }
-
-  @media only screena and(max-width:700px) {
-    width: 90%;
-    margin: 0 auto;
-  }
 `;
 
 const BlogPage = () => {
@@ -39,7 +34,6 @@ const BlogPage = () => {
           <h3>
             Recent <span> Blogs </span>
           </h3>
-
           <div id="medium-widget"></div>
         </Container>
       </BlogSection>
