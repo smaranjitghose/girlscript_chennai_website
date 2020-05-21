@@ -21,6 +21,11 @@ const Container = styled.div`
       color: #f47621;
     }
   }
+
+  @media only screena and(max-width:700px) {
+    width: 90%;
+    margin: 0 auto;
+  }
 `;
 
 const BlogPage = () => {
@@ -34,16 +39,8 @@ const BlogPage = () => {
           <h3>
             Recent <span> Blogs </span>
           </h3>
-          <div
-            id="retainable-rss-embed"
-            data-rss="https://medium.com/feed/techequilla"
-            data-maxcols="1"
-            data-layout="grid"
-            data-poststyle="external"
-            data-readmore="Read more"
-            data-buttonclass="btn blog-btn p-3o"
-            data-offset="-100"
-          ></div>
+
+          <div id="medium-widget"></div>
         </Container>
       </BlogSection>
     </Layout>
