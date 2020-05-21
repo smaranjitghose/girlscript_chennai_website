@@ -178,7 +178,7 @@ function activeSmallTab() {
 function changeTheme(value) {
 	let docElement = document.documentElement;
 	let checkElement = $('#theme')[0];
-	console.log(checkElement.checked);
+
 	docElement.classList.add('transition');
 	window.setTimeout(() => {
 		docElement.classList.remove('transition');
@@ -187,12 +187,10 @@ function changeTheme(value) {
 		checkElement.checked = true;
 		docElement.setAttribute('data-theme', 'dark');
 		localStorage.setItem('mode', 'dark');
-		console.log('Switched to dark mode');
 	} else {
 		checkElement.checked = false;
 		docElement.setAttribute('data-theme', 'light');
 		localStorage.setItem('mode', 'light');
-		console.log('Switched to light mode');
 
 	}
 }
