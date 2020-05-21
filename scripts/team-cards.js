@@ -1,10 +1,10 @@
 'use strict';
 
 const favClassesDataSet = {
-	linkedIn: 'fab fa-linkedin-in',
-	twitter: 'fab fa-twitter',
-	github: 'fab fa-github',
-	facebook: 'fab fa-facebook'
+  linkedIn: 'fa fa-linkedin',
+  twitter: 'fa fa-twitter',
+  github: 'fa fa-github',
+  facebook: 'fa fa-facebook'
 };
 
 const mapProfileLinksToFavClasses = profileName => {
