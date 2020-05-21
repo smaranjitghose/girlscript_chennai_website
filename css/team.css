@@ -56,7 +56,7 @@ section {
 	text-align: center;
 }
 
-#team h4 {
+#team h4 { 
 	color: var(--font-color);
 	font-size: 1.25rem;
 	text-align: left;
@@ -189,13 +189,14 @@ h1 + p, p + p {
 .container-cards a{
   text-decoration: none;
   color: black;
-  font-size: 18px;
+  font-size: 20px;
   margin-left: 5px;
   z-index: 99;
   background-color: #fff;
   border-radius: 50%;
-  padding: 5px 7px;
+  padding: 8px 10px;
   transition: 0.6s;
+  text-shadow: none;
 }
 
 .container-cards a:hover {
@@ -247,10 +248,9 @@ p span {
 }
 
 .team-center-heading {	
-  font-family: 'Montserrat', sans-serif;	  
-  font-size: 50px;	
+  font-family: 'Comfortaa', sans-serif;	  
+  font-size: 55px;	
   font-weight: 400;	    
-  color:var(--font-color);	
   text-align: center;	   
 }	
 
