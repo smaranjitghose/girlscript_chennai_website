@@ -1,7 +1,7 @@
-    Vue.config.devtools = true;
+Vue.config.devtools = true;
 
 Vue.component('Card', {
-  template: `
+	template: `
     <div class="card-wrap"
       @mousemove="handleMouseMove"
       @mouseenter="handleMouseEnter"
@@ -16,69 +16,76 @@ Vue.component('Card', {
         </div>
       </div>
     </div>`,
-  mounted() {
-    this.width = this.$refs.Card.offsetWidth;
-    this.height = this.$refs.Card.offsetHeight;
-  },
-  props: ['dataImage'],
-  data: () => ({
-    width: 0,
-    height: 0,
-    mouseX: 0,
-    mouseY: 0,
-    mouseLeaveDelay: null }),
+	mounted() {
+		this.width = this.$refs.Card.offsetWidth;
+		this.height = this.$refs.Card.offsetHeight;
+	},
+	props: ['dataImage'],
+	data: () => ({
+		width: 0,
+		height: 0,
+		mouseX: 0,
+		mouseY: 0,
+		mouseLeaveDelay: null
+	}),
 
-  computed: {
-    mousePX() {
-      return this.mouseX / this.width;
-    },
-    mousePY() {
-      return this.mouseY / this.height;
-    },
-    cardStyle() {
-      const rX = this.mousePX * 30;
-      const rY = this.mousePY * -30;
-      return {
-        transform: `rotateY(${rX}deg) rotateX(${rY}deg)` };
+	computed: {
+		mousePX() {
+			return this.mouseX / this.width;
+		},
+		mousePY() {
+			return this.mouseY / this.height;
+		},
+		cardStyle() {
+			const rX = this.mousePX * 30;
+			const rY = this.mousePY * -30;
+			return {
+				transform: `rotateY(${rX}deg) rotateX(${rY}deg)`
+			};
+		},
+		cardBgTransform() {
+			const tX = this.mousePX * -40;
+			const tY = this.mousePY * -40;
+			return {
+				transform: `translateX(${tX}px) translateY(${tY}px)`
+			};
+		},
+		cardBgImage() {
+			return {
+				backgroundImage: `url(${this.dataImage})`
+			};
+		}
+	},
 
-    },
-    cardBgTransform() {
-      const tX = this.mousePX * -40;
-      const tY = this.mousePY * -40;
-      return {
-        transform: `translateX(${tX}px) translateY(${tY}px)` };
-
-    },
-    cardBgImage() {
-      return {
-        backgroundImage: `url(${this.dataImage})` };
-
-    } },
-
-  methods: {
-    handleMouseMove(e) {
-      this.mouseX = e.pageX - this.$refs.Card.offsetLeft - this.width / 2;
-      this.mouseY = e.pageY - this.$refs.Card.offsetTop - this.height / 2;
-    },
-    handleMouseEnter() {
-      clearTimeout(this.mouseLeaveDelay);
-    },
-    handleMouseLeave() {
-      this.mouseLeaveDelay = setTimeout(() => {
-        this.mouseX = 0;
-        this.mouseY = 0;
-      }, 1000);
-    } } });
+	methods: {
+		handleMouseMove(e) {
+			this.mouseX = e.pageX - this.$refs.Card.offsetLeft - this.width / 2;
+			this.mouseY = e.pageY - this.$refs.Card.offsetTop - this.height / 2;
+		},
+		handleMouseEnter() {
+			clearTimeout(this.mouseLeaveDelay);
+		},
+		handleMouseLeave() {
+			this.mouseLeaveDelay = setTimeout(() => {
+				this.mouseX = 0;
+				this.mouseY = 0;
+			}, 1000);
+		}
+	}
+});
 
 const board = new Vue({
-  el: '#board'});
+	el: '#board'
+});
 
 const technical = new Vue({
-  el: '#technical'});
+	el: '#technical'
+});
 
 const creatives = new Vue({
-  el: '#creatives'});
+	el: '#creatives'
+});
 
 const management = new Vue({
-  el: '#management'});
-    
+	el: '#management'
+});
