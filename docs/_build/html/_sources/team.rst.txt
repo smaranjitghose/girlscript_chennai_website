@@ -6,29 +6,44 @@ Team Page
 
 This page consists of the member which are working behind the project so that all the contributors can work on it smoothely.
 
-.. image:: ./images/teampage/teamimage.JPG
+.. image:: ./images/teampage/teamimage.PNG
   :width: 600
   :align: center
   :alt: Alternative text
 
 If you want to make changes in this section, carry out the following changes in code:
 
-- To make changes in the heading - Go to `team.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/team.html>`__ and search :python:`teamHeading`, you will see <h1> tag where you can make changes.
+- To make changes in the main heading - Go to `team.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/team.html>`__ and search :python:`teamHeading`, you will see <h1> tag where you can make changes.
 
 * To make changes in the subheading - Go to `team.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/team.html>`__ and search :python:`team-description`, you will see <h4> tag where you can make changes.
 
-- To modify the images in the card - Go to `team.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/team.html>`__ and search :python:`gs-team-member-image`, you will see <img> tag where inside href you have to change the path of the new image.
+- To make changes in the team heading -  Go to `team.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/team.html>`__ and search :python:`team-center-heading`, you will see <h1> tag where you can make changes.
 
-* To modify the name and the position in the card - Go to `team.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/team.html>`__ and search :python:`gs-team-member-info`, you will see <div> where you can make changes.
+.. image:: ./images/teampage/cardimage.png
+  :width: 250
+  :align: center
+  :alt: Alternative text30
 
-- To make changes in the social links in the card - Go to `team.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/team.html>`__ and search :python:`gs-team-member-social` , you will see <a> tag where inside href you can change the link and in the <i> tag you can change the icon.
+- To modify the images in the card - Go to `team.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/team.js>`__ and search :python:`const teamData`, you will see an array of object within which under :python:`image` you can add the image name with its extension.
 
-* To add an additional social link in the card - Go to `team.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/team.html>`__ and search :python:`gs-team-member-social` , you can copy <a> tag and make the changes within it accordingly.
+* To modify the name in the card - Go to `team.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/team.js>`__ and search :python:`const teamData`, you will see an array of object within which under :python:`name` you can add the name of the team member.
 
-- To add an additional team member - Go to `team.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/team.html>`__ and search :python:`gs-team-member` , you can copy the whole <div> and make the changes within it accordingly and also give it the required class like :python:`gs-team--board` (gs-team--"teamCategory") so that it can be distinguished. 
+- To modify the position in the card - Go to `team.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/team.js>`__ and search :python:`const teamData`, you will see an array of object within which under :python:`position` you can add the position of the team member.
+
+* To make changes in the social links in the card - Go to `team.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/team.js>`__ and search :python:`const teamData`, you will see an array of object within which under :python:`profiles` you can change the links accordingly.
+
+- To add an additional social link in the card - Go to `team.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/team.js>`__ and search :python:`const teamData`, you will see an array of object within which under :python:`profiles` you can add the name of that profile and their link to it accordingly.
+
+* To add an additional team member -  Go to `team.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/team.js>`__ and search :python:`const teamData`, you will see an array of object within which you can create a new object and make the changes accordingly.
+
 
 .. note::
+   
+   - There are four arrays named as teamdata with their categories i.e Board, Technical, Creatives and Management. So, make your changes according to the position of your team member.
 
+   - Here, the team cards are inserted dynamically.
+
+
+.. note::
+   
    - In order to get different icons for your social media, you can prefer `this <https://fontawesome.com/v4.7.0/icons/>`__  where you can search and copy the html code of that icon to your code.
-
-
