@@ -17,6 +17,9 @@ const Container = styled.div`
     font-weight: 700;
     font-size: 3.5rem;
     padding: 3rem;
+    @media only screeen and (max-width: 800px) {
+      font-size: 2.3rem;
+    }
     > span {
       color: #f47621;
     }

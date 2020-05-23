@@ -938,9 +938,14 @@ li {
   transition: 0.5s;
 }
 
-@media only screen and(max-width:800px) {
+@media only screen and (max-width: 800px) {
   .medium-widget-article__item {
     max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .medium-widget {
+    width: 80%;
     margin: 0 auto;
   }
 }
