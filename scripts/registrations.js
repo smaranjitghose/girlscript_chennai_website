@@ -110,9 +110,6 @@ function changeTheme(value) {
 	}
 }
 
-const loader = `	`;
-window.onload = function () {};
-
 // Window Loads
 $(function () {
 	let bodyElement = $(`body`);
