@@ -165,7 +165,7 @@ let questions = [
 	{ question: "What's your registration number?", pattern: '[a-zA-Z0-9]'},
 	{ question: 'In which year you are studying?', pattern: '[0-9]' },
 	{ question: "What's your email?", pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ },
-	{ question: "Why you want to join?", pattern: '.{15,30}'}
+	{ question: "Why you want to join?", pattern: '.{10,50}'}
 	
 ];
 
