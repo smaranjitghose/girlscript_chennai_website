@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 // NAVBAR AND FOOTER
 
@@ -148,7 +148,6 @@ function closeNav() {
 	positionOfToggleButtonForBigScreen.appendChild(toggleThemeButton);
 }
 
-
 function init() {
 	var imgDefer = document.getElementsByTagName('img');
 	for (var i = 0; i < imgDefer.length; i++) {
@@ -159,15 +158,15 @@ function init() {
 }
 window.onload = init;
 
-
-
 // Registration starts
 
 let questions = [
-	{ question: "What's your first name?", pattern: '[A-Za-z]' },
-	{ question: "What's your last name?", pattern: '[A-Za-z]' },
+	{ question: "What's your name?", pattern: '[A-Za-z]' },
+	{ question: "What's your registration number?", pattern: '[a-zA-Z0-9]'},
+	{ question: 'In which year you are studying?', pattern: '[0-9]' },
 	{ question: "What's your email?", pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ },
-	{ question: 'Create your password', type: 'password' }
+	{ question: "Why you want to join?", pattern: '.{15,30}'}
+	
 ];
 
 (function () {
@@ -176,7 +175,7 @@ let questions = [
 	let eTime = 1000; // transition width time from inputLabel in ms
 
 	// init....
-	
+
 	var position = 0;
 
 	putQuestion();
@@ -213,6 +212,9 @@ let questions = [
 				h1.style.opacity = 1;
 			}, 50);
 		}, eTime);
+		
+		//function call for uploading data to firebase
+        Upload_data_to_firebase();
 	}
 
 	// when submitting the current question
@@ -273,12 +275,28 @@ let questions = [
 	}
 })();
 
-
 function init() {
 	let imgDefer = document.getElementsByTagName('img');
-	for (let i=0; i<imgDefer.length; i++) {
-	if(imgDefer[i].getAttribute('data-src')) {
-	imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
-	} } }
-	window.onload = init;
-	
+	for (let i = 0; i < imgDefer.length; i++) {
+		if (imgDefer[i].getAttribute('data-src')) {
+			imgDefer[i].setAttribute('src', imgDefer[i].getAttribute('data-src'));
+		}
+	}
+}
+window.onload = init;
+
+function Upload_data_to_firebase() {
+	// Uploading user data to firebase
+	let schema = {
+		Name: questions[0].value,
+		Regno: questions[1].value,
+		Year: questions[2].value,
+		Email: questions[3].value,
+		Message: questions[4].value
+	};
+
+	let firebaseDB = firebase.database().ref('users');
+	let pushtofire = firebaseDB.push();
+
+	pushtofire.set({ ...schema });
+}
