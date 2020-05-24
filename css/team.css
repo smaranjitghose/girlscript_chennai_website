@@ -107,7 +107,6 @@ h1 + p, p + p {
 }
 
 .container-cards {
-  padding: 0px 200px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
