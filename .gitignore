@@ -10,3 +10,5 @@ logs
 # for mac systems
 .DS_Store
 .DS_store
+
+.now
