@@ -949,3 +949,13 @@ li {
     margin: 0 auto;
   }
 }
+
+.afab {
+  font-size: 4em;
+  color: var(--theme-color);
+  text-align: center !important;
+}
+.fa {
+  display: inline-block;
+  text-align: center !important;
+}

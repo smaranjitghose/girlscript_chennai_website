@@ -3,6 +3,7 @@ import Layout from '../../components/Layout';
 import styled from 'styled-components';
 import { useState, useEffect } from 'react';
 import UpToCard from '../../components/UpToCard';
+import CountDownSection from '../../components/CountDownSection';
 
 const Heading = styled.h2`
   font-size: 38px;
@@ -34,6 +35,8 @@ const AchievementsPage = () => {
       <Head>
         <title>GirlScript Website Boilerplate | Achievements</title>
       </Head>
+
+      <CountDownSection />
 
       <div className="container space-out">
         <Heading>
