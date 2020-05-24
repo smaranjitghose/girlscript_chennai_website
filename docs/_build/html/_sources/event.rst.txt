@@ -56,15 +56,17 @@ If you want to make changes in this section, carry out the following changes in 
 
 If you want to make changes in this section, carry out the following changes in code:
 
-- To make changes in the heading: Go to `event1.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/event1.html>`__ and search :python:`schedule-heading`, you will see <h2> tag where you can make changes.
+- To make changes in the heading : Go to `event1.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/event1.html>`__ and search :python:`schedule-heading`, you will see <h2> tag where you can make changes.
 
-* To change the icon in the cards:  Go to `event1.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/event1.html>`__ and search :python:`fa` , you will see <i> tag where you can modify the class of your icon.
+* To change the icon in the cards :  Go to `events.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/events.js>`__ and search :python:`const eventSchedule`, you will see an array of object within which under :python:`favClasses` you can modify the icon. 
 
-- To modify the heading and description of card:  Go to `event1.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/event1.html>`__ and search :python:`featured-schedule` , you will see <h2> and <p> tag where you can modify the heading and the description respectively.
+- To modify the heading of the card :  Go to `events.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/events.js>`__ and search :python:`const eventSchedule`, you will see an array of object within which under :python:`stageName` you can make changes. 
 
-* To change the time of the event: Go to `event1.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/event1.html>`__ and search :python:`time` , you will see <h3> tag where you can make changes.
+* To modify the description of the card : Go to `events.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/events.js>`__ and search :python:`const eventSchedule`, you will see an array of object within which under :python:`stageDetails` you can make changes.
 
-- To add an additional event card: Go to `event1.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/event1.html>`__ and search :python:`col-sm-12 links`, where you can copy the whole <div> and make changes accordingly.
+- To change the time of the event : Go to `events.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/events.js>`__ and search :python:`const eventSchedule`, you will see an array of object within which under :python:`timings` you can make changes.
+
+* To add an additional event card : Go to `events.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/events.js>`__ and search :python:`const eventSchedule`, you will see an array of object within which you can create a new object and make the changes accordingly.
 
 
 .. note::
@@ -108,6 +110,8 @@ If you want to make changes in this section, carry out the following changes in 
 
 * To make changes in the subheading: Go to `event1.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/event1.html>`__ and search :python:`faq-subheading`, you will see <div> tag where you can make changes.
 
-- To modify the questions and answers:  Go to `event1.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/event1.html>`__ and search :python:`question-border` , you will see <h3> and <p> tag where you can modify the question and the answer respectively.
+- To modify the questions:  Go to `events.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/events.js>`__ and search :python:`const FAQ`, you will see an array of object within which under :python:`question` you can modify it. 
 
-* To add an additional FAQ: Go to `event1.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/event1.html>`__ and search :python:`faq-question`, where you will see <div> with class :python:`row`, you can copy the whole <div> and make changes accordingly.
+* To modify the answers: Go to `events.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/events.js>`__ and search :python:`const FAQ`, you will see an array of object within which under :python:`answer` you can modify it.
+
+- To add an additional FAQ: Go to `events.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/events.js>`__ and search :python:`const FAQ`, you will see an array of object within which you can create a new object and make the changes accordingly.
