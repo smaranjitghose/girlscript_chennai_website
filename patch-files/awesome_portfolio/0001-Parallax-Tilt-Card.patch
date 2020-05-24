@@ -1,0 +1,1049 @@
+From 058f61fe969b3e823ba059b4105c84edeeb95f76 Mon Sep 17 00:00:00 2001
+From: adyasha <adyashamohanty8104@gmail.com>
+Date: Thu, 21 May 2020 12:43:50 +0530
+Subject: [PATCH] Parallel tilt card (project section) 
+
+---
+ css/style.css | 134 ++++++++++++-----
+ debug.log     | 392 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ index.html    | 329 +++++++++++++++++++++++-------------------
+ js/scripts.js | 107 +++++++++++++-
+ 4 files changed, 783 insertions(+), 179 deletions(-)
+ create mode 100644 debug.log
+
+diff --git a/css/style.css b/css/style.css
+index d899090..c783fe7 100644
+--- a/css/style.css
++++ b/css/style.css
+@@ -111,40 +111,11 @@ a {
+ }
+ 
+ .projects-container {
+-	margin: 50px 20px;
++	margin: 50px 50px;
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	justify-content: center;
+ }
+-.project-tile {
+-	display: grid;
+-	grid-template-rows: 80% 20%;
+-	width: 450px;
+-	height: 350px;
+-	margin: 30px 15px;
+-	background-color: var(--dark-blue);
+-}
+-.project-tile:hover {
+-	box-shadow: 0px 0px 80px hsla(231, 100%, 71%, 0.25); /*var(--light-blue) + opacity*/
+-}
+-.project-image {
+-	grid-row: 1;
+-	width: 100%;
+-	height: 100%;
+-}
+-.project-text {
+-	grid-row: 2;
+-	font-size: 2.5em;
+-	margin: auto;
+-}
+-
+-@media (max-width: 600px) {
+-	.project-tile {
+-		width: 95%;
+-		height: auto;
+-		margin: 30px 0;
+-	}
+-}
+ 
+ .btn-view-all {
+ 	font-size: 2.5em;
+@@ -162,7 +133,6 @@ a {
+ }
+ 
+ #contact {
+-	height: 50vh;
+ 	width: 100%;
+ 	background-color: var(--dark-blue);
+ 	padding-top: var(--nav-height);
+@@ -203,7 +173,7 @@ a {
+ 
+ .page-footer {
+ 	background-color: var(--dark-blue);
+-	padding: 50px 30px;
++	padding: 30px 30px;
+ 	display: flex;
+ 	justify-content: space-between;
+ }
+@@ -213,3 +183,103 @@ a {
+ #copyr-link {
+ 	font-size: inherit;
+ }
++
++
++
++.main {
++  display: flex;
++  flex-wrap: wrap;
++  justify-content: center;
++  align-items: center;
++}
++.wrap {
++  margin: 2rem;
++  -webkit-transform-style: preserve-3d;
++          transform-style: preserve-3d;
++  -webkit-transform: perspective(100rem);
++          transform: perspective(100rem);
++  cursor: pointer;
++}
++.container {
++  --rX: 0;
++  --rY: 0;
++  --bX: 50%;
++  --bY: 80%;
++  width: 30rem;
++  height: 36rem;
++  border-radius: 1.6rem;
++  padding: 4rem;
++  display: flex;
++  align-items: flex-end;
++  position: relative;
++  -webkit-transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
++          transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
++  background-position: var(--bX) var(--bY);
++  box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
++  transition: -webkit-transform .6s 1s;
++  transition: transform .6s 1s;
++  transition: transform .6s 1s, -webkit-transform .6s 1s;
++  background-repeat: no-repeat;
++  background-size: cover;
++}
++.container::before,
++.container::after {
++  content: "";
++  width: 2rem;
++  height: 2rem;
++  position: absolute;
++  z-index: 2;
++  opacity: .3;
++  transition: .3s;
++}
++.container::before {
++  top: 2rem;
++  right: 2rem;
++  border-bottom-width: 0;
++  border-left-width: 0;
++}
++.container::after {
++  bottom: 2rem;
++  left: 2rem;
++  border-top-width: 0;
++  border-right-width: 0;
++}
++.container--active {
++  transition: none;
++}
++
++.container p {
++	margin-top: 30px;
++  font-weight: bold;
++  font-size: 1.9rem;
++}
++.wrap:hover .container::before,
++.wrap:hover .container::after {
++  width: calc(100% - 4rem);
++  height: calc(100% - 4rem);
++}
++
++.img1{
++	background-image: linear-gradient(hsla(0, 0%, 100%, .2), hsla(0, 0%, 100%, .2)), url("https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg");
++}
++
++.img2{
++   background-image: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .2)), url("https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/random-quote-machine.png");
++   background-size: 40rem 37rem !important;
++}
++
++.img3{
++   background-image: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .2)), url("https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/calc.png");
++}
++
++.img4{
++   background-image: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .2)), url("https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/map.jpg");
++}
++
++.img5{
++   background-image: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .2)), url("https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/wiki.png");
++}
++
++.img6{
++	background-image: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .2)), url("https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tic-tac-toe.png");
++}
+diff --git a/debug.log b/debug.log
+new file mode 100644
+index 0000000..60b9314
+--- /dev/null
++++ b/debug.log
+@@ -0,0 +1,392 @@
++[0520/182653.118:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
++[0520/182654.802:ERROR:exception_snapshot_win.cc(98)] thread ID 11216 not found in process
++[0520/182654.803:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
++[0520/184827.632:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff7467b0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.632:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
++[0520/184827.632:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c13e0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.633:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\ntdll.dll
++[0520/184827.633:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c0ca0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.633:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\KERNEL32.DLL
++[0520/184827.633:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8be4f0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.633:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\KERNELBASE.dll
++[0520/184827.633:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bba40000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.633:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\apphelp.dll
++[0520/184827.633:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8b5ee0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.633:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Program Files (x86)\Google\Chrome\Application\83.0.4103.61\chrome_elf.dll
++[0520/184827.633:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8b95b0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.633:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\VERSION.dll
++[0520/184827.633:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c06b0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.633:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\msvcrt.dll
++[0520/184827.633:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8be9f0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.633:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\bcryptPrimitives.dll
++[0520/184827.634:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c0a30000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.634:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\ADVAPI32.dll
++[0520/184827.634:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bfec0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.634:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\sechost.dll
++[0520/184827.634:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c0ef0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.634:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\RPCRT4.dll
++[0520/184827.634:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff82e300000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.634:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Program Files (x86)\Google\Chrome\Application\83.0.4103.61\chrome.dll
++[0520/184827.634:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c0850000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.634:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\WS2_32.dll
++[0520/184827.634:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c0750000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.634:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\OLEAUT32.dll
++[0520/184827.634:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bf390000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.634:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\msvcp_win.dll
++[0520/184827.634:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bea70000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.634:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\ucrtbase.dll
++[0520/184827.634:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bfb80000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.634:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\combase.dll
++[0520/184827.634:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bf430000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.634:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\WINTRUST.dll
++[0520/184827.634:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8be2d0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.634:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\MSASN1.dll
++[0520/184827.634:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8be3a0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.634:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\CRYPT32.dll
++[0520/184827.634:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bd820000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.634:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL
++[0520/184827.634:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8ab580000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.634:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\WINMM.dll
++[0520/184827.634:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8a2180000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.634:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\Secur32.dll
++[0520/184827.634:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8be1c0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.634:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\USERENV.dll
++[0520/184827.634:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8be2f0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.634:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\profapi.dll
++[0520/184827.634:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff890dd0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.635:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\UIAutomationCore.DLL
++[0520/184827.635:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff898480000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.635:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\DWrite.dll
++[0520/184827.635:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff89fb30000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.635:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\WINSPOOL.DRV
++[0520/184827.635:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8be2b0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.635:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\kernel.appcore.dll
++[0520/184827.635:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8be370000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.635:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\bcrypt.dll
++[0520/184827.635:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bcbd0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.635:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\dbghelp.dll
++[0520/184827.635:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8ba270000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.635:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\WINHTTP.dll
++[0520/184827.635:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8b3890000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.635:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\dhcpcsvc.DLL
++[0520/184827.635:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c0a20000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.635:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\NSI.dll
++[0520/184827.635:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8ae840000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.635:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\WINMMBASE.dll
++[0520/184827.635:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bf320000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.635:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\cfgmgr32.dll
++[0520/184827.635:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bbc00000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.635:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\PROPSYS.dll
++[0520/184827.635:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c0970000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.635:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\shcore.dll
++[0520/184827.635:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8be190000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.635:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\SSPICLI.DLL
++[0520/184827.635:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bdce0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.635:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\CRYPTBASE.DLL
++[0520/184827.640:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff7467b0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.641:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
++[0520/184827.641:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c13e0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.641:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\ntdll.dll
++[0520/184827.641:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c0ca0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.641:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\KERNEL32.DLL
++[0520/184827.641:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8be4f0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.641:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\KERNELBASE.dll
++[0520/184827.641:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bba40000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.641:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\apphelp.dll
++[0520/184827.641:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8b5ee0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.641:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Program Files (x86)\Google\Chrome\Application\83.0.4103.61\chrome_elf.dll
++[0520/184827.641:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8b95b0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.641:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\VERSION.dll
++[0520/184827.641:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c06b0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.641:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\msvcrt.dll
++[0520/184827.641:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8be9f0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.641:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\bcryptPrimitives.dll
++[0520/184827.641:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c0a30000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.641:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\ADVAPI32.dll
++[0520/184827.641:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bfec0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.641:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\sechost.dll
++[0520/184827.641:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c0ef0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.641:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\RPCRT4.dll
++[0520/184827.641:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff82e300000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.641:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Program Files (x86)\Google\Chrome\Application\83.0.4103.61\chrome.dll
++[0520/184827.641:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c0850000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.641:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\WS2_32.dll
++[0520/184827.641:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c0750000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.641:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\OLEAUT32.dll
++[0520/184827.641:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bf390000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.641:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\msvcp_win.dll
++[0520/184827.641:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bea70000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.641:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\ucrtbase.dll
++[0520/184827.642:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bfb80000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.642:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\combase.dll
++[0520/184827.642:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bf430000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.642:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\WINTRUST.dll
++[0520/184827.642:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8be2d0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.642:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\MSASN1.dll
++[0520/184827.642:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8be3a0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.642:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\CRYPT32.dll
++[0520/184827.642:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bd820000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.642:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL
++[0520/184827.642:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8ab580000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.642:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\WINMM.dll
++[0520/184827.642:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8a2180000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.642:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\Secur32.dll
++[0520/184827.642:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8be1c0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.642:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\USERENV.dll
++[0520/184827.642:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8be2f0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.642:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\profapi.dll
++[0520/184827.642:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff890dd0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.642:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\UIAutomationCore.DLL
++[0520/184827.642:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff898480000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.642:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\DWrite.dll
++[0520/184827.642:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff89fb30000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.642:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\WINSPOOL.DRV
++[0520/184827.642:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8be2b0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.642:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\kernel.appcore.dll
++[0520/184827.642:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8be370000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.642:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\bcrypt.dll
++[0520/184827.642:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bcbd0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.642:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\dbghelp.dll
++[0520/184827.642:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8ba270000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.642:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\WINHTTP.dll
++[0520/184827.642:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8b3890000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.642:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\dhcpcsvc.DLL
++[0520/184827.642:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c0a20000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.642:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\NSI.dll
++[0520/184827.642:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8ae840000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.642:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\WINMMBASE.dll
++[0520/184827.642:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bf320000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.642:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\cfgmgr32.dll
++[0520/184827.643:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bbc00000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.643:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\PROPSYS.dll
++[0520/184827.643:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c0970000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.643:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\shcore.dll
++[0520/184827.643:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8be190000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.643:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\SSPICLI.DLL
++[0520/184827.643:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bdce0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.643:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\CRYPTBASE.DLL
++[0520/184827.643:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff7467b0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.643:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
++[0520/184827.643:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c13e0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.643:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\ntdll.dll
++[0520/184827.643:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c0ca0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.643:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\KERNEL32.DLL
++[0520/184827.643:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8be4f0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.643:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\KERNELBASE.dll
++[0520/184827.643:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bba40000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.643:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\apphelp.dll
++[0520/184827.643:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8b5ee0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.643:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Program Files (x86)\Google\Chrome\Application\83.0.4103.61\chrome_elf.dll
++[0520/184827.643:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8b95b0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.643:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\VERSION.dll
++[0520/184827.643:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c06b0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.643:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\msvcrt.dll
++[0520/184827.643:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8be9f0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.643:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\bcryptPrimitives.dll
++[0520/184827.643:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c0a30000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.643:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\ADVAPI32.dll
++[0520/184827.643:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bfec0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.643:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\sechost.dll
++[0520/184827.643:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c0ef0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.643:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\RPCRT4.dll
++[0520/184827.643:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff82e300000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.643:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Program Files (x86)\Google\Chrome\Application\83.0.4103.61\chrome.dll
++[0520/184827.643:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c0850000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.643:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\WS2_32.dll
++[0520/184827.643:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c0750000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.643:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\OLEAUT32.dll
++[0520/184827.644:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bf390000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.644:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\msvcp_win.dll
++[0520/184827.644:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bea70000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.644:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\ucrtbase.dll
++[0520/184827.644:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bfb80000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.644:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\combase.dll
++[0520/184827.644:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bf430000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.644:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\WINTRUST.dll
++[0520/184827.644:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8be2d0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.644:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\MSASN1.dll
++[0520/184827.644:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8be3a0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.644:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\CRYPT32.dll
++[0520/184827.644:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bd820000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.644:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL
++[0520/184827.644:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8ab580000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.644:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\WINMM.dll
++[0520/184827.644:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8a2180000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.644:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\Secur32.dll
++[0520/184827.644:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8be1c0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.644:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\USERENV.dll
++[0520/184827.644:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8be2f0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.644:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\profapi.dll
++[0520/184827.644:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff890dd0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.644:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\UIAutomationCore.DLL
++[0520/184827.644:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff898480000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.644:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\DWrite.dll
++[0520/184827.644:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff89fb30000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.644:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\WINSPOOL.DRV
++[0520/184827.644:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8be2b0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.644:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\kernel.appcore.dll
++[0520/184827.644:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8be370000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.644:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\bcrypt.dll
++[0520/184827.644:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bcbd0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.644:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\dbghelp.dll
++[0520/184827.644:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8ba270000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.644:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\WINHTTP.dll
++[0520/184827.645:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8b3890000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.645:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\dhcpcsvc.DLL
++[0520/184827.645:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c0a20000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.645:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\NSI.dll
++[0520/184827.645:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8ae840000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.645:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\WINMMBASE.dll
++[0520/184827.645:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bf320000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.645:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\cfgmgr32.dll
++[0520/184827.645:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bbc00000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.645:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\PROPSYS.dll
++[0520/184827.645:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c0970000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.645:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\shcore.dll
++[0520/184827.645:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8be190000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.645:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\SSPICLI.DLL
++[0520/184827.645:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8bdce0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.645:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\CRYPTBASE.DLL
++[0520/184827.654:ERROR:process_memory_win.cc(73)] ReadMemory at 0x15a25f7000 of 36864 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.654:ERROR:process_memory_win.cc(73)] ReadMemory at 0x15a2dfd000 of 12288 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.654:ERROR:process_memory_win.cc(73)] ReadMemory at 0x15a35fc000 of 16384 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.654:ERROR:process_memory_win.cc(73)] ReadMemory at 0x15a3dfc000 of 16384 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.654:ERROR:process_memory_win.cc(73)] ReadMemory at 0x15a45fc000 of 16384 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.654:ERROR:process_memory_win.cc(73)] ReadMemory at 0x15a4dfe000 of 8192 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.654:ERROR:process_memory_win.cc(73)] ReadMemory at 0x15a55fd000 of 12288 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.654:ERROR:process_memory_win.cc(73)] ReadMemory at 0x15a5dfb000 of 20480 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.654:ERROR:process_memory_win.cc(73)] ReadMemory at 0x15a65fd000 of 12288 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.654:ERROR:process_memory_win.cc(73)] ReadMemory at 0x15a6dfd000 of 12288 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.654:ERROR:process_memory_win.cc(73)] ReadMemory at 0x15a75fd000 of 12288 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.655:ERROR:process_memory_win.cc(73)] ReadMemory at 0x15a7dfd000 of 12288 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.655:ERROR:process_memory_win.cc(73)] ReadMemory at 0x15a85fd000 of 12288 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.655:ERROR:process_memory_win.cc(73)] ReadMemory at 0x15a8dfd000 of 12288 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.655:ERROR:process_memory_win.cc(73)] ReadMemory at 0x15a95fd000 of 12288 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.655:ERROR:process_memory_win.cc(73)] ReadMemory at 0x15a1d8a000 of 852 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.655:ERROR:process_memory_win.cc(73)] ReadMemory at 0x15a1d8b000 of 6024 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.655:ERROR:process_memory_win.cc(73)] ReadMemory at 0x15a1d8d000 of 6024 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.655:ERROR:process_memory_win.cc(73)] ReadMemory at 0x15a1d8f000 of 6024 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.655:ERROR:process_memory_win.cc(73)] ReadMemory at 0x15a1d91000 of 6024 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.655:ERROR:process_memory_win.cc(73)] ReadMemory at 0x15a1d93000 of 6024 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.655:ERROR:process_memory_win.cc(73)] ReadMemory at 0x15a1d95000 of 6024 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.655:ERROR:process_memory_win.cc(73)] ReadMemory at 0x15a1d97000 of 6024 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.655:ERROR:process_memory_win.cc(73)] ReadMemory at 0x15a1d99000 of 6024 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.655:ERROR:process_memory_win.cc(73)] ReadMemory at 0x15a1d9b000 of 6024 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.655:ERROR:process_memory_win.cc(73)] ReadMemory at 0x15a1d9d000 of 6024 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.655:ERROR:process_memory_win.cc(73)] ReadMemory at 0x15a1d9f000 of 6024 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.655:ERROR:process_memory_win.cc(73)] ReadMemory at 0x15a1da1000 of 6024 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.656:ERROR:process_memory_win.cc(73)] ReadMemory at 0x15a1da3000 of 6024 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.656:ERROR:process_memory_win.cc(73)] ReadMemory at 0x15a1da5000 of 6024 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.656:ERROR:process_memory_win.cc(73)] ReadMemory at 0x15a1da9000 of 6024 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.656:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138d0fe0 of 5272 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.656:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138d2480 of 1012 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.656:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138d2ac8 of 118 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.656:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138d2b40 of 762 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.656:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138d2e3c of 118 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.656:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138d2eb4 of 100 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.656:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138d2f30 of 58 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.656:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138d3030 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.656:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138d31c0 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.656:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138d3380 of 124 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.656:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138d3760 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.656:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138d38f0 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.656:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138d3a50 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.656:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138d3be0 of 62 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.657:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138d3d50 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.657:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138d3ee0 of 68 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.657:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138e0a50 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.657:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138e0b80 of 144 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.657:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138e0c60 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.657:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138e0df0 of 152 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.657:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138e14a0 of 60 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.657:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138e14f0 of 62 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.657:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138e1540 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.657:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138e16e0 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.657:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138e2600 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.657:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138e26a0 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.657:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138e2880 of 60 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.657:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138e28d0 of 66 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.657:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138e2970 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.657:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138e29c0 of 62 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.658:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138e2a10 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.658:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138e2ab0 of 60 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.658:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138e2bf0 of 62 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.658:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138e3d00 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.658:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138e3f20 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.658:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138e4280 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.658:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138e43c0 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.658:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138e4660 of 80 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.658:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138e5bf0 of 54 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.658:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138e8510 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.658:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138e86d0 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.658:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138e9a60 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.658:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138e9b90 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.659:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138e9cc0 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.659:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138e9df0 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.659:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138e9f20 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.659:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138ea050 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.659:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138ea180 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.659:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138ea2b0 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.659:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138ea3e0 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.659:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138ea510 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.659:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138ea640 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.659:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138ea770 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.659:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138ebe00 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.659:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138eddf0 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.659:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138ee330 of 80 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.659:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138ee8d0 of 76 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.659:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138eefd0 of 62 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.659:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138ef020 of 62 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.659:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138ef070 of 60 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.660:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138ef0c0 of 62 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.660:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138ef1b0 of 60 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.660:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138ef250 of 62 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.660:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138ef2a0 of 62 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.660:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138ef700 of 66 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.660:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138ef7a0 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.660:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138ef840 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.660:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138ef890 of 60 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.660:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138efa70 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.660:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138efac0 of 58 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.660:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138efb10 of 60 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.660:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138efc00 of 62 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.660:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138efd40 of 62 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.660:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138efde0 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.660:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138efe30 of 62 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.660:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138f0450 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.661:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138f0a40 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.661:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138f0b70 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.661:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138f0ca0 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.661:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138f0dd0 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.661:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138f1030 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.661:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138f1160 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.661:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138f1290 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.661:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138f1750 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.661:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138f1880 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.661:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da138f1c10 of 132 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.661:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da139075d0 of 512 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.661:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da13908680 of 512 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.661:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da13a90e80 of 896 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.661:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da13ecc390 of 512 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.662:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da13ed1cd0 of 512 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.662:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da13eec7c0 of 512 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.662:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da13ef9f50 of 512 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.662:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da13f0e940 of 712 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.662:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da13f52c88 of 512 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.662:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da13f5e090 of 512 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.662:ERROR:process_memory_win.cc(73)] ReadMemory at 0x1da15716ee0 of 512 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.662:ERROR:process_memory_win.cc(73)] ReadMemory at 0x690ed1288b28 of 512 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.662:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff82e30796b of 512 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.662:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff82e8e7684 of 512 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.662:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff830a8806c of 512 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.662:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8319b5b61 of 512 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.662:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff835c09568 of 512 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.662:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8be75c6e0 of 512 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.663:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c147c074 of 672 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.663:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c147c674 of 512 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.663:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c147f924 of 608 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.663:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c150c428 of 18 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.663:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c153f4f8 of 40 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.663:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c153f978 of 48 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.663:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff8c15453c0 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
++[0520/184827.665:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+diff --git a/index.html b/index.html
+index 7028fe1..efc5fe4 100644
+--- a/index.html
++++ b/index.html
+@@ -1,33 +1,34 @@
+ <!DOCTYPE html>
+-<html lang="en" >
+-<head>
+-  <meta charset="UTF-8">
+-  <title>POrtfolio</title>
+-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
++<html lang="en">
++  <head>
++    <meta charset="UTF-8" />
++    <title>POrtfolio</title>
++    <link
++      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
++      rel="stylesheet"
++    />
+     <!--Font Awesome Icons-->
+-  
+-
+-</head>
+-<body>
+-<!-- partial:index.partial.html -->
+-<!--NAVBAR START-->
++  </head>
++  <body>
++    <!-- partial:index.partial.html -->
++    <!--NAVBAR START-->
+ 
+     <navbar class="nav-container" id="navbar">
+-        <a href="#welcome-section">
+-            <div class="linkdiv">
+-                About
+-            </div>
+-        </a>
+-        <a href="#projects">
+-            <div class="linkdiv">
+-                Work
+-            </div>
+-        </a>
+-        <a href="#contact">
+-            <div class="linkdiv">
+-                Contact
+-            </div>
+-        </a>
++      <a href="#welcome-section">
++        <div class="linkdiv">
++          About
++        </div>
++      </a>
++      <a href="#projects">
++        <div class="linkdiv">
++          Work
++        </div>
++      </a>
++      <a href="#contact">
++        <div class="linkdiv">
++          Contact
++        </div>
++      </a>
+     </navbar>
+ 
+     <!--NAVBAR END-->
+@@ -35,130 +36,166 @@
+     <!--MAIN CONTENT START-->
+ 
+     <div class="content-container">
+-
+-        <!--WELCOME START-->
+-        <section class="vh" id="welcome-section">
+-            <div id="particles-js"></div>
+-            <h1>Hi, I am Anush Bhatia</h1>
+-            <p class="italic-sub">a web developer</p>
+-        </section>
+-
+-        <!--WELCOME END-->
+-
+-        <!--PROJECTS START-->
+-
+-        <section id="projects">
+-            <h2>Here are some of my projects</h2>
+-            <div class="projects-container">
+-                
+-                <div class="project-tile">
+-                    <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank">
+-                        <img class="project-image" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg" alt="Tribute Page project image">
+-                    </a>
+-                    <p class="project-text">Tribute Page</p>                    
+-                </div>
+-
+-                <div class="project-tile">
+-                    <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank">
+-                        <img class="project-image" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/random-quote-machine.png" alt="Random Quote Machine project image">
+-                    </a>
+-                    <p class="project-text">Random Quote Machine</p>                    
+-                </div>  
+-                
+-                <div class="project-tile">
+-                    <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank">
+-                        <img class="project-image" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/calc.png" alt="Javascript Calculator project image">
+-                    </a>
+-                    <p class="project-text">Javascript Calculator</p>                    
+-                </div>
+-
+-                <div class="project-tile">
+-                    <a href="https://codepen.io/freeCodeCamp/full/mVEJag" target="_blank">
+-                        <img class="project-image" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/map.jpg" alt="Map Data Across the globe project image">
+-                    </a>
+-                    <p class="project-text">Map Data Across the Globe</p>                    
+-                </div>
+-
+-                <div class="project-tile">
+-                    <a href="https://codepen.io/freeCodeCamp/full/wGqEga" target="_blank">
+-                        <img class="project-image" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/wiki.png" alt="Wikipedia Viewer project image">
+-                    </a>
+-                    <p class="project-text">Wikipedia Viewer</p>                    
+-                </div>
+-
+-                <div class="project-tile">
+-                    <a href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank">
+-                        <img class="project-image" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tic-tac-toe.png" alt="Tic Tac Toe Game project image">
+-                    </a>
+-                    <p class="project-text">Tic Tac Toe Game</p>                    
+-                </div>
+-
++      <!--WELCOME START-->
++      <section class="vh" id="welcome-section">
++        <div id="particles-js"></div>
++        <h1>Hi, I am Anush Bhatia</h1>
++        <p class="italic-sub">a web developer</p>
++      </section>
++
++      <!--WELCOME END-->
++
++      <!--PROJECTS START-->
++
++      <section id="projects">
++        <h2>Here are some of my projects</h2>
++        <div class="projects-container">
++          <section class="main">
++            <div class="wrap section1">
++              <a
++                class="container img1"
++                href="https://codepen.io/freeCodeCamp/full/zNqgVx"
++                target="_blank">
++                <p>Tribute Page</p>
++              </a>
+             </div>
+-            <a href="https://codepen.io/FreeCodeCamp/" target="_blank" class="btn-view-all">View all</a>
+-
+-        </section>
+-
+-        <section id="contact">
+-            <h1>Let's work together...</h1>
+-            <p class="italic-sub">Just say a hello:</p>
+-
+-            <div class="contact-links">
+-
+-                <a href="#" id="profile-link" class="contact-btn" target="_blank">
+-                    <i class="fab fa-github"></i>
+-                    Github
+-                </a>
+-
+-                <a href="#" id="facebook-link" class="contact-btn" target="_blank">
+-                    <i class="fab fa-facebook"></i>
+-                    Facebook
+-                </a>
+-
+-                <a href="#" id="twitter-link" class="contact-btn" target="_bank">
+-                    <i class="fab fa-twitter"></i>
+-                    Twitter
+-                </a>
+-
+-                <a href="mailto:example@example.com" id="email-link" class="contact-btn">
+-                    <i class="fas fa-envelope-square"></i>
+-                    send a mail
+-                </a>
+-
+-                <a href="tel:555-555-5555" id="call-link" class="contact-btn">
+-                    <i class="fas fa-phone-square"></i>
+-                    call me
+-                </a>
+-
++          </section>
++
++          <section class="main">
++            <div class="wrap section2">
++              <a
++                class="container img2"
++                href="https://codepen.io/freeCodeCamp/full/qRZeGZ"
++                target="_blank">
++                <p>Random Quote Machine</p>
++              </a>
+             </div>
+-        </section>
+-
+-        <!--PROJECTS END-->
+-
+-        <!--FOOTER START-->
+-
+-        <footer class="page-footer">
+-            
+-            <p>**This is just a fake portfolio. All the projects and contact details given
+-                are not real.</p>
+-
+-            <p>
+-                &copy; Created By <a href="#" id="copyr-link" target="_blank">
+-                    <i class="#"></i>
+-                    Anush
+-                </a>
+-            </p>
+-
+-        </footer>
+-
+-        <!--FOOTER END-->
+-
++          </section>
++
++          <section class="main">
++            <div class="wrap section3">
++              <a
++                class="container img3"
++                href="https://codepen.io/freeCodeCamp/full/wgGVVX"
++                target="_blank">
++                <p>Javascript Calculator</p>
++              </a>
++            </div>
++          </section>
++
++          <section class="main">
++            <div class="wrap section4">
++              <a
++                class="container img4"
++                href="https://codepen.io/freeCodeCamp/full/mVEJag"
++                target="_blank">
++                <p>Map Data Across the Globe</p>
++              </a>
++            </div>
++          </section>
++
++          <section class="main">
++            <div class="wrap section5">
++              <a
++                class="container img5"
++                href="https://codepen.io/freeCodeCamp/full/wGqEga"
++                target="_blank">
++                <p>Wikipedia Viewer</p>
++              </a>
++            </div>
++          </section>
++
++          
++          <section class="main">
++            <div class="wrap section6">
++              <a
++                class="container img6"
++                href="https://codepen.io/freeCodeCamp/full/KzXQgy"
++                target="_blank">
++                <p>Tic Tac Toe Game</p>
++              </a>
++            </div>
++          </section>
++        </div>
++        <a
++          href="https://codepen.io/FreeCodeCamp/"
++          target="_blank"
++          class="btn-view-all"
++          >View all</a
++        >
++      </section>
++
++      <section id="contact">
++        <h1>Let's work together...</h1>
++        <p class="italic-sub">Just say a hello:</p>
++
++        <div class="contact-links">
++          <a href="#" id="profile-link" class="contact-btn" target="_blank">
++            <i class="fab fa-github"></i>
++            Github
++          </a>
++
++          <a href="#" id="facebook-link" class="contact-btn" target="_blank">
++            <i class="fab fa-facebook"></i>
++            Facebook
++          </a>
++
++          <a href="#" id="twitter-link" class="contact-btn" target="_bank">
++            <i class="fab fa-twitter"></i>
++            Twitter
++          </a>
++
++          <a
++            href="mailto:example@example.com"
++            id="email-link"
++            class="contact-btn"
++          >
++            <i class="fas fa-envelope-square"></i>
++            send a mail
++          </a>
++
++          <a href="tel:555-555-5555" id="call-link" class="contact-btn">
++            <i class="fas fa-phone-square"></i>
++            call me
++          </a>
++        </div>
++      </section>
++
++      <!--PROJECTS END-->
++
++      <!--FOOTER START-->
++
++      <footer class="page-footer">
++        <p>
++          **This is just a fake portfolio. All the projects and contact details
++          given are not real.
++        </p>
++
++        <p>
++          &copy; Created By
++          <a href="#" id="copyr-link" target="_blank">
++            <i class="#"></i>
++            Anush
++          </a>
++        </p>
++      </footer>
++
++      <!--FOOTER END-->
+     </div>
+-    
++
+     <!--MAIN CONTENT END-->
+-<!-- partial -->
+-    <script src="https://kit.fontawesome.com/cda8a8d48f.js" crossorigin="anonymous"></script><link rel="stylesheet" href="css/style.css">
+-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
++    <!-- partial -->
++    <script
++      src="https://kit.fontawesome.com/cda8a8d48f.js"
++      crossorigin="anonymous"
++    ></script>
++    <link rel="stylesheet" href="css/style.css" />
++    <script
++      src="https://code.jquery.com/jquery-3.5.1.min.js"
++      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
++      crossorigin="anonymous"
++    ></script>
+     <script src="js/particles.min.js"></script>
+     <script src="js/scripts.js"></script>
+-</body>
++  </body>
+ </html>
+diff --git a/js/scripts.js b/js/scripts.js
+index 94c5e0d..74afdba 100644
+--- a/js/scripts.js
++++ b/js/scripts.js
+@@ -36,4 +36,109 @@ particlesJS('particles-js', {
+ 	},
+ 	retina_detect: true
+ });
+-console.log('hi');
++
++
++/* Card designing*/
++
++class parallaxTiltEffect {
++
++	constructor({element, tiltEffect}) {
++  
++	  this.element = element;
++	  this.container = this.element.querySelector(".container");
++	  this.size = [300, 360];
++	  [this.w, this.h] = this.size;
++  
++	  this.tiltEffect = tiltEffect;
++  
++	  this.mouseOnComponent = false;
++  
++	  this.handleMouseMove = this.handleMouseMove.bind(this);
++	  this.handleMouseEnter = this.handleMouseEnter.bind(this);
++	  this.handleMouseLeave = this.handleMouseLeave.bind(this);
++	  this.defaultStates = this.defaultStates.bind(this);
++	  this.setProperty = this.setProperty.bind(this);
++	  this.init = this.init.bind(this);
++  
++	  this.init();
++	}
++  
++	handleMouseMove(event) {
++	  const {offsetX, offsetY} = event;
++  
++	  let X;
++	  let Y;
++  
++  
++		X = (-(offsetX - (this.w/2)) / 3) / 3;
++		Y = ((offsetY - (this.h/2)) / 3) / 3;
++	  
++  
++	  this.setProperty('--rY', X.toFixed(2));
++	  this.setProperty('--rX', Y.toFixed(2));
++  
++	  this.setProperty('--bY', (80 - (X/4).toFixed(2)) + '%');
++	  this.setProperty('--bX', (50 - (Y/4).toFixed(2)) + '%');
++	}
++  
++	handleMouseEnter() {
++	  this.mouseOnComponent = true;
++	  this.container.classList.add("container--active");
++	}
++  
++	handleMouseLeave() {
++	  this.mouseOnComponent = false;
++	  this.defaultStates();
++	}
++  
++	defaultStates() {
++	  this.container.classList.remove("container--active");
++	  this.setProperty('--rY', 0);
++	  this.setProperty('--rX', 0);
++	  this.setProperty('--bY', '80%');
++	  this.setProperty('--bX', '50%');
++	}
++  
++	setProperty(p, v) {
++	  return this.container.style.setProperty(p, v);
++	}
++  
++	init() {
++	  this.element.addEventListener('mousemove', this.handleMouseMove);
++	  this.element.addEventListener('mouseenter', this.handleMouseEnter);
++	  this.element.addEventListener('mouseleave', this.handleMouseLeave);
++	}
++  
++  }
++  
++  const $ = e => document.querySelector(e);
++  
++  const wrap1 = new parallaxTiltEffect({
++	element: $('.section1'),
++	tiltEffect: 'normal'
++  });
++
++  const wrap2 = new parallaxTiltEffect({
++	element: $('.section2'),
++	tiltEffect: 'normal'
++  });
++
++  const wrap3 = new parallaxTiltEffect({
++	element: $('.section3'),
++	tiltEffect: 'normal'
++  });
++
++  const wrap4 = new parallaxTiltEffect({
++	element: $('.section4'),
++	tiltEffect: 'normal'
++  });
++
++  const wrap5 = new parallaxTiltEffect({
++	element: $('.section5'),
++	tiltEffect: 'normal'
++  });
++
++  const wrap6 = new parallaxTiltEffect({
++	element: $('.section6'),
++	tiltEffect: 'normal'
++  });
+\ No newline at end of file
+-- 
+2.24.0.windows.2
+
