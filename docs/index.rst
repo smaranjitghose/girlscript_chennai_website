@@ -56,7 +56,6 @@ To read about License and Copyrights click `here <https://github.com/smaranjitgh
    blog
    team
    event
-   contributors
    contactus
    register
    headerfooter
