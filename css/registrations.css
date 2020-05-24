@@ -243,7 +243,7 @@ h1 {
 	}
 
 	#inputField {
-		width: 65% !important;
+		width: 95% !important;
 	}	
 
 	#inputContainer {
@@ -255,8 +255,8 @@ h1 {
 
 #success-screen {
 	position: absolute;
-	width:100%;
-	min-height:100%;
+	min-width:100%;
+	height:100%;
 	z-index:2;
 	background:var(--confetti-bg);
 }
