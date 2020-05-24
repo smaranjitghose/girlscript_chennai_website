@@ -34,6 +34,7 @@ const AchievementsPage = () => {
     <Layout>
       <Head>
         <title>GirlScript Website Boilerplate | Achievements</title>
+        <script src="/JS/countUp.js" type="text/javascript"></script>
       </Head>
 
       <CountDownSection />
