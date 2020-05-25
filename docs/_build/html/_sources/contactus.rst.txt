@@ -3,12 +3,16 @@
 
 
 Contact us Page
-==================
+*****************
 
 This page shows the user how they can reach the Girlscript Community.
 It consists of 2 sections which are as follows:
 
-1. The left section consists of the **contact** and the **address details**.
+
+Contact and address details
+===============================
+
+The left section consists of the **contact** and the **address details**.
 
 .. image:: ./images/contactuspage/Information.PNG
   :width: 400
@@ -27,7 +31,11 @@ If you want to make changes in this section, carry out the following changes in 
 
 - To change the background image : Go to `contact-page.css <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/css/contact-page.css>`__ and search :python:`.main-section`, in the url change the link to a different image. You can add new image in the :python:`../assets/Images/contact/image_name` and then add this link in the url.
 
-2. The right section consists of the **contact form** where the user can submit their queries.
+
+Contact form
+==============
+
+The right section consists of the **contact form** where the user can submit their queries.
 
 .. image:: ./images/contactuspage/form.PNG
   :width: 400

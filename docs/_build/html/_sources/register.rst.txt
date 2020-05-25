@@ -2,7 +2,7 @@
     :language: python
 
 Register Page
-==================
+******************
 
 This section consists of the registration form where the complete information of the candidate will be stored in the profile till the end of this program.
 

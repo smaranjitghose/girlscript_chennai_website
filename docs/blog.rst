@@ -2,13 +2,13 @@
     :language: python
 
 Blog Page
-==================
+****************
 
 This is the blog page displaying information in the reverse chronological order, with the latest posts appearing first. It is a platform where a writer or even a group of writers share their views on an individual subject.
 Here, Our Blog page is  `TECHEQUILLA <https://medium.com/techequilla>`__  - A platform for techies to showcase and share !
 
 .. image:: ./images/blogpage/blogimage.PNG
-  :width: 600
+  :width: 400
   :align: center   
   :alt: Alternative text
 
