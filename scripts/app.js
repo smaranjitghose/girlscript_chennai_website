@@ -185,11 +185,11 @@ function changeTheme(value) {
 	if (value === 'dark' || checkElement.checked == true) {
 		checkElement.checked = true;
 		docElement.setAttribute('data-theme', 'dark');
-		localStorage.setItem('mode', 'dark');
+		sessionStorage.setItem('mode', 'dark');
 	} else {
 		checkElement.checked = false;
 		docElement.setAttribute('data-theme', 'light');
-		localStorage.setItem('mode', 'light');
+		sessionStorage.setItem('mode', 'light');
 	}
 }
 
@@ -204,8 +204,8 @@ $(function () {
 	bodyElement.append(goToTopbutton);
 	activeTab();
 	activeSmallTab();
-	if (localStorage['mode']) {
-		changeTheme(localStorage['mode']);
+	if (sessionStorage['mode']) {
+		changeTheme(sessionStorage['mode']);
 	}
 });
 
