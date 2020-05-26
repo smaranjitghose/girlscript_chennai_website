@@ -1,5 +1,5 @@
-import { StyledHeading } from './StyledHeading';
-import { StyledButton } from './StyledButton';
+import { StyledHeading } from '../StyledHeading';
+import { StyledButton } from '../StyledButton';
 
 const timelineCardsDetails = [
   {
