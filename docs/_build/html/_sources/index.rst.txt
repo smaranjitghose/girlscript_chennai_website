@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 GirlScript Website Boilerplate
-===============================
+*******************************
 
 .. image:: ./images/logo_for_boilerplate.png
   :width: 200
@@ -15,16 +15,16 @@ This is an open source project for creating a website that shall serve as a boil
 
 This project is also meant to be a starting for all techies interested to get their hands dirty in open-source contributions. A highlight of this project being this project is "built by the community for the community".
 
-----------------------------------------------------------------------
-
-**Contributor Covenant Code of Conduct**
+Contributor Covenant Code of Conduct
+=======================================
 
 The code of conduct helps to welcome all people to contribute and pledges in return to value them as whole human beings and to foster an atmosphere of kindness, cooperation, and understanding.
 
 So to read more about it click `here <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/Code_of_Conduct.md>`__ .
 
 
-**Contributing Guidelines**
+Contributing Guidelines
+=========================
 
 We value all the people who are interested in contributing to Girlscript website boilerplate. This is required to create a unified development environment.These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
@@ -39,13 +39,14 @@ We want to make contributing to this project as easy and transparent as possible
 You can click `here <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/CONTRIBUTING.md>`__ to know about the complete guidelines to follow for contributing to this project.
 
 
-**License**
+License
+=========
 
 To read about License and Copyrights click `here <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/LICENSE>`__.
 
-----------------------------------------------------------------------
 
-**Content**
+Content
+========
 
 .. toctree::
    :maxdepth: 2 
@@ -56,7 +57,6 @@ To read about License and Copyrights click `here <https://github.com/smaranjitgh
    blog
    team
    event
-   contributors
    contactus
    register
    headerfooter

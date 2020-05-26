@@ -2,13 +2,16 @@
     :language: python
 
 Announcement Page
-==================
+*******************
 
 This page consists of the announcements about upcoming events and recent events by your Girlscript Chapter.
 It consists of 2 sections which are as follows:
 
 
-1. **Upcoming events**: This section consists of the upcoming events in a timeline format.
+Upcoming events
+===================
+
+This section consists of the upcoming events in a timeline format.
 
 .. image:: ./images/announcementpage/upcomingevent.JPG
   :width: 600
@@ -30,7 +33,10 @@ If you want to make changes in this section, carry out the following changes in 
 - To add an additional event - Go to `announcement.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/announcement.js>`__ and search :python:`const announcementTimeline`,  you will see an array of object within which you can create a new object and make the changes accordingly.
 
 
-2. **Recent events**: This section consists of the  recent events that are being conducted by your GirlScript Chapter.
+Recent event
+===============
+
+This section consists of the  recent events that are being conducted by your GirlScript Chapter.
 
 .. image:: ./images/announcementpage/recentevent.PNG
   :width: 600

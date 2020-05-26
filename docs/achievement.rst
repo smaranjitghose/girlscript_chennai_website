@@ -2,12 +2,16 @@
     :language: python
 
 Achievement Page
-===================
+******************
 
 This page consists of all the achievements and rewards accomplished by your Girlscript Team. 
 It consists of 3 sections which are as follows:
 
-1. **Activities Conducted**: This section consists of the number of events, projects conducted along with number of people impacted by it.
+
+Activities conducted
+======================
+ 
+This section consists of the number of events, projects conducted along with number of people impacted by it.
 
 .. image:: ./images/achievementpage/activities.JPG
   :width: 600
@@ -24,7 +28,11 @@ If you want to make changes in this section, carry out the following changes in 
 
 * To add an additional activity : Go to `achievements.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/achievements.html>`__ and search :python:`col-md-4 col-sm-4` , where you can copy the whole <div> and make changes accordingly.
 
-2. **Projects**: This section consists of some amazing projects that are build by your Girlscript.
+
+Projects 
+===========
+
+This section consists of some amazing projects that are build by your Girlscript.
 
 .. image:: ./images/achievementpage/projects.JPG
   :width: 600
@@ -47,7 +55,11 @@ If you want to make changes in this section, carry out the following changes in 
 
 - To change the text of the button :  Go to `achievements.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/achievements.html>`__ and search :python:`proshow` , you will see <button> tag where you can make changes.
 
-3. **Latest Achievements and Announcements**: This section consists of the latest achievements and announcements by your Girlscript Chapter.
+
+Latest Achievements and Announcements
+=======================================
+
+This section consists of the latest achievements and announcements by your Girlscript Chapter.
 
 .. image:: ./images/achievementpage/achievements.JPG
   :width: 600

@@ -2,12 +2,18 @@
     :language: python
 
 Header and Footer Section
-==========================
+***************************
+This section contains the navbar and header of the GirlScript website.
 
-1. **Header**: This section contains the navbar that has the links to other sections of the website.
+Header
+=========
 
-There are 2 sections within the navbar
-a) Navbar (Laptop View) : 
+This section contains the navbar that has the links to other sections of the website.
+
+There are 2 sections within the navbar :-
+
+Navbar (Laptop View)
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: ./images/headerfooter/headerlaptop.JPG
   :width: 600
@@ -24,7 +30,8 @@ If you want to make changes in this section, carry out the following changes in 
 
 * To append an additional navbar item : Go to file `app.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/app.js>`__ and search :python:`nav-item`, where you can copy the <li> tag and make the changes accordingly.
 
-b) Full Screen Navigation (Responsive View) :
+Full Screen Navigation (Responsive View) 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: ./images/headerfooter/headerfullnav.JPG
   :width: 600
@@ -47,7 +54,10 @@ If you want to make changes in this section, carry out the following changes in 
    - You can refer `this <https://fontawesome.com/v4.7.0/icons/>`__  where you can get different icons according to your requirement and you can copy the html code of that icon and add it into your code and do the further designing.
 
    
-2. **Footer**: The bottom section of a webpage is called as a footer. This area typically contains the name of the company or organization that publishes the website, along with relevant copyright information and some links to their profiles.
+Footer
+=========
+
+The bottom section of a webpage is called as a footer. This area typically contains the name of the company or organization that publishes the website, along with relevant copyright information and some links to their profiles.
 
 .. image:: ./images/headerfooter/footer.PNG
   :width: 600

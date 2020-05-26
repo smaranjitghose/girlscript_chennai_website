@@ -3,13 +3,17 @@
 
 
 Event Page
-==================
+**************
 
 In this page all the upcoming events are displayed along with their registration details.
 
 This page is divided into the following sections:
 
-1. **Code Camp** : This is the first section where the link of the upcoming schedules are attached.
+
+Code Camp
+===========
+
+This is the first section where the link of the upcoming schedules are attached.
 
 .. image:: ./images/eventpage/codecamp.PNG
   :width: 600
@@ -31,7 +35,10 @@ If you want to make changes in this section, carry out the following changes in 
    - To change image in responsive mode, change the link of the URL of background image within the media queries, As different background images are currently present for responsive views.
 
 
-2. **About** : This section describes about the how to kickstart as a beginner.
+About
+=======
+
+ This section describes about the how to kickstart as a beginner.
 
 .. image:: ./images/eventpage/about.JPG
   :width: 600
@@ -47,7 +54,10 @@ If you want to make changes in this section, carry out the following changes in 
 - To change the image: Go to `event1.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/event1.html>`__ and search :python:`Image of event`, you will see <img> tag where in href you can give path of the new image. 
 
 
-3. **Schedule** : This section contains the timeline of all the events which are going to be conducted by your Girlscript Chapter.
+Schedule
+==========
+
+This section contains the timeline of all the events which are going to be conducted by your Girlscript Chapter.
 
 .. image:: ./images/eventpage/schedule.JPG
   :width: 600
@@ -75,7 +85,10 @@ If you want to make changes in this section, carry out the following changes in 
    * You can refer `this <https://fontawesome.com/v4.7.0/icons/>`__  where you can get different icons according to your requirement and you can copy the html code of the icon to add it in the code and do the further designing.
 
 
-4. **Register**: In this section, the registration of the upcoming event is done.
+Register
+==========
+
+ In this section, the registration of the upcoming event is done.
 
 .. image:: ./images/eventpage/register.PNG
   :width: 600
@@ -97,7 +110,10 @@ If you want to make changes in this section, carry out the following changes in 
    - To change image in responsive mode, change the link of the URL of background image within the media queries, As different background images are currently present for responsive views.
 
 
-5. **FAQs**: In this section all the general queries are answered.
+FAQs 
+=======
+
+In this section all the general queries are answered.
 
 .. image:: ./images/eventpage/faqs.PNG
   :width: 600

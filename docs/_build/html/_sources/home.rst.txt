@@ -2,12 +2,15 @@
     :language: python
 
 Home Page
-===================
+***********
 
 This is the landing page of our website which includes the introduction, goals, achievement etc.
 The home page is divided into various sections which are as follows :
 
-1. **Banner**: It is the welcome section of the landing page that displays "Welcome to India's Largest Tech Community" **GIRLSCRIPT WEBSITE BOILERPLATE** using text animation.
+Banner
+========
+
+It is the welcome section of the landing page that displays "Welcome to India's Largest Tech Community" **GIRLSCRIPT WEBSITE BOILERPLATE** using text animation.
 
 .. image:: ./images/homepage/frontimg.PNG
   :width: 600
@@ -21,7 +24,10 @@ If you want to make changes in this section, carry out the following changes in 
 - To change the text animation - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`sp-content`, you will see three <h2> tag having different clases where you can modify your content accordingly. 
    
 
-2. **About**: About section describes about the Girlscript Foundation and their goals.
+About
+=========
+
+About section describes about the Girlscript Foundation and their goals.
 
 .. image:: ./images/homepage/aboutus.png
   :width: 600
@@ -37,8 +43,10 @@ If you want to make changes in this section, carry out the following changes in 
 * To change the image - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`.img-logo`, you will see the <img> tag and in src you can change the image.
 
 
+Parallax
+=============
 
-3. **Parallax**: Parallax scrolling is when the website layout sees the background of the web page moving at a slower rate to the foreground, creating a 3D effect as you scroll. Used sparingly it can provide a nice, subtle element of depth that results in a distinctive and memorable website.
+Parallax scrolling is when the website layout sees the background of the web page moving at a slower rate to the foreground, creating a 3D effect as you scroll. Used sparingly it can provide a nice, subtle element of depth that results in a distinctive and memorable website.
 
 .. image:: ./images/homepage/parallax.JPG
   :width: 600
@@ -51,7 +59,10 @@ If you want to make changes in this section, carry out the following changes in 
    There are three Parallax in the home page.
 
 
-4. **Our Initiatives**:  This section describes about the different initiatives taken by your GirlScript Chapter.
+Our initiatives
+===================
+
+This section describes about the different initiatives taken by your GirlScript Chapter.
 
 .. image:: ./images/homepage/initiatives.png
   :width: 600
@@ -77,7 +88,10 @@ If you want to make changes in this section, carry out the following changes in 
    - To get free vector icons with high resolution refer `this <https://www.flaticon.com/>`__ .
 
 
-5. **Our Achievements**: This section describes the achievements taken by your GirlScript Chapter. It is a card which is divided into 3 parts.
+Our Achievements
+===================
+
+This section describes the achievements taken by your GirlScript Chapter. It is a card which is divided into 3 parts.
 
 .. image:: ./images/homepage/achievements.png
   :width: 600
@@ -101,7 +115,10 @@ If you want to make changes in the right part, carry out the following changes i
 To modify the animation effect of the whole section - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`my-canvas`, do your desired changes whether you want or not or any style.
 
 
-6. **Various Trends**: This section covers various trends upon which contributions have been made.
+Various Trends
+===================
+
+ This section covers various trends upon which contributions have been made.
 
 .. image:: ./images/homepage/trends.png
   :width: 600

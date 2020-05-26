@@ -2,7 +2,7 @@
     :language: python
 
 Team Page
-=================
+**************
 
 This page consists of the member which are working behind the project so that all the contributors can work on it smoothely.
 
