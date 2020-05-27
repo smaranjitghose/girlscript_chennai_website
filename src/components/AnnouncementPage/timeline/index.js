@@ -1,5 +1,8 @@
 import { StyledHeading } from '../StyledHeading';
 import { StyledButton } from '../StyledButton';
+import { CardStats } from './CardStats';
+import { StyledTimeline } from './StyledTimeline';
+import { StyledTimelineContent } from './StyledTimelineContent';
 
 const timelineCardsDetails = [
   {
@@ -25,21 +28,21 @@ const TimelineCard = ({ id }) => {
 
   return (
     <div className={`timeline-container ${position}`}>
-      <div className="timeline-content">
+      <StyledTimelineContent>
         <h3>{timeline.eventName}</h3>
         <hr className="mw-100 line1" />
         <p className="description">{timeline.eventDescription}</p>
         <div className={`time ${dateType}`}>
           <h5>{timeline.eventDate}</h5>
         </div>
-        <div className="card-stats">
+        <CardStats>
           <StyledButton>
             <a href={timeline.eventPageLink} className="btn" target="__blank">
               Read More
             </a>
           </StyledButton>
-        </div>
-      </div>
+        </CardStats>
+      </StyledTimelineContent>
     </div>
   );
 };
@@ -55,10 +58,10 @@ const TimelineCardSection = () => {
           <hr className="mw-100 line" />
         </StyledHeading>
 
-        <div className="timeline pt-5" id="timeline">
+        <StyledTimeline>
           <TimelineCard id={0} />
           <TimelineCard id={1} />
-        </div>
+        </StyledTimeline>
       </div>
     </section>
   );
