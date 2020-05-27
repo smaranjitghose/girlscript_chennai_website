@@ -2,6 +2,8 @@ import { StyledHeading } from '../StyledHeading';
 import { StyledButton } from '../StyledButton';
 import { StyledImage } from './CardImage';
 import { StyledText } from './CardText';
+import { CardStats } from './CardStats';
+import { StyledCard } from './StyledCard';
 
 const recentEventsDetails = [
   {
@@ -33,7 +35,7 @@ const recentEventsDetails = [
 const RecentEventsDetailsCard = ({ id }) => {
   const EventCard = recentEventsDetails[id];
   return (
-    <div className="card r-events-card">
+    <StyledCard>
       <StyledImage>
         <img
           src={EventCard.coverImage}
@@ -42,18 +44,17 @@ const RecentEventsDetailsCard = ({ id }) => {
         />
       </StyledImage>
       <StyledText>
-        <h2 className="rh1">{EventCard.eventName}</h2>
+        <h2 className="rh">{EventCard.eventName}</h2>
         <p className="pt-1 event-body">{EventCard.eventDescription}</p>
       </StyledText>
-      <div className="card-stats">
+      <CardStats>
         <StyledButton>
           <a href={EventCard.referencePage} className="btn">
-            {' '}
             Read More
           </a>
         </StyledButton>
-      </div>
-    </div>
+      </CardStats>
+    </StyledCard>
   );
 };
 

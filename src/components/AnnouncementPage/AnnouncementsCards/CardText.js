@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { StyledCard } from './StyledCard';
 
 export const StyledText = styled.div`
   -ms-grid-row: 2;
@@ -13,11 +14,19 @@ export const StyledText = styled.div`
     font-family: 'Quicksand', sans-serif;
     color: grey;
     font-size: 14.9px;
+
+    ${StyledCard}:hover & {
+      color: white;
+    }
   }
 
   > h2 {
     margin-top: 30px;
     font-size: 28px;
     color: var(--font-color);
+
+    ${StyledCard}:hover & {
+      color: white;
+    }
   }
 `;
