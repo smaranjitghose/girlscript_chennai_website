@@ -14,9 +14,9 @@ Here, Our Blog page is  `TECHEQUILLA <https://medium.com/techequilla>`__  - A pl
 
 If you want to make changes in this section, carry out the following changes in code:
 
-- To make changes in the heading - Go to `blogs.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/blogs.html>`__ and search :python:`Heading-Blog`, you will see <h3> tag where you can make changes.
+- To make changes in the heading - Go to `blogs.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/blogs.html>`__ and search ``Heading-Blog``, you will see <h3> tag where you can make changes.
 
-* To add the link of your medium blog - Go to `blogs.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/blogs.html>`__ and search :python:`data-rss`, where you can add the link of the medium blog.
+* To add the link of your medium blog - Go to `blogs.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/blogs.html>`__ and search ``data-rss``, where you can add the link of the medium blog.
 
 .. note::
      

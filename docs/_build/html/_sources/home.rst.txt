@@ -1,6 +1,3 @@
-  .. role:: python(code)
-    :language: python
-
 Home Page
 ***********
 
@@ -19,9 +16,9 @@ It is the welcome section of the landing page that displays "Welcome to India's 
 
 If you want to make changes in this section, carry out the following changes in code:
 
-* To change the background image - Go to file  `style.css <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/css/style.css>`__  and search :python:`.img-front` in the url change the link to a different image. You can add new image in the :python:`../assets/Images/Front-img/image_name` and then add this link in the url.
+* To change the background image - Go to file  `style.css <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/css/style.css>`__  and search ``.img-front`` in the url change the link to a different image. You can add new image in the ``../assets/Images/Front-img/image_name`` and then add this link in the url.
 
-- To change the text animation - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`sp-content`, you will see three <h2> tag having different clases where you can modify your content accordingly. 
+- To change the text animation - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search ``sp-content``, you will see three <h2> tag having different clases where you can modify your content accordingly. 
    
 
 About
@@ -36,11 +33,11 @@ About section describes about the Girlscript Foundation and their goals.
 
 If you want to make changes in this section, carry out the following changes in code:
 
-* To change the content - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`about-para` where you can change it. |
+* To change the content - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search ``about-para`` where you can change it. |
 
-- To add or modify the points in the Goals section - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`Goals`, you will see <li> tag (which is used for those black dots) within which you can change it's content accordingly.
+- To add or modify the points in the Goals section - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search ``Goals``, you will see <li> tag (which is used for those black dots) within which you can change it's content accordingly.
 
-* To change the image - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`.img-logo`, you will see the <img> tag and in src you can change the image.
+* To change the image - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search ``.img-logo``, you will see the <img> tag and in src you can change the image.
 
 
 Parallax
@@ -53,7 +50,7 @@ Parallax scrolling is when the website layout sees the background of the web pag
   :align: center
   :alt: Alternative text
 
--  For changing the image - Go to file `style.css <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/css/style.css>`__  and search :python:`.parallax1` and change the url. 
+-  For changing the image - Go to file `style.css <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/css/style.css>`__  and search ``.parallax1`` and change the url. 
 
 .. note::
    There are three Parallax in the home page.
@@ -71,17 +68,17 @@ This section describes about the different initiatives taken by your GirlScript 
 
 If you want to make changes in this section, carry out the following changes in code:
 
-- To make changes in the content of the heading - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`INITIATIVES`, you will see <h2> tag where you can make changes.
+- To make changes in the content of the heading - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search ``INITIATIVES``, you will see <h2> tag where you can make changes.
 
-* To make changes in the heading and subheading on the cards - Go to file `index.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/index.js>`__ and search :python:`const initiativesDetails`, you will see an array of object within which under :python:`mainHeading` and :python:`subHeading`  you can make changes.
+* To make changes in the heading and subheading on the cards - Go to file `index.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/index.js>`__ and search ``const initiativesDetails``, you will see an array of object within which under ``mainHeading` and ``subHeading``  you can make changes.
 
-- To make changes in the card description -  Go to file `index.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/index.js>`__ and search :python:`const initiativesDetails`, you will see an array of object within which under :python:`description` you can make changes.
+- To make changes in the card description -  Go to file `index.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/index.js>`__ and search ``const initiativesDetails``, you will see an array of object within which under ``description`` you can make changes.
 
 * To add a svg -  Go to file `svg.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/svg.js>`__ and create a variable and assign it with the svg content of the image.
 
-- To changes the svg of the icon in card  -  Go to file `index.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/index.js>`__ and search :python:`const initiativesDetails`, you will see an array of object within which under :python:`svg` you can add variable name of that svg and import it on the top of the file.
+- To changes the svg of the icon in card  -  Go to file `index.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/index.js>`__ and search ``const initiativesDetails``, you will see an array of object within which under ``svg`` you can add variable name of that svg and import it on the top of the file.
 
-* To add a new card - Go to file `index.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/index.js>`__ and search :python:`const initiativesDetails`, you will see an array of object within which you can create a new object and make the changes accordingly.
+* To add a new card - Go to file `index.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/index.js>`__ and search ``const initiativesDetails``, you will see an array of object within which you can create a new object and make the changes accordingly.
 
 .. note::
 
@@ -100,19 +97,19 @@ This section describes the achievements taken by your GirlScript Chapter. It is 
 
 If you want to make changes in the left part, carry out the following changes in code:
 
-- To make changes in the content - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`achieve-content`, and make changes in the <h3> tag.
+- To make changes in the content - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search ``achieve-content``, and make changes in the <h3> tag.
 
-* To make changes in the path of button - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`achieve-content` , you will see <a> tag where in href you can give the path of the file.
+* To make changes in the path of button - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search ``achieve-content`` , you will see <a> tag where in href you can give the path of the file.
  
 
 If you want to make changes in the right part, carry out the following changes in code:
 
-- To make changes in the number count - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`ci-number`, and make changes inside the div container and similarly for other number count also.
+- To make changes in the number count - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search ``ci-number``, and make changes inside the div container and similarly for other number count also.
 
-* To make changes in the heading and content - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`ci-text`, for heading <h4> tag and for content <p> tag and then do the desired changes accordingly.
+* To make changes in the heading and content - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search ``ci-text``, for heading <h4> tag and for content <p> tag and then do the desired changes accordingly.
 
 
-To modify the animation effect of the whole section - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`my-canvas`, do your desired changes whether you want or not or any style.
+To modify the animation effect of the whole section - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search ``my-canvas``, do your desired changes whether you want or not or any style.
 
 
 Various Trends
@@ -127,13 +124,13 @@ Various Trends
 
 If you want to make changes in this section, carry out the following changes in code:
 
-- To make changes in the heading and the content - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search :python:`WE CREATE TRENDS` or :python:`join-us`, you will see <h2> tag or <h3> tag where changes can be done.
+- To make changes in the heading and the content - Go to file `index.html <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/index.html>`__ and search ``WE CREATE TRENDS`` or ``join-us``, you will see <h2> tag or <h3> tag where changes can be done.
 
-* To make changes in the card images - Go to file `index.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/index.js>`__ and search :python:`const trendCardsDetails`, you will see an array of object within which under :python:`backgroundCover` you can add the path of the image. And accordingly you can change the other images also.
+* To make changes in the card images - Go to file `index.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/index.js>`__ and search ``const trendCardsDetails``, you will see an array of object within which under ``backgroundCover`` you can add the path of the image. And accordingly you can change the other images also.
 
-- To make changes in the display name on the card - Go to file `index.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/index.js>`__ and search :python:`const trendCardsDetails`, you will see an array of object within which under :python:`displayName` you can make your changes.
+- To make changes in the display name on the card - Go to file `index.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/index.js>`__ and search ``const trendCardsDetails``, you will see an array of object within which under ``displayName`` you can make your changes.
 
-* To add a new card - Go to file `index.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/index.js>`__ and search :python:`const trendCardsDetails`, you will see an array of object within which you can create a new object and make the changes accordingly.
+* To add a new card - Go to file `index.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/index.js>`__ and search ``const trendCardsDetails``, you will see an array of object within which you can create a new object and make the changes accordingly.
 
 .. note::
    - In visual code studio, To search for a word, press *ctrl + f* and for a file, press *ctrl + p* .
