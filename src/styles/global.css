@@ -1270,3 +1270,131 @@ h5 {
   font-weight: 500;
   font-family: 'Comfortaa', sans-serif;
 }
+
+/* Event page */
+
+header {
+  position: relative;
+  background-repeat: no-repeat;
+  height: 500px;
+  background: url('/assets/images/event/bg-1.png');
+  text-align: left;
+  background-size: 100% 500px;
+}
+
+@media screen and (max-width: 1048px) {
+  header {
+    background: url('/assets/images/event/bg-resize.png');
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    background: url('/assets/images/event/post-bg-1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    background: url('/assets/images/event/prepost-bg-1.png');
+    height: 400px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+.color-overlay-1 {
+  position: absolute;
+  background-color: var(--bg1-color);
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 1048px) {
+  .color-overlay-1 {
+    opacity: 0.8;
+  }
+}
+
+.heading1 {
+  font-family: 'Baloo Bhaina 2', sans-serif;
+  font-size: 70px;
+  padding-top: 8rem;
+  color: var(--heading-clr);
+}
+
+@media screen and (max-width: 600px) {
+  .heading1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .heading1 {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .heading1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .heading1 {
+    padding-top: 20px;
+  }
+}
+
+#heading-plus {
+  color: var(--theme-color);
+  font-weight: lighter;
+}
+
+.heading-caption {
+  color: #f58732;
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.caption-1 {
+  color: var(--heading-clr);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.caption-2 {
+  font-size: 18px;
+  color: var(--heading-clr);
+}
+
+.font-change {
+  color: #f36511;
+  font-weight: bolder;
+}
+
+.get-info {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--theme-color);
+  padding-top: 100px;
+  letter-spacing: 1px;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.get-info a {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.get-info a:hover {
+  color: var(--font-color);
+  text-shadow: 5px 5px 7px var(--shadow-clr);
+}
