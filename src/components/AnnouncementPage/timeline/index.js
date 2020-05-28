@@ -3,6 +3,7 @@ import { StyledButton } from '../StyledButton';
 import { CardStats } from './CardStats';
 import { StyledTimeline } from './StyledTimeline';
 import { StyledTimelineContent } from './StyledTimelineContent';
+import Link from 'next/link';
 
 const timelineCardsDetails = [
   {
@@ -10,14 +11,14 @@ const timelineCardsDetails = [
     eventDescription:
       'It is a meetup where everyone who are a part of Girlscript will gather and share their experience.',
     eventDate: 'June 20, 2020',
-    eventPageLink: './event1.html',
+    eventPageLink: '/event1',
   },
   {
     eventName: 'Code Camp',
     eventDescription:
       'It is a coding camp where everyone can participate and learn about different technologie',
     eventDate: 'May 20, 2020',
-    eventPageLink: './event1.html',
+    eventPageLink: '/event1',
   },
 ];
 
@@ -37,9 +38,11 @@ const TimelineCard = ({ id }) => {
         </div>
         <CardStats>
           <StyledButton>
-            <a href={timeline.eventPageLink} className="btn" target="__blank">
-              Read More
-            </a>
+            <Link href={timeline.eventPageLink}>
+              <a className="btn" target="__blank">
+                Read More
+              </a>
+            </Link>
           </StyledButton>
         </CardStats>
       </StyledTimelineContent>
