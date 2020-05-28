@@ -913,24 +913,6 @@ li {
   background-color: #f47621;
 }
 
-.timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: #ff9f55;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-  border-radius: 300px;
-}
-
 .timeline-container {
   padding: 10px 40px;
   position: relative;
@@ -989,15 +971,6 @@ li {
   left: -16px;
 }
 
-.timeline-content {
-  padding: 20px 30px;
-  background-color: var(--bg2-color);
-  position: relative;
-  border-radius: 6px;
-  -webkit-box-shadow: var(--box-shadow);
-  box-shadow: var(--box-shadow);
-}
-
 .time {
   position: absolute;
   top: 2px;
@@ -1021,14 +994,6 @@ li {
     left: -220px;
   }
 }
-
-.timeline-content p,
-h3,
-h5 {
-  font-family: 'Quicksand', sans-serif;
-}
-
-/* Making Timeline Responsive */
 
 @media screen and (max-width: 770px) {
   .timeline::after {
@@ -1106,19 +1071,6 @@ h5 {
     margin: 10px;
   }
 
-  .timeline-content {
-    padding: 7px 12px;
-    position: relative;
-  }
-
-  .timeline-content h3 {
-    font-size: 25px;
-  }
-
-  .timeline-content p {
-    font-size: 15px;
-  }
-
   .timeline-container {
     width: 100%;
     padding-left: 57px;
@@ -1133,13 +1085,6 @@ h5 {
 }
 
 @media only screen and (max-width: 340px) {
-  .card-image img {
-    margin-right: 2.5rem;
-    margin-top: 5px;
-    height: 240px;
-    width: 250px;
-  }
-
   .card-text {
     margin-right: 4rem;
     margin-top: 1rem;
@@ -1149,22 +1094,10 @@ h5 {
   .font-weight-bolder {
     text-align: center;
   }
-  .timeline-content h3 {
-    font-size: 24px;
-    text-align: center;
-  }
 }
 @media only screen and (max-width: 991px) {
-  .timeline-content h3 {
-    font-size: 20px;
-  }
   .description {
     font-size: 15px;
-  }
-  .card-stats a {
-    -webkit-transform: scale(0.85);
-    -ms-transform: scale(0.85);
-    transform: scale(0.85);
   }
   .time {
     -webkit-transform: scale(0.8);
@@ -1192,19 +1125,6 @@ h5 {
   text-align: center;
   margin-bottom: 5px;
 }
-.card-stats {
-  text-align: center;
-  margin-bottom: 5px;
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: stats;
-  grid-area: stats;
-  padding-top: 20px;
-  margin-top: 8px;
-  grid-row: 3;
-  grid-column: 1;
-}
-
 /* Blogs Page */
 .medium-widget-article__row {
   margin: 4rem 0rem;
