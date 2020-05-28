@@ -1,6 +1,3 @@
-.. role:: python(code)
-    :language: python
-
 Register Page
 ******************
 
@@ -13,13 +10,13 @@ This section consists of the registration form where the complete information of
 
 If you want to make changes in this section, carry out the following changes in code:
 
-- To make changes in the placeholder :  Go to `registratons.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/registrations.js>`__ and search :python:`var questions`, you will see an array of object where in question you can modify it.
+- To make changes in the placeholder :  Go to `registratons.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/registrations.js>`__ and search ``var questions``, you will see an array of object where in question you can modify it.
 
-* To add an additional input box :  Go to `registratons.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/registrations.js>`__ and search :python:`var questions`, you will see an array of object where you can add the question and modify it accordingly.
+* To add an additional input box :  Go to `registratons.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/registrations.js>`__ and search ``var questions``, you will see an array of object where you can add the question and modify it accordingly.
 
-- To modify the validation of the input field : Go to `registratons.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/registrations.js>`__ and search :python:`var questions`, you will see an array of object where you in the pattern/type you can add the appropriate regex.
+- To modify the validation of the input field : Go to `registratons.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/registrations.js>`__ and search ``var questions``, you will see an array of object where you in the pattern/type you can add the appropriate regex.
 
-* To change the welcome text : Go to `registratons.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/registrations.js>`__ and search :python:`Welcome`, you will see <h1> child where you can make changes.
+* To change the welcome text : Go to `registratons.js <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/scripts/registrations.js>`__ and search ``Welcome``, you will see <h1> child where you can make changes.
 
 After all the information is entered it redirects to the Welcome Page!
 
