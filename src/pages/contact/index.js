@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Layout from '../../components/Layout';
+import ContentSection from '../../components/contactPage/contentSection';
 
 const ContactPage = () => {
   return (
@@ -7,8 +8,7 @@ const ContactPage = () => {
       <Head>
         <title>GirlScript Website Boilerplate | Contact Us</title>
       </Head>
-
-      <h2 className="center temp">This is Contact Page</h2>
+      <ContentSection />
     </Layout>
   );
 };

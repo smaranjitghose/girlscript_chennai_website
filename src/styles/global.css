@@ -1318,3 +1318,87 @@ header {
   color: var(--font-color);
   text-shadow: 5px 5px 7px var(--shadow-clr);
 }
+
+/* Contact Page */
+
+.main-section {
+  padding-top: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      from(rgba(0, 0, 0, 0.849)),
+      to(rgba(0, 0, 0, 0.808))
+    ),
+    url('/assets/images/contact/contact.png');
+  background-image: -o-linear-gradient(
+      top left,
+      rgba(0, 0, 0, 0.849),
+      rgba(0, 0, 0, 0.808)
+    ),
+    url('/assets/images/contact/contact.png');
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.849),
+      rgba(0, 0, 0, 0.808)
+    ),
+    url('/assets/images/contact/contact.png');
+}
+
+[data-aos^='fade'][data-aos^='fade'].aos-animate {
+  opacity: var(--contactForm-opacity);
+}
+
+.def-sec {
+  color: #fff;
+  font-weight: 500;
+}
+
+.def h4 {
+  font-family: 'Comfortaa', sans-serif;
+  color: #f47621;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.def {
+  padding: 1rem;
+}
+
+.def i {
+  font-size: 27px;
+  padding-right: 5px;
+  color: #fff;
+}
+
+.def div {
+  padding: 0.2rem;
+}
+
+.def-sec {
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 1px;
+  margin-top: 0.5rem;
+  padding-right: 1rem;
+  font-size: 0.9em;
+}
+
+@media only screen and (max-width: 994px) {
+  .def {
+    padding: 1rem 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .def h4 {
+    font-size: 21px;
+  }
+  .def-sec {
+    font-size: 18px;
+  }
+}
