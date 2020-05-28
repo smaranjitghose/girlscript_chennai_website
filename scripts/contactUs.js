@@ -40,29 +40,29 @@ function validateForm(inputBox = undefined) {
 		
 	$('.error-message').css('display', 'none');
 	$('.no-border').removeClass('form-group-error');
-	if ((name.value.match(letters) || name.value === '') && (inputBox === 'name' || inputBox === 'submit')) {
+	if ((name.value.match(letters) || name.value === '' || name.value === null ) && (inputBox === 'name' || inputBox === 'submit')) {
 		displayError('name', name);
 		return false;
 	} else if (
-		(emailId.value === '' || validateEmail(emailId.value)) &&
+		(emailId.value === '' || emailId.value === null|| validateEmail(emailId.value)) &&
 		(inputBox === 'email' || inputBox === 'submit')
 	) {
 		displayError('email', emailId);
 		return false;
 	} else if (
-		(subject.value === '' || subject.value.length < 10) &&
+		(subject.value === '' || subject.value === null || subject.value.length < 10) &&
 		(inputBox === 'subject' || inputBox === 'submit')
 	) {
 		displayError('subject', subject, subject.value.length < 10);
 		return false;
 	} else if (
-		(message.value === '' || message.value.length < 10) &&
+		(message.value === '' || message.value === null|| message.value.length < 10) &&
 		(inputBox === 'message' || inputBox === 'submit')
 	) {
 		displayError('message', message, message.value.length < 10);
 		return false;
 	} else if (
-		(captchaInput.value === '' || !ValidCaptcha(captchaInput.value)) &&
+		(captchaInput.value === '' || captchaInput.value === null ||!ValidCaptcha(captchaInput.value)) &&
 		(inputBox === 'captcha' || inputBox === 'submit')
 	) {
 		displayError('captcha', captchaInput);
