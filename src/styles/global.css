@@ -1747,6 +1747,56 @@ header {
   color: orange;
 }
 
+.faq-heading {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+}
+
+.faq-heading h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 60px;
+}
+
+.faq-heading h1 span {
+  color: var(--theme-color);
+}
+
+.faq-subheading {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 17px;
+  padding-top: 10px;
+  color: var(--font-color);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.question-border {
+  border-radius: 10px;
+}
+
+.question-border:hover {
+  -webkit-transform: translateY(-5px);
+
+  -ms-transform: translateY(-5px);
+
+  transform: translateY(-5px);
+  -webkit-box-shadow: 0 5px 5px 0px rgba(100, 100, 100, 0.2);
+  box-shadow: 0 5px 5px 0px rgba(100, 100, 100, 0.2);
+  background: var(--theme-color);
+  -webkit-transition: 300ms linear;
+  -o-transition: 300ms linear;
+  transition: 300ms linear;
+  cursor: help;
+}
+
+.question-border:hover > .ques {
+  color: black;
+}
+
+.question-border:hover > .ans {
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 1px;
+=======
 /* Register section */
 
 .register-section {
