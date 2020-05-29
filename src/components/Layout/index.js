@@ -1,8 +1,15 @@
 import Head from 'next/head';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
+import ScrollToTop from '../ScrollToTop';
 
 const Layout = ({ children }) => {
+  const topBtnClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
   return (
     <>
       <Head>
@@ -47,7 +54,7 @@ const Layout = ({ children }) => {
       </Head>
       <Navbar />
       <main>{children}</main>
-
+      <ScrollToTop />
       <Footer />
     </>
   );
