@@ -1,19 +1,27 @@
 import styled from 'styled-components';
+import { StyledBox } from './StyledBox';
+import { StyledAnimationBox } from './StyledAnimationBox';
+import { StyledContainerHeading } from './StyledContainerHeading';
 
 const StyledDiv = styled.div`
   padding: 35px;
+`;
+
+const StyledContainerFluid = styled.div`
+  z-index: 2;
+  margin-top: 50px;
 `;
 
 const EventAboutSection = () => {
   return (
     <>
       <StyledDiv />
-      <div className="about-box">
-        <div className="animation-box">
-          <div className="container-fluid">
-            <div className="container-heading" id="container-heading">
+      <StyledBox>
+        <StyledAnimationBox>
+          <StyledContainerFluid>
+            <StyledContainerHeading>
               <span>A</span>bout
-            </div>
+            </StyledContainerHeading>
             <div className="row">
               <div className="col-xl-7 col-lg-12 col-sm-12 mt-4 text-container">
                 <p className="mt-2 mb-3 para" id="para">
@@ -49,9 +57,9 @@ const EventAboutSection = () => {
                 />
               </div>
             </div>
-          </div>
-        </div>
-      </div>
+          </StyledContainerFluid>
+        </StyledAnimationBox>
+      </StyledBox>
     </>
   );
 };

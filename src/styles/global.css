@@ -1469,7 +1469,7 @@ header {
   margin-bottom: 20px;
   color: #888;
 }
-
+/* 
 .space {
   padding: 35px;
 }
@@ -1541,7 +1541,7 @@ header {
   .container-heading {
     font-size: 35px;
   }
-}
+} */
 
 .container-schedule {
   max-width: 1060px;
@@ -1796,7 +1796,7 @@ header {
 .question-border:hover > .ans {
   color: rgba(255, 255, 255, 0.9);
   letter-spacing: 1px;
-=======
+}
 /* Register section */
 
 .register-section {
