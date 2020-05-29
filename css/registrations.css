@@ -10,6 +10,7 @@ html {
 	--inputLabel-color: #9e9e9e;
 	--input-bgColor: #fff;
 	--confetti-bg:#ff8e25;
+	--error-bg: #ff2d26;
 }
 
 html[data-theme='dark'] {
@@ -22,6 +23,7 @@ html[data-theme='dark'] {
 	--inputLabel-color: #fff;
 	--input-bgColor: #333333;
 	--confetti-bg: #272727;
+	--error-bg: rgb(245, 81, 28);
 }
 
 body {
@@ -274,7 +276,7 @@ h1 {
 	width: 400px;
 	margin-left: -125px;
 	margin-bottom: 10rem;
-	background-color: #ff2d26;
+	background-color: var(--error-bg);
 	color: #fff;
 	text-align: center;
 	border-radius: 2px;
@@ -311,3 +313,21 @@ h1 {
 	from {bottom: 30px; opacity: 1;}
 	to {bottom: 0; opacity: 0;}
   }
+
+/* Responsiveness for error message */
+  
+@media only screen and (max-width: 380px) {
+
+	#snackbar {
+		width: 95%;
+		left: 44%;
+	}
+}
+
+@media only screen and (max-width: 450px) and (min-width: 380px) {
+
+	#snackbar {
+		width: 90%;
+		left: 40%;
+	}
+}
