@@ -11,14 +11,15 @@ GirlScript Website Boilerplate
   :align: center
   :alt: Alternative text
 
-This is an open source project for creating a website that shall serve as a boilerplate for various chapters of GirlScript. With certain modifications to the content specific to the chapter using this, the need to build a website from scratch and the pains of fixing bugs and figuring out what part fits where is eliminated. Feel free to use this!. If this project helps you out, please give us a mention. Also, we would love to see your version of the same! Do a give a PR in a different branch that showcases how you used this!
+This is an open source project for creating a website that shall serve as a boilerplate for various chapters of GirlScript. With certain modifications to the content which is specific to the chapter. The need to build a website from scratch and the pains of fixing bugs and figuring out what part fits where is eliminated. Feel free to use this.
+If this project helps you out, please give us a mention. Also, we would love to see your version of the same! You can give a PR in a different branch that showcases how you used it.
 
-This project is also meant to be a starting for all techies interested to get their hands dirty in open-source contributions. A highlight of this project being this project is "built by the community for the community".
+This project is also meant to be a starting for all techies interested to get their hands dirty in open-source contributions. A highlight of this project is "built by the community for the community".
 
-Contributor Covenant Code of Conduct
+Code of Conduct
 =======================================
 
-The code of conduct helps to welcome all people to contribute and pledges in return to value them as whole human beings and to foster an atmosphere of kindness, cooperation, and understanding.
+The code of conduct helps to welcome all people to contribute and pledges in return to value them as whole human beings and to foster an atmosphere of kindness, cooperation and understanding.
 
 So to read more about it click `here <https://github.com/smaranjitghose/girlscript_chennai_website/blob/master/Code_of_Conduct.md>`__ .
 
