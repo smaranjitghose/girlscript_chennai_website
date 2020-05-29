@@ -158,7 +158,10 @@ window.onload = init;
 // Registration starts
 
 let questions = [
-	{ question: "What's your name?", pattern: '[A-Za-z]' },
+	{
+		question: "What's your name?",
+		pattern: /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u
+	},
 	{ question: "What's your registration number?", pattern: '^(RA)+[0-9]{13}$' },
 	{ question: 'In which year you are studying?', pattern: '^(?:[0-4])$' },
 	{ question: "What's your email?", pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ },
