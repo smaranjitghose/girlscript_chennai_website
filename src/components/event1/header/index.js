@@ -1,28 +1,35 @@
 import Link from 'next/link';
+import { StyledHeader } from './StyledHeader';
+import { StyledColorOverlay } from './StyledColorOverlay';
+import { StyledHeading } from './StyledHeading';
+import { StyledCaption } from './StyledCaption';
+import { StyledInfo } from './StyledInfo';
 
 const EventHeader = () => {
   return (
-    <header>
-      <div className="color-overlay-1 content-1"></div>
+    <StyledHeader>
+      <StyledColorOverlay />
       <div className="container">
         <div className="row d-block">
           <div className="col-lg-6">
-            <div className="heading1">
+            <StyledHeading>
               Code <span id="heading-plus">Camp</span>
-            </div>
+            </StyledHeading>
             <br />
-            <p className="heading-caption caption-1">It is Time to Code</p>
-            <p className="heading-caption">
+            <StyledCaption>It is Time to Code</StyledCaption>
+            <StyledCaption>
               <span className="caption-2"> Presented by </span>
               <span className="font-change"> Game Foundation</span>
-            </p>
+            </StyledCaption>
           </div>
-          <div className="col get-info">
-            <Link href="/scheduled">Get Scheduled</Link>
-          </div>
+          <StyledInfo>
+            <div className="col">
+              <Link href="/scheduled">Get Scheduled</Link>
+            </div>
+          </StyledInfo>
         </div>
       </div>
-    </header>
+    </StyledHeader>
   );
 };
 
