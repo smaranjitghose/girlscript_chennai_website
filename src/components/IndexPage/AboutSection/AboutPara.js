@@ -17,4 +17,8 @@ export const AboutPara = styled.p`
     letter-spacing: 1px;
     font-size: 18px;
   }
+
+  @media only screen and(max-width:700px) {
+    padding: 1rem;
+  }
 `;
