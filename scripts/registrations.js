@@ -159,11 +159,10 @@ window.onload = init;
 
 let questions = [
 	{ question: "What's your name?", pattern: '[A-Za-z]' },
-	{ question: "What's your registration number?", pattern: '^(RA)+[0-9]{13}$'},
+	{ question: "What's your registration number?", pattern: '^(RA)+[0-9]{13}$' },
 	{ question: 'In which year you are studying?', pattern: '^(?:[0-4])$' },
 	{ question: "What's your email?", pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ },
-	{ question: "Why you want to join?", pattern: '.{10,50}'}
-	
+	{ question: 'Why you want to join?', pattern: '.{10,50}' }
 ];
 
 (function () {
@@ -209,19 +208,41 @@ let questions = [
 				h1.style.opacity = 1;
 			}, 50);
 		}, eTime);
-		
+
 		//function call for uploading data to firebase
-        Upload_data_to_firebase();
+		Upload_data_to_firebase();
 	}
 
 	// when submitting the current question
 	function validate() {
 		// set the value of the field into the array
 		questions[position].value = inputField.value;
+		var x = document.getElementById('snackbar');
 
 		// check if the pattern matches
-		if (!inputField.value.match(questions[position].pattern || /.+/)) wrong();
-		else
+		if (!inputField.value.match(questions[position].pattern || /.+/)) {
+			wrong();
+			x.className = 'show';
+			// Put error message according to their question 
+			if (position == 0) {
+				x.innerHTML = 'Error: Name should contain characters';
+			}
+			if (position == 1) {
+				x.innerHTML = 'Error: Format should be RA+(13 digit number)';
+			}
+			if (position == 2) {
+				x.innerHTML = 'Error: Year should be between 0 to 4';
+			}
+			if (position == 3) {
+				x.innerHTML = 'Error: Invalid Email-Id';
+			}
+			if (position == 4) {
+				x.innerHTML = 'Error: Mimumum length should be 10 characters';
+			}
+			setTimeout(function () {
+				x.className = x.className.replace('show', '');
+			}, 3000);
+		} else
 			ok(function () {
 				// set the progress of the background
 				progress.style.width = (++position * 100) / questions.length + 'vw';
