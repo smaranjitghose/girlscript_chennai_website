@@ -220,10 +220,32 @@ let questions = [
 	function validate() {
 		// set the value of the field into the array
 		questions[position].value = inputField.value;
+		var x = document.getElementById('snackbar');
 
 		// check if the pattern matches
-		if (!inputField.value.match(questions[position].pattern || /.+/)) wrong();
-		else
+		if (!inputField.value.match(questions[position].pattern || /.+/)) {
+			wrong();
+			x.className = 'show';
+			// Put error message according to their question 
+			if (position == 0) {
+				x.innerHTML = 'Error: Name should contain characters';
+			}
+			if (position == 1) {
+				x.innerHTML = 'Error: Format should be RA+(13 digit number)';
+			}
+			if (position == 2) {
+				x.innerHTML = 'Error: Year should be between 0 to 4';
+			}
+			if (position == 3) {
+				x.innerHTML = 'Error: Invalid Email-Id';
+			}
+			if (position == 4) {
+				x.innerHTML = 'Error: Mimumum length should be 10 characters';
+			}
+			setTimeout(function () {
+				x.className = x.className.replace('show', '');
+			}, 3000);
+		} else
 			ok(function () {
 				// set the progress of the background
 				progress.style.width = (++position * 100) / questions.length + 'vw';
