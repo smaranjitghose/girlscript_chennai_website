@@ -13,4 +13,9 @@ export const AboutContainer = styled.div`
   padding: 10px;
   background-color: #fff;
   padding: 1rem;
+  @media (max-width: 700px) {
+    padding: 2rem;
+    width: 95%;
+    margin: 0 auto;
+  }
 `;

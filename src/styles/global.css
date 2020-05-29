@@ -1796,4 +1796,84 @@ header {
 .question-border:hover > .ans {
   color: rgba(255, 255, 255, 0.9);
   letter-spacing: 1px;
+=======
+/* Register section */
+
+.register-section {
+  background: url('/assets/images/event/bg-3.png');
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 488px;
+  height: 488px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.color-overlay-3 {
+  position: absolute;
+  background-color: var(--bg2-color);
+  opacity: 0.1;
+  height: 100%;
+  width: 100%;
+}
+
+.register-heading {
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 70px;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.1);
+  width: 300px;
+  letter-spacing: 2px;
+  color: var(--theme-color);
+}
+
+.register-heading span {
+  font-size: 50px;
+  font-weight: lighter;
+  color: var(--heading-clr);
+}
+
+.register-para {
+  font-family: 'Quicksand', sans-serif;
+  padding-right: 50%;
+  font-size: 18px;
+  color: var(--heading-clr);
+}
+
+.register-para span {
+  font-size: 19px;
+  color: var(--heading-clr);
+}
+
+.register-btn {
+  margin: 4em 0 0 10px;
+  z-index: 1;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  position: relative;
+  text-align: center;
+  width: 120px;
+  background-color: var(--theme-color) !important;
+  font-family: 'Comfortaa', sans-serif;
+  padding: 10px 10px;
+  display: block;
+  color: var(--btn-text);
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+  border-radius: 5px;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 3px 14px rgba(0, 0, 0, 0.2);
+  border: 1px solid transparent;
+}
+
+.register-btn:hover {
+  box-shadow: var(--btn-shadow);
+  -webkit-box-shadow: var(--btn-shadow);
+  color: var(--btn-hover);
 }
