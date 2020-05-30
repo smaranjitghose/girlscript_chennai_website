@@ -106,10 +106,11 @@ let footer = $(`
 	  <h3 class="footer-h">Join Our Newsletter</h3>
 	  <div class="border"></div>
 	  <p class="footer-p">Enter Your Email to get our news and updates.</p>
-	  <form action="" class="newsletter-form" name="footermail" method="post" >
+	  <form class="newsletter-form" for="email"  onsubmit="subscribeToNewsletter(event)">
 	  <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" class="txtb mr-2 mb-2 mt-4" placeholder="Enter Your Email" required >		   
 	  <button class="btn btn-spl" type="submit">Send</button>
 	  </form>
+	  <p class="success-message hide" id="success-message">Thank you for subscribing</p>
 	</div>
   </div>
    <center>
@@ -126,6 +127,39 @@ let footer = $(`
 </footer>
 <a onclick="topBtnClick()" class="gotopbtn clr-wt" id="topBtn"> <i class="fa fa-chevron-up clr-wt"></i> </a>
 `);
+
+const subscribeToNewsletter = event => {
+	console.log('Triggered!');
+	event.preventDefault();
+
+	const userEmail = document.getElementById('email').value;
+	console.log(userEmail);
+
+	axios
+		.post('https://desolate-waters-45820.herokuapp.com/newsletter', {
+			email: userEmail
+		})
+		.then(function (response) {
+			const status = response.data.status;
+
+			if (status === 'success') {
+				const successMessage = document.getElementById('success-message');
+				successMessage.classList.remove('hide');
+				setTimeout(() => {
+					successMessage.remove();
+				}, 3000);
+			}
+			document.getElementById('email').value = '';
+		})
+		.catch(function (error) {
+			const successMessage = document.getElementById('success-message');
+			successMessage.classList.remove('hide');
+			successMessage.innerHTML = 'Something is wrong. Try again later!';
+			setTimeout(() => {
+				successMessage.remove();
+			}, 3000);
+		});
+};
 
 let goToTopbutton = $(`#topBtn`);
 
