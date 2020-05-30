@@ -9,9 +9,17 @@ const app = express();
 app.use(morgan('dev'));
 app.use(cors());
 app.use(helmet());
+app.use(express.json());
+
+// DataBase Models
+const signInToLetter = require('./controllers/newsletter');
 
 // Exmaple route for setup test
 app.get('/', (req, res) => {
 	res.json({ message: 'Application Setup is correct' });
 });
+
+// the API EndPoint to sigin to newsletter
+app.post('/newsletter', signInToLetter);
+
 module.exports = app;
