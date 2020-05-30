@@ -34,22 +34,26 @@ const recentEventsDetails = [
 
 const RecentEventsDetailsCard = ({ id }) => {
   const EventCard = recentEventsDetails[id];
+
+  const {
+    coverImage,
+    altName,
+    eventName,
+    eventDescription,
+    referencePage,
+  } = Eventcard;
   return (
     <StyledCard>
       <StyledImage>
-        <img
-          src={EventCard.coverImage}
-          alt={EventCard.altName}
-          aria-label={EventCard.altName}
-        />
+        <img src={coverImage} alt={altName} aria-label={altName} />
       </StyledImage>
       <StyledText>
-        <h2 className="rh">{EventCard.eventName}</h2>
-        <p className="pt-1 event-body">{EventCard.eventDescription}</p>
+        <h2 className="rh">{eventName}</h2>
+        <p className="pt-1 event-body">{eventDescription}</p>
       </StyledText>
       <CardStats>
         <StyledButton>
-          <a href={EventCard.referencePage} className="btn">
+          <a href={referencePage} className="btn">
             Read More
           </a>
         </StyledButton>
