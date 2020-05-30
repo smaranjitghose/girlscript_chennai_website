@@ -47,6 +47,17 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 html_theme = 'classic'
 html_theme_options = {
     "stickysidebar": "true",
+    "externalrefs": "true",
+    "relbarbgcolor": "#6BA81E",
+    "headbgcolor": "#BED4EB",
+    "sidebarbgcolor":"#EEEEEE",
+    "sidebartextcolor": "#20435c",
+    "sidebarlinkcolor": "black",
+    "headfont":"Arial, sans-serif",
+    "bodyfont":"Arial, sans-serif",
+    "footerbgcolor": "white",
+    "footertextcolor": "#555",
+    "body_max_width": "100%"
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
