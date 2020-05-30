@@ -1269,55 +1269,6 @@ li {
   opacity: var(--contactForm-opacity);
 }
 
-.def-sec {
-  color: #fff;
-  font-weight: 500;
-}
-
-.def h4 {
-  font-family: 'Comfortaa', sans-serif;
-  color: #f47621;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.def {
-  padding: 1rem;
-}
-
-.def i {
-  font-size: 27px;
-  padding-right: 5px;
-  color: #fff;
-}
-
-.def div {
-  padding: 0.2rem;
-}
-
-.def-sec {
-  font-family: 'Quicksand', sans-serif;
-  letter-spacing: 1px;
-  margin-top: 0.5rem;
-  padding-right: 1rem;
-  font-size: 0.9em;
-}
-
-@media only screen and (max-width: 994px) {
-  .def {
-    padding: 1rem 0;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .def h4 {
-    font-size: 21px;
-  }
-  .def-sec {
-    font-size: 18px;
-  }
-}
-
 .schedule-heading {
   text-align: center;
   margin-left: 50%;
@@ -1720,7 +1671,6 @@ li {
   color: var(--btn-hover);
 }
 
-
 /* Contact Form */
 
 .contact-form {
@@ -1933,36 +1883,6 @@ input[type='number'] {
   display: -ms-flexbox;
   display: flex;
 }
-
-.def h4 {
-  font-family: 'Comfortaa', sans-serif;
-  color: var(--theme-color);
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.def {
-  padding: 1rem;
-}
-
-.def i {
-  font-size: 27px;
-  padding-right: 5px;
-  color: #fff;
-}
-
-.def div {
-  padding: 0.2rem;
-}
-
-.def-sec {
-  font-family: 'Quicksand', sans-serif;
-  letter-spacing: 1px;
-  margin-top: 0.5rem;
-  padding-right: 1rem;
-  font-size: 0.9em;
-}
-
 .font-weight-bold {
   text-align: center;
   padding-bottom: 1.5rem;
@@ -1977,9 +1897,6 @@ input[type='number'] {
   .container-contact {
     display: inline;
     padding: 0;
-  }
-  .def {
-    padding: 1rem 0;
   }
   .contact-form h1 {
     font-size: 2.1rem;
@@ -2020,58 +1937,53 @@ input[type='number'] {
 }
 
 @media only screen and (max-width: 450px) {
-  .def h4 {
-    font-size: 21px;
-  }
-  .def-sec {
-    font-size: 18px;
-  }
   .form-heading {
     font-size: 35px;
   }
-.scroll-to-top {
-  display: block;
-  position: absolute;
-  width: 7rem;
-  height: 7rem;
-  border-radius: 50%;
-  bottom: 2rem;
-  right: 2rem;
-}
-.gotopbtn {
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  background: var(--theme-color);
-  bottom: 40px;
-  right: 50px;
-  text-decoration: none;
-  text-align: center;
-  line-height: 50px;
-  color: white;
-  z-index: 999;
-  font-size: 22px;
-  border-radius: 100%;
-  -webkit-box-shadow: 0 2px 7px 0px #000;
-  box-shadow: 0 2px 7px 0px #000;
-  cursor: pointer;
-  /* opacity: 0;
-  visibility: hidden; */
-  -webkit-transition: opacity ease-in-out 0.4s, visibility ease-in-out 0.4s;
-  -o-transition: opacity ease-in-out 0.4s, visibility ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s, visibility ease-in-out 0.4s;
-}
-.gotopbtn i {
-  position: absolute;
-  top: 47%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-@media only screen and (max-width: 464px) {
+  .scroll-to-top {
+    display: block;
+    position: absolute;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    bottom: 2rem;
+    right: 2rem;
+  }
   .gotopbtn {
-    bottom: 20px;
-    right: 15px;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: var(--theme-color);
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    z-index: 999;
+    font-size: 22px;
+    border-radius: 100%;
+    -webkit-box-shadow: 0 2px 7px 0px #000;
+    box-shadow: 0 2px 7px 0px #000;
+    cursor: pointer;
+    /* opacity: 0;
+  visibility: hidden; */
+    -webkit-transition: opacity ease-in-out 0.4s, visibility ease-in-out 0.4s;
+    -o-transition: opacity ease-in-out 0.4s, visibility ease-in-out 0.4s;
+    transition: opacity ease-in-out 0.4s, visibility ease-in-out 0.4s;
+  }
+  .gotopbtn i {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  @media only screen and (max-width: 464px) {
+    .gotopbtn {
+      bottom: 20px;
+      right: 15px;
+    }
   }
 }
