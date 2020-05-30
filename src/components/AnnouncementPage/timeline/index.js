@@ -27,18 +27,20 @@ const TimelineCard = ({ id }) => {
   const position = id % 2 === 0 ? 'left' : 'right';
   const dateType = position === 'right' ? 'time-2' : 'time-1';
 
+  const { eventDescription, eventDate, eventPageLink } = timeline;
+
   return (
     <div className={`timeline-container ${position}`}>
       <StyledTimelineContent>
         <h3>{timeline.eventName}</h3>
         <hr className="mw-100 line1" />
-        <p className="description">{timeline.eventDescription}</p>
+        <p className="description">{eventDescription}</p>
         <div className={`time ${dateType}`}>
-          <h5>{timeline.eventDate}</h5>
+          <h5>{eventDate}</h5>
         </div>
         <CardStats>
           <StyledButton>
-            <Link href={timeline.eventPageLink}>
+            <Link href={eventPageLink}>
               <a className="btn" target="__blank">
                 Read More
               </a>
