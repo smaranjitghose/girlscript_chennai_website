@@ -1,0 +1,42 @@
+{
+	"name": "girlscript_biolerplate_website_backend",
+	"version": "1.0.0",
+	"description": "This is the backend with API endpoints for the boilerplate webiste",
+	"main": "app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "nodemon server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/smaranjitghose/girlscript_chennai_website/tree/backend"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"morgan": "^1.10.0"
+	},
+	"devDependencies": {
+		"eslint": "^6.8.0",
+		"eslint-config-airbnb": "^18.1.0",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-plugin-import": "^2.20.2",
+		"eslint-plugin-jsx-a11y": "^6.2.3",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-prettier": "^3.1.3",
+		"eslint-plugin-react": "^7.19.0",
+		"prettier": "^2.0.5",
+		"nodemon": "^2.0.3"
+	},
+	"engines": {
+		"node": ">=10.0.0"
+	},
+	"env": {
+		"es6": true
+	},
+	"parserOptions": {
+		"ecmaVersion": 2018
+	}
+}

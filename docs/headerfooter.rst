@@ -1,2 +1,0 @@
-Header and Footer Section
-==========================

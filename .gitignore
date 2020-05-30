@@ -1,12 +1,1 @@
-#for vscode personal customisation
-.vscode
-.vs/
-
-#for working with NodeJS
-node_modules/   
-logs
-*.log
-
-# for mac systems
-.DS_Store
-.DS_store
+/node_modules
