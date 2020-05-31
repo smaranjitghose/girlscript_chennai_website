@@ -4,7 +4,7 @@ body {
   background-color: #fff;
   color: #333;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 300;
   line-height: 28px;
   width: 100%;
@@ -41,7 +41,7 @@ ul li {
   list-style: none;
 }
 .navbar-default .navbar-toggle {
-  border-color: #fff;
+  border-color: transparent !important;
 }
 .navbar-toggle {
   position: relative;
@@ -51,8 +51,6 @@ ul li {
   margin-right: 15px;
   margin-bottom: 8px;
   background-color: transparent;
-  background-image: none;
-  border: 1px solid transparent;
   border-radius: 4px;
 }
 .navbar-default .navbar-toggle .icon-bar {
@@ -60,11 +58,11 @@ ul li {
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #077cca;
+  background-color: transparent !important;
 }
+
 .btn-primary {
   color: #fff;
-  background-color: #0099ff;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 0;
@@ -80,7 +78,6 @@ ul li {
   max-width: 350px;
   margin: auto;
   margin-bottom: 80px;
-  color: #0099ff;
 }
 .underline:before {
   position: absolute;
@@ -104,7 +101,7 @@ ul li {
   background-color: transparent;
   color: #e9e9e9;
   border-radius: 0;
-  border: 2px solid #ffffff;
+  border: 1px solid #ffffff;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
@@ -132,7 +129,7 @@ ul li {
   color: #d4d4d4;
 }
 .section-padding {
-  padding-top: 100px;
+  padding-top: 110px;
   padding-bottom: 25px;
 }
 .carousel-inner {
@@ -155,7 +152,7 @@ ul li {
   transition: all 0.3s;
 }
 .social a:hover {
-  color: #0099ff;
+  color: #F3801D;
 }
 .form-control {
   color: #555;
@@ -179,7 +176,7 @@ textarea:focus {
 .service .media-right i.fa {
   text-align: center;
   font-size: 30px;
-  background-color: #0099ff;
+  background-color: #F3801D;
   color: #ffffff;
   padding: 25px 0;
   border-radius: 50px;
@@ -193,7 +190,7 @@ textarea:focus {
 .service .media-left i.fa {
   text-align: center;
   font-size: 30px;
-  background-color: #0099ff;
+  background-color: #F3801D;
   color: #ffffff;
   padding: 25px 0;
   border-radius: 50px;
@@ -260,6 +257,7 @@ header {
   font-weight: 400;
   margin-bottom: 50px;
   padding: 12px 20px;
+  border-radius: 10px;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
@@ -272,7 +270,7 @@ header {
   color: #222;
 }
 .top .content h1 strong {
-  color: #09f !important;
+  color: #EF6F00 !important;
 }
 .carousel-indicators .active {
   width: 18px;
@@ -316,7 +314,7 @@ header {
   line-height: 35px;
 }
 .navigation .navbar-default {
-  background-color: #0099ff;
+  background: linear-gradient(to right, #F09819, rgb(247, 98, 69));
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
   border: none;
   border-radius: 0;
@@ -345,6 +343,10 @@ header {
   border-color: transparent;
 }
 
+.aboutApp .section-padding{
+  padding-top: 70px !important;
+}
+
 /* =========================================
     Section Features                 
 ========================================= */
@@ -366,7 +368,7 @@ header {
   width: 60px;
   height: 60px;
   border-radius: 100%;
-  border: 1px solid #0099ff;
+  border: 1px solid #F3801D;
   text-align: center;
   padding: 15px 0;
   -webkit-transition: all 0.5s;
@@ -400,7 +402,7 @@ header {
   border-radius: 0;
 }
 .content{
-	margin-top: 80px;
+	margin-top: 135px;
 }
 
 /* =========================================
@@ -543,7 +545,7 @@ header {
     Section Testimonial                 
 ========================================= */
 #testimonial {
-  background: url(images/bg.jpg) 50% 0 no-repeat fixed;
+  background: url(images/bg1.jpg) 50% 0 no-repeat fixed;
   background-size: cover;
   background-position: 50% !important;
 }
@@ -564,6 +566,9 @@ header {
   border-radius: 100%;
   overflow: hidden;
   margin-bottom: 50px;
+}
+.carousel-inner .content{
+  margin-top: 50px !important;
 }
 .testimonial .testimonial-slide .content p {
   position: relative;
@@ -588,94 +593,8 @@ header {
   right: 0;
 }
 
-/* =========================================
-   Section Team                 
-============================================ */
-.team {
-  text-align: center;
-}
-.team .app-dev h4 {
-  font-size: 28px;
-  font-weight: 300;
-}
-.team .app-dev .title {
-  /* margin-top: 30px; */
-  background-color: #e7e7e7;
-  padding: 10px 0 12px;
-  display: inline-block;
-  width: 100%;
-}
-.team .member {
-  width: 263px;
-  height: 263px;
-  position: relative;
-  overflow: hidden;
-  display: table;
-  margin: auto;
-}
-.team .member .details {
-  width: 263px;
-  height: 50px;
-  position: absolute;
-  background: rgba(0, 153, 255, 0.9);
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  opacity: 0;
-  bottom: 0;
-}
-.team .member img {
-  position: absolute;
-  width: 263px;
-  height: 263px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.team .member .details p {
-  color: #fff;
-  padding: 15px 10px 10px 10px;
-  position: absolute;
-  top: -100px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.team .member .details .icon {
-  position: relative;
-  bottom: -105px;
-  left: 0px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.team .member .details .icon a {
-  color: #fff;
-}
-.team .member .details .icon ul {
-  display: table;
-  margin: auto;
-}
-.team .member .details .icon ul li {
-  float: left;
-  margin-right: 10px;
-}
-.team .info:hover .details {
-  opacity: 1;
-}
-.team .info:hover .details p {
-  transform: translateY(100px);
-  -ms-transform: translateY(100px);
-  -webkit-transform: translateY(100px);
-}
-.team .info:hover .icon {
-  transform: translateY(-100px);
-  -ms-transform: translateY(-100px);
-  -webkit-transform: translateY(-100px);
+.testimonial-slide .carousel-indicators{
+  left: 55% !important;
 }
 
 /* =========================================
@@ -713,8 +632,8 @@ header {
   transition: all 0.3s;
 }
 .input-group-addon:hover {
-  background-color: #0099ff;
-  border-color: #0099ff;
+  background-color: #F3801D;
+  border-color: #F3801D;
   color: #fff;
 }
 
@@ -744,7 +663,7 @@ header {
     Section Download                 
 ========================================= */
 #download {
-  background: url(images/bg.jpg) 50% 0 no-repeat fixed;
+  background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)) ,url(images/bg2.jpg) 50% 0 no-repeat fixed;
   background-size: cover;
   background-position: 50% !important;
 }
@@ -768,6 +687,9 @@ header {
   margin-right: auto;
   margin-bottom: 50px;
   display: table;
+}
+.download-btn:hover{
+   background-color: #F3801D !important;
 }
 .download .download-area span {
   display: block;
@@ -825,6 +747,11 @@ header {
   margin-bottom: 50px;
   background-color: #353535;
   border: 2px solid #353535;
+  border-radius: 10px;
+}
+.footer .contact .contact-submit:hover{
+  background-color: #F3801D;
+  border: 2px solid #F3801D;
 }
 .footer .contact .contact-submit i {
   margin-right: 10px;
@@ -882,17 +809,6 @@ header {
     text-align: center;
 	}
 	
-	.team .member img {
-		position: relative;
-	}
-
-	.team .app-dev .title { 
-    background-color: #E7E7E7;
-    padding: 10px 0 12px;
-    display: inline-block;
-    width: 263px;
-    margin-bottom: 20px;
-}
 	.testimonial .testimonial-slide {
 		width: 90%;
 	}
