@@ -41,7 +41,7 @@ const RecentEventsDetailsCard = ({ id }) => {
     eventName,
     eventDescription,
     referencePage,
-  } = Eventcard;
+  } = EventCard;
   return (
     <StyledCard>
       <StyledImage>
