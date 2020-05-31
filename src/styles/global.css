@@ -1589,7 +1589,7 @@ li {
 .question-border:hover > .ans {
   color: rgba(255, 255, 255, 0.9);
   letter-spacing: 1px;
-}/* Contact Form */
+} /* Contact Form */
 
 .contact-form {
   border: 0px;
@@ -1904,4 +1904,17 @@ input[type='number'] {
       right: 15px;
     }
   }
+}
+
+/* Form NewsLetter  */
+
+.success-message {
+  color: #fff;
+  text-align: left;
+  letter-spacing: 1px;
+  margin-left: 4px;
+  font-family: 'Comfortaa', sans-serif;
+}
+.hide {
+  opacity: 0;
 }

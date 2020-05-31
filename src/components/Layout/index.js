@@ -50,6 +50,7 @@ const Layout = ({ children }) => {
           defer
           src="https://medium-widget.pixelpoint.io/widget.js"
         ></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script defer src="/JS/medium.js" type="text/javascript"></script>
       </Head>
       <Navbar />

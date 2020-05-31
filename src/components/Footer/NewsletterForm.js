@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { useState, useReducer } from 'react';
+import { useState } from 'react';
 
 const StyledFormContainer = styled.div`
   @media only screen and (max-width: 770px) {
@@ -8,12 +8,10 @@ const StyledFormContainer = styled.div`
     align-items: center;
     text-align: center;
   }
-
   h3 {
     font-family: 'Quicksand', sans-serif;
     color: #fff;
   }
-
   .border {
     width: 280px;
     height: 3px;
@@ -22,7 +20,6 @@ const StyledFormContainer = styled.div`
     border-style: none !important;
     margin: 0 auto;
   }
-
   p {
     font-family: 'Quicksand', sans-serif;
     margin-top: 1%;
@@ -44,20 +41,16 @@ const StyledFormContainer = styled.div`
     border-radius: 30px;
     min-width: 260px;
   }
-
   .emailInput::placeholder {
     font-family: 'Quicksand', sans-serif;
   }
-
   .emailInput:focus.emailInput:invalid {
     border: 3px solid orange;
   }
-
   .emailInput:valid {
     border: 3px solid #f47621;
   }
 `;
-
 const StyledButton = styled.button`
   font-family: 'Quicksand', sans-serif;
   border-radius: 10em;
@@ -77,47 +70,59 @@ const StyledButton = styled.button`
     background: #f47621;
   }
 `;
-
-const initialState = {
-  heading: 'Join our Newsletter',
-  subHeading: 'Enter Your Email to get our news and updates',
-};
-
-const reducer = (state, action) => {
-  switch (action.type) {
-    case 'change':
-      return {
-        heading: 'Thanks',
-        subHeading: 'For subscribing to the form',
-      };
-    default:
-      throw new Error();
-  }
-};
-
 const NewsletterForm = () => {
   const [email, setEmail] = useState('');
 
-  const changeEmail = (e) => {
+  const changeEmail = e => {
     setEmail(e.target.value);
   };
 
-  const changeHeading = (e) => {
-    e.preventDefault();
-    dispatch({
-      type: 'change',
-    });
-  };
+  const subscribeToNewsletter = event => {
+    event.preventDefault();
+    const userEmail = email;
+    console.log(userEmail);
 
-  const [state, dispatch] = useReducer(reducer, initialState);
+    axios
+      .post('https://desolate-waters-45820.herokuapp.com/newsletter', {
+        email: userEmail,
+      })
+
+      .then(response => {
+        console.log(response);
+        const status = response.data.status;
+        if (status === 'success') {
+          const successMessage = document.querySelector('#success-message');
+          successMessage.classList.remove('hide');
+          setTimeout(() => {
+            successMessage.remove();
+          }, 3000);
+        }
+
+        setEmail('');
+      })
+
+      // Catching the error
+
+      .catch(error => {
+        console.log(error.response);
+        setEmail(' ');
+        const successMessage = document.querySelector('#success-message');
+        successMessage.classList.remove('hide');
+        successMessage.innerHTML = 'Something is wrong. Try again later!';
+
+        setTimeout(() => {
+          successMessage.remove();
+        }, 3000);
+      });
+  };
 
   return (
     <StyledFormContainer className="col-lg-6 col-md-8 mb-5">
       <br />
-      <h3 className="footer-h">{state.heading}</h3>
+      <h3 className="footer-h">Subscribe</h3>
       <div className="border"></div>
-      <p className="footer-p">{state.subHeading}</p>
-      <form action="" name="footermail" method="post" onSubmit={changeHeading}>
+      <p className="footer-p">To the Newsletter</p>
+      <form name="footermail" onSubmit={event => subscribeToNewsletter(event)}>
         <input
           type="email"
           id="email"
@@ -133,8 +138,10 @@ const NewsletterForm = () => {
           Send
         </StyledButton>
       </form>
+      <p className="success-message hide" id="success-message">
+        Thank you for subscribing
+      </p>
     </StyledFormContainer>
   );
 };
-
 export default NewsletterForm;
