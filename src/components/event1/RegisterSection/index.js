@@ -1,15 +1,19 @@
 import Link from 'next/link';
+import { StyledRegisterSection } from './StyledRegisterSection';
+import { StyledColorOverlay } from './StyledColorOverlay';
+import { StyledRegisterHeading } from './StyledRegisterHeading';
+import { StyledButton } from './StyledButton';
 
 const EventRegisterSection = () => {
   return (
-    <div className="mb-5 register-section">
-      <div className="color-overlay-3"></div>
+    <StyledRegisterSection>
+      <StyledColorOverlay />
       <br />
       <br />
       <div className="container container-fluid">
-        <h1 className="register-heading" id="register-heading">
+        <StyledRegisterHeading>
           R<span>egister</span>
-        </h1>
+        </StyledRegisterHeading>
         <br />
         <br />
         <div className="row">
@@ -26,15 +30,13 @@ const EventRegisterSection = () => {
         </div>
         <div className="row">
           <Link href={''}>
-            <a className="register-btn" id="register-btn">
-              Register
-            </a>
+            <StyledButton>Register</StyledButton>
           </Link>
         </div>
         <br />
         <br />
       </div>
-    </div>
+    </StyledRegisterSection>
   );
 };
 

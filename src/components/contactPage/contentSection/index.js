@@ -1,26 +1,30 @@
+import { StyledDef } from './StyledDef';
+import { StyledDefSec } from './StyledDefSec';
+import { StyledSec } from './StyledSec';
+
 const ContentSection = () => {
   return (
-    <div className="side-sec" data-aos="fade-right">
-      <div className="def">
+    <StyledSec>
+      <StyledDef>
         <h4>Get in Touch</h4>
-        <div className="def-sec mb-4">
+        <StyledDefSec>
           Have a doubt in mind? <br />
           Want to share something with us?
-        </div>
-      </div>
-      <div className="def">
+        </StyledDefSec>
+      </StyledDef>
+      <StyledDef>
         <h4>
           <i className="fa fa-map-marker"></i> Find us at the office
         </h4>
-        <div className="def-sec mb-4">Chennai,India</div>
-      </div>
-      <div className="def">
+        <StyledDefSec>Chennai,India</StyledDefSec>
+      </StyledDef>
+      <StyledDef>
         <h4>
           <i className="fa fa-phone"></i> Give us a ring
         </h4>
-        <div className="def-sec">Jordan +91 762321762</div>
-      </div>
-    </div>
+        <StyledDefSec>INDIA +91 762321762</StyledDefSec>
+      </StyledDef>
+    </StyledSec>
   );
 };
 
