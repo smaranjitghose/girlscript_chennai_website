@@ -13,7 +13,7 @@ app.use(express.json());
 
 // DataBase Models
 const signInToLetter = require('./controllers/newsletter');
-
+const registerUser = require('./controllers/registration');
 // Exmaple route for setup test
 app.get('/', (req, res) => {
 	res.json({ message: 'Application Setup is correct' });
@@ -23,13 +23,6 @@ app.get('/', (req, res) => {
 app.post('/newsletter', signInToLetter);
 
 // the API endpoint for registrations details
-
-app.post('/register', async (req, res) => {
-	console.log(req.body);
-	res.status(201).json({
-		status: 'success',
-		message: 'The user is registered now for the event'
-	});
-});
+app.post('/register', registerUser);
 
 module.exports = app;
