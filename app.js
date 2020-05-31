@@ -22,4 +22,14 @@ app.get('/', (req, res) => {
 // the API EndPoint to sigin to newsletter
 app.post('/newsletter', signInToLetter);
 
+// the API endpoint for registrations details
+
+app.post('/register', async (req, res) => {
+	console.log(req.body);
+	res.status(201).json({
+		status: 'success',
+		message: 'The user is registered now for the event'
+	});
+});
+
 module.exports = app;
