@@ -558,8 +558,8 @@ header {
   margin-bottom: 70px;
 }
 .testimonial .testimonial-slide .image {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   margin: auto;
   border: 2px solid #ccc;
   border-radius: 100%;
@@ -739,6 +739,12 @@ header {
   border: 1px solid #ccc;
   min-height: 210px;
 }
+.footer .contact input:focus {
+border: 1px solid #F3801D !important;
+}
+.footer .contact textarea:focus {
+  border: 1px solid #F3801D !important;
+}
 .footer .contact .contact-submit {
   padding: 10px 30px;
   font-size: 20px;
@@ -750,7 +756,7 @@ header {
 }
 .footer .contact .contact-submit:hover{
   background-color: #F3801D;
-  border: 2px solid #F3801D;
+  border: 1px solid #F3801D;
 }
 .footer .contact .contact-submit i {
   margin-right: 10px;
@@ -762,6 +768,9 @@ header {
 .copyright {
   text-align: center;
   padding: 30px 0;
+}
+.copyright .container a{
+  color: #F3801D;
 }
 
 
