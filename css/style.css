@@ -992,7 +992,7 @@ a.fa-linkedin {
 	text-align: center;
 	line-height: 50px;
 	color: white;
-	z-index: 999;
+	z-index: 200;
 	font-size: 22px;
 	border-radius: 100%;
 	-webkit-box-shadow: 0 2px 7px 0px #000;
