@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { StyledRegisterSection } from './StyledRegisterSection';
 import { StyledColorOverlay } from './StyledColorOverlay';
-import { StyledRegisterHeading } from './StyledRegisterHeading';
+import { StyledRegisterHeading } from './StyledRgisterHeading';
 import { StyledButton } from './StyledButton';
 
 const EventRegisterSection = () => {
@@ -29,7 +29,7 @@ const EventRegisterSection = () => {
           </div>
         </div>
         <div className="row">
-          <Link href={''}>
+          <Link href="/registration">
             <StyledButton>Register</StyledButton>
           </Link>
         </div>
