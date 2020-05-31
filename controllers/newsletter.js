@@ -11,6 +11,7 @@ const signInToLetter = async (req, res) => {
 	} catch (err) {
 		res.status(404).json({
 			status: 'fail',
+			message: 'Subscribing to newsletter has failed',
 			err
 		});
 	}

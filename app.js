@@ -13,7 +13,7 @@ app.use(express.json());
 
 // DataBase Models
 const signInToLetter = require('./controllers/newsletter');
-
+const registerUser = require('./controllers/registration');
 // Exmaple route for setup test
 app.get('/', (req, res) => {
 	res.json({ message: 'Application Setup is correct' });
@@ -21,5 +21,8 @@ app.get('/', (req, res) => {
 
 // the API EndPoint to sigin to newsletter
 app.post('/newsletter', signInToLetter);
+
+// the API endpoint for registrations details
+app.post('/register', registerUser);
 
 module.exports = app;
