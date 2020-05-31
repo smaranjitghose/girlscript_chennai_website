@@ -51,9 +51,8 @@ function showMoreCards(DOMbtn) {
 		btn.attr('show-more', 'false');
 		moreCardDiv.addClass('hidediv');
 		// Card opened from more cards - then -
-		console.log(moreCardDiv[0].parentElement);
 		let moreDivFlag = false;
-		for (i of moreCardDiv[0].children) {
+		for (let i of moreCardDiv[0].children) {
 			moreDivFlag = i.classList.value.includes('show') ? true : false;
 			i.classList.remove('show');
 			if (moreDivFlag) {
