@@ -129,7 +129,6 @@ let footer = $(`
 `);
 
 const subscribeToNewsletter = event => {
-	
 	event.preventDefault();
 	const userEmail = document.getElementById('email').value;
 	axios
@@ -141,20 +140,32 @@ const subscribeToNewsletter = event => {
 
 			if (status === 'success') {
 				const successMessage = document.getElementById('success-message');
-				successMessage.classList.remove('hide');
-				setTimeout(() => {
-					successMessage.remove();
-				}, 3000);
+				if (successMessage) {
+					successMessage.classList.remove('hide');
+					setTimeout(() => {
+						successMessage.classList.remove('hide');
+						location.reload();
+					}, 1200);
+				}
 			}
 			document.getElementById('email').value = '';
 		})
 		.catch(function (error) {
 			const successMessage = document.getElementById('success-message');
-			successMessage.classList.remove('hide');
-			successMessage.innerHTML = 'Something is wrong. Try again later!';
-			setTimeout(() => {
-				successMessage.remove();
-			}, 3000);
+			if (successMessage) {
+				successMessage.classList.remove('hide');
+				if (error.response.data.message === 'The user is already subscribed') {
+					successMessage.innerHTML = 'You are already subscribed ❤️';
+				} else {
+					successMessage.innerHTML = 'Something is wrong. Try again later!';
+				}
+				setTimeout(() => {
+					successMessage.remove();
+					location.reload();
+				}, 1200);
+			}
+
+			document.getElementById('email').value = '';
 		});
 };
 
