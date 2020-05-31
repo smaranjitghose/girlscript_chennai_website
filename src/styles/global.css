@@ -1478,8 +1478,8 @@ li {
 .question-border:hover > .ans {
   color: rgba(255, 255, 255, 0.9);
   letter-spacing: 1px;
-}
 
+}
 .contact-form {
   border: 0px;
   text-align: left;
@@ -1492,30 +1492,6 @@ li {
   margin-left: 10rem;
   border-radius: 7px;
 }
-
-.form-heading {
-  font-family: 'Baloo Bhaina 2', sans-serif;
-  font-size: 45px;
-  color: var(--font-color);
-}
-
-.contact-form:hover {
-  text-align: left;
-  -webkit-transition: 0.6s;
-  -o-transition: 0.6s;
-  transition: 0.6s;
-}
-
-.contact-form p {
-  color: rgba(0, 0, 0, 0.644);
-  letter-spacing: 1px;
-}
-
-.form-group {
-  position: relative;
-  margin-bottom: 2.5rem;
-}
-
 .error-message {
   position: absolute;
   top: -20px;
@@ -1607,34 +1583,6 @@ li {
 
 /* COMPACT CAPTCHA */
 
-.capbox {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  padding: 1.5em 8px;
-  margin-bottom: 35px;
-  margin-top: 3em;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-  -webkit-align-items: end;
-  -ms-flex-align: end;
-  align-items: end;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  position: relative;
-}
-.capbox .form-group {
-  -webkit-flex-basis: 70%;
-  -ms-flex-preferred-size: 70%;
-  flex-basis: 70%;
-  max-width: 70%;
-  margin-bottom: 0;
-  padding-left: 20px;
-}
 input#CaptchaInput::-webkit-outer-spin-button,
 input#CaptchaInput::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -1690,110 +1638,94 @@ input[type='number'] {
   display: -ms-flexbox;
   display: flex;
 }
-.font-weight-bold {
-  text-align: center;
-  padding-bottom: 1.5rem;
-}
-
 /* Responsive Section */
 
 @media only screen and (max-width: 994px) {
-  .contact-form {
-    margin-left: 0;
-  }
   .container-contact {
     display: inline;
     padding: 0;
   }
-  .contact-form h1 {
-    font-size: 2.1rem;
-  }
-}
 
-@media only screen and (max-width: 576px) {
-  .capbox-inner {
-    display: -webkit-box;
-    margin: 3px auto 0 auto;
-  }
-  .capbox .form-group {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
-    padding-left: 0;
-  }
-  #CaptchaDiv {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
-    margin-bottom: 30px;
-  }
-  .error-message {
-    right: initial;
-    top: initial;
-    left: 0;
-    bottom: -10px;
-  }
-}
+  @media only screen and (max-width: 576px) {
+    .capbox-inner {
+      display: -webkit-box;
+      margin: 3px auto 0 auto;
+    }
 
-@media only screen and (max-width: 994px) {
-  body {
-    overflow-x: hidden;
+    #CaptchaDiv {
+      -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+    .error-message {
+      right: initial;
+      top: initial;
+      left: 0;
+      bottom: -10px;
+    }
   }
-}
 
-@media only screen and (max-width: 450px) {
-  .form-heading {
-    font-size: 35px;
+  @media only screen and (max-width: 994px) {
+    body {
+      overflow-x: hidden;
+    }
   }
-  .scroll-to-top {
-    display: block;
-    position: absolute;
-    width: 7rem;
-    height: 7rem;
-    border-radius: 50%;
-    bottom: 2rem;
-    right: 2rem;
-  }
-  .gotopbtn {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    background: var(--theme-color);
-    bottom: 40px;
-    right: 50px;
-    text-decoration: none;
-    text-align: center;
-    line-height: 50px;
-    color: white;
-    z-index: 999;
-    font-size: 22px;
-    border-radius: 100%;
-    -webkit-box-shadow: 0 2px 7px 0px #000;
-    box-shadow: 0 2px 7px 0px #000;
-    cursor: pointer;
-    /* opacity: 0;
-  visibility: hidden; */
-    -webkit-transition: opacity ease-in-out 0.4s, visibility ease-in-out 0.4s;
-    -o-transition: opacity ease-in-out 0.4s, visibility ease-in-out 0.4s;
-    transition: opacity ease-in-out 0.4s, visibility ease-in-out 0.4s;
-  }
-  .gotopbtn i {
-    position: absolute;
-    top: 47%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-  @media only screen and (max-width: 464px) {
+
+  @media only screen and (max-width: 450px) {
+    /* {
+    f.form-headingont-size: 35px;
+  } */
+    .scroll-to-top {
+      display: block;
+      position: absolute;
+      width: 7rem;
+      height: 7rem;
+      border-radius: 50%;
+      bottom: 2rem;
+      right: 2rem;
+    }
     .gotopbtn {
-      bottom: 20px;
-      right: 15px;
+      position: fixed;
+      width: 50px;
+      height: 50px;
+      background: var(--theme-color);
+      bottom: 40px;
+      right: 50px;
+      text-decoration: none;
+      text-align: center;
+      line-height: 50px;
+      color: white;
+      z-index: 999;
+      font-size: 22px;
+      border-radius: 100%;
+      -webkit-box-shadow: 0 2px 7px 0px #000;
+      box-shadow: 0 2px 7px 0px #000;
+      cursor: pointer;
+      /* opacity: 0;
+  visibility: hidden; */
+      -webkit-transition: opacity ease-in-out 0.4s, visibility ease-in-out 0.4s;
+      -o-transition: opacity ease-in-out 0.4s, visibility ease-in-out 0.4s;
+      transition: opacity ease-in-out 0.4s, visibility ease-in-out 0.4s;
+    }
+    .gotopbtn i {
+      position: absolute;
+      top: 47%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+    @media only screen and (max-width: 464px) {
+      .gotopbtn {
+        bottom: 20px;
+        right: 15px;
+      }
     }
   }
 }
+
 
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500;600&family=Baloo+Paaji+2:wght@400;500;600&family=Comfortaa:wght@400;500;600;700&family=Montserrat:wght@100;400;500&family=Quicksand:wght@300;400;500&family=Raleway:wght@300;400;500;600&display=swap');
 
@@ -2058,4 +1990,15 @@ h1 {
   display: none;
   opacity: 0;
   visibility: hidden;
+/* Form NewsLetter  */
+
+.success-message {
+  color: #fff;
+  text-align: left;
+  letter-spacing: 1px;
+  margin-left: 4px;
+  font-family: 'Comfortaa', sans-serif;
+}
+.hide {
+  opacity: 0;
 }
