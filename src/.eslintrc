@@ -5,7 +5,9 @@
     "es6": true
   },
   "plugins": ["import"],
-  "extends": ["plugin:react/recommended", "plugin:prettier/recommended"],
+  "extends": ["plugin:react/recommended",
+     "plugin:prettier/recommended",
+     " wesbos "],
   "settings": {
     "react": {
       "version": "detect"
@@ -16,13 +18,17 @@
     "sourceType": "module"
   },
   "rules": {
+    "no-console": 2,
     "prettier/prettier": [
       "error",
       {
-        "endOfLine": "auto"
+        "endOfLine": "auto",
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "printWidth": 120,
+        "tabWidth": 8,
       }
     ],
-    "no-console": "warn",
     "no-eval": "error",
     "import/first": "error",
     "react/react-in-jsx-scope": "off",
