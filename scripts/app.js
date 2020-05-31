@@ -129,12 +129,9 @@ let footer = $(`
 `);
 
 const subscribeToNewsletter = event => {
-	console.log('Triggered!');
+	
 	event.preventDefault();
-
 	const userEmail = document.getElementById('email').value;
-	console.log(userEmail);
-
 	axios
 		.post('https://desolate-waters-45820.herokuapp.com/newsletter', {
 			email: userEmail

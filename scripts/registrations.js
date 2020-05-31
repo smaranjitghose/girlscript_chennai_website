@@ -200,20 +200,45 @@ let questions = [
 	function done() {
 		// remove the box if there is no next question
 		register.className = 'close';
-		const confettiSuccessScreen = document.getElementById('success-screen');
-		confettiSuccessScreen.classList.remove('hide');
-		// add the h1 at the end with the welcome text
-		let h1 = document.createElement('h1');
-		h1.appendChild(document.createTextNode('Welcome ' + questions[0].value + '!'));
-		setTimeout(function () {
-			register.parentElement.appendChild(h1);
-			setTimeout(function () {
-				h1.style.opacity = 1;
-			}, 50);
-		}, eTime);
+		// Upload to DataBase
+		const requestBody = {
+			name: questions[0].value,
+			registrationNumber: questions[1].value,
+			year: questions[2].value,
+			email: questions[3].value,
+			reason: questions[4].value
+		};
+		console.log(requestBody);
 
-		//function call for uploading data to firebase
-		Upload_data_to_firebase();
+		axios
+			.post('https://desolate-waters-45820.herokuapp.com/register', requestBody)
+			.then(function (response) {
+				const confettiSuccessScreen = document.getElementById('success-screen');
+				confettiSuccessScreen.classList.remove('hide');
+				console.log('Success!!');
+				const status = response.data.status;
+				console.log(response);
+				if (status === 'success') {
+					let h1 = document.createElement('h1');
+					h1.appendChild(document.createTextNode('Welcome ' + questions[0].value + '!'));
+					setTimeout(function () {
+						register.parentElement.appendChild(h1);
+						setTimeout(function () {
+							h1.style.opacity = 1;
+						}, 50);
+					}, eTime);
+				}
+			})
+			.catch(function (error) {
+				let h1 = document.createElement('h1');
+				h1.appendChild(document.createTextNode('Please try again!'));
+				setTimeout(function () {
+					register.parentElement.appendChild(h1);
+					setTimeout(function () {
+						h1.style.opacity = 1;
+					}, 50);
+				}, eTime);
+			});
 	}
 
 	// when submitting the current question
@@ -226,7 +251,7 @@ let questions = [
 		if (!inputField.value.match(questions[position].pattern || /.+/)) {
 			wrong();
 			x.className = 'show';
-			// Put error message according to their question 
+			// Put error message according to their question
 			if (position == 0) {
 				x.innerHTML = 'Error: Name should contain characters';
 			}
@@ -305,19 +330,3 @@ function init() {
 	}
 }
 window.onload = init;
-
-function Upload_data_to_firebase() {
-	// Uploading user data to firebase
-	let schema = {
-		Name: questions[0].value,
-		Regno: questions[1].value,
-		Year: questions[2].value,
-		Email: questions[3].value,
-		Message: questions[4].value
-	};
-
-	let firebaseDB = firebase.database().ref('users');
-	let pushtofire = firebaseDB.push();
-
-	pushtofire.set({ ...schema });
-}
