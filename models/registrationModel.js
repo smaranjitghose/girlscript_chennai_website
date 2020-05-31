@@ -17,7 +17,7 @@ const registrationSchema = new mongoose.Schema({
 			validator: function (value) {
 				return /^(RA)+[0-9]{13}$/.test(value);
 			},
-			message: 'The registration number format is incorret'
+			message: 'The registration number format is incorrect'
 		}
 	},
 	year: {
