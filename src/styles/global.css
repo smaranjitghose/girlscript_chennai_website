@@ -1269,55 +1269,6 @@ li {
   opacity: var(--contactForm-opacity);
 }
 
-.def-sec {
-  color: #fff;
-  font-weight: 500;
-}
-
-.def h4 {
-  font-family: 'Comfortaa', sans-serif;
-  color: #f47621;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.def {
-  padding: 1rem;
-}
-
-.def i {
-  font-size: 27px;
-  padding-right: 5px;
-  color: #fff;
-}
-
-.def div {
-  padding: 0.2rem;
-}
-
-.def-sec {
-  font-family: 'Quicksand', sans-serif;
-  letter-spacing: 1px;
-  margin-top: 0.5rem;
-  padding-right: 1rem;
-  font-size: 0.9em;
-}
-
-@media only screen and (max-width: 994px) {
-  .def {
-    padding: 1rem 0;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .def h4 {
-    font-size: 21px;
-  }
-  .def-sec {
-    font-size: 18px;
-  }
-}
-
 .schedule-heading {
   text-align: center;
   margin-left: 50%;
@@ -1638,8 +1589,7 @@ li {
 .question-border:hover > .ans {
   color: rgba(255, 255, 255, 0.9);
   letter-spacing: 1px;
-}
-/* Contact Form */
+}/* Contact Form */
 
 .contact-form {
   border: 0px;
@@ -1851,36 +1801,6 @@ input[type='number'] {
   display: -ms-flexbox;
   display: flex;
 }
-
-.def h4 {
-  font-family: 'Comfortaa', sans-serif;
-  color: var(--theme-color);
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.def {
-  padding: 1rem;
-}
-
-.def i {
-  font-size: 27px;
-  padding-right: 5px;
-  color: #fff;
-}
-
-.def div {
-  padding: 0.2rem;
-}
-
-.def-sec {
-  font-family: 'Quicksand', sans-serif;
-  letter-spacing: 1px;
-  margin-top: 0.5rem;
-  padding-right: 1rem;
-  font-size: 0.9em;
-}
-
 .font-weight-bold {
   text-align: center;
   padding-bottom: 1.5rem;
@@ -1895,9 +1815,6 @@ input[type='number'] {
   .container-contact {
     display: inline;
     padding: 0;
-  }
-  .def {
-    padding: 1rem 0;
   }
   .contact-form h1 {
     font-size: 2.1rem;
@@ -1938,12 +1855,6 @@ input[type='number'] {
 }
 
 @media only screen and (max-width: 450px) {
-  .def h4 {
-    font-size: 21px;
-  }
-  .def-sec {
-    font-size: 18px;
-  }
   .form-heading {
     font-size: 35px;
   }
