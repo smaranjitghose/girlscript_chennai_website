@@ -43,21 +43,24 @@ const initiativesDetails = [
 
 const InitiativesCard = ({ id }) => {
   const initiative = initiativesDetails[id];
+
+  const { mainHeading, subHeading, svg, description } = initiative;
+
   return (
     <StyledFlipCard>
       <StyledFlipCardContent>
         <StyledFlipCardFront>
           <StyledFlipCardHead>
-            {initiative.mainHeading}
-            <span>{initiative.subHeading}</span>
+            {mainHeading}
+            <span>{subHeading}</span>
           </StyledFlipCardHead>
           <div
             className="flip-card-img"
-            dangerouslySetInnerHTML={{ __html: initiative.svg }}
+            dangerouslySetInnerHTML={{ __html: svg }}
           ></div>
         </StyledFlipCardFront>
         <StyledFlipCardBack>
-          <StyledFlipCardDetail>{initiative.description}</StyledFlipCardDetail>
+          <StyledFlipCardDetail>{description}</StyledFlipCardDetail>
         </StyledFlipCardBack>
       </StyledFlipCardContent>
     </StyledFlipCard>

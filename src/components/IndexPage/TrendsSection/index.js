@@ -31,19 +31,22 @@ const trendCardsDetails = [
 
 const TrendsCard = ({ id }) => {
   const trend = trendCardsDetails[id];
+
+  const { backgroundCover, displayName } = trend;
+
   return (
     <div className="ih-item circle effect">
       <a>
         <div className="img">
           <img
-            src={trend.backgroundCover}
-            alt={trend.displayName}
-            aria-label={trend.displayName}
+            src={backgroundCover}
+            alt={displayName}
+            aria-label={displayName}
           />
         </div>
         <div className="info">
           <div className="info-back">
-            <h3>{trend.displayName}</h3>
+            <h3>{displayName}</h3>
           </div>
         </div>
       </a>
