@@ -18,7 +18,11 @@ const registrationSchema = new mongoose.Schema({
 				return /^(RA)+[0-9]{13}$/.test(value);
 			},
 			message: 'The registration number format is incorrect'
-		}
+		},
+		unique: [
+			true,
+			'The registration number is already in use for the event'
+		]
 	},
 	year: {
 		type: Number,
