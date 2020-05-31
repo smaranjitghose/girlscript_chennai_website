@@ -10,7 +10,8 @@ const newsletterSchema = new mongoose.Schema({
 				return isEmail(value);
 			},
 			message: 'The email should be in valid format'
-		}
+		},
+		unique: [true, 'The email is already subscribed']
 	}
 });
 

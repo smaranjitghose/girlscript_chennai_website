@@ -9,6 +9,15 @@ const signInToLetter = async (req, res) => {
 			data: newSubscriber
 		});
 	} catch (err) {
+		if (
+			err.code === 11000 &&
+			err.errmsg.includes('E11000 duplicate key error')
+		) {
+			return res.status(404).json({
+				status: 'fail',
+				message: 'The user is already subscribed'
+			});
+		}
 		res.status(404).json({
 			status: 'fail',
 			message: 'Subscribing to newsletter has failed',
