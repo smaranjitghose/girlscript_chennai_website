@@ -1479,7 +1479,6 @@ li {
   color: rgba(255, 255, 255, 0.9);
   letter-spacing: 1px;
 }
-
 .contact-form {
   border: 0px;
   text-align: left;
@@ -1795,6 +1794,7 @@ input[type='number'] {
   }
 }
 
+
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500;600&family=Baloo+Paaji+2:wght@400;500;600&family=Comfortaa:wght@400;500;600;700&family=Montserrat:wght@100;400;500&family=Quicksand:wght@300;400;500&family=Raleway:wght@300;400;500;600&display=swap');
 
 html {
@@ -2058,4 +2058,15 @@ h1 {
   display: none;
   opacity: 0;
   visibility: hidden;
+/* Form NewsLetter  */
+
+.success-message {
+  color: #fff;
+  text-align: left;
+  letter-spacing: 1px;
+  margin-left: 4px;
+  font-family: 'Comfortaa', sans-serif;
+}
+.hide {
+  opacity: 0;
 }
