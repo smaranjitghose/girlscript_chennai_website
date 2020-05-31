@@ -6,8 +6,7 @@
   },
   "plugins": ["import"],
   "extends": ["plugin:react/recommended",
-     "plugin:prettier/recommended",
-     " wesbos "],
+     "plugin:prettier/recommended"],
   "settings": {
     "react": {
       "version": "detect"
