@@ -3,6 +3,12 @@ import { openSourceSvg } from './svgs.js';
 import { researchWorkSvg } from './svgs.js';
 import { publicSpeakingSvg } from './svgs.js';
 import { interpersonalSvg } from './svgs.js';
+import { StyledFlipCard } from './StyledFlipCard';
+import { StyledFlipCardContent } from './StyledFlipCardContent';
+import { StyledFlipCardFront } from './StyledFlipCardFront';
+import { StyledFlipCardBack } from './StyledFlipCardBack';
+import { StyledFlipCardHead } from './StyledFlipCardHead';
+import { StyledFlipCardDetail } from './StyledFlipCardDetail';
 
 const initiativesDetails = [
   {
@@ -38,23 +44,23 @@ const initiativesDetails = [
 const InitiativesCard = ({ id }) => {
   const initiative = initiativesDetails[id];
   return (
-    <div className="flip-card">
-      <div className="flip-card-content">
-        <div className="flip-card-front">
-          <h5 className="flip-card-head">
+    <StyledFlipCard>
+      <StyledFlipCardContent>
+        <StyledFlipCardFront>
+          <StyledFlipCardHead>
             {initiative.mainHeading}
             <span>{initiative.subHeading}</span>
-          </h5>
+          </StyledFlipCardHead>
           <div
             className="flip-card-img"
             dangerouslySetInnerHTML={{ __html: initiative.svg }}
           ></div>
-        </div>
-        <div className="flip-card-back">
-          <p className="flip-card-detail">{initiative.description}</p>
-        </div>
-      </div>
-    </div>
+        </StyledFlipCardFront>
+        <StyledFlipCardBack>
+          <StyledFlipCardDetail>{initiative.description}</StyledFlipCardDetail>
+        </StyledFlipCardBack>
+      </StyledFlipCardContent>
+    </StyledFlipCard>
   );
 };
 
