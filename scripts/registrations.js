@@ -208,16 +208,14 @@ let questions = [
 			email: questions[3].value,
 			reason: questions[4].value
 		};
-		console.log(requestBody);
+		
 
 		axios
 			.post('https://desolate-waters-45820.herokuapp.com/register', requestBody)
 			.then(function (response) {
 				const confettiSuccessScreen = document.getElementById('success-screen');
 				confettiSuccessScreen.classList.remove('hide');
-				console.log('Success!!');
 				const status = response.data.status;
-				console.log(response);
 				if (status === 'success') {
 					let h1 = document.createElement('h1');
 					h1.appendChild(document.createTextNode('Welcome ' + questions[0].value + '!'));
