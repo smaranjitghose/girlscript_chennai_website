@@ -7,9 +7,9 @@
 ![Stars](	https://img.shields.io/github/stars/smaranjitghose/girlscript_chennai_website)
 ![License](https://img.shields.io/github/license/smaranjitghose/girlscript_chennai_website)
 
-This is an open source project for creating a website that shall serve as a boilerplate for various chapters of GirlScript. With certain modifications to the content specific to the chapter using this, the need to build a website from scratch and the pains of fixing bugs and figuring out what part fits where is eliminated. Feel free to use this!. If this project helps you out, please give us a mention. Also, we would love to see your version of the same! Do a give a PR in a different branch that showcases how you used this!
+This is an open source project for creating a website that shall serve as a boilerplate for various chapters of GirlScript. With certain modifications to the content which are specific to the chapter using this, the need to build a website from scratch and the pains of fixing bugs and figuring out what part fits where is  also eliminated. Feel free to use this!. If this project helps you out, please give us a mention. Also, we would love to see your version of the same! Do give a PR in a different branch that showcases how you used this!
 
-This project is also meant to be a starting for all techies interested to get their hands dirty in open-source contributions. A highlight of this project being this project is "built by the community for the community".
+This project is also meant to be a starting point for all techies interested to get their hands dirty in open-source contributions. A highlight of this project being this project is "built by the community for the community".
 
 
 👉 [Checkout the current version](https://girlscriptboilerplate.netlify.app): 
