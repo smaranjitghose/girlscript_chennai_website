@@ -4,9 +4,9 @@
 
 ![GSSOC'20](https://img.shields.io/badge/GSSOC-20-orange?style=for-the-badge)
 
-We value all the people who are interested in contributing to Girlscript website boilerplate. This is required to create a unified development environment.These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
+We value all the people who are interested in contributing to Girlscript website boilerplate. This is required to create a unified development environment.These are mostly guidelines, not rules. Use your best judgement, and feel free to propose changes to this document in a pull request.
 
-We want to make contributing to this project as easy and transparent as possible, whether it's:
+We want to make contributing to this project as easy and as transparent as possible, whether it's:
 * Reporting a bug
 * Submitting a fix
 * Proposing new features
