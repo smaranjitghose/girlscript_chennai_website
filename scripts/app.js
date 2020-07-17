@@ -121,7 +121,7 @@ let footer = $(`
 		  <a class="fa fa-github" href="https://github.com/girlscriptchennai"></a>
 		  <a class="fa fa-linkedin" href="https://www.linkedin.com/company/girlscript-chennai/"></a>
 		</div>
-		  <h6 class="footer-h3">Made with ♥</h6>
+		  <h6 class="footer-h3">Made with <i class="fa fa-heart" style="color:red;"></i></h6>
 	</center>
 </div>		
 </footer>
