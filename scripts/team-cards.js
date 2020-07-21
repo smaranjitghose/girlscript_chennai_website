@@ -63,17 +63,17 @@ const teamDetails = [
 		]
 	},
 
-// 	{
-// 		name: 'Sukkrit Sharma',
-// 		position: 'The Board',
-// 		image: 'sukkrit_sharma.jpg',
-// 		profiles: [
-// 			{
-// 				linkedIn: 'https://www.linkedin.com/in/sukkritsharma/',
-// 				github: 'https://github.com/sukkritsharmaofficial'
-// 			}
-// 		]
-// 	},
+	{
+		name: 'Sukkrit Sharma',
+		position: 'The Board',
+		image: 'sukkrit_sharma.jpg',
+		profiles: [
+			{
+				linkedIn: 'https://www.linkedin.com/in/sukkritsharma/',
+				github: 'https://github.com/sukkritsharmaofficial'
+			}
+		]
+	},
 	{
 		name: 'Suhrid Datta',
 		position: 'Technical Team',
