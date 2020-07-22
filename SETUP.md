@@ -19,7 +19,7 @@ git clone --depth 1 https://github.com/<your_user_name>/girlscript_chennai_websi
 
 
 **4.** Install Live Server from VSCode MarketPlace.
-Click<a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">here></a>to go to Live Server!.
+Click<a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">here</a>to go to Live Server!.
 
 <p align="center"><img width=35% src="https://media1.giphy.com/media/v53eXlLQMytZm/200w.webp?cid=ecf05e47lqlkrtqggbrw3wdrfw7jprb3vzq1ptcv1v9hiwnn&rid=200w.webp.gif"></p>
 
