@@ -240,11 +240,11 @@ Nav bar
 }
 
 #logo {
-	width: 150px;
-	-webkit-transition: 0.4s;
-	-o-transition: 0.4s;
-	transition: 0.4s;
-	content: var(--logo-image);
+	width: 150px !important;
+	-webkit-transition: 0.4s !important;
+	-o-transition: 0.4s !important;
+	transition: 0.4s !important;
+	content: var(--logo-image) !important;
 }
 
 .navbar-toggler-icon {
