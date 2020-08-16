@@ -73,7 +73,7 @@ const generateTimelineCard = (timelineDetail, position) => {
 };
 
 const generateEventsCard = (eventDetail, fixClassIndex) => {
-	const { coverImage, eventName, altName, eventDescription, referencePage } = eventDetail;
+	const { coverImage, eventName, eventModal, altName, eventDescription, referencePage } = eventDetail;
 	const eventCard = `<div class="card r-events-card">
 						<div class="card-image">
 							<img
@@ -89,12 +89,40 @@ const generateEventsCard = (eventDetail, fixClassIndex) => {
 							</p>
 						</div>
 						<div class="card-stats">
-							<a href="${referencePage}" class="btn card-btn card1-text card-btn2"> Read More</a>
+							<a href="${referencePage}" class="btn card-btn card1-text card-btn2"  data-toggle="modal" data-target="#${eventModal}"> Read More</a>
 						</div>
 					</div>`;
 
 	const recentEventsSection = document.getElementById('eventCards');
 	recentEventsSection.innerHTML += eventCard;
+};
+const generateEventsModal = (eventDetail) => {
+	const { coverImage, eventName, altName, eventModal, eventDescription, referencePage } = eventDetail;
+	
+	const EventModal = `<div class="modal fade" id="${eventModal}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   							<div class="modal-dialog" role="document">
+    							<div class="modal-content">
+     	 							<div class="modal-header">
+        								<h5 class="modal-title" id="exampleModalLabel">${eventName}</h5>
+        								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          									<span aria-hidden="true">&times;</span>
+        								</button>
+      								</div>
+      								<div class="modal-body">
+									  <p class="pt-1 event-body">
+									  ${eventDescription}
+								  </p>  
+									</div>
+      								<div class="modal-footer">
+        								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        								<button type="button" class="btn btn-primary">Send message</button>
+      								</div>
+    							</div>
+  							</div>
+						</div>`;
+
+	const recentEventsSection = document.getElementById('eventModals');
+	recentEventsSection.innerHTML += EventModal;
 };
 
 const insertAnnouncementTimeline = () => {
@@ -110,5 +138,12 @@ const insertEventCards = () => {
 	});
 };
 
+const insertEventModals = () => {
+	recentEventsDetails.forEach((detail) => {
+		generateEventsModal(detail);
+	});
+};
+
 insertAnnouncementTimeline();
 insertEventCards();
+insertEventModals();
