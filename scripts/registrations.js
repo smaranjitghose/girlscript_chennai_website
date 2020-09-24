@@ -46,7 +46,6 @@ let header = $(`
 		<label class="switch" id="themeChangeButton">		
 		<input type="checkbox" name="theme" id="theme" onchange="changeTheme()">		
 		<span class="slider round"></span>	
-		<div class="stars"><span></span><span></span><span></span><span></span><span></span></div>
 		</label>
 	</div>				
 	 </div>	 
