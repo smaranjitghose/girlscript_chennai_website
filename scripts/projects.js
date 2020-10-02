@@ -123,6 +123,7 @@ const countDownDetails = [
 
 const produceProjectCards = (cardDetails, mode = 'extra') => {
 	const { coverImage, projectName, projectAuthor, projectDescription, githubLink, alternateName } = cardDetails;
+	console.log(githubLink)
 	const projectCard = `<div class="project-card" onclick="displayCard(this)">
 						<div class="project-image-holder">
 							<img
@@ -148,7 +149,7 @@ const produceProjectCards = (cardDetails, mode = 'extra') => {
 							</div>
 							<div class="card-flap flap2">
 								<div class="card-actions">
-									<a href=${githubLink} class="btn btn-github"
+									<a onclick="window.open('${githubLink}','_blank')" href=${githubLink} class="btn btn-github"
 										>Link to GitHub Repository</a
 									>
 								</div>
