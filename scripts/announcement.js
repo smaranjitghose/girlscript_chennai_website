@@ -27,7 +27,7 @@ const recentEventsDetails = [
 		altName: 'Product Hunt Logo',
 		eventDescription: `We are feeling much happy to announce Product Hunt as out official In-Kind partner.
                                 Thankyou for being with Girlscript and helping it make a success.`,
-		referencePage: '#!'
+		referencePage: 'recent.html'
 	},
 	{
 		coverImage: 'assets/Images/announcement/contributors.png',
@@ -35,7 +35,7 @@ const recentEventsDetails = [
 		altName: 'Contributors Illustration',
 		eventDescription: `We are extremely elated to see so many participants coming up with different skills and
 								new ways of approaching solution and contribute to the project.`,
-		referencePage: '#!'
+		referencePage: 'recent.html'
 	},
 	{
 		coverImage: 'assets/Images/announcement/DU-Express.png',
@@ -43,7 +43,7 @@ const recentEventsDetails = [
 		altName: 'DU Express Logo',
 		eventDescription: `We would like to thank DU Express (@DuExpress) to be our Media Partner for GirlScript
 								Summer Of Code 2020.`,
-		referencePage: '#!'
+		referencePage: 'recent.html'
 	}
 ];
 
@@ -89,7 +89,7 @@ const generateEventsCard = (eventDetail, fixClassIndex) => {
 							</p>
 						</div>
 						<div class="card-stats">
-							<a href="${referencePage}" class="btn card-btn card1-text card-btn2"> Read More</a>
+							<a href="${referencePage}" class="btn card-btn card1-text card-btn2" target="_blank"> Read More</a>
 						</div>
 					</div>`;
 
